@@ -13,11 +13,9 @@
 	<textFileColumn>
 		<header>GENOTYPE</header>
 		<fieldName>GENOTYPE</fieldName>
-		<overwrite>true</overwrite>
 	</textFileColumn>
 	<textFileColumn>
 		<header>SUBTYPE</header>
 		<fieldName>SUBTYPE</fieldName>
-		<overwrite>true</overwrite>
 	</textFileColumn>
 </textFilePopulator>

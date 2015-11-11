@@ -36,6 +36,7 @@
 		<fieldPopulator fieldName="GB_RECOMBINANT">
 				<matchPattern>[Rr]ecombinant</matchPattern>
 				<outputTemplate>true</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 		</fieldPopulator>
 	</gbOrganism>
 	<gbDivision>
@@ -66,32 +67,39 @@
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>genotype:?\s+([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>genotype:?\s+[1-9]([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="GB_RECOMBINANT">
 				<matchPattern>[Rr]ecombinant</matchPattern>
 				<outputTemplate>true</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>subtype\s+([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>subtype\s+[1-9]([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 		</gbQualifier>
 		<gbQualifier name="genotype">
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 		</gbQualifier>
 
@@ -102,10 +110,12 @@
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 		</gbQualifier>
 	
@@ -113,48 +123,58 @@
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 		</gbQualifier>
 		<gbQualifier name="subtype">
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>([1-9])[a-z]+</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 		</gbQualifier>
 		<gbQualifier name="organism">
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>subtype\s+([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>subtype\s+[1-9]([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 		</gbQualifier>
 		<gbQualifier name="strain">
 			<fieldPopulator fieldName="GENOTYPE">
 				<matchPattern>([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="SUBTYPE">
 				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="GB_RECOMBINANT">
 				<matchPattern>[Rr]ecombinant</matchPattern>
 				<outputTemplate>true</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>		
 			<fieldPopulator fieldName="GB_RECOMBINANT">
 				<matchPattern>RF</matchPattern>
 				<outputTemplate>true</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>		
 		</gbQualifier>
 		<gbQualifier name="collection_date">
