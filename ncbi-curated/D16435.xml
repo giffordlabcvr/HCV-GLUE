@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPCT2</GBSeq_locus>
+  <GBSeq_length>6935</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>16-JUL-2005</GBSeq_update-date>
+  <GBSeq_create-date>28-JAN-1994</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus type 2 gene for polyprotein precursor (NS2-NS3-NS4A-NS4B-NS5A-NS5B), complete cds</GBSeq_definition>
+  <GBSeq_primary-accession>D16435</GBSeq_primary-accession>
+  <GBSeq_accession-version>D16435.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|D16435.1|HPCT2</GBSeqid>
+    <GBSeqid>gi|451206</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus genotype 2</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus genotype 2</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..6935</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Hijikata,M.</GBAuthor>
+        <GBAuthor>Mizushima,H.</GBAuthor>
+        <GBAuthor>Tanji,Y.</GBAuthor>
+        <GBAuthor>Komoda,Y.</GBAuthor>
+        <GBAuthor>Hirowatari,Y.</GBAuthor>
+        <GBAuthor>Akagi,T.</GBAuthor>
+        <GBAuthor>Kato,N.</GBAuthor>
+        <GBAuthor>Kimura,K.</GBAuthor>
+        <GBAuthor>Shimotohno,K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Proteolytic processing and membrane association of putative nonstructural proteins of hepatitis C virus</GBReference_title>
+      <GBReference_journal>Proc. Natl. Acad. Sci. U.S.A. 90 (22), 10773-10777 (1993)</GBReference_journal>
+      <GBReference_pubmed>7504283</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Tanji,Y.</GBAuthor>
+        <GBAuthor>Hijikata,M.</GBAuthor>
+        <GBAuthor>Hirowatari,Y.</GBAuthor>
+        <GBAuthor>Shimotohno,K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Identification of the domain required for trans-cleavage activity of hepatitis C viral serine proteinase</GBReference_title>
+      <GBReference_journal>Gene 145 (2), 215-219 (1994)</GBReference_journal>
+      <GBReference_pubmed>8056334</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>3</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Tanji,Y.</GBAuthor>
+        <GBAuthor>Hijikata,M.</GBAuthor>
+        <GBAuthor>Hirowatari,Y.</GBAuthor>
+        <GBAuthor>Shimotohno,K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Hepatitis C virus polyprotein processing: kinetics and mutagenic analysis of serine proteinase-dependent cleavage</GBReference_title>
+      <GBReference_journal>J. Virol. 68 (12), 8418-8422 (1994)</GBReference_journal>
+      <GBReference_pubmed>7966638</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>4</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Tanji,Y.</GBAuthor>
+        <GBAuthor>Hijikata,M.</GBAuthor>
+        <GBAuthor>Satoh,S.</GBAuthor>
+        <GBAuthor>Kaneko,T.</GBAuthor>
+        <GBAuthor>Shimotohno,K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Hepatitis C virus-encoded nonstructural protein NS4A has versatile functions in viral protein processing</GBReference_title>
+      <GBReference_journal>J. Virol. 69 (3), 1575-1581 (1995)</GBReference_journal>
+      <GBReference_pubmed>7853491</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>5</GBReference_reference>
+      <GBReference_position>1..6935</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Hijikata,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (11-JUN-1993) Makoto Hijikata, National Cancer Center Res., Virology Division; 5-1-1 Tsukiji, Chuo-ku, Tokyo 104, Japan (Tel:03-3542-2511, Fax:03-3543-2181)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..6935</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>6935</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus genotype 2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:40271</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone_lib</GBQualifier_name>
+          <GBQualifier_value>lambda gt10</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>11..6865</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>11</GBInterval_from>
+          <GBInterval_to>6865</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein precursor</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAA03905.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>GI:496367</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MAARVCACLWMMLLIAQAEATLENLVVLNAASVAGAHGLLSFLVFFCAAWYIKGRLVPGAAYALYGVWPLLLLLLALPPRAYAMDREMAASCGGAVFVGLVLLTLSPYYKVFLARLIWWLQYFITRAEAHLQVWVPPLNVRGGRDAIILLTCAVHPELIFDITKLLLAILGPLMVLQAGMTRVPYFVRAQGLIRACMLVRKVAGGHYVQMAFMKLAALTGTYVYDHLTPLRDWAHAGLRDLAVAVEPVVFSDMETKIITWGADTAACGDIISGLPVSARRGKEILLGPADSFGEQGWRLLAPITAYSQQTRGLLGCIITSLTGRDKNQVDGEVQVLSTATQSFLATCVNGVCWTVYHGAGSKTLAGPKGPITQMYTNVDQDLVGWPAPPGARSMTPCTCGSSDLYLVTRHADVIPVRRRGDSRGSLLSPRPVSYLKGSSGGPLLCPSGHVVGIFRAAVCTRGVAKAVDFIPVESMETTMRSPVFTDNSSPPAVPQTFQVAHLHAPTGSGKSTKVPAAYAAQGYKVRVLNPSVAATLGFGAYMSKAHGIEPNIRTGVRTITTGGPITYSTYGKFLADGGCSGGAYDIIICDECHSTDWTTILGIGTVLDQAETAGARLVVLATATPPGSITVPHPNIEEVALSNTGEIPFYGKAIPIEAIKGGRHLIFCHSKKKCDELAAKLTGLGLNAVAYYRGLDVSVIPTSGDVVVVATDALMTGFTGDFDSVIDCNTCVTQTVDFSLDPTFTIETTTVPQDAVSRSQRRGRTGRGRSGIYRFVTPGERPSGMFDSSVLCECYDAGCAWYELTPAETTVRLRAYLNTPGLPVCQDHLEFWESVFTGLTHIDAHFLSQTKQAGDNFPYLVAYQATVCARAQAPPPSWDQMWKCLIRLKPTLHGPTPLLYRLGAVQNEITLTHPITKFVMACMSADLEVVTSTWVLVGGVLAALAAYCLTTGSVVIVGRIILSGRPAVVPDREVLYREFDEMEECASHLPYIEQGMQLAEQFKQKALGLLQTATKQAEAAAPVVESRWRALEAFWAKHMWNFISGIQYLAGLSTLPGNPAIASLMAFTASITSPLTTQNTLLFNILGGWVAAQLAPPSAASAFVGAGIAGAAIGSIGLGKVLVDILAGYGAGVAGALVAFKVMSGEAPSAEDLVNLLPAILSPGALVVGIVCAAILRRHVGPGEGAVQWMNRLIAFASRGNHVSPTHYVPESDAAARVTQILSSLTITQLLKRLHQWINEDCSTPCSGSWLRDVWDWICTVLTDFKTWLQSKLLPKLPGVPFFSCQRGYKGVWRGDGIMQTTCPCGAQITGHVKNGSMRIVGPKTCSNTWHGTFPINAYTTGPCTPSPAPNYSRALWRVAAEEYVEITRVGDFHYVTGMTTDNVKCPCQVPAPEFFTELDGVRLHRYAPACRPLLRVDVTFQVGLNQYLVGSQLPCEPEPDVAVLTSMLTDPSHITAETAKRRPARGSPPSLASSSASQLSAPSLKATCTTHHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEDEREVSVAAEILRKSKKFPPALPIWARPDYNPPLLESWKSPDYVPPAVHGCPLPPTTGPPIPPPRKKRTVVLTESTVSSALAELATKTFGSSGSSAVDSGTATAPPDQTSDDGDKESDIESYSSMPPLEGEPGDPDLSDGSWSTVSGEAGDDIVCCSMSYTWTGALITPCAAEESKLPINPLSNSLLRHHSMVYSTTSRSASLRQKKVTFDRMQVLDDHYRDVLKEMKAKASTVKARLLSIEEACKLTPPHSAKSKFGYGAKDVRSLSSRAVNHIRSVWEDLLEDTETPIDTTIMAKNEVFCVQPEKGGRKPARLIVFPDLGVRVCEKMALYDVVSTLPQAVMGPSYGFQYSPGQRVEFLVNTWKSKKCPMGFSYDTRCFDSTVTENDIRTEESIYQCCDLAPEARQAIKSLTERLYIGGPLTNSKGQNCGYRRCRASGVLTTSCGNTLTCYLKATAACRAAKLQDCTMLVNGDDLVVICESAGTQEDAASLRVFTEAMTRYSAPPGDPPQPEYDLELITSCSSNVSVAHDASGKRVYYLTRDPTTPLARAAWETVRHTPVNSWLGNIIMYAPTLWARMILMTHFFSILLAQEQLEKALDCQIYGACYSIEPLDLPQIIERLHGLSAFSLHSYSPGEINRVASCLRKLGVPPLRVWRHRARSVRAKLLSQGGRAATCGKYLFNWAVRTKLKLTPIPAASQLDLSSWFVAGYSGGDIYHSLSRARPRWFMLCLLLLSVGVGVYLLPNR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>71..172</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>71</GBInterval_from>
+          <GBInterval_to>172</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>processing product p7</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>TLENLVVLNAASVAGAHGLLSFLVFFCAAWYIKG</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>260..910</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>260</GBInterval_from>
+          <GBInterval_to>910</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>processing product p21</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>MDREMAASCGGAVFVGLVLLTLSPYYKVFLARLIWWLQYFITRAEAHLQVWVPPLNVRGGRDAIILLTCAVHPELIFDITKLLLAILGPLMVLQAGMTRVPYFVRAQGLIRACMLVRKVAGGHYVQMAFMKLAALTGTYVYDHLTPLRDWAHAGLRDLAVAVEPVVFSDMETKIITWGADTAACGDIISGLPVSARRGKEILLGPADSFGEQGWRLL</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>911..2803</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>911</GBInterval_from>
+          <GBInterval_to>2803</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>processing product p70</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>APITAYSQQTRGLLGCIITSLTGRDKNQVDGEVQVLSTATQSFLATCVNGVCWTVYHGAGSKTLAGPKGPITQMYTNVDQDLVGWPAPPGARSMTPCTCGSSDLYLVTRHADVIPVRRRGDSRGSLLSPRPVSYLKGSSGGPLLCPSGHVVGIFRAAVCTRGVAKAVDFIPVESMETTMRSPVFTDNSSPPAVPQTFQVAHLHAPTGSGKSTKVPAAYAAQGYKVRVLNPSVAATLGFGAYMSKAHGIEPNIRTGVRTITTGGPITYSTYGKFLADGGCSGGAYDIIICDECHSTDWTTILGIGTVLDQAETAGARLVVLATATPPGSITVPHPNIEEVALSNTGEIPFYGKAIPIEAIKGGRHLIFCHSKKKCDELAAKLTGLGLNAVAYYRGLDVSVIPTSGDVVVVATDALMTGFTGDFDSVIDCNTCVTQTVDFSLDPTFTIETTTVPQDAVSRSQRRGRTGRGRSGIYRFVTPGERPSGMFDSSVLCECYDAGCAWYELTPAETTVRLRAYLNTPGLPVCQDHLEFWESVFTGLTHIDAHFLSQTKQAGDNFPYLVAYQATVCARAQAPPPSWDQMWKCLIRLKPTLHGPTPLLYRLGAVQNEITLTHPITKFVMACMSADLEVVT</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>2804..2965</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>2804</GBInterval_from>
+          <GBInterval_to>2965</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS4A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>processing product p4</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>STWVLVGGVLAALAAYCLTTGSVVIVGRIILSGRPAVVPDREVLYREFDEMEEC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>2966..3748</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>2966</GBInterval_from>
+          <GBInterval_to>3748</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS4B</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>processing product p27</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>ASHLPYIEQGMQLAEQFKQKALGLLQTATKQAEAAAPVVESRWRALEAFWAKHMWNFISGIQYLAGLSTLPGNPAIASLMAFTASITSPLTTQNTLLFNILGGWVAAQLAPPSAASAFVGAGIAGAAIGSIGLGKVLVDILAGYGAGVAGALVAFKVMSGEAPSAEDLVNLLPAILSPGALVVGIVCAAILRRHVGPGEGAVQWMNRLIAFASRGNHVSPTHYVPESDAAARVTQILSSLTITQLLKRLHQWINEDCSTPC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>3749..5089</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>3749</GBInterval_from>
+          <GBInterval_to>5089</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>processing product p56</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>SGSWLRDVWDWICTVLTDFKTWLQSKLLPKLPGVPFFSCQRGYKGVWRGDGIMQTTCPCGAQITGHVKNGSMRIVGPKTCSNTWHGTFPINAYTTGPCTPSPAPNYSRALWRVAAEEYVEITRVGDFHYVTGMTTDNVKCPCQVPAPEFFTELDGVRLHRYAPACRPLLRVDVTFQVGLNQYLVGSQLPCEPEPDVAVLTSMLTDPSHITAETAKRRPARGSPPSLASSSASQLSAPSLKATCTTHHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEDEREVSVAAEILRKSKKFPPALPIWARPDYNPPLLESWKSPDYVPPAVHGCPLPPTTGPPIPPPRKKRTVVLTESTVSSALAELATKTFGSSGSSAVDSGTATAPPDQTSDDGDKESDIESYSSMPPLEGEPGDPDLSDGSWSTVSGEAGDDIVCC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>5090..6862</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>5090</GBInterval_from>
+          <GBInterval_to>6862</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5B</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>processsing product p66</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>SMSYTWTGALITPCAAEESKLPINPLSNSLLRHHSMVYSTTSRSASLRQKKVTFDRMQVLDDHYRDVLKEMKAKASTVKARLLSIEEACKLTPPHSAKSKFGYGAKDVRSLSSRAVNHIRSVWEDLLEDTETPIDTTIMAKNEVFCVQPEKGGRKPARLIVFPDLGVRVCEKMALYDVVSTLPQAVMGPSYGFQYSPGQRVEFLVNTWKSKKCPMGFSYDTRCFDSTVTENDIRTEESIYQCCDLAPEARQAIKSLTERLYIGGPLTNSKGQNCGYRRCRASGVLTTSCGNTLTCYLKATAACRAAKLQDCTMLVNGDDLVVICESAGTQEDAASLRVFTEAMTRYSAPPGDPPQPEYDLELITSCSSNVSVAHDASGKRVYYLTRDPTTPLARAAWETVRHTPVNSWLGNIIMYAPTLWARMILMTHFFSILLAQEQLEKALDCQIYGACYSIEPLDLPQIIERLHGLSAFSLHSYSPGEINRVASCLRKLGVPPLRVWRHRARSVRAKLLSQGGRAATCGKYLFNWAVRTKLKLTPIPAASQLDLSSWFVAGYSGGDIYHSLSRARPRWFMLCLLLLSVGVGVYLLPNR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>20..70</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>20</GBInterval_from>
+          <GBInterval_to>70</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>signal peptide</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>173..259</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>173</GBInterval_from>
+          <GBInterval_to>259</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>signal peptide</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>1079..1081</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1079</GBInterval_from>
+          <GBInterval_to>1081</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>serine proteinase catalytic histidine residue</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>1151..1153</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1151</GBInterval_from>
+          <GBInterval_to>1153</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>serine proteinase catalytic aspartic acide residue</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>1325..1327</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1325</GBInterval_from>
+          <GBInterval_to>1327</GBInterval_to>
+          <GBInterval_accession>D16435.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>experiment</GBQualifier_name>
+          <GBQualifier_value>experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>serine proteinase catalytic serine residue</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gaattcagccatggctgcgcgcgtctgtgcctgcttgtggatgatgctgctgatagcccaggctgaggccaccttagagaacctggtggtcctcaatgcggcgtctgtggccggagcgcatggccttctctccttcctcgtgttcttctgcgccgcctggtacatcaaaggcaggctggtccctggggcggcatatgctctctatggcgtatggccgttgctcctgctcttgctggctttaccaccacgagcttatgccatggaccgagagatggctgcatcgtgcggaggcgcggtttttgtaggtctggtactcttgaccttgtcaccatactataaggtgttcctcgctaggctcatatggtggttacaatattttatcaccagggccgaggcgcacttgcaagtgtgggtcccccctcttaatgttcggggaggccgcgatgccatcatcctccttacatgcgcggtccatccagagctaatctttgacatcaccaaactcctgctcgccatactcggaccgctcatggtgctccaggctggcatgactagagtgccgtactttgtacgcgctcaggggctcatccgtgcatgcatgttagtgcggaaggtcgctggaggccactatgtccaaatggccttcatgaagctggccgcgctgacaggtacgtacgtatatgaccatcttactccactgcgggattgggcccacgcgggcctacgagaccttgcggtggcagtagagcccgtcgtcttctctgacatggagactaagatcatcacctggggggcagacaccgcggcgtgtggggacatcatctcgggtctaccagtctccgcccgaagggggaaggagatacttctaggaccggccgatagttttggagagcaggggtggcggctccttgcgcctatcacggcctattcccaacaaacgcggggcctgcttggctgtatcatcactagcctcacaggtcgggacaagaaccaggtcgatggggaggttcaggtgctctccaccgcaacgcaatctttcctggcgacctgcgtcaatggcgtgtgttggaccgtctaccatggtgccggctcgaagaccctggccggcccgaagggtccaatcacccaaatgtacaccaatgtagaccaggacctcgtcggctggccggcgccccccggggcgcgctccatgacaccgtgcacctgcggcagctcggacctttacttggtcacgaggcatgccgatgtcattccggtgcgccggcgaggcgacagcagggggagtctactctcccctaggcccgtctcctacctgaagggctcctcgggtggaccactgctttgcccttcggggcacgttgtaggcatcttccgggctgctgtgtgcacccggggggttgcgaaggcggtggacttcatacccgttgagtctatggaaactaccatgcggtctccggtcttcacagacaactcatcccctccggccgtaccgcaaacattccaagtggcacatttacacgctcccactggcagcggcaagagcaccaaagtgccggctgcatatgcagcccaagggtacaaggtgcgcgtcctaaacccgtccgttgctgccacattgggctttggagcgtatatgtccaaggcacatggcatcgagcctaacatcagaactggggtaaggaccatcaccacgggcggccccatcacgtactccacctatggcaagttccttgccgacggtggatgctccgggggcgcctatgacatcataatatgtgacgaatgccactcaactgactggacaaccatcttgggcatcggcacagtcctggatcaggcagagacggctggagcgcggctcgtcgtgctcgccaccgccacgcctccgggatcgatcaccgtgccacaccccaacatcgaggaagtggccctgtccaacactggggagattcccttctatggcaaagccatccccattgaggccatcaaggggggaaggcatctcatcttctgccattccaagaagaagtgtgacgagctcgccgcaaagctgacaggcctcggactcaacgctgtagcgtattacaggggtctcgatgtgtccgtcataccgactagcggagacgtcgttgtcgtggcaacagacgctctaatgacgggctttaccggcgactttgactcagtgatcgactgcaacacatgtgtcacccagacagtcgatttcagcttggatcccaccttcaccattgagacgaccaccgtgccccaagacgcggtgtcgcgctcgcagcggcgaggtaggactggcaggggcaggagtggcatctacaggtttgtgactccaggagaacggccctcaggcatgttcgactcctcggtcctgtgtgagtgctatgacgcaggctgcgcttggtatgagctcacgcccgctgagactacagtcaggttgcgggcttacctgaatacaccagggttgcccgtctgccaggaccatctggagttctgggaaagcgtcttcacaggcctcacccacatagatgcccacttcctgtcccaaaccaagcaggcaggagacaacttcccctacctggtggcataccaagccacggtgtgcgccagggctcaggctccacctccatcgtgggatcaaatgtggaagtgtctcatacggcttaaacctacgctgcacgggccaacacccctgctgtataggctaggagccgttcaaaatgagatcaccctcacacatcccataaccaaattcgtcatggcatgcatgtcggccgacctggaggtcgtcactagcacctgggtgctggtaggcggagtccttgcagctctggccgcatattgcctgacaaccggtagtgtggtcattgtgggtaggatcattttgtccgggaggccggctgttgttcccgacagggaagtcctctaccgggagttcgatgaaatggaagagtgcgcctcacacctcccttacatcgagcaaggaatgcagctcgccgagcagttcaagcagaaggcactcgggttgctgcaaacagccaccaagcaagcggaggccgctgctcccgtggtggagtccaggtggcgggcccttgaggccttctgggcaaagcacatgtggaacttcatcagcgggatacagtacttagcaggcttatccactctgcctgggaaccccgcgatagcatcactgatggcattcacagcctctatcaccagtccgctcaccacccagaataccctcctattcaacatcttagggggatgggtggctgctcaactcgctcctcccagtgctgcttcggccttcgtgggtgccggcattgccggtgcggccattggcagcataggccttgggaaggtgcttgtggacattctggcgggctatggagcgggggtggccggtgcactcgtggcttttaaggtcatgagcggcgaggcgccctccgccgaggacctggttaacttgctccctgccatcctctcccccggcgccttggtcgtcgggatcgtgtgtgcagcaatcctgcgtcggcacgtgggcccgggagagggggctgtgcagtggatgaaccggctgatagcgttcgcttcgcggggtaaccacgtttcccccacgcactacgtgcctgagagcgacgccgcagcacgtgtaactcagatcctctccagcctcaccatcactcagctgctgaagaggcttcaccagtggattaatgaggactgctccacgccatgctccggctcgtggctaagggatgtttgggactggatatgcacggtgttgactgacttcaagacctggctccagtccaagctcctgccgaaattgccgggagtccctttcttctcatgccaacgcgggtacaagggagtctggcggggggacggcatcatgcaaaccacctgcccatgtggagcacaaattaccggacatgtcaaaaacggttccatgaggatcgttgggcctaaaacctgcagcaacacgtggcacggaacgttccccatcaacgcgtacaccacaggcccctgcacaccctccccggcgccgaactattccagggcgctgtggcgggtggctgctgaagagtacgtggagattacgcgggtgggggacttccactacgtgacgggtatgaccaccgacaacgtaaaatgcccgtgccaggtcccggcccccgaattcttcactgaattggacggggtgcggttgcacaggtacgctccggcgtgcagacctctcctacgggtggatgtcacattccaggtcgggctcaaccaatacctggttgggtcacagctcccatgcgagcctgagccggatgtggcagtgctcacttccatgctcaccgacccctcccacattacagcagagacggctaaacgtaggccggccagggggtctcccccctccttggccagctcttcagctagccaattgtctgcgccttccttgaaggcaacatgcactacccaccatgactccccggacgctgacctcatcgaggccaacctcctgtggcggcaggagatgggcggaaacatcacccgtgtggagtcagagaataaggtggtaattttggactctttcgacccgcttcgagcggaagaggatgagagggaagtatccgttgcagcagagatcctgcgaaaatccaagaagttcccccccgcgttgcccatatgggcacgcccggattacaaccctccactgttagagtcctggaaaagtccggactacgtccctccggcggtgcatgggtgcccattgccgcctaccacgggccctccaataccgcctccacggaaaaagaggacggttgttctgacagagtccaccgtgtcttctgccttggcggagctggctactaagactttcggcagctccggatcgtcggccgttgacagcggcacggcgaccgcccctcccgatcagacctctgacgacggtgacaaagaatctgacattgagtcgtactcctccatgcccccccttgagggggagccgggggaccctgatctcagcgacgggtcttggtctaccgtgagcggggaggccggcgacgacatcgtctgctgctcaatgtcctacacatggacaggtgccttgatcacgccatgcgctgcggaggagagcaagttgcccatcaatccgttgagcaactctttgctgcgtcaccacagtatggtctactccacaacatctcgcagcgcaagtctgcggcagaagaaggtaacctttgacagaatgcaagtcctggacgaccactaccgggacgtgctcaaggagatgaaggcgaaggcgtccacagttaaggctaggcttctatctatagaggaggcctgcaaactgacgcccccacattcggccaaatccaaatttggctacggggcgaaggacgtccggagcctatccagcagggccgtcaaccacatccgctccgtgtgggaggacttgctggaagacactgaaacaccaattgataccaccatcatggcaaaaaatgaggttttctgcgtccaaccagagaaaggaggccgcaagccagctcgccttatcgtattcccagacctgggggtacgtgtatgcgagaagatggccctttacgacgtggtctccacccttcctcaggccgtgatgggcccctcatacggattccagtactctcctgggcagcgggtcgagttcctggtgaatacctggaaatcaaagaaatgccctatgggcttctcatatgacacccgctgctttgactcaacggtcactgagaatgacatccgtactgaggagtcaatctaccaatgttgtgacttggcccccgaagccagacaggccataaagtcgctcacagagcggctctacatcgggggtcccctgactaattcaaaagggcagaactgcggttatcgccggtgccgcgcgagcggtgtgctgacgactagctgcggcaataccctcacatgctacttgaaagccactgcggcctgtcgagctgcaaagctccaggactgcacgatgctcgtgaacggagacgaccttgtcgttatctgcgaaagcgcgggaacccaggaggatgcggcgagcctacgagtcttcacggaggctatgactaggtactctgccccccccggggacccgccccaaccagaatacgacttggagctgataacgtcatgctcctccaatgtgtcggtcgcgcacgatgcatccggcaaaagggtgtactacctcacccgtgaccccaccacccccctcgcacgggctgcgtgggagacagttagacacactccagtcaactcctggctaggcaatatcatcatgtatgcgcccaccctatgggcgaggatgattctgatgactcatttcttctctatccttctagctcaggagcaacttgaaaaagccctggattgtcagatctacggggcctgctactccattgagccacttgacctacctcagatcatcgaacgactccatggtcttagcgcattttcactccatagttactctccaggtgagatcaatagggtggcttcatgcctcaggaaacttggggtaccgcccttgcgagtctggagacatcgggccagaagtgtccgcgctaagctgctgtcccagggggggagggccgccacatgcggcaaatacctcttcaactgggcagtaaggaccaagcttaagctcactccaatcccagctgcgtcccagttggacttgtccagctggttcgttgctggttacagtgggggagacatatatcacagcctgtctcgtgcccgaccccgctggttcatgttatgcctactcctactttctgtaggggtaggcgtctacctgctccccaaccggtgaacggggagctaaccactccaggccaataggccattcccttttttttttttcggaattcgtcgacaagctt</GBSeq_sequence>
+</GBSeq>

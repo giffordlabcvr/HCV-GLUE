@@ -1,0 +1,46 @@
+delete project HCV
+
+create project HCV "HCV mutation analysis"
+
+run file fieldDefinitions.glue
+ 
+project HCV
+
+  set setting ignore-nt-sequence-hyphens true
+  set setting translate-beyond-possible-stop true
+  set setting translate-orf-descendents-directly true
+  
+  # create modules from files
+  import module ncbi-importer modules/hcvNcbiImporter.xml
+  import module gb-populator modules/hcvGenbankXmlPopulator.xml
+  import module reference-genotypes-populator modules/referenceGenotypesPopulator.xml
+  import module unconstrained-fasta-importer modules/hcvFastaAlignmentImporter.xml
+  import module mutationFrequencies modules/hcvMutationFrequencies.xml
+  import module blastAligner modules/hcvBlastAligner.xml
+  
+  # import NCBI sequences from files
+  import source ncbi-refseqs
+  import source ncbi-curated
+
+  # populate certain fields from Genbank XML.
+  module gb-populator populate -w "source.name = 'ncbi-curated'"
+  
+  # update GENOTYPE / SUBTYPE for refseqs from file.
+  module reference-genotypes-populator populate -f referenceGenotypes.txt
+ 
+  # create an unconstrained alignment
+  create alignment AL_UNCONSTRAINED
+    
+  # import the unconstrained alignment from Donald Smith's FASTA file.
+  module unconstrained-fasta-importer import AL_UNCONSTRAINED -f Donald_Smith_HCV_alignment_May_26_2015.filtered.fasta
+
+  # build master reference, with features.
+  run file hcvFeatures.glue
+  
+  # build tree of alignments, with relevant reference sequences.
+  run file hcvAlignmentTree.glue
+
+  validate
+  
+  run file addCuratedToAlignments.glue
+  

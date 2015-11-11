@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AY044867</GBSeq_locus>
+  <GBSeq_length>5137</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>08-JAN-2002</GBSeq_update-date>
+  <GBSeq_create-date>26-SEP-2001</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus nonfunctional polyprotein gene, partial sequence</GBSeq_definition>
+  <GBSeq_primary-accession>AY044867</GBSeq_primary-accession>
+  <GBSeq_accession-version>AY044867.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AY044867.1|</GBSeqid>
+    <GBSeqid>gi|15787389</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..5137</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Dou,X.G.</GBAuthor>
+        <GBAuthor>Talekar,G.</GBAuthor>
+        <GBAuthor>Chang,J.</GBAuthor>
+        <GBAuthor>Dai,X.</GBAuthor>
+        <GBAuthor>Li,L.</GBAuthor>
+        <GBAuthor>Bonafonte,M.T.</GBAuthor>
+        <GBAuthor>Holloway,B.</GBAuthor>
+        <GBAuthor>Fields,H.A.</GBAuthor>
+        <GBAuthor>Khudyakov,Y.E.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Antigenic heterogeneity of the hepatitis C virus NS5A protein</GBReference_title>
+      <GBReference_journal>J. Clin. Microbiol. 40 (1), 61-67 (2002)</GBReference_journal>
+      <GBReference_pubmed>11773093</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..5137</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Bonafonte,M.-T.</GBAuthor>
+        <GBAuthor>Khudyakov,Y.E.</GBAuthor>
+        <GBAuthor>Fields,H.A.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>The nonstructural genomic region of the HCV strain isolated from a patient residing in Russia</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>3</GBReference_reference>
+      <GBReference_position>1..5137</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Bonafonte,M.-T.</GBAuthor>
+        <GBAuthor>Khudyakov,Y.E.</GBAuthor>
+        <GBAuthor>Fields,H.A.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (10-JUL-2001) Hepatitis, Center for Disease Control, 1600 Clifton Rd., Atlanta, GA 30333, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..5137</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>5137</GBInterval_to>
+          <GBInterval_accession>AY044867.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>from patient residing in Russia</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;5137</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>5137</GBInterval_to>
+          <GBInterval_accession>AY044867.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>nonfunctional polyprotein protein due to mutation</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>cctatggcaagttccttgccgacggtggttgctctggaggcgcctatgacatcataatgtgtgacgagtgccactcgactgactcgacttctatcttgggcatcggcacagtcctggaccaagcggagacggctggagcgcggctcgtcgtgctcgccaccgctacgcctccgggatcggtcaccgtgccgcatccaaatattgaggaggcggctctgtccaacattggagagatccccttctatggcaaagccatccccattgagaacgtcaagggggggagacacctcatcttctgtcattccaagaagaagtgtgatgagctcgctgcgaaactgtcgggcctcggactcaatgctgtagcatattaccggggccttgatgtgtccgtcataccaactagcggagacgtcgttgtcgtggcgacagacgctctaatgacgggcttcaccggcgactttgactcagtgatcgactgtaacacatgtgtcacccagacagtcgatttcagcttggatcccaccttcaccatggagacgacgaccgtaccccaggatgcggtgtcgcgctcgcaacggcgaggcaggactggtaggggcaggagaggtatctataggtttgtgaccccaggagaacggccctcgggcatgttcgattcctcggtcctgtgtgagtgctatgacgcgggctgtgcttggtacgagctcacgcccgccgagacctcagtcagattgcgggcttacctaaatacaccagggttgcccgtctgccaggaccacctggagttttgggagagcgtcttcacaggcctcacccacatagatgcccactttctgtcccagaccaagcaggcgggggacaacttcccctacctggtggcataccaggccacagtgtgcgccagggctcaagcccgaccaccatcgtgggaccagatgtggaagtgtctcatacggctaaagcctacgctgcacgggccgacgcccctgctatataggctaggagccgcccaaaacgaggtcacccccacacaccccgtagccaaatacatcatggcatgcatgtcggctgacctggaggtcgtcaccagcacttgggtgctggtaggcggggtcctagcagctctggccgcgtattgcctgccaacaggcagcgtggtcattgtgggcaggatcatcttgtctggaaagccggctgtcattcccgatagggaagttctctaccaggagttcgatgagatggaagagtgcgcctcacacctcccttacatcgaacaggggatgcagctcgcctagcaattcaaacagaaggcgctcgggttgttgcaaacagccacaaagcaagcggaggctgctgctcccgtggtggagtccaagtggcgagcccttgagacgttctgggcaaagcacatgtggaacttcatcagcgggatacagtacttagcaggcttgtccaccttgcctgggaaccccgcaatagcatcactgatggaattcacagcctctatcaccagcccgctcaccacccaaagtaccttcctgtttaacatcttggggggatgggtagccgcccagctcgctccccccagcgccgcttcggctttcgtgggcgctggcattgctggtgcggctgttggcagcataggccttgggaaggtgcttgtggacatcctggcgggctatggagcgggagtggcaggcgcgctcgtggccttcaaggtcatgagcggcgagatgccctccactgaggacctggtcaacttactccctgccatcctctctcctggtgccctggttgtcggggtcgtgtgcgcagcaatactgcgtcgacatgtgggcccaggagagggggctgtgcagtggatgaaccggctgatagcgttcgcctcgcggggcaaccatgtttcccccacgcactacgtgcccgagagcgacgccgcggtgcgtgtcactcagatcctctccagccttaccatcactcagctgttgaagaggctccaccagtggattaatgaggactgctccacgccatgctccggctcgtggctaagggatgtttgggactggatttgcacggtgttgactgacttcaagacctggcttcagtccaagctcctgccacggttaccgggagtccctttcctttcatgccaacgcgggtacaagggagtctggcggggagacggcatcatgcaaaccacctgcccatgtggagcacaaatcaccggacatgtcacaaacggttccatgaggatcgttgggcctaaaacctgcagcaacacgtgtcatggaacgttcccaatcaacgcgtacaccacggacccctgcacaccctccccagcgccaaactattccagggcgctgtggagggtggctgctgaggagtacgtggaggtcacgcgggtgggggatttccaccacgtgacgggcatgaccactgacaacgtaaagtgtccgtgccaggttccggcccctgaattctttacagaagtggacggggtgcggttgcataggtacgctccggcgtgtaaacctctcctacgggagggggtcacattcttggtcgggctcaatcaatacctggttgggtcgcaactcccatgcgagcccgagccggatgtaaccgtgcttacttccatgctcaccgatcccccccacatcacagcagaggtggctaagcgtaggctggacagggggtctcccccctccttggccagctcctcagctagtcagttgtctgcgccttctttgaaggcaacatgcactacccgtcatgactccccggacgctgacctcatcgaggccaacctcctgtggcggcaggagatgggcggaaacatcacccgggtggagtcagagaacaaggtggtaattttggactctttcgaaccgcttcgagcggaggaggacgagagggaggtatccgttccggcggagatcctgcggaaatccaagagattcccctcagcgttgcccgtatgggcacgcccagattacaaccctccactgatagagtcctggaaggacccggactacgtccctccggtggtacacgggtgcccattgccacctaccaaggcccctccaataccacctccacggaggaagaggacgattgttctgtcagaatccactgtgtcttctgccctggcggagctcgctacaaagaccttcggcagctccgagacgtcagccgttgacagcggcacggcgactgcccctcctgatcagccctccgacgacggtgacgcgggatccgacgttgagtcgtactcctccatgcctcccctcgagggagagccgggggaccccgatctcagcgacgggtcttggtctaccgtcagcgaggaagctggtgaggacgtcgtctgctgctcaatgtcctacacatggacaggcgccctgatcacgccatgcgctgcggaggaaagcaagctgcccatcaatgcgttgagcaactctttgctgcgtcaccataatatggtctacgccacaacatctcgcagcgcaagccagcggcagaggaaggtcacctttgacagactgcaagtcctggacgaccactaccgggacgtgctaaaggagatgaaggcgaaggcgtccacagttaaggctaaacttctatctttagaagaagcctgcaggctgacgcccccacattcggccaaatccaagtttggctatggggcaaaggacgtccggaacctatccagcaaggccgttagacacatcctctccgtgtggaaggacttgctggaagacactgagacaccaattgacaccaccatcatggcaaaaaatgaggttttctgcgtccaaccagagaaaggaggccgcaagccagctcgccttatcgtgttcccagacctgggagttcgtgtatgcgagaaaatggccctttacgacgtggtctccacccttcctcaggccgtgatgggctcctcattcggattccagtactctcctggacagcgggttgagttcctggtgaatacctggaaatcaaagaaatgccctatgggcttctcatatgacacccgctgctttgactcaacggtcactgagagtgatatccgtgttgaggagtcaatctaccaatgttgtgacttggtccccgaagccaggcaggccataaggtcgctcacagagcggctttatatcgggggtcccctgaccaattcaaaagggcagaactgcggctatcgccggtgccgcgcgagcggcgtgctgacgaccagctgcggtaataccctcacatgttacttgaaggccactgcggcctgtcgagctgcaaagctccaggactgcacgatgctcgtgaacggagacgaccttgtcgttatctgtgaaagcgcgggaacccaggaggacgcggcaagcctacgagtcttcacggaggctatgactaggtactctgctccccccggggacccgccccaaccagaatacgacttggagctgataacatcatgctcctcaaatgtgtcggtcgcgcacgatgcatctggcaaaagggtgtactatctcacccgtgatcccatcacccccctcgcacgagctgcgtgggagacagctagacacattccagtcaactcctggctaggcaacattatcatgtatgcgcccactttatgggcgaggatgattctgatgactcacttcttctccatcctcctagcccaggagcaacttgaaaaagccctggattgtcagatctacggggcctgttactccattgagccacttgacctacctcagatcattcagcgactccatggtcttagcgcattttcactccatagttactctccaggtgaaatcaatagggtggcttcatgcctcaggaaacttggggtaccacccttgcgagtctggagacatcgggccagaagtgtccgcgctaagctactgtcccagggggggagggccgccacttgtggcaagtacctcttcaactgggcagtaaggaccaagctcaaactcactccaatcccggctgcgtcccagttggacttgtccagctggttcgttgccggttacagcgggggagacatatatcacagcctgtctcgtgcccgaccccgctggttcatgtggtgcctactcctactctccgtaggggtaggcatctactgctc</GBSeq_sequence>
+</GBSeq>

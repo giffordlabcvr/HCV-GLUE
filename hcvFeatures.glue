@@ -58,7 +58,7 @@
     create feature 3UTR -p whole_genome "3' UTR"
 
 
-  create reference H77_AF009606 ncbi-nuccore AF009606
+  create reference H77_AF009606 ncbi-refseqs AF009606
   reference H77_AF009606
     add feature-location 5UTR
     feature-location 5UTR

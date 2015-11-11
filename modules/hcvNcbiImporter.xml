@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ncbiImporter>
+    <sourceName>ncbi-refseqs</sourceName>
 	<sequenceFormat>GENBANK_XML</sequenceFormat>
 	<sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
 	<specificPrimaryAccessions>
