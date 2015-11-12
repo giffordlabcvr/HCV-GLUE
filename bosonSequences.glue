@@ -1,0 +1,9 @@
+create source boson
+
+import module boson-fasta-importer boson/fastaImporter.xml 
+import module boson-rega-genotype-populator boson/regaResultPopulatorGenotype.xml
+import module boson-rega-subtype-populator boson/regaResultPopulatorSubtype.xml
+
+module boson-fasta-importer import -f boson/Boson_whole_genome.fasta
+module boson-rega-genotype-populator populate -f boson/regaResult.txt 
+module boson-rega-subtype-populator populate -f boson/regaResult.txt 

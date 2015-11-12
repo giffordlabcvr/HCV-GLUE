@@ -1,0 +1,14 @@
+<textFilePopulator>
+	<columnDelimiterRegex>\t</columnDelimiterRegex>
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>sequenceId</header>
+		<fieldName>sequenceID</fieldName>
+	</textFileColumn>
+	<textFileColumn>
+		<header>conclusionTaxon</header>
+		<fieldName>GENOTYPE</fieldName>
+		<matchPattern>(\d+)[a-z]+</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+	</textFileColumn>
+</textFilePopulator>
