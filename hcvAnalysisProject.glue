@@ -40,7 +40,12 @@ project HCV
   # build tree of alignments, with relevant reference sequences.
   run file hcvAlignmentTree.glue
 
+  # add the curated sequences into the alignment tree according to their genotype/subtype
+  run file addCuratedToAlignments.glue
+
+  # generate the common polymorphism variations for each genotype
+  run file generateCommonPolymorphismVariations.glue
+
   validate
   
-  run file addCuratedToAlignments.glue
   
