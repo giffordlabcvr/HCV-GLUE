@@ -1,4 +1,13 @@
-  create variation-category drug_resistance
+  create variation-category drug_resistance --notifiabilityLevel NOTIFIABLE
+
+  create variation-category common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
+  create variation-category common_pm_geno_1 --parentName common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
+  create variation-category common_pm_geno_2 --parentName common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
+  create variation-category common_pm_geno_3 --parentName common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
+  create variation-category common_pm_geno_4 --parentName common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
+  create variation-category common_pm_geno_5 --parentName common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
+  create variation-category common_pm_geno_6 --parentName common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
+  create variation-category common_pm_geno_7 --parentName common_polymorphism --notifiabilityLevel NOT_NOTIFIABLE
  
   create feature whole_genome "Whole genome"
     feature whole_genome set metatag INFORMATIONAL
