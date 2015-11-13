@@ -17,9 +17,15 @@ schema-project HCV
     create field GB_COLLECTION_MONTH_DAY INTEGER
     create field GB_CREATE_DATE DATE
     create field GB_UPDATE_DATE DATE
-    create field GENOTYPE VARCHAR
-    create field SUBTYPE VARCHAR
     create field ASSEMBLY_REFERENCE VARCHAR
     create field ENRICHMENT_METHOD VARCHAR
+    create field GENOTYPE VARCHAR
+    create field SUBTYPE VARCHAR
+	create field GENOTYPING_METHOD VARCHAR
+	create field GENOTYPING_SCORE VARCHAR
+    create field GB_GENOTYPE VARCHAR
+    create field GB_SUBTYPE VARCHAR
+    create field REGA_GENOTYPE VARCHAR
+    create field REGA_SUBTYPE VARCHAR
     exit
   exit

@@ -1,0 +1,25 @@
+  
+  # this module downloads the refseqs from NCBI
+  import module ncbi-refseqs-importer modules/hcvNcbiRefSeqsImporter.xml
+  
+  # however, we will import the reference sequences from files
+  import source ncbi-refseqs 
+
+  # this module poopulates the reference genotypes from a file.
+  import module reference-genotypes-populator modules/referenceGenotypesPopulator.xml
+
+  # run the module update GENOTYPE / SUBTYPE for refseqs from file.
+  module reference-genotypes-populator populate -f referenceGenotypes.txt
+ 
+  # The genotypes of these reference sequences were provided by D. Smith, in the alignment file.
+  set sequence-field -w "source.name = 'ncbi-refseqs'" GENOTYPING_METHOD "Provided with alignment"
+  
+  # module to import the unconstrained alignment.
+  import module unconstrained-fasta-importer modules/hcvFastaAlignmentImporter.xml
+ 
+  # create an unconstrained alignment
+  create alignment AL_UNCONSTRAINED
+    
+  # import the unconstrained alignment from Donald Smith's FASTA file.
+  module unconstrained-fasta-importer import AL_UNCONSTRAINED -f Donald_Smith_HCV_alignment_May_26_2015.filtered.fasta
+  

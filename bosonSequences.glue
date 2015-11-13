@@ -7,3 +7,8 @@ import module boson-rega-subtype-populator boson/regaResultPopulatorSubtype.xml
 module boson-fasta-importer import -f boson/Boson_whole_genome.fasta
 module boson-rega-genotype-populator populate -f boson/regaResult.txt 
 module boson-rega-subtype-populator populate -f boson/regaResult.txt 
+
+copy sequence-field -w "source.name = 'boson' and REGA_GENOTYPE != null" REGA_GENOTYPE GENOTYPE
+copy sequence-field -w "source.name = 'boson' and REGA_SUBTYPE != null" REGA_SUBTYPE SUBTYPE
+set sequence-field -w "source.name = 'boson' and REGA_GENOTYPE != null" GENOTYPING_METHOD "REGA genotyping tool"
+
