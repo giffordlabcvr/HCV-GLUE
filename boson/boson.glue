@@ -12,3 +12,7 @@ copy sequence-field -w "source.name = 'boson' and REGA_GENOTYPE != null" REGA_GE
 copy sequence-field -w "source.name = 'boson' and REGA_SUBTYPE != null" REGA_SUBTYPE SUBTYPE
 set sequence-field -w "source.name = 'boson' and REGA_GENOTYPE != null" GENOTYPING_METHOD "REGA genotyping tool"
 
+run file boson/addBosonToAlignments.glue
+
+
+

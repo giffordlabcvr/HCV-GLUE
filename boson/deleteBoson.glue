@@ -1,0 +1,7 @@
+delete source boson
+delete module boson-fasta-importer
+delete module boson-rega-genotype-populator
+delete module boson-rega-subtype-populator
+
+
+

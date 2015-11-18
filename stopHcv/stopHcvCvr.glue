@@ -1,0 +1,11 @@
+# file to import STOP-HCV CVR sequences, add them to the relevant alignments, and BLAST align 
+
+create source stopHcvCvr
+
+import module stopHcvCvr-fastaImporter stopHcv/fastaImporter.xml  
+module stopHcvCvr-fastaImporter import -f stopHcv/stopHcvCvr.fasta
+
+set sequence-field -w "source.name = 'stopHcvCvr' and GENOTYPE != null" GENOTYPING_METHOD "Supplied in FASTA header"
+
+run file stopHcv/addStopHcvCvrToAlignments.glue
+

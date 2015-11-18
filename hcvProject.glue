@@ -23,5 +23,14 @@ project HCV
   # build tree of alignments, with relevant reference sequences.
   run file hcvAlignmentTree.glue
 
+  # drug resistance variation category + variations
+  run file hcvDrugResistance.glue
+
+  # common polymorphisms variation categories 
+  run file hcvCommonPolymorphismCategories.glue
+
+  # common polymorphisms variations
+  run file hcvCommonPolymorphisms.glue
+
   validate
   
