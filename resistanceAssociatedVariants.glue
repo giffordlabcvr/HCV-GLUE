@@ -1,0 +1,32 @@
+create variation-category resistance_associated
+variation-category resistance_associated
+  set notifiability NOTIFIABLE
+  exit
+
+module mutationFrequencies
+  generate variation H77_AF009606 NS3 36 L -c resistance_associated
+  generate variation H77_AF009606 NS3 36 A -c resistance_associated
+  generate variation H77_AF009606 NS3 43 S -c resistance_associated
+  generate variation H77_AF009606 NS3 54 A -c resistance_associated
+  generate variation H77_AF009606 NS3 80 K -c resistance_associated
+  generate variation H77_AF009606 NS3 122 R -c resistance_associated
+  generate variation H77_AF009606 NS3 122 G -c resistance_associated
+  generate variation H77_AF009606 NS3 122 K -c resistance_associated
+  generate variation H77_AF009606 NS3 122 N -c resistance_associated
+  generate variation H77_AF009606 NS3 122 T -c resistance_associated
+  generate variation H77_AF009606 NS3 155 Q -c resistance_associated
+  generate variation H77_AF009606 NS3 168 E -c resistance_associated
+  generate variation H77_AF009606 NS3 168 G -c resistance_associated
+  generate variation H77_AF009606 NS3 168 Q -c resistance_associated
+
+  generate variation H77_AF009606 NS5A 30 R -c resistance_associated
+  generate variation H77_AF009606 NS5A 31 M -c resistance_associated
+  generate variation H77_AF009606 NS5A 93 H -c resistance_associated
+  generate variation H77_AF009606 NS5A 93 S -c resistance_associated
+
+  generate variation H77_AF009606 NS5B 282 T -c resistance_associated
+  generate variation H77_AF009606 NS5B 316 N -c resistance_associated
+  generate variation H77_AF009606 NS5B 419 S -c resistance_associated
+  generate variation H77_AF009606 NS5B 419 V -c resistance_associated
+
+  exit
