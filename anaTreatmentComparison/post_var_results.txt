@@ -1,0 +1,231 @@
+GLUE> project HCV
+OK
+GLUE> module mutationFrequencies
+OK
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 A_1_S
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-61_S61          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_71_T
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-25_S25          |
+| AL_3a          | treatmentComparison  | S27-52_S52          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_256_C
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-40_S40          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 E_357_T
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | 23S12_S23           |
+| AL_3a          | treatmentComparison  | S27-32_S32          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 K_380_R
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-25_S25          |
+| AL_3a          | treatmentComparison  | S27-52_S52          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 L_384_I
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-29_S29          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_399_T
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-29_S29          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 T_402_P
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S24-31_S31          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_511_I
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-61_S61          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A T_21_R
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-61_S61          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A L_31_I
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-38_S38          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A N_105_S
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-61_S61          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A F_108_C
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | 23S12_S23           |
+| AL_3a          | treatmentComparison  | S27-32_S32          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A P_223_S
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-25_S25          |
+| AL_3a          | treatmentComparison  | S27-52_S52          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A T_367_D
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-38_S38          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A E_374_V
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S24-31_S31          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A D_407_I
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-43_S43          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B V_37_D
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-28_S28          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B Q_49_N
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-28_S28          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B V_59_M
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-44_S44          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B A_73_G
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-40_S40          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B E_150_I
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-34_S34          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B L_159_F
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-25_S25          |
+| AL_3a          | treatmentComparison  | S27-52_S52          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B F_203_C
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-29_S29          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B V_251_R
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-61_S61          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B C_289_L
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-61_S61          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B R_300_A
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-40_S40          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B V_322_L
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-40_S40          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B A_334_S
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-38_S38          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B K_379_M
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S24-31_S31          |
++================+======================+=====================+
+
+GLUE> alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B S_478_T
++================+======================+=====================+
+| alignment.name | sequence.source.name | sequence.sequenceID |
++================+======================+=====================+
+| AL_3a          | treatmentComparison  | S27-34_S34          |
++================+======================+=====================+
+
+GLUEtools version 0.1.36
+Mode path: /project/HCV/module/mutationFrequencies
+Option load-save-path: /Users/joshsinger/gitrepos_ssh/hcvGlue
+GLUE> 

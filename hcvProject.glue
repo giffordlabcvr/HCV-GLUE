@@ -6,9 +6,7 @@ run file fieldDefinitions.glue
  
 project HCV
 
-  set setting ignore-nt-sequence-hyphens true
-  set setting translate-beyond-possible-stop true
-  set setting translate-orf-descendents-directly true
+  run file projectSettings.glue
   
   # create modules from files
   import module mutationFrequencies modules/hcvMutationFrequencies.xml

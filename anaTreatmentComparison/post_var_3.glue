@@ -1,0 +1,9 @@
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 A_1_S
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_71_T
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_256_C
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 E_357_T
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 K_380_R
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 L_384_I
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_399_T
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 T_402_P
+alignment scan variation AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 V_511_I

@@ -1,0 +1,93 @@
+delete project HCV
+
+create project HCV "HCV mutation analysis"
+
+run file fieldDefinitions.glue
+
+schema-project HCV
+  table SEQUENCES
+    create field RESPONDED BOOLEAN
+    create field POST_TREATMENT BOOLEAN
+    exit
+  exit
+ 
+project HCV
+
+  run file projectSettings.glue
+  
+  # create modules from files
+  import module mutationFrequencies modules/hcvMutationFrequencies.xml
+  import module blastAligner modules/hcvBlastAligner.xml
+  
+  # reference sequences and their unconstrained alignment
+  run file referenceSequences.glue
+
+  # build master reference, with features.
+  run file hcvFeatures.glue
+  
+  # build tree of alignments, with relevant reference sequences.
+  run file hcvAlignmentTree.glue
+
+  # drug resistance variation category + variations
+  run file resistanceAssociatedVariants.glue
+  
+  # import the sequences.
+  import module fastaImporter anaTreatmentComparison/fastaImporter.xml
+  
+  # baseline non-responders
+  module fastaImporter import -f anaTreatmentComparison/consensusBNR3a.fasta
+  create source baseNonResponders
+  move sequence baseNonResponders -w "source.name = 'treatmentComparison'"
+  set sequence-field -w "source.name = 'baseNonResponders'" RESPONDED false
+  set sequence-field -w "source.name = 'baseNonResponders'" POST_TREATMENT false
+  
+  # baseline responders
+  module fastaImporter import -f anaTreatmentComparison/consensusBR3a.fasta 
+  create source baseResponders
+  move sequence baseResponders -w "source.name = 'treatmentComparison'"
+  set sequence-field -w "source.name = 'baseResponders'" RESPONDED true
+  set sequence-field -w "source.name = 'baseResponders'" POST_TREATMENT false
+
+  # post-treatment non-responders
+  module fastaImporter import -f anaTreatmentComparison/consensusPT3a.fasta 
+  create source postNonResponders
+  move sequence postNonResponders -w "source.name = 'treatmentComparison'"
+  set sequence-field -w "source.name = 'postNonResponders'" RESPONDED false
+  set sequence-field -w "source.name = 'postNonResponders'" POST_TREATMENT true
+  
+  move sequence treatmentComparison -w "source.name = 'baseNonResponders'" 
+  move sequence treatmentComparison -w "source.name = 'baseResponders'" 
+  move sequence treatmentComparison -w "source.name = 'postNonResponders'" 
+
+  delete source baseNonResponders
+  delete source baseResponders
+  delete source postNonResponders
+
+  run file anaTreatmentComparison/addToAlignments.glue
+
+#  list sequence -w "source.name = 'treatmentComparison'" sequenceID GENOTYPE SUBTYPE RESPONDED POST_TREATMENT 
+
+#  module mutationFrequencies alignment scan variation-category AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 resistance_associated
+#  module mutationFrequencies alignment scan variation-category AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A resistance_associated
+#  module mutationFrequencies alignment scan variation-category AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5B resistance_associated
+
+create variation-category base_responder
+
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = true and sequence.POST_TREATMENT = false" H77_AF009606 NS3 -c base_responder
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = true and sequence.POST_TREATMENT = false" H77_AF009606 NS5A -c base_responder
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = true and sequence.POST_TREATMENT = false" H77_AF009606 NS5B -c base_responder
+
+create variation-category post_non_responder
+
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = false and sequence.POST_TREATMENT = true" H77_AF009606 NS3 -c post_non_responder
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = false and sequence.POST_TREATMENT = true" H77_AF009606 NS5A -c post_non_responder
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = false and sequence.POST_TREATMENT = true" H77_AF009606 NS5B -c post_non_responder
+
+create variation-category base_non_responder
+
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = false and sequence.POST_TREATMENT = false" H77_AF009606 NS3 -c base_non_responder
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = false and sequence.POST_TREATMENT = false" H77_AF009606 NS5A -c base_non_responder
+module mutationFrequencies generate common variations AL_MASTER -r -w "sequence.source.name = 'treatmentComparison' and sequence.RESPONDED = false and sequence.POST_TREATMENT = false" H77_AF009606 NS5B -c base_non_responder
+  
+  validate
+  

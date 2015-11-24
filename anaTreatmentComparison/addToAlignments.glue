@@ -1,0 +1,10 @@
+
+    alignment AL_1a add member -w "source.name = 'treatmentComparison' and GENOTYPE = '1' and SUBTYPE = 'a'"
+    compute alignment AL_1a blastAligner -w "sequence.source.name = 'treatmentComparison'"
+    alignment AL_1a show statistics   
+
+    alignment AL_3a add member -w "source.name = 'treatmentComparison' and GENOTYPE = '3' and SUBTYPE = 'a'"
+    compute alignment AL_3a blastAligner -w "sequence.source.name = 'treatmentComparison'"
+    alignment AL_3a show statistics   
+
+

@@ -1,0 +1,518 @@
+name,transcriptionType,regex,description,variationCategories
+S_1_A,AMINO_ACID,[A],-,base_responder
+S_1_C,AMINO_ACID,[C],-,base_responder, post_non_responder
+G_2_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+S_3_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+S_3_E,AMINO_ACID,[E],-,base_non_responder, base_responder
+S_3_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+S_3_N,AMINO_ACID,[N],-,base_responder
+R_6_H,AMINO_ACID,[H],-,base_non_responder, base_responder
+D_7_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+D_7_F,AMINO_ACID,[F],-,base_responder
+D_7_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+D_7_P,AMINO_ACID,[P],-,base_non_responder, base_responder
+D_7_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+D_7_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+D_7_V,AMINO_ACID,[V],-,base_non_responder, post_non_responder
+I_8_V,AMINO_ACID,[V],-,base_responder
+W_9_F,AMINO_ACID,[F],-,base_responder
+W_9_Y,AMINO_ACID,[Y],-,base_non_responder
+D_10_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+I_12_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+C_13_A,AMINO_ACID,[A],-,base_responder, post_non_responder
+C_13_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+C_13_S,AMINO_ACID,[S],-,base_non_responder, base_responder
+C_13_T,AMINO_ACID,[T],-,base_non_responder
+E_14_G,AMINO_ACID,[G],-,base_responder
+E_14_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+E_14_M,AMINO_ACID,[M],-,base_non_responder, base_responder, post_non_responder
+E_14_Q,AMINO_ACID,[Q],-,base_responder
+E_14_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+E_14_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+V_15_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+L_16_V,AMINO_ACID,[V],-,base_responder
+S_17_A,AMINO_ACID,[A],-,base_responder
+S_17_T,AMINO_ACID,[T],-,base_responder
+S_17_Y,AMINO_ACID,[Y],-,base_non_responder, post_non_responder
+K_20_R,AMINO_ACID,[R],-,base_non_responder, base_responder
+T_21_A,AMINO_ACID,[A],-,base_non_responder, base_responder
+T_21_M,AMINO_ACID,[M],-,base_responder
+T_21_R,AMINO_ACID,[R],-,post_non_responder
+T_21_V,AMINO_ACID,[V],-,base_non_responder
+K_24_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+K_24_C,AMINO_ACID,[C],-,base_responder
+K_24_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+A_25_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+K_26_R,AMINO_ACID,[R],-,base_non_responder
+L_27_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+L_27_V,AMINO_ACID,[V],-,base_responder
+M_28_I,AMINO_ACID,[I],-,base_non_responder
+M_28_V,AMINO_ACID,[V],-,base_responder
+Q_30_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+Q_30_K,AMINO_ACID,[K],-,base_responder
+Q_30_R,AMINO_ACID,[R],-,resistance_associated
+Q_30_S,AMINO_ACID,[S],-,base_responder, post_non_responder
+Q_30_T,AMINO_ACID,[T],-,base_non_responder
+Q_30_V,AMINO_ACID,[V],-,base_responder
+L_31_I,AMINO_ACID,[I],-,post_non_responder
+L_31_M,AMINO_ACID,[M],-,resistance_associated
+I_34_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+F_36_L,AMINO_ACID,[L],-,base_non_responder
+V_37_F,AMINO_ACID,[F],-,base_responder
+V_37_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+V_37_L,AMINO_ACID,[L],-,base_non_responder, base_responder
+R_41_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+R_44_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+V_46_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+G_49_S,AMINO_ACID,[S],-,base_responder
+I_52_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+M_53_I,AMINO_ACID,[I],-,base_responder
+M_53_T,AMINO_ACID,[T],-,base_non_responder, base_responder
+M_53_V,AMINO_ACID,[V],-,base_non_responder, base_responder
+H_54_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+H_54_T,AMINO_ACID,[T],-,base_non_responder, base_responder
+H_54_W,AMINO_ACID,[W],-,base_non_responder
+T_55_A,AMINO_ACID,[A],-,base_responder, post_non_responder
+H_58_A,AMINO_ACID,[A],-,base_non_responder, base_responder
+H_58_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+E_62_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+E_62_M,AMINO_ACID,[M],-,base_non_responder
+E_62_Q,AMINO_ACID,[Q],-,base_non_responder
+E_62_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+E_62_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+E_62_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+I_63_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+I_63_V,AMINO_ACID,[V],-,base_non_responder, post_non_responder
+T_64_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+T_64_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+K_68_R,AMINO_ACID,[R],-,base_non_responder, base_responder
+T_71_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+I_74_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+I_74_M,AMINO_ACID,[M],-,base_responder
+V_75_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+V_75_T,AMINO_ACID,[T],-,base_non_responder, post_non_responder
+T_79_A,AMINO_ACID,[A],-,base_non_responder, base_responder
+T_79_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+T_79_M,AMINO_ACID,[M],-,base_non_responder, base_responder
+T_79_R,AMINO_ACID,[R],-,base_non_responder, base_responder
+R_81_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+M_83_I,AMINO_ACID,[I],-,base_responder
+M_83_T,AMINO_ACID,[T],-,base_non_responder, base_responder
+M_83_V,AMINO_ACID,[V],-,base_responder
+S_85_C,AMINO_ACID,[C],-,base_non_responder
+S_85_H,AMINO_ACID,[H],-,base_non_responder, base_responder, post_non_responder
+S_85_Y,AMINO_ACID,[Y],-,base_non_responder, base_responder, post_non_responder
+A_92_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+Y_93_H,AMINO_ACID,[H],-,base_non_responder, post_non_responder, resistance_associated
+Y_93_S,AMINO_ACID,[S],-,resistance_associated
+T_95_S,AMINO_ACID,[S],-,base_non_responder, post_non_responder
+C_98_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+C_98_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+T_99_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+L_101_C,AMINO_ACID,[C],-,base_non_responder, base_responder, post_non_responder
+A_103_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+A_103_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+A_103_W,AMINO_ACID,[W],-,base_responder
+P_104_A,AMINO_ACID,[A],-,base_non_responder
+P_104_L,AMINO_ACID,[L],-,base_non_responder, post_non_responder
+P_104_S,AMINO_ACID,[S],-,base_responder
+P_104_Y,AMINO_ACID,[Y],-,base_non_responder, post_non_responder
+N_105_S,AMINO_ACID,[S],-,post_non_responder
+Y_106_F,AMINO_ACID,[F],-,base_responder
+K_107_A,AMINO_ACID,[A],-,base_responder
+K_107_N,AMINO_ACID,[N],-,base_responder
+K_107_S,AMINO_ACID,[S],-,base_responder
+K_107_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+F_108_C,AMINO_ACID,[C],-,post_non_responder
+F_108_H,AMINO_ACID,[H],-,base_non_responder
+F_108_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+W_111_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+S_114_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+A_115_P,AMINO_ACID,[P],-,base_non_responder
+E_116_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+E_116_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+E_116_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+E_117_G,AMINO_ACID,[G],-,base_non_responder
+E_117_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+I_121_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+R_122_H,AMINO_ACID,[H],-,base_responder
+R_122_L,AMINO_ACID,[L],-,base_responder
+R_123_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+V_124_A,AMINO_ACID,[A],-,base_responder
+V_124_E,AMINO_ACID,[E],-,base_non_responder
+V_124_L,AMINO_ACID,[L],-,base_non_responder
+F_127_Y,AMINO_ACID,[Y],-,base_non_responder, base_responder, post_non_responder
+V_130_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+S_131_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+S_131_V,AMINO_ACID,[V],-,base_non_responder
+M_133_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+M_133_V,AMINO_ACID,[V],-,base_non_responder
+T_135_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+N_137_A,AMINO_ACID,[A],-,base_non_responder, post_non_responder
+N_137_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+N_137_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+I_144_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+S_146_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+P_147_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+P_147_T,AMINO_ACID,[T],-,base_responder, post_non_responder
+E_152_Q,AMINO_ACID,[Q],-,base_responder
+E_152_V,AMINO_ACID,[V],-,base_non_responder
+L_153_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+V_156_I,AMINO_ACID,[I],-,base_non_responder, post_non_responder
+L_158_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+F_161_H,AMINO_ACID,[H],-,base_responder
+F_161_Y,AMINO_ACID,[Y],-,base_non_responder, base_responder, post_non_responder
+P_164_K,AMINO_ACID,[K],-,base_responder
+P_164_Q,AMINO_ACID,[Q],-,base_responder
+K_166_G,AMINO_ACID,[G],-,base_responder
+K_166_R,AMINO_ACID,[R],-,base_responder
+P_167_A,AMINO_ACID,[A],-,base_non_responder, base_responder
+R_170_K,AMINO_ACID,[K],-,base_non_responder, base_responder
+E_171_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+E_172_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+V_173_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+S_174_N,AMINO_ACID,[N],-,base_responder, post_non_responder
+S_174_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+R_176_A,AMINO_ACID,[A],-,base_responder
+R_176_I,AMINO_ACID,[I],-,base_responder
+R_176_M,AMINO_ACID,[M],-,base_non_responder, base_responder, post_non_responder
+R_176_S,AMINO_ACID,[S],-,base_responder
+R_176_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+R_176_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+L_179_M,AMINO_ACID,[M],-,base_non_responder, base_responder, post_non_responder
+H_180_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+E_181_D,AMINO_ACID,[D],-,base_responder
+E_181_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+P_183_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+P_183_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+P_183_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+V_184_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+P_194_L,AMINO_ACID,[L],-,base_non_responder, base_responder
+A_197_D,AMINO_ACID,[D],-,base_responder
+A_197_F,AMINO_ACID,[F],-,base_non_responder, base_responder, post_non_responder
+A_197_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+V_198_I,AMINO_ACID,[I],-,base_responder
+L_199_M,AMINO_ACID,[M],-,base_responder
+T_200_S,AMINO_ACID,[S],-,base_responder, post_non_responder
+M_202_L,AMINO_ACID,[L],-,base_responder
+T_204_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+T_204_S,AMINO_ACID,[S],-,base_responder
+S_207_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+S_207_P,AMINO_ACID,[P],-,base_non_responder
+I_209_V,AMINO_ACID,[V],-,base_responder
+T_210_S,AMINO_ACID,[S],-,base_responder
+A_213_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+G_215_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+P_223_S,AMINO_ACID,[S],-,post_non_responder
+M_226_D,AMINO_ACID,[D],-,base_non_responder
+M_226_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+M_226_L,AMINO_ACID,[L],-,base_responder
+A_231_V,AMINO_ACID,[V],-,base_responder
+P_237_A,AMINO_ACID,[A],-,base_responder
+P_237_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+P_237_M,AMINO_ACID,[M],-,base_responder
+L_239_M,AMINO_ACID,[M],-,base_responder
+K_240_R,AMINO_ACID,[R],-,base_responder
+T_242_N,AMINO_ACID,[N],-,base_responder
+T_244_D,AMINO_ACID,[D],-,base_responder
+T_244_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+T_244_H,AMINO_ACID,[H],-,base_non_responder, base_responder, post_non_responder
+T_244_K,AMINO_ACID,[K],-,base_responder
+T_244_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+T_244_Y,AMINO_ACID,[Y],-,base_responder
+A_245_S,AMINO_ACID,[S],-,base_responder, post_non_responder
+A_245_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+N_246_H,AMINO_ACID,[H],-,base_non_responder, base_responder, post_non_responder
+H_247_A,AMINO_ACID,[A],-,base_non_responder
+H_247_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+H_247_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+H_247_S,AMINO_ACID,[S],-,base_responder, post_non_responder
+H_247_T,AMINO_ACID,[T],-,base_non_responder
+H_247_W,AMINO_ACID,[W],-,base_responder, post_non_responder
+D_248_H,AMINO_ACID,[H],-,base_non_responder
+D_248_L,AMINO_ACID,[L],-,base_non_responder, base_responder
+D_248_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+D_248_S,AMINO_ACID,[S],-,base_non_responder
+S_249_H,AMINO_ACID,[H],-,base_non_responder, base_responder, post_non_responder
+S_249_Y,AMINO_ACID,[Y],-,base_responder
+P_250_L,AMINO_ACID,[L],-,base_responder, post_non_responder
+P_250_S,AMINO_ACID,[S],-,base_responder
+A_252_T,AMINO_ACID,[T],-,base_responder
+A_252_V,AMINO_ACID,[V],-,base_non_responder, base_responder
+I_255_L,AMINO_ACID,[L],-,base_responder
+I_255_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+E_256_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+A_257_V,AMINO_ACID,[V],-,base_non_responder, base_responder
+R_262_Q,AMINO_ACID,[Q],-,base_responder
+Q_263_K,AMINO_ACID,[K],-,base_responder
+E_264_A,AMINO_ACID,[A],-,base_responder
+E_264_T,AMINO_ACID,[T],-,base_non_responder
+G_267_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+N_268_D,AMINO_ACID,[D],-,base_non_responder, base_responder
+N_268_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+I_269_L,AMINO_ACID,[L],-,base_responder
+E_275_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+E_275_K,AMINO_ACID,[K],-,base_responder
+N_276_S,AMINO_ACID,[S],-,base_responder
+N_276_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+I_280_V,AMINO_ACID,[V],-,base_non_responder, base_responder
+F_284_L,AMINO_ACID,[L],-,base_responder, post_non_responder
+D_285_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+L_287_M,AMINO_ACID,[M],-,base_non_responder, base_responder, post_non_responder
+V_288_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+V_288_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+V_288_S,AMINO_ACID,[S],-,base_responder
+E_290_D,AMINO_ACID,[D],-,base_responder
+E_290_G,AMINO_ACID,[G],-,base_responder, post_non_responder
+E_291_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+E_291_D,AMINO_ACID,[D],-,base_non_responder, base_responder
+E_291_H,AMINO_ACID,[H],-,base_responder
+E_291_I,AMINO_ACID,[I],-,base_responder
+E_291_L,AMINO_ACID,[L],-,base_non_responder
+E_291_N,AMINO_ACID,[N],-,base_responder, post_non_responder
+E_291_P,AMINO_ACID,[P],-,base_non_responder, base_responder
+E_291_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+E_291_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+E_291_Y,AMINO_ACID,[Y],-,base_responder
+D_292_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+D_292_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+D_292_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+D_292_T,AMINO_ACID,[T],-,base_responder
+E_293_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+R_294_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+R_294_D,AMINO_ACID,[D],-,base_responder
+R_294_F,AMINO_ACID,[F],-,base_non_responder
+R_294_G,AMINO_ACID,[G],-,base_non_responder, post_non_responder
+R_294_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+R_294_L,AMINO_ACID,[L],-,base_responder
+R_294_N,AMINO_ACID,[N],-,base_non_responder, base_responder
+R_294_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+R_294_V,AMINO_ACID,[V],-,base_non_responder, base_responder
+V_296_I,AMINO_ACID,[I],-,base_responder
+V_296_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+V_296_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+V_298_A,AMINO_ACID,[A],-,base_responder
+V_298_I,AMINO_ACID,[I],-,base_responder
+P_299_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+A_300_S,AMINO_ACID,[S],-,base_responder
+I_302_C,AMINO_ACID,[C],-,base_non_responder, base_responder, post_non_responder
+L_303_F,AMINO_ACID,[F],-,base_non_responder, base_responder, post_non_responder
+R_304_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+K_305_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+S_306_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+R_307_H,AMINO_ACID,[H],-,base_non_responder, base_responder, post_non_responder
+R_307_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+R_307_S,AMINO_ACID,[S],-,base_responder
+R_308_E,AMINO_ACID,[E],-,base_responder
+R_308_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+F_309_Y,AMINO_ACID,[Y],-,base_non_responder, base_responder, post_non_responder
+A_310_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+A_310_V,AMINO_ACID,[V],-,base_responder
+R_311_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+R_311_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+V_315_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+P_319_A,AMINO_ACID,[A],-,base_responder
+V_326_I,AMINO_ACID,[I],-,base_non_responder, post_non_responder
+V_326_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+E_327_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+T_328_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+T_328_S,AMINO_ACID,[S],-,base_responder
+K_330_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+K_331_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+K_331_E,AMINO_ACID,[E],-,base_responder
+K_331_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+K_331_T,AMINO_ACID,[T],-,base_non_responder, base_responder
+P_332_Q,AMINO_ACID,[Q],-,base_non_responder, post_non_responder
+P_332_S,AMINO_ACID,[S],-,base_non_responder, post_non_responder
+E_335_A,AMINO_ACID,[A],-,base_responder
+E_335_I,AMINO_ACID,[I],-,base_responder
+E_335_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+E_335_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+P_336_A,AMINO_ACID,[A],-,base_responder
+V_338_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+V_338_L,AMINO_ACID,[L],-,base_non_responder, base_responder
+V_338_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+H_340_Y,AMINO_ACID,[Y],-,base_responder
+P_343_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+P_346_S,AMINO_ACID,[S],-,base_responder
+P_347_E,AMINO_ACID,[E],-,base_responder
+P_347_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+P_347_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+P_347_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+P_347_S,AMINO_ACID,[S],-,base_responder
+R_348_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+R_348_D,AMINO_ACID,[D],-,base_responder
+R_348_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+R_348_P,AMINO_ACID,[P],-,base_responder
+R_348_Q,AMINO_ACID,[Q],-,base_responder
+R_348_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+S_349_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+S_349_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+V_352_I,AMINO_ACID,[I],-,base_non_responder
+K_357_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+K_358_R,AMINO_ACID,[R],-,base_responder
+R_359_K,AMINO_ACID,[K],-,base_non_responder
+T_360_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+T_360_I,AMINO_ACID,[I],-,base_non_responder
+T_360_M,AMINO_ACID,[M],-,base_non_responder, base_responder
+V_361_I,AMINO_ACID,[I],-,base_non_responder, base_responder, post_non_responder
+V_362_H,AMINO_ACID,[H],-,base_responder
+V_362_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+V_362_R,AMINO_ACID,[R],-,base_non_responder, post_non_responder
+T_364_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+T_364_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+E_365_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+E_365_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+E_365_N,AMINO_ACID,[N],-,base_responder
+E_365_S,AMINO_ACID,[S],-,base_non_responder, base_responder
+T_367_D,AMINO_ACID,[D],-,post_non_responder
+T_367_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+T_367_S,AMINO_ACID,[S],-,base_responder, post_non_responder
+L_368_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+T_370_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+T_370_E,AMINO_ACID,[E],-,base_responder, post_non_responder
+T_370_M,AMINO_ACID,[M],-,base_responder
+T_370_V,AMINO_ACID,[V],-,base_non_responder
+A_373_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+A_373_M,AMINO_ACID,[M],-,base_responder
+A_373_S,AMINO_ACID,[S],-,base_non_responder, base_responder
+A_373_T,AMINO_ACID,[T],-,base_responder
+E_374_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+E_374_T,AMINO_ACID,[T],-,base_responder
+E_374_V,AMINO_ACID,[V],-,post_non_responder
+T_377_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+K_378_A,AMINO_ACID,[A],-,base_responder
+K_378_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+S_379_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+G_381_L,AMINO_ACID,[L],-,base_non_responder, base_responder
+G_381_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+G_381_S,AMINO_ACID,[S],-,base_responder
+S_382_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+S_382_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+S_382_T,AMINO_ACID,[T],-,base_non_responder, post_non_responder
+S_383_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+S_383_K,AMINO_ACID,[K],-,base_responder
+S_383_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+S_383_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+S_383_Q,AMINO_ACID,[Q],-,base_responder
+S_383_T,AMINO_ACID,[T],-,base_responder
+S_384_A,AMINO_ACID,[A],-,base_non_responder
+S_384_E,AMINO_ACID,[E],-,base_responder
+S_384_I,AMINO_ACID,[I],-,base_responder, post_non_responder
+S_384_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+S_384_N,AMINO_ACID,[N],-,base_non_responder, base_responder
+S_384_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+T_385_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+T_385_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+T_385_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder
+T_385_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+S_386_P,AMINO_ACID,[P],-,base_non_responder, post_non_responder
+S_386_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+S_386_R,AMINO_ACID,[R],-,base_non_responder, base_responder
+G_387_D,AMINO_ACID,[D],-,base_non_responder, base_responder
+G_387_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+G_387_K,AMINO_ACID,[K],-,base_non_responder
+I_388_D,AMINO_ACID,[D],-,base_responder
+I_388_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+I_388_G,AMINO_ACID,[G],-,base_non_responder, base_responder
+I_388_N,AMINO_ACID,[N],-,base_responder
+T_389_D,AMINO_ACID,[D],-,base_non_responder, base_responder
+T_389_G,AMINO_ACID,[G],-,base_responder
+T_389_K,AMINO_ACID,[K],-,base_non_responder, post_non_responder
+T_389_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+T_389_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+G_390_C,AMINO_ACID,[C],-,base_non_responder
+G_390_D,AMINO_ACID,[D],-,base_responder
+G_390_I,AMINO_ACID,[I],-,base_non_responder, post_non_responder
+G_390_N,AMINO_ACID,[N],-,base_responder
+G_390_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+G_390_T,AMINO_ACID,[T],-,base_non_responder
+D_391_A,AMINO_ACID,[A],-,base_responder
+D_391_L,AMINO_ACID,[L],-,base_responder
+D_391_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+N_392_P,AMINO_ACID,[P],-,base_responder
+N_392_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+T_393_P,AMINO_ACID,[P],-,base_responder
+T_393_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+T_393_Y,AMINO_ACID,[Y],-,base_non_responder, post_non_responder
+T_394_G,AMINO_ACID,[G],-,base_non_responder, base_responder, post_non_responder
+T_395_A,AMINO_ACID,[A],-,base_responder
+T_395_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+T_395_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+S_396_A,AMINO_ACID,[A],-,base_responder
+S_396_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+S_396_E,AMINO_ACID,[E],-,base_responder
+S_396_G,AMINO_ACID,[G],-,base_responder
+S_397_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+S_397_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+E_398_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+E_398_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+P_399_F,AMINO_ACID,[F],-,base_responder
+P_399_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+P_399_Y,AMINO_ACID,[Y],-,base_non_responder
+A_400_G,AMINO_ACID,[G],-,base_non_responder
+A_400_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+A_400_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+P_401_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+P_401_I,AMINO_ACID,[I],-,base_responder
+P_401_S,AMINO_ACID,[S],-,base_non_responder, post_non_responder
+P_401_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+P_401_V,AMINO_ACID,[V],-,base_responder
+S_402_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+S_402_I,AMINO_ACID,[I],-,base_non_responder, post_non_responder
+S_402_M,AMINO_ACID,[M],-,base_non_responder
+S_402_T,AMINO_ACID,[T],-,base_non_responder, base_responder, post_non_responder
+S_402_V,AMINO_ACID,[V],-,base_responder
+G_403_F,AMINO_ACID,[F],-,base_responder, post_non_responder
+G_403_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+G_403_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+G_403_V,AMINO_ACID,[V],-,base_responder
+C_404_E,AMINO_ACID,[E],-,base_responder
+C_404_G,AMINO_ACID,[G],-,base_responder
+C_404_K,AMINO_ACID,[K],-,base_non_responder, base_responder, post_non_responder
+C_404_M,AMINO_ACID,[M],-,base_non_responder, base_responder
+C_404_Q,AMINO_ACID,[Q],-,base_non_responder, post_non_responder
+C_404_R,AMINO_ACID,[R],-,base_non_responder, base_responder, post_non_responder
+P_405_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+P_405_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+P_405_M,AMINO_ACID,[M],-,base_responder
+P_405_T,AMINO_ACID,[T],-,base_responder
+P_405_V,AMINO_ACID,[V],-,base_non_responder, base_responder, post_non_responder
+P_406_A,AMINO_ACID,[A],-,base_responder
+P_406_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+P_406_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+D_407_H,AMINO_ACID,[H],-,base_non_responder
+D_407_I,AMINO_ACID,[I],-,post_non_responder
+D_407_L,AMINO_ACID,[L],-,base_non_responder, base_responder, post_non_responder
+D_407_P,AMINO_ACID,[P],-,base_non_responder, base_responder, post_non_responder
+D_407_S,AMINO_ACID,[S],-,base_non_responder
+V_410_A,AMINO_ACID,[A],-,base_non_responder, base_responder, post_non_responder
+V_410_R,AMINO_ACID,[R],-,base_non_responder, post_non_responder
+V_410_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+V_410_T,AMINO_ACID,[T],-,base_non_responder, base_responder
+E_411_D,AMINO_ACID,[D],-,base_responder
+Y_413_C,AMINO_ACID,[C],-,base_non_responder, base_responder, post_non_responder
+S_429_G,AMINO_ACID,[G],-,base_non_responder, base_responder
+D_430_C,AMINO_ACID,[C],-,base_non_responder, base_responder, post_non_responder
+D_430_E,AMINO_ACID,[E],-,base_responder
+D_430_S,AMINO_ACID,[S],-,base_responder
+G_431_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+G_431_E,AMINO_ACID,[E],-,base_responder
+V_436_I,AMINO_ACID,[I],-,base_non_responder, base_responder
+S_438_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+S_438_E,AMINO_ACID,[E],-,base_responder
+G_439_D,AMINO_ACID,[D],-,base_non_responder, base_responder, post_non_responder
+G_439_E,AMINO_ACID,[E],-,base_responder
+G_439_K,AMINO_ACID,[K],-,base_non_responder, base_responder
+G_439_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+G_439_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+D_441_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+T_442_A,AMINO_ACID,[A],-,base_responder
+T_442_E,AMINO_ACID,[E],-,base_non_responder, base_responder, post_non_responder
+T_442_G,AMINO_ACID,[G],-,base_non_responder, post_non_responder
+E_443_Q,AMINO_ACID,[Q],-,base_non_responder, base_responder, post_non_responder
+D_444_H,AMINO_ACID,[H],-,base_responder
+D_444_N,AMINO_ACID,[N],-,base_non_responder, base_responder, post_non_responder
+D_444_R,AMINO_ACID,[R],-,base_non_responder
+D_444_S,AMINO_ACID,[S],-,base_non_responder, base_responder, post_non_responder
+V_445_I,AMINO_ACID,[I],-,base_responder
