@@ -1,4 +1,4 @@
-create variation-category resistance_associated
+create variation-category resistance_associated  "Resistance-associated variant"
 variation-category resistance_associated
   set notifiability NOTIFIABLE
   exit

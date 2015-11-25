@@ -2,37 +2,37 @@ create variation-category common_polymorphism
 variation-category common_polymorphism
   set notifiability NOT_NOTIFIABLE
   exit
-create variation-category common_pm_geno_1
+create variation-category common_pm_geno_1 "Common (>1%) in Genotype 1"
 variation-category common_pm_geno_1
   set notifiability NOT_NOTIFIABLE
   set parent common_polymorphism
   exit
-create variation-category common_pm_geno_2
+create variation-category common_pm_geno_2 "Common (>1%) in Genotype 2"
 variation-category common_pm_geno_2
   set notifiability NOT_NOTIFIABLE
   set parent common_polymorphism
   exit
-create variation-category common_pm_geno_3
+create variation-category common_pm_geno_3 "Common (>1%) in Genotype 3"
 variation-category common_pm_geno_3
   set notifiability NOT_NOTIFIABLE
   set parent common_polymorphism
   exit
-create variation-category common_pm_geno_4
+create variation-category common_pm_geno_4 "Common (>1%) in Genotype 4"
 variation-category common_pm_geno_4
   set notifiability NOT_NOTIFIABLE
   set parent common_polymorphism
   exit
-create variation-category common_pm_geno_5
+create variation-category common_pm_geno_5 "Common (>1%) in Genotype 5"
 variation-category common_pm_geno_5
   set notifiability NOT_NOTIFIABLE
   set parent common_polymorphism
   exit
-create variation-category common_pm_geno_6
+create variation-category common_pm_geno_6 "Common (>1%) in Genotype 6"
 variation-category common_pm_geno_6
   set notifiability NOT_NOTIFIABLE
   set parent common_polymorphism
   exit
-create variation-category common_pm_geno_7
+create variation-category common_pm_geno_7 "Common (>1%) in Genotype 7"
 variation-category common_pm_geno_7
   set notifiability NOT_NOTIFIABLE
   set parent common_polymorphism
