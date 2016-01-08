@@ -1,57 +1,57 @@
   create feature whole_genome "Whole genome"
-    feature whole_genome set metatag INFORMATIONAL
+    feature whole_genome set metatag INFORMATIONAL true
 
     create feature 5UTR -p whole_genome "5' UTR"
 
     create feature precursor_polyprotein -p whole_genome "Precursor polyprotein"
-      feature precursor_polyprotein set metatag OPEN_READING_FRAME
-      feature precursor_polyprotein set metatag OWN_CODON_NUMBERING
+      feature precursor_polyprotein set metatag OPEN_READING_FRAME true
+      feature precursor_polyprotein set metatag OWN_CODON_NUMBERING true
 
       create feature structural_proteins -p precursor_polyprotein "Structural proteins"
-        feature structural_proteins set metatag INFORMATIONAL
+        feature structural_proteins set metatag INFORMATIONAL true
 
         create feature Core -p structural_proteins "Core"
-          feature Core set metatag OWN_CODON_NUMBERING
-          feature Core set metatag INCLUDE_IN_SUMMARY
+          feature Core set metatag OWN_CODON_NUMBERING true
+          feature Core set metatag INCLUDE_IN_SUMMARY true
 
         create feature E1 -p structural_proteins "E1"
-          feature E1 set metatag OWN_CODON_NUMBERING
-          feature E1 set metatag INCLUDE_IN_SUMMARY
+          feature E1 set metatag OWN_CODON_NUMBERING true
+          feature E1 set metatag INCLUDE_IN_SUMMARY true
 
         create feature E2 -p structural_proteins "E2"
-          feature E2 set metatag OWN_CODON_NUMBERING
-          feature E2 set metatag INCLUDE_IN_SUMMARY
+          feature E2 set metatag OWN_CODON_NUMBERING true
+          feature E2 set metatag INCLUDE_IN_SUMMARY true
 
       create feature non_structural_proteins -p precursor_polyprotein "Non-structural proteins"
-        feature non_structural_proteins set metatag INFORMATIONAL
+        feature non_structural_proteins set metatag INFORMATIONAL true
 
         create feature p7 -p non_structural_proteins "p7"
-          feature p7 set metatag OWN_CODON_NUMBERING
-          feature p7 set metatag INCLUDE_IN_SUMMARY
+          feature p7 set metatag OWN_CODON_NUMBERING true
+          feature p7 set metatag INCLUDE_IN_SUMMARY true
 
         create feature NS2 -p non_structural_proteins "NS2"
-          feature NS2 set metatag OWN_CODON_NUMBERING
-          feature NS2 set metatag INCLUDE_IN_SUMMARY
+          feature NS2 set metatag OWN_CODON_NUMBERING true
+          feature NS2 set metatag INCLUDE_IN_SUMMARY true
 
         create feature NS3 -p non_structural_proteins "NS3"
-          feature NS3 set metatag OWN_CODON_NUMBERING
-          feature NS3 set metatag INCLUDE_IN_SUMMARY
+          feature NS3 set metatag OWN_CODON_NUMBERING true
+          feature NS3 set metatag INCLUDE_IN_SUMMARY true
 
         create feature NS4A -p non_structural_proteins "NS4A"
-          feature NS4A set metatag OWN_CODON_NUMBERING
-          feature NS4A set metatag INCLUDE_IN_SUMMARY
+          feature NS4A set metatag OWN_CODON_NUMBERING true
+          feature NS4A set metatag INCLUDE_IN_SUMMARY true
 
         create feature NS4B -p non_structural_proteins "NS4B"
-          feature NS4B set metatag OWN_CODON_NUMBERING
-          feature NS4B set metatag INCLUDE_IN_SUMMARY
+          feature NS4B set metatag OWN_CODON_NUMBERING true
+          feature NS4B set metatag INCLUDE_IN_SUMMARY true
 
         create feature NS5A -p non_structural_proteins "NS5A"
-          feature NS5A set metatag OWN_CODON_NUMBERING
-          feature NS5A set metatag INCLUDE_IN_SUMMARY
+          feature NS5A set metatag OWN_CODON_NUMBERING true
+          feature NS5A set metatag INCLUDE_IN_SUMMARY true
 
         create feature NS5B -p non_structural_proteins "NS5B"
-          feature NS5B set metatag OWN_CODON_NUMBERING
-          feature NS5B set metatag INCLUDE_IN_SUMMARY
+          feature NS5B set metatag OWN_CODON_NUMBERING true
+          feature NS5B set metatag INCLUDE_IN_SUMMARY true
 
     create feature 3UTR -p whole_genome "3' UTR"
 
