@@ -10,4 +10,6 @@
   <updateExistingAlignment>true</updateExistingAlignment>
   <updateExistingMembers>false</updateExistingMembers>
   <allowAmbiguousSegments>true</allowAmbiguousSegments>
+  <minRowCoveragePercent>90.0</minRowCoveragePercent>
+  <minRowCorrectPercent>90.0</minRowCorrectPercent>
 </fastaAlignmentImporter>
