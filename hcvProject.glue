@@ -30,5 +30,8 @@ project HCV
   # resistance associated variation category + variations
   run file resistanceAssociatedVariants.glue
 
+  # epitope variation categories + variations
+  run file hcvEpitopes.glue
+
   validate
   

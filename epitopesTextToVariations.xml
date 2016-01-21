@@ -1,0 +1,31 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+reference H77_AF009606
+<#list rows as row>
+  <#if row.START != "" && row.END != "">
+  feature-location ${row.PROTEIN}
+  <#assign variationName>${row["Epitope name"]}</#assign>
+  <#assign variationDescription>Epitope ${variationName}</#assign>
+    create variation "${variationName}" -t AMINO_ACID "${variationDescription}"
+    variation "${variationName}"
+      set pattern ${row.Epitope} 
+      set location ${row.START} ${row.END}
+      <#assign effectorCellType>${row[" Effector Cell Type"]}</#assign>
+      <#if effectorCellType == "PBMC">
+      add category epitope_pbmc_effector
+      </#if>
+      <#if effectorCellType == "T cell">
+      add category epitope_t_cell_effector
+      </#if>
+      <#if effectorCellType == "T cell CD4+">
+      add category epitope_cd4_t_cell_effector
+      </#if>
+      <#if effectorCellType == "T cell CD8+">
+      add category epitope_cd8_t_cell_effector
+      </#if>
+      exit  
+    exit
+    </#if>  
+</#list>
+  exit]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>
