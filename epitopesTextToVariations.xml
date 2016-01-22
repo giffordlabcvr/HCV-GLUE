@@ -4,9 +4,9 @@ reference H77_AF009606
 <#list rows as row>
   <#if row.START != "" && row.END != "">
   feature-location ${row.PROTEIN}
-  <#assign variationName>${row["Epitope name"]}</#assign>
-  <#assign variationDescription>Epitope ${variationName}</#assign>
-    create variation "${variationName}" -t AMINO_ACID "${variationDescription}"
+  <#assign variationName>Epitope ${row["Epitope name"]}</#assign>
+  <#assign pubmedId>${row[" Pubmed ID"]}</#assign>
+    create variation "${variationName}" -t AMINO_ACID "http://www.ncbi.nlm.nih.gov/pubmed/${pubmedId}"
     variation "${variationName}"
       set pattern ${row.Epitope} 
       set location ${row.START} ${row.END}

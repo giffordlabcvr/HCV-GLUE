@@ -1,6 +1,7 @@
 <mutationFrequenciesReporter>
 	<alignerModuleName>blastAligner</alignerModuleName>
 	<generatedVariationNameTemplate>${refAA}${codon}${mutAA}</generatedVariationNameTemplate>
+	<generatedVariationDescriptionTemplate>Single amino acid variant</generatedVariationDescriptionTemplate>
 	<sam2ConsensusMinorityVariantFilter>
 		<minProportion>0.01</minProportion>
 	</sam2ConsensusMinorityVariantFilter>
