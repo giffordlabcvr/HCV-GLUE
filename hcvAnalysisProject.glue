@@ -9,8 +9,8 @@ project HCV
   run file projectSettings.glue
   
   # create modules from files
-  import module mutationFrequencies modules/hcvMutationFrequencies.xml
-  import module blastAligner modules/hcvBlastAligner.xml
+  create module --fileName modules/hcvMutationFrequencies.xml mutationFrequencies
+  create module --fileName modules/hcvBlastAligner.xml blastAligner
 
   # reference sequences and their unconstrained alignment
   run file referenceSequences.glue

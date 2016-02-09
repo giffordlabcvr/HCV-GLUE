@@ -3,7 +3,7 @@
   import source ncbi-curated
 
   # module to populate fields from Genbank XML
-  import module gb-populator modules/hcvGenbankXmlPopulator.xml
+  create module --fileName modules/hcvGenbankXmlPopulator.xml gb-populator
 
   # populate certain fields from Genbank XML.
   module gb-populator populate -w "source.name = 'ncbi-curated'"

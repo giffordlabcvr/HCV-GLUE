@@ -2,7 +2,7 @@
 
 create source stopHcvCvr
 
-import module stopHcvCvr-fastaImporter stopHcv/fastaImporter.xml  
+create module --fileName  stopHcvCvr-fastaImporter stopHcv/fastaImporter.xml 
 module stopHcvCvr-fastaImporter import -f stopHcv/stopHcvCvr.fasta
 
 set sequence-field -w "source.name = 'stopHcvCvr' and GENOTYPE != null" GENOTYPING_METHOD "Supplied in FASTA header"

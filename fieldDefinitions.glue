@@ -1,5 +1,5 @@
 schema-project HCV
-  table SEQUENCES
+  table SEQUENCE
     create field GB_GI_NUMBER VARCHAR
     create field GB_PRIMARY_ACCESSION VARCHAR
     create field GB_ACCESSION_VERSION VARCHAR
