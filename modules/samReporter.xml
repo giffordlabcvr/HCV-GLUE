@@ -1,0 +1,4 @@
+<samReporter>
+  <alignerModuleName>blastAligner</alignerModuleName>
+  <readLogInterval>30000</readLogInterval>
+</samReporter>

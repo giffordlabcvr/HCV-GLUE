@@ -32,6 +32,8 @@ project HCV
 
   # epitope variation categories + variations
   run file hcvEpitopes.glue
+  
+  create module --fileName modules/samReporter.xml samReporter
 
   validate
   
