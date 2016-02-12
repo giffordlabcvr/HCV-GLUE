@@ -4,7 +4,7 @@ reference H77_AF009606
 <#list rows as row>
   <#if row.START != "" && row.END != "">
   feature-location ${row.PROTEIN}
-  <#assign variationName>Epitope ${row["Epitope name"]}</#assign>
+  <#assign variationName>Epitope_${row["Epitope name"]?replace(" ", "_")}</#assign>
   <#assign pubmedId>${row[" Pubmed ID"]}</#assign>
     create variation "${variationName}" -t AMINO_ACID "http://www.ncbi.nlm.nih.gov/pubmed/${pubmedId}"
     variation "${variationName}"
