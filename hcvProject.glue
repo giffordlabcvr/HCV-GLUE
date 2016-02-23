@@ -32,6 +32,9 @@ project HCV
 
   # epitope variation categories + variations
   run file hcvEpitopes.glue
+
+  # reference sequences used by Emma's group, but not already covered above
+  run file hcvAdditionalRefs.glue
   
   create module --fileName modules/samReporter.xml samReporter
 
