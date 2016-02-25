@@ -12,7 +12,7 @@
   module reference-genotypes-populator populate -f referenceGenotypes.txt
  
   # The genotypes of these reference sequences were provided by D. Smith, in the alignment file.
-  set sequence-field -w "source.name = 'ncbi-refseqs'" GENOTYPING_METHOD "Provided with alignment"
+  multi-set field sequence -w "source.name = 'ncbi-refseqs'" GENOTYPING_METHOD "Provided with alignment"
   
   # module to import the unconstrained alignment.
   create module --fileName modules/hcvFastaAlignmentImporter.xml unconstrained-fasta-importer

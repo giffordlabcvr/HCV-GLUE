@@ -38,22 +38,22 @@ project HCV
   module fastaImporter import -f anaTreatmentComparison/consensusBNR3a.fasta
   create source baseNonResponders
   move sequence baseNonResponders -w "source.name = 'treatmentComparison'"
-  set sequence-field -w "source.name = 'baseNonResponders'" RESPONDED false
-  set sequence-field -w "source.name = 'baseNonResponders'" POST_TREATMENT false
+  multi-set field sequence -w "source.name = 'baseNonResponders'" RESPONDED false
+  multi-set field sequence -w "source.name = 'baseNonResponders'" POST_TREATMENT false
   
   # baseline responders
   module fastaImporter import -f anaTreatmentComparison/consensusBR3a.fasta 
   create source baseResponders
   move sequence baseResponders -w "source.name = 'treatmentComparison'"
-  set sequence-field -w "source.name = 'baseResponders'" RESPONDED true
-  set sequence-field -w "source.name = 'baseResponders'" POST_TREATMENT false
+  multi-set field sequence -w "source.name = 'baseResponders'" RESPONDED true
+  multi-set field sequence -w "source.name = 'baseResponders'" POST_TREATMENT false
 
   # post-treatment non-responders
   module fastaImporter import -f anaTreatmentComparison/consensusPT3a.fasta 
   create source postNonResponders
   move sequence postNonResponders -w "source.name = 'treatmentComparison'"
-  set sequence-field -w "source.name = 'postNonResponders'" RESPONDED false
-  set sequence-field -w "source.name = 'postNonResponders'" POST_TREATMENT true
+  multi-set field sequence -w "source.name = 'postNonResponders'" RESPONDED false
+  multi-set field sequence -w "source.name = 'postNonResponders'" POST_TREATMENT true
   
   move sequence treatmentComparison -w "source.name = 'baseNonResponders'" 
   move sequence treatmentComparison -w "source.name = 'baseResponders'" 
