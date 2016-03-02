@@ -5,7 +5,7 @@ create source stopHcvCvr
 create module --fileName  stopHcvCvr-fastaImporter stopHcv/fastaImporter.xml 
 module stopHcvCvr-fastaImporter import -f stopHcv/stopHcvCvr.fasta
 
-multi-set field sequence -w "source.name = 'stopHcvCvr' and GENOTYPE != null" GENOTYPING_METHOD "Supplied in FASTA header"
+multi-set field SEQUENCE -w "source.name = 'stopHcvCvr' and GENOTYPE != null" GENOTYPING_METHOD "Supplied in FASTA header"
 
 run file stopHcv/addStopHcvCvrToAlignments.glue
 

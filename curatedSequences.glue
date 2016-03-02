@@ -9,6 +9,6 @@
   module gb-populator populate -w "source.name = 'ncbi-curated'"
 
   # copy the genbank genotype / subtypes into GENOTYPE / SUBTYPE, and indicate their provanance
-  multi-copy field sequence -w "source.name = 'ncbi-curated' and GB_GENOTYPE != null" GB_GENOTYPE GENOTYPE
-  multi-copy field sequence -w "source.name = 'ncbi-curated' and GB_SUBTYPE != null" GB_SUBTYPE SUBTYPE
-  multi-set field sequence -w "source.name = 'ncbi-curated' and GB_GENOTYPE != null" GENOTYPING_METHOD "Genbank XML"
+  multi-copy field SEQUENCE -w "source.name = 'ncbi-curated' and GB_GENOTYPE != null" GB_GENOTYPE GENOTYPE
+  multi-copy field SEQUENCE -w "source.name = 'ncbi-curated' and GB_SUBTYPE != null" GB_SUBTYPE SUBTYPE
+  multi-set field SEQUENCE -w "source.name = 'ncbi-curated' and GB_GENOTYPE != null" GENOTYPING_METHOD "Genbank XML"

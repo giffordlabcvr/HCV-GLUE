@@ -12,7 +12,7 @@
   module reference-genotypes-populator populate -f referenceGenotypes.txt
  
   # The genotypes of these reference sequences were provided by D. Smith, in the alignment file.
-  multi-set field sequence -w "source.name = 'ncbi-refseqs'" GENOTYPING_METHOD "Provided with alignment"
+  multi-set field SEQUENCE -w "source.name = 'ncbi-refseqs'" GENOTYPING_METHOD "Provided with alignment"
   
   # module to import the unconstrained alignment.
   create module --fileName modules/hcvFastaAlignmentImporter.xml unconstrained-fasta-importer
@@ -22,4 +22,6 @@
     
   # import the unconstrained alignment from Donald Smith's FASTA file.
   module unconstrained-fasta-importer import AL_UNCONSTRAINED -f Donald_Smith_HCV_alignment_May_26_2015.filtered.fasta
+  
+  
   

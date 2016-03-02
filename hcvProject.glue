@@ -11,6 +11,9 @@ project HCV
   # create modules from files
   create module --fileName modules/hcvMutationFrequencies.xml mutationFrequencies
   create module --fileName modules/hcvBlastAligner.xml blastAligner
+  create module --fileName modules/samReporter.xml samReporter
+  create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
+  create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
   
   # reference sequences and their unconstrained alignment
   run file referenceSequences.glue
@@ -36,7 +39,6 @@ project HCV
   # reference sequences used by Emma's group, but not already covered above
   run file hcvAdditionalRefs.glue
   
-  create module --fileName modules/samReporter.xml samReporter
 
   validate
   
