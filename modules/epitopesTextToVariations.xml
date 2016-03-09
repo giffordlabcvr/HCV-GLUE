@@ -9,7 +9,7 @@ reference H77_AF009606
     create variation "${variationName}" -t AMINO_ACID "http://www.ncbi.nlm.nih.gov/pubmed/${pubmedId}"
     variation "${variationName}"
       set pattern ${row.Epitope} 
-      set location ${row.START} ${row.END}
+      set location --labeledCodon ${row.START} ${row.END}
       <#assign effectorCellType>${row[" Effector Cell Type"]}</#assign>
       <#if effectorCellType == "PBMC">
       add category epitope_pbmc_effector

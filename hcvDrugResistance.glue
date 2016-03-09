@@ -5,92 +5,86 @@ variation-category drug_resistance
 
 reference H77_AF009606
   feature-location NS3
-    create variation NS3_DR_h77_codon_122 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_122
-      set pattern "[AGR]"
-      set location --labeledCodon 122 122
-      add category drug_resistance
-      exit
-    create variation NS3_DR_h77_codon_132 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_132
-      set pattern "[V]"
-      set location --labeledCodon 132 132
-      add category drug_resistance
-      exit
-    create variation NS3_DR_h77_codon_155 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_155
-      set pattern "[KTGMQ]"
-      set location --labeledCodon 155 155
-      add category drug_resistance
-      exit
-    create variation NS3_DR_h77_codon_156 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_156
-      set pattern "[FNSTV]"
-      set location --labeledCodon 156 156
-      add category drug_resistance
-      exit
-    create variation NS3_DR_h77_codon_168 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_168
-      set pattern "[NAEHVGY]"
-      set location --labeledCodon 168 168
-      add category drug_resistance
-      exit
-    create variation NS3_DR_h77_codon_36 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_36
-      set pattern "[AMGI]"
+    create variation NS3_DR_36 -t AMINO_ACID "Drug resistant variant: L/A"
+    variation NS3_DR_36
+      set pattern "[LA]"
       set location --labeledCodon 36 36
       add category drug_resistance
       exit
-    create variation NS3_DR_h77_codon_43 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_43
+    create variation NS3_DR_43 -t AMINO_ACID "Drug resistant variant: S"
+    variation NS3_DR_43
       set pattern "[S]"
       set location --labeledCodon 43 43
       add category drug_resistance
       exit
-    create variation NS3_DR_h77_codon_54 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_54
-      set pattern "[ACGS]"
+    create variation NS3_DR_54 -t AMINO_ACID "Drug resistant variant: A"
+    variation NS3_DR_54
+      set pattern "[A]"
       set location --labeledCodon 54 54
       add category drug_resistance
       exit
-    create variation NS3_DR_h77_codon_80 -t AMINO_ACID "Drug resistance"
-    variation NS3_DR_h77_codon_80
-      set pattern "[KR]"
+    create variation NS3_DR_80 -t AMINO_ACID "Drug resistant variant: K"
+    variation NS3_DR_80
+      set pattern "[K]"
       set location --labeledCodon 80 80
+      add category drug_resistance
+      exit
+    create variation NS3_DR_122 -t AMINO_ACID "Drug resistant variant: R/G/K/N/T"
+    variation NS3_DR_122
+      set pattern "[RGKNT]"
+      set location --labeledCodon 122 122
+      add category drug_resistance
+      exit
+    create variation NS3_DR_155 -t AMINO_ACID "Drug resistant variant: Q"
+    variation NS3_DR_155
+      set pattern "[Q]"
+      set location --labeledCodon 155 155
+      add category drug_resistance
+      exit
+    create variation NS3_DR_168 -t AMINO_ACID "Drug resistant variant: E/G/Q"
+    variation NS3_DR_168
+      set pattern "[EGQ]"
+      set location --labeledCodon 168 168
       add category drug_resistance
       exit
     exit
   feature-location NS5A
-    create variation NS5A_DR_h77_codon_28 -t AMINO_ACID "Drug resistance"
-    variation NS5A_DR_h77_codon_28
-      set pattern "[T]"
-      set location --labeledCodon 28 28
-      add category drug_resistance
-      exit
-    create variation NS5A_DR_h77_codon_30 -t AMINO_ACID "Drug resistance"
-    variation NS5A_DR_h77_codon_30
-      set pattern "[EHR]"
+    create variation NS5A_DR_30 -t AMINO_ACID "Drug resistant variant: R"
+    variation NS5A_DR_30
+      set pattern "[R]"
       set location --labeledCodon 30 30
       add category drug_resistance
       exit
-    create variation NS5A_DR_h77_codon_31 -t AMINO_ACID "Drug resistance"
-    variation NS5A_DR_h77_codon_31
-      set pattern "[MV]"
+    create variation NS5A_DR_31 -t AMINO_ACID "Drug resistant variant: M"
+    variation NS5A_DR_31
+      set pattern "[M]"
       set location --labeledCodon 31 31
       add category drug_resistance
       exit
-    create variation NS5A_DR_h77_codon_93 -t AMINO_ACID "Drug resistance"
-    variation NS5A_DR_h77_codon_93
-      set pattern "[CHN]"
+    create variation NS5A_DR_93 -t AMINO_ACID "Drug resistant variant: H/S"
+    variation NS5A_DR_93
+      set pattern "[HS]"
       set location --labeledCodon 93 93
       add category drug_resistance
       exit
     exit
   feature-location NS5B
-    create variation NS5B_DR_h77_codon_282 -t AMINO_ACID "Drug resistance"
-    variation NS5B_DR_h77_codon_282
+    create variation NS5B_DR_282 -t AMINO_ACID "Drug resistant variant: T"
+    variation NS5B_DR_282
       set pattern "[T]"
       set location --labeledCodon 282 282
+      add category drug_resistance
+      exit
+    create variation NS5B_DR_316 -t AMINO_ACID "Drug resistant variant: N"
+    variation NS5B_DR_316
+      set pattern "[N]"
+      set location --labeledCodon 316 316
+      add category drug_resistance
+      exit
+    create variation NS5B_DR_419 -t AMINO_ACID "Drug resistant variant: S/V"
+    variation NS5B_DR_419
+      set pattern "[SV]"
+      set location --labeledCodon 419 419
       add category drug_resistance
       exit
     exit

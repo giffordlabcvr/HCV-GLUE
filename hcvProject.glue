@@ -31,7 +31,7 @@ project HCV
   run file hcvCommonPolymorphisms.glue
 
   # resistance associated variation category + variations
-  run file resistanceAssociatedVariants.glue
+  run file hcvDrugResistance.glue
 
   # epitope variation categories + variations
   run file hcvEpitopes.glue
