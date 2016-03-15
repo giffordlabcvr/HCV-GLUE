@@ -28,4 +28,25 @@ schema-project HCV
     create field REGA_GENOTYPE VARCHAR
     create field REGA_SUBTYPE VARCHAR
     exit
+    
+  table VARIATION
+    create field PUBMED_ID VARCHAR 50
+    create field PUBLICATION_DATE_YEAR INTEGER
+    create field IS_EPITOPE BOOLEAN
+    create field EPITOPE_IEDB_ID INTEGER
+    create field EPITOPE_METHOD VARCHAR 50
+    create field EPITOPE_PROTEIN VARCHAR 50
+    create field EPITOPE_STAGE VARCHAR 50
+    create field EPITOPE_GENOTYPE VARCHAR 50
+    create field EPITOPE_SUBTYPE VARCHAR 50
+    create field EPITOPE_MEASUREMENT VARCHAR 50
+    create field EPITOPE_EFFECTOR_TISSUE_TYPE VARCHAR 50
+    create field EPITOPE_EFFECTOR_CELL_TYPE VARCHAR 50
+    create field EPITOPE_EFFECTOR_CELL_CULTURE_CONDITION VARCHAR 50
+    create field EPITOPE_FULL_HLA VARCHAR 50
+    create field EPITOPE_PARTIAL_HLA VARCHAR 50
+    exit
+    
+    
+    
   exit

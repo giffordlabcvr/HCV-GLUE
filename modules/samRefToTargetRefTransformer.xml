@@ -1,0 +1,8 @@
+<textToQueryTransformer>
+  <dataClass>ReferenceSequence</dataClass>
+  <description>CVR SAM file reference name extractor</description>
+  <extractorFormatter>
+  	<matchPattern>^Ref\.([0-9][a-z]+).*\.([A-Z_0-9]+)$</matchPattern>
+ 	<outputTemplate>name = 'REF_${g1}_${g2}'</outputTemplate>	
+  </extractorFormatter>
+</textToQueryTransformer>

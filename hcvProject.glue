@@ -11,7 +11,10 @@ project HCV
   # create modules from files
   create module --fileName modules/hcvMutationFrequencies.xml mutationFrequencies
   create module --fileName modules/hcvBlastAligner.xml blastAligner
+
+  create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
   create module --fileName modules/samReporter.xml samReporter
+
   create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
   
@@ -25,13 +28,13 @@ project HCV
   run file hcvAlignmentTree.glue
 
   # common polymorphisms variation categories 
-  run file hcvCommonPolymorphismCategories.glue
+#  run file hcvCommonPolymorphismCategories.glue
 
   # common polymorphisms variations
-  run file hcvCommonPolymorphisms.glue
+#  run file hcvCommonPolymorphisms.glue
 
   # resistance associated variation category + variations
-  run file hcvDrugResistance.glue
+#  run file hcvDrugResistance.glue
 
   # epitope variation categories + variations
   run file hcvEpitopes.glue

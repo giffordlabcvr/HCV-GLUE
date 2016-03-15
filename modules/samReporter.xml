@@ -1,9 +1,5 @@
 <samReporter>
   <alignerModuleName>blastAligner</alignerModuleName>
   <readLogInterval>30000</readLogInterval>
-  <defaultReferenceName>H77_AF009606</defaultReferenceName>
-  <tipAlignmentMemberExtractorFormatter>
-  	<matchPattern>^Ref\.([0-9][a-z]+).*\.([A-Z_0-9]+)$</matchPattern>
- 	<outputTemplate>alignment.name = 'AL_${g1}' and (sequence.source.name = 'ncbi-refseqs' or sequence.source.name = 'hcv-additional-refs') and sequence.sequenceID = '${g2}'</outputTemplate>	
-  </tipAlignmentMemberExtractorFormatter>
+  <samRefTextToReferenceQueryModuleName>samRefToTargetRefTransformer</samRefTextToReferenceQueryModuleName>
 </samReporter>
