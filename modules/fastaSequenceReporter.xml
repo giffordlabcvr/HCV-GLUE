@@ -1,3 +1,5 @@
 <fastaSequenceReporter>
 	<alignerModuleName>blastAligner</alignerModuleName>
+	<fastaIdTextToReferenceQueryModuleName>fastaIdToTargetRefTransformer</fastaIdTextToReferenceQueryModuleName>
+	
 </fastaSequenceReporter>

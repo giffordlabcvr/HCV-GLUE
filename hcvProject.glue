@@ -15,6 +15,7 @@ project HCV
   create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
   create module --fileName modules/samReporter.xml samReporter
 
+  create module --fileName modules/fastaIdToTargetRefTransformer.xml fastaIdToTargetRefTransformer 
   create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
   
