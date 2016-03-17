@@ -1,5 +1,5 @@
 <fastaSequenceReporter>
-	<alignerModuleName>blastAligner</alignerModuleName>
+	<alignerModuleName>hcvCompoundAligner</alignerModuleName>
 	<fastaIdTextToReferenceQueryModuleName>fastaIdToTargetRefTransformer</fastaIdTextToReferenceQueryModuleName>
 	
 </fastaSequenceReporter>

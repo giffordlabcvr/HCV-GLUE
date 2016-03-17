@@ -1,5 +1,5 @@
 <mutationFrequenciesReporter>
-	<alignerModuleName>blastAligner</alignerModuleName>
+	<alignerModuleName>hcvCompoundAligner</alignerModuleName>
 	<generatedVariationNameTemplate>${refAA}${codon}${mutAA}</generatedVariationNameTemplate>
 	<generatedVariationDescriptionTemplate>Single amino acid variant</generatedVariationDescriptionTemplate>
 	<sam2ConsensusMinorityVariantFilter>

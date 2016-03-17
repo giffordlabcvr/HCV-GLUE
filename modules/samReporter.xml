@@ -1,5 +1,5 @@
 <samReporter>
-  <alignerModuleName>blastAligner</alignerModuleName>
+  <alignerModuleName>hcvCompoundAligner</alignerModuleName>
   <readLogInterval>30000</readLogInterval>
   <samRefTextToReferenceQueryModuleName>samRefToTargetRefTransformer</samRefTextToReferenceQueryModuleName>
 </samReporter>

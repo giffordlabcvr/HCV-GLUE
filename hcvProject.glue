@@ -10,7 +10,7 @@ project HCV
   
   # create modules from files
   create module --fileName modules/hcvMutationFrequencies.xml mutationFrequencies
-  create module --fileName modules/hcvBlastAligner.xml blastAligner
+  create module --fileName modules/hcvCompoundAligner.xml hcvCompoundAligner
 
   create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
   create module --fileName modules/samReporter.xml samReporter
