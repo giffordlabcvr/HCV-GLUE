@@ -65,7 +65,7 @@ project HCV
 
   run file anaTreatmentComparison/addToAlignments.glue
 
-#  list sequence -w "source.name = 'treatmentComparison'" sequenceID GENOTYPE SUBTYPE RESPONDED POST_TREATMENT 
+#  list sequence -w "source.name = 'treatmentComparison'" sequenceID genotype subtype RESPONDED POST_TREATMENT 
 
 #  module mutationFrequencies alignment scan variation-category AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS3 resistance_associated
 #  module mutationFrequencies alignment scan variation-category AL_MASTER -r -w "sequence.source.name = 'treatmentComparison'" H77_AF009606 NS5A resistance_associated

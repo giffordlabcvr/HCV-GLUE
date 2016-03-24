@@ -1,10 +1,10 @@
-delete project HCV
+delete project hcv
 
-create project HCV "HCV mutation analysis"
+create project hcv "HCV mutation analysis"
 
 run file fieldDefinitions.glue
  
-project HCV
+project hcv
 
   run file projectSettings.glue
   

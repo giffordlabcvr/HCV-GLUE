@@ -7,7 +7,7 @@
 	</textFileColumn>
 	<textFileColumn>
 		<header>conclusionTaxon</header>
-		<fieldName>REGA_GENOTYPE</fieldName>
+		<fieldName>rega_genotype</fieldName>
 		<matchPattern>(?:Geno_)?(\d+)(?:[a-z]+)?</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</textFileColumn>

@@ -1,29 +1,29 @@
 import source hcv-additional-refs
 
-sequence hcv-additional-refs AF511950 set field GENOTYPE 1
-sequence hcv-additional-refs AF511950 set field SUBTYPE a
+sequence hcv-additional-refs AF511950 set field genotype 1
+sequence hcv-additional-refs AF511950 set field subtype a
 alignment AL_1a add member hcv-additional-refs AF511950
 compute alignment AL_1a hcvCompoundAligner -w "sequence.source.name = 'hcv-additional-refs'"
 create reference REF_1a_AF511950 hcv-additional-refs AF511950
 reference REF_1a_AF511950 inherit feature-location -rs AL_1a whole_genome
 
 
-sequence hcv-additional-refs EF032892 set field GENOTYPE 1
-sequence hcv-additional-refs EF032892 set field SUBTYPE b
+sequence hcv-additional-refs EF032892 set field genotype 1
+sequence hcv-additional-refs EF032892 set field subtype b
 alignment AL_1b add member hcv-additional-refs EF032892
 compute alignment AL_1b hcvCompoundAligner -w "sequence.source.name = 'hcv-additional-refs'"
 create reference REF_1b_EF032892 hcv-additional-refs EF032892
 reference REF_1b_EF032892 inherit feature-location -rs AL_1b whole_genome
 
-sequence hcv-additional-refs AY746460 set field GENOTYPE 2
-sequence hcv-additional-refs AY746460 set field SUBTYPE a
+sequence hcv-additional-refs AY746460 set field genotype 2
+sequence hcv-additional-refs AY746460 set field subtype a
 alignment AL_2a add member hcv-additional-refs AY746460
 compute alignment AL_2a hcvCompoundAligner -w "sequence.source.name = 'hcv-additional-refs'"
 create reference REF_2a_AY746460 hcv-additional-refs AY746460
 reference REF_2a_AY746460 inherit feature-location -rs AL_2a whole_genome
 
-sequence hcv-additional-refs NC_009826 set field GENOTYPE 5
-sequence hcv-additional-refs NC_009826 set field SUBTYPE a
+sequence hcv-additional-refs NC_009826 set field genotype 5
+sequence hcv-additional-refs NC_009826 set field subtype a
 alignment AL_5a add member hcv-additional-refs NC_009826
 compute alignment AL_5a hcvCompoundAligner -w "sequence.source.name = 'hcv-additional-refs'"
 create reference REF_5a_NC_009826 hcv-additional-refs NC_009826

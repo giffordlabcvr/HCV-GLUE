@@ -7,7 +7,7 @@
 	</textFileColumn>
 	<textFileColumn>
 		<header>conclusionTaxon</header>
-		<fieldName>REGA_SUBTYPE</fieldName>
+		<fieldName>rega_subtype</fieldName>
 		<matchPattern>\d+([a-z]+)</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</textFileColumn>

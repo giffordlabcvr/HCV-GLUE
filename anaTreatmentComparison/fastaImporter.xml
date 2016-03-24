@@ -6,12 +6,12 @@
 		<outputTemplate>${g1}</outputTemplate>
 	</idParser>
 		<fieldParser>
-		<fieldName>GENOTYPE</fieldName>
+		<fieldName>genotype</fieldName>
 		<matchPattern>(?:[^\.]+\.)(\d+)</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</fieldParser>
 		<fieldParser>
-		<fieldName>SUBTYPE</fieldName>
+		<fieldName>subtype</fieldName>
 		<matchPattern>(?:[^\.]+\.)\d+([a-z]+)</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</fieldParser>

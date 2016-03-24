@@ -27,38 +27,38 @@ reference H77_AF009606
     variation "${variationName}"
       set pattern ${epitope} 
       set location --labeledCodon ${h77Start} ${h77End}
-      set field PUBMED_ID ${pubmedID}
-      set field PUBLICATION_DATE_YEAR ${date} 
-      set field IS_EPITOPE true
-      set field EPITOPE_IEDB_ID ${epitopeID}
-      set field EPITOPE_METHOD "${method}"
-      set field EPITOPE_PROTEIN ${protein}
+      set field pubmed_id ${pubmedID}
+      set field publication_date_year ${date} 
+      set field is_epitope true
+      set field epitope_iedb_id ${epitopeID}
+      set field epitope_method "${method}"
+      set field epitope_protein ${protein}
       <#if stage != "">
-      set field EPITOPE_STAGE "${stage}"
+      set field epitope_stage "${stage}"
       </#if>  
       <#if genotype?matches("^[1-9][a-z]{0,2}$") >
-      set field EPITOPE_GENOTYPE ${genotype[0]}
+      set field epitope_genotype ${genotype[0]}
       <#if genotype?length gt 1 >
-      set field EPITOPE_SUBTYPE ${genotype[1..]}
+      set field epitope_subtype ${genotype[1..]}
       </#if>  
       </#if>  
       <#if measurement != "">
-      set field EPITOPE_MEASUREMENT "${measurement}"
+      set field epitope_measurement "${measurement}"
       </#if>  
       <#if effectorCellTissueType != "">
-      set field EPITOPE_EFFECTOR_TISSUE_TYPE ${effectorCellTissueType}
+      set field epitope_effector_tissue_type ${effectorCellTissueType}
       </#if>  
       <#if effectorCellType != "">
-      set field EPITOPE_EFFECTOR_CELL_TYPE "${effectorCellType}"
+      set field epitope_effector_cell_type "${effectorCellType}"
       </#if>  
       <#if effectorCellCultureConditions != "">
-      set field EPITOPE_EFFECTOR_CELL_CULTURE_CONDITION "${effectorCellCultureConditions}"
+      set field epitope_effector_cell_culture_condition "${effectorCellCultureConditions}"
       </#if>  
       <#if fullHla != "">
-      set field EPITOPE_FULL_HLA "${fullHla}"
+      set field epitope_full_hla "${fullHla}"
       </#if>  
       <#if partialHla != "">
-      set field EPITOPE_PARTIAL_HLA "${partialHla}"
+      set field epitope_partial_hla "${partialHla}"
       </#if>  
       exit  
     </#if>  

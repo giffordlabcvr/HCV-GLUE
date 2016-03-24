@@ -6,18 +6,18 @@
 		<outputTemplate>${g1}</outputTemplate>
 	</idParser>
 		<fieldParser>
-		<fieldName>GENOTYPE</fieldName>
+		<fieldName>genotype</fieldName>
 		<matchPattern>(?:[^\.]+\.)(\d+)</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</fieldParser>
 		<fieldParser>
-		<fieldName>SUBTYPE</fieldName>
+		<fieldName>subtype</fieldName>
 		<matchPattern>(?:[^\.]+\.)\d+([a-z]+)</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</fieldParser>
 	<fieldParser>
 		<!-- For the enrichment method this matches the region before the first underscore -->
-		<fieldName>ENRICHMENT_METHOD</fieldName>
+		<fieldName>enrichment_method</fieldName>
 		<matchPattern>^([^_]+)_</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 		<valueConverter>
@@ -26,7 +26,7 @@
 		</valueConverter>
 	</fieldParser>
 	<fieldParser>
-		<fieldName>ASSEMBLY_REFERENCE</fieldName>
+		<fieldName>assembly_reference</fieldName>
 		<matchPattern>(Ref\S+)</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</fieldParser>

@@ -1,4 +1,4 @@
-SourceName,PrimAcc,GENOTYPE,SUBTYPE
+SourceName,PrimAcc,genotype,subtype
 ncbi-refseqs,AF009606,1,a
 ncbi-refseqs,M62321,1,a
 ncbi-refseqs,M67463,1,a

@@ -8,9 +8,9 @@ module boson-fasta-importer import -f boson/Boson_whole_genome.fasta
 module boson-rega-genotype-populator populate -f boson/regaResult.txt 
 module boson-rega-subtype-populator populate -f boson/regaResult.txt 
 
-multi-copy field SEQUENCE -w "source.name = 'boson' and REGA_GENOTYPE != null" REGA_GENOTYPE GENOTYPE
-multi-copy field SEQUENCE -w "source.name = 'boson' and REGA_SUBTYPE != null" REGA_SUBTYPE SUBTYPE
-multi-set field SEQUENCE -w "source.name = 'boson' and REGA_GENOTYPE != null" GENOTYPING_METHOD "REGA genotyping tool"
+multi-copy field SEQUENCE -w "source.name = 'boson' and rega_genotype != null" rega_genotype genotype
+multi-copy field SEQUENCE -w "source.name = 'boson' and rega_subtype != null" rega_subtype subtype
+multi-set field SEQUENCE -w "source.name = 'boson' and rega_genotype != null" genotyping_method "REGA genotyping tool"
 
 run file boson/addBosonToAlignments.glue
 

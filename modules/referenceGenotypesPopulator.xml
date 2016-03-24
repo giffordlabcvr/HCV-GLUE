@@ -11,11 +11,11 @@
 		<fieldName>sequenceID</fieldName>
 	</textFileColumn>
 	<textFileColumn>
-		<header>GENOTYPE</header>
-		<fieldName>GENOTYPE</fieldName>
+		<header>genotype</header>
+		<fieldName>genotype</fieldName>
 	</textFileColumn>
 	<textFileColumn>
-		<header>SUBTYPE</header>
-		<fieldName>SUBTYPE</fieldName>
+		<header>subtype</header>
+		<fieldName>subtype</fieldName>
 	</textFileColumn>
 </textFilePopulator>
