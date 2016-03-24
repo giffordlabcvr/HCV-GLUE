@@ -1,3 +1,0 @@
-  run file epitopeCategories.glue
-  create module --fileName modules/epitopesTextToVariations.xml epitopesTextToVariations
-  module epitopesTextToVariations transform epitopes.txt --run

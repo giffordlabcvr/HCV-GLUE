@@ -1,9 +1,0 @@
-A_1_S,AMINO_ACID,[S],-,post_non_responder
-V_71_T,AMINO_ACID,[T],-,post_non_responder
-V_256_C,AMINO_ACID,[C],-,post_non_responder
-E_357_T,AMINO_ACID,[T],-,post_non_responder
-K_380_R,AMINO_ACID,[R],-,post_non_responder
-L_384_I,AMINO_ACID,[I],-,post_non_responder
-V_399_T,AMINO_ACID,[T],-,post_non_responder
-T_402_P,AMINO_ACID,[P],-,post_non_responder
-V_511_I,AMINO_ACID,[I],-,post_non_responder

@@ -2,11 +2,11 @@ delete project hcv
 
 create project hcv "HCV mutation analysis"
 
-run file fieldDefinitions.glue
+run file glue/hcvFieldDefinitions.glue
  
 project hcv
 
-  run file projectSettings.glue
+  run file glue/hcvProjectSettings.glue
   
   # create modules from files
   create module --fileName modules/hcvMutationFrequencies.xml mutationFrequencies
@@ -20,28 +20,22 @@ project hcv
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
   
   # reference sequences and their unconstrained alignment
-  run file referenceSequences.glue
+  run file glue/hcvReferenceSequences.glue
 
   # build master reference, with features.
-  run file hcvFeatures.glue
+  run file glue/hcvFeatures.glue
   
   # build tree of alignments, with relevant reference sequences.
-  run file hcvAlignmentTree.glue
+  run file glue/hcvAlignmentTree.glue
 
   # reference sequences used by Emma's group, but not already covered above
-  run file hcvAdditionalRefs.glue
+  run file glue/hcvAdditionalRefs.glue
   
-  # common polymorphisms variation categories 
-  run file hcvCommonPolymorphismCategories.glue
-
-  # common polymorphisms variations
-  run file hcvCommonPolymorphisms.glue
-
   # resistance associated variation category + variations
-  run file hcvDrugResistance.glue
+  run file glue/hcvDrugResistance.glue
 
   # epitope variation categories + variations
-  run file hcvEpitopes.glue
+  run file glue/hcvEpitopes.glue
 
 
   validate

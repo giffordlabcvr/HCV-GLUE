@@ -1,0 +1,17 @@
+create variation-category epitope_t_cell_effector "Epitope with T cell effector"
+variation-category epitope_t_cell_effector
+  set notifiability NOT_NOTIFIABLE
+  exit
+create variation-category epitope_cd8_t_cell_effector "Epitope with CD8+ T cell effector"
+variation-category epitope_cd8_t_cell_effector
+  set notifiability NOT_NOTIFIABLE
+  exit
+create variation-category epitope_cd4_t_cell_effector "Epitope with CD4+ T cell effector"
+variation-category epitope_cd4_t_cell_effector
+  set notifiability NOT_NOTIFIABLE
+  exit
+create variation-category epitope_pbmc_effector "Epitope with PBMC effector"
+variation-category epitope_pbmc_effector
+  set notifiability NOT_NOTIFIABLE
+  exit
+  

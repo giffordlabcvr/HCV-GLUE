@@ -1,37 +1,32 @@
-delete project HCV
+delete project hcv
 
-create project HCV "HCV mutation analysis"
+create project hcv "HCV mutation analysis"
 
-run file fieldDefinitions.glue
+run file glue/hcvFieldDefinitions.glue
  
-project HCV
+project hcv
 
-  run file projectSettings.glue
+  run file glue/hcvProjectSettings.glue
   
   # create modules from files
-  create module --fileName modules/hcvMutationFrequencies.xml mutationFrequencies
-  create module --fileName modules/hcvBlastAligner.xml blastAligner
+  create module --fileName modules/hcvCompoundAligner.xml hcvCompoundAligner
+  create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
+  
 
   # reference sequences and their unconstrained alignment
-  run file referenceSequences.glue
+  run file glue/hcvReferenceSequences.glue
   
   # curated sequences
-  run file curatedSequences.glue
+  run file glue/hcvCuratedSequences.glue
  
   # build master reference, with features.
-  run file hcvFeatures.glue
+  run file glue/hcvFeatures.glue
   
   # build tree of alignments, with relevant reference sequences.
-  run file hcvAlignmentTree.glue
+  run file glue/hcvAlignmentTree.glue
 
   # add the curated sequences into the alignment tree according to their genotype/subtype
-  run file addCuratedToAlignments.glue
-
-  # variation categories for common polymorphisms
-  run file hcvCommonPolymorphismCategories.glue
-
-  # generate the common polymorphism variations for each genotype
-  run file generateCommonPolymorphismVariations.glue
+  run file glue/hcvAddCuratedToAlignments.glue
 
   validate
   
