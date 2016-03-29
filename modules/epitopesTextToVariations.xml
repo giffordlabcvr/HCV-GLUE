@@ -23,46 +23,47 @@ reference H77_AF009606
 
   <#if h77Start != "" && h77End != "">
   <#assign variationName>Epitope_${epitopeName?replace(" ", "_")}_${epitopeID}</#assign>
-    create variation "${variationName}" -t AMINO_ACID "http://www.ncbi.nlm.nih.gov/pubmed/${pubmedID}"
+    create variation --noCommit "${variationName}" -t AMINO_ACID "http://www.ncbi.nlm.nih.gov/pubmed/${pubmedID}"
     variation "${variationName}"
-      set pattern ${epitope} 
-      set location --labeledCodon ${h77Start} ${h77End}
-      set field pubmed_id ${pubmedID}
-      set field publication_date_year ${date} 
-      set field is_epitope true
-      set field epitope_iedb_id ${epitopeID}
-      set field epitope_method "${method}"
-      set field epitope_protein ${protein}
+      set pattern --noCommit ${epitope} 
+      set location --noCommit --labeledCodon ${h77Start} ${h77End}
+      set field --noCommit pubmed_id ${pubmedID}
+      set field --noCommit publication_date_year ${date} 
+      set field --noCommit is_epitope true
+      set field --noCommit epitope_iedb_id ${epitopeID}
+      set field --noCommit epitope_method "${method}"
+      set field --noCommit epitope_protein ${protein}
       <#if stage != "">
-      set field epitope_stage "${stage}"
+      set field --noCommit epitope_stage "${stage}"
       </#if>  
       <#if genotype?matches("^[1-9][a-z]{0,2}$") >
-      set field epitope_genotype ${genotype[0]}
+      set field --noCommit epitope_genotype ${genotype[0]}
       <#if genotype?length gt 1 >
-      set field epitope_subtype ${genotype[1..]}
+      set field --noCommit epitope_subtype ${genotype[1..]}
       </#if>  
       </#if>  
       <#if measurement != "">
-      set field epitope_measurement "${measurement}"
+      set field --noCommit epitope_measurement "${measurement}"
       </#if>  
       <#if effectorCellTissueType != "">
-      set field epitope_effector_tissue_type ${effectorCellTissueType}
+      set field --noCommit epitope_effector_tissue_type ${effectorCellTissueType}
       </#if>  
       <#if effectorCellType != "">
-      set field epitope_effector_cell_type "${effectorCellType}"
+      set field --noCommit epitope_effector_cell_type "${effectorCellType}"
       </#if>  
       <#if effectorCellCultureConditions != "">
-      set field epitope_effector_cell_culture_condition "${effectorCellCultureConditions}"
+      set field --noCommit epitope_effector_cell_culture_condition "${effectorCellCultureConditions}"
       </#if>  
       <#if fullHla != "">
-      set field epitope_full_hla "${fullHla}"
+      set field --noCommit epitope_full_hla "${fullHla}"
       </#if>  
       <#if partialHla != "">
-      set field epitope_partial_hla "${partialHla}"
+      set field --noCommit epitope_partial_hla "${partialHla}"
       </#if>  
       exit  
     </#if>  
 </#list>
     exit
-  exit]]></freemarkerTemplate>
+  exit
+commit]]></freemarkerTemplate>
 </freemarkerTextToGlueTransformer>

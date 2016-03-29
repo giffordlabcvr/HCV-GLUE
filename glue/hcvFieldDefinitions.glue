@@ -30,6 +30,7 @@ schema-project hcv
     exit
     
   table variation
+    create field is_common_aa_polymorphism BOOLEAN 
     create field pubmed_id VARCHAR 50
     create field publication_date_year INTEGER
     create field is_epitope BOOLEAN

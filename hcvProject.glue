@@ -34,9 +34,11 @@ project hcv
   # resistance associated variation category + variations
   run file glue/hcvDrugResistance.glue
 
-  # epitope variation categories + variations
+  # epitopes
   run file glue/hcvEpitopes.glue
 
+  # generated common aa polymorphisms
+  run file glue/hcvGeneratedCommonAaPolymorphisms.glue
 
   validate
   
