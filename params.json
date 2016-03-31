@@ -1,0 +1,6 @@
+{
+  "name": "HCV-GLUE",
+  "tagline": "A GLUE project for Hepatitis C virus",
+  "body": "### **HCV-GLUE**\r\n\r\nThis is the project page for HCV-GLUE, a GLUE project for Hepatitis C virus (HCV).\r\n\r\n### **GLUE**\r\n\r\nGLUE is a software package for developing nucleotide-level evolutionary hypotheses for virus and endogenous viral element (EVE) genomes. It enables the dissemination of these hypotheses on the web and the utilisation of the hypotheses in wider software systems. \r\n\r\n### **Included in the HCV-GLUE project**\r\n\r\nThis GLUE project includes the GLUE framework implementation of a [web-accessible HCV analysis tool](http://gluehome.cvr.gla.ac.uk/gluetools-web/www/hcvApp.html#/submitSequencesAnalysis).\r\n\r\n### **Authors and Contributors**\r\n\r\nRobert J. Gifford (robert.gifford@glasgow.ac.uk).\r\n\r\nJosh Singer (josh.singer@glasgow.ac.uk)",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
