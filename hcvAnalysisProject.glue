@@ -1,6 +1,6 @@
 delete project hcv
 
-create project hcv "HCV mutation analysis"
+create project hcv "Hepatitis C variation analysis" --minVersion 0.1.50
 
 run file glue/hcvFieldDefinitions.glue
  
