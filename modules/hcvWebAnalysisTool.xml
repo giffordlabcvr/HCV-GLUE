@@ -1,0 +1,43 @@
+<webAnalysisTool>
+	<fastaSequenceReporterModuleName>fastaSequenceReporter</fastaSequenceReporterModuleName>
+	<featureAnalysisHint>
+		<featureName>NS5A</featureName>
+		<includeTranslation>true</includeTranslation>
+	</featureAnalysisHint>
+	<variationCategory>
+		<name>common_aa_polymorphisms</name>
+		<displayName>Common amino acid polymorphisms</displayName>
+		<description>Amino acids at a given codon location which appear in more than 1% of public HCV sequences</description>
+		<whereClause>is_common_aa_polymorphism = 'true'</whereClause>
+	</variationCategory>
+	<variationCategory>
+		<name>resistance_associated_variants</name>
+		<displayName>Resistance-associated variants</displayName>
+		<description>Amino acids at a given codon location which have been associated with drug resistance</description>
+		<whereClause>is_resistance_associated_variant = 'true'</whereClause>
+	</variationCategory>
+	<variationCategory>
+		<name>epitopes_mhc_class_i</name>
+		<displayName>MHC Class I Epitopes</displayName>
+		<description>Linear HCV epitopes in MHC Class I (HLA-A, B, C, E, F, G, K, L)</description>
+		<whereClause>is_epitope = 'true' and 
+			epitope_full_hla != 'HLA-Class II, allele undetermined' and 
+				(epitope_full_hla = 'HLA-Class I, allele undetermined' or 
+				 epitope_full_hla like 'HLA-A%' or 
+				 epitope_full_hla like 'HLA-B%' or 
+				 epitope_full_hla like 'HLA-C%' or 
+				 epitope_full_hla like 'HLA-E%' or 
+				 epitope_full_hla like 'HLA-F%' or 
+				 epitope_full_hla like 'HLA-G%' or 
+				 epitope_full_hla like 'HLA-K%' or 
+				 epitope_full_hla like 'HLA-L%')</whereClause>
+	</variationCategory>
+	<variationCategory>
+		<name>epitopes_mhc_class_ii</name>
+		<displayName>MHC Class II Epitopes</displayName>
+		<description>Linear HCV epitopes in MHC Class II (HLA-DM, DO, DP, DP, DQ, DR)</description>
+		<whereClause>is_epitope = 'true' and 
+			epitope_full_hla = 'HLA-Class II, allele undetermined' or 
+			epitope_full_hla like 'HLA-D%'</whereClause>
+	</variationCategory>
+</webAnalysisTool>

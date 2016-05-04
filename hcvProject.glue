@@ -18,6 +18,7 @@ project hcv
   create module --fileName modules/fastaIdToTargetRefTransformer.xml fastaIdToTargetRefTransformer 
   create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
+  create module --fileName modules/hcvWebAnalysisTool.xml webAnalysisTool
   
   # reference sequences and their unconstrained alignment
   run file glue/hcvReferenceSequences.glue

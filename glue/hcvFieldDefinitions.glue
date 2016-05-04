@@ -30,10 +30,11 @@ schema-project hcv
     exit
     
   table variation
+    create field is_resistance_associated_variant BOOLEAN 
     create field is_common_aa_polymorphism BOOLEAN 
+    create field is_epitope BOOLEAN
     create field pubmed_id VARCHAR 50
     create field publication_date_year INTEGER
-    create field is_epitope BOOLEAN
     create field epitope_iedb_id INTEGER
     create field epitope_method VARCHAR 50
     create field epitope_protein VARCHAR 50
