@@ -1,5 +1,5 @@
 <webAnalysisTool>
-	<fastaSequenceReporterModuleName>fastaSequenceReporter</fastaSequenceReporterModuleName>
+	<fastaSequenceReporterModuleName>fastaCodingOnlySequenceReporter</fastaSequenceReporterModuleName>
 	<featureAnalysisHint>
 		<featureName>NS5A</featureName>
 		<includeTranslation>true</includeTranslation>
@@ -15,6 +15,7 @@
 		<displayName>Resistance-associated variants</displayName>
 		<description>Amino acids at a given codon location which have been associated with drug resistance</description>
 		<whereClause>is_resistance_associated_variant = 'true'</whereClause>
+		<selectedByDefault>true</selectedByDefault>
 	</variationCategory>
 	<variationCategory>
 		<name>epitopes_mhc_class_i</name>

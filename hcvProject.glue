@@ -11,12 +11,14 @@ project hcv
   # create modules from files
   create module --fileName modules/hcvMutationFrequencies.xml mutationFrequencies
   create module --fileName modules/hcvCompoundAligner.xml hcvCompoundAligner
+  create module --fileName modules/hcvCodingOnlyAligner.xml hcvCodingOnlyAligner
 
   create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
   create module --fileName modules/samReporter.xml samReporter
 
   create module --fileName modules/fastaIdToTargetRefTransformer.xml fastaIdToTargetRefTransformer 
   create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
+  create module --fileName modules/fastaCodingOnlySequenceReporter.xml fastaCodingOnlySequenceReporter
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
   create module --fileName modules/hcvWebAnalysisTool.xml webAnalysisTool
   

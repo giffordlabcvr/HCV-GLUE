@@ -1,0 +1,4 @@
+<fastaSequenceReporter>
+	<alignerModuleName>hcvCodingOnlyAligner</alignerModuleName>
+	<fastaIdTextToReferenceQueryModuleName>fastaIdToTargetRefTransformer</fastaIdTextToReferenceQueryModuleName>
+</fastaSequenceReporter>
