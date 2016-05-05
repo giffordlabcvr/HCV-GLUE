@@ -1,8 +1,48 @@
 <webAnalysisTool>
 	<fastaSequenceReporterModuleName>fastaCodingOnlySequenceReporter</fastaSequenceReporterModuleName>
 	<featureAnalysisHint>
+		<featureName>precursor_polyprotein</featureName>
+		<includesSequenceContent>true</includesSequenceContent>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>Core</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>E1</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>E2</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>p7</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>NS2</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>NS3</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>NS4A</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>NS4B</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
 		<featureName>NS5A</featureName>
-		<includeTranslation>true</includeTranslation>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+	</featureAnalysisHint>
+	<featureAnalysisHint>
+		<featureName>NS5B</featureName>
+		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
 	</featureAnalysisHint>
 	<variationCategory>
 		<name>common_aa_polymorphisms</name>
