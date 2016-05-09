@@ -3,46 +3,51 @@
 	<featureAnalysisHint>
 		<featureName>precursor_polyprotein</featureName>
 		<includesSequenceContent>true</includesSequenceContent>
+		<variationScanHint>
+			<referenceSequence>H77_AF009606</referenceSequence>
+			<multiReference>true</multiReference>
+			<descendentFeatures>true</descendentFeatures>
+		</variationScanHint>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>Core</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>E1</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>E2</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>p7</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>NS2</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>NS3</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>NS4A</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>NS4B</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>NS5A</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<featureAnalysisHint>
 		<featureName>NS5B</featureName>
-		<deriveSequenceContentFrom>precursor_polyprotein</deriveSequenceContentFrom>
+		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
 	<variationCategory>
 		<name>common_aa_polymorphisms</name>
@@ -77,8 +82,6 @@
 		<name>epitopes_mhc_class_ii</name>
 		<displayName>MHC Class II Epitopes</displayName>
 		<description>Linear HCV epitopes in MHC Class II (HLA-DM, DO, DP, DP, DQ, DR)</description>
-		<whereClause>is_epitope = 'true' and 
-			epitope_full_hla = 'HLA-Class II, allele undetermined' or 
-			epitope_full_hla like 'HLA-D%'</whereClause>
+		<whereClause>is_epitope = 'true' and ( epitope_full_hla = 'HLA-Class II, allele undetermined' or epitope_full_hla like 'HLA-D%' )</whereClause>
 	</variationCategory>
 </webAnalysisTool>
