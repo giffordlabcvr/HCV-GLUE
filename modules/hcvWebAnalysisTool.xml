@@ -54,6 +54,7 @@
 		<displayName>Common amino acid polymorphisms</displayName>
 		<description>Amino acids at a given codon location which appear in more than 1% of public HCV sequences</description>
 		<whereClause>is_common_aa_polymorphism = 'true'</whereClause>
+		<objectRendererModule>hcvCommonAaPolymorphismRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
 		<name>resistance_associated_variants</name>
@@ -61,6 +62,7 @@
 		<description>Amino acids at a given codon location which have been associated with drug resistance</description>
 		<whereClause>is_resistance_associated_variant = 'true'</whereClause>
 		<selectedByDefault>true</selectedByDefault>
+		<objectRendererModule>hcvResistanceAssociatedVariantRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
 		<name>epitopes_mhc_class_i</name>
@@ -77,6 +79,7 @@
 				 epitope_full_hla like 'HLA-G%' or 
 				 epitope_full_hla like 'HLA-K%' or 
 				 epitope_full_hla like 'HLA-L%')</whereClause>
+		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
 		<name>epitopes_mhc_class_ii</name>
@@ -85,53 +88,6 @@
 		<whereClause>is_epitope = 'true' and 
 			( epitope_full_hla = 'HLA-Class II, allele undetermined' or 
 				epitope_full_hla like 'HLA-D%' )</whereClause>
-		<propertyTemplate>
-			<name>name</name>
-			<template>${name}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>referenceSequence</name>
-			<template>${featureLoc.referenceSequence.name}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>feature</name>
-			<template>${featureLoc.feature.name}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>pattern</name>
-			<template>${regex!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>hla</name>
-			<template>${epitope_full_hla!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>iedb_id</name>
-			<template>${epitope_iedb_id!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>pubmed_id</name>
-			<template>${pubmed_id!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>stage</name>
-			<template>${epitope_stage!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>measurement</name>
-			<template>${epitope_measurement!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>effector_tissue_type</name>
-			<template>${epitope_effector_tissue_type!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>effector_cell_type</name>
-			<template>${epitope_effector_cell_type!"-"}</template>
-		</propertyTemplate>
-		<propertyTemplate>
-			<name>effector_cell_culture_condition</name>
-			<template>${epitope_effector_cell_culture_condition!"-"}</template>
-		</propertyTemplate>
+		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
 	</variationCategory>
 </webAnalysisTool>

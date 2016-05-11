@@ -20,7 +20,11 @@ project hcv
   create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
   create module --fileName modules/fastaCodingOnlySequenceReporter.xml fastaCodingOnlySequenceReporter
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
+
   create module --fileName modules/hcvWebAnalysisTool.xml webAnalysisTool
+  create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml hcvResistanceAssociatedVariantRenderer
+  create module --fileName modules/hcvEpitopeRenderer.xml hcvEpitopeRenderer
+  create module --fileName modules/hcvCommonAaPolymorphismRenderer.xml hcvCommonAaPolymorphismRenderer
   
   # reference sequences and their unconstrained alignment
   run file glue/hcvReferenceSequences.glue
