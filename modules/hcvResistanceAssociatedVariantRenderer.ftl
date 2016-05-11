@@ -7,10 +7,10 @@
 </#if>
 </#macro>
 
-<resistance-associated-variant>
+<resistance_associated_variant>
 	<name>${name}</name>
 	<referenceSequence>${featureLoc.referenceSequence.name}</referenceSequence>
 	<feature>${featureLoc.feature.name}</feature>
 	<pattern>${regex}</pattern>
     <@elem tag="effector_cell_culture_condition" expr="epitope_effector_cell_culture_condition"/>
-</resistance-associated-variant>
+</resistance_associated_variant>
