@@ -23,7 +23,7 @@
 	<#list varAlmtNotes as varAlmtNote>
 		<alignmentNote glueType="Object[]">
 			<alignmentName>${varAlmtNote.alignment.name}</alignmentName>
-		    <@elem tag="frequency" expr="context.frequency" type="Double" context=varAlmtNote/>
+		    <@elem tag="ncbiCuratedFrequencyPct" expr="context.ncbi_curated_frequency" type="Double" context=varAlmtNote/>
 		</alignmentNote>
 	</#list>
 </epitope>

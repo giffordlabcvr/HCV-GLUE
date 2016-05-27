@@ -1,9 +1,9 @@
 <#-- null handling GLUE result element macro -->
-<#macro elem tag expr>
+<#macro elem tag expr type="String" context="">
 <#if (expr?eval) ??>
-<${tag}>${expr?eval}</${tag}>
+	<${tag} glueType="${type}">${expr?eval}</${tag}>
 <#else>
-<${tag} glueType="Null"/>
+	<${tag} glueType="Null"/>
 </#if>
 </#macro>
 
@@ -12,5 +12,10 @@
 	<referenceSequence>${featureLoc.referenceSequence.name}</referenceSequence>
 	<feature>${featureLoc.feature.name}</feature>
 	<pattern>${regex}</pattern>
-    <@elem tag="effector_cell_culture_condition" expr="epitope_effector_cell_culture_condition"/>
+	<#list varAlmtNotes as varAlmtNote>
+		<alignmentNote glueType="Object[]">
+			<alignmentName>${varAlmtNote.alignment.name}</alignmentName>
+		    <@elem tag="ncbiCuratedFrequencyPct" expr="context.ncbi_curated_frequency" type="Double" context=varAlmtNote/>
+		</alignmentNote>
+	</#list>
 </common_aa_polymorphism>

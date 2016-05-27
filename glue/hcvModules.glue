@@ -13,3 +13,5 @@
   create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources hcvResistanceAssociatedVariantRenderer
   create module --fileName modules/hcvEpitopeRenderer.xml --loadResources hcvEpitopeRenderer
   create module --fileName modules/hcvCommonAaPolymorphismRenderer.xml --loadResources hcvCommonAaPolymorphismRenderer
+
+  

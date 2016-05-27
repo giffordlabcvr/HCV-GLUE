@@ -48,7 +48,9 @@ schema-project hcv
     create field epitope_full_hla VARCHAR 50
     create field epitope_partial_hla VARCHAR 50
     exit
-    
-    
+  
+  table var_almt_note
+    create field ncbi_curated_frequency DOUBLE
+    exit
     
   exit

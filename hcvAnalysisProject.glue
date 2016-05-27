@@ -38,9 +38,13 @@ project hcv
   # generate the common AA polymorphisms
   run file glue/hcvGenerateCommonAaPolymorphisms.glue
 
+  # generate the frequencies of all variations amongst curated sequences.
+  run file glue/hcvGenerateVariationFrequencies.glue
+
   # save the common AA polymorphisms to file
   generate glue-config --variations --noCommit --commitAtEnd --fileName glue/hcvGeneratedCommonAaPolymorphisms.glue
 
   validate
+
   
   

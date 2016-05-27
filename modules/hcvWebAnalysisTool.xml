@@ -52,7 +52,7 @@
 	<variationCategory>
 		<name>common_aa_polymorphisms</name>
 		<displayName>Common amino acid polymorphisms</displayName>
-		<description>Amino acids at a given codon location which appear in more than 1% of public HCV sequences</description>
+		<description>Amino acids at a given codon location which appear in public HCV sequences at a frequency between 1% and 99%</description>
 		<whereClause>is_common_aa_polymorphism = 'true'</whereClause>
 		<objectRendererModule>hcvCommonAaPolymorphismRenderer</objectRendererModule>
 	</variationCategory>
