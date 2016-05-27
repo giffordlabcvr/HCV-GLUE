@@ -1,83 +1,96 @@
 reference H77_AF009606
   feature-location NS3
-    create variation NS3_DR_36 -t AMINO_ACID "Drug resistant variant: L/A"
-    variation NS3_DR_36
+    create variation rav_NS3_36 -t AMINO_ACID "Resistance associated variant: L/A"
+    variation rav_NS3_36
+      set field displayName "RAV:NS3:36"
       set pattern "[LA]"
       set location --labeledCodon 36 36
       set field is_resistance_associated_variant true
       exit
-    create variation NS3_DR_43 -t AMINO_ACID "Drug resistant variant: S"
-    variation NS3_DR_43
+    create variation rav_NS3_43 -t AMINO_ACID "Resistance associated variant: S"
+    variation rav_NS3_43
+      set field displayName "RAV:NS3:43"
       set pattern "[S]"
       set location --labeledCodon 43 43
       set field is_resistance_associated_variant true
       exit
-    create variation NS3_DR_54 -t AMINO_ACID "Drug resistant variant: A"
-    variation NS3_DR_54
+    create variation rav_NS3_54 -t AMINO_ACID "Resistance associated variant: A"
+    variation rav_NS3_54
+      set field displayName "RAV:NS3:54"
       set pattern "[A]"
       set location --labeledCodon 54 54
       set field is_resistance_associated_variant true
       exit
-    create variation NS3_DR_80 -t AMINO_ACID "Drug resistant variant: K"
-    variation NS3_DR_80
+    create variation rav_NS3_80 -t AMINO_ACID "Resistance associated variant: K"
+    variation rav_NS3_80
+      set field displayName "RAV:NS3:80"
       set pattern "[K]"
       set location --labeledCodon 80 80
       set field is_resistance_associated_variant true
       exit
-    create variation NS3_DR_122 -t AMINO_ACID "Drug resistant variant: R/G/K/N/T"
-    variation NS3_DR_122
+    create variation rav_NS3_122 -t AMINO_ACID "Resistance associated variant: R/G/K/N/T"
+    variation rav_NS3_122
+      set field displayName "RAV:NS3:122"
       set pattern "[RGKNT]"
       set location --labeledCodon 122 122
       set field is_resistance_associated_variant true
       exit
-    create variation NS3_DR_155 -t AMINO_ACID "Drug resistant variant: Q"
-    variation NS3_DR_155
+    create variation rav_NS3_155 -t AMINO_ACID "Resistance associated variant: Q"
+    variation rav_NS3_155
+      set field displayName "RAV:NS3:155"
       set pattern "[Q]"
       set location --labeledCodon 155 155
       set field is_resistance_associated_variant true
       exit
-    create variation NS3_DR_168 -t AMINO_ACID "Drug resistant variant: E/G/Q"
-    variation NS3_DR_168
+    create variation rav_NS3_168 -t AMINO_ACID "Resistance associated variant: E/G/Q"
+    variation rav_NS3_168
+      set field displayName "RAV:NS3:168"
       set pattern "[EGQ]"
       set location --labeledCodon 168 168
       set field is_resistance_associated_variant true
       exit
     exit
   feature-location NS5A
-    create variation NS5A_DR_30 -t AMINO_ACID "Drug resistant variant: R"
-    variation NS5A_DR_30
+    create variation rav_NS5A_30 -t AMINO_ACID "Resistance associated variant: R"
+    variation rav_NS5A_30
+      set field displayName "RAV:NS5A:30"
       set pattern "[R]"
       set location --labeledCodon 30 30
       set field is_resistance_associated_variant true
       exit
-    create variation NS5A_DR_31 -t AMINO_ACID "Drug resistant variant: M"
-    variation NS5A_DR_31
+    create variation rav_NS5A_31 -t AMINO_ACID "Resistance associated variant: M"
+    variation rav_NS5A_31
+      set field displayName "RAV:NS5A:31"
       set pattern "[M]"
       set location --labeledCodon 31 31
       set field is_resistance_associated_variant true
       exit
-    create variation NS5A_DR_93 -t AMINO_ACID "Drug resistant variant: H/S"
-    variation NS5A_DR_93
+    create variation rav_NS5A_93 -t AMINO_ACID "Resistance associated variant: H/S"
+    variation rav_NS5A_93
+      set field displayName "RAV:NS5A:93"
       set pattern "[HS]"
       set location --labeledCodon 93 93
       set field is_resistance_associated_variant true
       exit
     exit
   feature-location NS5B
-    create variation NS5B_DR_282 -t AMINO_ACID "Drug resistant variant: T"
-    variation NS5B_DR_282
+    create variation rav_NS5B_282 -t AMINO_ACID "Resistance associated variant: T"
+    variation rav_NS5B_282
+      set field displayName "RAV:NS5B:282"
       set pattern "[T]"
       set location --labeledCodon 282 282
       set field is_resistance_associated_variant true
       exit
-    create variation NS5B_DR_316 -t AMINO_ACID "Drug resistant variant: N"
-    variation NS5B_DR_316
+    create variation rav_NS5B_316 -t AMINO_ACID "Resistance associated variant: N"
+    variation rav_NS5B_316
+      set field displayName "RAV:NS5B:316"
       set pattern "[N]"
       set location --labeledCodon 316 316
       set field is_resistance_associated_variant true
       exit
-    create variation NS5B_DR_419 -t AMINO_ACID "Drug resistant variant: S/V"
-    variation NS5B_DR_419
+    create variation rav_NS5B_419 -t AMINO_ACID "Resistance associated variant: S/V"
+    variation rav_NS5B_419
+      set field displayName "RAV:NS5B:419"
       set pattern "[SV]"
       set location --labeledCodon 419 419
       set field is_resistance_associated_variant true

@@ -47,6 +47,9 @@ schema-project hcv
     create field epitope_effector_cell_culture_condition VARCHAR 50
     create field epitope_full_hla VARCHAR 50
     create field epitope_partial_hla VARCHAR 50
+    create field common_aa_polymorphism_reference_aa VARCHAR 50
+	create field common_aa_polymorphism_variation_aa VARCHAR 50
+	create field common_aa_polymorphism_codon VARCHAR 50
     exit
   
   table var_almt_note

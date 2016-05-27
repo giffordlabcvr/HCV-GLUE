@@ -6,7 +6,6 @@ reference H77_AF009606
   <#assign h77Start>${row["H77_START"]?trim}</#assign>
   <#assign h77End>${row["H77_END"]?trim}</#assign>
   <#assign pubmedID>${row[" Pubmed ID"]?trim}</#assign>
-  <#assign epitopeName>${row["Epitope name"]?trim}</#assign>
   <#assign epitopeID>${row[" Epitope ID"]?trim}</#assign>
   <#assign epitope>${row["Epitope"]?trim}</#assign>
   <#assign date>${row[" Date"]?trim}</#assign>
@@ -22,11 +21,12 @@ reference H77_AF009606
   <#assign partialHla>${row["Partial HLA"]?trim}</#assign>
 
   <#if h77Start != "" && h77End != "">
-  <#assign variationName>Epitope_${epitopeName?replace(" ", "_")}_${epitopeID}</#assign>
+  <#assign variationName>IEDB_epitope_${epitopeID}</#assign>
     create variation --noCommit "${variationName}" -t AMINO_ACID "http://www.ncbi.nlm.nih.gov/pubmed/${pubmedID}"
     variation "${variationName}"
       set pattern --noCommit ${epitope} 
       set location --noCommit --labeledCodon ${h77Start} ${h77End}
+      set field --noCommit displayName "IEDB epitope ${epitopeID}"
       set field --noCommit pubmed_id ${pubmedID}
       set field --noCommit publication_date_year ${date} 
       set field --noCommit is_epitope true

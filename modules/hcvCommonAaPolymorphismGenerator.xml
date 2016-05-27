@@ -1,4 +1,7 @@
 <commonAaPolymorphismGenerator>
+	<referenceAaField>common_aa_polymorphism_reference_aa</referenceAaField>
+	<variationAaField>common_aa_polymorphism_variation_aa</variationAaField>
+	<codonField>common_aa_polymorphism_codon</codonField>
 	<customFieldSetting>
 		<fieldName>is_common_aa_polymorphism</fieldName>	
 		<fieldValue>true</fieldValue>	
