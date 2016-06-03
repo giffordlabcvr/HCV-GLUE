@@ -80,6 +80,7 @@
 				 epitope_full_hla like 'HLA-K%' or 
 				 epitope_full_hla like 'HLA-L%')</whereClause>
 		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
+		<reportAbsence>true</reportAbsence>
 	</variationCategory>
 	<variationCategory>
 		<name>epitopes_mhc_class_ii</name>
@@ -89,5 +90,6 @@
 			( epitope_full_hla = 'HLA-Class II, allele undetermined' or 
 				epitope_full_hla like 'HLA-D%' )</whereClause>
 		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
+		<reportAbsence>true</reportAbsence>
 	</variationCategory>
 </webAnalysisTool>
