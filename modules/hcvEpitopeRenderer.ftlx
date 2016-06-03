@@ -26,6 +26,8 @@
     <@elem tag="pubmed_id" expr="readProperty('pubmed_id')"/>
     <@elem tag="stage" expr="readProperty('epitope_stage')"/>
     <@elem tag="measurement" expr="readProperty('epitope_measurement')"/>
+    <@elem tag="start_codon" expr="readProperty('epitope_start_codon')"/>
+    <@elem tag="end_codon" expr="readProperty('epitope_end_codon')"/>
     <@elem tag="effector_tissue_type" expr="readProperty('epitope_effector_tissue_type')"/>
     <@elem tag="effector_cell_type" expr="readProperty('epitope_effector_cell_type')"/>
     <@elem tag="effector_cell_culture_condition" expr="readProperty('epitope_effector_cell_culture_condition')"/>

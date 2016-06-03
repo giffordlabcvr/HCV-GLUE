@@ -38,6 +38,8 @@ schema-project hcv
     create field epitope_iedb_id INTEGER
     create field epitope_method VARCHAR 50
     create field epitope_protein VARCHAR 50
+    create field epitope_start_codon VARCHAR 50
+    create field epitope_end_codon VARCHAR 50
     create field epitope_stage VARCHAR 50
     create field epitope_genotype VARCHAR 50
     create field epitope_subtype VARCHAR 50

@@ -33,6 +33,8 @@ reference H77_AF009606
       set field --noCommit epitope_iedb_id ${epitopeID}
       set field --noCommit epitope_method "${method}"
       set field --noCommit epitope_protein ${protein}
+      set field --noCommit epitope_start_codon ${h77Start}
+      set field --noCommit epitope_end_codon ${h77End}
       <#if stage != "">
       set field --noCommit epitope_stage "${stage}"
       </#if>  
