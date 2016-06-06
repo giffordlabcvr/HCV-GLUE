@@ -31,7 +31,7 @@
     <@elem tag="effector_tissue_type" expr="readProperty('epitope_effector_tissue_type')"/>
     <@elem tag="effector_cell_type" expr="readProperty('epitope_effector_cell_type')"/>
     <@elem tag="effector_cell_culture_condition" expr="readProperty('epitope_effector_cell_culture_condition')"/>
-	<#list varAlmtNotes as varAlmtNote>
+	<#list getVarAlmtNotesOrderedByDepth() as varAlmtNote>
 		<alignmentNote glueType="Object[]">
 			<alignmentName>${varAlmtNote.alignment.name}</alignmentName>
 			<alignmentRenderedName>${varAlmtNote.alignment.getRenderedName()}</alignmentRenderedName>

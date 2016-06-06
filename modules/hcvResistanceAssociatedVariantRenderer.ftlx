@@ -21,7 +21,7 @@
 	<referenceSequence>${featureLoc.referenceSequence.name}</referenceSequence>
 	<feature>${featureLoc.feature.name}</feature>
 	<pattern>${regex}</pattern>
-	<#list varAlmtNotes as varAlmtNote>
+	<#list getVarAlmtNotesOrderedByDepth() as varAlmtNote>
 		<alignmentNote glueType="Object[]">
 			<alignmentName>${varAlmtNote.alignment.name}</alignmentName>
 			<alignmentRenderedName>${varAlmtNote.alignment.getRenderedName()}</alignmentRenderedName>
