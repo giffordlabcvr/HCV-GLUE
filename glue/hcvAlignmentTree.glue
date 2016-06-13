@@ -2,25 +2,46 @@
   # Master alignment
   create alignment AL_MASTER -r H77_AF009606
 
-  create reference REF_1_AF009606 ncbi-refseqs AF009606
-  create reference REF_2_D00944 ncbi-refseqs D00944
-  create reference REF_3_D17763 ncbi-refseqs D17763
-  create reference REF_4_Y11604 ncbi-refseqs Y11604
-  create reference REF_5_AF064490 ncbi-refseqs AF064490
-  create reference REF_6_Y12083 ncbi-refseqs Y12083
-  create reference REF_7_EF108306 ncbi-refseqs EF108306
+  create reference REF_1_and_4_AF009606 ncbi-refseqs AF009606
+  create reference REF_2_3_5_6_and_7_D00944 ncbi-refseqs D00944
 
   alignment AL_MASTER
     set field displayName "All HCV"
     add member -w "source.name = 'ncbi-refseqs'"
+    extract child AL_1_and_4 --refName REF_1_and_4_AF009606
+    demote member AL_1_and_4 --whereClause "sequence.genotype = '1'"
+    demote member AL_1_and_4 --whereClause "sequence.genotype = '4'"
+    extract child AL_2_3_5_6_and_7 --refName REF_2_3_5_6_and_7_D00944
+    demote member AL_2_3_5_6_and_7 --whereClause "sequence.genotype = '2'"
+    demote member AL_2_3_5_6_and_7 --whereClause "sequence.genotype = '3'"
+    demote member AL_2_3_5_6_and_7 --whereClause "sequence.genotype = '5'"
+    demote member AL_2_3_5_6_and_7 --whereClause "sequence.genotype = '6'"
+    demote member AL_2_3_5_6_and_7 --whereClause "sequence.genotype = '7'"
+    exit
+
+  create reference REF_1_AF009606 ncbi-refseqs AF009606
+  create reference REF_4_Y11604 ncbi-refseqs Y11604
+
+  alignment AL_1_and_4
+    set field displayName "Superclade of Genotypes 1 and 4"
     extract child AL_1 --refName REF_1_AF009606
     demote member AL_1 --whereClause "sequence.genotype = '1'"
+    extract child AL_4 --refName REF_4_Y11604
+    demote member AL_4 --whereClause "sequence.genotype = '4'"
+    exit
+
+  create reference REF_2_D00944 ncbi-refseqs D00944
+  create reference REF_3_D17763 ncbi-refseqs D17763
+  create reference REF_5_AF064490 ncbi-refseqs AF064490
+  create reference REF_6_Y12083 ncbi-refseqs Y12083
+  create reference REF_7_EF108306 ncbi-refseqs EF108306
+
+  alignment AL_2_3_5_6_and_7
+    set field displayName "Superclade of Genotypes 2, 3, 5, 6 and 7"
     extract child AL_2 --refName REF_2_D00944
     demote member AL_2 --whereClause "sequence.genotype = '2'"
     extract child AL_3 --refName REF_3_D17763
     demote member AL_3 --whereClause "sequence.genotype = '3'"
-    extract child AL_4 --refName REF_4_Y11604
-    demote member AL_4 --whereClause "sequence.genotype = '4'"
     extract child AL_5 --refName REF_5_AF064490
     demote member AL_5 --whereClause "sequence.genotype = '5'"
     extract child AL_6 --refName REF_6_Y12083
@@ -313,15 +334,19 @@
     exit
 
   # spread feature locations throughout the tree, correcting as necessary.
-  
-  reference REF_1_AF009606 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_2_D00944 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_3_D17763 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_4_Y11604 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_5_AF064490 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_6_Y12083 inherit feature-location -rs AL_MASTER whole_genome
+
+  reference REF_1_and_4_AF009606 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_2_3_5_6_and_7_D00944 inherit feature-location -rs AL_MASTER whole_genome
+
+  reference REF_1_AF009606 inherit feature-location -rs AL_1_and_4 whole_genome
+  reference REF_4_Y11604 inherit feature-location -rs AL_1_and_4 whole_genome
+
+  reference REF_2_D00944 inherit feature-location -rs AL_2_3_5_6_and_7 whole_genome
+  reference REF_3_D17763 inherit feature-location -rs AL_2_3_5_6_and_7 whole_genome
+  reference REF_5_AF064490 inherit feature-location -rs AL_2_3_5_6_and_7 whole_genome
+  reference REF_6_Y12083 inherit feature-location -rs AL_2_3_5_6_and_7 whole_genome
   reference REF_6_Y12083 remove feature-location 3UTR
-  reference REF_7_EF108306 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_7_EF108306 inherit feature-location -rs AL_2_3_5_6_and_7 whole_genome
 
   reference REF_1a_AF009606 inherit feature-location -rs AL_1 whole_genome
   reference REF_1b_D90208 inherit feature-location -rs AL_1 whole_genome
