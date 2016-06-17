@@ -3,11 +3,6 @@
 		<codonAwareBlastAligner>
 			<featureName>precursor_polyprotein</featureName>
 		</codonAwareBlastAligner>
-		<blastAligner>
-			<featureName>5UTR</featureName>
-		</blastAligner>
-		<blastAligner>
-			<featureName>3UTR</featureName>
-		</blastAligner>
+		<blastAligner/>
 	</aligners>
 </compoundAligner>
