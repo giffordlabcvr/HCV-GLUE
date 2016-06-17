@@ -4,7 +4,6 @@
     create feature 5UTR -p whole_genome "5' UTR"
 
     create feature precursor_polyprotein -p whole_genome "Precursor polyprotein"
-      feature precursor_polyprotein set metatag OPEN_READING_FRAME true
       feature precursor_polyprotein set metatag OWN_CODON_NUMBERING true
       feature precursor_polyprotein set metatag CODES_AMINO_ACIDS true
       feature precursor_polyprotein set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
