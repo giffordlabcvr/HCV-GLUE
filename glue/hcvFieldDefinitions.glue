@@ -57,5 +57,9 @@ schema-project hcv
   table var_almt_note
     create field ncbi_curated_frequency DOUBLE
     exit
+
+  table alignment_member
+    create field reference_member BOOLEAN
+    exit
     
   exit
