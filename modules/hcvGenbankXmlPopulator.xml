@@ -50,10 +50,9 @@
 			<fieldPopulator fieldName="gb_isolate"/>
 		</gbQualifier>
 		<gbQualifier name="country">
-			<fieldPopulator fieldName="gb_country">
-				<matchPattern>([A-Za-z ]+)(?::.*)?</matchPattern>
-				<outputTemplate>${g1}</outputTemplate>
-			</fieldPopulator>
+			<isoCountryFieldPopulator fieldName="gb_country_iso" codeStyle="ALPHA_3"/>
+			<isoCountryFieldPopulator fieldName="gb_country_official" codeStyle="OFFICIAL"/>
+			<fieldPopulator fieldName="gb_country"/>
 		</gbQualifier>
 		<gbQualifier name="host">
 			<fieldPopulator fieldName="gb_host">
