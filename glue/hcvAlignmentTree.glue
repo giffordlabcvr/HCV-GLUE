@@ -706,4 +706,7 @@
   alignment AL_6xd set field displayName "Subtype 6xd"
   alignment AL_6xe set field displayName "Subtype 6xe"
   alignment AL_7a set field displayName "Subtype 7a"
+
+# mark all non-reference members as such.
+multi-set field alignment_member -w "reference_member = null" reference_member false
   

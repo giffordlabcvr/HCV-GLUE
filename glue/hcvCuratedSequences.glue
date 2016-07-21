@@ -12,3 +12,5 @@
   multi-copy field sequence -w "source.name = 'ncbi-curated' and gb_genotype != null" gb_genotype genotype
   multi-copy field sequence -w "source.name = 'ncbi-curated' and gb_subtype != null" gb_subtype subtype
   multi-set field sequence -w "source.name = 'ncbi-curated' and gb_genotype != null" genotyping_method "Genbank XML"
+  
+  multi-set field sequence -w "source.name = 'ncbi-curated' and gb_recombinant = null" gb_recombinant false

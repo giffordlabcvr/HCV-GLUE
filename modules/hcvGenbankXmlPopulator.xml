@@ -26,6 +26,25 @@
 	<gbCreateDate>
 		<fieldPopulator fieldName="gb_create_date"/>
 	</gbCreateDate>
+
+	<gbReferenceTitle>
+		<fieldPopulator fieldName="gb_recombinant">
+				<matchPattern>.*Absence of HCV viral recombination.*</matchPattern>
+				<outputTemplate>false</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+		</fieldPopulator>
+		<fieldPopulator fieldName="gb_recombinant">
+				<matchPattern>.*[Rr]ecombinant.*</matchPattern>
+				<matchPattern>.*[Rr]ecombination.*</matchPattern>
+				<outputTemplate>true</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+		</fieldPopulator>
+	</gbReferenceTitle>
+
+	<gbReferencePubmed>
+		<fieldPopulator fieldName="gb_pubmed_id"/>
+	</gbReferencePubmed>
+
 	<gbOrganism>
 		<fieldPopulator fieldName="gb_organism">
 			<valueConverter>
@@ -100,6 +119,11 @@
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
+			<fieldPopulator fieldName="gb_recombinant">
+				<matchPattern>[Rr]ecombinant</matchPattern>
+				<outputTemplate>true</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</fieldPopulator>
 		</gbQualifier>
 
 	<!-- this rule will genotype about 70 odd sequences, not sure if it is valid. 
@@ -143,6 +167,11 @@
 			</fieldPopulator>
 		</gbQualifier>
 		<gbQualifier name="organism">
+			<fieldPopulator fieldName="gb_recombinant">
+				<matchPattern>[1-9][a-z]/[1-9][a-z]</matchPattern>
+				<outputTemplate>true</outputTemplate>
+				<overwriteExistingNonNull>false</overwriteExistingNonNull>
+			</fieldPopulator>
 			<fieldPopulator fieldName="gb_genotype">
 				<matchPattern>subtype\s+([1-9])</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
