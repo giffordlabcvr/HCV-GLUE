@@ -17,5 +17,11 @@
 	<textFileColumn>
 		<header>subtype</header>
 		<fieldName>subtype</fieldName>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+	<textFileColumn>
+		<header>reference_status</header>
+		<fieldName>reference_status</fieldName>
+		<nullRegex>-</nullRegex>
 	</textFileColumn>
 </textFilePopulator>

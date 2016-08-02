@@ -185,7 +185,7 @@
 		</gbQualifier>
 		<gbQualifier name="strain">
 			<fieldPopulator fieldName="gb_genotype">
-				<matchPattern>([1-9])</matchPattern>
+				<matchPattern>([1-9])[a-zA-Z]+</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>

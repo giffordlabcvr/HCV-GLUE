@@ -1,0 +1,3 @@
+<mafftAligner>
+	<alignmentReimporterModuleName>unconstrained-fasta-importer</alignmentReimporterModuleName>
+</mafftAligner>

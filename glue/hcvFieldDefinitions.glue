@@ -30,6 +30,7 @@ schema-project hcv
     create field gb_subtype VARCHAR
     create field rega_genotype VARCHAR
     create field rega_subtype VARCHAR
+    create field reference_status VARCHAR 20
     exit
     
   table variation

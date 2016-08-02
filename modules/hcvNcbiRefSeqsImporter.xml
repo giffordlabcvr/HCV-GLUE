@@ -4,6 +4,8 @@
 	<sequenceFormat>GENBANK_XML</sequenceFormat>
 	<sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
 	<specificPrimaryAccessions>
+	
+		<!-- Confirmed genotype/subtype references -->
 		<primaryAccession>AF009606</primaryAccession>
 		<primaryAccession>M62321</primaryAccession>
 		<primaryAccession>M67463</primaryAccession>
@@ -157,7 +159,6 @@
 		<primaryAccession>EU408330</primaryAccession>
 		<primaryAccession>EU408332</primaryAccession>
 		<primaryAccession>EU408331</primaryAccession>
-		<primaryAccession>JX183552</primaryAccession>
 		<primaryAccession>KJ567645</primaryAccession>
 		<primaryAccession>KJ567651</primaryAccession>
 		<primaryAccession>KM252789</primaryAccession>
@@ -166,6 +167,85 @@
 		<primaryAccession>JX183557</primaryAccession>
 		<primaryAccession>KM252792</primaryAccession>
 		<primaryAccession>EF108306</primaryAccession>
+		<primaryAccession>JX183552</primaryAccession>
+
+		<!-- Unconfirmed full genome subtypes -->		
+		<primaryAccession>AJ851228</primaryAccession>
+		<primaryAccession>KC248195</primaryAccession>
+		<primaryAccession>HQ537007</primaryAccession>
+		<primaryAccession>KJ439780</primaryAccession>
+		<primaryAccession>KJ439779</primaryAccession>
+		<primaryAccession>KJ439776</primaryAccession>
+		<primaryAccession>KJ439777</primaryAccession>
+		<primaryAccession>JF735119</primaryAccession>
+		<primaryAccession>JF735110</primaryAccession>
+		<primaryAccession>JF735117</primaryAccession>
+		<primaryAccession>JF735116</primaryAccession>
+		<primaryAccession>JF735118</primaryAccession>
+		<primaryAccession>KC197236</primaryAccession>
+		<primaryAccession>KC197237</primaryAccession>
+		<primaryAccession>KC197239</primaryAccession>
+		<primaryAccession>JF735124</primaryAccession>
+		<primaryAccession>JX227964</primaryAccession>
+		<primaryAccession>FJ025854</primaryAccession>
+		<primaryAccession>JF735127</primaryAccession>
+		<primaryAccession>JF735132</primaryAccession>
+		<primaryAccession>JF735131</primaryAccession>
+		<primaryAccession>JF735130</primaryAccession>
+		<primaryAccession>JF735129</primaryAccession>
+		<primaryAccession>JF735138</primaryAccession>
+		<primaryAccession>JF735135</primaryAccession>
+		<primaryAccession>JF735134</primaryAccession>
+		<primaryAccession>DQ278891</primaryAccession>
+		<primaryAccession>DQ278893</primaryAccession>
+		<primaryAccession>JX183550</primaryAccession>
+		<primaryAccession>JX183549</primaryAccession>
+		<primaryAccession>JX183551</primaryAccession>
+		<primaryAccession>JX183553</primaryAccession>
+		<primaryAccession>JX183554</primaryAccession>
+		<primaryAccession>JX183558</primaryAccession>
+		<primaryAccession>KJ470620</primaryAccession>
+		<primaryAccession>KJ470621</primaryAccession>
+		<primaryAccession>KJ470622</primaryAccession>
+		<primaryAccession>KJ470623</primaryAccession>
+		<primaryAccession>KJ470624</primaryAccession>
+		<primaryAccession>KJ470625</primaryAccession>
+		<primaryAccession>KC844039</primaryAccession>
+		<primaryAccession>KC844040</primaryAccession>
+		
+		
+		<!-- Provisional subtypes (non-full genome, typically older sequences) -->
+		<primaryAccession>L38350</primaryAccession>
+		<primaryAccession>L38371</primaryAccession>
+		<primaryAccession>X93323</primaryAccession>
+		<primaryAccession>X93327</primaryAccession>
+		<primaryAccession>L39309</primaryAccession>
+		<primaryAccession>L44602</primaryAccession>
+		<primaryAccession>L38333</primaryAccession>
+		<primaryAccession>L38373</primaryAccession>
+		<primaryAccession>L39300</primaryAccession>
+		<primaryAccession>L44601</primaryAccession>
+		<primaryAccession>JQ924942</primaryAccession>
+		<primaryAccession>HM777447</primaryAccession>
+		<primaryAccession>HM777332</primaryAccession>
+		<primaryAccession>D16612</primaryAccession>
+		<primaryAccession>D14198</primaryAccession>
+		<primaryAccession>D16613</primaryAccession>
+		<primaryAccession>D16614</primaryAccession>
+		<primaryAccession>D14203</primaryAccession>
+		<primaryAccession>D16615</primaryAccession>
+		<primaryAccession>L78842</primaryAccession>
+		<primaryAccession>L29629</primaryAccession>
+		<primaryAccession>L29589</primaryAccession>
+		<primaryAccession>L29590</primaryAccession>
+		<primaryAccession>L29626</primaryAccession>
+		<primaryAccession>L29610</primaryAccession>
+		<primaryAccession>L29611</primaryAccession>
+		<primaryAccession>AJ291249</primaryAccession>
+		<primaryAccession>L36439</primaryAccession>
+		<primaryAccession>L36437</primaryAccession>
+		<primaryAccession>L36438</primaryAccession>
+
 	</specificPrimaryAccessions>
 	<eFetchBatchSize>20</eFetchBatchSize>
 </ncbiImporter>

@@ -5,7 +5,7 @@
   # however, we will import the reference sequences from files
   import source sources/ncbi-refseqs 
 
-  # this module poopulates the reference genotypes from a file.
+  # this module populates the reference genotypes from a file.
   create module --fileName modules/referenceGenotypesPopulator.xml reference-genotypes-populator
 
   # run the module update genotype / subtype for refseqs from file.
@@ -21,7 +21,12 @@
   create alignment AL_UNCONSTRAINED
     
   # import the unconstrained alignment from Donald Smith's FASTA file.
-  module unconstrained-fasta-importer import AL_UNCONSTRAINED -f alignments/Donald_Smith_HCV_alignment_May_26_2015.filtered.fasta
+  module unconstrained-fasta-importer import AL_UNCONSTRAINED -f alignments/alignments/All\ types\ selection\ and\ ref\ for\ web\ 26\ May\ 2015.FST
   
+  # module to import the unconstrained alignment.
+  create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
+  
+  # add provisional subtype references to the unconstrained alignment.
+  alignment AL_UNCONSTRAINED add member -w "reference_status = 'provisional'"
   
   
