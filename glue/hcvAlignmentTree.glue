@@ -43,6 +43,19 @@
   create reference REF_1m_KJ439778 ncbi-refseqs KJ439778
   create reference REF_1n_KJ439781 ncbi-refseqs KJ439781
 
+  # Provisional subtypes
+  create reference REF_1f_L38350 ncbi-refseqs L38350
+  create reference REF_1f_L38371 ncbi-refseqs L38371
+
+  # Unassigned subtypes
+  create reference REF_1_unassigned_AJ851228 ncbi-refseqs AJ851228
+  create reference REF_1_unassigned_KJ439776 ncbi-refseqs KJ439776
+  create reference REF_1_unassigned_KJ439777 ncbi-refseqs KJ439777
+  create reference REF_1_unassigned_KJ439779 ncbi-refseqs KJ439779
+  create reference REF_1_unassigned_KJ439780 ncbi-refseqs KJ439780
+  create reference REF_1_unassigned_HQ537007 ncbi-refseqs HQ537007
+  create reference REF_1_unassigned_KC248195 ncbi-refseqs KC248195
+
   alignment AL_1 
     extract child AL_1a --refName REF_1a_AF009606
     demote member AL_1a --whereClause "sequence.genotype = '1' and sequence.subtype = 'a'" -r reference_member true 
@@ -70,6 +83,24 @@
     demote member AL_1m --whereClause "sequence.genotype = '1' and sequence.subtype = 'm'" -r reference_member true
     extract child AL_1n --refName REF_1n_KJ439781
     demote member AL_1n --whereClause "sequence.genotype = '1' and sequence.subtype = 'n'" -r reference_member true
+    # Provisional subtypes
+    extract child AL_1f --refName REF_1f_L38350
+    demote member AL_1f  --whereClause "sequence.genotype = '1' and sequence.subtype = 'f'" -r reference_member true
+    # Unassigned subtypes
+    extract child AL_1_unassigned_AJ851228 --refName REF_1_unassigned_AJ851228
+    demote member AL_1_unassigned_AJ851228 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'AJ851228'" -r reference_member true
+    extract child AL_1_unassigned_KJ439776 --refName REF_1_unassigned_KJ439776
+    demote member AL_1_unassigned_KJ439776 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439776'" -r reference_member true
+    extract child AL_1_unassigned_KJ439777 --refName REF_1_unassigned_KJ439777
+    demote member AL_1_unassigned_KJ439777 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439777'" -r reference_member true
+    extract child AL_1_unassigned_KJ439779 --refName REF_1_unassigned_KJ439779
+    demote member AL_1_unassigned_KJ439779 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439779'" -r reference_member true
+    extract child AL_1_unassigned_KJ439780 --refName REF_1_unassigned_KJ439780
+    demote member AL_1_unassigned_KJ439780 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439780'" -r reference_member true
+    extract child AL_1_unassigned_HQ537007 --refName REF_1_unassigned_HQ537007
+    demote member AL_1_unassigned_HQ537007 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'HQ537007'" -r reference_member true
+    extract child AL_1_unassigned_KC248195 --refName REF_1_unassigned_KC248195
+    demote member AL_1_unassigned_KC248195 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = ''" -r reference_member true
     exit
 
   create reference REF_2a_D00944 ncbi-refseqs D00944
@@ -86,6 +117,29 @@
   create reference REF_2r_JF735115 ncbi-refseqs JF735115
   create reference REF_2t_KC197238 ncbi-refseqs KC197238
   create reference REF_2u_JF735112 ncbi-refseqs JF735112
+
+  # Provisional subtypes
+  create reference REF_2g_X93323 ncbi-refseqs X93323
+  create reference REF_2h_X93327 ncbi-refseqs X93327
+  create reference REF_2n_L39309 ncbi-refseqs L39309
+  create reference REF_2n_L44602 ncbi-refseqs L44602
+  create reference REF_2o_L38333 ncbi-refseqs L38333
+  create reference REF_2o_L38373 ncbi-refseqs L38373
+  create reference REF_2p_L39300 ncbi-refseqs L39300
+  create reference REF_2p_L44601 ncbi-refseqs L44601
+  create reference REF_2s_HM777332 ncbi-refseqs HM777332
+  create reference REF_2s_HM777447 ncbi-refseqs HM777447
+  create reference REF_2s_JQ924942 ncbi-refseqs JQ924942
+
+  # Unassigned subtypes
+  create reference REF_2_unassigned_JF735110 ncbi-refseqs JF735110
+  create reference REF_2_unassigned_JF735116 ncbi-refseqs JF735116
+  create reference REF_2_unassigned_JF735117 ncbi-refseqs JF735117
+  create reference REF_2_unassigned_JF735118 ncbi-refseqs JF735118
+  create reference REF_2_unassigned_JF735119 ncbi-refseqs JF735119
+  create reference REF_2_unassigned_KC197236 ncbi-refseqs KC197236
+  create reference REF_2_unassigned_KC197237 ncbi-refseqs KC197237
+  create reference REF_2_unassigned_KC197239 ncbi-refseqs KC197239
 
   alignment AL_2
     extract child AL_2a --refName REF_2a_D00944
@@ -116,6 +170,36 @@
     demote member AL_2t --whereClause "sequence.genotype = '2' and sequence.subtype = 't'" -r reference_member true
     extract child AL_2u --refName REF_2u_JF735112
     demote member AL_2u --whereClause "sequence.genotype = '2' and sequence.subtype = 'u'" -r reference_member true
+    # Provisional subtypes
+    extract child AL_2g --refName REF_2g_X93323
+    demote member AL_2g  --whereClause "sequence.genotype = '2' and sequence.subtype = 'g'" -r reference_member true
+    extract child AL_2h --refName REF_2h_X93327
+    demote member AL_2h  --whereClause "sequence.genotype = '2' and sequence.subtype = 'h'" -r reference_member true
+    extract child AL_2n --refName REF_2n_L39309
+    demote member AL_2n  --whereClause "sequence.genotype = '2' and sequence.subtype = 'n'" -r reference_member true
+    extract child AL_2o --refName REF_2o_L38333
+    demote member AL_2o  --whereClause "sequence.genotype = '2' and sequence.subtype = 'o'" -r reference_member true
+    extract child AL_2p --refName REF_2p_L39300
+    demote member AL_2p  --whereClause "sequence.genotype = '2' and sequence.subtype = 'p'" -r reference_member true
+    extract child AL_2s --refName REF_2s_HM777332
+    demote member AL_2s  --whereClause "sequence.genotype = '2' and sequence.subtype = 's'" -r reference_member true
+    # Unassigned subtypes
+    extract child AL_2_unassigned_JF735110 --refName REF_2_unassigned_JF735110
+    demote member AL_2_unassigned_JF735110 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735110'" -r reference_member true
+    extract child AL_2_unassigned_JF735116 --refName REF_2_unassigned_JF735116
+    demote member AL_2_unassigned_JF735116 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735116'" -r reference_member true
+    extract child AL_2_unassigned_JF735117 --refName REF_2_unassigned_JF735117
+    demote member AL_2_unassigned_JF735117 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735117'" -r reference_member true
+    extract child AL_2_unassigned_JF735118 --refName REF_2_unassigned_JF735118
+    demote member AL_2_unassigned_JF735118 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735118'" -r reference_member true
+    extract child AL_2_unassigned_JF735119 --refName REF_2_unassigned_JF735119
+    demote member AL_2_unassigned_JF735119 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735119'" -r reference_member true
+    extract child AL_2_unassigned_KC197236 --refName REF_2_unassigned_KC197236
+    demote member AL_2_unassigned_KC197236 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC197236'" -r reference_member true
+    extract child AL_2_unassigned_KC197237 --refName REF_2_unassigned_KC197237
+    demote member AL_2_unassigned_KC197237 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC197237'" -r reference_member true
+    extract child AL_2_unassigned_KC197239 --refName REF_2_unassigned_KC197239
+    demote member AL_2_unassigned_KC197239 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC197239'" -r reference_member true
     exit
 
   create reference REF_3a_D17763 ncbi-refseqs D17763
@@ -126,6 +210,18 @@
   create reference REF_3h_JF735121 ncbi-refseqs JF735121
   create reference REF_3i_FJ407092 ncbi-refseqs FJ407092
   create reference REF_3k_D63821 ncbi-refseqs D63821
+
+  # Provisional subtypes
+  create reference REF_3c_D14198 ncbi-refseqs D14198
+  create reference REF_3c_D16612 ncbi-refseqs D16612
+  create reference REF_3c_D16613 ncbi-refseqs D16613
+  create reference REF_3f_D14203 ncbi-refseqs D14203
+  create reference REF_3f_D16614 ncbi-refseqs D16614
+  create reference REF_3f_D16615 ncbi-refseqs D16615
+  create reference REF_3f_L78842 ncbi-refseqs L78842
+
+  # Unassigned subtypes
+  create reference REF_3_unassigned_JF735124 ncbi-refseqs JF735124
 
   alignment AL_3
     extract child AL_3a --refName REF_3a_D17763
@@ -144,6 +240,14 @@
     demote member AL_3i --whereClause "sequence.genotype = '3' and sequence.subtype = 'i'" -r reference_member true
     extract child AL_3k --refName REF_3k_D63821
     demote member AL_3k --whereClause "sequence.genotype = '3' and sequence.subtype = 'k'" -r reference_member true
+    # Provisional subtypes
+    extract child AL_3c --refName REF_3c_D14198
+    demote member AL_3c  --whereClause "sequence.genotype = '3' and sequence.subtype = 'c'" -r reference_member true
+    extract child AL_3f --refName REF_3f_D14203
+    demote member AL_3f  --whereClause "sequence.genotype = '3' and sequence.subtype = 'f'" -r reference_member true
+    # Unassigned subtypes
+    extract child AL_3_unassigned_JF735124 --refName REF_3_unassigned_JF735124
+    demote member AL_3_unassigned_JF735124 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735124'" -r reference_member true
     exit
 
   create reference REF_4a_Y11604 ncbi-refseqs Y11604
@@ -164,6 +268,30 @@
   create reference REF_4t_FJ839869 ncbi-refseqs FJ839869
   create reference REF_4v_JX227960 ncbi-refseqs JX227960
   create reference REF_4w_FJ025855 ncbi-refseqs FJ025855
+
+  # Provisional subtypes
+  create reference REF_4e_L29589 ncbi-refseqs L29589
+  create reference REF_4e_L29590 ncbi-refseqs L29590
+  create reference REF_4e_L29626 ncbi-refseqs L29626
+  create reference REF_4e_L29629 ncbi-refseqs L29629
+  create reference REF_4h_L29610 ncbi-refseqs L29610
+  create reference REF_4h_L29611 ncbi-refseqs L29611
+  create reference REF_4h_AJ291249 ncbi-refseqs AJ291249
+  create reference REF_4i_L36437 ncbi-refseqs L36437
+  create reference REF_4i_L36439 ncbi-refseqs L36439
+  create reference REF_4j_L36438 ncbi-refseqs L36438
+
+  # Unassigned subtypes
+  create reference REF_4_unassigned_FJ025854 ncbi-refseqs FJ025854
+  create reference REF_4_unassigned_JF735127 ncbi-refseqs JF735127
+  create reference REF_4_unassigned_JF735129 ncbi-refseqs JF735129
+  create reference REF_4_unassigned_JF735130 ncbi-refseqs JF735130
+  create reference REF_4_unassigned_JF735131 ncbi-refseqs JF735131
+  create reference REF_4_unassigned_JF735132 ncbi-refseqs JF735132
+  create reference REF_4_unassigned_JF735134 ncbi-refseqs JF735134
+  create reference REF_4_unassigned_JF735135 ncbi-refseqs JF735135
+  create reference REF_4_unassigned_JF735138 ncbi-refseqs JF735138
+  create reference REF_4_unassigned_JX227964 ncbi-refseqs JX227964
 
   alignment AL_4
     extract child AL_4a --refName REF_4a_Y11604
@@ -202,6 +330,36 @@
     demote member AL_4v --whereClause "sequence.genotype = '4' and sequence.subtype = 'v'" -r reference_member true
     extract child AL_4w --refName REF_4w_FJ025855
     demote member AL_4w --whereClause "sequence.genotype = '4' and sequence.subtype = 'w'" -r reference_member true
+    # Provisional subtypes
+    extract child AL_4e --refName REF_4e_L29589
+    demote member AL_4e  --whereClause "sequence.genotype = '4' and sequence.subtype = 'e'" -r reference_member true
+    extract child AL_4h --refName REF_4h_L29610
+    demote member AL_4h  --whereClause "sequence.genotype = '4' and sequence.subtype = 'h'" -r reference_member true
+    extract child AL_4i --refName REF_4i_L36437
+    demote member AL_4i  --whereClause "sequence.genotype = '4' and sequence.subtype = 'i'" -r reference_member true
+    extract child AL_4j --refName REF_4j_L36438
+    demote member AL_4j  --whereClause "sequence.genotype = '4' and sequence.subtype = 'j'" -r reference_member true
+    # Unassigned subtypes
+    extract child AL_4_unassigned_FJ025854 --refName REF_4_unassigned_FJ025854
+    demote member AL_4_unassigned_FJ025854 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'FJ025854'" -r reference_member true
+    extract child AL_4_unassigned_JF735127 --refName REF_4_unassigned_JF735127
+    demote member AL_4_unassigned_JF735127 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735127'" -r reference_member true
+    extract child AL_4_unassigned_JF735129 --refName REF_4_unassigned_JF735129
+    demote member AL_4_unassigned_JF735129 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735129'" -r reference_member true
+    extract child AL_4_unassigned_JF735130 --refName REF_4_unassigned_JF735130
+    demote member AL_4_unassigned_JF735130 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735130'" -r reference_member true
+    extract child AL_4_unassigned_JF735131 --refName REF_4_unassigned_JF735131
+    demote member AL_4_unassigned_JF735131 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735131'" -r reference_member true
+    extract child AL_4_unassigned_JF735132 --refName REF_4_unassigned_JF735132
+    demote member AL_4_unassigned_JF735132 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735132'" -r reference_member true
+    extract child AL_4_unassigned_JF735134 --refName REF_4_unassigned_JF735134
+    demote member AL_4_unassigned_JF735134 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735134'" -r reference_member true
+    extract child AL_4_unassigned_JF735135 --refName REF_4_unassigned_JF735135
+    demote member AL_4_unassigned_JF735135 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735135'" -r reference_member true
+    extract child AL_4_unassigned_JF735138 --refName REF_4_unassigned_JF735138
+    demote member AL_4_unassigned_JF735138 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735138'" -r reference_member true
+    extract child AL_4_unassigned_JX227964 --refName REF_4_unassigned_JX227964
+    demote member AL_4_unassigned_JX227964 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX227964'" -r reference_member true
     exit
 
   create reference REF_5a_AF064490 ncbi-refseqs AF064490
@@ -240,6 +398,24 @@
   create reference REF_6xd_KM252789 ncbi-refseqs KM252789
   create reference REF_6xe_JX183557 ncbi-refseqs JX183557
 
+  # Unassigned subtypes
+  create reference REF_6_unassigned_DQ278891 ncbi-refseqs DQ278891
+  create reference REF_6_unassigned_DQ278893 ncbi-refseqs DQ278893
+  create reference REF_6_unassigned_JX183549 ncbi-refseqs JX183549
+  create reference REF_6_unassigned_JX183550 ncbi-refseqs JX183550
+  create reference REF_6_unassigned_JX183551 ncbi-refseqs JX183551
+  create reference REF_6_unassigned_JX183553 ncbi-refseqs JX183553
+  create reference REF_6_unassigned_JX183554 ncbi-refseqs JX183554
+  create reference REF_6_unassigned_JX183558 ncbi-refseqs JX183558
+  create reference REF_6_unassigned_KC844039 ncbi-refseqs KC844039
+  create reference REF_6_unassigned_KC844040 ncbi-refseqs KC844040
+  create reference REF_6_unassigned_KJ470620 ncbi-refseqs KJ470620
+  create reference REF_6_unassigned_KJ470621 ncbi-refseqs KJ470621
+  create reference REF_6_unassigned_KJ470622 ncbi-refseqs KJ470622
+  create reference REF_6_unassigned_KJ470623 ncbi-refseqs KJ470623
+  create reference REF_6_unassigned_KJ470624 ncbi-refseqs KJ470624
+  create reference REF_6_unassigned_KJ470625 ncbi-refseqs KJ470625
+    
   alignment AL_6
     extract child AL_6a --refName REF_6a_Y12083
     demote member AL_6a --whereClause "sequence.genotype = '6' and sequence.subtype = 'a'" -r reference_member true
@@ -297,6 +473,39 @@
     demote member AL_6xd --whereClause "sequence.genotype = '6' and sequence.subtype = 'xd'" -r reference_member true
     extract child AL_6xe --refName REF_6xe_JX183557
     demote member AL_6xe --whereClause "sequence.genotype = '6' and sequence.subtype = 'xe'" -r reference_member true
+    # Unassigned subtypes
+    extract child AL_6_unassigned_DQ278891 --refName REF_6_unassigned_DQ278891
+    demote member AL_6_unassigned_DQ278891 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'DQ278891'" -r reference_member true
+    extract child AL_6_unassigned_DQ278893 --refName REF_6_unassigned_DQ278893
+    demote member AL_6_unassigned_DQ278893 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'DQ278893'" -r reference_member true
+    extract child AL_6_unassigned_JX183549 --refName REF_6_unassigned_JX183549
+    demote member AL_6_unassigned_JX183549 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183549'" -r reference_member true
+    extract child AL_6_unassigned_JX183550 --refName REF_6_unassigned_JX183550
+    demote member AL_6_unassigned_JX183550 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183550'" -r reference_member true
+    extract child AL_6_unassigned_JX183551 --refName REF_6_unassigned_JX183551
+    demote member AL_6_unassigned_JX183551 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183551'" -r reference_member true
+    extract child AL_6_unassigned_JX183553 --refName REF_6_unassigned_JX183553
+    demote member AL_6_unassigned_JX183553 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183553'" -r reference_member true
+    extract child AL_6_unassigned_JX183554 --refName REF_6_unassigned_JX183554
+    demote member AL_6_unassigned_JX183554 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183554'" -r reference_member true
+    extract child AL_6_unassigned_JX183558 --refName REF_6_unassigned_JX183558
+    demote member AL_6_unassigned_JX183558 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183558'" -r reference_member true
+    extract child AL_6_unassigned_KC844039 --refName REF_6_unassigned_KC844039
+    demote member AL_6_unassigned_KC844039 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC844039'" -r reference_member true
+    extract child AL_6_unassigned_KC844040 --refName REF_6_unassigned_KC844040
+    demote member AL_6_unassigned_KC844040 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC844040'" -r reference_member true
+    extract child AL_6_unassigned_KJ470620 --refName REF_6_unassigned_KJ470620
+    demote member AL_6_unassigned_KJ470620 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470620'" -r reference_member true
+    extract child AL_6_unassigned_KJ470621 --refName REF_6_unassigned_KJ470621
+    demote member AL_6_unassigned_KJ470621 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470621'" -r reference_member true
+    extract child AL_6_unassigned_KJ470622 --refName REF_6_unassigned_KJ470622
+    demote member AL_6_unassigned_KJ470622 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470622'" -r reference_member true
+    extract child AL_6_unassigned_KJ470623 --refName REF_6_unassigned_KJ470623
+    demote member AL_6_unassigned_KJ470623 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470623'" -r reference_member true
+    extract child AL_6_unassigned_KJ470624 --refName REF_6_unassigned_KJ470624
+    demote member AL_6_unassigned_KJ470624 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470624'" -r reference_member true
+    extract child AL_6_unassigned_KJ470625 --refName REF_6_unassigned_KJ470625
+    demote member AL_6_unassigned_KJ470625 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470625'" -r reference_member true
     exit
 
 
@@ -706,6 +915,166 @@
   alignment AL_6xd set field displayName "Subtype 6xd"
   alignment AL_6xe set field displayName "Subtype 6xe"
   alignment AL_7a set field displayName "Subtype 7a"
+
+  # Provisional subtypes
+  alignment AL_1f set field displayName "Subtype 1f (provisional)"
+  alignment AL_1f set field status provisional
+  alignment AL_2g set field displayName "Subtype 2g (provisional)"
+  alignment AL_2g set field status provisional
+  alignment AL_2h set field displayName "Subtype 2h (provisional)"
+  alignment AL_2h set field status provisional
+  alignment AL_2n set field displayName "Subtype 2n (provisional)"
+  alignment AL_2n set field status provisional
+  alignment AL_2o set field displayName "Subtype 2o (provisional)"
+  alignment AL_2o set field status provisional
+  alignment AL_2p set field displayName "Subtype 2p (provisional)"
+  alignment AL_2p set field status provisional
+  alignment AL_2s set field displayName "Subtype 2s (provisional)"
+  alignment AL_2s set field status provisional
+  alignment AL_3c set field displayName "Subtype 3c (provisional)"
+  alignment AL_3c set field status provisional
+  alignment AL_3f set field displayName "Subtype 3f (provisional)"
+  alignment AL_3f set field status provisional
+  alignment AL_4e set field displayName "Subtype 4e (provisional)"
+  alignment AL_4e set field status provisional
+  alignment AL_4h set field displayName "Subtype 4h (provisional)"
+  alignment AL_4h set field status provisional
+  alignment AL_4i set field displayName "Subtype 4i (provisional)"
+  alignment AL_4i set field status provisional
+  alignment AL_4j set field displayName "Subtype 4j (provisional)"
+  alignment AL_4j set field status provisional
+
+  # Unassigned subtypes
+  alignment AL_1_unassigned_AJ851228 set field displayName "Subtype 1_AJ851228 (unassigned)"
+  alignment AL_1_unassigned_AJ851228 set field status unassigned
+  alignment AL_6_unassigned_DQ278891 set field displayName "Subtype 6_DQ278891 (unassigned)"
+  alignment AL_6_unassigned_DQ278891 set field status unassigned
+  alignment AL_6_unassigned_DQ278893 set field displayName "Subtype 6_DQ278893 (unassigned)"
+  alignment AL_6_unassigned_DQ278893 set field status unassigned
+  alignment AL_4_unassigned_FJ025854 set field displayName "Subtype 4_FJ025854 (unassigned)"
+  alignment AL_4_unassigned_FJ025854 set field status unassigned
+  alignment AL_1_unassigned_HQ537007 set field displayName "Subtype 1_HQ537007 (unassigned)"
+  alignment AL_1_unassigned_HQ537007 set field status unassigned
+  alignment AL_2_unassigned_JF735110 set field displayName "Subtype 2_JF735110 (unassigned)"
+  alignment AL_2_unassigned_JF735110 set field status unassigned
+  alignment AL_2_unassigned_JF735116 set field displayName "Subtype 2_JF735116 (unassigned)"
+  alignment AL_2_unassigned_JF735116 set field status unassigned
+  alignment AL_2_unassigned_JF735117 set field displayName "Subtype 2_JF735117 (unassigned)"
+  alignment AL_2_unassigned_JF735117 set field status unassigned
+  alignment AL_2_unassigned_JF735118 set field displayName "Subtype 2_JF735118 (unassigned)"
+  alignment AL_2_unassigned_JF735118 set field status unassigned
+  alignment AL_2_unassigned_JF735119 set field displayName "Subtype 2_JF735119 (unassigned)"
+  alignment AL_2_unassigned_JF735119 set field status unassigned
+  alignment AL_3_unassigned_JF735124 set field displayName "Subtype 3_JF735124 (unassigned)"
+  alignment AL_3_unassigned_JF735124 set field status unassigned
+  alignment AL_4_unassigned_JF735127 set field displayName "Subtype 4_JF735127 (unassigned)"
+  alignment AL_4_unassigned_JF735127 set field status unassigned
+  alignment AL_4_unassigned_JF735129 set field displayName "Subtype 4_JF735129 (unassigned)"
+  alignment AL_4_unassigned_JF735129 set field status unassigned
+  alignment AL_4_unassigned_JF735130 set field displayName "Subtype 4_JF735130 (unassigned)"
+  alignment AL_4_unassigned_JF735130 set field status unassigned
+  alignment AL_4_unassigned_JF735131 set field displayName "Subtype 4_JF735131 (unassigned)"
+  alignment AL_4_unassigned_JF735131 set field status unassigned
+  alignment AL_4_unassigned_JF735132 set field displayName "Subtype 4_JF735132 (unassigned)"
+  alignment AL_4_unassigned_JF735132 set field status unassigned
+  alignment AL_4_unassigned_JF735134 set field displayName "Subtype 4_JF735134 (unassigned)"
+  alignment AL_4_unassigned_JF735134 set field status unassigned
+  alignment AL_4_unassigned_JF735135 set field displayName "Subtype 4_JF735135 (unassigned)"
+  alignment AL_4_unassigned_JF735135 set field status unassigned
+  alignment AL_4_unassigned_JF735138 set field displayName "Subtype 4_JF735138 (unassigned)"
+  alignment AL_4_unassigned_JF735138 set field status unassigned
+  alignment AL_6_unassigned_JX183549 set field displayName "Subtype 6_JX183549 (unassigned)"
+  alignment AL_6_unassigned_JX183549 set field status unassigned
+  alignment AL_6_unassigned_JX183550 set field displayName "Subtype 6_JX183550 (unassigned)"
+  alignment AL_6_unassigned_JX183550 set field status unassigned
+  alignment AL_6_unassigned_JX183551 set field displayName "Subtype 6_JX183551 (unassigned)"
+  alignment AL_6_unassigned_JX183551 set field status unassigned
+  alignment AL_6_unassigned_JX183553 set field displayName "Subtype 6_JX183553 (unassigned)"
+  alignment AL_6_unassigned_JX183553 set field status unassigned
+  alignment AL_6_unassigned_JX183554 set field displayName "Subtype 6_JX183554 (unassigned)"
+  alignment AL_6_unassigned_JX183554 set field status unassigned
+  alignment AL_6_unassigned_JX183558 set field displayName "Subtype 6_JX183558 (unassigned)"
+  alignment AL_6_unassigned_JX183558 set field status unassigned
+  alignment AL_4_unassigned_JX227964 set field displayName "Subtype 4_J4227964 (unassigned)"
+  alignment AL_4_unassigned_JX227964 set field status unassigned
+  alignment AL_2_unassigned_KC197236 set field displayName "Subtype 2_KC197236 (unassigned)"
+  alignment AL_2_unassigned_KC197236 set field status unassigned
+  alignment AL_2_unassigned_KC197237 set field displayName "Subtype 2_KC197237 (unassigned)"
+  alignment AL_2_unassigned_KC197237 set field status unassigned
+  alignment AL_2_unassigned_KC197239 set field displayName "Subtype 2_KC197239 (unassigned)"
+  alignment AL_2_unassigned_KC197239 set field status unassigned
+  alignment AL_1_unassigned_KC248195 set field displayName "Subtype 1_KC248195 (unassigned)"
+  alignment AL_1_unassigned_KC248195 set field status unassigned
+  alignment AL_6_unassigned_KC844039 set field displayName "Subtype 6_KC844039 (unassigned)"
+  alignment AL_6_unassigned_KC844039 set field status unassigned
+  alignment AL_6_unassigned_KC844040 set field displayName "Subtype 6_KC844040 (unassigned)"
+  alignment AL_6_unassigned_KC844040 set field status unassigned
+  alignment AL_1_unassigned_KJ439776 set field displayName "Subtype 1_KJ439776 (unassigned)"
+  alignment AL_1_unassigned_KJ439776 set field status unassigned
+  alignment AL_1_unassigned_KJ439777 set field displayName "Subtype 1_KJ439777 (unassigned)"
+  alignment AL_1_unassigned_KJ439777 set field status unassigned
+  alignment AL_1_unassigned_KJ439779 set field displayName "Subtype 1_KJ439779 (unassigned)"
+  alignment AL_1_unassigned_KJ439779 set field status unassigned
+  alignment AL_1_unassigned_KJ439780 set field displayName "Subtype 1_KJ439780 (unassigned)"
+  alignment AL_1_unassigned_KJ439780 set field status unassigned
+  alignment AL_6_unassigned_KJ470620 set field displayName "Subtype 6_KJ470620 (unassigned)"
+  alignment AL_6_unassigned_KJ470620 set field status unassigned
+  alignment AL_6_unassigned_KJ470621 set field displayName "Subtype 6_KJ470621 (unassigned)"
+  alignment AL_6_unassigned_KJ470621 set field status unassigned
+  alignment AL_6_unassigned_KJ470622 set field displayName "Subtype 6_KJ470622 (unassigned)"
+  alignment AL_6_unassigned_KJ470622 set field status unassigned
+  alignment AL_6_unassigned_KJ470623 set field displayName "Subtype 6_KJ470623 (unassigned)"
+  alignment AL_6_unassigned_KJ470623 set field status unassigned
+  alignment AL_6_unassigned_KJ470624 set field displayName "Subtype 6_KJ470624 (unassigned)"
+  alignment AL_6_unassigned_KJ470624 set field status unassigned
+  alignment AL_6_unassigned_KJ470625 set field displayName "Subtype 6_KJ470625 (unassigned)"
+  alignment AL_6_unassigned_KJ470625 set field status unassigned
+
+
+  # Unassigned subtype references
+  reference REF_1_unassigned_AJ851228 inherit feature-location -rs AL_1 whole_genome
+  reference REF_6_unassigned_DQ278891 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_DQ278893 inherit feature-location -rs AL_6 whole_genome
+  reference REF_4_unassigned_FJ025854 inherit feature-location -rs AL_4 whole_genome
+  reference REF_1_unassigned_HQ537007 inherit feature-location -rs AL_1 whole_genome
+  reference REF_2_unassigned_JF735110 inherit feature-location -rs AL_2 whole_genome
+  reference REF_2_unassigned_JF735116 inherit feature-location -rs AL_2 whole_genome
+  reference REF_2_unassigned_JF735117 inherit feature-location -rs AL_2 whole_genome
+  reference REF_2_unassigned_JF735118 inherit feature-location -rs AL_2 whole_genome
+  reference REF_2_unassigned_JF735119 inherit feature-location -rs AL_2 whole_genome
+  reference REF_3_unassigned_JF735124 inherit feature-location -rs AL_3 whole_genome
+  reference REF_4_unassigned_JF735127 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4_unassigned_JF735129 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4_unassigned_JF735130 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4_unassigned_JF735131 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4_unassigned_JF735132 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4_unassigned_JF735134 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4_unassigned_JF735135 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4_unassigned_JF735138 inherit feature-location -rs AL_4 whole_genome
+  reference REF_6_unassigned_JX183549 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_JX183550 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_JX183551 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_JX183553 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_JX183554 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_JX183558 inherit feature-location -rs AL_6 whole_genome
+  reference REF_4_unassigned_JX227964 inherit feature-location -rs AL_4 whole_genome
+  reference REF_2_unassigned_KC197236 inherit feature-location -rs AL_2 whole_genome
+  reference REF_2_unassigned_KC197237 inherit feature-location -rs AL_2 whole_genome
+  reference REF_2_unassigned_KC197239 inherit feature-location -rs AL_2 whole_genome
+  reference REF_1_unassigned_KC248195 inherit feature-location -rs AL_1 whole_genome
+  reference REF_6_unassigned_KC844039 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_KC844040 inherit feature-location -rs AL_6 whole_genome
+  reference REF_1_unassigned_KJ439776 inherit feature-location -rs AL_1 whole_genome
+  reference REF_1_unassigned_KJ439777 inherit feature-location -rs AL_1 whole_genome
+  reference REF_1_unassigned_KJ439779 inherit feature-location -rs AL_1 whole_genome
+  reference REF_1_unassigned_KJ439780 inherit feature-location -rs AL_1 whole_genome
+  reference REF_6_unassigned_KJ470620 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_KJ470621 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_KJ470622 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_KJ470623 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_KJ470624 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6_unassigned_KJ470625 inherit feature-location -rs AL_6 whole_genome
+
 
 # mark all non-reference members as such.
 multi-set field alignment_member -w "reference_member = null" reference_member false

@@ -24,15 +24,19 @@ schema-project hcv
     create field enrichment_method VARCHAR
     create field genotype VARCHAR
     create field subtype VARCHAR
-	create field genotyping_method VARCHAR
-	create field genotyping_score VARCHAR
+    create field genotyping_method VARCHAR
+    create field genotyping_score VARCHAR
     create field gb_genotype VARCHAR
     create field gb_subtype VARCHAR
     create field rega_genotype VARCHAR
     create field rega_subtype VARCHAR
     create field reference_status VARCHAR 20
     exit
-    
+
+  table alignment
+    create field status VARCHAR 20
+    exit
+
   table variation
     create field is_resistance_associated_variant BOOLEAN 
     create field is_common_aa_polymorphism BOOLEAN 
@@ -54,8 +58,8 @@ schema-project hcv
     create field epitope_full_hla VARCHAR 50
     create field epitope_partial_hla VARCHAR 50
     create field common_aa_polymorphism_reference_aa VARCHAR 50
-	create field common_aa_polymorphism_variation_aa VARCHAR 50
-	create field common_aa_polymorphism_codon VARCHAR 50
+    create field common_aa_polymorphism_variation_aa VARCHAR 50
+    create field common_aa_polymorphism_codon VARCHAR 50
     exit
   
   table var_almt_note
