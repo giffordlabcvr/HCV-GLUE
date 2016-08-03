@@ -9,6 +9,17 @@
   create reference REF_5_AF064490 ncbi-refseqs AF064490
   create reference REF_6_Y12083 ncbi-refseqs Y12083
   create reference REF_7_EF108306 ncbi-refseqs EF108306
+  
+  # Recombinants  
+  create reference REF_RF2k/1b_AY587845 ncbi-refseqs AY587845
+  create reference REF_RF2i/6p_DQ155560 ncbi-refseqs DQ155560
+  create reference REF_RF2b/1b_1_DQ364460 ncbi-refseqs DQ364460
+  create reference REF_RF2/5_AM408911 ncbi-refseqs AM408911
+  create reference REF_RF2b/6w_EU643835 ncbi-refseqs EU643835
+  create reference REF_RF2b/1b_2_AB622121 ncbi-refseqs AB622121
+  create reference REF_RF2b/1a_JF779679 ncbi-refseqs JF779679
+  create reference REF_RF2b/1b_3_AB677530 ncbi-refseqs AB677530
+  create reference REF_RF2b/1b_4_AB677527 ncbi-refseqs AB677527
 
   alignment AL_MASTER
     set field displayName "All HCV"
@@ -27,6 +38,26 @@
     demote member AL_6 --whereClause "sequence.genotype = '6'" -r reference_member true 
     extract child AL_7 --refName REF_7_EF108306
     demote member AL_7 --whereClause "sequence.genotype = '7'" -r reference_member true 
+
+    # Recombinants
+    extract child AL_RF2k/1b_AY587845 --refName REF_RF2k/1b_AY587845
+    demote member AL_RF2k/1b_AY587845 --whereClause "sequence.genotype = 'RF2k/1b_AY587845'" -r reference_member true
+    extract child AL_RF2i/6p_DQ155560 --refName REF_RF2i/6p_DQ155560
+    demote member AL_RF2i/6p_DQ155560 --whereClause "sequence.genotype = 'RF2i/6p_DQ155560'" -r reference_member true
+    extract child AL_RF2b/1b_1_DQ364460 --refName REF_RF2b/1b_1_DQ364460
+    demote member AL_RF2b/1b_1_DQ364460 --whereClause "sequence.genotype = 'RF2b/1b_1_DQ364460'" -r reference_member true
+    extract child AL_RF2/5_AM408911 --refName REF_RF2/5_AM408911
+    demote member AL_RF2/5_AM408911 --whereClause "sequence.genotype = 'RF2/5_AM408911'" -r reference_member true
+    extract child AL_RF2b/6w_EU643835 --refName REF_RF2b/6w_EU643835
+    demote member AL_RF2b/6w_EU643835 --whereClause "sequence.genotype = 'RF2b/6w_EU643835'" -r reference_member true
+    extract child AL_RF2b/1b_2_AB622121 --refName REF_RF2b/1b_2_AB622121
+    demote member AL_RF2b/1b_2_AB622121 --whereClause "sequence.genotype = 'RF2b/1b_2_AB622121'" -r reference_member true
+    extract child AL_RF2b/1a_JF779679 --refName REF_RF2b/1a_JF779679
+    demote member AL_RF2b/1a_JF779679 --whereClause "sequence.genotype = 'RF2b/1a_JF779679'" -r reference_member true
+    extract child AL_RF2b/1b_3_AB677530 --refName REF_RF2b/1b_3_AB677530
+    demote member AL_RF2b/1b_3_AB677530 --whereClause "sequence.genotype = 'RF2b/1b_3_AB677530'" -r reference_member true
+    extract child AL_RF2b/1b_4_AB677527 --refName REF_RF2b/1b_4_AB677527
+    demote member AL_RF2b/1b_4_AB677527 --whereClause "sequence.genotype = 'RF2b/1b_4_AB677527'" -r reference_member true
     exit
 
   create reference REF_1a_AF009606 ncbi-refseqs AF009606
@@ -517,6 +548,23 @@
   reference REF_6_Y12083 remove feature-location 3UTR
   reference REF_7_EF108306 inherit feature-location -rs AL_MASTER whole_genome
 
+  # Recombinants
+  reference REF_RF2k/1b_AY587845 inherit feature-location -rs AL_MASTER whole_genome
+  
+  reference REF_RF2i/6p_DQ155560 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2i/6p_DQ155560 feature-location NS5B remove segment 7617 9360
+  reference REF_RF2i/6p_DQ155560 feature-location NS5B add segment 7617 9359  
+  reference REF_RF2i/6p_DQ155560 feature-location precursor_polyprotein remove segment 324 9360
+  reference REF_RF2i/6p_DQ155560 feature-location precursor_polyprotein add segment 324 9359  
+
+  reference REF_RF2b/1b_1_DQ364460 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2/5_AM408911 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b/6w_EU643835 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b/1b_2_AB622121 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b/1a_JF779679 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b/1b_3_AB677530 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b/1b_4_AB677527 inherit feature-location -rs AL_MASTER whole_genome
+
   reference REF_1a_AF009606 inherit feature-location -rs AL_1 whole_genome
   reference REF_1b_D90208 inherit feature-location -rs AL_1 whole_genome
   reference REF_1c_D14853 inherit feature-location -rs AL_1 whole_genome
@@ -817,6 +865,19 @@
   alignment AL_5 set field displayName "Genotype 5"
   alignment AL_6 set field displayName "Genotype 6"
   alignment AL_7 set field displayName "Genotype 7"
+
+  # Recombinants
+  alignment AL_RF2k/1b_AY587845 set field displayName "Recombinant form: 2k/1b"
+  alignment AL_RF2i/6p_DQ155560 set field displayName "Recombinant form: 2i/6p"
+  alignment AL_RF2b/1b_1_DQ364460 set field displayName "Recombinant form: 2b/1b_1"
+  alignment AL_RF2/5_AM408911 set field displayName "Recombinant form: 2/5"
+  alignment AL_RF2b/6w_EU643835 set field displayName "Recombinant form: 2b/6w"
+  alignment AL_RF2b/1b_2_AB622121 set field displayName "Recombinant form: 2b/1b_2"
+  alignment AL_RF2b/1a_JF779679 set field displayName "Recombinant form: 2b/1a"
+  alignment AL_RF2b/1b_3_AB677530 set field displayName "Recombinant form: 2b/1b_3"
+  alignment AL_RF2b/1b_4_AB677527 set field displayName "Recombinant form: 2b/1b_4"
+
+
   alignment AL_1a set field displayName "Subtype 1a"
   alignment AL_1b set field displayName "Subtype 1b"
   alignment AL_1c set field displayName "Subtype 1c"
