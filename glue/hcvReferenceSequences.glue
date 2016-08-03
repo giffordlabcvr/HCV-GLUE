@@ -21,12 +21,15 @@
   create alignment AL_UNCONSTRAINED
     
   # import the unconstrained alignment from Donald Smith's FASTA file.
-  module unconstrained-fasta-importer import AL_UNCONSTRAINED -f alignments/alignments/All\ types\ selection\ and\ ref\ for\ web\ 26\ May\ 2015.FST
+  module unconstrained-fasta-importer import AL_UNCONSTRAINED -f alignments/All\ types\ selection\ and\ ref\ for\ web\ 26\ May\ 2015.FST
   
   # module to import the unconstrained alignment.
   create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
   
+  run file glue/concatenateProvisionalReferences.glue
+  
   # add provisional subtype references to the unconstrained alignment.
   alignment AL_UNCONSTRAINED add member -w "reference_status = 'provisional'"
   
-  
+  # extend the unconstrained alignment to the provisional subtype references
+  extend alignment AL_UNCONSTRAINED hcvMafftAligner -w "sequence.reference_status = 'provisional'"

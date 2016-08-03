@@ -44,8 +44,7 @@
   create reference REF_1n_KJ439781 ncbi-refseqs KJ439781
 
   # Provisional subtypes
-  create reference REF_1f_L38350 ncbi-refseqs L38350
-  create reference REF_1f_L38371 ncbi-refseqs L38371
+  create reference REF_1f_L38350_L38371 ncbi-refseqs REF_1f_L38350_L38371
 
   # Unassigned subtypes
   create reference REF_1_unassigned_AJ851228 ncbi-refseqs AJ851228
@@ -84,7 +83,7 @@
     extract child AL_1n --refName REF_1n_KJ439781
     demote member AL_1n --whereClause "sequence.genotype = '1' and sequence.subtype = 'n'" -r reference_member true
     # Provisional subtypes
-    extract child AL_1f --refName REF_1f_L38350
+    extract child AL_1f --refName REF_1f_L38350_L38371
     demote member AL_1f  --whereClause "sequence.genotype = '1' and sequence.subtype = 'f'" -r reference_member true
     # Unassigned subtypes
     extract child AL_1_unassigned_AJ851228 --refName REF_1_unassigned_AJ851228
@@ -121,15 +120,10 @@
   # Provisional subtypes
   create reference REF_2g_X93323 ncbi-refseqs X93323
   create reference REF_2h_X93327 ncbi-refseqs X93327
-  create reference REF_2n_L39309 ncbi-refseqs L39309
-  create reference REF_2n_L44602 ncbi-refseqs L44602
-  create reference REF_2o_L38333 ncbi-refseqs L38333
-  create reference REF_2o_L38373 ncbi-refseqs L38373
-  create reference REF_2p_L39300 ncbi-refseqs L39300
-  create reference REF_2p_L44601 ncbi-refseqs L44601
-  create reference REF_2s_HM777332 ncbi-refseqs HM777332
-  create reference REF_2s_HM777447 ncbi-refseqs HM777447
-  create reference REF_2s_JQ924942 ncbi-refseqs JQ924942
+  create reference REF_2n_L39309_L44602 ncbi-refseqs REF_2n_L39309_L44602
+  create reference REF_2o_L38333_L38373 ncbi-refseqs REF_2o_L38333_L38373
+  create reference REF_2p_L39300_L44601 ncbi-refseqs REF_2p_L39300_L44601
+  create reference REF_2s_JQ924942_HM777447_HM777332 ncbi-refseqs REF_2s_JQ924942_HM777447_HM777332
 
   # Unassigned subtypes
   create reference REF_2_unassigned_JF735110 ncbi-refseqs JF735110
@@ -175,13 +169,13 @@
     demote member AL_2g  --whereClause "sequence.genotype = '2' and sequence.subtype = 'g'" -r reference_member true
     extract child AL_2h --refName REF_2h_X93327
     demote member AL_2h  --whereClause "sequence.genotype = '2' and sequence.subtype = 'h'" -r reference_member true
-    extract child AL_2n --refName REF_2n_L39309
+    extract child AL_2n --refName REF_2n_L39309_L44602
     demote member AL_2n  --whereClause "sequence.genotype = '2' and sequence.subtype = 'n'" -r reference_member true
-    extract child AL_2o --refName REF_2o_L38333
+    extract child AL_2o --refName REF_2o_L38333_L38373
     demote member AL_2o  --whereClause "sequence.genotype = '2' and sequence.subtype = 'o'" -r reference_member true
-    extract child AL_2p --refName REF_2p_L39300
+    extract child AL_2p --refName REF_2p_L39300_L44601
     demote member AL_2p  --whereClause "sequence.genotype = '2' and sequence.subtype = 'p'" -r reference_member true
-    extract child AL_2s --refName REF_2s_HM777332
+    extract child AL_2s --refName REF_2s_JQ924942_HM777447_HM777332
     demote member AL_2s  --whereClause "sequence.genotype = '2' and sequence.subtype = 's'" -r reference_member true
     # Unassigned subtypes
     extract child AL_2_unassigned_JF735110 --refName REF_2_unassigned_JF735110
@@ -212,13 +206,8 @@
   create reference REF_3k_D63821 ncbi-refseqs D63821
 
   # Provisional subtypes
-  create reference REF_3c_D14198 ncbi-refseqs D14198
-  create reference REF_3c_D16612 ncbi-refseqs D16612
-  create reference REF_3c_D16613 ncbi-refseqs D16613
-  create reference REF_3f_D14203 ncbi-refseqs D14203
-  create reference REF_3f_D16614 ncbi-refseqs D16614
-  create reference REF_3f_D16615 ncbi-refseqs D16615
-  create reference REF_3f_L78842 ncbi-refseqs L78842
+  create reference REF_3c_D16612_D14198_D16613 ncbi-refseqs REF_3c_D16612_D14198_D16613
+  create reference REF_3f_D16614_D14203_D16615 ncbi-refseqs REF_3f_D16614_D14203_D16615
 
   # Unassigned subtypes
   create reference REF_3_unassigned_JF735124 ncbi-refseqs JF735124
@@ -241,9 +230,9 @@
     extract child AL_3k --refName REF_3k_D63821
     demote member AL_3k --whereClause "sequence.genotype = '3' and sequence.subtype = 'k'" -r reference_member true
     # Provisional subtypes
-    extract child AL_3c --refName REF_3c_D14198
+    extract child AL_3c --refName REF_3c_D16612_D14198_D16613
     demote member AL_3c  --whereClause "sequence.genotype = '3' and sequence.subtype = 'c'" -r reference_member true
-    extract child AL_3f --refName REF_3f_D14203
+    extract child AL_3f --refName REF_3f_D16614_D14203_D16615
     demote member AL_3f  --whereClause "sequence.genotype = '3' and sequence.subtype = 'f'" -r reference_member true
     # Unassigned subtypes
     extract child AL_3_unassigned_JF735124 --refName REF_3_unassigned_JF735124
@@ -270,15 +259,9 @@
   create reference REF_4w_FJ025855 ncbi-refseqs FJ025855
 
   # Provisional subtypes
-  create reference REF_4e_L29589 ncbi-refseqs L29589
-  create reference REF_4e_L29590 ncbi-refseqs L29590
-  create reference REF_4e_L29626 ncbi-refseqs L29626
-  create reference REF_4e_L29629 ncbi-refseqs L29629
-  create reference REF_4h_L29610 ncbi-refseqs L29610
-  create reference REF_4h_L29611 ncbi-refseqs L29611
-  create reference REF_4h_AJ291249 ncbi-refseqs AJ291249
-  create reference REF_4i_L36437 ncbi-refseqs L36437
-  create reference REF_4i_L36439 ncbi-refseqs L36439
+  create reference REF_4e_L29589_L29590 ncbi-refseqs REF_4e_L29589_L29590
+  create reference REF_4h_L29610_L29611 ncbi-refseqs REF_4h_L29610_L29611
+  create reference REF_4i_L36439_L36437 ncbi-refseqs REF_4i_L36439_L36437
   create reference REF_4j_L36438 ncbi-refseqs L36438
 
   # Unassigned subtypes
@@ -330,15 +313,17 @@
     demote member AL_4v --whereClause "sequence.genotype = '4' and sequence.subtype = 'v'" -r reference_member true
     extract child AL_4w --refName REF_4w_FJ025855
     demote member AL_4w --whereClause "sequence.genotype = '4' and sequence.subtype = 'w'" -r reference_member true
+    
     # Provisional subtypes
-    extract child AL_4e --refName REF_4e_L29589
+    extract child AL_4e --refName REF_4e_L29589_L29590
     demote member AL_4e  --whereClause "sequence.genotype = '4' and sequence.subtype = 'e'" -r reference_member true
-    extract child AL_4h --refName REF_4h_L29610
+    extract child AL_4h --refName REF_4h_L29610_L29611
     demote member AL_4h  --whereClause "sequence.genotype = '4' and sequence.subtype = 'h'" -r reference_member true
-    extract child AL_4i --refName REF_4i_L36437
+    extract child AL_4i --refName REF_4i_L36439_L36437
     demote member AL_4i  --whereClause "sequence.genotype = '4' and sequence.subtype = 'i'" -r reference_member true
     extract child AL_4j --refName REF_4j_L36438
     demote member AL_4j  --whereClause "sequence.genotype = '4' and sequence.subtype = 'j'" -r reference_member true
+
     # Unassigned subtypes
     extract child AL_4_unassigned_FJ025854 --refName REF_4_unassigned_FJ025854
     demote member AL_4_unassigned_FJ025854 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'FJ025854'" -r reference_member true
