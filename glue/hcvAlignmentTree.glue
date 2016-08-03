@@ -12,7 +12,7 @@
 
   alignment AL_MASTER
     set field displayName "All HCV"
-    add member -w "source.name = 'ncbi-refseqs'"
+    add member -w "source.name = 'ncbi-refseqs' or source.name = 'concatenated-refseqs'"
     extract child AL_1 --refName REF_1_AF009606
     demote member AL_1 --whereClause "sequence.genotype = '1'" -r reference_member true 
     extract child AL_2 --refName REF_2_D00944
@@ -44,7 +44,7 @@
   create reference REF_1n_KJ439781 ncbi-refseqs KJ439781
 
   # Provisional subtypes
-  create reference REF_1f_L38350_L38371 ncbi-refseqs REF_1f_L38350_L38371
+  create reference REF_1f_L38350_L38371 concatenated-refseqs REF_1f_L38350_L38371
 
   # Unassigned subtypes
   create reference REF_1_unassigned_AJ851228 ncbi-refseqs AJ851228
@@ -120,10 +120,10 @@
   # Provisional subtypes
   create reference REF_2g_X93323 ncbi-refseqs X93323
   create reference REF_2h_X93327 ncbi-refseqs X93327
-  create reference REF_2n_L39309_L44602 ncbi-refseqs REF_2n_L39309_L44602
-  create reference REF_2o_L38333_L38373 ncbi-refseqs REF_2o_L38333_L38373
-  create reference REF_2p_L39300_L44601 ncbi-refseqs REF_2p_L39300_L44601
-  create reference REF_2s_JQ924942_HM777447_HM777332 ncbi-refseqs REF_2s_JQ924942_HM777447_HM777332
+  create reference REF_2n_L39309_L44602 concatenated-refseqs REF_2n_L39309_L44602
+  create reference REF_2o_L38333_L38373 concatenated-refseqs REF_2o_L38333_L38373
+  create reference REF_2p_L39300_L44601 concatenated-refseqs REF_2p_L39300_L44601
+  create reference REF_2s_JQ924942_HM777447_HM777332 concatenated-refseqs REF_2s_JQ924942_HM777447_HM777332
 
   # Unassigned subtypes
   create reference REF_2_unassigned_JF735110 ncbi-refseqs JF735110
@@ -206,8 +206,8 @@
   create reference REF_3k_D63821 ncbi-refseqs D63821
 
   # Provisional subtypes
-  create reference REF_3c_D16612_D14198_D16613 ncbi-refseqs REF_3c_D16612_D14198_D16613
-  create reference REF_3f_D16614_D14203_D16615 ncbi-refseqs REF_3f_D16614_D14203_D16615
+  create reference REF_3c_D16612_D14198_D16613 concatenated-refseqs REF_3c_D16612_D14198_D16613
+  create reference REF_3f_D16614_D14203_D16615 concatenated-refseqs REF_3f_D16614_D14203_D16615
 
   # Unassigned subtypes
   create reference REF_3_unassigned_JF735124 ncbi-refseqs JF735124
@@ -259,9 +259,9 @@
   create reference REF_4w_FJ025855 ncbi-refseqs FJ025855
 
   # Provisional subtypes
-  create reference REF_4e_L29589_L29590 ncbi-refseqs REF_4e_L29589_L29590
-  create reference REF_4h_L29610_L29611 ncbi-refseqs REF_4h_L29610_L29611
-  create reference REF_4i_L36439_L36437 ncbi-refseqs REF_4i_L36439_L36437
+  create reference REF_4e_L29589_L29590 concatenated-refseqs REF_4e_L29589_L29590
+  create reference REF_4h_L29610_L29611 concatenated-refseqs REF_4h_L29610_L29611
+  create reference REF_4i_L36439_L36437 concatenated-refseqs REF_4i_L36439_L36437
   create reference REF_4j_L36438 ncbi-refseqs L36438
 
   # Unassigned subtypes

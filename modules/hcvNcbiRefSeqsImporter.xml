@@ -246,6 +246,17 @@
 		<primaryAccession>L36437</primaryAccession>
 		<primaryAccession>L36438</primaryAccession>
 
+		<!-- Recombinants -->
+		<primaryAccession>AY587845</primaryAccession>
+		<primaryAccession>DQ155560</primaryAccession>
+		<primaryAccession>DQ364460</primaryAccession>
+		<primaryAccession>AM408911</primaryAccession>
+		<primaryAccession>EU643835</primaryAccession>
+		<primaryAccession>AB622121</primaryAccession>
+		<primaryAccession>JF779679</primaryAccession>
+		<primaryAccession>AB677530</primaryAccession>
+		<primaryAccession>AB677527</primaryAccession>
+
 	</specificPrimaryAccessions>
 	<eFetchBatchSize>20</eFetchBatchSize>
 </ncbiImporter>

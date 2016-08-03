@@ -233,3 +233,16 @@ ncbi-refseqs,AJ291249,4,h,provisional
 ncbi-refseqs,L36439,4,i,provisional
 ncbi-refseqs,L36437,4,i,provisional
 ncbi-refseqs,L36438,4,j,provisional
+ncbi-refseqs,AY587845,RF2k/1b,-,recombinant
+ncbi-refseqs,DQ155560,RF2i/6p,-,recombinant
+ncbi-refseqs,DQ364460,RF2b/1b_1,-,recombinant
+ncbi-refseqs,AM408911,RF2/5,-,recombinant
+ncbi-refseqs,EU643835,RF2b/6w,-,recombinant
+ncbi-refseqs,AB622121,RF2b/1b_2,-,recombinant
+ncbi-refseqs,JF779679,RF2b/1a,-,recombinant
+ncbi-refseqs,AB677530,RF2b/1b_3,-,recombinant
+ncbi-refseqs,AB677527,RF2b/1b_4,-,recombinant
+
+
+
+

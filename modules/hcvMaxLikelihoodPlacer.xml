@@ -1,4 +1,4 @@
 <maxLikelihoodPlacer>
 	<rootAlignmentName>AL_MASTER</rootAlignmentName>
-	<phyloMemberWhereClause>(sequence.source.name = 'ncbi-refseqs' or sequence.source.name = 'hcv-additional-refs') and reference_member = false</phyloMemberWhereClause>
+	<phyloMemberWhereClause>(sequence.source.name = 'ncbi-refseqs' or sequence.source.name = 'hcv-additional-refs' or sequence.source.name = 'concatenated-refseqs') and reference_member = false</phyloMemberWhereClause>
 </maxLikelihoodPlacer>

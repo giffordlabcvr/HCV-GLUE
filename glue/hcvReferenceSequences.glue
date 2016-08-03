@@ -29,7 +29,7 @@
   run file glue/concatenateProvisionalReferences.glue
   
   # add provisional subtype references to the unconstrained alignment.
-  alignment AL_UNCONSTRAINED add member -w "reference_status = 'provisional'"
+  alignment AL_UNCONSTRAINED add member -w "reference_status in ('provisional', 'recombinant')"
   
   # extend the unconstrained alignment to the provisional subtype references
-  extend alignment AL_UNCONSTRAINED hcvMafftAligner -w "sequence.reference_status = 'provisional'"
+  extend alignment AL_UNCONSTRAINED hcvMafftAligner -w "sequence.reference_status in ('provisional', 'recombinant')"
