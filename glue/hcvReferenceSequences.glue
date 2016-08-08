@@ -1,9 +1,11 @@
   
-  # this module downloads the refseqs from NCBI
+  # these modules download the refseqs from NCBI
   create module --fileName modules/hcvNcbiRefSeqsImporter.xml ncbi-refseqs-importer
+  create module --fileName modules/hcvNcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer
   
   # however, we will import the reference sequences from files
   import source sources/ncbi-refseqs 
+  import source sources/ncbi-refseqs-subgenomic 
 
   # this module populates the reference genotypes from a file.
   create module --fileName modules/referenceGenotypesPopulator.xml reference-genotypes-populator

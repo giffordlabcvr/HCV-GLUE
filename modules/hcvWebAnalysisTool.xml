@@ -1,5 +1,6 @@
 <webAnalysisTool>
 	<fastaSequenceReporterModuleName>fastaCodingOnlySequenceReporter</fastaSequenceReporterModuleName>
+	<maxLikelihoodGenotyperModuleName>maxLikelihoodGenotyper</maxLikelihoodGenotyperModuleName>
 	<featureAnalysisHint>
 		<featureName>precursor_polyprotein</featureName>
 		<includesSequenceContent>true</includesSequenceContent>

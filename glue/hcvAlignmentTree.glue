@@ -11,19 +11,19 @@
   create reference REF_7_EF108306 ncbi-refseqs EF108306
   
   # Recombinants  
-  create reference REF_RF2k/1b_AY587845 ncbi-refseqs AY587845
-  create reference REF_RF2i/6p_DQ155560 ncbi-refseqs DQ155560
-  create reference REF_RF2b/1b_1_DQ364460 ncbi-refseqs DQ364460
-  create reference REF_RF2/5_AM408911 ncbi-refseqs AM408911
-  create reference REF_RF2b/6w_EU643835 ncbi-refseqs EU643835
-  create reference REF_RF2b/1b_2_AB622121 ncbi-refseqs AB622121
-  create reference REF_RF2b/1a_JF779679 ncbi-refseqs JF779679
-  create reference REF_RF2b/1b_3_AB677530 ncbi-refseqs AB677530
-  create reference REF_RF2b/1b_4_AB677527 ncbi-refseqs AB677527
+  create reference REF_RF2k_1b_AY587845 ncbi-refseqs AY587845
+  create reference REF_RF2i_6p_DQ155560 ncbi-refseqs DQ155560
+  create reference REF_RF2b_1b_1_DQ364460 ncbi-refseqs DQ364460
+  create reference REF_RF2_5_AM408911 ncbi-refseqs AM408911
+  create reference REF_RF2b_6w_EU643835 ncbi-refseqs EU643835
+  create reference REF_RF2b_1b_2_AB622121 ncbi-refseqs AB622121
+  create reference REF_RF2b_1a_JF779679 ncbi-refseqs JF779679
+  create reference REF_RF2b_1b_3_AB677530 ncbi-refseqs AB677530
+  create reference REF_RF2b_1b_4_AB677527 ncbi-refseqs AB677527
 
   alignment AL_MASTER
-    set field displayName "All HCV"
-    add member -w "source.name = 'ncbi-refseqs' or source.name = 'concatenated-refseqs'"
+    set field displayName "Hepatitis C Virus (HCV)"
+    add member -w "gb_lab_construct = null or gb_lab_construct = false"
     extract child AL_1 --refName REF_1_AF009606
     demote member AL_1 --whereClause "sequence.genotype = '1'" -r reference_member true 
     extract child AL_2 --refName REF_2_D00944
@@ -40,24 +40,24 @@
     demote member AL_7 --whereClause "sequence.genotype = '7'" -r reference_member true 
 
     # Recombinants
-    extract child AL_RF2k/1b_AY587845 --refName REF_RF2k/1b_AY587845
-    demote member AL_RF2k/1b_AY587845 --whereClause "sequence.genotype = 'RF2k/1b_AY587845'" -r reference_member true
-    extract child AL_RF2i/6p_DQ155560 --refName REF_RF2i/6p_DQ155560
-    demote member AL_RF2i/6p_DQ155560 --whereClause "sequence.genotype = 'RF2i/6p_DQ155560'" -r reference_member true
-    extract child AL_RF2b/1b_1_DQ364460 --refName REF_RF2b/1b_1_DQ364460
-    demote member AL_RF2b/1b_1_DQ364460 --whereClause "sequence.genotype = 'RF2b/1b_1_DQ364460'" -r reference_member true
-    extract child AL_RF2/5_AM408911 --refName REF_RF2/5_AM408911
-    demote member AL_RF2/5_AM408911 --whereClause "sequence.genotype = 'RF2/5_AM408911'" -r reference_member true
-    extract child AL_RF2b/6w_EU643835 --refName REF_RF2b/6w_EU643835
-    demote member AL_RF2b/6w_EU643835 --whereClause "sequence.genotype = 'RF2b/6w_EU643835'" -r reference_member true
-    extract child AL_RF2b/1b_2_AB622121 --refName REF_RF2b/1b_2_AB622121
-    demote member AL_RF2b/1b_2_AB622121 --whereClause "sequence.genotype = 'RF2b/1b_2_AB622121'" -r reference_member true
-    extract child AL_RF2b/1a_JF779679 --refName REF_RF2b/1a_JF779679
-    demote member AL_RF2b/1a_JF779679 --whereClause "sequence.genotype = 'RF2b/1a_JF779679'" -r reference_member true
-    extract child AL_RF2b/1b_3_AB677530 --refName REF_RF2b/1b_3_AB677530
-    demote member AL_RF2b/1b_3_AB677530 --whereClause "sequence.genotype = 'RF2b/1b_3_AB677530'" -r reference_member true
-    extract child AL_RF2b/1b_4_AB677527 --refName REF_RF2b/1b_4_AB677527
-    demote member AL_RF2b/1b_4_AB677527 --whereClause "sequence.genotype = 'RF2b/1b_4_AB677527'" -r reference_member true
+    extract child AL_RF2k_1b_AY587845 --refName REF_RF2k_1b_AY587845
+    demote member AL_RF2k_1b_AY587845 --whereClause "sequence.genotype = 'RF2k_1b'" -r reference_member true
+    extract child AL_RF2i_6p_DQ155560 --refName REF_RF2i_6p_DQ155560
+    demote member AL_RF2i_6p_DQ155560 --whereClause "sequence.genotype = 'RF2i_6p'" -r reference_member true
+    extract child AL_RF2b_1b_1_DQ364460 --refName REF_RF2b_1b_1_DQ364460
+    demote member AL_RF2b_1b_1_DQ364460 --whereClause "sequence.genotype = 'RF2b_1b_1'" -r reference_member true
+    extract child AL_RF2_5_AM408911 --refName REF_RF2_5_AM408911
+    demote member AL_RF2_5_AM408911 --whereClause "sequence.genotype = 'RF2_5'" -r reference_member true
+    extract child AL_RF2b_6w_EU643835 --refName REF_RF2b_6w_EU643835
+    demote member AL_RF2b_6w_EU643835 --whereClause "sequence.genotype = 'RF2b_6w'" -r reference_member true
+    extract child AL_RF2b_1b_2_AB622121 --refName REF_RF2b_1b_2_AB622121
+    demote member AL_RF2b_1b_2_AB622121 --whereClause "sequence.genotype = 'RF2b_1b_2'" -r reference_member true
+    extract child AL_RF2b_1a_JF779679 --refName REF_RF2b_1a_JF779679
+    demote member AL_RF2b_1a_JF779679 --whereClause "sequence.genotype = 'RF2b_1a'" -r reference_member true
+    extract child AL_RF2b_1b_3_AB677530 --refName REF_RF2b_1b_3_AB677530
+    demote member AL_RF2b_1b_3_AB677530 --whereClause "sequence.genotype = 'RF2b_1b_3'" -r reference_member true
+    extract child AL_RF2b_1b_4_AB677527 --refName REF_RF2b_1b_4_AB677527
+    demote member AL_RF2b_1b_4_AB677527 --whereClause "sequence.genotype = 'RF2b_1b_4'" -r reference_member true
     exit
 
   create reference REF_1a_AF009606 ncbi-refseqs AF009606
@@ -149,8 +149,8 @@
   create reference REF_2u_JF735112 ncbi-refseqs JF735112
 
   # Provisional subtypes
-  create reference REF_2g_X93323 ncbi-refseqs X93323
-  create reference REF_2h_X93327 ncbi-refseqs X93327
+  create reference REF_2g_X93323 ncbi-refseqs-subgenomic X93323
+  create reference REF_2h_X93327 ncbi-refseqs-subgenomic X93327
   create reference REF_2n_L39309_L44602 concatenated-refseqs REF_2n_L39309_L44602
   create reference REF_2o_L38333_L38373 concatenated-refseqs REF_2o_L38333_L38373
   create reference REF_2p_L39300_L44601 concatenated-refseqs REF_2p_L39300_L44601
@@ -293,7 +293,7 @@
   create reference REF_4e_L29589_L29590 concatenated-refseqs REF_4e_L29589_L29590
   create reference REF_4h_L29610_L29611 concatenated-refseqs REF_4h_L29610_L29611
   create reference REF_4i_L36439_L36437 concatenated-refseqs REF_4i_L36439_L36437
-  create reference REF_4j_L36438 ncbi-refseqs L36438
+  create reference REF_4j_L36438 ncbi-refseqs-subgenomic L36438
 
   # Unassigned subtypes
   create reference REF_4_unassigned_FJ025854 ncbi-refseqs FJ025854
@@ -549,21 +549,21 @@
   reference REF_7_EF108306 inherit feature-location -rs AL_MASTER whole_genome
 
   # Recombinants
-  reference REF_RF2k/1b_AY587845 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2k_1b_AY587845 inherit feature-location -rs AL_MASTER whole_genome
   
-  reference REF_RF2i/6p_DQ155560 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_RF2i/6p_DQ155560 feature-location NS5B remove segment 7617 9360
-  reference REF_RF2i/6p_DQ155560 feature-location NS5B add segment 7617 9359  
-  reference REF_RF2i/6p_DQ155560 feature-location precursor_polyprotein remove segment 324 9360
-  reference REF_RF2i/6p_DQ155560 feature-location precursor_polyprotein add segment 324 9359  
+  reference REF_RF2i_6p_DQ155560 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2i_6p_DQ155560 feature-location NS5B remove segment 7617 9360
+  reference REF_RF2i_6p_DQ155560 feature-location NS5B add segment 7617 9359  
+  reference REF_RF2i_6p_DQ155560 feature-location precursor_polyprotein remove segment 324 9360
+  reference REF_RF2i_6p_DQ155560 feature-location precursor_polyprotein add segment 324 9359  
 
-  reference REF_RF2b/1b_1_DQ364460 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_RF2/5_AM408911 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_RF2b/6w_EU643835 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_RF2b/1b_2_AB622121 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_RF2b/1a_JF779679 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_RF2b/1b_3_AB677530 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_RF2b/1b_4_AB677527 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b_1b_1_DQ364460 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2_5_AM408911 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b_6w_EU643835 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b_1b_2_AB622121 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b_1a_JF779679 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b_1b_3_AB677530 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_RF2b_1b_4_AB677527 inherit feature-location -rs AL_MASTER whole_genome
 
   reference REF_1a_AF009606 inherit feature-location -rs AL_1 whole_genome
   reference REF_1b_D90208 inherit feature-location -rs AL_1 whole_genome
@@ -858,222 +858,222 @@
   create reference REF_6xe_KM252792 ncbi-refseqs KM252792
   reference REF_6xe_KM252792 inherit feature-location -rs AL_6xe whole_genome
 
-  alignment AL_1 set field displayName "Genotype 1"
-  alignment AL_2 set field displayName "Genotype 2"
-  alignment AL_3 set field displayName "Genotype 3"
-  alignment AL_4 set field displayName "Genotype 4"
-  alignment AL_5 set field displayName "Genotype 5"
-  alignment AL_6 set field displayName "Genotype 6"
-  alignment AL_7 set field displayName "Genotype 7"
+  alignment AL_1 set field displayName "HCV Genotype 1"
+  alignment AL_2 set field displayName "HCV Genotype 2"
+  alignment AL_3 set field displayName "HCV Genotype 3"
+  alignment AL_4 set field displayName "HCV Genotype 4"
+  alignment AL_5 set field displayName "HCV Genotype 5"
+  alignment AL_6 set field displayName "HCV Genotype 6"
+  alignment AL_7 set field displayName "HCV Genotype 7"
 
   # Recombinants
-  alignment AL_RF2k/1b_AY587845 set field displayName "Recombinant form: 2k/1b"
-  alignment AL_RF2i/6p_DQ155560 set field displayName "Recombinant form: 2i/6p"
-  alignment AL_RF2b/1b_1_DQ364460 set field displayName "Recombinant form: 2b/1b_1"
-  alignment AL_RF2/5_AM408911 set field displayName "Recombinant form: 2/5"
-  alignment AL_RF2b/6w_EU643835 set field displayName "Recombinant form: 2b/6w"
-  alignment AL_RF2b/1b_2_AB622121 set field displayName "Recombinant form: 2b/1b_2"
-  alignment AL_RF2b/1a_JF779679 set field displayName "Recombinant form: 2b/1a"
-  alignment AL_RF2b/1b_3_AB677530 set field displayName "Recombinant form: 2b/1b_3"
-  alignment AL_RF2b/1b_4_AB677527 set field displayName "Recombinant form: 2b/1b_4"
+  alignment AL_RF2k_1b_AY587845 set field displayName "HCV Recombinant form: 2k/1b"
+  alignment AL_RF2i_6p_DQ155560 set field displayName "HCV Recombinant form: 2i/6p"
+  alignment AL_RF2b_1b_1_DQ364460 set field displayName "HCV Recombinant form: 2b/1b_1"
+  alignment AL_RF2_5_AM408911 set field displayName "HCV Recombinant form: 2/5"
+  alignment AL_RF2b_6w_EU643835 set field displayName "HCV Recombinant form: 2b/6w"
+  alignment AL_RF2b_1b_2_AB622121 set field displayName "HCV Recombinant form: 2b/1b_2"
+  alignment AL_RF2b_1a_JF779679 set field displayName "HCV Recombinant form: 2b/1a"
+  alignment AL_RF2b_1b_3_AB677530 set field displayName "HCV Recombinant form: 2b/1b_3"
+  alignment AL_RF2b_1b_4_AB677527 set field displayName "HCV Recombinant form: 2b/1b_4"
 
 
-  alignment AL_1a set field displayName "Subtype 1a"
-  alignment AL_1b set field displayName "Subtype 1b"
-  alignment AL_1c set field displayName "Subtype 1c"
-  alignment AL_1d set field displayName "Subtype 1d"
-  alignment AL_1e set field displayName "Subtype 1e"
-  alignment AL_1g set field displayName "Subtype 1g"
-  alignment AL_1h set field displayName "Subtype 1h"
-  alignment AL_1i set field displayName "Subtype 1i"
-  alignment AL_1j set field displayName "Subtype 1j"
-  alignment AL_1k set field displayName "Subtype 1k"
-  alignment AL_1l set field displayName "Subtype 1l"
-  alignment AL_1m set field displayName "Subtype 1m"
-  alignment AL_1n set field displayName "Subtype 1n"
-  alignment AL_2a set field displayName "Subtype 2a"
-  alignment AL_2b set field displayName "Subtype 2b"
-  alignment AL_2c set field displayName "Subtype 2c"
-  alignment AL_2d set field displayName "Subtype 2d"
-  alignment AL_2e set field displayName "Subtype 2e"
-  alignment AL_2f set field displayName "Subtype 2f"
-  alignment AL_2i set field displayName "Subtype 2i"
-  alignment AL_2j set field displayName "Subtype 2j"
-  alignment AL_2k set field displayName "Subtype 2k"
-  alignment AL_2m set field displayName "Subtype 2m"
-  alignment AL_2q set field displayName "Subtype 2q"
-  alignment AL_2r set field displayName "Subtype 2r"
-  alignment AL_2t set field displayName "Subtype 2t"
-  alignment AL_2u set field displayName "Subtype 2u"
-  alignment AL_3a set field displayName "Subtype 3a"
-  alignment AL_3b set field displayName "Subtype 3b"
-  alignment AL_3d set field displayName "Subtype 3d"
-  alignment AL_3e set field displayName "Subtype 3e"
-  alignment AL_3g set field displayName "Subtype 3g"
-  alignment AL_3h set field displayName "Subtype 3h"
-  alignment AL_3i set field displayName "Subtype 3i"
-  alignment AL_3k set field displayName "Subtype 3k"
-  alignment AL_4a set field displayName "Subtype 4a"
-  alignment AL_4b set field displayName "Subtype 4b"
-  alignment AL_4c set field displayName "Subtype 4c"
-  alignment AL_4d set field displayName "Subtype 4d"
-  alignment AL_4f set field displayName "Subtype 4f"
-  alignment AL_4g set field displayName "Subtype 4g"
-  alignment AL_4k set field displayName "Subtype 4k"
-  alignment AL_4l set field displayName "Subtype 4l"
-  alignment AL_4m set field displayName "Subtype 4m"
-  alignment AL_4n set field displayName "Subtype 4n"
-  alignment AL_4o set field displayName "Subtype 4o"
-  alignment AL_4p set field displayName "Subtype 4p"
-  alignment AL_4q set field displayName "Subtype 4q"
-  alignment AL_4r set field displayName "Subtype 4r"
-  alignment AL_4s set field displayName "Subtype 4s"
-  alignment AL_4t set field displayName "Subtype 4t"
-  alignment AL_4v set field displayName "Subtype 4v"
-  alignment AL_4w set field displayName "Subtype 4w"
-  alignment AL_5a set field displayName "Subtype 5a"
-  alignment AL_6a set field displayName "Subtype 6a"
-  alignment AL_6b set field displayName "Subtype 6b"
-  alignment AL_6c set field displayName "Subtype 6c"
-  alignment AL_6d set field displayName "Subtype 6d"
-  alignment AL_6e set field displayName "Subtype 6e"
-  alignment AL_6f set field displayName "Subtype 6f"
-  alignment AL_6g set field displayName "Subtype 6g"
-  alignment AL_6h set field displayName "Subtype 6h"
-  alignment AL_6i set field displayName "Subtype 6i"
-  alignment AL_6j set field displayName "Subtype 6j"
-  alignment AL_6k set field displayName "Subtype 6k"
-  alignment AL_6l set field displayName "Subtype 6l"
-  alignment AL_6m set field displayName "Subtype 6m"
-  alignment AL_6n set field displayName "Subtype 6n"
-  alignment AL_6o set field displayName "Subtype 6o"
-  alignment AL_6p set field displayName "Subtype 6p"
-  alignment AL_6q set field displayName "Subtype 6q"
-  alignment AL_6r set field displayName "Subtype 6r"
-  alignment AL_6s set field displayName "Subtype 6s"
-  alignment AL_6t set field displayName "Subtype 6t"
-  alignment AL_6u set field displayName "Subtype 6u"
-  alignment AL_6v set field displayName "Subtype 6v"
-  alignment AL_6w set field displayName "Subtype 6w"
-  alignment AL_6xa set field displayName "Subtype 6xa"
-  alignment AL_6xb set field displayName "Subtype 6xb"
-  alignment AL_6xc set field displayName "Subtype 6xc"
-  alignment AL_6xd set field displayName "Subtype 6xd"
-  alignment AL_6xe set field displayName "Subtype 6xe"
-  alignment AL_7a set field displayName "Subtype 7a"
+  alignment AL_1a set field displayName "HCV Subtype 1a"
+  alignment AL_1b set field displayName "HCV Subtype 1b"
+  alignment AL_1c set field displayName "HCV Subtype 1c"
+  alignment AL_1d set field displayName "HCV Subtype 1d"
+  alignment AL_1e set field displayName "HCV Subtype 1e"
+  alignment AL_1g set field displayName "HCV Subtype 1g"
+  alignment AL_1h set field displayName "HCV Subtype 1h"
+  alignment AL_1i set field displayName "HCV Subtype 1i"
+  alignment AL_1j set field displayName "HCV Subtype 1j"
+  alignment AL_1k set field displayName "HCV Subtype 1k"
+  alignment AL_1l set field displayName "HCV Subtype 1l"
+  alignment AL_1m set field displayName "HCV Subtype 1m"
+  alignment AL_1n set field displayName "HCV Subtype 1n"
+  alignment AL_2a set field displayName "HCV Subtype 2a"
+  alignment AL_2b set field displayName "HCV Subtype 2b"
+  alignment AL_2c set field displayName "HCV Subtype 2c"
+  alignment AL_2d set field displayName "HCV Subtype 2d"
+  alignment AL_2e set field displayName "HCV Subtype 2e"
+  alignment AL_2f set field displayName "HCV Subtype 2f"
+  alignment AL_2i set field displayName "HCV Subtype 2i"
+  alignment AL_2j set field displayName "HCV Subtype 2j"
+  alignment AL_2k set field displayName "HCV Subtype 2k"
+  alignment AL_2m set field displayName "HCV Subtype 2m"
+  alignment AL_2q set field displayName "HCV Subtype 2q"
+  alignment AL_2r set field displayName "HCV Subtype 2r"
+  alignment AL_2t set field displayName "HCV Subtype 2t"
+  alignment AL_2u set field displayName "HCV Subtype 2u"
+  alignment AL_3a set field displayName "HCV Subtype 3a"
+  alignment AL_3b set field displayName "HCV Subtype 3b"
+  alignment AL_3d set field displayName "HCV Subtype 3d"
+  alignment AL_3e set field displayName "HCV Subtype 3e"
+  alignment AL_3g set field displayName "HCV Subtype 3g"
+  alignment AL_3h set field displayName "HCV Subtype 3h"
+  alignment AL_3i set field displayName "HCV Subtype 3i"
+  alignment AL_3k set field displayName "HCV Subtype 3k"
+  alignment AL_4a set field displayName "HCV Subtype 4a"
+  alignment AL_4b set field displayName "HCV Subtype 4b"
+  alignment AL_4c set field displayName "HCV Subtype 4c"
+  alignment AL_4d set field displayName "HCV Subtype 4d"
+  alignment AL_4f set field displayName "HCV Subtype 4f"
+  alignment AL_4g set field displayName "HCV Subtype 4g"
+  alignment AL_4k set field displayName "HCV Subtype 4k"
+  alignment AL_4l set field displayName "HCV Subtype 4l"
+  alignment AL_4m set field displayName "HCV Subtype 4m"
+  alignment AL_4n set field displayName "HCV Subtype 4n"
+  alignment AL_4o set field displayName "HCV Subtype 4o"
+  alignment AL_4p set field displayName "HCV Subtype 4p"
+  alignment AL_4q set field displayName "HCV Subtype 4q"
+  alignment AL_4r set field displayName "HCV Subtype 4r"
+  alignment AL_4s set field displayName "HCV Subtype 4s"
+  alignment AL_4t set field displayName "HCV Subtype 4t"
+  alignment AL_4v set field displayName "HCV Subtype 4v"
+  alignment AL_4w set field displayName "HCV Subtype 4w"
+  alignment AL_5a set field displayName "HCV Subtype 5a"
+  alignment AL_6a set field displayName "HCV Subtype 6a"
+  alignment AL_6b set field displayName "HCV Subtype 6b"
+  alignment AL_6c set field displayName "HCV Subtype 6c"
+  alignment AL_6d set field displayName "HCV Subtype 6d"
+  alignment AL_6e set field displayName "HCV Subtype 6e"
+  alignment AL_6f set field displayName "HCV Subtype 6f"
+  alignment AL_6g set field displayName "HCV Subtype 6g"
+  alignment AL_6h set field displayName "HCV Subtype 6h"
+  alignment AL_6i set field displayName "HCV Subtype 6i"
+  alignment AL_6j set field displayName "HCV Subtype 6j"
+  alignment AL_6k set field displayName "HCV Subtype 6k"
+  alignment AL_6l set field displayName "HCV Subtype 6l"
+  alignment AL_6m set field displayName "HCV Subtype 6m"
+  alignment AL_6n set field displayName "HCV Subtype 6n"
+  alignment AL_6o set field displayName "HCV Subtype 6o"
+  alignment AL_6p set field displayName "HCV Subtype 6p"
+  alignment AL_6q set field displayName "HCV Subtype 6q"
+  alignment AL_6r set field displayName "HCV Subtype 6r"
+  alignment AL_6s set field displayName "HCV Subtype 6s"
+  alignment AL_6t set field displayName "HCV Subtype 6t"
+  alignment AL_6u set field displayName "HCV Subtype 6u"
+  alignment AL_6v set field displayName "HCV Subtype 6v"
+  alignment AL_6w set field displayName "HCV Subtype 6w"
+  alignment AL_6xa set field displayName "HCV Subtype 6xa"
+  alignment AL_6xb set field displayName "HCV Subtype 6xb"
+  alignment AL_6xc set field displayName "HCV Subtype 6xc"
+  alignment AL_6xd set field displayName "HCV Subtype 6xd"
+  alignment AL_6xe set field displayName "HCV Subtype 6xe"
+  alignment AL_7a set field displayName "HCV Subtype 7a"
 
   # Provisional subtypes
-  alignment AL_1f set field displayName "Subtype 1f (provisional)"
+  alignment AL_1f set field displayName "HCV Subtype 1f (provisional)"
   alignment AL_1f set field status provisional
-  alignment AL_2g set field displayName "Subtype 2g (provisional)"
+  alignment AL_2g set field displayName "HCV Subtype 2g (provisional)"
   alignment AL_2g set field status provisional
-  alignment AL_2h set field displayName "Subtype 2h (provisional)"
+  alignment AL_2h set field displayName "HCV Subtype 2h (provisional)"
   alignment AL_2h set field status provisional
-  alignment AL_2n set field displayName "Subtype 2n (provisional)"
+  alignment AL_2n set field displayName "HCV Subtype 2n (provisional)"
   alignment AL_2n set field status provisional
-  alignment AL_2o set field displayName "Subtype 2o (provisional)"
+  alignment AL_2o set field displayName "HCV Subtype 2o (provisional)"
   alignment AL_2o set field status provisional
-  alignment AL_2p set field displayName "Subtype 2p (provisional)"
+  alignment AL_2p set field displayName "HCV Subtype 2p (provisional)"
   alignment AL_2p set field status provisional
-  alignment AL_2s set field displayName "Subtype 2s (provisional)"
+  alignment AL_2s set field displayName "HCV Subtype 2s (provisional)"
   alignment AL_2s set field status provisional
-  alignment AL_3c set field displayName "Subtype 3c (provisional)"
+  alignment AL_3c set field displayName "HCV Subtype 3c (provisional)"
   alignment AL_3c set field status provisional
-  alignment AL_3f set field displayName "Subtype 3f (provisional)"
+  alignment AL_3f set field displayName "HCV Subtype 3f (provisional)"
   alignment AL_3f set field status provisional
-  alignment AL_4e set field displayName "Subtype 4e (provisional)"
+  alignment AL_4e set field displayName "HCV Subtype 4e (provisional)"
   alignment AL_4e set field status provisional
-  alignment AL_4h set field displayName "Subtype 4h (provisional)"
+  alignment AL_4h set field displayName "HCV Subtype 4h (provisional)"
   alignment AL_4h set field status provisional
-  alignment AL_4i set field displayName "Subtype 4i (provisional)"
+  alignment AL_4i set field displayName "HCV Subtype 4i (provisional)"
   alignment AL_4i set field status provisional
-  alignment AL_4j set field displayName "Subtype 4j (provisional)"
+  alignment AL_4j set field displayName "HCV Subtype 4j (provisional)"
   alignment AL_4j set field status provisional
 
   # Unassigned subtypes
-  alignment AL_1_unassigned_AJ851228 set field displayName "Subtype 1_AJ851228 (unassigned)"
+  alignment AL_1_unassigned_AJ851228 set field displayName "HCV Subtype 1_AJ851228 (unassigned)"
   alignment AL_1_unassigned_AJ851228 set field status unassigned
-  alignment AL_6_unassigned_DQ278891 set field displayName "Subtype 6_DQ278891 (unassigned)"
+  alignment AL_6_unassigned_DQ278891 set field displayName "HCV Subtype 6_DQ278891 (unassigned)"
   alignment AL_6_unassigned_DQ278891 set field status unassigned
-  alignment AL_6_unassigned_DQ278893 set field displayName "Subtype 6_DQ278893 (unassigned)"
+  alignment AL_6_unassigned_DQ278893 set field displayName "HCV Subtype 6_DQ278893 (unassigned)"
   alignment AL_6_unassigned_DQ278893 set field status unassigned
-  alignment AL_4_unassigned_FJ025854 set field displayName "Subtype 4_FJ025854 (unassigned)"
+  alignment AL_4_unassigned_FJ025854 set field displayName "HCV Subtype 4_FJ025854 (unassigned)"
   alignment AL_4_unassigned_FJ025854 set field status unassigned
-  alignment AL_1_unassigned_HQ537007 set field displayName "Subtype 1_HQ537007 (unassigned)"
+  alignment AL_1_unassigned_HQ537007 set field displayName "HCV Subtype 1_HQ537007 (unassigned)"
   alignment AL_1_unassigned_HQ537007 set field status unassigned
-  alignment AL_2_unassigned_JF735110 set field displayName "Subtype 2_JF735110 (unassigned)"
+  alignment AL_2_unassigned_JF735110 set field displayName "HCV Subtype 2_JF735110 (unassigned)"
   alignment AL_2_unassigned_JF735110 set field status unassigned
-  alignment AL_2_unassigned_JF735116 set field displayName "Subtype 2_JF735116 (unassigned)"
+  alignment AL_2_unassigned_JF735116 set field displayName "HCV Subtype 2_JF735116 (unassigned)"
   alignment AL_2_unassigned_JF735116 set field status unassigned
-  alignment AL_2_unassigned_JF735117 set field displayName "Subtype 2_JF735117 (unassigned)"
+  alignment AL_2_unassigned_JF735117 set field displayName "HCV Subtype 2_JF735117 (unassigned)"
   alignment AL_2_unassigned_JF735117 set field status unassigned
-  alignment AL_2_unassigned_JF735118 set field displayName "Subtype 2_JF735118 (unassigned)"
+  alignment AL_2_unassigned_JF735118 set field displayName "HCV Subtype 2_JF735118 (unassigned)"
   alignment AL_2_unassigned_JF735118 set field status unassigned
-  alignment AL_2_unassigned_JF735119 set field displayName "Subtype 2_JF735119 (unassigned)"
+  alignment AL_2_unassigned_JF735119 set field displayName "HCV Subtype 2_JF735119 (unassigned)"
   alignment AL_2_unassigned_JF735119 set field status unassigned
-  alignment AL_3_unassigned_JF735124 set field displayName "Subtype 3_JF735124 (unassigned)"
+  alignment AL_3_unassigned_JF735124 set field displayName "HCV Subtype 3_JF735124 (unassigned)"
   alignment AL_3_unassigned_JF735124 set field status unassigned
-  alignment AL_4_unassigned_JF735127 set field displayName "Subtype 4_JF735127 (unassigned)"
+  alignment AL_4_unassigned_JF735127 set field displayName "HCV Subtype 4_JF735127 (unassigned)"
   alignment AL_4_unassigned_JF735127 set field status unassigned
-  alignment AL_4_unassigned_JF735129 set field displayName "Subtype 4_JF735129 (unassigned)"
+  alignment AL_4_unassigned_JF735129 set field displayName "HCV Subtype 4_JF735129 (unassigned)"
   alignment AL_4_unassigned_JF735129 set field status unassigned
-  alignment AL_4_unassigned_JF735130 set field displayName "Subtype 4_JF735130 (unassigned)"
+  alignment AL_4_unassigned_JF735130 set field displayName "HCV Subtype 4_JF735130 (unassigned)"
   alignment AL_4_unassigned_JF735130 set field status unassigned
-  alignment AL_4_unassigned_JF735131 set field displayName "Subtype 4_JF735131 (unassigned)"
+  alignment AL_4_unassigned_JF735131 set field displayName "HCV Subtype 4_JF735131 (unassigned)"
   alignment AL_4_unassigned_JF735131 set field status unassigned
-  alignment AL_4_unassigned_JF735132 set field displayName "Subtype 4_JF735132 (unassigned)"
+  alignment AL_4_unassigned_JF735132 set field displayName "HCV Subtype 4_JF735132 (unassigned)"
   alignment AL_4_unassigned_JF735132 set field status unassigned
-  alignment AL_4_unassigned_JF735134 set field displayName "Subtype 4_JF735134 (unassigned)"
+  alignment AL_4_unassigned_JF735134 set field displayName "HCV Subtype 4_JF735134 (unassigned)"
   alignment AL_4_unassigned_JF735134 set field status unassigned
-  alignment AL_4_unassigned_JF735135 set field displayName "Subtype 4_JF735135 (unassigned)"
+  alignment AL_4_unassigned_JF735135 set field displayName "HCV Subtype 4_JF735135 (unassigned)"
   alignment AL_4_unassigned_JF735135 set field status unassigned
-  alignment AL_4_unassigned_JF735138 set field displayName "Subtype 4_JF735138 (unassigned)"
+  alignment AL_4_unassigned_JF735138 set field displayName "HCV Subtype 4_JF735138 (unassigned)"
   alignment AL_4_unassigned_JF735138 set field status unassigned
-  alignment AL_6_unassigned_JX183549 set field displayName "Subtype 6_JX183549 (unassigned)"
+  alignment AL_6_unassigned_JX183549 set field displayName "HCV Subtype 6_JX183549 (unassigned)"
   alignment AL_6_unassigned_JX183549 set field status unassigned
-  alignment AL_6_unassigned_JX183550 set field displayName "Subtype 6_JX183550 (unassigned)"
+  alignment AL_6_unassigned_JX183550 set field displayName "HCV Subtype 6_JX183550 (unassigned)"
   alignment AL_6_unassigned_JX183550 set field status unassigned
-  alignment AL_6_unassigned_JX183551 set field displayName "Subtype 6_JX183551 (unassigned)"
+  alignment AL_6_unassigned_JX183551 set field displayName "HCV Subtype 6_JX183551 (unassigned)"
   alignment AL_6_unassigned_JX183551 set field status unassigned
-  alignment AL_6_unassigned_JX183553 set field displayName "Subtype 6_JX183553 (unassigned)"
+  alignment AL_6_unassigned_JX183553 set field displayName "HCV Subtype 6_JX183553 (unassigned)"
   alignment AL_6_unassigned_JX183553 set field status unassigned
-  alignment AL_6_unassigned_JX183554 set field displayName "Subtype 6_JX183554 (unassigned)"
+  alignment AL_6_unassigned_JX183554 set field displayName "HCV Subtype 6_JX183554 (unassigned)"
   alignment AL_6_unassigned_JX183554 set field status unassigned
-  alignment AL_6_unassigned_JX183558 set field displayName "Subtype 6_JX183558 (unassigned)"
+  alignment AL_6_unassigned_JX183558 set field displayName "HCV Subtype 6_JX183558 (unassigned)"
   alignment AL_6_unassigned_JX183558 set field status unassigned
-  alignment AL_4_unassigned_JX227964 set field displayName "Subtype 4_J4227964 (unassigned)"
+  alignment AL_4_unassigned_JX227964 set field displayName "HCV Subtype 4_J4227964 (unassigned)"
   alignment AL_4_unassigned_JX227964 set field status unassigned
-  alignment AL_2_unassigned_KC197236 set field displayName "Subtype 2_KC197236 (unassigned)"
+  alignment AL_2_unassigned_KC197236 set field displayName "HCV Subtype 2_KC197236 (unassigned)"
   alignment AL_2_unassigned_KC197236 set field status unassigned
-  alignment AL_2_unassigned_KC197237 set field displayName "Subtype 2_KC197237 (unassigned)"
+  alignment AL_2_unassigned_KC197237 set field displayName "HCV Subtype 2_KC197237 (unassigned)"
   alignment AL_2_unassigned_KC197237 set field status unassigned
-  alignment AL_2_unassigned_KC197239 set field displayName "Subtype 2_KC197239 (unassigned)"
+  alignment AL_2_unassigned_KC197239 set field displayName "HCV Subtype 2_KC197239 (unassigned)"
   alignment AL_2_unassigned_KC197239 set field status unassigned
-  alignment AL_1_unassigned_KC248195 set field displayName "Subtype 1_KC248195 (unassigned)"
+  alignment AL_1_unassigned_KC248195 set field displayName "HCV Subtype 1_KC248195 (unassigned)"
   alignment AL_1_unassigned_KC248195 set field status unassigned
-  alignment AL_6_unassigned_KC844039 set field displayName "Subtype 6_KC844039 (unassigned)"
+  alignment AL_6_unassigned_KC844039 set field displayName "HCV Subtype 6_KC844039 (unassigned)"
   alignment AL_6_unassigned_KC844039 set field status unassigned
-  alignment AL_6_unassigned_KC844040 set field displayName "Subtype 6_KC844040 (unassigned)"
+  alignment AL_6_unassigned_KC844040 set field displayName "HCV Subtype 6_KC844040 (unassigned)"
   alignment AL_6_unassigned_KC844040 set field status unassigned
-  alignment AL_1_unassigned_KJ439776 set field displayName "Subtype 1_KJ439776 (unassigned)"
+  alignment AL_1_unassigned_KJ439776 set field displayName "HCV Subtype 1_KJ439776 (unassigned)"
   alignment AL_1_unassigned_KJ439776 set field status unassigned
-  alignment AL_1_unassigned_KJ439777 set field displayName "Subtype 1_KJ439777 (unassigned)"
+  alignment AL_1_unassigned_KJ439777 set field displayName "HCV Subtype 1_KJ439777 (unassigned)"
   alignment AL_1_unassigned_KJ439777 set field status unassigned
-  alignment AL_1_unassigned_KJ439779 set field displayName "Subtype 1_KJ439779 (unassigned)"
+  alignment AL_1_unassigned_KJ439779 set field displayName "HCV Subtype 1_KJ439779 (unassigned)"
   alignment AL_1_unassigned_KJ439779 set field status unassigned
-  alignment AL_1_unassigned_KJ439780 set field displayName "Subtype 1_KJ439780 (unassigned)"
+  alignment AL_1_unassigned_KJ439780 set field displayName "HCV Subtype 1_KJ439780 (unassigned)"
   alignment AL_1_unassigned_KJ439780 set field status unassigned
-  alignment AL_6_unassigned_KJ470620 set field displayName "Subtype 6_KJ470620 (unassigned)"
+  alignment AL_6_unassigned_KJ470620 set field displayName "HCV Subtype 6_KJ470620 (unassigned)"
   alignment AL_6_unassigned_KJ470620 set field status unassigned
-  alignment AL_6_unassigned_KJ470621 set field displayName "Subtype 6_KJ470621 (unassigned)"
+  alignment AL_6_unassigned_KJ470621 set field displayName "HCV Subtype 6_KJ470621 (unassigned)"
   alignment AL_6_unassigned_KJ470621 set field status unassigned
-  alignment AL_6_unassigned_KJ470622 set field displayName "Subtype 6_KJ470622 (unassigned)"
+  alignment AL_6_unassigned_KJ470622 set field displayName "HCV Subtype 6_KJ470622 (unassigned)"
   alignment AL_6_unassigned_KJ470622 set field status unassigned
-  alignment AL_6_unassigned_KJ470623 set field displayName "Subtype 6_KJ470623 (unassigned)"
+  alignment AL_6_unassigned_KJ470623 set field displayName "HCV Subtype 6_KJ470623 (unassigned)"
   alignment AL_6_unassigned_KJ470623 set field status unassigned
-  alignment AL_6_unassigned_KJ470624 set field displayName "Subtype 6_KJ470624 (unassigned)"
+  alignment AL_6_unassigned_KJ470624 set field displayName "HCV Subtype 6_KJ470624 (unassigned)"
   alignment AL_6_unassigned_KJ470624 set field status unassigned
-  alignment AL_6_unassigned_KJ470625 set field displayName "Subtype 6_KJ470625 (unassigned)"
+  alignment AL_6_unassigned_KJ470625 set field displayName "HCV Subtype 6_KJ470625 (unassigned)"
   alignment AL_6_unassigned_KJ470625 set field status unassigned
 
 
@@ -1121,6 +1121,68 @@
   reference REF_6_unassigned_KJ470624 inherit feature-location -rs AL_6 whole_genome
   reference REF_6_unassigned_KJ470625 inherit feature-location -rs AL_6 whole_genome
 
+  # Provisional subtype references
+  
+  # we should uncomment these once the hand-crafted alignment has been checked
+  reference REF_1f_L38350_L38371
+    # inherit feature-location -rs AL_1 Core
+    # inherit feature-location -rs AL_1 E1
+    # inherit feature-location -rs AL_1 NS5B
+    exit
+  reference REF_2g_X93323
+    # inherit feature-location -rs AL_2 NS5B
+    exit
+  reference REF_2h_X93327
+    # inherit feature-location -rs AL_2 NS5B
+    exit
+  reference REF_2n_L39309_L44602
+    # inherit feature-location -rs AL_2 Core
+    # inherit feature-location -rs AL_2 E1
+    # inherit feature-location -rs AL_2 NS5B
+    exit
+  reference REF_2o_L38333_L38373
+    # inherit feature-location -rs AL_2 Core
+    # inherit feature-location -rs AL_2 E1
+    # inherit feature-location -rs AL_2 NS5B
+    exit
+  reference REF_2p_L39300_L44601
+    # inherit feature-location -rs AL_2 Core
+    # inherit feature-location -rs AL_2 E1
+    # inherit feature-location -rs AL_2 NS5B
+    exit
+  reference REF_2s_JQ924942_HM777447_HM777332
+    # inherit feature-location -rs AL_2 Core
+    # inherit feature-location -rs AL_2 E1
+    # inherit feature-location -rs AL_2 NS5B
+    exit
+  reference REF_3c_D16612_D14198_D16613
+    # inherit feature-location -rs AL_3 Core
+    # inherit feature-location -rs AL_3 E1
+    # inherit feature-location -rs AL_3 NS5B
+    exit
+  reference REF_3f_D16614_D14203_D16615
+    # inherit feature-location -rs AL_3 Core
+    # inherit feature-location -rs AL_3 E1
+    # inherit feature-location -rs AL_3 NS5B
+    exit
+  reference REF_4e_L29589_L29590
+    # inherit feature-location -rs AL_4 Core
+    # inherit feature-location -rs AL_4 E1
+    # inherit feature-location -rs AL_4 NS5B
+    exit
+  reference REF_4h_L29610_L29611
+    # inherit feature-location -rs AL_4 Core
+    # inherit feature-location -rs AL_4 E1
+    # inherit feature-location -rs AL_4 NS5B
+    exit
+  reference REF_4i_L36439_L36437
+    # inherit feature-location -rs AL_4 Core
+    # inherit feature-location -rs AL_4 E1
+    # inherit feature-location -rs AL_4 NS5B
+    exit
+  reference REF_4j_L36438
+    # inherit feature-location -rs AL_4 NS5B
+    exit
 
 # mark all non-reference members as such.
 multi-set field alignment_member -w "reference_member = null" reference_member false

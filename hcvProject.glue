@@ -1,6 +1,6 @@
 delete project hcv
 
-create project hcv "Hepatitis C variation analysis" --minVersion 0.1.58
+create project hcv "Hepatitis C variation analysis" --minVersion 0.1.64
 
 run file glue/hcvFieldDefinitions.glue
  
@@ -16,7 +16,10 @@ project hcv
   
   # build master reference, with features.
   run file glue/hcvFeatures.glue
-  
+
+  # curated sequences
+  run file glue/hcvCuratedSequences.glue
+ 
   # build tree of alignments, with relevant reference sequences.
   run file glue/hcvAlignmentTree.glue
 
@@ -29,11 +32,8 @@ project hcv
   # epitopes
   run file glue/hcvEpitopes.glue
 
-  # curated sequences
-  run file glue/hcvCuratedSequences.glue
- 
   # add the curated sequences into the alignment tree according to their genotype/subtype
-  run file glue/hcvAddCuratedToAlignments.glue
+  run file glue/computeCuratedAlignments.glue
 
   # generate the common AA polymorphisms
   run file glue/hcvGenerateCommonAaPolymorphisms.glue
