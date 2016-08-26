@@ -2,161 +2,18 @@ reference H77_AF009606
   feature-location NS3
     create variation rav_NS3_V36L -t AMINO_ACID "Resistance associated variant"
     variation rav_NS3_V36L
-      set field displayName "RAV:NS3:V36L"
-      set pattern "L"
-      set location --labeledCodon 36 36
-      set field is_resistance_associated_variant true
+      set field displayName "V36L"
+      set field is_resistance_associated_variant true 
+      set field rav_substitutions "36L" 
+      create pattern-location "L" --labeledCodon 36 36
       exit
-    create variation rav_NS3_V36A -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_V36A
-      set field displayName "RAV:NS3:V36A"
-      set pattern "A"
-      set location --labeledCodon 36 36
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_F43S -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_F43S
-      set field displayName "RAV:NS3:F43S"
-      set pattern "S"
-      set location --labeledCodon 43 43
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_T54A -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_T54A
-      set field displayName "RAV:NS3:T54A"
-      set pattern "A"
-      set location --labeledCodon 54 54
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_Q80K -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_Q80K
-      set field displayName "RAV:NS3:Q80K"
-      set pattern "K"
-      set location --labeledCodon 80 80
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_S122R -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_S122R
-      set field displayName "RAV:NS3:S122R"
-      set pattern "R"
-      set location --labeledCodon 122 122
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_S122G -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_S122G
-      set field displayName "RAV:NS3:S122G"
-      set pattern "G"
-      set location --labeledCodon 122 122
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_S122K -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_S122K
-      set field displayName "RAV:NS3:S122K"
-      set pattern "K"
-      set location --labeledCodon 122 122
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_S122N -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_S122N
-      set field displayName "RAV:NS3:S122N"
-      set pattern "N"
-      set location --labeledCodon 122 122
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_S122T -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_S122T
-      set field displayName "RAV:NS3:S122T"
-      set pattern "T"
-      set location --labeledCodon 122 122
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_R155T -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_R155T
-      set field displayName "RAV:NS3:R155T"
-      set pattern "Q"
-      set location --labeledCodon 155 155
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_D168E -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_D168E
-      set field displayName "RAV:NS3:D168E"
-      set pattern "E"
-      set location --labeledCodon 168 168
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_D168G -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_D168G
-      set field displayName "RAV:NS3:D168G"
-      set pattern "G"
-      set location --labeledCodon 168 168
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS3_D168Q -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_D168Q
-      set field displayName "RAV:NS3:D168Q"
-      set pattern "Q"
-      set location --labeledCodon 168 168
-      set field is_resistance_associated_variant true
-      exit
-    exit
-  feature-location NS5A
-    create variation rav_NS5A_Q30R -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5A_Q30R
-      set field displayName "RAV:NS5A:Q30R"
-      set pattern "R"
-      set location --labeledCodon 30 30
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS5A_L31M -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5A_L31M
-      set field displayName "RAV:NS5A:L31M"
-      set pattern "M"
-      set location --labeledCodon 31 31
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS5A_Y93H -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5A_Y93H
-      set field displayName "RAV:NS5A:Y93H"
-      set pattern "H"
-      set location --labeledCodon 93 93
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS5A_Y93S -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5A_Y93S
-      set field displayName "RAV:NS5A:Y93S"
-      set pattern "S"
-      set location --labeledCodon 93 93
-      set field is_resistance_associated_variant true
-      exit
-    exit
-  feature-location NS5B
-    create variation rav_NS5B_S282T -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5B_S282T
-      set field displayName "RAV:NS5B:S282T"
-      set pattern "T"
-      set location --labeledCodon 282 282
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS5B_C316N -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5B_C316N
-      set field displayName "RAV:NS5B:C316N"
-      set pattern "N"
-      set location --labeledCodon 316 316
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS5B_L419S -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5B_L419S
-      set field displayName "RAV:NS5B:L419S"
-      set pattern "S"
-      set location --labeledCodon 419 419
-      set field is_resistance_associated_variant true
-      exit
-    create variation rav_NS5B_L419V -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS5B_L419V
-      set field displayName "RAV:NS5B:L419V"
-      set pattern "V"
-      set location --labeledCodon 419 419
-      set field is_resistance_associated_variant true
+    create variation rav_NS3_I35V_V36L -t AMINO_ACID "Resistance associated variant"
+    variation rav_NS3_I35V_V36L
+      set field displayName "I35V and V36L"
+      set field rav_substitutions "35V and 36L" 
+      set field is_resistance_associated_variant true 
+      create pattern-location "V" --labeledCodon 35 35
+      create pattern-location "L" --labeledCodon 36 36
       exit
     exit
   exit

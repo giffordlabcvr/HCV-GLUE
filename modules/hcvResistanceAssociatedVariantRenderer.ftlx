@@ -5,8 +5,10 @@
 	<renderedName>${getRenderedName()}</renderedName>
 	<@elem tag="description" expr="description"/>
 	<referenceSequence>${featureLoc.referenceSequence.name}</referenceSequence>
+	<clade>${featureLoc.referenceSequence.alignmentsWhereRefSequence[0].name}</clade>
+	<cladeDisplayName>${featureLoc.referenceSequence.alignmentsWhereRefSequence[0].getRenderedName()}</cladeDisplayName>
 	<feature>${featureLoc.feature.name}</feature>
-	<pattern>${regex}</pattern>
+	<substitutions>${renderProperty('rav_substitutions')}</substitutions>
 	<#list getVarAlmtNotesOrderedByDepth() as varAlmtNote>
 		<alignmentNote glueType="Object[]">
 			<alignmentName>${varAlmtNote.alignment.name}</alignmentName>

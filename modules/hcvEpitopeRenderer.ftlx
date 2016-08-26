@@ -6,7 +6,7 @@
     <@elem tag="description" expr="description"/>
 	<referenceSequence>${featureLoc.referenceSequence.name}</referenceSequence>
 	<feature>${featureLoc.feature.name}</feature>
-	<pattern>${regex}</pattern>
+	<pattern>${patternLocs[0].pattern}</pattern>
     <@elem tag="hla" expr="readProperty('epitope_full_hla')"/>
     <@elem tag="iedb_id" expr="readProperty('epitope_iedb_id')"/>
     <@elem tag="pubmed_id" expr="readProperty('pubmed_id')"/>

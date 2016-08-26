@@ -43,6 +43,7 @@ schema-project hcv
     create field is_epitope BOOLEAN
     create field pubmed_id VARCHAR 50
     create field publication_date_year INTEGER
+    craete field rav_substitutions VARCHAR 50
     create field epitope_iedb_id INTEGER
     create field epitope_method VARCHAR 50
     create field epitope_protein VARCHAR 50
