@@ -1,19 +1,14 @@
-reference H77_AF009606
-  feature-location NS3
-    create variation rav_NS3_V36L -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_V36L
-      set field displayName "V36L"
-      set field is_resistance_associated_variant true 
-      set field rav_substitutions "36L" 
-      create pattern-location "L" --labeledCodon 36 36
-      exit
-    create variation rav_NS3_I35V_V36L -t AMINO_ACID "Resistance associated variant"
-    variation rav_NS3_I35V_V36L
-      set field displayName "I35V and V36L"
-      set field rav_substitutions "35V and 36L" 
-      set field is_resistance_associated_variant true 
-      create pattern-location "V" --labeledCodon 35 35
-      create pattern-location "L" --labeledCodon 36 36
-      exit
-    exit
-  exit
+create module --fileName modules/drugCategoryTextToCustomTableRows.xml drugCategoryTextToCustomTableRows
+module drugCategoryTextToCustomTableRows transform tabular/drug_resistance/drugCategories.txt --run
+
+create module --fileName modules/drugTextToCustomTableRows.xml drugTextToCustomTableRows
+module drugTextToCustomTableRows transform tabular/drug_resistance/drugs.txt --run
+
+create module --fileName modules/resistanceAssociatedSubstitutionsToVariations.xml resistanceAssociatedSubstitutionsToVariations
+module resistanceAssociatedSubstitutionsToVariations transform tabular/drug_resistance/resistanceAssociatedSubstitutions.txt --run
+
+create module -f modules/drugResistancePublicationTextToCustomTableRows.xml drugResistancePublicationTextToCustomTableRows
+module drugResistancePublicationTextToCustomTableRows transform tabular/drug_resistance/drugResistancePublications.txt --run
+
+create module -f modules/drugResistanceFindingTextToCustomTableRows.xml drugResistanceFindingTextToCustomTableRows
+module drugResistanceFindingTextToCustomTableRows transform tabular/drug_resistance/drugResistanceFindings.txt --run

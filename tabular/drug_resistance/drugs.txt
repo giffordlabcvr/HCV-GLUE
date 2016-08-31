@@ -1,0 +1,13 @@
+Drug	Drug category
+Asunaprevir	NS3_inhibitor
+Boceprevir	NS3_inhibitor
+Grazoprevir	NS3_inhibitor
+Paritaprevir	NS3_inhibitor
+Simeprevir	NS3_inhibitor
+Telaprevir	NS3_inhibitor
+Daclatasvir	NS5A_inhibitor
+Elbasvir	NS5A_inhibitor
+Ledipasvir	NS5A_inhibitor
+Ombitasvir	NS5A_inhibitor
+Dasabuvir	NS5B_inhibitor
+Sofosbuvir	NS5B_inhibitor

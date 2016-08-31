@@ -1,0 +1,12 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign id>${row["id"]?trim}</#assign>
+  <#assign displayName>${row["Display name"]?trim}</#assign>
+  create custom-table-row drug_category "${id}"
+  custom-table-row drug_category "${id}"
+    set field display_name "${displayName}"
+    exit
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>

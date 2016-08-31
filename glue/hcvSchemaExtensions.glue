@@ -43,7 +43,7 @@ schema-project hcv
     create field is_epitope BOOLEAN
     create field pubmed_id VARCHAR 50
     create field publication_date_year INTEGER
-    craete field rav_substitutions VARCHAR 50
+    create field rav_substitutions VARCHAR 50
     create field epitope_iedb_id INTEGER
     create field epitope_method VARCHAR 50
     create field epitope_protein VARCHAR 50
@@ -70,5 +70,39 @@ schema-project hcv
   table alignment_member
     create field reference_member BOOLEAN
     exit
+    
+  create custom-table drug
+  create custom-table drug_category
+  create custom-table drug_resistance_finding --idFieldLength 200
+  create custom-table drug_resistance_publication
+  create custom-table drug_resistance_clade
+  
+  create link drug drug_category -m MANY_TO_ONE
+  create link drug_resistance_publication drug_resistance_finding -m ONE_TO_MANY
+  create link variation drug_resistance_finding -m ONE_TO_MANY 
+  create link drug_resistance_finding drug_resistance_clade -m MANY_TO_ONE
+  create link drug_resistance_finding drug -m MANY_TO_ONE
+  
+  table drug_category
+	create field display_name VARCHAR 100
+    exit
+  
+  table drug_resistance_publication
+	create field authors VARCHAR 500
+	create field year INTEGER
+	create field title VARCHAR 500
+	create field publication VARCHAR 100
+	create field pub_location VARCHAR 100
+	create field web_link VARCHAR 500
+    exit
+    
+  table drug_resistance_finding
+    # clinical / in_vitro
+    create field study_type VARCHAR 20
+    # resistant / possibly_resistant
+    create field resistance_level VARCHAR 50
+    create field fold_change DOUBLE
+    exit
+    
     
   exit

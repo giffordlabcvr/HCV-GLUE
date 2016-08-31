@@ -1,0 +1,2 @@
+ID	Authors	Year	Title	Publication	PublicationLocation	WebLink
+Lenz_et_al_2010	Lenz O, Verbinnen T, Lin TI, Vijgen L, Cummings MD, Lindberg J, Berke JM, Dehertogh P, Fransen E, Scholliers A, Vermeiren K, Ivens T, Raboisson P,Edlund M, Storm S, Vrang L, de Kock H, Fanning GC, Simmen KA	2010	In vitro resistance profile of the hepatitis C virus NS3/4A protease inhibitor TMC435	Antimicrobial Agents and Chemotherapy	54(5):1878-87	http://aac.asm.org/content/54/5/1878.long

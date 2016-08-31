@@ -1,70 +1,12 @@
 <freemarkerTextToGlueTransformer>
 	<freemarkerTemplate><![CDATA[
-reference H77_AF009606
-  feature-location precursor_polyprotein
 <#list rows as row>
-  <#assign h77Start>${row["H77_START"]?trim}</#assign>
-  <#assign h77End>${row["H77_END"]?trim}</#assign>
-  <#assign pubmedID>${row[" Pubmed ID"]?trim}</#assign>
-  <#assign epitopeID>${row[" Epitope ID"]?trim}</#assign>
-  <#assign epitope>${row["Epitope"]?trim}</#assign>
-  <#assign date>${row[" Date"]?trim}</#assign>
-  <#assign method>${row[" Method/Technique"]?trim}</#assign>
-  <#assign protein>${row["PROTEIN"]?trim}</#assign>
-  <#assign stage>${row["Stage"]?trim}</#assign>
-  <#assign genotype>${row["Genotype"]?trim}</#assign>
-  <#assign measurement>${row[" Measurement of"]?trim}</#assign>
-  <#assign effectorCellTissueType>${row[" Effector Cell Tissue Type"]?trim}</#assign>
-  <#assign effectorCellType>${row[" Effector Cell Type"]?trim}</#assign>
-  <#assign effectorCellCultureConditions>${row[" Effector Cell Culture Conditions"]?trim}</#assign>
-  <#assign fullHla>${row["Full HLA"]?trim}</#assign>
-  <#assign partialHla>${row["Partial HLA"]?trim}</#assign>
-
-  <#if h77Start != "" && h77End != "">
-  <#assign variationName>IEDB_epitope_${epitopeID}</#assign>
-    create variation --noCommit "${variationName}" -t AMINO_ACID "Linear epitope"
-    variation "${variationName}"
-      create pattern-location --noCommit ${epitope} --labeledCodon ${h77Start} ${h77End}
-      set field --noCommit displayName "IEDB epitope ${epitopeID}"
-      set field --noCommit pubmed_id ${pubmedID}
-      set field --noCommit publication_date_year ${date} 
-      set field --noCommit is_epitope true
-      set field --noCommit epitope_iedb_id ${epitopeID}
-      set field --noCommit epitope_method "${method}"
-      set field --noCommit epitope_protein ${protein}
-      set field --noCommit epitope_start_codon ${h77Start}
-      set field --noCommit epitope_end_codon ${h77End}
-      <#if stage != "">
-      set field --noCommit epitope_stage "${stage}"
-      </#if>  
-      <#if genotype?matches("^[1-9][a-z]{0,2}$") >
-      set field --noCommit epitope_genotype ${genotype[0]}
-      <#if genotype?length gt 1 >
-      set field --noCommit epitope_subtype ${genotype[1..]}
-      </#if>  
-      </#if>  
-      <#if measurement != "">
-      set field --noCommit epitope_measurement "${measurement}"
-      </#if>  
-      <#if effectorCellTissueType != "">
-      set field --noCommit epitope_effector_tissue_type ${effectorCellTissueType}
-      </#if>  
-      <#if effectorCellType != "">
-      set field --noCommit epitope_effector_cell_type "${effectorCellType}"
-      </#if>  
-      <#if effectorCellCultureConditions != "">
-      set field --noCommit epitope_effector_cell_culture_condition "${effectorCellCultureConditions}"
-      </#if>  
-      <#if fullHla != "">
-      set field --noCommit epitope_full_hla "${fullHla}"
-      </#if>  
-      <#if partialHla != "">
-      set field --noCommit epitope_partial_hla "${partialHla}"
-      </#if>  
-      exit  
-    </#if>  
-</#list>
+  <#assign name>${row["Drug"]?trim}</#assign>
+  <#assign category>${row["Drug category"]?trim}</#assign>
+  create custom-table-row drug "${name}"
+  custom-table-row drug "${name}"
+    set link-target drug_category custom-table-row/drug_category/${category}
     exit
-  exit
-commit]]></freemarkerTemplate>
+</#list>
+]]></freemarkerTemplate>
 </freemarkerTextToGlueTransformer>

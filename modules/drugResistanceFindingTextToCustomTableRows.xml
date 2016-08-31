@@ -1,0 +1,26 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign drug_id>${row["Drug"]?trim}</#assign>
+  <#assign publication_id>${row["PublicationID"]?trim}</#assign>
+  <#assign gene>${row["Gene"]?trim}</#assign>
+  <#assign substitutions>${row["Substitutions"]?trim}</#assign>
+  <#assign study_type>${row["StudyType"]?trim}</#assign>
+  <#assign clade_id>${row["Clade"]?trim}</#assign>
+  <#assign resistance_level>${row["ResistanceLevel"]?trim}</#assign>
+  <#assign fold_change>${row["FoldChange"]?trim}</#assign>
+  <#assign id>${drug_id}_${publication_id}_${gene}_${substitutions}_${study_type}_${clade_id}</#assign>
+  create custom-table-row drug_resistance_finding "${id}"
+  create custom-table-row --allowExisting drug_resistance_clade "${clade_id}"
+  custom-table-row drug_resistance_finding "${id}"
+    set link-target drug "custom-table-row/drug/${drug_id}"
+    set link-target drug_resistance_publication "custom-table-row/drug_resistance_publication/${publication_id}"
+    set link-target drug_resistance_clade "custom-table-row/drug_resistance_clade/${clade_id}"
+    set link-target variation "reference/H77_AF009606/feature-location/${gene}/variation/RAS_${gene}_${substitutions}"
+    set field study_type "${study_type}"
+    set field resistance_level "${resistance_level}"
+    set field fold_change "${fold_change}"
+    exit
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>

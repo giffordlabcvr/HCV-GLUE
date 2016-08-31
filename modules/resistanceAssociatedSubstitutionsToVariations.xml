@@ -1,0 +1,26 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+reference H77_AF009606
+<#list rows as row>
+  <#assign gene>${row["Gene"]?trim}</#assign>
+  <#assign substitutions>${row["Substitutions"]?trim}</#assign>
+  <#assign variationName>RAS_${gene}_${substitutions}</#assign>
+  
+  feature-location ${gene}
+    create variation ${variationName} -t AMINO_ACID "Resistance associated substitution"
+    variation ${variationName}
+      set field displayName "${gene}:${substitutions}"
+      set field is_resistance_associated_variant true 
+      set field rav_substitutions "${substitutions}" 
+<#list substitutions?split("+") as substitutionUntrimmed>
+  <#assign matchResult = substitutionUntrimmed?trim?matches('([1-9][0-9]*)([ACDEFGHIKLMNPQRSTVWY*])')>
+  <#assign codon>${matchResult?groups[1]}</#assign>
+  <#assign substitutedAA>${matchResult?groups[2]}</#assign>
+      create pattern-location --noCommit ${substitutedAA} --labeledCodon ${codon} ${codon}
+</#list>
+      exit  
+    exit
+</#list>
+  exit
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>
