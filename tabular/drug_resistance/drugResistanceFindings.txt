@@ -1,2 +1,4 @@
 Drug	PublicationID	Gene	Substitutions	StudyType	Clade	ResistanceLevel	FoldChange
 Simeprevir	Lenz_et_al_2010	NS3	80R+168A	in_vitro	1b	resistant	2655
+Simeprevir	Lenz_et_al_2013	NS3	168Q	clinical	3a	resistant	
+Simeprevir	Lenz_et_al_2013	NS3	168Q	in_vitro	1b	resistant	385

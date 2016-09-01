@@ -19,7 +19,9 @@
     set link-target variation "reference/H77_AF009606/feature-location/${gene}/variation/RAS_${gene}_${substitutions}"
     set field study_type "${study_type}"
     set field resistance_level "${resistance_level}"
+<#if study_type == "in_vitro">
     set field fold_change "${fold_change}"
+</#if>
     exit
 </#list>
 ]]></freemarkerTemplate>

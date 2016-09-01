@@ -2,6 +2,7 @@
 	<freemarkerTemplate><![CDATA[
 <#list rows as row>
   <#assign id>${row["ID"]?trim}</#assign>
+  <#assign display_name>${row["DisplayName"]?trim}</#assign>
   <#assign authors>${row["Authors"]?trim}</#assign>
   <#assign year>${row["Year"]?trim}</#assign>
   <#assign title>${row["Title"]?trim}</#assign>
@@ -10,6 +11,7 @@
   <#assign web_link>${row["WebLink"]?trim}</#assign>
   create custom-table-row drug_resistance_publication "${id}"
   custom-table-row drug_resistance_publication "${id}"
+    set field display_name "${display_name}"
     set field authors "${authors}"
     set field year "${year}"
     set field title "${title}"

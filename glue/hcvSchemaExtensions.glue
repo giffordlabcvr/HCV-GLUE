@@ -88,6 +88,7 @@ schema-project hcv
     exit
   
   table drug_resistance_publication
+	create field display_name VARCHAR 100
 	create field authors VARCHAR 500
 	create field year INTEGER
 	create field title VARCHAR 500
