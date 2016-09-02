@@ -33,16 +33,16 @@ project hcv
   run file glue/hcvDrugResistance.glue
 
   # epitopes
-  run file glue/hcvEpitopes.glue
+  ###run file glue/hcvEpitopes.glue
 
   # add the curated sequences into the alignment tree according to their genotype/subtype
-  ### run file glue/computeCuratedAlignments.glue
+  ###run file glue/computeCuratedAlignments.glue
 
   # generate the common AA polymorphisms
-  ### run file glue/hcvGenerateCommonAaPolymorphisms.glue
+  ###run file glue/hcvGenerateCommonAaPolymorphisms.glue
 
   # generate the frequencies of all variations amongst curated sequences.
-  ### run file glue/hcvGenerateVariationFrequencies.glue
+  ###run file glue/hcvGenerateVariationFrequencies.glue
 
   validate
 

@@ -4,6 +4,7 @@ reference H77_AF009606
 <#list rows as row>
   <#assign gene>${row["Gene"]?trim}</#assign>
   <#assign substitutions>${row["Substitutions"]?trim}</#assign>
+  <#assign clinical_notes>${row["ClinicalNotes"]?trim}</#assign>
   <#assign variationName>RAS_${gene}_${substitutions}</#assign>
   
   feature-location ${gene}
@@ -12,6 +13,7 @@ reference H77_AF009606
       set field displayName "${gene}:${substitutions}"
       set field is_resistance_associated_variant true 
       set field rav_substitutions "${substitutions}" 
+      set field rav_clinical_notes "${clinical_notes}" 
 <#list substitutions?split("+") as substitutionUntrimmed>
   <#assign matchResult = substitutionUntrimmed?trim?matches('([1-9][0-9]*)([ACDEFGHIKLMNPQRSTVWY*])')>
   <#assign codon>${matchResult?groups[1]}</#assign>

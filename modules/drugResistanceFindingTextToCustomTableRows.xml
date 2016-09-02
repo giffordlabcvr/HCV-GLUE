@@ -9,6 +9,7 @@
   <#assign clade_id>${row["Clade"]?trim}</#assign>
   <#assign resistance_level>${row["ResistanceLevel"]?trim}</#assign>
   <#assign fold_change>${row["FoldChange"]?trim}</#assign>
+  <#assign svr>${row["SVR"]?trim}</#assign>
   <#assign id>${drug_id}_${publication_id}_${gene}_${substitutions}_${study_type}_${clade_id}</#assign>
   create custom-table-row drug_resistance_finding "${id}"
   create custom-table-row --allowExisting drug_resistance_clade "${clade_id}"
@@ -19,8 +20,11 @@
     set link-target variation "reference/H77_AF009606/feature-location/${gene}/variation/RAS_${gene}_${substitutions}"
     set field study_type "${study_type}"
     set field resistance_level "${resistance_level}"
-<#if study_type == "in_vitro">
+<#if study_type == "in_vitro" && fold_change != "">
     set field fold_change "${fold_change}"
+</#if>
+<#if study_type == "clinical" && svr != "">
+    set field svr "${svr}"
 </#if>
     exit
 </#list>
