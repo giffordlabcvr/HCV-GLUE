@@ -66,6 +66,8 @@ schema-project hcv
   
   table var_almt_note
     create field ncbi_curated_frequency DOUBLE
+    create field ncbi_curated_total_present INTEGER
+    create field ncbi_curated_total_absent INTEGER
     exit
 
   table alignment_member

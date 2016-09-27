@@ -1,3 +1,5 @@
 <variationFrequenciesGenerator>
 	<frequencyFieldName>ncbi_curated_frequency</frequencyFieldName>
+	<totalPresentFieldName>ncbi_curated_total_present</totalPresentFieldName>
+	<totalAbsentFieldName>ncbi_curated_total_absent</totalAbsentFieldName>
 </variationFrequenciesGenerator>

@@ -22,6 +22,8 @@
 			<alignmentName>${varAlmtNote.alignment.name}</alignmentName>
 			<alignmentRenderedName>${varAlmtNote.alignment.getRenderedName()}</alignmentRenderedName>
 		    <@elem tag="ncbiCuratedFrequencyPct" expr="context.readProperty('ncbi_curated_frequency')" type="Double" context=varAlmtNote/>
+		    <@elem tag="ncbiCuratedTotalPresent" expr="context.readProperty('ncbi_curated_total_present')" type="Integer" context=varAlmtNote/>
+		    <@elem tag="ncbiCuratedTotalAbsent" expr="context.readProperty('ncbi_curated_total_absent')" type="Integer" context=varAlmtNote/>
 		</alignmentNote>
 	</#list>
 </epitope>
