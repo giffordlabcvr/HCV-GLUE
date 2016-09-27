@@ -85,6 +85,10 @@ schema-project hcv
   create link variation drug_resistance_finding -m ONE_TO_MANY 
   create link drug_resistance_finding drug_resistance_clade -m MANY_TO_ONE
   create link drug_resistance_finding drug -m MANY_TO_ONE
+
+  table drug
+	create field company_code VARCHAR 100
+    exit
   
   table drug_category
 	create field display_name VARCHAR 100

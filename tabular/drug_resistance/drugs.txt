@@ -1,13 +1,12 @@
-Drug	Drug category
-Asunaprevir	NS3_inhibitor
-Boceprevir	NS3_inhibitor
-Grazoprevir	NS3_inhibitor
-Paritaprevir	NS3_inhibitor
-Simeprevir	NS3_inhibitor
-Telaprevir	NS3_inhibitor
-Daclatasvir	NS5A_inhibitor
-Elbasvir	NS5A_inhibitor
-Ledipasvir	NS5A_inhibitor
-Ombitasvir	NS5A_inhibitor
-Dasabuvir	NS5B_inhibitor
-Sofosbuvir	NS5B_inhibitor
+Drug	Drug category	Company code
+asunaprevir	NS3_inhibitor	BMS-650032
+grazoprevir	NS3_inhibitor	MK-5172
+paritaprevir	NS3_inhibitor	ABT-450
+simeprevir	NS3_inhibitor	TMC-435
+daclatasvir	NS5A_inhibitor	BMS-790052
+elbasvir	NS5A_inhibitor	MK-8742
+ledipasvir	NS5A_inhibitor	GS-5885
+ombitasvir	NS5A_inhibitor	ABT-267
+velpatasvir	NS5A_inhibitor	
+dasabuvir	NS5B_inhibitor	ABT-333
+sofosbuvir	NS5B_inhibitor	GS-7977

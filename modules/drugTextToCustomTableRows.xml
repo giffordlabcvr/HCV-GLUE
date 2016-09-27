@@ -3,9 +3,13 @@
 <#list rows as row>
   <#assign name>${row["Drug"]?trim}</#assign>
   <#assign category>${row["Drug category"]?trim}</#assign>
+  <#assign companyCode>${row["Company code"]?trim}</#assign>
   create custom-table-row drug "${name}"
   custom-table-row drug "${name}"
     set link-target drug_category custom-table-row/drug_category/${category}
+    <#if companyCode != "">
+    set field company_code ${companyCode}
+    </#if> 
     exit
 </#list>
 ]]></freemarkerTemplate>
