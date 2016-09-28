@@ -1,23 +1,22 @@
 <#include "/utils/glueDocUtils.ftlx">
 
-<drug>
+<drugPublication>
 	<id>${id}</id>
-    <@elem tag="companyCode" expr="company_code"/>
-	<category>
-		<id>${drug_category.id}</id>
-		<displayName>${drug_category.display_name}</displayName>
-	</category>
+	<authors>${authors}</authors>
+	<displayName>${display_name}</displayName>
+	<publication>${publication}</publication>
+	<pubLocation>${pub_location}</pubLocation>
+	<title>${title}</title>
+	<webLink>${web_link}</webLink>
+    <@elem tag="year" expr="year"/>
 	<#list drug_resistance_finding as drugResistanceFinding>
 	<drugResistanceFinding glueType="Object[]">
 		<id>${drugResistanceFinding.id}</id>
+		<drugId>${drugResistanceFinding.drug.id}</drugId>
 		<studyType>${drugResistanceFinding.study_type}</studyType>
+		<resistanceLevel>${drugResistanceFinding.resistance_level}</resistanceLevel>
 		<clade>${drugResistanceFinding.drug_resistance_clade.id}</clade>
 	    <@elem tag="foldChange" type="Double" expr="context.fold_change" context=drugResistanceFinding/>
-	    <#assign drPub = drugResistanceFinding.drug_resistance_publication>
-	    <publication>
-			<id>${drPub.id}</id>
-			<displayName>${drPub.display_name}</displayName>
-	    </publication>
 	    <#assign variation = drugResistanceFinding.variation>
     	<variationReferenceSequence>${variation.featureLoc.referenceSequence.name}</variationReferenceSequence>
     	<variationFeatureName>${variation.featureLoc.feature.name}</variationFeatureName>
@@ -26,5 +25,4 @@
     	<@elem tag="variationFirstCodon" type="Integer" expr="variation.rav_first_codon"/>
 	</drugResistanceFinding>
 	</#list>
-	
-</drug>
+</drugPublication>

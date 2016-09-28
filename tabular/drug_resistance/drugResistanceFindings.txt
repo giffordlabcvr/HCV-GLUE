@@ -1,3 +1,31 @@
 Drug	PublicationID	Gene	Substitutions	StudyType	Clade	ResistanceLevel	FoldChange	SVR
 simeprevir	Lenz_et_al_2013	NS3	168Q	clinical	3a	resistant		
 simeprevir	Lenz_et_al_2013	NS3	168Q	in_vitro	1b	resistant	385	
+simeprevir	Lenz_et_al_2013	NS3	80K	in_vitro	1b	resistant	8	
+simeprevir	Lenz_et_al_2010	NS3	36L	in_vitro	1b	resistant	18	
+simeprevir	Lenz_et_al_2010	NS3	36M	in_vitro	1b	resistant	20	
+simeprevir	Lenz_et_al_2010	NS3	36A	in_vitro	1b	resistant	34	
+simeprevir	Lenz_et_al_2010	NS3	43S	in_vitro	1b	resistant	83	
+simeprevir	Lenz_et_al_2010	NS3	54A	in_vitro	1b	resistant	5.9	
+simeprevir	Lenz_et_al_2010	NS3	54S	in_vitro	1b	resistant	5.4	
+simeprevir	Lenz_et_al_2010	NS3	80R	in_vitro	1b	resistant	49	
+simeprevir	Lenz_et_al_2010	NS3	80H	in_vitro	1b	resistant	41	
+simeprevir	Lenz_et_al_2010	NS3	80K	in_vitro	1b	resistant	62	
+simeprevir	Lenz_et_al_2010	NS3	80G	in_vitro	1b	resistant	22	
+simeprevir	Lenz_et_al_2010	NS3	155Q	in_vitro	1b	resistant	21	
+simeprevir	Lenz_et_al_2010	NS3	155T	in_vitro	1b	resistant	314	
+simeprevir	Lenz_et_al_2010	NS3	155K	in_vitro	1b	resistant	260	
+simeprevir	Lenz_et_al_2010	NS3	155G	in_vitro	1b	resistant	350	
+simeprevir	Lenz_et_al_2010	NS3	156S	in_vitro	1b	resistant	3	
+simeprevir	Lenz_et_al_2010	NS3	156G	in_vitro	1b	resistant	206	
+simeprevir	Lenz_et_al_2010	NS3	156T	in_vitro	1b	resistant	377	
+simeprevir	Lenz_et_al_2010	NS3	156V	in_vitro	1b	resistant	2149	
+simeprevir	Lenz_et_al_2010	NS3	168G	in_vitro	1b	resistant	42	
+simeprevir	Lenz_et_al_2010	NS3	168E	in_vitro	1b	resistant	302	
+simeprevir	Lenz_et_al_2010	NS3	168T	in_vitro	1b	resistant	4089	
+simeprevir	Lenz_et_al_2010	NS3	168Y	in_vitro	1b	resistant	6238	
+simeprevir	Lenz_et_al_2010	NS3	168H	in_vitro	1b	resistant	5655	
+simeprevir	Lenz_et_al_2010	NS3	168A	in_vitro	1b	resistant	6356	
+simeprevir	Lenz_et_al_2010	NS3	168V	in_vitro	1b	resistant	17917	
+simeprevir	Lenz_et_al_2010	NS3	170T	in_vitro	1b	resistant	52	
+simeprevir	Lenz_et_al_2010	NS3	80K+155K	in_vitro	1b	resistant	4647	

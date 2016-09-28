@@ -44,6 +44,7 @@ schema-project hcv
     create field pubmed_id VARCHAR 50
     create field publication_date_year INTEGER
     create field rav_substitutions VARCHAR 50
+    create field rav_first_codon INTEGER
     create field rav_clinical_notes VARCHAR 500
     create field epitope_iedb_id INTEGER
     create field epitope_method VARCHAR 50
