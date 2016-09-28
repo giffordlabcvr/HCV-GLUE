@@ -1,0 +1,37 @@
+<#include "/utils/glueDocUtils.ftlx">
+
+<drug>
+	<id>${id}</id>
+    <@elem tag="companyCode" expr="readProperty('company_code')"/>
+	<category>
+		<id>${readProperty('drug_category').id}</id>
+		<displayName>${readProperty('drug_category').readProperty('display_name')}</displayName>
+	</category>
+	<#list readProperty('drug_resistance_finding') as drugResistanceFinding>
+	<drugResistanceFinding glueType="Object[]">
+		<id>${drugResistanceFinding.id}</id>
+		<studyType>${drugResistanceFinding.readProperty('study_type')}</studyType>
+		<resistanceLevel>${drugResistanceFinding.readProperty('resistance_level')}</resistanceLevel>
+		<clade>${drugResistanceFinding.readProperty('drug_resistance_clade').id}</clade>
+	    <@elem tag="foldChange" expr="readProperty('fold_change')"/>
+	    <@elem tag="svr" expr="readProperty('svr')"/>
+	    <publication>
+			<id>${drugResistanceFinding.readProperty('drug_resistance_publication').id}</id>
+			<authors>${drugResistanceFinding.readProperty('drug_resistance_publication').readProperty('authors')}</authors>
+			<displayName>${drugResistanceFinding.readProperty('drug_resistance_publication').readProperty('display_name')}</displayName>
+			<publication>${drugResistanceFinding.readProperty('drug_resistance_publication').readProperty('publication')}</publication>
+			<pubLocation>${drugResistanceFinding.readProperty('drug_resistance_publication').readProperty('pub_location')}</pubLocation>
+			<title>${drugResistanceFinding.readProperty('drug_resistance_publication').readProperty('title')}</title>
+			<webLink>${drugResistanceFinding.readProperty('drug_resistance_publication').readProperty('web_link')}</webLink>
+		    <@elem tag="year" expr="context.readProperty('drug_resistance_publication').readProperty('year')" context=drugResistanceFinding/>
+	    </publication>
+	    <variation>
+	    	<referenceSequence>${drugResistanceFinding.readProperty('variation').featureLoc.referenceSequence.name}</referenceSequence>
+	    	<featureName>${drugResistanceFinding.readProperty('variation').featureLoc.feature.name}</featureName>
+	    	<variationName>${drugResistanceFinding.readProperty('variation').name}</variationName>
+	    	<substitutions>${drugResistanceFinding.readProperty('variation').readProperty('rav_substitutions')}</substitutions>
+	    </variation>
+	</drugResistanceFinding>
+	</#list>
+	
+</drug>
