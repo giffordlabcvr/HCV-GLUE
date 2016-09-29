@@ -19,6 +19,7 @@
 
   create module --fileName modules/hcvDrugPublicationRenderer.xml --loadResources hcvDrugPublicationRenderer
   create module --fileName modules/hcvDrugRenderer.xml --loadResources hcvDrugRenderer
+  create module --fileName modules/hcvAlignmentRenderer.xml --loadResources hcvAlignmentRenderer
 
   create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
   
