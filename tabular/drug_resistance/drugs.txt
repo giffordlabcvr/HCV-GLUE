@@ -7,6 +7,6 @@ daclatasvir	NS5A_inhibitor	BMS-790052
 elbasvir	NS5A_inhibitor	MK-8742
 ledipasvir	NS5A_inhibitor	GS-5885
 ombitasvir	NS5A_inhibitor	ABT-267
-velpatasvir	NS5A_inhibitor	
+velpatasvir	NS5A_inhibitor	GS-5816
 dasabuvir	NS5B_inhibitor	ABT-333
 sofosbuvir	NS5B_inhibitor	GS-7977
