@@ -3,3 +3,5 @@ samBam
 ravFinding
 exampleQuerySequences
 .settings
+.gradle
+build

@@ -105,7 +105,7 @@ function ($scope, glueWS, glueWebToolConfig) {
 	glueWS.setProjectURL("../../../gluetools-ws/project/hcv");
 	glueWebToolConfig.setAnalysisToolURL("../gluetools-web/www/analysisTool");
 	glueWebToolConfig.setProjectBrowserURL("../gluetools-web/www/projectBrowser");
-	glueWebToolConfig.setGlueWSURL("../glueWS");
+	glueWebToolConfig.setGlueWSURL("../gluetools-web/www/glueWS");
 	glueWebToolConfig.setRendererDialogs([
 	                              	    {
 	                            	    	renderer: "hcvEpitopeRenderer",
