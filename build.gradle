@@ -2,6 +2,8 @@ apply plugin: 'war'
 
 apply plugin: 'org.hidetake.ssh'
 
+project.ext.set("glueVersion", "0.1.65")
+
 remotes {
   gluehome {
     host = 'gluehome.cvr.gla.ac.uk'
@@ -15,6 +17,21 @@ remotes {
   }
   
 }
+
+repositories {
+	mavenLocal()
+}
+
+configurations {
+	gluetoolsWebWar
+	gluetoolsWsWar
+}
+
+dependencies {
+    gluetoolsWebWar group: 'cvr.ac.uk', name: 'gluetools-web', version: project.glueVersion, transitive: false
+    gluetoolsWsWar group: 'cvr.ac.uk', name: 'gluetools-ws', version: project.glueVersion, transitive: false
+}
+
 
 buildscript {
   repositories {
@@ -56,15 +73,28 @@ task deployHcvWebAppWarGlueHome(dependsOn: ['war']) {
   }
 }
 
-task deployHcvGlueGlueHomeAWS(dependsOn: ['deployGluetoolsWebWarGlueHomeAWS',
+task copyGluetoolsWebWar(type: Copy) {
+    from configurations.gluetoolsWebWar
+    into "$buildDir/runtimeWars"
+    rename('gluetools-web-'+project.glueVersion+'.war', 'gluetools-web.war')
+}
+
+task copyGluetoolsWsWar(type: Copy) {
+    from configurations.gluetoolsWsWar
+    into "$buildDir/runtimeWars"
+    rename('gluetools-ws-'+project.glueVersion+'.war', 'gluetools-ws.war')
+}
+
+
+task deployAll(dependsOn: ['deployGluetoolsWebWarGlueHomeAWS',
 	'deployGluetoolsWsWarGlueHomeAWS',
 	'deployHcvGlueWarGlueHomeAWS',
 	'deployHcvGlueGluetoolsWsContextXmlGlueHomeAWS',
-	'deployHcvGlueConfigGlueHomeAWS'])
+	'deployHcvGlueConfigGlueHomeAWS',
+	'deployHcvGlueDbToGlueHomeAWS'])
 
-task deployGluetoolsWebWarGlueHomeAWS(type: DeployWarTask) {
-    dependsOn gradle.includedBuild('gluetools').task(':gluetools-web:war')
-    warFile = new File('../gluetools/gluetools-web/build/libs/gluetools-web.war')
+task deployGluetoolsWebWarGlueHomeAWS(type: DeployWarTask, dependsOn: 'copyGluetoolsWebWar') {
+    warFile = new File(buildDir, 'runtimeWars/gluetools-web.war')
     remote = remotes.gluehome_aws
     taskBuildDir = buildDir
 	warBaseName = org.apache.commons.io.FilenameUtils.getBaseName(warFile.name)
@@ -74,13 +104,12 @@ task deployGluetoolsWebWarGlueHomeAWS(type: DeployWarTask) {
     taskSsh = ssh
 }
 
-task deployGluetoolsWsWarGlueHomeAWS(type: DeployWarTask) {
-    dependsOn gradle.includedBuild('gluetools').task(':gluetools-ws:war')
-    warFile = new File('../gluetools/gluetools-ws/build/libs/gluetools-ws.war')
+task deployGluetoolsWsWarGlueHomeAWS(type: DeployWarTask, dependsOn: 'copyGluetoolsWsWar') {
+    warFile = new File(buildDir, 'runtimeWars/gluetools-ws.war')
     remote = remotes.gluehome_aws
     taskBuildDir = buildDir
 	warBaseName = org.apache.commons.io.FilenameUtils.getBaseName(warFile.name)
-    touchFile = new File(taskBuildDir.name, '/deploy.'+warBaseName+'.'+remote.name+'.touchfile')
+    touchFile = new File(taskBuildDir, '/deploy.'+warBaseName+'.'+remote.name+'.touchfile')
     inputs.file warFile
     outputs.file touchFile
     taskSsh = ssh
@@ -91,7 +120,7 @@ task deployHcvGlueWarGlueHomeAWS(type: DeployWarTask, dependsOn: war) {
     remote = remotes.gluehome_aws
     taskBuildDir = buildDir
 	warBaseName = org.apache.commons.io.FilenameUtils.getBaseName(warFile.name)
-    touchFile = new File(taskBuildDir.name, '/deploy.'+warBaseName+'.'+remote.name+'.touchfile')
+    touchFile = new File(taskBuildDir, '/deploy.'+warBaseName+'.'+remote.name+'.touchfile')
     inputs.file warFile
     outputs.file touchFile
     taskSsh = ssh
@@ -118,6 +147,7 @@ class DeployWarTask extends DefaultTask {
 		      execute 'sudo rm -rf /var/lib/tomcat7/webapps_hcv/'+warFile.name
 		      execute 'sudo mv /tmp/'+warFile.name+' /var/lib/tomcat7/webapps_hcv/'+warFile.name
 		      execute 'sudo rm -rf /var/lib/tomcat7/work/Catalina/hcv.glue.cvr.ac.uk/'+warBaseName
+		      execute 'sudo rm -rf /var/cache/tomcat7/Catalina/hcv.glue.cvr.ac.uk/'+warBaseName
 		      execute 'sudo service tomcat7 start'
 		    }
 		  }
@@ -186,8 +216,18 @@ task initHcvGlueDBGlueHomeAWS {
   }
 }
 
-task deployHcvGlueDbToGlueHomeAWS() {
-  dependsOn gradle.includedBuild('gluetools').task(':gluetools-core:zipGlueDB')
+// consider using a separate local GLUE db for this.
+
+task dumpGlueDB(type: Exec) {
+	standardOutput = new FileOutputStream(new File('/tmp/gluedb.sql'))
+	commandLine '/usr/local/mysql/bin/mysqldump', '-u', 'gluetools', '--password=gluetools', 'GLUE_TOOLS'
+}
+
+task zipGlueDB(type: Exec, dependsOn: 'dumpGlueDB') {
+	commandLine '/usr/bin/gzip', '-f', '/tmp/gluedb.sql'
+}
+
+task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipGlueDB') {
   doLast {
 	  println "Uploading HCV-GLUE DB"
 	  ssh.run {
