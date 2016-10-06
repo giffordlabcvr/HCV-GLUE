@@ -6,10 +6,10 @@
 	<p>
 	</p>
 	<treecontrol class="tree-light"
-	   tree-model="descendentTree"
-	   expanded-nodes="expandedNodes"
-	   options="treeOptions">
-	   <a href="./#/project/alignment/{{node.alignmentName}}">{{node.alignmentDisplayName}}</a> 
+	   tree-model="almtNameToDescendentTree['AL_MASTER']"
+	   expanded-nodes="almtNameToExpandedNodes['AL_MASTER']"
+	   options="almtNameToTreeOptions['AL_MASTER']">
+	   <a href="./#/project/alignment/{{node.alignmentName}}">{{node.alignmentRenderedName}}</a> 
 	</treecontrol>
 	<h4>Notes</h4>
 	<ul>

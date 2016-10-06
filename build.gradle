@@ -47,6 +47,7 @@ buildscript {
 
 war {
 	webAppDirName = 'WebContent'
+	archiveName 'hcvGlue.war'
 }
 
 task deployHcvWebAppWarGlueHome(dependsOn: ['war']) {

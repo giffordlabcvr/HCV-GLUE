@@ -1,37 +1,14 @@
-hcvApp.controller('hcvAlignmentsCtrl', 
-		[ '$scope', '$route', '$routeParams', 'glueWS', 'dialogs', 
-    function($scope, $route, $routeParams, glueWS, dialogs) {
+projectBrowser.controller('hcvAlignmentsCtrl', 
+		[ '$scope', 'glueWebToolConfig', 'glueWS', '$controller', 'dialogs', 
+		    function($scope, glueWebToolConfig, glueWS, $controller, dialogs) {
 
-			$scope.treeOptions = {
-				    nodeChildren: "childAlignment",
-				    dirSelectable: true,
-				    injectClasses: {
-				        ul: "a1",
-				        li: "a2",
-				        liSelected: "a7",
-				        iExpanded: "a3",
-				        iCollapsed: "a4",
-				        iLeaf: "a5",
-				        label: "a6",
-				        labelSelected: "a8"
-				    }
-				}
-			
-	$scope.descendentTree = null;
-	$scope.expandedNodes = [];
-	
-	addUtilsToScope($scope);
-	
-	glueWS.runGlueCommand("alignment/AL_MASTER", {
-    	"descendent-tree": {} 
-	})
-    .success(function(data, status, headers, config) {
-    	var rootNode = data.alignmentDescendentTreeResult;
-    	$scope.expandedNodes = [rootNode];
-		$scope.descendentTree = { childAlignment: [rootNode] };
-		console.info('descendent-tree', $scope.descendentTree);
-    })
-    .error(glueWS.raiseErrorDialog(dialogs, "retrieving descendent-tree"));
+			$controller('cladeTreeCtrl', { $scope: $scope, 
+				glueWebToolConfig: glueWebToolConfig, 
+				glueWS: glueWS, 
+				dialogs: dialogs});
 
+			$scope.initFromRootNodes([
+  			    { almtName: "AL_MASTER", initiallyExpanded: true },
+			]);
 	
 }]);
