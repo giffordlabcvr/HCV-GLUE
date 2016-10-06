@@ -1,0 +1,4 @@
+id	Display name
+nucleotide_analogue	Nucleotide analogue
+non_nucleoside_palm_1_inhibitor	Non-nucleoside palm 1 inhibitor
+non_nucleoside_thumb_pocket_1_inhibitor	Non-nucleoside thumb pocket 1 inhibitor
