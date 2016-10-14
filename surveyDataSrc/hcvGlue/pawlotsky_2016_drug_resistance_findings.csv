@@ -1,0 +1,55 @@
+Table 2.
+        List of Known RASs (Amino Acid Substitutions Reported to Reduce Susceptibility of Different HCV Genotypes or Subtypes to DAAs)
+Amino acid,Genotype or subtype,RASs that confer high-level resistance in the replicon model (genotype)
+1a,1b,2,3,4,5,6
+Nucleotide analogues (sofosbuvir),
+159,L159F,L159F,L159F,L159F,,,,
+282,S282T/R,S282T,S282T,,,,,
+320,L320F,,,,,,,
+321,,,,V321A,,,,
+NS5A inhibitors (first-generation drugs<comma> including first wave and second wave),
+24,K24G/N/R,,T24A,,,,Q24H,
+26,K26E,,,,,,,
+28,M28A/G/T/S/V,L28M/T,L/F28M/V/S,M28T,L28V,L28I,,M28A/G/T (1a)L28T (1b)F28S (2a)L28F (2b)
+29,,P29S,,,,,,
+30,Q30C/D/E/G/H/I/L/K/R/S/T/Y,R30G/H/P/Q,L30H/S,A30K,L30H,,,Q30H/G/R/E/K (1a)
+31,L31I/F/M/V,L31I/F/M/V,L31M/V,L31M/V,,L31V,L31V,L31M/V (all)
+32,P32L/S,P32L/S,,,,,P32L/S,P32L/S (1a)
+38,S38F,,,,,,,
+58,H58D/L/R,P58D/S,,,,,T58A/N/S,H58D (1a)P58D (1b)
+62,,E62D,,,,,,
+92,A92K/T,A92K,,,,,,
+93,Y93C/F/H/L/N/R/S/T/W,Y93C/H/N/S,Y93H,Y93H,Y93H/R,,,Y93C/H/N/S (1a)Y93H (1b)
+NS3-4A protease inhibitors (first-generation drugs<comma> including first wave and second wave),
+36,V36A/C/G/L/M,V36A/C/G/L/M,,,,,,
+41,Q41R,Q41R,,,,,,
+43,F43L,F43I/S/V,,,,,,
+54,T54A/S,T54A/C/G/S,,,,,,
+55,V55A/I,V55A,,,,,,
+56,Y56H,Y56H/L,Y56H,,,,,
+80,Q80H/K/L/R,Q80H/K/L/R,,,,,,
+122,S122R,S122R,,,,,,
+155,R155G/I/K/M/S/T/W,R155C/G/I/K/Q/M/S/T/W,,,,,,
+156a,A156S/T/V,A156G/F/S/T/V,,,,,,A156T/V
+158,V158I,V158I,,,,,,
+168a,D168A/C/E/G/H/K/N/T/V/Y,D168A/C/E/F/G/H/K/N/T/V/Y,,,,,,D168H/T/K/V/Y
+170,I/V170F/T/V,I/V170A/L/T,,,,,,
+175,,M175L,,,,,,
+Nonnucleoside RdRp palm-1 inhibitors (dasabuvir),
+314,L314H,,,,,,,L314H
+316,C316Y,C316H/N/Y/W,,,,,,C316H/Y (1)
+368,,S368T,,,,,,S368T (1b)
+411,,N411S,,,,,,
+414,M414T/V,M414I/T/V,,,,,,
+445,,C445F/Y,,,,,,
+446,E446K/Q,,,,,,,
+448,Y448C/H,Y448C/H,,,,,,Y448C/H (1)
+451,C451R,,,,,,,
+553,A553T,A553V,,,,,,A553T (1a)A553V (1b)
+554,G554S,G554S,,,,,,G554S (1)
+555,Y555H,,,,,,,
+556,S556G/R,S556G,,,,,,S556R (1a)
+557,G557R,,,,,,,
+558,G558R,G558R,,,,,,
+559,D559G/N,D559G/N,,,,,,D559G (1)
+561,Y561H/N,,,,,,,

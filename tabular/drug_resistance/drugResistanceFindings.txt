@@ -1,31 +1,1245 @@
-Drug	PublicationID	Gene	Substitutions	StudyType	Clade	ResistanceLevel	FoldChange	SVR
-simeprevir	Lenz_et_al_2013	NS3	168Q	clinical	3a	resistant		
-simeprevir	Lenz_et_al_2013	NS3	168Q	in_vitro	1b	resistant	385	
-simeprevir	Lenz_et_al_2013	NS3	80K	in_vitro	1b	resistant	8	
-simeprevir	Lenz_et_al_2010	NS3	36L	in_vitro	1b	resistant	18	
-simeprevir	Lenz_et_al_2010	NS3	36M	in_vitro	1b	resistant	20	
-simeprevir	Lenz_et_al_2010	NS3	36A	in_vitro	1b	resistant	34	
-simeprevir	Lenz_et_al_2010	NS3	43S	in_vitro	1b	resistant	83	
-simeprevir	Lenz_et_al_2010	NS3	54A	in_vitro	1b	resistant	5.9	
-simeprevir	Lenz_et_al_2010	NS3	54S	in_vitro	1b	resistant	5.4	
-simeprevir	Lenz_et_al_2010	NS3	80R	in_vitro	1b	resistant	49	
-simeprevir	Lenz_et_al_2010	NS3	80H	in_vitro	1b	resistant	41	
-simeprevir	Lenz_et_al_2010	NS3	80K	in_vitro	1b	resistant	62	
-simeprevir	Lenz_et_al_2010	NS3	80G	in_vitro	1b	resistant	22	
-simeprevir	Lenz_et_al_2010	NS3	155Q	in_vitro	1b	resistant	21	
-simeprevir	Lenz_et_al_2010	NS3	155T	in_vitro	1b	resistant	314	
-simeprevir	Lenz_et_al_2010	NS3	155K	in_vitro	1b	resistant	260	
-simeprevir	Lenz_et_al_2010	NS3	155G	in_vitro	1b	resistant	350	
-simeprevir	Lenz_et_al_2010	NS3	156S	in_vitro	1b	resistant	3	
-simeprevir	Lenz_et_al_2010	NS3	156G	in_vitro	1b	resistant	206	
-simeprevir	Lenz_et_al_2010	NS3	156T	in_vitro	1b	resistant	377	
-simeprevir	Lenz_et_al_2010	NS3	156V	in_vitro	1b	resistant	2149	
-simeprevir	Lenz_et_al_2010	NS3	168G	in_vitro	1b	resistant	42	
-simeprevir	Lenz_et_al_2010	NS3	168E	in_vitro	1b	resistant	302	
-simeprevir	Lenz_et_al_2010	NS3	168T	in_vitro	1b	resistant	4089	
-simeprevir	Lenz_et_al_2010	NS3	168Y	in_vitro	1b	resistant	6238	
-simeprevir	Lenz_et_al_2010	NS3	168H	in_vitro	1b	resistant	5655	
-simeprevir	Lenz_et_al_2010	NS3	168A	in_vitro	1b	resistant	6356	
-simeprevir	Lenz_et_al_2010	NS3	168V	in_vitro	1b	resistant	17917	
-simeprevir	Lenz_et_al_2010	NS3	170T	in_vitro	1b	resistant	52	
-simeprevir	Lenz_et_al_2010	NS3	80K+155K	in_vitro	1b	resistant	4647	
+Drug	Publication	Gene	Substitutions	Clade	MinFoldChange	MaxFoldChange
+paritaprevir	Sarrazin_2016	NS3	36A	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	36C	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	36G	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	36M	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	36A	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	36C	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	36G	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	36M	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	43S	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	43S	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	43I	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	43V	1b	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	43L	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	56H	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	80K	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	80K	1a	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	80K	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	80K	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	80K	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	80K	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	80R	1a	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	80R	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	80R	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	80R	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	122R	1a	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	122R	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	122R	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	122R	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	155K	1a	2.0	100.0
+asunaprevir	Sarrazin_2016	NS3	155K	1a	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	155K	1a	2.0	100.0
+simeprevir	Sarrazin_2016	NS3	155K	1b	2.0	100.0
+asunaprevir	Sarrazin_2016	NS3	155K	1b	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	155K	1b	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	155G	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155T	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155G	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155T	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155I	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155M	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155S	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155W	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	155I	1b	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	155M	1b	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	155S	1b	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	155W	1b	2.0	100.0
+asunaprevir	Sarrazin_2016	NS3	156F	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	156G	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	156S	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	156T	1a	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	156T	1a	2.0	20.0
+grazoprevir	Sarrazin_2016	NS3	156T	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	156V	1a	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	156V	1a	2.0	20.0
+grazoprevir	Sarrazin_2016	NS3	156V	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	156T	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	156T	1b	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	156T	1b	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	156V	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	156V	1b	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	156V	1b	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168A	1a	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168A	1a	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168A	1a	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168A	1a	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168A	1b	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168A	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168A	1b	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168A	1b	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168C	1a	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168C	1a	2.0	100.0
+simeprevir	Sarrazin_2016	NS3	168C	1a	2.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168C	1a	2.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168E	1a	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168E	1a	2.0	100.0
+simeprevir	Sarrazin_2016	NS3	168E	1a	2.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168E	1a	2.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168C	1b	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168C	1b	2.0	100.0
+simeprevir	Sarrazin_2016	NS3	168C	1b	2.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168C	1b	2.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168E	1b	2.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168E	1b	2.0	100.0
+simeprevir	Sarrazin_2016	NS3	168E	1b	2.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168E	1b	2.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168G	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	168G	1a	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	168G	1a	2.0	20.0
+grazoprevir	Sarrazin_2016	NS3	168G	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	168N	1a	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	168N	1a	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	168N	1a	2.0	20.0
+grazoprevir	Sarrazin_2016	NS3	168N	1a	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	168G	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	168G	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	168G	1b	2.0	20.0
+grazoprevir	Sarrazin_2016	NS3	168G	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	168N	1b	2.0	20.0
+paritaprevir	Sarrazin_2016	NS3	168N	1b	2.0	20.0
+simeprevir	Sarrazin_2016	NS3	168N	1b	2.0	20.0
+grazoprevir	Sarrazin_2016	NS3	168N	1b	2.0	20.0
+asunaprevir	Sarrazin_2016	NS3	168H	1a	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168H	1a	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168H	1a	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168H	1a	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168K	1a	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168K	1a	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168K	1a	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168K	1a	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168T	1a	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168T	1a	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168T	1a	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168T	1a	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168H	1b	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168H	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168H	1b	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168H	1b	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168K	1b	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168K	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168K	1b	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168K	1b	20.0	100.0
+asunaprevir	Sarrazin_2016	NS3	168T	1b	20.0	100.0
+paritaprevir	Sarrazin_2016	NS3	168T	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168T	1b	20.0	100.0
+grazoprevir	Sarrazin_2016	NS3	168T	1b	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168V	1a	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168Y	1a	20.0	100.0
+simeprevir	Sarrazin_2016	NS3	168V	1b	100.0	
+simeprevir	Sarrazin_2016	NS3	168Y	1b	100.0	
+grazoprevir	Sarrazin_2016	NS3	168Y	1b	4.0	4.0
+ledipasvir	Sarrazin_2016	NS5A	24G	1a	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	24N	1a	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	24R	1a	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	24H	6a	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	24A	2	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	28S	2	100.0	
+ombitasvir	Sarrazin_2016	NS5A	28S	2	100.0	
+ombitasvir	Sarrazin_2016	NS5A	28F	2	100.0	
+ombitasvir	Sarrazin_2016	NS5A	28I	5a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	28T	1b	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	28T	1b	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	28V	4a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	28A	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	28A	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	28G	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	28G	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	28T	1a	20.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	28T	1a	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	28T	1a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	28T	3a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	28T	3a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	28T	3a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	28V	1a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	30K	3a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	30H	4a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	30H	1b	2.0	20.0
+daclatasvir	Sarrazin_2016	NS5A	30E	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	30E	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	30E	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	30H	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	30H	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	30H	1a	2.0	20.0
+daclatasvir	Sarrazin_2016	NS5A	30R	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	30R	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	30R	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	30G	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	30K	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	30L	1a	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	30T	1a	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	31I	1a	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	31F	1b	2.0	20.0
+ombitasvir	Sarrazin_2016	NS5A	31F	1b	2.0	20.0
+daclatasvir	Sarrazin_2016	NS5A	31F	3a	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	31F	3a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	31F	5a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	31F	5a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31M	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31M	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31M	1b	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	31M	1b	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	31M	2	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31M	2	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31M	3a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31M	3a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31M	6a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31M	6a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31V	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31V	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	31V	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31V	1b	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	31V	1b	2.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	31V	1b	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	31V	2	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31V	2	100.0	
+ombitasvir	Sarrazin_2016	NS5A	31V	2	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31V	3a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31V	3a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	31V	3a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31V	5a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	31V	5a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	31V	5a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	31V	6a	20.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	31V	6a	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	31V	6a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	32L	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	32L	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	32S	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	32S	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	32L	1b	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	32L	1b	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	32S	1b	2.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	32S	1b	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	32L	6a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	32L	6a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	32S	6a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	32S	6a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	38F	1a	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	58D	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	58D	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	58D	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	58D	1b	100.0	
+daclatasvir	Sarrazin_2016	NS5A	58A	6a	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	58A	6a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	58N	6a	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	58N	6a	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	58S	6a	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	58S	6a	20.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	92K	1b	100.0	
+ledipasvir	Sarrazin_2016	NS5A	92T	1a	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	92R	2	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	93C	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93C	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	93C	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93F	1a	2.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	93H	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93H	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	93H	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	93H	1b	20.0	100.0
+ledipasvir	Sarrazin_2016	NS5A	93H	1b	20.0	100.0
+ombitasvir	Sarrazin_2016	NS5A	93H	1b	20.0	100.0
+daclatasvir	Sarrazin_2016	NS5A	93H	2	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93H	2	100.0	
+ombitasvir	Sarrazin_2016	NS5A	93H	2	100.0	
+daclatasvir	Sarrazin_2016	NS5A	93H	3a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93H	3a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	93H	3a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	93H	4a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93H	4a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	93H	4a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	93N	1a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93N	1a	100.0	
+ombitasvir	Sarrazin_2016	NS5A	93N	1a	100.0	
+daclatasvir	Sarrazin_2016	NS5A	93R	4a	100.0	
+ledipasvir	Sarrazin_2016	NS5A	93S	1a	2.0	100.0
+sofosbuvir	Sarrazin_2016	NS5B	282T	1a	2.0	20.0
+sofosbuvir	Sarrazin_2016	NS5B	282T	1b	2.0	20.0
+sofosbuvir	Sarrazin_2016	NS5B	282T	2	2.0	20.0
+sofosbuvir	Sarrazin_2016	NS5B	289L	2	2.0	20.0
+dasabuvir	Sarrazin_2016	NS5B	316H	1a	100.0	
+dasabuvir	Sarrazin_2016	NS5B	316Y	1a	100.0	
+dasabuvir	Sarrazin_2016	NS5B	316H	1b	100.0	
+dasabuvir	Sarrazin_2016	NS5B	316Y	1b	100.0	
+dasabuvir	Sarrazin_2016	NS5B	316N	1b	2.0	20.0
+sofosbuvir	Sarrazin_2016	NS5B	320F	1a	2.0	20.0
+dasabuvir	Sarrazin_2016	NS5B	368T	1b	100.0	
+dasabuvir	Sarrazin_2016	NS5B	411S	1b	2.0	20.0
+dasabuvir	Sarrazin_2016	NS5B	414T	1a	20.0	100.0
+dasabuvir	Sarrazin_2016	NS5B	414T	1b	20.0	100.0
+dasabuvir	Sarrazin_2016	NS5B	414I	1b	2.0	20.0
+dasabuvir	Sarrazin_2016	NS5B	446K	1a	2.0	100.0
+dasabuvir	Sarrazin_2016	NS5B	446Q	1a	2.0	100.0
+dasabuvir	Sarrazin_2016	NS5B	448C	1a	100.0	
+dasabuvir	Sarrazin_2016	NS5B	448C	1b	100.0	
+dasabuvir	Sarrazin_2016	NS5B	448H	1a	100.0	
+dasabuvir	Sarrazin_2016	NS5B	448H	1b	20.0	100.0
+dasabuvir	Sarrazin_2016	NS5B	553T	1a	100.0	
+dasabuvir	Sarrazin_2016	NS5B	553V	1b	100.0	
+dasabuvir	Sarrazin_2016	NS5B	556G	1a	2.0	20.0
+dasabuvir	Sarrazin_2016	NS5B	556G	1b	2.0	20.0
+dasabuvir	Sarrazin_2016	NS5B	556N	1a	20.0	100.0
+dasabuvir	Sarrazin_2016	NS5B	556R	1a	100.0	
+dasabuvir	Sarrazin_2016	NS5B	559G	1a	100.0	
+dasabuvir	Sarrazin_2016	NS5B	559G	1b	100.0	
+dasabuvir	Sarrazin_2016	NS5B	561H	1a	20.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	159F	1a	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	159F	1b	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	159F	2	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	159F	3	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	282R	1a	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	282T	1a	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	282T	1b	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	282T	2	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	320F	1a	2.0	100.0
+sofosbuvir	Pawlotsky_2016	NS5B	321A	3	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	24G	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	24G	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	24G	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	24G	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	24G	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	24N	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	24N	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	24N	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	24N	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	24N	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	24R	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	24R	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	24R	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	24R	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	24R	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	24A	2	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	24A	2	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	24A	2	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	24A	2	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	24A	2	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	24H	6	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	24H	6	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	24H	6	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	24H	6	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	24H	6	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	26E	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	26E	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	26E	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	26E	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	26E	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28S	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28S	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28S	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28S	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28S	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28V	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28V	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28V	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28V	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28V	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28M	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28M	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28M	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28M	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28M	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28M	2	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28M	2	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28M	2	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28M	2	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28M	2	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28S	2	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28S	2	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28S	2	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28S	2	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28S	2	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28V	2	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28V	2	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28V	2	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28V	2	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28V	2	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28T	3	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28T	3	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28T	3	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28T	3	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28T	3	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28V	4	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28V	4	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28V	4	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28V	4	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28V	4	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28I	5	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	28I	5	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	28I	5	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	28I	5	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	28I	5	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	28A	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	28A	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	28A	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	28A	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	28A	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	28G	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	28G	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	28G	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	28G	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	28G	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	28T	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	28T	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	28T	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	28T	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	28T	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	28T	1b	100.0	
+elbasvir	Pawlotsky_2016	NS5A	28T	1b	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	28T	1b	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	28T	1b	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	28T	1b	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	28S	2a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	28S	2a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	28S	2a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	28S	2a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	28S	2a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	28F	2b	100.0	
+elbasvir	Pawlotsky_2016	NS5A	28F	2b	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	28F	2b	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	28F	2b	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	28F	2b	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	29S	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	29S	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	29S	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	29S	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	29S	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30C	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30C	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30C	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30C	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30C	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30D	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30D	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30D	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30D	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30D	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30I	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30I	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30I	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30I	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30I	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30L	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30L	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30L	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30L	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30L	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30S	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30S	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30S	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30S	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30S	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30T	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30T	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30T	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30T	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30T	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30Y	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30Y	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30Y	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30Y	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30Y	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30G	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30G	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30G	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30G	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30G	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30H	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30H	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30H	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30H	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30H	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30P	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30P	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30P	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30P	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30P	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30Q	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30Q	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30Q	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30Q	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30Q	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30H	2	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30H	2	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30H	2	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30H	2	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30H	2	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30S	2	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30S	2	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30S	2	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30S	2	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30S	2	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30K	3	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30K	3	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30K	3	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30K	3	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30K	3	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30H	4	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	30H	4	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	30H	4	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	30H	4	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	30H	4	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	30E	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	30E	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	30E	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	30E	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	30E	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	30G	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	30G	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	30G	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	30G	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	30G	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	30H	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	30H	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	30H	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	30H	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	30H	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	30K	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	30K	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	30K	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	30K	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	30K	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	30R	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	30R	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	30R	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	30R	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	30R	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31F	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	31F	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	31F	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	31F	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	31F	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	31I	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	31I	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	31I	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	31I	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	31I	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	31F	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	31F	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	31F	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	31F	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	31F	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	31I	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	31I	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	31I	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	31I	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	31I	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	31M	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31M	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31M	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31M	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31M	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31M	1b	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31M	1b	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31M	1b	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31M	1b	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31M	1b	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31M	2	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31M	2	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31M	2	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31M	2	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31M	2	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31M	3	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31M	3	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31M	3	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31M	3	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31M	3	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31M	4	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31M	4	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31M	4	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31M	4	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31M	4	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31M	5	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31M	5	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31M	5	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31M	5	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31M	5	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31M	6	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31M	6	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31M	6	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31M	6	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31M	6	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31V	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31V	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31V	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31V	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31V	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31V	1b	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31V	1b	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31V	1b	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31V	1b	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31V	1b	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31V	2	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31V	2	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31V	2	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31V	2	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31V	2	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31V	3	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31V	3	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31V	3	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31V	3	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31V	3	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31V	4	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31V	4	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31V	4	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31V	4	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31V	4	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31V	5	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31V	5	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31V	5	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31V	5	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31V	5	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	31V	6	100.0	
+elbasvir	Pawlotsky_2016	NS5A	31V	6	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	31V	6	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	31V	6	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	31V	6	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	32L	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	32L	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	32L	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	32L	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	32L	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	32S	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	32S	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	32S	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	32S	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	32S	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	32L	6	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	32L	6	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	32L	6	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	32L	6	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	32L	6	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	32S	6	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	32S	6	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	32S	6	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	32S	6	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	32S	6	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	32L	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	32L	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	32L	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	32L	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	32L	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	32S	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	32S	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	32S	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	32S	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	32S	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	38F	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	38F	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	38F	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	38F	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	38F	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	58L	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	58L	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	58L	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	58L	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	58L	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	58R	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	58R	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	58R	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	58R	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	58R	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	58S	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	58S	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	58S	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	58S	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	58S	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	58A	6	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	58A	6	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	58A	6	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	58A	6	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	58A	6	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	58N	6	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	58N	6	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	58N	6	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	58N	6	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	58N	6	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	58S	6	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	58S	6	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	58S	6	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	58S	6	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	58S	6	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	58D	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	58D	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	58D	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	58D	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	58D	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	58D	1b	100.0	
+elbasvir	Pawlotsky_2016	NS5A	58D	1b	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	58D	1b	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	58D	1b	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	58D	1b	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	62D	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	62D	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	62D	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	62D	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	62D	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	92K	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	92K	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	92K	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	92K	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	92K	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	92T	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	92T	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	92T	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	92T	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	92T	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	92K	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	92K	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	92K	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	92K	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	92K	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93F	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93F	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93F	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93F	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93F	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93L	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93L	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93L	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93L	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93L	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93R	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93R	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93R	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93R	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93R	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93T	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93T	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93T	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93T	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93T	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93W	1a	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93W	1a	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93W	1a	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93W	1a	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93W	1a	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93C	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93C	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93C	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93C	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93C	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93N	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93N	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93N	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93N	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93N	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93S	1b	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93S	1b	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93S	1b	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93S	1b	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93S	1b	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93H	2	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93H	2	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93H	2	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93H	2	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93H	2	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93H	3	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93H	3	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93H	3	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93H	3	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93H	3	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93H	4	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93H	4	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93H	4	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93H	4	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93H	4	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93R	4	2.0	100.0
+elbasvir	Pawlotsky_2016	NS5A	93R	4	2.0	100.0
+ledipasvir	Pawlotsky_2016	NS5A	93R	4	2.0	100.0
+ombitasvir	Pawlotsky_2016	NS5A	93R	4	2.0	100.0
+velpatasvir	Pawlotsky_2016	NS5A	93R	4	2.0	100.0
+daclatasvir	Pawlotsky_2016	NS5A	93C	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	93C	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	93C	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	93C	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	93C	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	93H	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	93H	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	93H	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	93H	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	93H	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	93N	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	93N	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	93N	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	93N	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	93N	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	93S	1a	100.0	
+elbasvir	Pawlotsky_2016	NS5A	93S	1a	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	93S	1a	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	93S	1a	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	93S	1a	100.0	
+daclatasvir	Pawlotsky_2016	NS5A	93H	1b	100.0	
+elbasvir	Pawlotsky_2016	NS5A	93H	1b	100.0	
+ledipasvir	Pawlotsky_2016	NS5A	93H	1b	100.0	
+ombitasvir	Pawlotsky_2016	NS5A	93H	1b	100.0	
+velpatasvir	Pawlotsky_2016	NS5A	93H	1b	100.0	
+asunaprevir	Pawlotsky_2016	NS3	36A	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36A	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36A	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36C	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36C	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36C	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36G	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36G	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36G	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36L	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36L	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36L	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36M	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36M	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36M	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36A	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36A	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36A	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36C	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36C	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36C	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36G	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36G	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36G	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36L	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36L	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36L	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	36M	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	36M	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	36M	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	41R	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	41R	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	41R	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	41R	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	41R	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	41R	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	43L	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	43L	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	43L	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	43I	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	43I	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	43I	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	43S	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	43S	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	43S	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	43V	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	43V	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	43V	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	54A	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	54A	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	54A	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	54S	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	54S	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	54S	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	54A	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	54A	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	54A	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	54C	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	54C	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	54C	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	54G	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	54G	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	54G	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	54S	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	54S	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	54S	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	55A	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	55A	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	55A	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	55I	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	55I	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	55I	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	55A	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	55A	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	55A	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	56H	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	56H	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	56H	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	56H	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	56H	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	56H	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	56L	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	56L	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	56L	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	56H	2	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	56H	2	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	56H	2	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80H	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80H	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80H	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80K	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80K	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80K	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80L	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80L	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80L	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80R	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80R	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80R	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80H	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80H	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80H	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80K	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80K	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80K	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80L	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80L	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80L	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	80R	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	80R	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	80R	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	122R	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	122R	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	122R	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	122R	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	122R	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	122R	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155G	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155G	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155G	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155I	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155I	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155I	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155K	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155K	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155K	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155M	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155M	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155M	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155S	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155S	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155S	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155T	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155T	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155T	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155W	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155W	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155W	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155C	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155C	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155C	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155G	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155G	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155G	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155I	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155I	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155I	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155K	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155K	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155K	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155M	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155M	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155M	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155Q	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155Q	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155Q	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155S	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155S	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155S	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155T	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155T	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155T	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	155W	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	155W	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	155W	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156S	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156S	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156S	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156T	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156T	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156T	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156V	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156V	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156V	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156F	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156F	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156F	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156G	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156G	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156G	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156S	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156S	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156S	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156T	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156T	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156T	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156V	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	156V	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	156V	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	156T	1	100.0	
+paritaprevir	Pawlotsky_2016	NS3	156T	1	100.0	
+simeprevir	Pawlotsky_2016	NS3	156T	1	100.0	
+grazoprevir	Pawlotsky_2016	NS3	156T	1	100.0	
+asunaprevir	Pawlotsky_2016	NS3	156V	1	100.0	
+paritaprevir	Pawlotsky_2016	NS3	156V	1	100.0	
+simeprevir	Pawlotsky_2016	NS3	156V	1	100.0	
+grazoprevir	Pawlotsky_2016	NS3	156V	1	100.0	
+asunaprevir	Pawlotsky_2016	NS3	158I	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	158I	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	158I	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	158I	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	158I	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	158I	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168A	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168A	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168A	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168C	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168C	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168C	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168E	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168E	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168E	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168G	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168G	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168G	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168H	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168H	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168H	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168K	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168K	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168K	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168N	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168N	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168N	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168T	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168T	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168T	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168V	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168V	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168V	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168Y	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168Y	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168Y	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168A	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168A	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168A	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168C	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168C	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168C	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168E	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168E	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168E	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168F	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168F	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168F	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168G	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168G	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168G	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168H	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168H	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168H	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168K	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168K	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168K	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168N	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168N	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168N	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168T	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168T	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168T	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168V	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168V	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168V	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168Y	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	168Y	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	168Y	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	168H	1	100.0	
+paritaprevir	Pawlotsky_2016	NS3	168H	1	100.0	
+simeprevir	Pawlotsky_2016	NS3	168H	1	100.0	
+grazoprevir	Pawlotsky_2016	NS3	168H	1	100.0	
+asunaprevir	Pawlotsky_2016	NS3	168K	1	100.0	
+paritaprevir	Pawlotsky_2016	NS3	168K	1	100.0	
+simeprevir	Pawlotsky_2016	NS3	168K	1	100.0	
+grazoprevir	Pawlotsky_2016	NS3	168K	1	100.0	
+asunaprevir	Pawlotsky_2016	NS3	168T	1	100.0	
+paritaprevir	Pawlotsky_2016	NS3	168T	1	100.0	
+simeprevir	Pawlotsky_2016	NS3	168T	1	100.0	
+grazoprevir	Pawlotsky_2016	NS3	168T	1	100.0	
+asunaprevir	Pawlotsky_2016	NS3	168V	1	100.0	
+paritaprevir	Pawlotsky_2016	NS3	168V	1	100.0	
+simeprevir	Pawlotsky_2016	NS3	168V	1	100.0	
+grazoprevir	Pawlotsky_2016	NS3	168V	1	100.0	
+asunaprevir	Pawlotsky_2016	NS3	168Y	1	100.0	
+paritaprevir	Pawlotsky_2016	NS3	168Y	1	100.0	
+simeprevir	Pawlotsky_2016	NS3	168Y	1	100.0	
+grazoprevir	Pawlotsky_2016	NS3	168Y	1	100.0	
+asunaprevir	Pawlotsky_2016	NS3	170F	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	170F	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	170F	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	170T	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	170T	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	170T	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	170V	1a	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	170V	1a	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	170V	1a	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	170A	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	170A	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	170A	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	170L	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	170L	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	170L	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	170T	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	170T	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	170T	1b	2.0	100.0
+asunaprevir	Pawlotsky_2016	NS3	175L	1b	2.0	100.0
+paritaprevir	Pawlotsky_2016	NS3	175L	1b	2.0	100.0
+simeprevir	Pawlotsky_2016	NS3	175L	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	314H	1a	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	316Y	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	316H	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	316N	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	316W	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	316Y	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	316H	1	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	316Y	1	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	368T	1b	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	411S	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	414T	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	414V	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	414I	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	414T	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	414V	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	445F	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	445Y	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	446K	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	446Q	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	448C	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	448H	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	448C	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	448H	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	448C	1	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	448H	1	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	451R	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	553T	1a	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	553V	1b	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	554S	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	554S	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	554S	1	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	555H	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	556G	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	556G	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	556R	1a	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	557R	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	558R	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	558R	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	559G	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	559N	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	559G	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	559N	1b	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	559G	1	100.0	
+dasabuvir	Pawlotsky_2016	NS5B	561H	1a	2.0	100.0
+dasabuvir	Pawlotsky_2016	NS5B	561N	1a	2.0	100.0
+simeprevir	Lontok_et_al_2015	NS3	43I	1b	89.0	89.0
+simeprevir	Lontok_et_al_2015	NS3	43V	1b	99.0	99.0
+simeprevir	Lontok_et_al_2015	NS3	80H	1b	3.4	3.4
+simeprevir	Lontok_et_al_2015	NS3	80K	1b	7.8	7.8
+simeprevir	Lontok_et_al_2015	NS3	80R	1b	6.4	6.4
+simeprevir	Lontok_et_al_2015	NS3	122A	1b	0.9	0.9
+simeprevir	Lontok_et_al_2015	NS3	122G	1b	0.5	0.5
+simeprevir	Lontok_et_al_2015	NS3	122R	1b	21.0	21.0
+simeprevir	Lontok_et_al_2015	NS3	155K	1b	32.0	32.0
+simeprevir	Lontok_et_al_2015	NS3	156G	1b	19.0	19.0
+simeprevir	Lontok_et_al_2015	NS3	156T	1b	37.0	37.0
+simeprevir	Lontok_et_al_2015	NS3	156V	1b	196.0	196.0
+simeprevir	Lontok_et_al_2015	NS3	168A	1b	784.0	784.0
+simeprevir	Lontok_et_al_2015	NS3	168E	1b	38.0	38.0
+simeprevir	Lontok_et_al_2015	NS3	168H	1b	401.0	401.0
+simeprevir	Lontok_et_al_2015	NS3	168I	1b	1800.0	1800.0
+simeprevir	Lontok_et_al_2015	NS3	168N	1b	5.5	5.5
+simeprevir	Lontok_et_al_2015	NS3	168T	1b	334.0	334.0
+simeprevir	Lontok_et_al_2015	NS3	168V	1b	3100.0	3100.0
+simeprevir	Lontok_et_al_2015	NS3	168Y	1b	651.0	651.0
+simeprevir	Lontok_et_al_2015	NS3	43S+168E	1b	792.0	792.0
+simeprevir	Lontok_et_al_2015	NS3	80H+168E	1b	145.0	145.0
+simeprevir	Lontok_et_al_2015	NS3	80K+155K	1b	420.0	420.0
+simeprevir	Lontok_et_al_2015	NS3	80R+168A	1b	2660.0	2660.0
+simeprevir	Lontok_et_al_2015	NS3	80R+168E	1b	418.0	418.0
+simeprevir	Lontok_et_al_2015	NS3	80R+155K	1b	305.0	305.0
+simeprevir	Lontok_et_al_2015	NS3	80K	1a	11.0	11.0
+simeprevir	Lontok_et_al_2015	NS3	155K	1a	86.0	86.0
+simeprevir	Lontok_et_al_2015	NS3	80K+155K	1a	1830.0	1830.0
+asunaprevir	Lontok_et_al_2015	NS3	55A	1b	1.0	1.0
+asunaprevir	Lontok_et_al_2015	NS3	80K	1a	3.0	3.0
+asunaprevir	Lontok_et_al_2015	NS3	80K	1b	1.0	1.0
+asunaprevir	Lontok_et_al_2015	NS3	80R	1b	1.0	1.0
+asunaprevir	Lontok_et_al_2015	NS3	168E	1b	78.0	78.0
+asunaprevir	Lontok_et_al_2015	NS3	168H	1b	98.0	98.0
+asunaprevir	Lontok_et_al_2015	NS3	168V	1b	280.0	280.0
+asunaprevir	Lontok_et_al_2015	NS3	168Y	1b	238.0	238.0
+asunaprevir	Lontok_et_al_2015	NS3	36M	1a	2.0	2.0
+asunaprevir	Lontok_et_al_2015	NS3	155K	1a	21.0	21.0
+asunaprevir	Lontok_et_al_2015	NS3	168A	1a	23.0	23.0
+asunaprevir	Lontok_et_al_2015	NS3	168E	1a	58.0	58.0
+asunaprevir	Lontok_et_al_2015	NS3	168V	1a	373.0	373.0
+asunaprevir	Lontok_et_al_2015	NS3	168Y	1a	622.0	622.0
+asunaprevir	Lontok_et_al_2015	NS3	36M+155K	1b	72.0	72.0
+asunaprevir	Lontok_et_al_2015	NS3	36M+155K	1a	72.0	72.0
+asunaprevir	Lontok_et_al_2015	NS3	80K+155K	1a	60.0	60.0
+paritaprevir	Lontok_et_al_2015	NS3	36M	1a	2.0	2.0
+paritaprevir	Lontok_et_al_2015	NS3	56H	1a	3.0	3.0
+paritaprevir	Lontok_et_al_2015	NS3	155K	1a	37.0	37.0
+paritaprevir	Lontok_et_al_2015	NS3	168A	1a	50.0	50.0
+paritaprevir	Lontok_et_al_2015	NS3	168E	1a	14.0	14.0
+paritaprevir	Lontok_et_al_2015	NS3	168V	1a	96.0	96.0
+paritaprevir	Lontok_et_al_2015	NS3	168Y	1a	219.0	219.0
+paritaprevir	Lontok_et_al_2015	NS3	36M+155K	1a	79.0	79.0
+paritaprevir	Lontok_et_al_2015	NS3	56H+168V	1a	561.0	561.0
+paritaprevir	Lontok_et_al_2015	NS3	168A	1b	27.0	27.0
+paritaprevir	Lontok_et_al_2015	NS3	168K	1b	882.0	882.0
+paritaprevir	Lontok_et_al_2015	NS3	168V	1b	159.0	159.0
+paritaprevir	Lontok_et_al_2015	NS3	56H+168V	1b	2472.0	2472.0
+daclatasvir	Lontok_et_al_2015	NS5A	28T	1a	205.0	205.0
+daclatasvir	Lontok_et_al_2015	NS5A	30E	1a	7500.0	7500.0
+daclatasvir	Lontok_et_al_2015	NS5A	30H	1a	435.0	435.0
+daclatasvir	Lontok_et_al_2015	NS5A	30R	1a	365.0	365.0
+daclatasvir	Lontok_et_al_2015	NS5A	31M	1a	105.0	105.0
+daclatasvir	Lontok_et_al_2015	NS5A	31M	1b	3.0	3.0
+daclatasvir	Lontok_et_al_2015	NS5A	31V	1b	15.0	15.0
+daclatasvir	Lontok_et_al_2015	NS5A	31V	1a	1000.0	1000.0
+daclatasvir	Lontok_et_al_2015	NS5A	93C	1a	555.0	555.0
+daclatasvir	Lontok_et_al_2015	NS5A	93H	1b	12.0	12.0
+daclatasvir	Lontok_et_al_2015	NS5A	93H	1a	1600.0	1600.0
+daclatasvir	Lontok_et_al_2015	NS5A	93N	1a	14100.0	14100.0
+daclatasvir	Lontok_et_al_2015	NS5A	31M+93H	1b	4227.0	4227.0
+daclatasvir	Lontok_et_al_2015	NS5A	31V+93H	1b	5425.0	5425.0
+ledipasvir	Lontok_et_al_2015	NS5A	28V	1a	0.6	0.6
+ledipasvir	Lontok_et_al_2015	NS5A	28T	1a	61.0	61.0
+ledipasvir	Lontok_et_al_2015	NS5A	30E	1a	5458.0	5458.0
+ledipasvir	Lontok_et_al_2015	NS5A	30H	1a	183.0	183.0
+ledipasvir	Lontok_et_al_2015	NS5A	30R	1a	632.0	632.0
+ledipasvir	Lontok_et_al_2015	NS5A	31M	1a	554.0	554.0
+ledipasvir	Lontok_et_al_2015	NS5A	58D	1a	1127.0	1127.0
+ledipasvir	Lontok_et_al_2015	NS5A	93C	1a	1602.0	1602.0
+ledipasvir	Lontok_et_al_2015	NS5A	93H	1a	1677.0	1677.0
+ledipasvir	Lontok_et_al_2015	NS5A	93N	1a	14706.0	
+ledipasvir	Lontok_et_al_2015	NS5A	30R+93C	1a	1046.0	1046.0
+ombitasvir	Lontok_et_al_2015	NS5A	28T	1a	8965.0	8965.0
+ombitasvir	Lontok_et_al_2015	NS5A	28V	1a	58.0	58.0
+ombitasvir	Lontok_et_al_2015	NS5A	30R	1a	800.0	800.0
+ombitasvir	Lontok_et_al_2015	NS5A	58D	1a	243.0	243.0
+ombitasvir	Lontok_et_al_2015	NS5A	93C	1a	1675.0	1675.0
+ombitasvir	Lontok_et_al_2015	NS5A	93H	1a	41383.0	41383.0
+ombitasvir	Lontok_et_al_2015	NS5A	93N	1a	66740.0	66740.0
+ombitasvir	Lontok_et_al_2015	NS5A	93H	1b	77.0	77.0
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	1b	8.8	8.8
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	1a	8.4	8.4
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	2a	2.4	2.4
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	2b	16.2	16.2
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	3a	3.5	3.5
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	4a	6.1	6.1
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	5a	18.1	18.1
+sofosbuvir	Lontok_et_al_2015	NS5B	282T	6a	7.8	7.8
+sofosbuvir	Lontok_et_al_2015	NS5B	159F	1a	1.2	1.2
+sofosbuvir	Lontok_et_al_2015	NS5B	159F	1b	1.3	1.3
+sofosbuvir	Lontok_et_al_2015	NS5B	159F	2b	1.6	1.6
+sofosbuvir	Lontok_et_al_2015	NS5B	159F	3a	1.3	1.3
+sofosbuvir	Lontok_et_al_2015	NS5B	320F	1a	1.8	1.8
+sofosbuvir	Lontok_et_al_2015	NS5B	320F	1b	1.7	1.7
+sofosbuvir	Lontok_et_al_2015	NS5B	321A	1a	1.2	1.2
+sofosbuvir	Lontok_et_al_2015	NS5B	321A	1b	1.4	1.4
+sofosbuvir	Lontok_et_al_2015	NS5B	321A	3a	1.3	1.3
+dasabuvir	Lontok_et_al_2015	NS5B	316Y	1a	1472.0	1472.0
+dasabuvir	Lontok_et_al_2015	NS5B	414I	1a	8.0	8.0
+dasabuvir	Lontok_et_al_2015	NS5B	414T	1a	32.0	32.0
+dasabuvir	Lontok_et_al_2015	NS5B	448H	1a	975.0	975.0
+dasabuvir	Lontok_et_al_2015	NS5B	553T	1a	152.0	152.0
+dasabuvir	Lontok_et_al_2015	NS5B	554S	1a	198.0	198.0
+dasabuvir	Lontok_et_al_2015	NS5B	556G	1a	30.0	30.0
+dasabuvir	Lontok_et_al_2015	NS5B	316Y	1b	1569.0	1569.0
+dasabuvir	Lontok_et_al_2015	NS5B	556G	1b	11.0	11.0

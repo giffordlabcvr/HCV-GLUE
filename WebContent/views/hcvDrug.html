@@ -10,22 +10,25 @@
 	<table ng-show="drugRenderResult.drug.drugResistanceFinding.length > 0" 
 		class="table table-nonfluid table-striped table-bordered">
 		<thead>
-			<th>Virus Protein</th>		
-			<th>Resistant Substitution(s)</th>		
-			<th>Clade</th>		
-			<th>Study Type</th>		
-			<th>EC<sub>50</sub> Fold Change</th>		
-			<th>Reference</th>		
+			<tr>
+				<th rowspan=2>Virus Protein</th>		
+				<th rowspan=2>Resistant Substitution(s)</th>		
+				<th rowspan=2>Replicon clade</th>		
+				<th colspan=2>EC<sub>50</sub> Fold Change</th>		
+				<th rowspan=2>Reference</th>
+			</tr>
+			<tr>
+				<th>Min</th>		
+				<th>Max</th>
+			</tr>
 		</thead>
 		<tbody>
 			<tr ng-repeat="finding in drugRenderResult.drug.drugResistanceFinding track by $index">
 				<td>{{finding.variationFeatureName}}</td>
 				<td><a href="#project/rav/{{finding.variationReferenceSequence}}/{{finding.variationFeatureName}}/{{finding.variationName}}">{{finding.variationSubstitutions}}</a></td>
-				<td>{{finding.clade}}</td>
-				<td ng-show="finding.studyType == 'clinical'">Clinical</td>
-				<td ng-show="finding.studyType == 'in_vitro'"><em>In vitro</em></td>
-				<td ng-show="!finding.foldChange">N/A</td>
-				<td ng-show="finding.foldChange">{{toFixed(finding.foldChange, 2)}}</td>
+				<td><a href="#project/alignment/{{finding.cladeId}}">{{finding.cladeRenderedName}}</td>
+				<td>{{finding.minFoldChange ? toFixed(finding.minFoldChange) : handleNull(finding.minFoldChange)}}</td>
+				<td>{{finding.maxFoldChange ? toFixed(finding.maxFoldChange) : handleNull(finding.maxFoldChange)}}</td>
 				<td><a href="#project/drug_resistance_publication/{{finding.publication.id}}">
 					{{finding.publication.displayName}}</a></td>
 			</tr>

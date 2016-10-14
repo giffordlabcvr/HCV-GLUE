@@ -6,13 +6,20 @@
 	<category>
 		<id>${drug_category.id}</id>
 		<displayName>${drug_category.display_name}</displayName>
+		<#if drug_sub_category ??>
+	    <@elem tag="subCategoryId" expr="context.id" context=drug_sub_category/>
+	    <@elem tag="subCategoryDisplayName" expr="context.display_name" context=drug_sub_category/>
+	    </#if>
+	    <@elem tag="generation" type="Integer" expr="generation"/>
+	    <@elem tag="wave" type="Integer" expr="wave"/>
 	</category>
 	<#list drug_resistance_finding as drugResistanceFinding>
 	<drugResistanceFinding glueType="Object[]">
 		<id>${drugResistanceFinding.id}</id>
-		<studyType>${drugResistanceFinding.study_type}</studyType>
-		<clade>${drugResistanceFinding.drug_resistance_clade.id}</clade>
-	    <@elem tag="foldChange" type="Double" expr="context.fold_change" context=drugResistanceFinding/>
+		<cladeId>${drugResistanceFinding.replicon_clade.name}</cladeId>
+		<cladeRenderedName>${drugResistanceFinding.replicon_clade.getRenderedName()}</cladeRenderedName>
+	    <@elem tag="minFoldChange" type="Double" expr="context.min_fold_change" context=drugResistanceFinding/>
+	    <@elem tag="maxFoldChange" type="Double" expr="context.max_fold_change" context=drugResistanceFinding/>
 	    <#assign drPub = drugResistanceFinding.drug_resistance_publication>
 	    <publication>
 			<id>${drPub.id}</id>

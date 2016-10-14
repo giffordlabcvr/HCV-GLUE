@@ -1,12 +1,12 @@
-Drug	Drug category	Company code
-asunaprevir	NS3_inhibitor	BMS-650032
-grazoprevir	NS3_inhibitor	MK-5172
-paritaprevir	NS3_inhibitor	ABT-450
-simeprevir	NS3_inhibitor	TMC-435
-daclatasvir	NS5A_inhibitor	BMS-790052
-elbasvir	NS5A_inhibitor	MK-8742
-ledipasvir	NS5A_inhibitor	GS-5885
-ombitasvir	NS5A_inhibitor	ABT-267
-velpatasvir	NS5A_inhibitor	GS-5816
-dasabuvir	NS5B_inhibitor	ABT-333
-sofosbuvir	NS5B_inhibitor	GS-7977
+Drug	Drug category	Drug sub-category	Generation	Wave	Company code
+asunaprevir	NS3_inhibitor		1	2	BMS-650032
+grazoprevir	NS3_inhibitor		2		MK-5172
+paritaprevir	NS3_inhibitor		1	2	ABT-450
+simeprevir	NS3_inhibitor		1	2	TMC-435
+daclatasvir	NS5A_inhibitor		1	1	BMS-790052
+elbasvir	NS5A_inhibitor		1	2	MK-8742
+ledipasvir	NS5A_inhibitor		1	1	GS-5885
+ombitasvir	NS5A_inhibitor		1	1	ABT-267
+velpatasvir	NS5A_inhibitor		1	2	GS-5816
+dasabuvir	NS5B_inhibitor	non_nucleoside_palm_1_inhibitor			ABT-333
+sofosbuvir	NS5B_inhibitor	nucleotide_analogue			GS-7977

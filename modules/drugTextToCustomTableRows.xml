@@ -3,10 +3,22 @@
 <#list rows as row>
   <#assign name>${row["Drug"]?trim}</#assign>
   <#assign category>${row["Drug category"]?trim}</#assign>
+  <#assign subCategory>${row["Drug sub-category"]?trim}</#assign>
+  <#assign generation>${row["Generation"]?trim}</#assign>
+  <#assign wave>${row["Wave"]?trim}</#assign>
   <#assign companyCode>${row["Company code"]?trim}</#assign>
   create custom-table-row drug "${name}"
   custom-table-row drug "${name}"
     set link-target drug_category custom-table-row/drug_category/${category}
+    <#if subCategory != "">
+    set link-target drug_sub_category custom-table-row/drug_sub_category/${subCategory}
+    </#if> 
+    <#if generation != "">
+    set field generation ${generation}
+    </#if> 
+    <#if wave != "">
+    set field wave ${wave}
+    </#if> 
     <#if companyCode != "">
     set field company_code ${companyCode}
     </#if> 

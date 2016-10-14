@@ -13,10 +13,10 @@
 	<drugResistanceFinding glueType="Object[]">
 		<id>${drugResistanceFinding.id}</id>
 		<drugId>${drugResistanceFinding.drug.id}</drugId>
-		<studyType>${drugResistanceFinding.study_type}</studyType>
-		<resistanceLevel>${drugResistanceFinding.resistance_level}</resistanceLevel>
-		<clade>${drugResistanceFinding.drug_resistance_clade.id}</clade>
-	    <@elem tag="foldChange" type="Double" expr="context.fold_change" context=drugResistanceFinding/>
+		<cladeId>${drugResistanceFinding.replicon_clade.name}</cladeId>
+		<cladeRenderedName>${drugResistanceFinding.replicon_clade.getRenderedName()}</cladeRenderedName>
+	    <@elem tag="minFoldChange" type="Double" expr="context.min_fold_change" context=drugResistanceFinding/>
+	    <@elem tag="maxFoldChange" type="Double" expr="context.max_fold_change" context=drugResistanceFinding/>
 	    <#assign variation = drugResistanceFinding.variation>
     	<variationReferenceSequence>${variation.featureLoc.referenceSequence.name}</variationReferenceSequence>
     	<variationFeatureName>${variation.featureLoc.feature.name}</variationFeatureName>

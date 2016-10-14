@@ -26,20 +26,21 @@
 			<table class="table table-striped table-bordered">
 				<thead>
 					<tr>
-						<th>Drug</th>
-						<th>Clade</th>
-						<th>Study Type</th>
-						<th>EC<sub>50</sub> Fold Change</th>
-						<th>Reference</th>
+						<th rowspan=2>Drug</th>		
+						<th rowspan=2>Replicon clade</th>		
+						<th colspan=2>EC<sub>50</sub> Fold Change</th>		
+						<th rowspan=2>Reference</th>
+					</tr>
+					<tr>
+						<th>Min</th>		
+						<th>Max</th>
 					</tr>
 				</thead>
 				<tr ng-repeat="finding in variation.drugResistanceFinding track by $index">
 					<td><a href="#project/drug/{{finding.drug}}" target="_blank">{{finding.drug}}</a></td>
-					<td>{{finding.clade}}</td>
-					<td ng-show="finding.studyType == 'clinical'">Clinical</td>
-					<td ng-show="finding.studyType == 'in_vitro'"><em>In vitro</em></td>
-					<td ng-show="!finding.foldChange">N/A</td>
-					<td ng-show="finding.foldChange">{{toFixed(finding.foldChange, 2)}}</td>
+					<td><a href="#project/alignment/{{finding.cladeId}}" target="_blank">{{finding.cladeRenderedName}}</td>
+					<td>{{finding.minFoldChange ? toFixed(finding.minFoldChange) : handleNull(finding.minFoldChange)}}</td>
+					<td>{{finding.maxFoldChange ? toFixed(finding.maxFoldChange) : handleNull(finding.maxFoldChange)}}</td>
 					<td><a href="#project/drug_resistance_publication/{{finding.publication.id}}" target="_blank">{{finding.publication.displayName}}</a></td>
 				</tr>
 			</table>

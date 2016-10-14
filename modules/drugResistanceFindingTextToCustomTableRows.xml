@@ -2,31 +2,37 @@
 	<freemarkerTemplate><![CDATA[
 <#list rows as row>
   <#assign drug_id>${row["Drug"]?trim}</#assign>
-  <#assign publication_id>${row["PublicationID"]?trim}</#assign>
+  <#assign publication_id>${row["Publication"]?trim}</#assign>
   <#assign gene>${row["Gene"]?trim}</#assign>
   <#assign substitutions>${row["Substitutions"]?trim}</#assign>
-  <#assign study_type>${row["StudyType"]?trim}</#assign>
-  <#assign clade_id>${row["Clade"]?trim}</#assign>
-  <#assign resistance_level>${row["ResistanceLevel"]?trim}</#assign>
-  <#assign fold_change>${row["FoldChange"]?trim}</#assign>
-  <#assign svr>${row["SVR"]?trim}</#assign>
-  <#assign id>${drug_id}_${publication_id}_${gene}_${substitutions}_${study_type}_${clade_id}</#assign>
-  create custom-table-row drug_resistance_finding "${id}"
-  create custom-table-row --allowExisting drug_resistance_clade "${clade_id}"
-  custom-table-row drug_resistance_finding "${id}"
-    set link-target drug "custom-table-row/drug/${drug_id}"
-    set link-target drug_resistance_publication "custom-table-row/drug_resistance_publication/${publication_id}"
-    set link-target drug_resistance_clade "custom-table-row/drug_resistance_clade/${clade_id}"
-    set link-target variation "reference/H77_AF009606/feature-location/${gene}/variation/RAS_${gene}_${substitutions}"
-    set field study_type "${study_type}"
-    set field resistance_level "${resistance_level}"
-<#if study_type == "in_vitro" && fold_change != "">
-    set field fold_change "${fold_change}"
+  <#assign replicon_clade>${row["Clade"]?trim}</#assign>
+  <#assign id>${drug_id}_${publication_id}_${gene}_${substitutions}_${replicon_clade}</#assign>
+  create custom-table-row --noCommit drug_resistance_finding ${id}
+</#list>
+commit
+
+<#list rows as row>
+  <#assign drug_id>${row["Drug"]?trim}</#assign>
+  <#assign publication_id>${row["Publication"]?trim}</#assign>
+  <#assign gene>${row["Gene"]?trim}</#assign>
+  <#assign substitutions>${row["Substitutions"]?trim}</#assign>
+  <#assign replicon_clade>${row["Clade"]?trim}</#assign>
+  <#assign min_fold_change>${row["MinFoldChange"]?trim}</#assign>
+  <#assign max_fold_change>${row["MaxFoldChange"]?trim}</#assign>
+  <#assign id>${drug_id}_${publication_id}_${gene}_${substitutions}_${replicon_clade}</#assign>
+  custom-table-row drug_resistance_finding ${id}
+    set link-target --noCommit drug custom-table-row/drug/${drug_id}
+    set link-target --noCommit drug_resistance_publication custom-table-row/drug_resistance_publication/${publication_id}
+    set link-target --noCommit replicon_clade alignment/AL_${replicon_clade}
+    set link-target --noCommit variation reference/H77_AF009606/feature-location/${gene}/variation/RAS_${gene}_${substitutions}
+<#if min_fold_change != "">
+    set field --noCommit min_fold_change ${min_fold_change}
 </#if>
-<#if study_type == "clinical" && svr != "">
-    set field svr "${svr}"
+<#if max_fold_change != "">
+    set field --noCommit max_fold_change ${max_fold_change}
 </#if>
     exit
 </#list>
+commit
 ]]></freemarkerTemplate>
 </freemarkerTextToGlueTransformer>

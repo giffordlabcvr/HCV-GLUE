@@ -9,19 +9,19 @@
 	<cladeDisplayName>${featureLoc.referenceSequence.alignmentsWhereRefSequence[0].getRenderedName()}</cladeDisplayName>
 	<feature>${featureLoc.feature.name}</feature>
 	<substitutions>${renderProperty('rav_substitutions')}</substitutions>
-	<#list readProperty('drug_resistance_finding') as drugResistanceFinding>
+	<#list drug_resistance_finding as drugResistanceFinding>
 	<drugResistanceFinding glueType="Object[]">
-		<drug>${drugResistanceFinding.readProperty('drug').id}</drug>
-		<#assign publication = drugResistanceFinding.readProperty('drug_resistance_publication')/>
+		<drug>${drugResistanceFinding.drug.id}</drug>
+		<#assign publication = drugResistanceFinding.drug_resistance_publication/>
 		<publication>
 			<id>${publication.id}</id>
-			<displayName>${publication.readProperty('display_name')}</displayName>
-			<webLink>${publication.readProperty('web_link')}</webLink>
+			<displayName>${publication.display_name}</displayName>
+			<webLink>${publication.web_link}</webLink>
 		</publication>
-		<studyType>${drugResistanceFinding.readProperty('study_type')}</studyType>
-		<resistanceLevel>${drugResistanceFinding.readProperty('resistance_level')}</resistanceLevel>
-			<@elem tag="foldChange" expr="context.readProperty('fold_change')" type="Double" context=drugResistanceFinding/>
-		<clade>${drugResistanceFinding.readProperty('drug_resistance_clade').id}</clade>
+		<@elem tag="minFoldChange" expr="context.min_fold_change" type="Double" context=drugResistanceFinding/>
+		<@elem tag="maxFoldChange" expr="context.max_fold_change" type="Double" context=drugResistanceFinding/>
+		<cladeId>${drugResistanceFinding.replicon_clade.name}</cladeId>
+		<cladeRenderedName>${drugResistanceFinding.replicon_clade.getDisplayName()}</cladeRenderedName>
 	</drugResistanceFinding>
 	</#list>	
 	
@@ -29,9 +29,9 @@
 		<alignmentNote glueType="Object[]">
 			<alignmentName>${varAlmtNote.alignment.name}</alignmentName>
 			<alignmentRenderedName>${varAlmtNote.alignment.getRenderedName()}</alignmentRenderedName>
-		    <@elem tag="ncbiCuratedFrequencyPct" expr="context.readProperty('ncbi_curated_frequency')" type="Double" context=varAlmtNote/>
-		    <@elem tag="ncbiCuratedTotalPresent" expr="context.readProperty('ncbi_curated_total_present')" type="Integer" context=varAlmtNote/>
-		    <@elem tag="ncbiCuratedTotalAbsent" expr="context.readProperty('ncbi_curated_total_absent')" type="Integer" context=varAlmtNote/>
+		    <@elem tag="ncbiCuratedFrequencyPct" expr="context.ncbi_curated_frequency" type="Double" context=varAlmtNote/>
+		    <@elem tag="ncbiCuratedTotalPresent" expr="context.ncbi_curated_total_present" type="Integer" context=varAlmtNote/>
+		    <@elem tag="ncbiCuratedTotalAbsent" expr="context.ncbi_curated_total_absent" type="Integer" context=varAlmtNote/>
 		</alignmentNote>
 	</#list>
 </resistance_associated_variant>

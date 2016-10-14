@@ -80,13 +80,12 @@ schema-project hcv
   create custom-table drug_sub_category
   create custom-table drug_resistance_finding --idFieldLength 200
   create custom-table drug_resistance_publication
-  create custom-table drug_resistance_clade
   
   create link drug drug_category -m MANY_TO_ONE
   create link drug drug_sub_category -m MANY_TO_ONE
   create link drug_resistance_publication drug_resistance_finding -m ONE_TO_MANY
   create link variation drug_resistance_finding -m ONE_TO_MANY 
-  create link drug_resistance_finding drug_resistance_clade -m MANY_TO_ONE
+  create link drug_resistance_finding -s replicon_clade alignment -m MANY_TO_ONE
   create link drug_resistance_finding drug -m MANY_TO_ONE
 
   table drug
@@ -94,6 +93,7 @@ schema-project hcv
 	create field generation INTEGER
 	create field wave INTEGER
     exit
+
   
   table drug_category
 	create field display_name VARCHAR 100
@@ -114,12 +114,8 @@ schema-project hcv
     exit
     
   table drug_resistance_finding
-    # clinical / in_vitro
-    create field study_type VARCHAR 20
-    # resistant / possibly_resistant
-    create field resistance_level VARCHAR 50
-    create field fold_change DOUBLE
-    create field svr DOUBLE
+    create field min_fold_change DOUBLE
+    create field max_fold_change DOUBLE
     exit
     
     

@@ -1,0 +1,19 @@
+delete module drugCategoryTextToCustomTableRows
+delete module drugSubCategoryTextToCustomTableRows
+delete module drugTextToCustomTableRows
+delete module resistanceAssociatedSubstitutionsToVariations
+delete module drugResistancePublicationTextToCustomTableRows
+delete module drugResistanceFindingTextToCustomTableRows
+
+delete module hcvDrugPublicationRenderer
+delete module hcvDrugRenderer
+delete module hcvResistanceAssociatedVariantRenderer
+
+multi-delete drug -a
+multi-delete drug_category -a
+multi-delete drug_sub_category -a
+multi-delete drug_resistance_finding -a
+multi-delete drug_resistance_publication -a                      
+multi-delete variation -w "is_resistance_associated_variant = 'true'"
+
+run file glue/hcvDrugResistance.glue
