@@ -100,7 +100,7 @@ public class Pawlotsky2016 {
 											drfList.add(
 													new DrugResistanceFinding(drug,
 															ras.gene, ras.codon, ras.substitutions, clade, 
-															2.0, 100.0, "Pawlotsky_2016"));
+															2.0, null, "Pawlotsky_2016"));
 										}
 									}
 								}
@@ -146,7 +146,7 @@ public class Pawlotsky2016 {
 													drfList.remove(
 															new DrugResistanceFinding(drug,
 																	ras.gene, ras.codon, ras.substitutions, highResistanceClade, 
-																	2.0, 100.0, "Pawlotsky_2016"));
+																	2.0, null, "Pawlotsky_2016"));
 												}
 											}
 										}
