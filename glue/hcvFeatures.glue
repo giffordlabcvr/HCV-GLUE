@@ -1,14 +1,18 @@
-  create feature whole_genome "Whole genome"
+  create feature whole_genome "Whole HCV genome"
+	feature whole_genome set field displayName "Whole genome"
     feature whole_genome set metatag INFORMATIONAL true
 
-    create feature 5UTR -p whole_genome "5' UTR"
+    create feature 5UTR -p whole_genome "5' untranslated region"
+	feature 5UTR set field displayName "5' UTR"
 
     create feature precursor_polyprotein -p whole_genome "Precursor polyprotein"
+	  feature precursor_polyprotein set field displayName "Precursor polyprotein"
       feature precursor_polyprotein set metatag OWN_CODON_NUMBERING true
       feature precursor_polyprotein set metatag CODES_AMINO_ACIDS true
       feature precursor_polyprotein set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
       create feature structural_proteins -p precursor_polyprotein "Structural proteins"
+	    feature structural_proteins set field displayName "Structural proteins"
         feature structural_proteins set metatag INFORMATIONAL true
 
         create feature Core -p structural_proteins "Core"
@@ -30,6 +34,7 @@
           feature E2 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
       create feature non_structural_proteins -p precursor_polyprotein "Non-structural proteins"
+	    feature non_structural_proteins set field displayName "Non-structural proteins"
         feature non_structural_proteins set metatag INFORMATIONAL true
 
         create feature p7 -p non_structural_proteins "p7"
@@ -75,6 +80,7 @@
           feature NS5B set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
     create feature 3UTR -p whole_genome "3' UTR"
+	feature 3UTR set field displayName "3' UTR"
 
 
   create reference H77_AF009606 ncbi-refseqs AF009606

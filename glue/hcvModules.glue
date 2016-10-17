@@ -17,6 +17,7 @@
   create module --fileName modules/hcvCommonAaPolymorphismRenderer.xml --loadResources hcvCommonAaPolymorphismRenderer
 
   create module --fileName modules/hcvAlignmentRenderer.xml --loadResources hcvAlignmentRenderer
+  create module --fileName modules/hcvSequenceRenderer.xml --loadResources hcvSequenceRenderer
 
   create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
   

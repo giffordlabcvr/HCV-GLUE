@@ -18,12 +18,25 @@ hcvApp.config(['$routeProvider', 'projectBrowserStandardRoutesProvider',
 	var projectBrowserStandardRoutes = projectBrowserStandardRoutesProvider.$get();
 	var projectBrowserURL = "../gluetools-web/www/projectBrowser";
 
-	projectBrowserStandardRoutes.addReferencesRoute($routeProvider, projectBrowserURL);
-	projectBrowserStandardRoutes.addReferenceRoute($routeProvider, projectBrowserURL);
-	projectBrowserStandardRoutes.addSequencesRoute($routeProvider, projectBrowserURL);
-	projectBrowserStandardRoutes.addSequenceRoute($routeProvider, projectBrowserURL);
-	//projectBrowserStandardRoutes.addAlignmentsRoute($routeProvider, projectBrowserURL);
-    // custom alignments view
+    // custom reference view
+	$routeProvider.
+    when('/project/reference/:referenceName', {
+  	  templateUrl: 'views/hcvReference.html',
+  	  controller: 'hcvReferenceCtrl'
+      });
+    // custom sequences view
+	$routeProvider.
+    when('/project/sequence', {
+  	  templateUrl: 'views/hcvSequences.html',
+  	  controller: 'hcvSequencesCtrl'
+      });
+    // custom sequence view
+	$routeProvider.
+    when('/project/sequence/:sourceName/:sequenceID', {
+  	  templateUrl: 'views/hcvSequence.html',
+  	  controller: 'hcvSequenceCtrl'
+      });
+	// custom alignments view
 	$routeProvider.
     when('/project/alignment', {
   	  templateUrl: 'views/hcvAlignments.html',
@@ -71,7 +84,6 @@ hcvApp.config(['$routeProvider', 'projectBrowserStandardRoutesProvider',
 	  templateUrl: 'views/hcvAlignment.html',
 	  controller: 'hcvAlignmentCtrl'
     });
-	projectBrowserStandardRoutes.addAlignmentMemberRoute($routeProvider, projectBrowserURL);
 	
     $routeProvider.
       when('/analysisTool', {
@@ -100,7 +112,6 @@ function ($scope, glueWS, glueWebToolConfig) {
 	$scope.projectBrowserDrugMenuTitle = "Direct-acting Antivirals";
 	$scope.projectBrowserRavMenuTitle = "Resistance-associated Substitutions";
 	$scope.projectBrowserDrugPubMenuTitle = "Drug Resistance References";
-	$scope.projectBrowserReferenceSequenceMenuTitle = "Reference Sequences";
 	$scope.projectBrowserSequenceMenuTitle = "Sequences";
 	glueWS.setProjectURL("../../../gluetools-ws/project/hcv");
 	glueWebToolConfig.setAnalysisToolURL("../gluetools-web/www/analysisTool");

@@ -1,0 +1,32 @@
+<div ng-app="projectBrowser">
+	<h2>Sequences</h2>
+
+	<span ng-show="listSequenceResult.length == 0">None</span>
+	<div ng-show="listSequenceResult.length > 0">
+		<table class="table table-nonfluid table-striped table-bordered">
+			<thead>
+				<th>NCBI Nucleotide ID</th>
+				<th>Creation Date</th>
+				<th>Sequence Length</th>
+				<th>Isolate ID</th>
+				<th>Country of Origin</th>
+				<th>Collection Year</th>
+				<th>Reference</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat="sequenceResult in listSequenceResult track by $index">
+					<td><a href="#project/sequence/{{sequenceResult['source.name']}}/{{sequenceResult.sequenceID}}">{{sequenceResult.sequenceID}}</a></td>
+					<td>{{sequenceResult.gb_create_date}}</td>
+					<td>{{sequenceResult.gb_length}}</td>
+					<td>{{handleNull(sequenceResult.gb_isolate)}}</td>
+					<td>{{handleNull(sequenceResult.gb_country_official)}}</td>
+					<td>{{handleNull(sequenceResult.gb_collection_year)}}</td>
+					<td ng-show="sequenceResult.gb_pubmed_id == null">-</td>
+					<td ng-show="sequenceResult.gb_pubmed_id != null">
+						<a href="https://www.ncbi.nlm.nih.gov/pubmed/{{sequenceResult.gb_pubmed_id}}" target="_blank">PubMed {{sequenceResult.gb_pubmed_id}} <span class="glyphicon glyphicon-link"></span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

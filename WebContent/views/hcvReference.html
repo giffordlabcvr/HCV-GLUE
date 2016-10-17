@@ -1,0 +1,48 @@
+<div ng-show="renderResult" ng-app="projectBrowser">
+	<h2>Reference sequence: {{renderResult.reference.renderedName}}</h2>
+	<p>
+		Underlying sequence: 
+		<a href="#project/sequence/{{renderResult.reference.sequence.sourceName}}/{{renderResult.reference.sequence.sequenceID}}">
+		{{renderResult.reference.sequence.sequenceID}}
+		</a>
+	</p>
+		<p>
+			<div ng-repeat="alignment in renderResult.reference.constrainsAlignment track by $index">
+				Reference for clade: 
+				<a href="#project/alignment/{{alignment.name}}">
+					{{alignment.renderedName}}
+				</a>
+			</div>
+		</p>
+		<h3>Genome feature annotations</h3>
+		<div class="row">
+			<div class="col-md-3">
+				<treecontrol class="tree-light"
+				   tree-model="featureTree"
+				   expanded-nodes="expandedNodes"
+				   selected-node="selectedNode"
+				   options="treeOptions">
+				   {{node.featureRenderedName}} 
+				</treecontrol>
+			</div>
+			<div class="col-md-9">
+				<p>{{selectedNode.featureDescription}}</p>
+				<span ng-show="selectedNode.referenceSegment.length == 0">No nucleotide coordinates defined</span>
+				<div ng-show="selectedNode.referenceSegment.length > 0">
+					<table class="table table-nonfluid table-striped table-bordered">
+						<thead>
+							<th>Start nucleotide</th>
+							<th>End nucleotide</th>
+						</thead>
+						<tbody>
+							<tr ng-repeat="refSeg in selectedNode.referenceSegment track by $index">
+								<td>{{refSeg.refStart}}</td>
+								<td>{{refSeg.refEnd}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+</div>
