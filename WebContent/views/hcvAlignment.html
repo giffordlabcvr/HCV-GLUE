@@ -25,7 +25,9 @@
 	<h3>Curated NCBI clade member sequences</h3>
 	<span ng-show="memberList.length == 0">None</span>
 	<div ng-show="memberList.length > 0">
-		<table class="table table-nonfluid table-striped table-bordered">
+		<paging-buttons paging-context="pagingContext"></paging-buttons>
+		<p>Members {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}</p>
+		<table class="table table-striped table-bordered">
 			<thead>
 				<th>Primary Accession</th>
 				<th>Creation Date</th>

@@ -1,9 +1,14 @@
 <div ng-app="projectBrowser">
 	<h2>Sequences</h2>
 
+
+
 	<span ng-show="listSequenceResult.length == 0">None</span>
 	<div ng-show="listSequenceResult.length > 0">
-		<table class="table table-nonfluid table-striped table-bordered">
+		<paging-buttons paging-context="pagingContext"></paging-buttons>
+		<p>Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}</p>
+
+		<table class="table table-striped table-bordered">
 			<thead>
 				<th>NCBI Nucleotide ID</th>
 				<th>Creation Date</th>
