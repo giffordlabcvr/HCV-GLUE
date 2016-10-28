@@ -5,11 +5,6 @@ apply plugin: 'org.hidetake.ssh'
 project.ext.set("glueVersion", "0.1.69")
 
 remotes {
-  gluehome {
-    host = 'gluehome.cvr.gla.ac.uk'
-    user = 'js460b'
-    identity = file('/Users/joshsinger/.ssh/gluehome_id_rsa')
-  }
   gluehome_aws {
     host = '52.16.113.119'
     user = 'ubuntu'
@@ -48,30 +43,6 @@ buildscript {
 war {
 	webAppDirName = 'WebContent'
 	archiveName 'hcvGlue.war'
-}
-
-task deployHcvWebAppWarGlueHome(dependsOn: ['war']) {
-  ext.glueHcvWebAppWarFile = new File(buildDir, '/libs/hcvGlue.war')
-  ext.glueHcvWebAppWarTouchfile = new File(buildDir, '/deployHcvWebAppWarGlueHome.touchfile')
-  inputs.file glueHcvWebAppWarFile
-  outputs.file glueHcvWebAppWarTouchfile
-  doLast {
-	  println "Uploading "+glueHcvWebAppWarFile.name
-	  ssh.run {
-	    session(remotes.gluehome) {
-	      put from: glueHcvWebAppWarFile.absolutePath, into: '/tmp/hcvGlue.war'
-	      execute 'sudo -n systemctl stop tomcat'
-	      execute 'sudo -n rm -rf /usr/share/tomcat/webapps/hcvGlue'
-	      execute 'sudo -n rm -rf /usr/share/tomcat/webapps/hcvGlue.war'
-	      execute 'sudo -n mv /tmp/hcvGlue.war /usr/share/tomcat/webapps'
-	      execute 'sudo -n rm -rf /var/cache/tomcat/work/Catalina/localhost/hcvGlue'
-	      execute 'sudo -n systemctl start tomcat'
-	    }
-	  }
-	  glueHcvWebAppWarTouchfile.delete()
-	  buildDir.mkdirs()
-	  glueHcvWebAppWarTouchfile.createNewFile()
-  }
 }
 
 task copyGluetoolsWebWar(type: Copy) {
@@ -137,11 +108,18 @@ class DeployWarTask extends DefaultTask {
 
     @TaskAction
     def deploy() {
+		  println "Stopping Tomcat"
+		  taskSsh.run {
+		    session(remote) {
+		      execute 'sudo service tomcat7 stop'
+		      execute 'while true; do tcresult="$(sudo service tomcat7 status)" ; if [[ $tcresult != *"Tomcat servlet engine is running"* ]] ; then break ; fi ; sleep 0.5 ; echo "Tomcat is still running" ; done'
+		      execute 'sleep 5'
+		    }
+		  }
 		  println "Uploading "+warFile
 		  taskSsh.run {
 		    session(remote) {
 		      put from: warFile.absolutePath, into: '/tmp/'+warFile.name
-		      execute 'sudo service tomcat7 stop'
 		      execute 'sudo mkdir -p /var/lib/tomcat7/webapps_hcv'
 		      execute 'sudo chmod a+rwx /var/lib/tomcat7/webapps_hcv'
 		      execute 'sudo rm -rf /var/lib/tomcat7/webapps_hcv/'+warBaseName
@@ -149,6 +127,12 @@ class DeployWarTask extends DefaultTask {
 		      execute 'sudo mv /tmp/'+warFile.name+' /var/lib/tomcat7/webapps_hcv/'+warFile.name
 		      execute 'sudo rm -rf /var/lib/tomcat7/work/Catalina/hcv.glue.cvr.ac.uk/'+warBaseName
 		      execute 'sudo rm -rf /var/cache/tomcat7/Catalina/hcv.glue.cvr.ac.uk/'+warBaseName
+		      
+		    }
+		  }
+		  println "Starting Tomcat"
+		  taskSsh.run {
+		    session(remote) {
 		      execute 'sudo service tomcat7 start'
 		    }
 		  }
