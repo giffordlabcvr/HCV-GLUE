@@ -1,6 +1,6 @@
 delete project hcv
 
-create project hcv "Hepatitis C variation analysis" --minVersion 0.1.64
+create project hcv "Hepatitis C variation analysis" --minVersion 0.1.69
 
 run file glue/hcvSchemaExtensions.glue
  
@@ -33,7 +33,7 @@ project hcv
   run file glue/hcvDrugResistance.glue
 
   # epitopes
-  ###run file glue/hcvEpitopes.glue
+  run file glue/hcvEpitopes.glue
 
   # add the curated sequences into the alignment tree according to their genotype/subtype
   run file glue/computeCuratedAlignments.glue
