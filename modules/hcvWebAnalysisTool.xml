@@ -120,7 +120,7 @@
 	</variationCategory>
 	<variationCategory>
 		<name>epitopes_hla_e</name>
-		<displayName>HLA-A Epitopes</displayName>
+		<displayName>HLA-E Epitopes</displayName>
 		<description>Epitopes relating to the HLA-E gene</description>
 		<whereClause>is_epitope = 'true' and 
 				 epitope_full_hla like 'HLA-E%'</whereClause>
