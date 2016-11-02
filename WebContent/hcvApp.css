@@ -6,13 +6,9 @@
 	fill:#ff3333; 	
 }
 
-.vcat_epitopes_mhc_class_i {
+/* http://stackoverflow.com/questions/5110249/wildcard-in-css-for-classes */
+*[class^='vcat_epitopes_']{
 	fill:#b3e0ff; 	
-	/* mask: url(#mask-stripe-diag); */
 }
 
-.vcat_epitopes_mhc_class_ii {
-	fill:#ffdd99; 	
-	/* mask: url(#mask-stripe-vertical); */
-}
 
