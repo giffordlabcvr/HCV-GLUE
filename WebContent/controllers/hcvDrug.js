@@ -35,10 +35,10 @@ hcvApp.controller('hcvDrugCtrl',
 			}
 			)
 		    .success(function(data, status, headers, config) {
-				console.info('count sequence raw result', data);
+				console.info('count findings raw result', data);
 				$scope.pagingContext = pagingContext.createPagingContext(data.countResult.count, 10, $scope.updatePage);
 		    })
-		    .error(glueWS.raiseErrorDialog(dialogs, "counting sequences"));
+		    .error(glueWS.raiseErrorDialog(dialogs, "counting findings"));
 			
 			glueWS.runGlueCommand("custom-table-row/drug/"+$scope.drugId, {
 				"render-object": {
