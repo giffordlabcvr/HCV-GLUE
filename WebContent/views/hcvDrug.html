@@ -4,37 +4,40 @@
 	<br/>	
 	{{drugRenderResult.drug.companyCode ? "Company code: "+drugRenderResult.drug.companyCode : ""}}
 	<h4>Resistance Findings</h4>
-	<div ng-show="!drugRenderResult.drug.drugResistanceFinding">
+	<div ng-show="drugResistanceFindings.length == 0">
 	No resistance findings collated
 	</div>
-	<table ng-show="drugRenderResult.drug.drugResistanceFinding.length > 0" 
-		class="table table-nonfluid table-striped table-bordered">
-		<thead>
-			<tr>
-				<th rowspan=2>Virus Protein</th>		
-				<th rowspan=2>Resistant Substitution(s)</th>		
-				<th rowspan=2>Replicon clade</th>		
-				<th colspan=2>EC<sub>50</sub> Fold Change</th>		
-				<th rowspan=2>Reference</th>
-			</tr>
-			<tr>
-				<th>Min</th>		
-				<th>Max</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr ng-repeat="finding in drugRenderResult.drug.drugResistanceFinding track by $index">
-				<td>{{finding.variationFeatureName}}</td>
-				<td><a href="#project/rav/{{finding.variationReferenceSequence}}/{{finding.variationFeatureName}}/{{finding.variationName}}">{{finding.variationSubstitutions}}</a></td>
-				<td><a href="#project/alignment/{{finding.cladeId}}">{{finding.cladeRenderedName}}</td>
-				<td>{{finding.minFoldChange ? toFixed(finding.minFoldChange) : handleNull(finding.minFoldChange)}}</td>
-				<td>{{finding.maxFoldChange ? toFixed(finding.maxFoldChange) : handleNull(finding.maxFoldChange)}}</td>
-				<td><a href="#project/drug_resistance_publication/{{finding.publication.id}}">
-					{{finding.publication.displayName}}</a></td>
-			</tr>
-		</tbody>
-	</table>
+	<div ng-show="drugResistanceFindings.length > 0">
+		<paging-buttons paging-context="pagingContext"></paging-buttons>
+		<p>Findings {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}</p>
 	
+		<table class="table table-nonfluid table-striped table-bordered">
+			<thead>
+				<tr>
+					<th rowspan=2>Virus Protein</th>		
+					<th rowspan=2>Resistant Substitution(s)</th>		
+					<th rowspan=2>Replicon clade</th>		
+					<th colspan=2>EC<sub>50</sub> Fold Change</th>		
+					<th rowspan=2>Reference</th>
+				</tr>
+				<tr>
+					<th>Min</th>		
+					<th>Max</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="finding in drugResistanceFindings track by $index">
+					<td>{{finding['variation.featureLoc.feature.name']}}</td>
+					<td><a href="#project/rav/{{finding['variation.featureLoc.referenceSequence.name']}}/{{finding['variation.featureLoc.feature.name']}}/{{finding['variation.name']}}">{{finding['variation.rav_substitutions']}}</a></td>
+					<td><a href="#project/alignment/{{finding['replicon_clade.name']}}">{{finding['replicon_clade.displayName']}}</td>
+					<td>{{finding['min_fold_change'] ? toFixed(finding['min_fold_change']) : handleNull(finding['min_fold_change'])}}</td>
+					<td>{{finding['max_fold_change'] ? toFixed(finding['max_fold_change']) : handleNull(finding['max_fold_change'])}}</td>
+					<td><a href="#project/drug_resistance_publication/{{finding['drug_resistance_publication.id']}}">
+						{{finding['drug_resistance_publication.display_name']}}</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 
 
 </div>

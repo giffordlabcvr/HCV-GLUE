@@ -13,25 +13,4 @@
 	    <@elem tag="generation" type="Integer" expr="generation"/>
 	    <@elem tag="wave" type="Integer" expr="wave"/>
 	</category>
-	<#list drug_resistance_finding as drugResistanceFinding>
-	<drugResistanceFinding glueType="Object[]">
-		<id>${drugResistanceFinding.id}</id>
-		<cladeId>${drugResistanceFinding.replicon_clade.name}</cladeId>
-		<cladeRenderedName>${drugResistanceFinding.replicon_clade.getRenderedName()}</cladeRenderedName>
-	    <@elem tag="minFoldChange" type="Double" expr="context.min_fold_change" context=drugResistanceFinding/>
-	    <@elem tag="maxFoldChange" type="Double" expr="context.max_fold_change" context=drugResistanceFinding/>
-	    <#assign drPub = drugResistanceFinding.drug_resistance_publication>
-	    <publication>
-			<id>${drPub.id}</id>
-			<displayName>${drPub.display_name}</displayName>
-	    </publication>
-	    <#assign variation = drugResistanceFinding.variation>
-    	<variationReferenceSequence>${variation.featureLoc.referenceSequence.name}</variationReferenceSequence>
-    	<variationFeatureName>${variation.featureLoc.feature.name}</variationFeatureName>
-    	<variationName>${variation.name}</variationName>
-    	<variationSubstitutions>${variation.rav_substitutions}</variationSubstitutions>
-    	<@elem tag="variationFirstCodon" type="Integer" expr="variation.rav_first_codon"/>
-	</drugResistanceFinding>
-	</#list>
-	
 </drug>
