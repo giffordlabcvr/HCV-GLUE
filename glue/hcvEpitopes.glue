@@ -1,2 +1,3 @@
+  create module --moduleType comparisonAminoAcidVariationScanner epitopeScanner
   create module --fileName modules/epitopesTextToVariations.xml epitopesTextToVariations
   module epitopesTextToVariations transform tabular/hcvEpitopes.txt --run

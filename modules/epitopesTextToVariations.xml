@@ -25,6 +25,7 @@ reference H77_AF009606
     create variation --noCommit "${variationName}" -t AMINO_ACID "Linear epitope"
     variation "${variationName}"
       create pattern-location --noCommit ${epitope} --labeledCodon ${h77Start} ${h77End}
+      set field --noCommit scannerModuleName epitopeScanner
       set field --noCommit displayName "IEDB epitope ${epitopeID}"
       set field --noCommit pubmed_id ${pubmedID}
       set field --noCommit publication_date_year ${date} 
