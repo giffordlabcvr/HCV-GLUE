@@ -114,7 +114,9 @@
 		<displayName>HLA-C Epitopes</displayName>
 		<description>Epitopes relating to the HLA-C gene</description>
 		<whereClause>is_epitope = 'true' and 
-				 epitope_full_hla like 'HLA-C%'</whereClause>
+				 epitope_full_hla like 'HLA-C%' and 
+				 epitope_full_hla != 'HLA-Class II, allele undetermined' and 
+				 epitope_full_hla != 'HLA-Class I, allele undetermined'</whereClause>
 		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
 		<reportAbsence>true</reportAbsence>
 	</variationCategory>
