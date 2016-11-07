@@ -28,7 +28,8 @@ hcvApp.controller('hcvRavsCtrl',
 			)
 		    .success(function(data, status, headers, config) {
 				console.info('count variations raw result', data);
-				$scope.pagingContext = pagingContext.createPagingContext(data.countResult.count, 10, $scope.updatePage);
+				$scope.pagingContext.setTotalItems(data.countResult.count);
+				$scope.pagingContext.firstPage();
 		    })
 		    .error(glueWS.raiseErrorDialog(dialogs, "counting variations"));
 
@@ -52,5 +53,8 @@ hcvApp.controller('hcvRavsCtrl',
 				})
 				.error(glueWS.raiseErrorDialog(dialogs, "retrieving resistance associated substitutions"));
 			}
+			
+			$scope.pagingContext = pagingContext.createPagingContext($scope.updatePage);
+
 
 		}]);

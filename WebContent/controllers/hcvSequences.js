@@ -19,5 +19,20 @@ projectBrowser.controller('hcvSequencesCtrl',
 					 "gb_country_official",
 					 "gb_collection_year",
 					 "gb_pubmed_id"] );
+			
+			$scope.pagingContext.setDefaultSortOrder([
+			    { property: "sequenceID", displayName: "NCBI Nucleotide ID", order: "+" }
+			]);
+
+			
+			$scope.pagingContext.setSortableProperties([
+	            { property:"sequenceID", displayName: "NCBI Nucleotide ID" },
+	            { property:"gb_create_date", displayName: "Creation Date" },
+	            { property:"gb_country_official", displayName: "Country of Origin" },
+	            { property:"gb_collection_year", displayName: "Collection Year" },
+	            { property:"gb_isolate", displayName: "Isolate ID" },
+	            { property:"gb_pubmed_id", displayName: "PubMed ID" },
+	            { property:"gb_length", displayName: "Sequence Length" }
+            ]);
 	
 }]);
