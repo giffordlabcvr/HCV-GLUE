@@ -10,7 +10,6 @@ hcvApp.controller('hcvDrugCtrl',
 			
 			$scope.pagingContext = null;
 			$scope.whereClause = "drug.id = '"+$scope.drugId+"'";
-			$scope.sortProperties = "variation.featureLoc.feature.name,variation.rav_first_codon,variation.rav_substitutions";
 			$scope.fieldNames = [
 					                "id",
 					                "replicon_clade.name",
@@ -56,13 +55,10 @@ hcvApp.controller('hcvDrugCtrl',
 				console.log("updatePage", pContext);
 				var cmdParams = {
 			            "whereClause":$scope.whereClause,
-			            "sortProperties":$scope.sortProperties,
 			            "tableName":"drug_resistance_finding",
 			            "fieldName":$scope.fieldNames
 				};
-				cmdParams.pageSize = pContext.itemsPerPage;
-				cmdParams.fetchLimit = pContext.itemsPerPage;
-				cmdParams.fetchOffset = pContext.firstItemIndex - 1;
+				pContext.extendListCmdParams(cmdParams);
 				glueWS.runGlueCommand("", {
 			    	"list": { "custom-table-row": cmdParams } 
 				})
@@ -74,5 +70,22 @@ hcvApp.controller('hcvDrugCtrl',
 			}
 
 			$scope.pagingContext = pagingContext.createPagingContext($scope.updatePage);
+
+			$scope.pagingContext.setDefaultSortOrder([
+                { property:"variation.featureLoc.feature.name", displayName: "Gene", order: "+" },
+                { property:"variation.rav_first_codon", displayName: "Start Location", order: "+" },
+                { property:"variation.rav_substitutions", displayName: "Substitutions", order: "+" }
+            ]);
+
+			$scope.pagingContext.setSortableProperties([
+	            { property:"variation.featureLoc.feature.name", displayName: "Gene" },
+	            { property:"variation.rav_first_codon", displayName: "Start Location" },
+	            { property:"variation.rav_substitutions", displayName: "Substitutions" },
+  	            { property:"replicon_clade.name", displayName: "Replicon Clade" },
+  	            { property:"min_fold_change", displayName: "Minimum EC50 Fold Change" },
+  	            { property:"max_fold_change", displayName: "Maximum EC50 Fold Change" },
+  	            { property:"drug_resistance_publication.id", displayName: "Reference" } 
+            ]);
+
 			
 		}]);

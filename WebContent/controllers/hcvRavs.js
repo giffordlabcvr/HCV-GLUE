@@ -8,7 +8,6 @@ hcvApp.controller('hcvRavsCtrl',
 
 			$scope.pagingContext = null;
 			$scope.whereClause = "is_resistance_associated_variant = 'true'"
-			$scope.sortProperties = "featureLoc.feature.name,rav_first_codon,rav_substitutions";
 			$scope.fieldNames = [
 					                "featureLoc.feature.name",
 					                "rav_substitutions",
@@ -38,12 +37,9 @@ hcvApp.controller('hcvRavsCtrl',
 				console.log("updatePage", pContext);
 				var cmdParams = {
 			            "whereClause":$scope.whereClause,
-			            "sortProperties":$scope.sortProperties,
 			            "fieldName":$scope.fieldNames
 				};
-				cmdParams.pageSize = pContext.itemsPerPage;
-				cmdParams.fetchLimit = pContext.itemsPerPage;
-				cmdParams.fetchOffset = pContext.firstItemIndex - 1;
+				pContext.extendListCmdParams(cmdParams);
 				glueWS.runGlueCommand("", {
 			    	"list": { "variation": cmdParams } 
 				})
@@ -55,6 +51,18 @@ hcvApp.controller('hcvRavsCtrl',
 			}
 			
 			$scope.pagingContext = pagingContext.createPagingContext($scope.updatePage);
+
+			$scope.pagingContext.setDefaultSortOrder([
+	            { property:"featureLoc.feature.name", displayName: "Gene", order: "+" },
+  	            { property:"rav_first_codon", displayName: "Start Location", order: "+" },
+  	            { property:"rav_substitutions", displayName: "Substitutions", order: "+" }
+			]);
+
+  			$scope.pagingContext.setSortableProperties([
+  	            { property:"featureLoc.feature.name", displayName: "Gene" },
+  	            { property:"rav_first_codon", displayName: "Start Location" },
+  	            { property:"rav_substitutions", displayName: "Substitutions" }
+              ]);
 
 
 		}]);
