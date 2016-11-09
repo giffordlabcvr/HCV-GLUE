@@ -3,11 +3,11 @@
   create alignment AL_MASTER -r H77_AF009606
 
   create reference REF_1_AF009606 ncbi-refseqs AF009606
-  create reference REF_2_D00944 ncbi-refseqs D00944
-  create reference REF_3_D17763 ncbi-refseqs D17763
-  create reference REF_4_Y11604 ncbi-refseqs Y11604
+  create reference REF_2_AB047639 ncbi-refseqs AB047639
+  create reference REF_3_JF735123 ncbi-refseqs JF735123
+  create reference REF_4_JF735138 ncbi-refseqs JF735138
   create reference REF_5_AF064490 ncbi-refseqs AF064490
-  create reference REF_6_Y12083 ncbi-refseqs Y12083
+  create reference REF_6_D84262 ncbi-refseqs D84262
   create reference REF_7_EF108306 ncbi-refseqs EF108306
   
   # Recombinants  
@@ -26,15 +26,15 @@
     add member -w "gb_lab_construct = null or gb_lab_construct = false"
     extract child AL_1 --refName REF_1_AF009606
     demote member AL_1 --whereClause "sequence.genotype = '1'" -r reference_member true 
-    extract child AL_2 --refName REF_2_D00944
+    extract child AL_2 --refName REF_2_AB047639
     demote member AL_2 --whereClause "sequence.genotype = '2'" -r reference_member true 
-    extract child AL_3 --refName REF_3_D17763
+    extract child AL_3 --refName REF_3_JF735123
     demote member AL_3 --whereClause "sequence.genotype = '3'" -r reference_member true 
-    extract child AL_4 --refName REF_4_Y11604
+    extract child AL_4 --refName REF_4_JF735138
     demote member AL_4 --whereClause "sequence.genotype = '4'" -r reference_member true 
     extract child AL_5 --refName REF_5_AF064490
     demote member AL_5 --whereClause "sequence.genotype = '5'" -r reference_member true 
-    extract child AL_6 --refName REF_6_Y12083
+    extract child AL_6 --refName REF_6_D84262
     demote member AL_6 --whereClause "sequence.genotype = '6'" -r reference_member true 
     extract child AL_7 --refName REF_7_EF108306
     demote member AL_7 --whereClause "sequence.genotype = '7'" -r reference_member true 
@@ -540,12 +540,11 @@
   # spread feature locations throughout the tree, correcting as necessary.
   
   reference REF_1_AF009606 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_2_D00944 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_3_D17763 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_4_Y11604 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_2_AB047639 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_3_JF735123 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_4_JF735138 inherit feature-location -rs AL_MASTER whole_genome
   reference REF_5_AF064490 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_6_Y12083 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_6_Y12083 remove feature-location 3UTR
+  reference REF_6_D84262 inherit feature-location -rs AL_MASTER whole_genome
   reference REF_7_EF108306 inherit feature-location -rs AL_MASTER whole_genome
 
   # Recombinants
@@ -632,6 +631,8 @@
   reference REF_5a_AF064490 inherit feature-location -rs AL_5 whole_genome
 
   reference REF_6a_Y12083 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6a_Y12083 remove feature-location 3UTR
+  
   reference REF_6b_D84262 inherit feature-location -rs AL_6 whole_genome
   reference REF_6c_EF424629 inherit feature-location -rs AL_6 whole_genome
   reference REF_6d_D84263 inherit feature-location -rs AL_6 whole_genome
