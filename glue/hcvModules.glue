@@ -20,4 +20,7 @@
   create module --fileName modules/hcvSequenceRenderer.xml --loadResources hcvSequenceRenderer
 
   create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
+
+  create module --fileName modules/raxmlPhylogenyGenerator.xml
+  create module --fileName modules/figTreeAnnotationExporter.xml
   

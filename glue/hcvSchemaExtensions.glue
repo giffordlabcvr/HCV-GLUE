@@ -20,21 +20,19 @@ schema-project hcv
     create field gb_collection_month_day INTEGER
     create field gb_create_date DATE
     create field gb_update_date DATE
-    create field assembly_reference VARCHAR
-    create field enrichment_method VARCHAR
     create field genotype VARCHAR
     create field subtype VARCHAR
     create field genotyping_method VARCHAR
-    create field genotyping_score VARCHAR
     create field gb_genotype VARCHAR
     create field gb_subtype VARCHAR
-    create field rega_genotype VARCHAR
-    create field rega_subtype VARCHAR
+    # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20
     exit
 
   table alignment
+    # provisional / unassigned etc.
     create field status VARCHAR 20
+    create field phylogeny VARCHAR 50000
     exit
 
   table variation

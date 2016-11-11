@@ -1,0 +1,5 @@
+<raxmlPhylogenyGenerator>
+	<raxmlPhylogenyRunner>
+		<bootstrapReplicates>2</bootstrapReplicates>
+	</raxmlPhylogenyRunner>
+</raxmlPhylogenyGenerator>

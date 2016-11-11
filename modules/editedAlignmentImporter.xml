@@ -1,0 +1,15 @@
+<fastaAlignmentImporter>
+  <idClauseExtractorFormatter>
+    <matchPattern><![CDATA[\w+\.(?<source>[A-Za-z0-9\-_]+)\.(?<seqID>[A-Za-z0-9\-_]+)]]></matchPattern>
+    <outputTemplate>source.name = '${source}' and sequenceID = '${seqID}'</outputTemplate>
+  </idClauseExtractorFormatter>
+  <ignoreRegexMatchFailures>false</ignoreRegexMatchFailures>
+  <ignoreMissingSequences>false</ignoreMissingSequences>
+  <sequenceGapRegex>[Nn-]</sequenceGapRegex>
+  <requireTotalCoverage>false</requireTotalCoverage>
+  <updateExistingAlignment>true</updateExistingAlignment>
+  <updateExistingMembers>true</updateExistingMembers>
+  <allowAmbiguousSegments>true</allowAmbiguousSegments>
+  <minRowCoveragePercent>90.0</minRowCoveragePercent>
+  <minRowCorrectPercent>90.0</minRowCorrectPercent>
+</fastaAlignmentImporter>
