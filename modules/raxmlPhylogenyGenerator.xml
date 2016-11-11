@@ -1,5 +1,5 @@
 <raxmlPhylogenyGenerator>
 	<raxmlPhylogenyRunner>
-		<bootstrapReplicates>100</bootstrapReplicates>
+		<bootstrapReplicates>1000</bootstrapReplicates>
 	</raxmlPhylogenyRunner>
 </raxmlPhylogenyGenerator>
