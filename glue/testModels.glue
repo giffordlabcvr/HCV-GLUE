@@ -1,0 +1,7 @@
+project hcv
+
+  module hcvModelTester
+    test models AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and reference_member = false" -i -m 2 -d modelTestResults
+    exit
+  
+  exit

@@ -21,6 +21,7 @@
 
   create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
 
+  create module --fileName modules/hcvModelTester.xml
   create module --fileName modules/raxmlPhylogenyGenerator.xml
   create module --fileName modules/figTreeAnnotationExporter.xml
   

@@ -1,11 +1,11 @@
 project hcv
 
   module raxmlPhylogenyGenerator
-    generate nucleotide phylogeny AL_UNCONSTRAINED -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')" -o trees/referencePhylogeny.tree
+    generate nucleotide phylogeny AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and reference_member = false" -i -m 2 -o trees/referencePhylogeny.tree
     exit
   
   module figTreeAnnotationExporter 
-    export figtree-annotation AL_UNCONSTRAINED -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')" -f trees/figtreeAnnotations.txt
+    export figtree-annotation AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and reference_member = false" -f trees/figtreeAnnotations.txt
     exit
     
   exit

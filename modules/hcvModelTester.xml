@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modelTester>
+    <jModelTestRunner>
+        <includeProportionInvariableSites>true</includeProportionInvariableSites>
+        <includeUnequalBaseFrequencies>true</includeUnequalBaseFrequencies>
+        <numRateCategories>4</numRateCategories>
+        <numSubstitutionSchemes>11</numSubstitutionSchemes>
+    </jModelTestRunner>
+</modelTester>
