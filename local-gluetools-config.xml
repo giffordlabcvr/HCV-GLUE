@@ -50,6 +50,10 @@
 			<name>gluetools.core.programs.mafft.cpus</name>
 			<value>4</value>
 		</property>
+		<property>
+			<name>gluetools.core.programs.mafft.temp.dir</name>
+			<value>/Users/joshsinger/tmp/mafftfiles</value>
+		</property>
 		<!-- JModelTest -->
 		<property>
 			<name>gluetools.core.programs.jmodeltester.jar</name>
