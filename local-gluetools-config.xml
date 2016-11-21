@@ -1,0 +1,72 @@
+<gluetools>
+	<!-- GRANT ALL ON HCV_GLUE.* TO "hcvglue"@"localhost" identified by "hcvglue"; -->
+	<database>
+		<username>hcvglue</username>
+		<password>hcvglue</password>
+		<vendor>MySQL</vendor>
+		<jdbcUrl>jdbc:mysql://localhost:3306/HCV_GLUE</jdbcUrl>	
+	</database>
+	<properties>
+		<!-- BLAST related config -->
+	    <property>
+			<name>gluetools.core.programs.blast.blastn.executable</name>
+			<value>/Users/joshsinger/blast/ncbi-blast-2.2.31+/bin/blastn</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.blast.tblastn.executable</name>
+			<value>/Users/joshsinger/blast/ncbi-blast-2.2.31+/bin/tblastn</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.blast.makeblastdb.executable</name>
+			<value>/Users/joshsinger/blast/ncbi-blast-2.2.31+/bin/makeblastdb</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.blast.search.threads</name>
+			<value>4</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.blast.db.dir</name>
+			<value>/Users/joshsinger/tmp/blastdbs</value>
+		</property>
+		<!-- RAxML-specific config -->
+		<property>
+			<name>gluetools.core.programs.raxml.raxmlhpc.executable</name>
+			<value>/Users/joshsinger/RAxML/bin/raxmlHPC-PTHREADS-AVX2</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.raxml.raxmlhpc.cpus</name>
+			<value>4</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.raxml.temp.dir</name>
+			<value>/Users/joshsinger/tmp/raxmlfiles</value>
+		</property>
+		<!-- MAFFT-specific config -->
+		<property>
+			<name>gluetools.core.programs.mafft.executable</name>
+			<value>/usr/local/bin/mafft</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.mafft.cpus</name>
+			<value>4</value>
+		</property>
+		<!-- JModelTest -->
+		<property>
+			<name>gluetools.core.programs.jmodeltester.jar</name>
+			<value>/Users/joshsinger/jmodeltest/jmodeltest-2.1.10/jModelTest.jar</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.jmodeltester.temp.dir</name>
+			<value>/Users/joshsinger/jmodeltest/tmp</value>
+		</property>
+		<property>
+			<name>gluetools.core.programs.jmodeltester.cpus</name>
+			<value>4</value>
+		</property>
+		<!-- Cayenne -->
+		<property>
+			<name>cayenne.querycache.size</name>
+			<value>30000</value>
+		</property>
+	</properties>
+</gluetools>

@@ -6,4 +6,3 @@ exampleQuerySequences
 .gradle
 build
 /bin/
-local-gluetools-config.xml
