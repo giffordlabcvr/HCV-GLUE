@@ -201,26 +201,24 @@ task initHcvGlueDBGlueHomeAWS {
   }
 }
 
-// consider using a separate local GLUE db for this.
-
-task dumpGlueDB(type: Exec) {
-	standardOutput = new FileOutputStream(new File('/tmp/gluedb.sql'))
-	commandLine '/usr/local/mysql/bin/mysqldump', '-u', 'gluetools', '--password=gluetools', 'GLUE_TOOLS'
+task dumpHcvGlueDB(type: Exec) {
+	standardOutput = new FileOutputStream(new File('/tmp/hcv_glue.sql'))
+	commandLine '/usr/local/mysql/bin/mysqldump', '-u', 'hcvglue', '--password=hcvglue', 'HCV_GLUE'
 }
 
-task zipGlueDB(type: Exec, dependsOn: 'dumpGlueDB') {
-	commandLine '/usr/bin/gzip', '-f', '/tmp/gluedb.sql'
+task zipHcvGlueDB(type: Exec, dependsOn: 'dumpHcvGlueDB') {
+	commandLine '/usr/bin/gzip', '-f', '/tmp/hcv_glue.sql'
 }
 
-task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipGlueDB') {
+task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipHcvGlueDB') {
   doLast {
 	  println "Uploading HCV-GLUE DB"
 	  ssh.run {
 	    session(remotes.gluehome_aws) {
-	 	  put from: '/tmp/gluedb.sql.gz', into: '/tmp/gluedb.sql.gz'
+	 	  put from: '/tmp/hcv_glue.sql.gz', into: '/tmp/hcv_glue.sql.gz'
 	      execute 'echo "drop database HCV_GLUE; create database HCV_GLUE;" | mysql -u hcvglue --password=hcvglue HCV_GLUE'
-	      execute 'gunzip -c /tmp/gluedb.sql.gz | mysql -u hcvglue --password=hcvglue HCV_GLUE'
-	      execute 'rm /tmp/gluedb.sql.gz'
+	      execute 'gunzip -c /tmp/hcv_glue.sql.gz | mysql -u hcvglue --password=hcvglue HCV_GLUE'
+	      execute 'rm /tmp/hcv_glue.sql.gz'
 	    }
 	  }
   }
