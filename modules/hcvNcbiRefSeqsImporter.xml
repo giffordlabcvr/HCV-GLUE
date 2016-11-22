@@ -226,6 +226,12 @@
 		<primaryAccession>AB677530</primaryAccession>
 		<primaryAccession>AB677527</primaryAccession>
 
+		<!-- Outgroup: equine hepacivirus -->
+		<primaryAccession>JQ434008</primaryAccession>
+
+		<!-- Another outgroup possibility would be the closely-related canine hepacivirus (CHV) -->
+		<!-- <primaryAccession>JF744991</primaryAccession>  -->
+
 	</specificPrimaryAccessions>
 	<eFetchBatchSize>20</eFetchBatchSize>
 </ncbiImporter>

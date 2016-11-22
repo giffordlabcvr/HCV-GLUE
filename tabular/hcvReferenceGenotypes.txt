@@ -242,7 +242,7 @@ ncbi-refseqs,AB622121,RF2b_1b_2,-,recombinant
 ncbi-refseqs,JF779679,RF2b_1a,-,recombinant
 ncbi-refseqs,AB677530,RF2b_1b_3,-,recombinant
 ncbi-refseqs,AB677527,RF2b_1b_4,-,recombinant
-
+ncbi-refseqs,JQ434008,-,-,outgroup
 
 
 
