@@ -12,11 +12,11 @@ project hcv
     export figtree-annotation AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and reference_member = false" -f trees/figtreeAnnotations.txt
     exit
     
-   module hcvTreeRerooter 
+   module hcvPhyloUtility 
      # outgroup rooting
-     # reroot-tree --inputFile trees/referencePhylogeny.tree --outgroup alignment/AL_MASTER/member/ncbi-refseqs/JQ434008 --outputFile trees/referencePhylogenyRerooted.tree
+     # reroot-phylogeny --inputFile trees/referencePhylogeny.tree --outgroup alignment/AL_MASTER/member/ncbi-refseqs/JQ434008 --outputFile trees/referencePhylogenyRerooted.tree
      # midpoint rooting
-     reroot-tree --inputFile trees/referencePhylogeny.tree --midpoint --outputFile trees/referencePhylogenyRerooted.tree
+     reroot-phylogeny --inputFile trees/referencePhylogeny.tree --midpoint --outputFile trees/referencePhylogenyRerooted.tree
      exit
      
   exit

@@ -24,7 +24,9 @@
   create module --fileName modules/hcvModelTester.xml
   create module --fileName modules/raxmlPhylogenyGenerator.xml
   create module --fileName modules/figTreeAnnotationExporter.xml
-  create module --fileName modules/hcvTreeRerooter.xml
+  create module --fileName modules/hcvPhyloUtility.xml
+  create module --fileName modules/hcvPhyloImporter.xml
+  create module --fileName modules/hcvPhyloExporter.xml
      
   # module to import the Smith 2015 alignment 
   create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter

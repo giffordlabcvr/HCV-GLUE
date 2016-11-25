@@ -44,6 +44,9 @@ project hcv
   # generate the frequencies of all variations amongst curated sequences.
   run file glue/hcvGenerateVariationFrequencies.glue
 
+  # import phylogeny
+  run file glue/importPhylogeny.glue
+
   validate
 
   
