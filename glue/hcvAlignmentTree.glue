@@ -227,7 +227,7 @@
     demote member AL_2_unassigned_KC197239 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC197239'" -r reference_member true
     exit
 
-  create reference REF_3a_D17763 ncbi-refseqs D17763
+  create reference REF_3a_NC_009824 ncbi-refseqs NC_009824
   create reference REF_3b_D49374 ncbi-refseqs D49374
   create reference REF_3d_KJ470619 ncbi-refseqs KJ470619
   create reference REF_3e_KJ470618 ncbi-refseqs KJ470618
@@ -244,7 +244,7 @@
   create reference REF_3_unassigned_JF735124 ncbi-refseqs JF735124
 
   alignment AL_3
-    extract child AL_3a --refName REF_3a_D17763
+    extract child AL_3a --refName REF_3a_NC_009824
     demote member AL_3a --whereClause "sequence.genotype = '3' and sequence.subtype = 'a'" -r reference_member true
     extract child AL_3b --refName REF_3b_D49374
     demote member AL_3b --whereClause "sequence.genotype = '3' and sequence.subtype = 'b'" -r reference_member true
@@ -599,7 +599,7 @@
   reference REF_2t_KC197238 inherit feature-location -rs AL_2 whole_genome
   reference REF_2u_JF735112 inherit feature-location -rs AL_2 whole_genome
     
-  reference REF_3a_D17763 inherit feature-location -rs AL_3 whole_genome
+  reference REF_3a_NC_009824 inherit feature-location -rs AL_3 whole_genome
   reference REF_3b_D49374 inherit feature-location -rs AL_3 whole_genome
   reference REF_3d_KJ470619 inherit feature-location -rs AL_3 whole_genome
   reference REF_3e_KJ470618 inherit feature-location -rs AL_3 whole_genome
@@ -806,8 +806,8 @@
   reference REF_4v_JX227959 inherit feature-location -rs AL_4v whole_genome
   create reference REF_4w_FJ025856 ncbi-refseqs FJ025856
   reference REF_4w_FJ025856 inherit feature-location -rs AL_4w whole_genome
-  create reference REF_5a_Y13184 ncbi-refseqs Y13184
-  reference REF_5a_Y13184 inherit feature-location -rs AL_5a whole_genome
+  create reference REF_5a_NC_009826 ncbi-refseqs NC_009826
+  reference REF_5a_NC_009826 inherit feature-location -rs AL_5a whole_genome
   create reference REF_6a_AY859526 ncbi-refseqs AY859526
   reference REF_6a_AY859526 inherit feature-location -rs AL_6a whole_genome
   create reference REF_6a_EU246930 ncbi-refseqs EU246930

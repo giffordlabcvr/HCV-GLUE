@@ -28,28 +28,12 @@ compute alignment AL_2a hcvCompoundAligner -w "sequence.source.name = 'hcv-addit
 create reference REF_2a_AY746460 hcv-additional-refs AY746460
 reference REF_2a_AY746460 inherit feature-location -rs AL_2a whole_genome
 
-sequence hcv-additional-refs NC_009824 set field genotype 3
-sequence hcv-additional-refs NC_009824 set field subtype a
-alignment AL_3a add member hcv-additional-refs NC_009824
-compute alignment AL_3a hcvCompoundAligner -w "sequence.source.name = 'hcv-additional-refs' and sequence.sequenceID = 'NC_009824'"
-create reference REF_3a_NC_009824 hcv-additional-refs NC_009824
-reference REF_3a_NC_009824 inherit feature-location -rs AL_3a whole_genome
-
-
 sequence hcv-additional-refs DQ418788 set field genotype 4
 sequence hcv-additional-refs DQ418788 set field subtype a
 alignment AL_4a add member hcv-additional-refs DQ418788
 compute alignment AL_4a hcvCompoundAligner -w "sequence.source.name = 'hcv-additional-refs' and sequence.sequenceID = 'DQ418788'"
 create reference REF_4a_DQ418788 hcv-additional-refs DQ418788
 reference REF_4a_DQ418788 inherit feature-location -rs AL_4a whole_genome
-
-
-sequence hcv-additional-refs NC_009826 set field genotype 5
-sequence hcv-additional-refs NC_009826 set field subtype a
-alignment AL_5a add member hcv-additional-refs NC_009826
-compute alignment AL_5a hcvCompoundAligner -w "sequence.source.name = 'hcv-additional-refs' and sequence.sequenceID = 'NC_009826'"
-create reference REF_5a_NC_009826 hcv-additional-refs NC_009826
-reference REF_5a_NC_009826 inherit feature-location -rs AL_5a whole_genome
 
 sequence hcv-additional-refs AY587016 set field genotype 1
 sequence hcv-additional-refs AY587016 set field subtype b

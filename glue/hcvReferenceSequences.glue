@@ -20,8 +20,11 @@
   # this alignment is the original 2015 one from ICTV, plus these changes:
   # 1. the concatenated provisional refseqs have been added using MAFFT (see GLUE commands below)
   # 2. some mis-aligned sections were deleted for 2 of these: 
-  # provisional.concatenated-refseqs.REF_3c_D16612_D14198_D16613
-  # provisional.concatenated-refseqs.REF_3f_D16614_D14203_D16615 
+  #    provisional.concatenated-refseqs.REF_3c_D16612_D14198_D16613
+  #    provisional.concatenated-refseqs.REF_3f_D16614_D14203_D16615 
+  # 3. 2 sequences were renamed to their RefSeq equivalents:
+  #    D17763 was renamed NC_009824
+  #    Y13184 was renamed NC_009826
   
   # outgroup is not added at present.
   

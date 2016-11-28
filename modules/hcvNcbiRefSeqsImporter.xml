@@ -59,7 +59,7 @@
 		<primaryAccession>JF735115</primaryAccession>
 		<primaryAccession>KC197238</primaryAccession>
 		<primaryAccession>JF735112</primaryAccession>
-		<primaryAccession>D17763</primaryAccession>
+		<primaryAccession>NC_009824</primaryAccession> <!-- mentioned as D17763 in Smith et al. -->
 		<primaryAccession>D28917</primaryAccession>
 		<primaryAccession>X76918</primaryAccession>
 		<primaryAccession>JN714194</primaryAccession>
@@ -113,7 +113,7 @@
 		<primaryAccession>FJ025855</primaryAccession>
 		<primaryAccession>FJ025856</primaryAccession>
 		<primaryAccession>AF064490</primaryAccession>
-		<primaryAccession>Y13184</primaryAccession>
+		<primaryAccession>NC_009826</primaryAccession>  <!-- mentioned as Y13184 in Smith et al. -->
 		<primaryAccession>Y12083</primaryAccession>
 		<primaryAccession>AY859526</primaryAccession>
 		<primaryAccession>HQ639936</primaryAccession>
