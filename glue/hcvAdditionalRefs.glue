@@ -42,5 +42,4 @@ compute alignment AL_1b hcvCompoundAligner -w "sequence.source.name = 'hcv-addit
 create reference REF_1b_AY587016 hcv-additional-refs AY587016
 reference REF_1b_AY587016 inherit feature-location -rs AL_1b whole_genome
 
-multi-set field alignment_member -w "sequence.source.name = 'hcv-additional-refs'" reference_member false
 multi-set field sequence -w "source.name = 'hcv-additional-refs'" reference_status confirmed

@@ -69,10 +69,6 @@ schema-project hcv
     create field ncbi_curated_total_absent INTEGER
     exit
 
-  table alignment_member
-    create field reference_member BOOLEAN
-    exit
-    
   create custom-table drug
   create custom-table drug_category
   create custom-table drug_sub_category

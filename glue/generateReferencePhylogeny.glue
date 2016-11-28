@@ -2,21 +2,21 @@ project hcv
 
   module raxmlPhylogenyGenerator
     # with outgroup
-    # generate nucleotide phylogeny AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')  and reference_member = false" -i -m 2 -o trees/referencePhylogeny.tree
-    generate nucleotide phylogeny AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and reference_member = false" -i -m 2 -o trees/referencePhylogeny.tree
+    # generate nucleotide phylogeny AL_UNCONSTRAINED -r H77_AF009606 -f precursor_polyprotein -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')" -o trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS -d referencePhylogenyData
+    generate nucleotide phylogeny AL_UNCONSTRAINED -r H77_AF009606 -f precursor_polyprotein -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')" -o trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS -d referencePhylogenyData
     exit
   
   module figTreeAnnotationExporter 
     # with outgroup
-    # export figtree-annotation AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')  and reference_member = false" -f trees/figtreeAnnotations.txt
-    export figtree-annotation AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and reference_member = false" -f trees/figtreeAnnotations.txt
+    # export figtree-annotation AL_UNCONSTRAINED -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')" -f trees/figtreeAnnotations.txt
+    export figtree-annotation AL_UNCONSTRAINED -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')" -f trees/figtreeAnnotations.txt
     exit
     
    module hcvPhyloUtility 
      # outgroup rooting
-     # reroot-phylogeny --inputFile trees/referencePhylogeny.tree --outgroup alignment/AL_MASTER/member/ncbi-refseqs/JQ434008 --outputFile trees/referencePhylogenyRerooted.tree
+     # reroot-phylogeny --inputFile trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS --outgroup alignment/AL_MASTER/member/ncbi-refseqs/JQ434008 --outputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS
      # midpoint rooting
-     reroot-phylogeny --inputFile trees/referencePhylogeny.tree --midpoint --outputFile trees/referencePhylogenyRerooted.tree
+     reroot-phylogeny --inputFile trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS --midpoint --outputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS
      exit
      
   exit

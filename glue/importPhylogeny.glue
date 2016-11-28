@@ -1,8 +1,8 @@
 module hcvPhyloImporter
 
   # with outgroup
-  # import phylogeny AL_MASTER --recursive --whereClause "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional', 'outgroup')  and reference_member = false" --inputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS --fieldName phylogeny
+  # import phylogeny AL_MASTER --recursive --anyAlignment --whereClause "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional', 'outgroup')  and referenceMember = false" --inputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS --fieldName phylogeny
 
-  import phylogeny AL_MASTER --recursive --whereClause "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs','hcv-additional-refs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and reference_member = false" --inputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS --fieldName phylogeny
+  import phylogeny AL_MASTER --recursive --anyAlignment --whereClause "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and referenceMember = false" --inputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS --fieldName phylogeny
 
   exit

@@ -1,4 +1,6 @@
 <maxLikelihoodPlacer>
-	<rootAlignmentName>AL_MASTER</rootAlignmentName>
-	<phyloMemberWhereClause>(sequence.source.name = 'ncbi-refseqs' or sequence.source.name = 'hcv-additional-refs' or sequence.source.name = 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional') and reference_member = false</phyloMemberWhereClause>
+	<phyloAlignmentName>AL_UNCONSTRAINED</phyloAlignmentName>
+	<phyloRelatedRefName>H77_AF009606</phyloRelatedRefName>
+	<phyloFeatureName>precursor_polyprotein</phyloFeatureName>
+	<phyloMemberWhereClause>(sequence.source.name = 'ncbi-refseqs' or sequence.source.name = 'hcv-additional-refs' or sequence.source.name = 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional') and referenceMember = false</phyloMemberWhereClause>
 </maxLikelihoodPlacer>
