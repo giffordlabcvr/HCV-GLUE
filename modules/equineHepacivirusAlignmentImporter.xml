@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blastProteinFastaAlignmentImporter>
+	<idClauseExtractorFormatter>
+		<matchPattern>([a-zA-Z0-9\-_]+)\.([a-zA-Z0-9\-_]+)</matchPattern>
+		<outputTemplate>source.name = '${g1}' and sequenceID = '${g2}'</outputTemplate>
+	</idClauseExtractorFormatter>
+</blastProteinFastaAlignmentImporter>

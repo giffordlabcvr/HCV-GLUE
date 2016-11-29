@@ -43,5 +43,10 @@
   # create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
   ## extend the unconstrained alignment to the provisional subtype references
   # extend alignment AL_UNCONSTRAINED hcvMafftAligner -w "sequence.reference_status in ('provisional', 'recombinant')" 
-  
-  
+
+  # import a partial protein alignment relating the equine hepacivirus outgroup to H77
+  module equineHepacivirusAlignmentImporter import AL_EHV_HCV_UNCONSTRAINED -f alignments/HCV-equineHepacivirus-edited.fasta
+  # add segments to the unconstrained alignment based on this. 
+  alignment AL_UNCONSTRAINED
+    derive segments AL_EHV_HCV_UNCONSTRAINED --linkingReference H77_AF009606 --whereClause "sequence.sequenceID = 'JQ434008'"
+    exit

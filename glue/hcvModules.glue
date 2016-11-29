@@ -24,4 +24,5 @@
   create module --fileName modules/hcvModelTester.xml
   create module --fileName modules/raxmlPhylogenyGenerator.xml
   create module --fileName modules/figTreeAnnotationExporter.xml
-  
+
+  create module --fileName modules/equineHepacivirusAlignmentImporter.xml equineHepacivirusAlignmentImporter  
