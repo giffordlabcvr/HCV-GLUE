@@ -16,10 +16,13 @@ project hcv
 
   # reference sequences and their unconstrained alignment
   run file glue/hcvReferenceSequences.glue
-  
+
   # build master reference, with features.
   run file glue/hcvFeatures.glue
 
+  # outgroup alignment
+  run file glue/hcvOutgroupAlignment.glue
+  
   # curated sequences
   run file glue/hcvCuratedSequences.glue
  
@@ -43,6 +46,9 @@ project hcv
 
   # generate the frequencies of all variations amongst curated sequences.
   run file glue/hcvGenerateVariationFrequencies.glue
+
+  # import phylogeny
+  run file glue/importPhylogeny.glue
 
   validate
 

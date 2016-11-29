@@ -1,14 +1,9 @@
   
-  # these modules download the refseqs from NCBI
-  create module --fileName modules/hcvNcbiRefSeqsImporter.xml ncbi-refseqs-importer
-  create module --fileName modules/hcvNcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer
   
   # however, we will import the reference sequences from files
   import source sources/ncbi-refseqs 
   import source sources/ncbi-refseqs-subgenomic 
 
-  # this module populates the reference genotypes from a file.
-  create module --fileName modules/referenceGenotypesPopulator.xml reference-genotypes-populator
 
   # run the module update genotype / subtype for refseqs from file.
   module reference-genotypes-populator populate -f tabular/hcvReferenceGenotypes.txt
@@ -22,31 +17,29 @@
   run file glue/concatenateProvisionalReferences.glue
   
   # module to import the edited alignment
-  # this alignment is the original 2015 one from ICTV, plus the concatenated provisional refseqs have been added using MAFFT (see GLUE commands below)
-  # finally some mis-aligned sections were deleted for 2 of these: 
-  # provisional.concatenated-refseqs.REF_3c_D16612_D14198_D16613
-  # provisional.concatenated-refseqs.REF_3f_D16614_D14203_D16615 
-  create module --fileName modules/editedAlignmentImporter.xml editedAlignmentImporter
+  # this alignment is the original 2015 one from ICTV, plus these changes:
+  # 1. the concatenated provisional refseqs have been added using MAFFT (see GLUE commands below)
+  # 2. some mis-aligned sections were deleted for 2 of these: 
+  #    provisional.concatenated-refseqs.REF_3c_D16612_D14198_D16613
+  #    provisional.concatenated-refseqs.REF_3f_D16614_D14203_D16615 
+  # 3. 2 sequences were renamed to their RefSeq equivalents:
+  #    D17763 was renamed NC_009824
+  #    Y13184 was renamed NC_009826
+  
+  # outgroup is not added at present.
+  
+  
   # import the edited alignment
   module editedAlignmentImporter import AL_UNCONSTRAINED -f alignments/Smith_Extended.edited.fasta
 
-  ## GLUE commands to import the original alignment and to extend it to provisional / recombinant references.
+  ## GLUE commands to import the original alignment and to extend it to provisional / recombinant / outgroup references.
 
   ## module to import the Smith 2015 alignment 
-  # create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter
   ## import the Smith 2015 alignment from Donald Smith's FASTA file.
   # module smith2015AlignmentImporter import AL_UNCONSTRAINED -f alignments/All\ types\ selection\ and\ ref\ for\ web\ 26\ May\ 2015.FST
     
   ## add provisional subtype references to the unconstrained alignment.
   # alignment AL_UNCONSTRAINED add member -w "reference_status in ('provisional', 'recombinant')"
-  ## mafft aligner
-  # create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
   ## extend the unconstrained alignment to the provisional subtype references
   # extend alignment AL_UNCONSTRAINED hcvMafftAligner -w "sequence.reference_status in ('provisional', 'recombinant')" 
 
-  # import a partial protein alignment relating the equine hepacivirus outgroup to H77
-  module equineHepacivirusAlignmentImporter import AL_EHV_HCV_UNCONSTRAINED -f alignments/HCV-equineHepacivirus-edited.fasta
-  # add segments to the unconstrained alignment based on this. 
-  alignment AL_UNCONSTRAINED
-    derive segments AL_EHV_HCV_UNCONSTRAINED --linkingReference H77_AF009606 --whereClause "sequence.sequenceID = 'JQ434008'"
-    exit

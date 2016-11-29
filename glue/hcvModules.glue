@@ -24,5 +24,21 @@
   create module --fileName modules/hcvModelTester.xml
   create module --fileName modules/raxmlPhylogenyGenerator.xml
   create module --fileName modules/figTreeAnnotationExporter.xml
+  create module --fileName modules/hcvPhyloUtility.xml
+  create module --fileName modules/hcvPhyloImporter.xml
+  create module --fileName modules/hcvPhyloExporter.xml
+     
+  # module to import the Smith 2015 alignment 
+  create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter
+  # module to import the edited alignment
+  create module --fileName modules/editedAlignmentImporter.xml editedAlignmentImporter
+
+  create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
+
+  # these modules download the refseqs from NCBI
+  create module --fileName modules/hcvNcbiRefSeqsImporter.xml ncbi-refseqs-importer
+  create module --fileName modules/hcvNcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer
+  # this module populates the reference genotypes from a file.
+  create module --fileName modules/referenceGenotypesPopulator.xml reference-genotypes-populator
 
   create module --fileName modules/equineHepacivirusAlignmentImporter.xml equineHepacivirusAlignmentImporter  

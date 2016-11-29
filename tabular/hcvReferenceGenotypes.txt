@@ -52,7 +52,7 @@ ncbi-refseqs,FN666429,2,q,confirmed
 ncbi-refseqs,JF735115,2,r,confirmed
 ncbi-refseqs,KC197238,2,t,confirmed
 ncbi-refseqs,JF735112,2,u,confirmed
-ncbi-refseqs,D17763,3,a,confirmed
+ncbi-refseqs,NC_009824,3,a,confirmed
 ncbi-refseqs,D28917,3,a,confirmed
 ncbi-refseqs,X76918,3,a,confirmed
 ncbi-refseqs,JN714194,3,a,confirmed
@@ -106,7 +106,7 @@ ncbi-refseqs,JX227960,4,v,confirmed
 ncbi-refseqs,FJ025855,4,w,confirmed
 ncbi-refseqs,FJ025856,4,w,confirmed
 ncbi-refseqs,AF064490,5,a,confirmed
-ncbi-refseqs,Y13184,5,a,confirmed
+ncbi-refseqs,NC_009826,5,a,confirmed
 ncbi-refseqs,Y12083,6,a,confirmed
 ncbi-refseqs,AY859526,6,a,confirmed
 ncbi-refseqs,HQ639936,6,a,confirmed
@@ -242,7 +242,7 @@ ncbi-refseqs,AB622121,RF2b_1b_2,-,recombinant
 ncbi-refseqs,JF779679,RF2b_1a,-,recombinant
 ncbi-refseqs,AB677530,RF2b_1b_3,-,recombinant
 ncbi-refseqs,AB677527,RF2b_1b_4,-,recombinant
-
+ncbi-refseqs,JQ434008,-,-,outgroup
 
 
 

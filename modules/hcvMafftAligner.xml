@@ -1,3 +1,4 @@
 <mafftAligner>
-	<alignmentReimporterModuleName>unconstrained-fasta-importer</alignmentReimporterModuleName>
+	<!-- Note, the id formatter of this module is not important. -->
+	<alignmentReimporterModuleName>editedAlignmentImporter</alignmentReimporterModuleName>
 </mafftAligner>
