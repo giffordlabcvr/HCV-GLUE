@@ -140,7 +140,6 @@ alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735136	4	4/s	4/s/JF735136
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735138	4	4/-	4/-/JF735138
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JN714194	3	3/a	3/a/JN714194
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JQ065709	3	3/b	3/b/JQ065709
-alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JQ434008	-	-/-	-/-/JQ434008
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183549	6	6/-	6/-/JX183549
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183550	6	6/-	6/-/JX183550
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183551	6	6/-	6/-/JX183551
