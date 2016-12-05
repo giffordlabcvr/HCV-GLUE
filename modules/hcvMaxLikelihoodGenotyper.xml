@@ -4,10 +4,14 @@
 		<name>genotype</name>	
 		<displayName>Genotype</displayName>	
 		<whereClause>parent.name = 'AL_MASTER'</whereClause>
+		<distanceScalingExponent>-3.0</distanceScalingExponent>
+		<distanceCutoff>0.4</distanceCutoff>
 	</cladeCategory>
 	<cladeCategory>
 		<name>subtype</name>	
 		<displayName>Subtype</displayName>	
 		<whereClause>parent.parent.name = 'AL_MASTER'</whereClause>
+		<distanceScalingExponent>-3.0</distanceScalingExponent>
+		<distanceCutoff>0.26</distanceCutoff>
 	</cladeCategory>
 </maxLikelihoodGenotyper>
