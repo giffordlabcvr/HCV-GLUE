@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DQ640347</GBSeq_locus>
+  <GBSeq_length>667</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>31-AUG-2006</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus strain Th34 core protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>DQ640347</GBSeq_primary-accession>
+  <GBSeq_accession-version>DQ640347.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|DQ640347.1|</GBSeqid>
+    <GBSeqid>gi|109676907</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..667</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Noppornpanth,S.</GBAuthor>
+        <GBAuthor>Sablon,E.</GBAuthor>
+        <GBAuthor>De Nys,K.</GBAuthor>
+        <GBAuthor>Truong,X.L.</GBAuthor>
+        <GBAuthor>Brouwer,J.</GBAuthor>
+        <GBAuthor>Van Brussel,M.</GBAuthor>
+        <GBAuthor>Smits,S.L.</GBAuthor>
+        <GBAuthor>Poovorawan,Y.</GBAuthor>
+        <GBAuthor>Osterhaus,A.D.</GBAuthor>
+        <GBAuthor>Haagmans,B.L.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Genotyping hepatitis C viruses from Southeast Asia by a novel line probe assay that simultaneously detects core and 5' untranslated regions</GBReference_title>
+      <GBReference_journal>J. Clin. Microbiol. 44 (11), 3969-3974 (2006)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1128/JCM.01122-06</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>16957039</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..667</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Noppornpanth,S.</GBAuthor>
+        <GBAuthor>Sablon,E.</GBAuthor>
+        <GBAuthor>De Nys,K.</GBAuthor>
+        <GBAuthor>Lien,T.X.</GBAuthor>
+        <GBAuthor>Brouwer,J.</GBAuthor>
+        <GBAuthor>Smits,S.L.</GBAuthor>
+        <GBAuthor>Poovorawan,Y.</GBAuthor>
+        <GBAuthor>Osterhaus,A.D.M.E.</GBAuthor>
+        <GBAuthor>Haagmans,B.L.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (15-MAY-2006) Virology, Erasmus Medical Center, Dr. Molewaterplein 50, Rotterdam 3015 GE, The Netherlands</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..667</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>667</GBInterval_to>
+          <GBInterval_accession>DQ640347.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>Th34</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>serum from blood donor</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Thailand: Bangkok</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>5'UTR</GBFeature_key>
+      <GBFeature_location>&lt;1..313</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>313</GBInterval_to>
+          <GBInterval_accession>DQ640347.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>314..&gt;667</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>314</GBInterval_from>
+          <GBInterval_to>667</GBInterval_to>
+          <GBInterval_accession>DQ640347.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ABG37860.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTLPKPQRQTKRNTPRRPQNVKFPGGGQIVGGVYVLPRRGPRLGVRAVRKTSERSQPRGRRQPIPKARPSEGRSWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPNDPRRRSRN</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>accatagatcactcccctgtgaggaacttctgtcttcacgcggaaagcgtctagccatggcgttagtacgagtgtcgtgcagcctccaggcccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaatcgccgggatgaccgggtcctttcttggaacaacccgctcaatgcctggaaatttgggcgtgcccccgcgagatcactagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcatcatgagcacacttcctaaacctcaaagacaaaccaaaagaaacacaccccgtcgcccacagaacgtyaagttcccgggcggcgggcagatcgttggtggagtatatgtgctgccgcgcaggggccckcgattgggtgtgcgcgcagtacgtaagacttccgagcggtcgcaacctcgcggacggcgtcagcctatccccaaggcacgtccaagcgagggccggtcctgggctcagcctgggtacccttggcccctctacggaaatgagggctgtgggtgggcaggatggcttctgtccccccgcggttctcgccctagttggggcccaaatgacccccggcgtagatcccgcaac</GBSeq_sequence>
+</GBSeq>

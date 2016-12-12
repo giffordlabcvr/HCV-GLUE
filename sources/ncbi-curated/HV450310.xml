@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HV450310</GBSeq_locus>
+  <GBSeq_length>1779</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>18-OCT-2011</GBSeq_update-date>
+  <GBSeq_create-date>18-OCT-2011</GBSeq_create-date>
+  <GBSeq_definition>WO 2000014252-A/1: Ribozyme prodrug</GBSeq_definition>
+  <GBSeq_primary-accession>HV450310</GBSeq_primary-accession>
+  <GBSeq_accession-version>HV450310.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|HV450310.1|</GBSeqid>
+    <GBSeqid>pat|WO|2000014252|1</GBSeqid>
+    <GBSeqid>gi|352960424</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>WO 2000014252-A/1</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1779</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Todo,N.</GBAuthor>
+        <GBAuthor>Yamamoto,H.</GBAuthor>
+        <GBAuthor>Sudo,Y.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Ribozyme prodrug</GBReference_title>
+      <GBReference_journal>Patent: WO 2000014252-A 1 16-MAR-2000; SUMITOMO PHARMACEUTICALS CO LTD,NAOKI TODO,HIROKO YAMAMOTO,YOSHIAKI SUDO</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS HCV~PN WO 2000014252-A/1~PD 16-MAR-2000~PF 02-SEP-1999 WO 1999JP004767~PR 03-SEP-1998 JP 98P 249900~PI NAOKI TODO,HIROKO YAMAMOTO,YOSHIAKI SUDO~PC C12N15/55,C12N9/22,A61K48/00~CC~FH Key Location/Qualifiers~FT CDS (1)..(1779)</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1779</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1779</GBInterval_to>
+          <GBInterval_accession>HV450310.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgtcgatgtcctacacatggacaggcgccttaattacaccatgcgccgcggaggagagcaagctgcccattaatgcgctgagcaaccctttgctgcgccaccacaacatggtctatgccacaacatcccgcagcgcaagccagcggcagaaaaaggtcacatttgacagactgcaagtcctggatgaccactaccgggacgtgctgaaggggatgaaggcgaaggcgtccacagttaaggctaaacttctatctgtagaggaagcctgcaagctgacgcccccacactcggccagatctaaatttggctacggggcaaaggacgtccggagcctgtccagcaaggccgttaaccacatccgctccgtgtggaaggacttgctggaagacactgagacaccaattgacaccaccatcatggcaaaaaatgaggttttctgtgttcaaccagagaaaggaggccgcaagccagctcgccttatcgtattcccagacttgggggttcgtgtgtgcgagaaaatggccctctacgacgtggtctccactcttcctcaggccgtgatgggctcctcatacggattccagtactcccctggacagcgggtcgagttcctggtgaatgcctggaagtcaaagaagagccctatgggctttgcatatgacacccgctgttttgactcaacggtcaccgagaacgacatccgtactgaggagtcaatttatcaatgttgtgacttggaccccgaggccagacaggccataaggtcgctcacagagcggctttatatcgggggccccctgactaattcaaaggggcagaactgcggttatcgccggtgccgcgtcagcggcgtgctgacgactagctgcggtaataccctcacatgttacttgaaggcctctgcagcctgtcgagctgcaaagctccaggactgcacgatgcttgtgtgcggagacgaccttgtcgttatctgtgatagcgcgggaactcaggaggacgcggcgagcctacgagtcttcacggaggctatgactaggtactctgccccccccggggacccgccccaaccagaatacgacttggagctgataacatcatgctcctccaatgtgtcggtcgcgcacgacgcatcaggcaaacgggtgtactatctcacccgtgaccccaccacccccctagcgcgggctgcgtgggagacagctagacacactccagtcaactcctggctaggcaacatcatcatgtacgcgcccaccttatgggcaaggatgattctgatgacccacttcttctccatccttctagcccaggagcaacttgaaaaagccctagattgtcagatctacggggccacttactccattgagccacttgacctacctcagatcattcaacgactccacggtcttagcgcattttcactccatagttactctccaggtgagatcaatagggtggcttcatgcctcaggaaacttggggtaccgcccttgcgagtctggagacatcgggccagaagcgtccgcgctaagctactgtcccagggggggagggccgccacctgtggcaaatacctcttcaactgggcagtaaagaccaagctcaaactcactccaatcccagaagcgtcccagctggacttgtccggctggttcgttgctggttacagcgggggagacatatatcacagcctgtctcgtgcccgaccccgctggttcatgtggtgcctactcctactttccgtaggggtaggcatctacctgctccccaaccgatga</GBSeq_sequence>
+</GBSeq>

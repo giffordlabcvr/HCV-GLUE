@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AF216794</GBSeq_locus>
+  <GBSeq_length>573</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>22-MAR-2000</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate SOM3 core structural protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>AF216794</GBSeq_primary-accession>
+  <GBSeq_accession-version>AF216794.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AF216794.1|</GBSeqid>
+    <GBSeqid>gi|7274366</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Abid,K.</GBAuthor>
+        <GBAuthor>Quadri,R.</GBAuthor>
+        <GBAuthor>Veuthey,A.L.</GBAuthor>
+        <GBAuthor>Hadengue,A.</GBAuthor>
+        <GBAuthor>Negro,F.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>A novel hepatitis C virus (HCV) subtype from Somalia and its classification into HCV clade 3</GBReference_title>
+      <GBReference_journal>J. Gen. Virol. 81 (Pt 6), 1485-1493 (2000)</GBReference_journal>
+      <GBReference_pubmed>10811932</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Abid,K.</GBAuthor>
+        <GBAuthor>Quadri,R.</GBAuthor>
+        <GBAuthor>Negro,F.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (16-DEC-1999) Gastroenterology and Hepatology, University Hospital, 24 Rue Micheli-du-Crest, Geneva 1211, Switzerland</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AF216794.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>SOM3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Somalia</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>subtype</GBQualifier_name>
+          <GBQualifier_value>3h</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>clade 3</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AF216794.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core structural protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAF44741.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTLPKPQRKTKRNTIRRPQNVKFPGGGQIVGGVYVLPRRGPTLGVRAARKTSERSQPRGRRQPIPKARRNEGRTWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPHWGPNDPRRRSRNLGKIIDTLTCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFLLAILSCLTVPASG</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacacttcctaaacctcaaagaaaaaccaaaagaaacaccatccgccgtccacagaacgtaaagttcccgggtggcggacagatcgttggtggagtttacgtgctgcctcgcaggggcccaactttgggtgtgcgtgcggcgcgtaagacttccgagcggtcgcaacctcgaggtaggcgccaacctattcccaaggcgcgccgaaacgagggacgtacctgggcacagcccgggtacccttggcccctctatggtaatgagggctgtgggtgggcagggtggctcctgtccccccgcggctctcgaccacactggggccccaatgacccccggcgaagatcccgcaacttgggtaagatcatcgataccctcacgtgcggattcgccgatctcatggggtacatcccgctcgtgggcgctcccgtcgggggcgtcgccagggccctggcacatggtgtcagggctgtggaggacgggataaattacgcaacagggaatcttcccggttgctctttctctatcttcctcttggccatactgtcatgcctgaccgtccctgcgtccggg</GBSeq_sequence>
+</GBSeq>

@@ -6,7 +6,7 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>30-SEP-2007</GBSeq_update-date>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
   <GBSeq_create-date>30-SEP-2007</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus isolate Eg7 polyprotein gene, partial cds</GBSeq_definition>
   <GBSeq_primary-accession>DQ988076</GBSeq_primary-accession>
@@ -110,10 +110,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>ABL63008.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:119331264</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>

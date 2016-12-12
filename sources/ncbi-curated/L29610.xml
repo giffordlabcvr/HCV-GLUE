@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPC4GB438A</GBSeq_locus>
+  <GBSeq_length>579</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>04-MAY-1995</GBSeq_update-date>
+  <GBSeq_create-date>02-MAY-1994</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus type 4 (GB438) core protein gene, complete cds; envelope protein (E1) gene, complete cds</GBSeq_definition>
+  <GBSeq_primary-accession>L29610</GBSeq_primary-accession>
+  <GBSeq_accession-version>L29610.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|L29610.1|HPC4GB438A</GBSeqid>
+    <GBSeqid>gi|476644</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>core protein</GBKeyword>
+    <GBKeyword>envelope protein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus genotype 4</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus genotype 4</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..579</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Stuyver,L.</GBAuthor>
+        <GBAuthor>van Arnhem,W.</GBAuthor>
+        <GBAuthor>Wyseur,A.</GBAuthor>
+        <GBAuthor>Hernandez,F.</GBAuthor>
+        <GBAuthor>Delaporte,E.</GBAuthor>
+        <GBAuthor>Maertens,G.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Classification of hepatitis C viruses based on phylogenetic analysis of the envelope 1 and nonstructural 5B regions and identification of five additional subtypes</GBReference_title>
+      <GBReference_journal>Proc. Natl. Acad. Sci. U.S.A. 91 (21), 10134-10138 (1994)</GBReference_journal>
+      <GBReference_pubmed>7524083</GBReference_pubmed>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>Original source text: Hepatitis C virus type 4 (individual_isolate GB438) cDNA to genomic RNA.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..579</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>579</GBInterval_to>
+          <GBInterval_accession>L29610.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus genotype 4</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>GB438</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:33745</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;579</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>579</GBInterval_to>
+          <GBInterval_accession>L29610.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>precursor protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAA65781.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>TCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFLLVLLSRLTVPASAQHYRNASGIYHVTNDCPNSSIVYEADHHIMHLPGCVPCVRTGNVSRCWIPLTPTVAVPYLGAPLTSVRQHVDLMVGAATLCSALYIGDHCGGVFLAGQMVSFQPRRHWTTQDCNCSIYVGHITGHRMA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>1..195</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>195</GBInterval_to>
+          <GBInterval_accession>L29610.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>TCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFLLVLLSRLTVPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>196..579</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>196</GBInterval_from>
+          <GBInterval_to>579</GBInterval_to>
+          <GBInterval_accession>L29610.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>E1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>envelope protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>QHYRNASGIYHVTNDCPNSSIVYEADHHIMHLPGCVPCVRTGNVSRCWIPLTPTVAVPYLGAPLTSVRQHVDLMVGAATLCSALYIGDHCGGVFLAGQMVSFQPRRHWTTQDCNCSIYVGHITGHRMA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>196..579</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>196</GBInterval_from>
+          <GBInterval_to>579</GBInterval_to>
+          <GBInterval_accession>L29610.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>E1</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>acgtgcgggttcgccgacctcatgggatacatcccgctcgtgggcgctccagtaggaggcgtcgccagagccttggcgcatggcgtcagggctgtggaggacgggatcaattacgcaacagggaaccttcccggctgctccttttctatcttcctcttggtacttctctcgcgcctaactgtcccagcgtctgctcagcactaccggaatgcatcgggcatctaccatgtcaccaacgactgcccgaactccagtattgtgtatgaagccgaccatcacatcatgcacctacccgggtgtgtgccctgtgtaagaactgggaatgtctcgcgttgctggattcctttaacacccactgtagccgtcccctacctcggggctccacttacgtctgtacggcagcatgtggacctgatggtgggggcggccaccttatgctctgccctctacatcggagaccattgcggaggtgtcttcttggcagggcagatggtcagtttccaaccccggcgtcattggactacccaggattgcaactgttccatctatgtgggccacatcaccggccacaggatggcc</GBSeq_sequence>
+</GBSeq>

@@ -6,7 +6,7 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>19-JUL-2006</GBSeq_update-date>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
   <GBSeq_create-date>01-SEP-2005</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus (isolate D54) polyprotein gene, partial cds</GBSeq_definition>
   <GBSeq_primary-accession>DQ155561</GBSeq_primary-accession>
@@ -152,10 +152,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>AAZ85047.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:73765379</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>

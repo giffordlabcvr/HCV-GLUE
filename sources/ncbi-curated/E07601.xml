@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>E07601</GBSeq_locus>
+  <GBSeq_length>803</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>04-NOV-2005</GBSeq_update-date>
+  <GBSeq_create-date>06-JUN-1997</GBSeq_create-date>
+  <GBSeq_definition>5'non-coding region of HCV</GBSeq_definition>
+  <GBSeq_primary-accession>E07601</GBSeq_primary-accession>
+  <GBSeq_accession-version>E07601.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|E07601.1|</GBSeqid>
+    <GBSeqid>pat|JP|1994153961|1</GBSeqid>
+    <GBSeqid>gi|2175736</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 1994153961-A/1</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..803</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+        <GBAuthor>Nakamura,T.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>PARTIAL GENE OF HEPATITIS C VIRUS AND METHOD FOR DETECTING GENE OF HEPATITIS C VIRUS IN HIGH SENSITIVITY</GBReference_title>
+      <GBReference_journal>Patent: JP 1994153961-A 1 03-JUN-1994; IMUNO JAPAN:KK</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Unknown (hepatitis C virus)~PN JP 1994153961-A/1~PD 03-JUN-1994~PF 27-NOV-1992 JP 1992354370~PI OKAMOTO HIROAKI, NAKAMURA TETSUO~PC C12N15/51,C12Q1/68,G01N33/576;~CC strandedness: Double;~CC topology: Linear;~FH Key Location/Qualifiers~FH~FT source 1..803~FT /organism="Unclassified"~FT /note="N-803/Mit/92"</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..803</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>803</GBInterval_to>
+          <GBInterval_accession>E07601.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ctgtgaggaactactgtcttcacgcggaaagcgcctagccatggcgttagtacgagtgtcgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaatcgctggggtgaccgggtcctttcttggagcaacccgctcaatacccagaaatttgggcgtgcccccgcaagatcactagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaacatgagcacacttcctaaacctcaaagaaaaaccaaaagaaacaccatccgtcgcccacaggacatcaagttcccgggtggcggacagatcgttggtggagtatacgtgttgccgcgcaggggcccacgattgggtgtgcgcgcgacgcgtaaaacttctgaacggtcacagcctcgcggacgacgacagcctatccccaaggcgcgtcggagcgaaggccggtcctgggctcagcccgggtacccttggcccctctatggtaacgagggctgcgggtgggcagggtggctcctgtccccacgcggctcccgtccaacttggggcccaaacgacccccggcggaggtcccgcaatttgggtaaagtcatcgatacccttacgtgcggtttcgccgacctcatggggtacatcccgctcgtcggcgctcccgtaggaggcgtcgcaagagccctcgcgcatggcgtgagggcccttgaagacgggattaattatgcaacagggaacct</GBSeq_sequence>
+</GBSeq>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KX389155</GBSeq_locus>
+  <GBSeq_length>1665</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>05-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>05-JUL-2016</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate UKN1A56.211 polyprotein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KX389155</GBSeq_primary-accession>
+  <GBSeq_accession-version>KX389155.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KX389155.1|</GBSeqid>
+    <GBSeqid>gi|1041521811</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1665</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>McClure,C.P.</GBAuthor>
+        <GBAuthor>Urbanowicz,R.A.</GBAuthor>
+        <GBAuthor>King,B.J.</GBAuthor>
+        <GBAuthor>Cano-Crespo,S.</GBAuthor>
+        <GBAuthor>Tarr,A.W.</GBAuthor>
+        <GBAuthor>Ball,J.K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Flexible and rapid construction of viral chimeras applied to Hepatitis C Virus</GBReference_title>
+      <GBReference_journal>J. Gen. Virol. (2016) In press</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1099/jgv.0.000530</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>27329374</GBReference_pubmed>
+      <GBReference_remark>Publication Status: Available-Online prior to print</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1665</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Tarr,A.W.</GBAuthor>
+        <GBAuthor>McClure,P.C.</GBAuthor>
+        <GBAuthor>Urbanowicz,R.A.</GBAuthor>
+        <GBAuthor>King,B.J.</GBAuthor>
+        <GBAuthor>Cano-Crespo,S.</GBAuthor>
+        <GBAuthor>Ball,J.K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (15-JUN-2016) School of Life Sciences, University of Nottingham, Queen's Medical Centre, Nottingham, Notts NG7 2UH, UK</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Assembly Method Seqman v. 10 Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1665</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1665</GBInterval_to>
+          <GBInterval_accession>KX389155.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>UKN1A56.211</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>United Kingdom</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2001</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1a</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1665</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1665</GBInterval_to>
+          <GBInterval_accession>KX389155.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>E1 and E2 glycoproteins</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ANO46553.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>YQVRNSSGLYHVTNDCPNSSIVYETTDSILHSPGCVPCVREGNASKCWVPVAPTVATRDGKLPTTQLRRHIDLLVGGATLCSALYVGDLCGSVFLVGQLFTFSPRRHWTTQDCNCSMYPGHITGHRMAWDMMMNWSPTTALVVAQLLRVPQAILDMIAGAHWGVLAGVACFSMVGNWAKVLLVLLLFAGVDAVTYTTGGSAAQTTSALSSLFTRGAKQDIQLINTNGSWHINRTALNCSASLDTGWVAGLFYYHKFNSSGCPERMASCRPLADFDQGWGPISYANGSGPEHRPYCWHYPPKPCGIVPAQSVCGPVYCFTPSPVVVGTTDRAGAPTYNWGSNDTDVFVLNNTRPPLGNWFGCTWMNSSGFTKVCGAPPCVIGGVGNNTLHCPTDCFRKHPEATYSRCGSGPWITPRCLVHYSYRLWHYPCTINYTLFKVRMYVGGVEHRLEVACNWTRGERCDLDDRDRSELSPLLLSTTQWQVLPCSFTTLPALTTGLIHLHQNIVDVQYLYRVGSSIVSWAIKWEYVILLFLLLADARICSCLWMMLLISQAEA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>taccaagtacgcaactcctcgggcctttatcatgtcaccaatgattgccctaactcgagtattgtgtacgagacgaccgacagcatcctgcattctccggggtgtgtcccttgcgttcgcgaaggtaacgcctcgaaatgttgggtgccagtggcccccacggtcgccaccagggacggcaaactccccacaacgcagcttcgacgtcacatcgatctgcttgtcgggggtgccaccctctgctcggccctctatgtgggggacttgtgtgggtctgtctttcttgtcggtcaactgttcactttctcccccaggcgccactggacgacgcaggactgcaactgttctatgtaccccggccatataacgggtcaccgcatggcatgggatatgatgatgaactggtctcctacaacagcgttggtagtagctcagctgctcagggtcccgcaagccatcttggacatgatcgctggtgcccattggggagtcctagcgggcgtagcgtgtttctccatggtggggaactgggcgaaggtcctgctagtgctattgctgtttgctggcgtcgatgcggtaacctataccaccggggggagtgccgctcagaccacatctgcactcagcagccttttcactcggggcgccaagcaggatatccagctaatcaacaccaacggcagttggcacatcaatcgtactgccttgaactgtagcgcgagcctcgacactggctgggtagcagggctcttctattaccacaaattcaattcttcaggctgccccgagaggatggccagctgtagaccccttgccgatttcgatcaaggctggggccccatcagctacgccaacggaagcggccccgaacaccgcccttactgctggcactaccccccaaagccttgtggtatcgtgccggcacagagtgtatgtggcccagtgtattgcttcacccctagccccgtggtggtgggaacgaccgacagagcgggcgcgcctacctacaactggggtagcaatgacacggacgtcttcgtccttaacaacaccagaccaccgttgggcaattggttcggttgcacctggatgaactcatctggatttaccaaagtgtgcggagcgcctccttgtgtcatcggaggggtgggcaacaacaccttgcactgccccactgactgtttccgcaagcatccggaagccacatactctcggtgtggctccggaccctggatcacgcccaggtgtctagtccactactcctacagactttggcattatccttgtaccatcaattacaccctgttcaaagtcaggatgtacgtgggaggggtcgagcacaggctggaggttgcgtgcaactggacgcgaggcgagcgttgtgatctggacgacagggacaggtccgagctcagcccgctgctgctgtccaccacacagtggcaggtccttccatgttccttcacgaccttgccagctttgactaccggcctcatccacctccatcagaacatcgtagacgtgcagtatttgtacagggtggggtcaagcattgtgtcctgggccatcaagtgggagtatgtcatcctcttgttcctcctgctcgcagacgcgcgcatctgctcctgtctgtggatgatgttactcatatcccaagcggaggcg</GBSeq_sequence>
+</GBSeq>

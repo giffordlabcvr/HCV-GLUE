@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>5FLX_z</GBSeq_locus>
+  <GBSeq_length>504</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>13-JAN-2016</GBSeq_update-date>
+  <GBSeq_create-date>23-DEC-2015</GBSeq_create-date>
+  <GBSeq_definition>Chain z, Mammalian 40s Hcv-ires Complex</GBSeq_definition>
+  <GBSeq_primary-accession>5FLX_z</GBSeq_primary-accession>
+  <GBSeq_accession-version>5FLX_z</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>pdb|5FLX|ZZ</GBSeqid>
+    <GBSeqid>gi|969813081</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..504</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Yamamoto,H.</GBAuthor>
+        <GBAuthor>Collier,M.</GBAuthor>
+        <GBAuthor>Loerke,J.</GBAuthor>
+        <GBAuthor>Ismer,J.</GBAuthor>
+        <GBAuthor>Schmidt,A.</GBAuthor>
+        <GBAuthor>Hilal,T.</GBAuthor>
+        <GBAuthor>Sprink,T.</GBAuthor>
+        <GBAuthor>Yamamoto,K.</GBAuthor>
+        <GBAuthor>Mielke,T.</GBAuthor>
+        <GBAuthor>Burger,J.</GBAuthor>
+        <GBAuthor>Shaikh,T.R.</GBAuthor>
+        <GBAuthor>Dabrowski,M.</GBAuthor>
+        <GBAuthor>Hildebrand,P.W.</GBAuthor>
+        <GBAuthor>Scheerer,P.</GBAuthor>
+        <GBAuthor>Spahn,C.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Molecular architecture of the ribosome-bound Hepatitis C Virus internal ribosomal entry site RNA</GBReference_title>
+      <GBReference_journal>EMBO J. 34 (24), 3042-3058 (2015)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.15252/embj.201592469</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>26604301</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..504</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Yamamoto,H.</GBAuthor>
+        <GBAuthor>Collier,M.</GBAuthor>
+        <GBAuthor>Loerke,J.</GBAuthor>
+        <GBAuthor>Ismer,J.</GBAuthor>
+        <GBAuthor>Schmidt,A.</GBAuthor>
+        <GBAuthor>Hilal,T.</GBAuthor>
+        <GBAuthor>Sp,T.</GBAuthor>
+        <GBAuthor>Yamamoto,K.</GBAuthor>
+        <GBAuthor>Mielke,T.</GBAuthor>
+        <GBAuthor>Burger,J.</GBAuthor>
+        <GBAuthor>Shaikh,T.R.</GBAuthor>
+        <GBAuthor>Dabrowski,M.</GBAuthor>
+        <GBAuthor>Hil,P.W.</GBAuthor>
+        <GBAuthor>Scheerer,P.</GBAuthor>
+        <GBAuthor>Spahn,C.M.T.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (28-OCT-2015)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>35 Hcv-ires</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..504</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>504</GBInterval_to>
+          <GBInterval_accession>5FLX_z</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>other RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gccagccccctgatgggggcgacactccaccatgaatcactcccctgtgaggaactactgtcttcacgcagaaagcgtctagccatggcgttagtatgagtgtcgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggataaacccgctcaatgcctggagatttgggcgtgcccccgcaagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccatgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgtcgcccacaggacgtcaagttcccgggtggcggtctagacgccgagatcagaaatccctctctcggatcgcatttggacttctgccttcgggcaccacggtcggatccgaatt</GBSeq_sequence>
+</GBSeq>

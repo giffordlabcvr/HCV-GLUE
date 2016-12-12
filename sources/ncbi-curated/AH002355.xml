@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>SEG_HPCRNAA</GBSeq_locus>
+  <GBSeq_length>724</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>25-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>02-AUG-1993</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus RNA polymerase gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>AH002355</GBSeq_primary-accession>
+  <GBSeq_accession-version>AH002355.2</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AH002355.2|SEG_HPCRNAA</GBSeqid>
+    <GBSeqid>gi|342159786</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_secondary-accessions>
+    <GBSecondary-accn>M58406</GBSecondary-accn>
+    <GBSecondary-accn>M58407</GBSecondary-accn>
+  </GBSeq_secondary-accessions>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..724</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Han,J.H.</GBAuthor>
+        <GBAuthor>Shyamala,V.</GBAuthor>
+        <GBAuthor>Richman,K.H.</GBAuthor>
+        <GBAuthor>Brauer,M.J.</GBAuthor>
+        <GBAuthor>Irvine,B.</GBAuthor>
+        <GBAuthor>Urdea,M.S.</GBAuthor>
+        <GBAuthor>Tekamp-Olson,P.</GBAuthor>
+        <GBAuthor>Kuo,G.</GBAuthor>
+        <GBAuthor>Choo,Q.L.</GBAuthor>
+        <GBAuthor>Houghton,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Characterization of the terminal regions of hepatitis C viral RNA: identification of conserved sequences in the 5' untranslated region and poly(A) tails at the 3' end</GBReference_title>
+      <GBReference_journal>Proc. Natl. Acad. Sci. U.S.A. 88 (5), 1711-1715 (1991)</GBReference_journal>
+      <GBReference_pubmed>1705704</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>sites</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Han,J.H.</GBAuthor>
+        <GBAuthor>Houghton,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Group specific sequences and conserved secondary structures at the 3' end of HCV genome and its implication for viral replication</GBReference_title>
+      <GBReference_journal>Nucleic Acids Res. 20 (13), 3520 (1992)</GBReference_journal>
+      <GBReference_pubmed>1321416</GBReference_pubmed>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>On or before Jul 29, 2011 this sequence version replaced gi:329885, gi:329886, gi:329887.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..724</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>724</GBInterval_to>
+          <GBInterval_accession>AH002355.2</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gap</GBFeature_key>
+      <GBFeature_location>342..441</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>342</GBInterval_from>
+          <GBInterval_to>441</GBInterval_to>
+          <GBInterval_accession>AH002355.2</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>estimated_length</GBQualifier_name>
+          <GBQualifier_value>unknown</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;442..&gt;724</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>442</GBInterval_from>
+          <GBInterval_to>724</GBInterval_to>
+          <GBInterval_accession>AH002355.2</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>RNA polymerase</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAA45678.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>ALDCEIYGACYSIEPLDLPPIIQRLHGLSAFSLHSYSPGEINRVAACLRKLGVPPLRAWRHRARSVRARLLARGGRAAICGKYLFNWAVRTKLK</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gccagccccctgatgggggcgacactccaccatgaatcactcccctgtgaggaactactgtcttcacgcagaaagcgtctagccatggcgttagtatgagtgtcgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggatcaacccgctcaatgcctggagatttgggcgtgcccccgcaagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnngccctcgattgcgagatctacggggcctgctactccatagaaccacttgatctacctccaatcattcaaagactccatggcctcagcgcattttcactccacagttactctccaggtgaaattaatagggtggccgcatgcctcagaaaacttggggtaccgcccttgcgagcttggagacaccgggcccggagcgtccgcgctaggcttctggccagaggaggcagggctgccatatgtggcaagtacctcttcaactgggcagtaagaacaaagctcaaac</GBSeq_sequence>
+</GBSeq>

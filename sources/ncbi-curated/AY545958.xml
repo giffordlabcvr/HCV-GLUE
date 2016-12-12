@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AY545958</GBSeq_locus>
+  <GBSeq_length>1755</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>SYN</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>20-APR-2004</GBSeq_create-date>
+  <GBSeq_definition>Synthetic construct Ch129.11 E1E2 region of HCV polyprotein gene, complete cds</GBSeq_definition>
+  <GBSeq_primary-accession>AY545958</GBSeq_primary-accession>
+  <GBSeq_accession-version>AY545958.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AY545958.1|</GBSeqid>
+    <GBSeqid>gi|46403734</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>synthetic construct</GBSeq_source>
+  <GBSeq_organism>synthetic construct</GBSeq_organism>
+  <GBSeq_taxonomy>other sequences; artificial sequences</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1755</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>McKeating,J.A.</GBAuthor>
+        <GBAuthor>Zhang,L.</GBAuthor>
+        <GBAuthor>Logvinoff,C.</GBAuthor>
+        <GBAuthor>Flint,M.</GBAuthor>
+        <GBAuthor>Zhang,J.</GBAuthor>
+        <GBAuthor>Yu,J.</GBAuthor>
+        <GBAuthor>Butera,D.</GBAuthor>
+        <GBAuthor>Ho,D.D.</GBAuthor>
+        <GBAuthor>Dustin,L.B.</GBAuthor>
+        <GBAuthor>Rice,C.M.</GBAuthor>
+        <GBAuthor>Balfe,P.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Diverse hepatitis C virus glycoproteins mediate viral infection in a CD81-dependent manner</GBReference_title>
+      <GBReference_journal>J. Virol. 78 (16), 8496-8505 (2004)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1128/JVI.78.16.8496-8505.2004</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>15280458</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1755</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>McKeating,J.A.</GBAuthor>
+        <GBAuthor>Zhang,L.</GBAuthor>
+        <GBAuthor>Logvinoff,C.</GBAuthor>
+        <GBAuthor>Flint,M.</GBAuthor>
+        <GBAuthor>Zhang,J.</GBAuthor>
+        <GBAuthor>Yu,J.</GBAuthor>
+        <GBAuthor>Butera,D.</GBAuthor>
+        <GBAuthor>Ho,D.D.</GBAuthor>
+        <GBAuthor>Dustin,L.B.</GBAuthor>
+        <GBAuthor>Rice,C.M.</GBAuthor>
+        <GBAuthor>Balfe,P.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (10-FEB-2004) The Rockefeller University, Center for the Study of Hepatitis C, 1230 York Ave, New York, NY 10021, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>The first 23 and last 36 bases of this set of sequences are from the synthetic oligonucleotides used to generate these PCR products. Neither the start nor stop codons are naturally present in HCV.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1755</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1755</GBInterval_to>
+          <GBInterval_accession>AY545958.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>synthetic construct</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>other DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:32630</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>Ch129.11</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>focus</GBQualifier_name>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>24..1718</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>24</GBInterval_from>
+          <GBInterval_to>1718</GBInterval_to>
+          <GBInterval_accession>AY545958.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>other DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..1755</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1755</GBInterval_to>
+          <GBInterval_accession>AY545958.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>11</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E1E2 region of HCV polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAS92929.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MGCSFSIFLLALFSCLTCPASGLEYRNTSGLYMLTNDCSNRSIVYEADEVILHLPGCVPCVTTGNQTSCWTPVSPTVAVKYLGATTASIRSHVDMLVGAATLCSALYVGDLCGAVFLVGQAFTFRPRRHMTVQTCNCSIYPGHISGHRMAWDMMMNWSPAVGLAISHLMRLPQTLFDMFAGAHWGVMAGLAYFSMQGNWAKVAIVLIMFSGVDASTRITGGAAAHSVGGFTSLFTRGPSQKLQLVNSNGSWHINSTALNCNDSLNTGFIAGLLYYHKFNSSGCSERMSSCRPVTDFMQGWGPLTDANITGPSEDRPYCWHYPPKPCFTXEAQKVCGPVYCFTPSPVVVGTTDIKGLPTYNFGGNESDVFLLTSLRPPQGQWFGCVWMNTTGFVKTCGAPPCNIYGGMEDTEGNQTFLKCPTDCFRKHPDATYARCGSGAWLTPRCLVDYPYRLWHYPCTQNFTIFKVRMFVGGLEHRFSAACNWTRGERCDLEDRDRSELHPLLHSTTEFAILPCSFTPMPALSSGLIHLHQNIVGVQYLYGVGSGIVGWALKWEFVVLVFLLLADARVCVALWMMLLISQAEA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>primer_bind</GBFeature_key>
+      <GBFeature_location>1..23</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>23</GBInterval_to>
+          <GBInterval_accession>AY545958.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>primer_bind</GBFeature_key>
+      <GBFeature_location>complement(1719..1755)</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1755</GBInterval_from>
+          <GBInterval_to>1719</GBInterval_to>
+          <GBInterval_iscomp value="true"/>
+          <GBInterval_accession>AY545958.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgggttgctctttctctatcttcctcctcgctctcttttcttgcttgacttgccccgcgtctggtctagagtacaggaacacgtctggcctatatatgctcaccaacgactgctctaacaggagcatcgtgtatgaggccgacgaagtgatcttgcacttacccggatgcgtaccctgcgtcacaaccggcaaccaaacatcgtgctggacacctgtttcaccgacggtagccgtcaagtaccttggcgcgaccaccgcgtcaatccgcagtcatgtggatatgttggtgggcgcggccacgttgtgctcagcattatacgtcggggacctctgcggggctgtgttccttgtggggcaagcattcaccttcaggccccgccggcacatgactgtacagacgtgcaactgctcgatatacccaggtcacatttcaggacatcgtatggcgtgggatatgatgatgaactggtcccctgcggttgggttagcgatatcacacctgatgcggttgcctcaaactctttttgacatgtttgcaggggcccactggggcgtgatggcaggcctcgcctatttttccatgcaaggcaattgggctaaggttgccatcgtgctaattatgttctcaggagtggacgcgagcacacgcatcaccggcggtgccgcggctcacagcgtcggcggcttcacaagcctgttcacccggggcccgagccagaagctgcaattggtgaattccaatggctcgtggcatattaacagcactgccctgaattgcaacgattccctaaataccgggttcatagcagggcttttgtactaccataagtttaattccagtgggtgttcagagcgaatgtccagctgcaggcccgtcacggacttcatgcagggatggggtccgctgacagatgccaacataaccggccccagtgaggacagaccatattgctggcactacccacctaaaccctgcttcacagntgaagcgcagaaggtctgcgggcctgtctactgctttacaccatcaccggtggtggtgggcaccactgatatcaaaggcctaccaacttacaactttggtgggaatgagtcagatgtcttcttgctgacctccctgaggcccccccaaggccagtggtttggatgtgtgtggatgaacactacagggtttgtaaaaacctgcggggctcccccttgtaacatctatggggggatggaggacactgaaggaaatcaaaccttccttaagtgccctaccgactgtttcaggaagcaccccgatgccacgtatgcccgctgcgggtctggagcctggcttacaccgaggtgtctagtagactacccgtaccggctgtggcattatccctgcacccaaaacttcaccatattcaaagtcaggatgtttgtaggagggttggagcatcggttctcagctgcctgcaactggacgaggggggagcgctgcgatcttgaagatcgtgatcgcagcgagctacatccactgctccactcaacgactgaattcgccatattaccatgctcattcacgcccatgcccgctttgtcatcaggactcatacacctccaccagaacattgtgggcgtgcaatacctctacggtgttgggtctggtatagtgggctgggctctcaagtgggagttcgtcgtcctcgttttcctccttctggcagacgcacgcgtgtgtgtggccctctggatgatgttactgatttctcaggcggaagcatag</GBSeq_sequence>
+</GBSeq>

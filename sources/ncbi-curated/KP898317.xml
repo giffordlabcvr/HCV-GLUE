@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KP898317</GBSeq_locus>
+  <GBSeq_length>694</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>cRNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>01-SEP-2015</GBSeq_update-date>
+  <GBSeq_create-date>01-SEP-2015</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus strain 2017 NS3/4A gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KP898317</GBSeq_primary-accession>
+  <GBSeq_accession-version>KP898317.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KP898317.1|</GBSeqid>
+    <GBSeqid>gi|922980694</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..694</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Paolucci,S.</GBAuthor>
+        <GBAuthor>Fiorina,L.</GBAuthor>
+        <GBAuthor>Mariani,B.</GBAuthor>
+        <GBAuthor>Landini,V.</GBAuthor>
+        <GBAuthor>Gulminetti,R.</GBAuthor>
+        <GBAuthor>Novati,S.</GBAuthor>
+        <GBAuthor>Maserati,R.</GBAuthor>
+        <GBAuthor>Barbarini,G.</GBAuthor>
+        <GBAuthor>Bruno,R.</GBAuthor>
+        <GBAuthor>Baldanti,F.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Development and Persistence of DAA Resistance Associated Mutations in Patient Failing HCV Treatment</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..694</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Paolucci,S.</GBAuthor>
+        <GBAuthor>Fiorina,L.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (05-MAR-2015) Virology and Microbiology, Fondazione IRCCS Policlinico San Matteo, via taramelli 5, Pavia, PV 27100, Italy</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..694</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>694</GBInterval_to>
+          <GBInterval_accession>KP898317.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>viral cRNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>2017</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Italy</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2014</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1b</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>sample of patient treated with boceprevir after 4weeks</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;694</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>694</GBInterval_to>
+          <GBInterval_accession>KP898317.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>protease</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3/4A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ALB00925.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>QTRGLLGCIITSLTGRDKNQVEGEVQVVSTATQSFLATCVNGVCWTVYHGAGSKTLAGPKGPITQMYTNVDQDLVGWQAPPGARSLTPCTCGSSDLYLVTRHADVIPVRRRGDSRGSLLSPRPISYLKGSSGGPLLCPSGHLVGIFRAAVCTRGVAKAVDFVPIESMETTMRSPVFTDNSSPPAVPQTFQVAHLHAPTGSGKSTKVPAAYAAQGYKVLVLNPSVAATLGFG</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>caaacgcggggtctacttggctgtatcatcactagcctcacaggccgggacaagaaccaggtcgagggggaggtccaagtggtttccaccgcgacacagtctttcctggcgacctgcgtcaacggtgtgtgttggactgtctatcatggtgccggctcgaagaccctagccggcccaaaaggcccgatcactcagatgtacactaatgtggaccaggacctcgtcggctggcaggcgccccctggggcgcgctccttgacaccgtgcacctgcggcagctcggacctttacttggtcacgaggcacgccgatgtcattccggtgcgccggcggggcgacagcaggggaagtctactctctcccaggcccatctcctacctgaagggctcttcgggtggtccactgctttgcccctcggggcaccttgtgggcatcttccgggctgccgtgtgcacccggggggttgcgaaggcggtggacttcgtacccattgagtccatggaaactacaatgcggtccccggtcttcacggacaattcgtcccctccggccgtaccgcagacatttcaagtggcccatctccacgcccccactggcagcggcaagagcactaaggtgccggctgcgtatgcagcccaagggtacaaggtactcgtcctgaacccgtccgttgccgctaccttaggtttcgggg</GBSeq_sequence>
+</GBSeq>

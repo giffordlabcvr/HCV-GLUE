@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DD290356</GBSeq_locus>
+  <GBSeq_length>783</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>16-AUG-2006</GBSeq_update-date>
+  <GBSeq_create-date>16-AUG-2006</GBSeq_create-date>
+  <GBSeq_definition>Recombinant DIs comprising a DNA that encodes HCV virus protein, and use thereof</GBSeq_definition>
+  <GBSeq_primary-accession>DD290356</GBSeq_primary-accession>
+  <GBSeq_accession-version>DD290356.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|DD290356.1|</GBSeqid>
+    <GBSeqid>pat|WO|2006013815|16</GBSeqid>
+    <GBSeqid>gi|112707675</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>WO 2006013815-A/16</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..783</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Ishii,K.</GBAuthor>
+        <GBAuthor>Suzuki,T.</GBAuthor>
+        <GBAuthor>Miyamura,T.</GBAuthor>
+        <GBAuthor>Machida,S.</GBAuthor>
+        <GBAuthor>Matsuura,Y.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Recombinant DIs comprising a DNA that encodes HCV virus protein, and use thereof</GBReference_title>
+      <GBReference_journal>Patent: WO 2006013815-A 16 09-FEB-2006; THE JAPAN HEALTH SCIENCES FOUNDATION</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Hepatitis C virus~PN WO 2006013815-A/16~PD 09-FEB-2006~PF 01-AUG-2005 WO 2005JP014027~PR 02-AUG-2004 JP 200 4-225043~PI koji ishii,tetsuro suzuki,tatsuo miyamura,sanae machida, PI yoshiharu matsuura~CC~FH Key Location/Qualifiers</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..783</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>783</GBInterval_to>
+          <GBInterval_accession>DD290356.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gcctcgcacctcccttacatcgaacaaggaatgcagctcgccgagcaattcaagcagaaggcgctcggtttgctgcaaacagccaccaagcaagcggaggctgctgctcccgtggtggagtccaagtggcgagcccttgagaccttctgggcgaagcacatgtggaatttcatcagcgggatacagtacttagcaggcttgtccactctgcctggaaaccccgcaatagcatcactgatggcattcacagcctctatcaccagcccgctcgccacccaatataccctcctgtttaacatcttggggggatgggtggccgcccaactcgccccccccagtgccgcttcagccttcgtgggcgccggtatagctggcgcggctgttggcagcataggcctcgggaaggtgcttgtggacattctggcgggttatggagcaggggtggcaggcgcgctcgtggcctttaaggtcatgagcggtgacatgccctccaccgaggacctggtcaacttactccccgccatcctctctcctggtgccctggtcgtcggggtcgtgtgcgcagcaatactgcgtcggcatgtgggcccaggggagggggctgtgcagtggatgaaccggctgatagcgtttgcttcgcggggcaaccatgtctcccccacgcactatgtgcctgaaagcgacgccgcagcgcgcgtcacccagatcctctccaaccttaccatcactcagctgttgaagaggcttcaccagtggattaatgaggactgctccacgccatgc</GBSeq_sequence>
+</GBSeq>

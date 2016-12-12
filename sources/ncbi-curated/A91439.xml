@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>A91439</GBSeq_locus>
+  <GBSeq_length>1270</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>circular</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>23-JAN-2000</GBSeq_update-date>
+  <GBSeq_create-date>22-JAN-2000</GBSeq_create-date>
+  <GBSeq_definition>Sequence 1 from Patent WO9825960</GBSeq_definition>
+  <GBSeq_primary-accession>A91439</GBSeq_primary-accession>
+  <GBSeq_accession-version>A91439.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|A91439.1|</GBSeqid>
+    <GBSeqid>pat|WO|9825960|1</GBSeqid>
+    <GBSeqid>gi|6740404</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1270</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Barro,A.M.</GBAuthor>
+        <GBAuthor>Duenas,C.S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>SEQUENCES DERIVED FROM THE GENOME OF THE C HEPATITIS VIRUS, AND USE THEREOF</GBReference_title>
+      <GBReference_journal>Patent: WO 9825960-A1 1 18-JUN-1998; BARRO ALVAREZ MARIO LIVAN (CU); DUENAS CARRERA SANTIAGO (CU)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1270</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1270</GBInterval_to>
+          <GBInterval_accession>A91439.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>CU-HCV</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>PATIENT #23302</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>PCOE1-2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>tissue_type</GBQualifier_name>
+          <GBQualifier_value>BLOOD</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone_lib</GBQualifier_name>
+          <GBQualifier_value>ADNC-PCR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ggaactactgtcttcacgcagaaagcgtctagccatggcgttagtatgagtgttgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggatcaacccgctcaatgcctggagatttgggcgtgcccccgcgagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccatgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgcccacaggacgtcaagttcccgggcggtggtcagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcaactaggaagacttccgagcggtcgcaacctcgtggaaggcgacaacctatccccaaggctcgccggcccgagggcaggtcctgggcccagcccgggtacccttggcccctctatggtaacgagggcatgggatgggcaggatggctcctgtcaccccgtggctctcggcctagttggggccccactgacccccggcgtaggtcgcgtaatttgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgctcgtcggcgcccccctagggggcgctgccagggccctggcgcatggcgtccgggttctggaggacggcgtgaattatgcaacagggaatctgcccggttgctctttctctctcttccttttggctttgctgtcctgtttgaccatcccagtttccgcctatgaagtgcgcaacgcgtccggggtgtaccatgtcacgaacgactgctccaactcaagcattgtgtatgaggcagacgacatgatcatgcacacccccggatgcgtgccctgcgttcgggaggacaacacctcccgctgctgggtagcgctcacccccacactcgcggccaggaatgccagcgtccccaccacgacaatacgacgccacgtcgatttgctcgttggggcggctgctctctgctccgctatgtacgtgggggatctctgcggatctgttttcctcgtttcccagctgttcaccttctcgcctcgccggcatgagacagcacaggactgcaactgctcaatctatcccggccacgtatcaggtcaccgcatggcctgggatatgatgatgaactggt</GBSeq_sequence>
+</GBSeq>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>JN981180</GBSeq_locus>
+  <GBSeq_length>573</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>08-AUG-2012</GBSeq_update-date>
+  <GBSeq_create-date>20-MAR-2012</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus clone sc1-core-13 core protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>JN981180</GBSeq_primary-accession>
+  <GBSeq_accession-version>JN981180.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|JN981180.1|</GBSeqid>
+    <GBSeqid>gi|380007901</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Xu,C.H.</GBAuthor>
+        <GBAuthor>Shen,T.</GBAuthor>
+        <GBAuthor>Zheng,J.J.</GBAuthor>
+        <GBAuthor>Tu,J.</GBAuthor>
+        <GBAuthor>Zhang,W.D.</GBAuthor>
+        <GBAuthor>Lu,F.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Higher dN/dS ratios in the HCV core gene, but not in the E1/HVR1 gene, are associated with human immunodeficiency virus-associated immunosuppression</GBReference_title>
+      <GBReference_journal>Arch. Virol. (2012) In press</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1007/s00705-012-1390-z</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>22825695</GBReference_pubmed>
+      <GBReference_remark>Publication Status: Available-Online prior to print</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Xu,C.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (29-OCT-2011) Department of Microbiology, Peking University Health Science Center, Xueyuan Rd. Haidian District, Beijing, Beijing 100191, China</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>JN981180.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>sc1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>sc1-core-13</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>China</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>25-Aug-2009</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>PCR_primers</GBQualifier_name>
+          <GBQualifier_value>fwd_name: p1-core, fwd_seq: gcgaaaggccttctggta, rev_name: p2-core, rev_seq: cgcacggcacgcacccggg</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>PCR_primers</GBQualifier_name>
+          <GBQualifier_value>fwd_name: p1-core, fwd_seq: gcgaaaggccttctggta, rev_name: p3-core, rev_seq: ccgcagagrtcycccacgta</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>JN981180.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AFD29909.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQGVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRPEGRTWAQPGYPWPLYGNEGMGWAGWLLSPRGSRPSWGPSDPRRRSRNLGKVIDTLTCGFADLMGYIPVVGAPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTVPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgcccacagggcgtcaagttcccgggcggtggccagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggtcacaacctcgtggaaggcgacaacctatccccaaggctcgccgtcccgagggcaggacctgggcgcagcccgggtacccttggcccctctatggcaatgagggcatggggtgggcaggatggctcctgtcaccccgaggctctcggcctagttggggcccctcggacccccggcgtaggtcgcgtaatctgggtaaggtcatcgacaccctcacatgcggcttcgccgacctcatggggtacattccggtcgtcggcgcccccctagggggcgccgccagggccctggcacatggtgtccgggttctggaggacggcgtgaactatgcaacagggaatttgcccggttgctctttttctatcttccttttggctttgctatcctgcttgaccgtcccagcttctgcc</GBSeq_sequence>
+</GBSeq>

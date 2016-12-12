@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AX774443</GBSeq_locus>
+  <GBSeq_length>885</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>09-JUL-2003</GBSeq_update-date>
+  <GBSeq_create-date>09-JUL-2003</GBSeq_create-date>
+  <GBSeq_definition>Sequence 1 from Patent EP1318401</GBSeq_definition>
+  <GBSeq_primary-accession>AX774443</GBSeq_primary-accession>
+  <GBSeq_accession-version>AX774443.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|AX774443.1|</GBSeqid>
+    <GBSeqid>pat|EP|1318401|1</GBSeqid>
+    <GBSeqid>gi|32486095</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Seidel,C.</GBAuthor>
+        <GBAuthor>Wienhues,U.H.</GBAuthor>
+        <GBAuthor>Schmitt,U.</GBAuthor>
+        <GBAuthor>Motz,M.</GBAuthor>
+        <GBAuthor>Wiedmann,M.</GBAuthor>
+        <GBAuthor>Upmeier,B.</GBAuthor>
+        <GBAuthor>Soutschek,E.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Method for the early detection of the seroconversion of an anti Hepatitis C virus antibody</GBReference_title>
+      <GBReference_journal>Patent: EP 1318401-A2 1 11-JUN-2003; Roche Diagnostics GmbH (DE)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..885</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>885</GBInterval_to>
+          <GBInterval_accession>AX774443.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;885</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>885</GBInterval_to>
+          <GBInterval_accession>AX774443.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>unnamed protein product</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>CAE06496.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MTMITNSRGSIMKSPVFTDNSSPPVVPQSFQVAHLHAPTGSGKSTKVPAAYAAQGYKVLVLNPSVAATLGFGAYMSKAHGIDPNIRTGVRTITTGSPITYSTYGKFLADGGCAGGAYDIIICDECHSTDATSILGIGTVLDQGETAGAKLVVFATATPPGSVTVPHPNIEEVALSTTGEIPFYGKAIPLEVIKGGRHLIFCHSKRKCDELATKLVAMGINAVAYYRGLDVSVIPTSGDVVVVATDALMTGYTGDFDSVIDCNTCVTQTVDFSLDPTFTIETTTLPQDAVSRTQRR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgaccatgattacgaattcccggggatccatcatgaaatccccggtgttcacggataactcctctccaccggtagtgccccagagcttccaggtggctcacctgcatgctcccacaggcagcggcaagagcaccaaggtcccggctgcatacgcagctcagggctacaaggtgctagtgctcaacccttctgttgctgcaacattgggctttggtgcctacatgtccaaggctcatgggatcgatcctaacatcaggaccggggtgagaacaattaccactggcagccccattacgtactccacttacggcaagtttcttgccgacggcgggtgcgcagggggtgcttatgacataataatttgtgacgagtgccactccacggatgccacatccatcttgggcatcggcactgtccttgaccaaggagagactgcgggggcgaaattggttgtgttcgccaccgccacccctccgggctccgtcactgtgccccatcccaacattgaggaggttgctctatccaccaccggagagatccctttttacggcaaggctatcccccttgaggtaatcaagggggggagacatctcatcttctgtcattcaaagaggaagtgcgatgagctcgccacaaagctggtcgcaatgggcatcaatgccgtggcctactaccgcggtcttgacgtgtccgtcatcccgaccagcggtgatgttgtcgtcgtggcaaccgacgccctcatgaccggctataccggcgacttcgactcggtgatagactgcaacacgtgtgtcactcagacagtcgatttcagccttgaccctaccttcaccattgagacgaccacacttccccaggatgctgtctcccgcactcaacgacgg</GBSeq_sequence>
+</GBSeq>

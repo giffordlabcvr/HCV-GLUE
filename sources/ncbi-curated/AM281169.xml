@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AM281169</GBSeq_locus>
+  <GBSeq_length>743</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>20-DEC-2006</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 1b partial genomic RNA for partial gene for polyprotein, NS5a region, isolate NC23T0, variant 24</GBSeq_definition>
+  <GBSeq_primary-accession>AM281169</GBSeq_primary-accession>
+  <GBSeq_accession-version>AM281169.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|AM281169.1|</GBSeqid>
+    <GBSeqid>gi|119706618</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>ns5a gene</GBKeyword>
+    <GBKeyword>NS5A protein</GBKeyword>
+    <GBKeyword>polyprotein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus subtype 1b</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 1b</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Jimenez-Hernandez,N.</GBAuthor>
+        <GBAuthor>Torres-Puente,M.</GBAuthor>
+        <GBAuthor>Bracho,M.A.</GBAuthor>
+        <GBAuthor>Garcia-Robles,I.</GBAuthor>
+        <GBAuthor>Ortega,E.</GBAuthor>
+        <GBAuthor>del Olmo,J.</GBAuthor>
+        <GBAuthor>Carnicer,F.</GBAuthor>
+        <GBAuthor>Gonzalez-Candelas,F.</GBAuthor>
+        <GBAuthor>Moya,A.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Epidemic dynamics of two coexisting hepatitis C virus subtypes</GBReference_title>
+      <GBReference_journal>J. Gen. Virol. 88 (PT 1), 123-133 (2007)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1099/vir.0.82277-0</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>17170444</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..743</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Jimenez,N.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (18-MAY-2006) Jimenez N., Genetica evolutiva, Instituto Cavanilles de Biodiversidad y, Poligono de la coma s/n, Edificio Institutos, Valencia, 46071, SPAIN</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..743</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>743</GBInterval_to>
+          <GBInterval_accession>AM281169.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 1b</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>NC23T0</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:31647</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>NC23T0cg</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Spain:Valencia</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>frequency</GBQualifier_name>
+          <GBQualifier_value>.012</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>variant 24; interferon and ribavirin treatment time=0</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;743</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>743</GBInterval_to>
+          <GBInterval_accession>AM281169.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>CAK52964.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>GOA:A1JD32</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR013193</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>UniProtKB/TrEMBL:A1JD32</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>PLLREEVTFQVGLNQYLVGSQLPCEPEPDVTVLTSMLTDPSHITAEAAKRRLARGSTPSMASSSASQLSAPSLKATCTACQDSPDADLIEASLLWRQHMGGDITRVESESKVVFLDSFVPLRVEEDEREVSTAAEILRKSKRFPPALPAWARPDYNPPLLESWKDPDYVPPVVHGCPLPPTKSPPVPPPRRKRTVVLTESTVPSALAELAKKTFSSSGSPAIDSGTATAPPDQPSTDGDAGSDVESY</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;743</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>743</GBInterval_to>
+          <GBInterval_accession>AM281169.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5A protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>ns5a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>PLLREEVTFQVGLNQYLVGSQLPCEPEPDVTVLTSMLTDPSHITAEAAKRRLARGSTPSMASSSASQLSAPSLKATCTACQDSPDADLIEASLLWRQHMGGDITRVESESKVVFLDSFVPLRVEEDEREVSTAAEILRKSKRFPPALPAWARPDYNPPLLESWKDPDYVPPVVHGCPLPPTKSPPVPPPRRKRTVVLTESTVPSALAELAKKTFSSSGSPAIDSGTATAPPDQPSTDGDAGSDVESY</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>aacctctcctgcgggaggaggtcacattccaggtcgggctcaatcaatacctggttgggtcacagctcccctgtgagcccgaaccggatgtgacagtgctcacttccatgcttaccgacccctcccatatcacagcagaggcggctaagcgtagactggctagggggtctaccccctccatggccagctcttcagctagccagctgtctgcgccttccttgaaggcgacatgcactgcctgtcaagactccccagatgctgacctcatcgaggctagcctcctgtggcggcagcacatgggcggagacatcacccgtgtggagtcagagagtaaggtggtattcttggactctttcgttccgctccgggtggaggaggatgagagggaagtgtccactgcagcagagatcctgcggaaatccaagagattccccccggcgttgcccgcttgggcacgcccggattacaaccctccactgctagagtcctggaaggacccggactacgtccctccggtggtacacgggtgcccattgccacctaccaagagccccccggtaccgcctccacggaggaagaggacggttgtcctgacggaatccactgtaccttctgccttggcggagctcgctaaaaagaccttcagcagctccggatcgccggccatcgacagcggcacggcgaccgctcctcctgaccagccctccaccgacggcgacgcaggatccgacgttgagtcgtac</GBSeq_sequence>
+</GBSeq>

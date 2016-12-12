@@ -6,7 +6,7 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>02-APR-2007</GBSeq_update-date>
+  <GBSeq_update-date>20-JUL-2016</GBSeq_update-date>
   <GBSeq_create-date>02-APR-2007</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus partial gene for polyprotein, recombinant 2/5, genomic RNA</GBSeq_definition>
   <GBSeq_primary-accession>AM408911</GBSeq_primary-accession>
@@ -184,10 +184,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>CAL68576.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:138754353</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>db_xref</GBQualifier_name>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>JC241942</GBSeq_locus>
+  <GBSeq_length>576</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>04-FEB-2014</GBSeq_update-date>
+  <GBSeq_create-date>04-FEB-2014</GBSeq_create-date>
+  <GBSeq_definition>Sequence 88 from Patent EP2583974</GBSeq_definition>
+  <GBSeq_primary-accession>JC241942</GBSeq_primary-accession>
+  <GBSeq_accession-version>JC241942.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|JC241942.1|</GBSeqid>
+    <GBSeqid>pat|EP|2583974|88</GBSeqid>
+    <GBSeqid>gi|582009368</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>LINDEMANN,D.</GBAuthor>
+        <GBAuthor>HO,Y.</GBAuthor>
+        <GBAuthor>SCHNABEL,V.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Pseudotyping of foamy viruses</GBReference_title>
+      <GBReference_journal>Patent: EP 2583974-A1 88 24-APR-2013; UNIV DRESDEN TECH [DE]</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..576</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>576</GBInterval_to>
+          <GBInterval_accession>JC241942.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>1..576</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>576</GBInterval_to>
+          <GBInterval_accession>JC241942.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>Sequence in description</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>taccaagtgcgcaattcctcggggctttaccatgtcaccaatgattgccctaactcgagtattgtgtacgaggcggccgatgccatcctgcacactccggggtgtgtcccttgcgttcgcgagggtaacgcctcgaggtgttgggtggcggtgacccccacggtggccaccagggacggcaaactccccacaacgcagcttcgacgtcatatcgatctgcttgtcgggagcgccaccctctgctcggccctctacgtgggggacctgtgcgggtctgtctttcttgttggtcaactgtttaccttctctcccaggcgccactggacgacgcaagactgcaattgttctatctatcccggccatataacgggtcatcgcatggcatgggatatgatgatgaactggtcccctacggcagcgttggtggtagctcagctgctccggatcccacaagccatcatggacatgatcgctggtgctcactggggagtcctggcgggcatagcgtatttctccatggtggggaactgggcgaaggtcctggtagtgctgctgctatttgccggcgtcgacgcg</GBSeq_sequence>
+</GBSeq>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>JN642745</GBSeq_locus>
+  <GBSeq_length>611</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>13-AUG-2012</GBSeq_update-date>
+  <GBSeq_create-date>13-AUG-2012</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate MO370196 core protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>JN642745</GBSeq_primary-accession>
+  <GBSeq_accession-version>JN642745.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|JN642745.1|</GBSeqid>
+    <GBSeqid>gi|378757399</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..611</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Njouom,R.</GBAuthor>
+        <GBAuthor>Caron,M.</GBAuthor>
+        <GBAuthor>Besson,G.</GBAuthor>
+        <GBAuthor>Ndong-Atome,G.R.</GBAuthor>
+        <GBAuthor>Makuwa,M.</GBAuthor>
+        <GBAuthor>Pouillot,R.</GBAuthor>
+        <GBAuthor>Nkoghe,D.</GBAuthor>
+        <GBAuthor>Leroy,E.</GBAuthor>
+        <GBAuthor>Kazanji,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Phylogeography, risk factors and genetic history of hepatitis C virus in Gabon, central Africa</GBReference_title>
+      <GBReference_journal>PLoS ONE 7 (8), E42002 (2012)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1371/journal.pone.0042002</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>22870274</GBReference_pubmed>
+      <GBReference_remark>Publication Status: Online-Only</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..611</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Caron,M.</GBAuthor>
+        <GBAuthor>Kazanji,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (01-SEP-2011) Retrovirology, CIRMF, BP 769, Franceville, Gabon</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..611</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>611</GBInterval_to>
+          <GBInterval_accession>JN642745.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>MO370196</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>plasma</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Gabon</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2006</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>subtype</GBQualifier_name>
+          <GBQualifier_value>4</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>8..&gt;611</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>8</GBInterval_from>
+          <GBInterval_to>611</GBInterval_to>
+          <GBInterval_accession>JN642745.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AFC38011.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYVLPRRGPKLGVRATRKTSERSQPRGRRQPIPKARRSEGRSWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFLLALLSCLTVPTSAFNYRNSSGVY</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gtgcaccatgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgccccatggacgttaagttcccgggcggtggccagatcgttggcggagtttacgtgttgccgcgcaggggccccaagttgggtgtgcgcgcgactaggaagacttcggagcggtcgcaacctcgtgggagacgtcagcctatccccaaggcgcgtcgatctgagggaaggtcctgggctcagcccgggtacccatggcccctttacggtaatgaggggtgcgggtgggcaggatggctcctgtcaccccgtggctctcgaccgtcttggggcccaaatgatccccggcgaaggtcccgtaatttgggtaaggtcatcgataccctaacttgcggctttgccgacctcatgggatacatcccgctcgtaggcgcccccgtaggtggcgttgccagggccttagcacatggtgttagggctgtggaggacgggattaattatgcaacagggaatcttcccggttgctctttctctatcttcctcttggcacttctttcgtgcctgactgttcccacctcggccttcaactatcgcaattcctcgggcgtctatc</GBSeq_sequence>
+</GBSeq>

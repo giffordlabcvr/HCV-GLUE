@@ -6,15 +6,15 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>10-FEB-2015</GBSeq_update-date>
+  <GBSeq_update-date>17-JUN-2016</GBSeq_update-date>
   <GBSeq_create-date>09-AUG-1997</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus genotype 1, complete genome</GBSeq_definition>
   <GBSeq_primary-accession>NC_004102</GBSeq_primary-accession>
   <GBSeq_accession-version>NC_004102.1</GBSeq_accession-version>
   <GBSeq_other-seqids>
     <GBSeqid>ref|NC_004102.1|</GBSeqid>
-    <GBSeqid>gnl|NCBI_GENOMES|16556</GBSeqid>
     <GBSeqid>gi|22129792</GBSeqid>
+    <GBSeqid>gnl|NCBI_GENOMES|16556</GBSeqid>
   </GBSeq_other-seqids>
   <GBSeq_project>PRJNA15432</GBSeq_project>
   <GBSeq_keywords>
@@ -69,7 +69,7 @@
       <GBReference_journal>Submitted (19-JUN-1997) Molecular Microbiology, Washington University School of Medicine, 660 South Euclid Ave., St. Louis, MO 63110-1093, USA</GBReference_journal>
     </GBReference>
   </GBSeq_references>
-  <GBSeq_comment>VALIDATED REFSEQ: This record has undergone validation or preliminary review. The reference sequence was derived from AF009606.; The mature peptides have been annotated by the NCBI staff using the data from current literature as well as other annotations available for this virus; COMPLETENESS: full length.</GBSeq_comment>
+  <GBSeq_comment>REVIEWED REFSEQ: This record has been curated by NCBI staff. The reference sequence was derived from AF009606.; The mature peptides have been annotated by the NCBI staff using the data from current literature as well as other annotations available for this virus; COMPLETENESS: full length.</GBSeq_comment>
   <GBSeq_feature-table>
     <GBFeature>
       <GBFeature_key>source</GBFeature_key>
@@ -173,10 +173,6 @@
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:22129793</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
           <GBQualifier_value>GeneID:951475</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
@@ -213,10 +209,6 @@
           <GBQualifier_value>NP_751919.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053621</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
           <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRPEGRTWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPTDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTVPASA</GBQualifier_value>
         </GBQualifier>
@@ -248,10 +240,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>NP_751920.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053622</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
@@ -287,10 +275,6 @@
           <GBQualifier_value>NP_751921.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053623</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
           <GBQualifier_value>ETHVTGGSAGRTTAGLVGLLTPGAKQNIQLINTNGSWHINSTALNCNESLNTGWLAGLFYQHKFNSSGCPERLASCRRLTDFAQGWGPISYANGSGLDERPYCWHYPPRPCGIVPAKSVCGPVYCFTPSPVVVGTTDRSGAPTYSWGANDTDVFVLNNTRPPLGNWFGCTWMNSTGFTKVCGAPPCVIGGVGNNTLLCPTDCFRKHPEATYSRCGSGPWITPRCMVDYPYRLWHYPCTINYTIFKVRMYVGGVEHRLEAACNWTRGERCDLEDRDRSELSPLLLSTTQWQVLPCSFTTLPALSTGLIHLHQNIVDVQYLYGVGSSIASWAIKWEYVVLLFLLLADARVCSCLWMMLLISQAEA</GBQualifier_value>
         </GBQualifier>
@@ -322,10 +306,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>NP_751922.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053624</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
@@ -361,10 +341,6 @@
           <GBQualifier_value>NP_751923.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053625</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
           <GBQualifier_value>LDTEVAASCGGVVLVGLMALTLSPYYKRYISWCMWWLQYFLTRVEAQLHVWVPPLNVRGGRDAVILLMCVVHPTLVFDITKLLLAIFGPLWILQASLLKVPYFVRVQGLLRICALARKIAGGHYVQMAIIKLGALTGTYVYNHLTPLRDWAHNGLRDLAVAVEPVVFSRMETKLITWGADTAACGDIINGLPVSARRGQEILLGPADGMVSKGWRLL</GBQualifier_value>
         </GBQualifier>
@@ -396,10 +372,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>NP_803144.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:28921568</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
@@ -435,10 +407,6 @@
           <GBQualifier_value>NP_751925.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053627</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
           <GBQualifier_value>STWVLVGGVLAALAAYCLSTGCVVIVGRIVLSGKPAIIPDREVLYQEFDEMEEC</GBQualifier_value>
         </GBQualifier>
@@ -470,10 +438,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>NP_751926.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053628</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
@@ -509,10 +473,6 @@
           <GBQualifier_value>NP_751927.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053629</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
           <GBQualifier_value>SGSWLRDIWDWICEVLSDFKTWLKAKLMPQLPGIPFVSCQRGYRGVWRGDGIMHTRCHCGAEITGHVKNGTMRIVGPRTCRNMWSGTFPINAYTTGPCTPLPAPNYKFALWRVSAEEYVEIRRVGDFHYVSGMTTDNLKCPCQIPSPEFFTELDGVRLHRFAPPCKPLLREEVSFRVGLHEYPVGSQLPCEPEPDVAVLTSMLTDPSHITAEAAGRRLARGSPPSMASSSASQLSAPSLKATCTANHDSPDAELIEANLLWRQEMGGNITRVESENKVVILDSFDPLVAEEDEREVSVPAEILRKSRRFARALPVWARPDYNPPLVETWKKPDYEPPVVHGCPLPPPRSPPVPPPRKKRTVVLTESTLSTALAELATKSFGSSSTSGITGDNTTTSSEPAPSGCPPDSDVESYSSMPPLEGEPGDPDLSDGSWSTVSSGADTEDVVCC</GBQualifier_value>
         </GBQualifier>
@@ -540,10 +500,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>NP_751928.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:26053630</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>peptide</GBQualifier_name>
@@ -618,14 +574,45 @@
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:28921567</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
           <GBQualifier_value>GeneID:951476</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKPNVTPTVAHRTSSSRVAVRSLVEFTCCRAGALDWVCARRGRLPSGRNLEVDVSLSPRHVGPRAGPGLSPGTLGPSMAMRVAGGRDGSCLPVALGLAGAPQTPGVGRAIWVRSSIPLRAASPTSWGTYRSSAPLLEALPGPWRMASGFWKTA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>join(342..369,371..825)</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>342</GBInterval_from>
+          <GBInterval_to>369</GBInterval_to>
+          <GBInterval_accession>NC_004102.1</GBInterval_accession>
+        </GBInterval>
+        <GBInterval>
+          <GBInterval_from>371</GBInterval_from>
+          <GBInterval_to>825</GBInterval_to>
+          <GBInterval_accession>NC_004102.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_operator>join</GBFeature_operator>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCVgp2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>protein F</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009259251.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
           <GBQualifier_value>MSTNPKPQRKPNVTPTVAHRTSSSRVAVRSLVEFTCCRAGALDWVCARRGRLPSGRNLEVDVSLSPRHVGPRAGPGLSPGTLGPSMAMRVAGGRDGSCLPVALGLAGAPQTPGVGRAIWVRSSIPLRAASPTSWGTYRSSAPLLEALPGPWRMASGFWKTA</GBQualifier_value>
         </GBQualifier>
       </GBFeature_quals>

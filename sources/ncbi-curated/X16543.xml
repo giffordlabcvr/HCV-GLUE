@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>X16543</GBSeq_locus>
+  <GBSeq_length>583</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>23-NOV-1989</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus RNA for part of NS3 region</GBSeq_definition>
+  <GBSeq_primary-accession>X16543</GBSeq_primary-accession>
+  <GBSeq_accession-version>X16543.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|X16543.1|</GBSeqid>
+    <GBSeqid>gi|59921</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>non-structural protein</GBKeyword>
+    <GBKeyword>NS3 protein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..583</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Kubo,Y.</GBAuthor>
+        <GBAuthor>Takeuchi,K.</GBAuthor>
+        <GBAuthor>Boonmar,S.</GBAuthor>
+        <GBAuthor>Katayama,T.</GBAuthor>
+        <GBAuthor>Choo,Q.L.</GBAuthor>
+        <GBAuthor>Kuo,G.</GBAuthor>
+        <GBAuthor>Weiner,A.J.</GBAuthor>
+        <GBAuthor>Bradley,D.W.</GBAuthor>
+        <GBAuthor>Houghton,M.</GBAuthor>
+        <GBAuthor>Saito,I.</GBAuthor>
+        <GBAuthor> et al.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>A cDNA fragment of hepatitis C virus isolated from an implicated donor of post-transfusion non-A, non-B hepatitis in Japan</GBReference_title>
+      <GBReference_journal>Nucleic Acids Res. 17 (24), 10367-10372 (1989)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1093/nar/17.24.10367</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>2513560</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..583</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Saito,I.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (18-SEP-1989) Saito I., National Institute of Health Japan, 2-10-35 Kamiosaki, Shinagawa-ku, Tokyo 141, Japan</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>Data kindly reviewed (05-MAR-1990) by Saito I.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..583</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>583</GBInterval_to>
+          <GBInterval_accession>X16543.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>J1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;583</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>583</GBInterval_to>
+          <GBInterval_accession>X16543.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>part of NS3 protein (1 is 3rd base in codon)</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>CAA34543.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>HSSP:1CU1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>UniProtKB/TrEMBL:Q69380</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>SVIDCNTCVTQTVDFSLDPTFTIETTTVPQDAVSRTQRRGRTGRGRRGIYRFVTPGERPSAMFDSSVLCECYDAGCAWYELTPAETSVRLRAYLNTPGLPVCQDHLEFWESVFTGLTHIDAHFLSQTKQAGDNFPYLVAYQATVCARAKAPPPSWDQMWKCLIRLKPTLHGPTPLLYRLGAVQNEVTLTHPITK</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ctcagtgatcgactgtaacacatgtgtcactcagacggtcgatttcagcttggatcccaccttcaccatcgagacgacgaccgtgccccaagatgcggtttcgcgcacgcagcggcgaggtaggactggcaggggcaggagaggcatctataggtttgtgactccaggagaacggccctcggcgatgttcgattcttcggtcctatgtgagtgttatgacgcgggctgtgcttggtatgagctcacgcccgctgagacctcggttaggttgcgggcttacctaaatacaccagggttgcccgtctgccaggaccatctggagttctgggagagcgtcttcacaggcctcacccacatagacgcccacttcttgtcccagactaagcaggcaggagacaacttcccctacctggtagcataccaagccacagtgtgcgccagggctaaggctccacctccatcgtgggatcaaatgtggaagtgtctcatacggctaaagcctacgctgcacgggccaacgcccctgctgtataggctaggagccgtccagaatgaggtcaccctcacacaccctataaccaaa</GBSeq_sequence>
+</GBSeq>

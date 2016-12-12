@@ -6,7 +6,7 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>29-APR-2008</GBSeq_update-date>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
   <GBSeq_create-date>16-OCT-2007</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus subtype 1a isolate BR601 polyprotein gene, complete cds</GBSeq_definition>
   <GBSeq_primary-accession>EF032886</GBSeq_primary-accession>
@@ -131,10 +131,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>ABM21583.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:120431189</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>

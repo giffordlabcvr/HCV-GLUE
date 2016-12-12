@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HW827547</GBSeq_locus>
+  <GBSeq_length>546</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>10-JUN-2015</GBSeq_update-date>
+  <GBSeq_create-date>10-JUN-2015</GBSeq_create-date>
+  <GBSeq_definition>JP 2014036675-A/1: HCV Fusion Polypeptides</GBSeq_definition>
+  <GBSeq_primary-accession>HW827547</GBSeq_primary-accession>
+  <GBSeq_accession-version>HW827547.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|HW827547.1|</GBSeqid>
+    <GBSeqid>pat|JP|2014036675|1</GBSeqid>
+    <GBSeqid>gi|931147812</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 2014036675-A/1</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..546</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Houghton,M.</GBAuthor>
+        <GBAuthor>Lin,Y.</GBAuthor>
+        <GBAuthor>Medina-selby,A.</GBAuthor>
+        <GBAuthor>Coit,D.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>HCV Fusion Polypeptides</GBReference_title>
+      <GBReference_journal>Patent: JP 2014036675-A 1 27-FEB-2014; Novartis AG</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Hepatitis C virus~PN JP 2014036675-A/1~PD 27-FEB-2014~PF 22-NOV-2013 JP 2013241514~PR 25-AUG-2006 US 60/840162~PA Novartis AG~PI michael houghton,yin-ling lin,angelica medina-selby,doris coit~PT "HCV Fusion Polypeptides"~PS N3~CC~FH Key Location/Qualifiers~FT CDS (1)..(546)</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..546</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>546</GBInterval_to>
+          <GBInterval_accession>HW827547.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atggcgcccatcacggcgtacgcccagcagacaaggggcctcctagggtgcataatcaccagcctaactggccgggacaaaaaccaagtggagggtgaggtccagattgtgtcaactgctgcccaaaccttcctggcaacgtgcatcaatggggtgtgctggactgtctaccacggggccggaacgaggaccatcgcgtcacccaagggtcctgtcatccagatgtataccaatgtagaccaagaccttgtgggctggcccgctccgcaaggtagccgatcattgacaccctgcacttgcggctcctcggacctttacctggtcacgaggcacgccgatgtcattcccgtgcgccggcggggtgatagcaggggcagcctgctgtcgccccggcccatttcctacttgaaaggctcctcggggggtccgctgttgtgccccgcggggcacgccgtgggcatatttagggccgcggtgtgcacccgtggagtggctaaggcggtggactttatccctgtggagaacctagagacaaccatgaggtcc</GBSeq_sequence>
+</GBSeq>

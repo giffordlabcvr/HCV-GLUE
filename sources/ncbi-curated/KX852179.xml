@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KX852179</GBSeq_locus>
+  <GBSeq_length>671</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>01-DEC-2016</GBSeq_update-date>
+  <GBSeq_create-date>01-DEC-2016</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 179 NS3 protease gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KX852179</GBSeq_primary-accession>
+  <GBSeq_accession-version>KX852179.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KX852179.1|</GBSeqid>
+    <GBSeqid>gi|1070642885</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..671</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Cuypers,L.</GBAuthor>
+        <GBAuthor>Libin,P.</GBAuthor>
+        <GBAuthor>Schrooten,Y.</GBAuthor>
+        <GBAuthor>Theys,K.</GBAuthor>
+        <GBAuthor>Di Maio,V.C.</GBAuthor>
+        <GBAuthor>Cento,V.</GBAuthor>
+        <GBAuthor>Lunar,M.M.</GBAuthor>
+        <GBAuthor>Nevens,F.</GBAuthor>
+        <GBAuthor>Poljak,M.</GBAuthor>
+        <GBAuthor>Ceccherini-Silberstein,F.</GBAuthor>
+        <GBAuthor>Nowe,A.</GBAuthor>
+        <GBAuthor>Van Laethem,K.</GBAuthor>
+        <GBAuthor>Vandamme,A.-M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Exploring resistance pathways for first-generation NS3/4A protease inhibitors boceprevir and telaprevir using Bayesian network learning</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..671</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Cuypers,L.</GBAuthor>
+        <GBAuthor>Libin,P.</GBAuthor>
+        <GBAuthor>Schrooten,Y.</GBAuthor>
+        <GBAuthor>Theys,K.</GBAuthor>
+        <GBAuthor>Di Maio,V.C.</GBAuthor>
+        <GBAuthor>Cento,V.</GBAuthor>
+        <GBAuthor>Lunar,M.M.</GBAuthor>
+        <GBAuthor>Nevens,F.</GBAuthor>
+        <GBAuthor>Poljak,M.</GBAuthor>
+        <GBAuthor>Ceccherini-Silberstein,F.</GBAuthor>
+        <GBAuthor>Nowe,A.</GBAuthor>
+        <GBAuthor>Van Laethem,K.</GBAuthor>
+        <GBAuthor>Vandamme,A.-M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (09-SEP-2016) Microbiology and Immunology, KU Leuven, Minderbroedersstraat 10, Leuven, Vlaams-Brabant 3000, Belgium</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..671</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>671</GBInterval_to>
+          <GBInterval_accession>KX852179.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>179</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Belgium</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2007</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>HCV1b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;671</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>671</GBInterval_to>
+          <GBInterval_accession>KX852179.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3 protease</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AOS52606.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>PITAYSQQTRGLLGCIITSLTGRDKNQVEGEVQVVSTATQSFLATCVNGVCWTVYHGAGSKTLAGPKGPITQMYTNVDQDLVGWQAPPGARSLTPCTCGSSDLYLVTRHADVIPVRRRGDSRGSLLSPRPVSYLKGSSGGPLLCPSGHAVGIFRAAVCTRGVAKAVDFIPVESMETTMRSPVFTDNSSPPAVPQTFQVAHLHAPTGSGKSTKVPAAYAAQGYKV</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>cctatcacggcttactcccagcagacacggggcttgcttggctgtatcatcactagcctcacrggccgggacaaaaaccaggtcgagggggaggttcaagtggtttcgaccgcaacacaatctttcctggcgacctgtgtcaacggcgtgtgctggactgtctaccatggcgccggctcaaagaccctagccggcccaaagggcccgatcacccaaatgtacaccaatgtagaccaggacctcgtcggctggcaggcgccccccggggcgcgytccttgacgccatgcacctgcggcagctcggacctttacttggtcacgaggcatgctgatgtcattccggtgcgccggcggggggacagcaggggaagcctrctctcccccaggcccgtctcttacttgaagggctcttcgggtggtccrctactctgcccctcggggcatgccgtgggcatcttccgggcygctgtrtgcacccggggggttgcgaaggcggtggactttatacccgttgagtccatggaaaccaccatgcggtcyccggtcttcacggacaattcgtcaccaccggccgtaccgcagacattccaagtggcccatctacacgctcccaccggcagcggcaagagcactaaggtgccagctgcatatgcagctcaagggtacaaggt</GBSeq_sequence>
+</GBSeq>

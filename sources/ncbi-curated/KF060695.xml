@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KF060695</GBSeq_locus>
+  <GBSeq_length>572</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>29-OCT-2014</GBSeq_update-date>
+  <GBSeq_create-date>22-AUG-2014</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 34-1b core protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KF060695</GBSeq_primary-accession>
+  <GBSeq_accession-version>KF060695.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KF060695.1|</GBSeqid>
+    <GBSeqid>gi|534412758</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..572</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Di Lello,F.A.</GBAuthor>
+        <GBAuthor>Mira,J.A.</GBAuthor>
+        <GBAuthor>Neukam,K.</GBAuthor>
+        <GBAuthor>Parra-Sanchez,M.</GBAuthor>
+        <GBAuthor>Guelfo,J.R.</GBAuthor>
+        <GBAuthor>Cifuentes,C.</GBAuthor>
+        <GBAuthor>Macias,J.</GBAuthor>
+        <GBAuthor>Palomares,J.C.</GBAuthor>
+        <GBAuthor>Gomez-Mateos,J.</GBAuthor>
+        <GBAuthor>Pineda,J.A.</GBAuthor>
+        <GBAuthor>Real,L.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Core amino acid variation at position 110 is associated with sustained virological response in Caucasian patients with chronic hepatitis C virus 1b infection</GBReference_title>
+      <GBReference_journal>Arch. Virol. (2014) In press</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1007/s00705-014-2209-x</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>25161034</GBReference_pubmed>
+      <GBReference_remark>Publication Status: Available-Online prior to print</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..572</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Di Lello,F.A.</GBAuthor>
+        <GBAuthor>Mira,J.A.</GBAuthor>
+        <GBAuthor>Neukam,K.</GBAuthor>
+        <GBAuthor>Parra-Sanchez,M.</GBAuthor>
+        <GBAuthor>Recio,E.</GBAuthor>
+        <GBAuthor>Guelfo,J.</GBAuthor>
+        <GBAuthor>Cifuentes,C.</GBAuthor>
+        <GBAuthor>Macias,J.</GBAuthor>
+        <GBAuthor>Palomares,J.C.</GBAuthor>
+        <GBAuthor>Pineda,J.A.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (18-MAY-2013) Unit of Infectious Diseases and Microbiology, Hospital Universitario de Valme, Bellavista s/n, Seville 41014, Spain</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..572</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>572</GBInterval_to>
+          <GBInterval_accession>KF060695.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>34-1b</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Spain</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>13-Jun-2005</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;572</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>572</GBInterval_to>
+          <GBInterval_accession>KF060695.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>capsid</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AGU19399.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKVRQPEGRAWAQPGYPWPLYGNEGMGWAGWLLSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPLGGAARALAHGVRVLEDGVNYATGNMPGCSFSIFLLALLSCLTIPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgcccacaggacgtcaagttcccgggcggtggtcagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggtcacaacctcgtggaaggcgacaacctatccccaaggttcgccagcccgagggcagggcctgggctcagcccgggtacccctggcccctctacggcaatgagggcatggggtgggcaggatggctcctgtccccccgcggctctcggcctagttggggccccaacgacccccggcgtaggtcgcgtaatttgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgctcgtcggcgcccccctagggggcgctgccagggccctggcgcatggcgtccgggtcctggaggacggcgtgaactatgcaacagggaatatgcccggttgctctttctctatcttcctcttagctttgctgtcctgtttgaccattccagcttccgc</GBSeq_sequence>
+</GBSeq>

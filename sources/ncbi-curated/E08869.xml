@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>E08869</GBSeq_locus>
+  <GBSeq_length>2033</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>04-NOV-2005</GBSeq_update-date>
+  <GBSeq_create-date>06-JUN-1997</GBSeq_create-date>
+  <GBSeq_definition>5'region of HCV genome</GBSeq_definition>
+  <GBSeq_primary-accession>E08869</GBSeq_primary-accession>
+  <GBSeq_accession-version>E08869.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|E08869.1|</GBSeqid>
+    <GBSeqid>pat|JP|1995069899|1</GBSeqid>
+    <GBSeqid>gi|2176973</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 1995069899-A/1</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..2033</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Seki,M.</GBAuthor>
+        <GBAuthor>Honda,Y.</GBAuthor>
+        <GBAuthor>Yamada,S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>ANTIVIRAL AGENT</GBReference_title>
+      <GBReference_journal>Patent: JP 1995069899-A 1 14-MAR-1995; MITSUBISHI CHEM CORP</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Unknown (Hepatitis C virus)~PN JP 1995069899-A/1~PD 14-MAR-1995~PF 02-SEP-1993 JP 1993241973~PI SEKI MAKOTO, HONDA YOSHIKAZU, YAMADA SUGURU~PC A61K31/70,A61K48/00,C07K7/00,C12N15/09//C07H21/04; CC strandedness: Double;~CC topology: Linear;~FH Key Location/Qualifiers~FH~FT source 1..2033~FT /organism="Unclassified"~FT /clone="T7N1-19"~FT misc_feature 369..2033~FT /product="N-terminal region of HCV protein"</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..2033</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2033</GBInterval_to>
+          <GBInterval_accession>E08869.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>actagttaatacgactcactatagggtgccagccccctgatgggggcgacactccaccatagatcactcccctgtgaggaactactgtcttcacgcagaaagcgtctagccatggcgttagtatgagtgtcgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggatcaacccgctcaatgcctggagatttgggcgtgcccccgcgagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcatcatgagcacaaatccaaaaccccaaagaaaaatcaaacgtaacaccaaccgccgcccacaggacgttaagttcccgggcggtggtcagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggccgcaacctcgtggaaggcgacaacctatccccaaggctcgccaacccgagggtagggcctgggctcagcccgggtacccttggcccctctatggcaatgagggcttggggtgggcaggatggctcctgtcaccccgcggctcccggcctagttggggccccacggacccccggcgtaggtcgcgtaatttgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgctcgtcggcgcccccctagggggcgctgccagggctctagcgcatggcgtccgggttctggaggacggcgtgaactatgcaacagggaatctgcctggttgctccttttctatcttccttttggctttgctgtcctgtttgaccatcccagcttccgcctaccaagtgcgcaacgcgtccggggtgtaccatgtcacgaacgactgctccaactcaagtattgtgtatgaggcggcggacgtgattatgcacacccccgggtgcgtgccctgcgtccgggagaacaattcctcccgctgctgggtagcgctcactcccacgcttgcggccaggaacagcagcatccccactacgacaatacggcgtcatgtcgacttgctcgttggggcagctgctctctgttccgctatgtatgtgggggatttttgcggatctgttttcctcgtctcccagctgttcactttctcacctcgccggtatgagacggtgcaagactgcaattgctcaatctatcccggccatgtatcaggccatcgcatggcttgggatatgataatgaattggtcacctacaacagccctagtggtatcgcagctactccggatcccacaagccgtggtggatatggtggcaggggcccactggggagtcctggcgggccttgcctactattccatggtggggaactgggctaaggtcttggttgtgatgctgctcttcgccggtgttgacggggggacccacgtgacaggggggaaggtagcctacaccacccagggctttacatccttcttttcacgagggccgtctcagaaaatccaacttgtaaacactaacggcagctggcacatcaataggactgccctcaattgcaatgactcccttaacaccgggttccttgccgcgctgttctacacccacagcttcaacgcgtccggatgtccggagcgtatggccggttgccgccccattgacgagttcgctcaggggtggggtcccatcactcatgttgtgcctaacatctcggaccagaggccctattgctggcactacgcgcctcgaccgtgtggtatcgtacccgcgtcgcaggtgtgtggtccggtgtattgcttcaccccaagccctgttgtggtggggacgaccgatcgtttcggcgcccccacgtacaactggggaaacaatgagacggatgtgctactcctcaacaacacacggccgccgcagggcaactggttcggttgtacctggatg</GBSeq_sequence>
+</GBSeq>

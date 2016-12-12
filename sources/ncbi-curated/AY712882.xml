@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AY712882</GBSeq_locus>
+  <GBSeq_length>507</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>26-SEP-2004</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 1.5.04-19 NS3 gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>AY712882</GBSeq_primary-accession>
+  <GBSeq_accession-version>AY712882.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AY712882.1|</GBSeqid>
+    <GBSeqid>gi|52355519</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..507</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Timm,J.</GBAuthor>
+        <GBAuthor>Lauer,G.M.</GBAuthor>
+        <GBAuthor>Kavanagh,D.G.</GBAuthor>
+        <GBAuthor>Sheridan,I.</GBAuthor>
+        <GBAuthor>Kim,A.Y.</GBAuthor>
+        <GBAuthor>Lucas,M.</GBAuthor>
+        <GBAuthor>Pillay,T.</GBAuthor>
+        <GBAuthor>Ouchi,K.</GBAuthor>
+        <GBAuthor>Reyor,L.L.</GBAuthor>
+        <GBAuthor>Schulze zur Wiesch,J.</GBAuthor>
+        <GBAuthor>Gandhi,R.T.</GBAuthor>
+        <GBAuthor>Chung,R.T.</GBAuthor>
+        <GBAuthor>Bhardwaj,N.</GBAuthor>
+        <GBAuthor>Klenerman,P.</GBAuthor>
+        <GBAuthor>Walker,B.D.</GBAuthor>
+        <GBAuthor>Allen,T.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>CD8 epitope escape and reversion in acute HCV infection</GBReference_title>
+      <GBReference_journal>J. Exp. Med. 200 (12), 1593-1604 (2004)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1084/jem.20041006</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>15611288</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..507</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Timm,J.</GBAuthor>
+        <GBAuthor>Lauer,G.M.</GBAuthor>
+        <GBAuthor>Kavanagh,D.G.</GBAuthor>
+        <GBAuthor>Sheridan,I.</GBAuthor>
+        <GBAuthor>Kim,A.Y.</GBAuthor>
+        <GBAuthor>Lucas,M.</GBAuthor>
+        <GBAuthor>Pillay,T.</GBAuthor>
+        <GBAuthor>Ouchi,K.</GBAuthor>
+        <GBAuthor>Reyor,L.L.</GBAuthor>
+        <GBAuthor>Schulze zur Wiesch,J.</GBAuthor>
+        <GBAuthor>Gandhi,R.T.</GBAuthor>
+        <GBAuthor>Chung,R.T.</GBAuthor>
+        <GBAuthor>Klenerman,P.</GBAuthor>
+        <GBAuthor>Walker,B.D.</GBAuthor>
+        <GBAuthor>Allen,T.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (09-AUG-2004) Infectious Disease Division, Partners AIDS Research Center, Massachusetts General Hospital and Harvard Medical School, 149 13th Street, Charlestown, MA 02129, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..507</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>507</GBInterval_to>
+          <GBInterval_accession>AY712882.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>1.5.04-19</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>patient 99B</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>USA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;507</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>507</GBInterval_to>
+          <GBInterval_accession>AY712882.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAU44913.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>YGKAIPIETIKGGRHLIFCHSKKKCDEFAAKLSGLGINAVAYYRGLDVSVIPTSGDVVVVATDALMTGFTGDFDSVIDCNTCVTQTVDFSLDPTFTIETTTVPQDAVSRTQRRGRTGRGRPGIYRFVTPGERPSGMFDSSVLCECYDAGCAWYELTPAETSVRLRAYL</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>tctatggcaaagccatccccatcgagaccatcaagggggggaggcatctcatcttctgccattccaagaagaagtgtgatgagttcgccgcaaagctgtcgggcctcggaatcaatgctgtagcatattaccgaggtcttgatgtgtccgtcataccaactagcggagacgtcgttgttgtggcaacagacgccctaatgacaggctttaccggcgactttgactcagtgatcgactgtaacacatgtgtcacccagacagttgatttcagcttggaccccaccttcaccattgagacgacgaccgtgccccaggacgcagtgtcgcggacacaacggcgaggcaggactggtaggggcaggccgggcatttataggtttgtaactccaggagagcggccctcgggcatgttcgattcctcggtcctttgcgagtgctatgacgcgggctgtgcttggtacgagctcacgcccgccgagacctcggtcaggttacgggcttacctaa</GBSeq_sequence>
+</GBSeq>

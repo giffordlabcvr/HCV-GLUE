@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>CS541269</GBSeq_locus>
+  <GBSeq_length>573</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>20-APR-2007</GBSeq_update-date>
+  <GBSeq_create-date>20-APR-2007</GBSeq_create-date>
+  <GBSeq_definition>Sequence 17 from Patent WO2007013882</GBSeq_definition>
+  <GBSeq_primary-accession>CS541269</GBSeq_primary-accession>
+  <GBSeq_accession-version>CS541269.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|CS541269.1|</GBSeqid>
+    <GBSeqid>pat|WO|2007013882|17</GBSeqid>
+    <GBSeqid>gi|145584448</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Liang,T.J.</GBAuthor>
+        <GBAuthor>Heller,T.</GBAuthor>
+        <GBAuthor>Saito,S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>In vitro model for hepatitis c virion production</GBReference_title>
+      <GBReference_journal>Patent: WO 2007013882-A2 17 01-FEB-2007; The Government of the United States of America as Represe nted by The Secretary of the Department of Health and Human Services (US)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>CS541269.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus C gene consensus sequence</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgcccacaggacgtcaagttcccgggcggtggtcagatcgttggtggagtttacttgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggtcgcaacctcgtggaaggcgacagcctatccccaaggctcgccggcccgagggcaggtcctgggctcagcccgggtacccttggcccctctatggcaatgagggcttcgggtgggcaggatggctcctgtccccccgcggctctcggcctagttggggccccactgacccccggcgtaggtcgcgcaatttgggtaaggtcatcgataccctcacgtgcggcttcgccgacctcatggggtacatcccgctcgtcggcgcccccgtagggggcgtcgccagggccctggcgcatggcgtcagggttctggaggacggggtgaactatgcaacagggaatttgcccggttgctctttctctatcttcctcctggctctgctgtcctgcctgaccgtcccagcttctgct</GBSeq_sequence>
+</GBSeq>

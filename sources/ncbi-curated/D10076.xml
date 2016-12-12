@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPCHCJ5T70</GBSeq_locus>
+  <GBSeq_length>1208</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>24-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>29-APR-1993</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus gene for NS5, partial cds, isolate: HC-J5</GBSeq_definition>
+  <GBSeq_primary-accession>D10076</GBSeq_primary-accession>
+  <GBSeq_accession-version>D10076.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|D10076.1|HPCHCJ5T70</GBSeqid>
+    <GBSeqid>gi|221592</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1208</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+        <GBAuthor>Kurai,K.</GBAuthor>
+        <GBAuthor>Okada,S.</GBAuthor>
+        <GBAuthor>Yamamoto,K.</GBAuthor>
+        <GBAuthor>Lizuka,H.</GBAuthor>
+        <GBAuthor>Tanaka,T.</GBAuthor>
+        <GBAuthor>Fukuda,S.</GBAuthor>
+        <GBAuthor>Tsuda,F.</GBAuthor>
+        <GBAuthor>Mishiro,S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Full-length sequence of a hepatitis C virus genome having poor homology to reported isolates: comparative study of four distinct genotypes</GBReference_title>
+      <GBReference_journal>Virology 188 (1), 331-341 (1992)</GBReference_journal>
+      <GBReference_pubmed>1314459</GBReference_pubmed>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>Data kindly submitted in computer readable form by: Hiroaki Okamoto ~Immunology Division ~Jichi Medical School ~Kawachi-gun ~Tochigi 329-04 ~Japan</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1208</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1208</GBInterval_to>
+          <GBInterval_accession>D10076.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>HC-J5</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>&lt;1..1099</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1099</GBInterval_to>
+          <GBInterval_accession>D10076.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..1099</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1099</GBInterval_to>
+          <GBInterval_accession>D10076.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAA00970.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>TVTERDIRTEESIYQACSLPEEARTAIHSLTERLYVGGPMFNSKGQTCGYRRCRASGVLTTSMGNTITCYVKALAACKAAGIVAPTMLVCGDDLVVISESQGTEEDERNLRAFTEAMTRYSAPPGDPPRPEYDLELITSCSSNVSVALGPQGRRRYYLTRDPTTPFARAAWETVRHSPVNSWLGNIIQYAPTIWVRMVLMTHFFSILMAQDTLDQNLNFEMYGAVYSVSPLDLPAIIERLHGLDAFSLHTYTPNELTRVASALRKLGAPPLRTWKSRARAVRASLISRGGRAAVCGRYLFNWAVKTKLKLTPLPEARLLDLSSWFTVGAGGGDIYHSVSRARPRLLLLSLLLPSVGVGLFLLPAR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>1139..1208</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1139</GBInterval_from>
+          <GBInterval_to>1208</GBInterval_to>
+          <GBInterval_accession>D10076.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>T-stretch of 70 bp</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>aaccgttactgagagagacattagaactgaggagtccatataccaggcctgctccctgcctgaggaggcccgcactgctatacactcgctgactgagagactctacgtgggagggcccatgttcaacagcaagggccagacctgcgggtacaggcgttgccgtgccagcggggtgctcaccactagcatggggaacaccatcacatgctatgtgaaagccctagcggcttgcaaggctgcggggatagtagcgcccacaatgctggtatgtggcgacgacttggtcgtcatctcagaaagccaggggactgaggaggacgagcggaacctgagagccttcacggaggccatgaccaggtattctgcccctcccggtgacccccccagaccggaatacgacctggagctgataacatcttgttcctcaaatgtgtctgtggcgctgggcccacagggccgccgcagatactacctgaccagagaccctaccactccattcgcccgggctgcctgggaaacagttagacactcccctgtcaattcatggctgggaaacatcatccagtacgctccaaccatctgggttcgcatggtcctgatgacacattttttttccatcctcatggcccaagacaccctggaccagaacctcaactttgagatgtacggagcggtgtactccgtgagtcctctggacctcccagccataattgaaaggctacacgggcttgacgccttttctctgcatacatacactcccaacgaactgacgcgggtggcttcagccctcagaaaacttggggcgccacccctcagaacgtggaagagtcgggcgcgtgcagtaagggcgtccctcatctcccgtggagggagagcggccgtttgcggtcggtatctcttcaactgggcggtgaagaccaagctcaaactcactccattgccggaggcgcgcctcctggatttatccagttggttcaccgtcggcgccggcgggggcgacatttatcacagcgtgtcgcgtgcccgaccccgcctattactccttagcctactcctgccttctgtaggagtaggcctctttttactccccgctcggtagagcggcacacattagctacactccatagctaactgttcctttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt</GBSeq_sequence>
+</GBSeq>

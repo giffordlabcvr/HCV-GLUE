@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>E50753</GBSeq_locus>
+  <GBSeq_length>644</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>31-JAN-2002</GBSeq_update-date>
+  <GBSeq_create-date>31-JAN-2002</GBSeq_create-date>
+  <GBSeq_definition>Vector expressing full-length gene of RNA virus and utilization thereof</GBSeq_definition>
+  <GBSeq_primary-accession>E50753</GBSeq_primary-accession>
+  <GBSeq_accession-version>E50753.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|E50753.1|</GBSeqid>
+    <GBSeqid>pat|JP|2000152793|6</GBSeqid>
+    <GBSeqid>gi|18628178</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 2000152793-A/6</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..644</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Obara,M.</GBAuthor>
+        <GBAuthor>Obara,K.</GBAuthor>
+        <GBAuthor>Tabira,K.</GBAuthor>
+        <GBAuthor>Matsuzaki,J.</GBAuthor>
+        <GBAuthor>Om,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Vector expressing full-length gene of RNA virus and utilization</GBReference_title>
+      <GBReference_journal>Patent: JP 2000152793-A 6 06-JUN-2000; TOKYO METROPOLITAN ORGANIZATION FOR MEDICAL RESEARCH, CHUGAI PHARMACEUT CO LTD</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS HCV~PN JP 2000152793-A/6~PD 06-JUN-2000~PF 24-JUN-1999 JP 1999178347~PR ~PI MICHINORI OBARA,KYOKO OBARA,KAZUNARI TABIRA,JUNICHI MATSUZAKI, PI HIROSHI OMORI~PC C12N15/09,A01K67/027,C12N5/10,C12Q1/70,C12N15/00,C12N5/00 CC ~FH Key Location/Qualifiers~FT source 1..644~FT /organism="HCV"</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..644</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>644</GBInterval_to>
+          <GBInterval_accession>E50753.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ttggggtaccacccttgcgagtctggagacatcgggccagaagtgtccgcgctaagctgctgtcccagggggggagggctgccacttgtggtaagtacctcttcaactgggcagtaaggaccaagctcaaactcactccaatcccggcagcgtcccagttggacttgtccagctggttcgtggctggttacagcgggggagacatatatcacagcctgtctcgtgcccgaccccgctggttcatgttgtgcctactcctactttcagtaggggtaggcatctacctgctccccaaccgataaacggggagctaaacactccaggccaataggccatttctttttttttttttttttttttttctttttttttttttttttttttttttttttttttttttttttttctttcttttgttttttttttttttcttctttttggtggctccatcttagccctagtcacggctagctgtgaaaggtccgtgagccgcatgactgcagagagtgctgatactggcctctctgcagatcatgtggccggcatggtcccagcctcctcgctggcgccggctgggcaacattccgaggggaccgtcccctcggtaatggcgaatgggactctagatttaaataagcttgggc</GBSeq_sequence>
+</GBSeq>

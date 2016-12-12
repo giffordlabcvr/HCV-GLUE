@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AY100085</GBSeq_locus>
+  <GBSeq_length>683</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>21-MAY-2002</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate ERS1 NS5B protein (NS5B) gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>AY100085</GBSeq_primary-accession>
+  <GBSeq_accession-version>AY100085.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AY100085.1|</GBSeqid>
+    <GBSeqid>gi|21065087</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..683</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Cochrane,A.</GBAuthor>
+        <GBAuthor>Searle,B.</GBAuthor>
+        <GBAuthor>Hardie,A.</GBAuthor>
+        <GBAuthor>Robertson,R.</GBAuthor>
+        <GBAuthor>Delahooke,T.</GBAuthor>
+        <GBAuthor>Cameron,S.</GBAuthor>
+        <GBAuthor>Tedder,R.S.</GBAuthor>
+        <GBAuthor>Dusheiko,G.M.</GBAuthor>
+        <GBAuthor>De Lamballerie,X.</GBAuthor>
+        <GBAuthor>Simmonds,P.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>A genetic analysis of hepatitis C virus transmission between injection drug users</GBReference_title>
+      <GBReference_journal>J. Infect. Dis. 186 (9), 1212-1221 (2002)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1086/344314</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>12402190</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..683</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Cochrane,A.</GBAuthor>
+        <GBAuthor>Simmonds,P.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (25-APR-2002) Laboratory for Clinical and Molecular Virology, University of Edinburgh, Summerhall, Edinburgh, Scotland EH9 1QH, United Kingdom</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..683</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>683</GBInterval_to>
+          <GBInterval_accession>AY100085.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>ERS1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>from serum of patient in risk group IDU from Edinburgh, Scotland, United Kingdom</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>United Kingdom</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>3a</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;683</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>683</GBInterval_to>
+          <GBInterval_accession>AY100085.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5B</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;683</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>683</GBInterval_to>
+          <GBInterval_accession>AY100085.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5B</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5B protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAM29012.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>RVEEEIYQCCDLEPEARKVISSLTERLYCGGPMFNSKGAQCGYRRCRASGVLPTSFGNTITCYIKATAAARAAGLRNPDFLVCGDDLVVVAESDGVEEDRAALRAFTEAMTRYSAPPGDAPQPTYDLELITSCSSNVSVAHDNKGKRYYYLTRDATTPLARAAWETARHAPVNSWLGNIIMYAPTIWVRMVMMTHFFSILQSQEILDRPLDFEMYGATYSVTPLDLP</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>cagggtggaagaggagatataccaatgttgtgatcttgaaccggaggccaggaaagtgatctcctccctcacggagcggctttactgcgggggccctatgttcaacagcaagggggcccagtgtggttatcgccgttgccgtgccagtggagttctgcctaccagcttcggcaacacaatcacttgttacatcaaggccacagcggccgcgagggccgcaggcctccggaacccggactttcttgtctgcggggatgatctggttgtggtggctgagagtgatggcgtcgaggaggatagagcagccctgagagccttcacggaggctatgaccaggtattctgctccacccggagatgccccacagcctacctacgaccttgagctcatcacatcttgctcctccaacgtctccgtagcacatgacaacaaggggaagaggtattattacctcacccgtgatgccaccactcccctggcccgtgcggcttgggaaacagctcgtcacgctccagttaactcctggttgggcaacatcatcatgtacgcgcctaccatctgggtgcgcatggtaatgatgacgcactttttctccatactccaatcccaggagatacttgaccgaccccttgactttgaaatgtacggggccacttactctgtcactccgctggatttaccag</GBSeq_sequence>
+</GBSeq>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>BD142391</GBSeq_locus>
+  <GBSeq_length>519</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>05-AUG-2014</GBSeq_update-date>
+  <GBSeq_create-date>18-SEP-2002</GBSeq_create-date>
+  <GBSeq_definition>WO 2002022812-A/2: Method of assaying or screening compound via the detection of the inhibition of nuclear transport receptor by hepatitis C virus core protein</GBSeq_definition>
+  <GBSeq_primary-accession>BD142391</GBSeq_primary-accession>
+  <GBSeq_accession-version>BD142391.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|BD142391.1|</GBSeqid>
+    <GBSeqid>pat|WO|2002022812|2</GBSeqid>
+    <GBSeqid>gi|23237336</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>WO 2002022812-A/2</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..519</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Nomoto,A.</GBAuthor>
+        <GBAuthor>Kuge,S.</GBAuthor>
+        <GBAuthor>Isoyama,T.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Method of assaying or screening compound via the detection of the inhibition of nuclear transport receptor by hepatitis C virus core protein</GBReference_title>
+      <GBReference_journal>Patent: WO 2002022812-A 2 21-MAR-2002; AGENE RESEARCH INSTITUTE CO LTD,AKIO NOMOTO,SHUSUKE KUGE,TSUYOSHI ISOYAMA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Hepatitis virus (hepatitis C virus)~PN WO 2002022812-A/2~PD 21-MAR-2002~PF 06-SEP-2001 WO 2001JP007733~PR 11-SEP-2000 JP 00P 274873~PA AGENE RESEARCH INSTITUTE CO LTD,AKIO NOMOTO,SHUSUKE~PA KUGE,TSUYOSHI ISOYAMA~PI AKIO NOMOTO,SHUSUKE KUGE,TSUYOSHI ISOYAMA~PT "Method of assaying or screening compound via the detection of~PT the~PT inhibition of nuclear transport receptor by hepatitis C virus~PT core protein"~PS~PC C12N15/09,C12N1/19,C12Q1/02,C12Q1/70,A61K45/00,A61P1/~PC 16,A61P31/20,~PC A61P35/00,G01N33/15,G01N33/50,G01N33/566~CC Method of assaying or screening compound via the detection of~CC the~CC inhibition of nuclear transport receptor by hepatitis C virus~CC core protein~FH Key Location/Qualifiers~FT CDS (1)..(519)</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..519</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>519</GBInterval_to>
+          <GBInterval_accession>BD142391.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacaaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgcccacaggacgtcaagttcccgggcggtggtcagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggtcgcaacctcgtggaaggcgacaacctatccccaaggctcgccggcccgagggcagggcctgggctcagcccgggtacccttggcccctctatggtaacgagggcctggggtgggcaggatggctcctgtcaccccgcggctcccggcctagttggggccccacggacccccggcgtaggtcgcgtaatttgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgcttgtcggcgcccccctagggggtgctgccagggccctggcacatggtgtccgggttctggaggacggcgtgaactatgcaacagggaatttgcccggttgctct</GBSeq_sequence>
+</GBSeq>

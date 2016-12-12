@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DD100061</GBSeq_locus>
+  <GBSeq_length>686</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>04-NOV-2005</GBSeq_update-date>
+  <GBSeq_create-date>04-NOV-2005</GBSeq_create-date>
+  <GBSeq_definition>Compositions and Methods for Treatment of Hepatitis C Virus-Associated Diseases</GBSeq_definition>
+  <GBSeq_primary-accession>DD100061</GBSeq_primary-accession>
+  <GBSeq_accession-version>DD100061.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|DD100061.1|</GBSeqid>
+    <GBSeqid>pat|JP|2005006661|25</GBSeqid>
+    <GBSeqid>gi|92882101</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 2005006661-A/25</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..686</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Hamada,F.</GBAuthor>
+        <GBAuthor>Anderson,K.P.</GBAuthor>
+        <GBAuthor>Hoshigo,K.</GBAuthor>
+        <GBAuthor>Nozaki,C.</GBAuthor>
+        <GBAuthor>Nishihara,T.</GBAuthor>
+        <GBAuthor>Nakatake,H.</GBAuthor>
+        <GBAuthor>Hanecak,R.C.</GBAuthor>
+        <GBAuthor>Eto,T.</GBAuthor>
+        <GBAuthor>Furukawa,S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Compositions and Methods for Treatment of Hepatitis C Virus-Associated Diseases</GBReference_title>
+      <GBReference_journal>Patent: JP 2005006661-A 25 13-JAN-2005; Isis Pharmaceuticals Inc</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Hepatitis C Virus~PN JP 2005006661-A/25~PD 13-JAN-2005~PF 15-SEP-2004 JP 2004268347~PR 10-SEP-1992 US 945289,14-APR-1993 JP 5/8 7195 PI fukusaburo hamada,kevin p anderson,kazuya hoshigo,chikateru PI nozaki,~PI tsukasa nishihara,hiroshi nakatake,ronnie~PI c hanecak,tatsuo eto,~PI shinichi furukawa~CC~FH Key Location/Qualifiers</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..686</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>686</GBInterval_to>
+          <GBInterval_accession>DD100061.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gccagcccccgattgggggcgacactccaccatagatcactcccctgtgaggaactactgtcttcacgcagaaagcgtctagccatggcgttagtatgagtgtcgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggatcaacccgctcaatgcctggagatttgggcgtgcccccgcgagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccatgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgcccacaggaggtcaagttcccgggcggtggtcagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgatcaggaagacttccgagcggtcgcaaccccgtggaaggcgacagcctatccccaaggctcgccggcccgagggcagggcctgggctcagcccgggtatccttggcccctctatggcaatgagggcatggggtgggcaggatggctcctgtcaccccgcggctcccggcctagttggggccccacggacccccggcgtagg</GBSeq_sequence>
+</GBSeq>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AF207996</GBSeq_locus>
+  <GBSeq_length>648</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>09-FEB-2000</GBSeq_update-date>
+  <GBSeq_create-date>09-FEB-2000</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus strain 1b NS2-like sequence</GBSeq_definition>
+  <GBSeq_primary-accession>AF207996</GBSeq_primary-accession>
+  <GBSeq_accession-version>AF207996.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AF207996.1|AF207996</GBSeqid>
+    <GBSeqid>gi|6941963</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..648</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Leng,Y.</GBAuthor>
+        <GBAuthor>Chen,X.Z.</GBAuthor>
+        <GBAuthor>Du,Y.</GBAuthor>
+        <GBAuthor>Wang,H.T.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Preliminary study of Hepatitis C Virus (HCV) quasispecies in the NS2 region in patients with HCV infection</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..648</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Leng,Y.</GBAuthor>
+        <GBAuthor>Chen,X.Z.</GBAuthor>
+        <GBAuthor>Du,Y.</GBAuthor>
+        <GBAuthor>Wang,H.T.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (24-NOV-1999) Microbiology, Tongji Medical University, 13 Hangkong Road, Wuhan, Hubei 430030, China</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..648</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>648</GBInterval_to>
+          <GBInterval_accession>AF207996.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>1b</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>isolated from a patient with an abnormal ALT level</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>misc_feature</GBFeature_key>
+      <GBFeature_location>1..648</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>648</GBInterval_to>
+          <GBInterval_accession>AF207996.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>sequence similar to the NS2 gene</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atggaccgggagatggccgcatcgtgcggaggcgtggtctttgtaggcctggtactcttgaccatgtcgccacactaaagtgttcctcgctaggctcatatggtggttgcaatacttcctcaccatagccgaggcgcacctgcaagtgtggatcccccctctcaacattcggggggccgcgatgccatcatcctcctcacgtgtgtgatccacccagagctaatctttgacatcaccaaactcctgctcgccgcgctcggtccgctcctggtgcttcaggctggcatagctagagtgccgtacttcgtgcgcgctcatgggctcattcgtgcgtgcatgctattgcggaaagttgctgggggtcattatgtccaaatggccctcatgaagctggccgcgctgacaggcacgtatctctatgaccatcttactccactgcagtattgggcccacgcgggcttacgagatctcgcggtggcagtagagcccgtcatcttctctgacatggagatcaagatcatcacctggggggcagacactgcagcgtgtggagacatcattcagggtttgcccgtttctgcccggaggggaagggagatacacctggggccggccgatagtcttgaagggcaggggtggcgactcctt</GBSeq_sequence>
+</GBSeq>

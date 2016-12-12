@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AB010249</GBSeq_locus>
+  <GBSeq_length>1341</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>25-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>09-JUL-1998</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus gene for polyprotein (NS5A), partial cds, strain: HCV-1bJk</GBSeq_definition>
+  <GBSeq_primary-accession>AB010249</GBSeq_primary-accession>
+  <GBSeq_accession-version>AB010249.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|AB010249.1|</GBSeqid>
+    <GBSeqid>gi|3299787</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Song,J.</GBAuthor>
+        <GBAuthor>Wang,F.</GBAuthor>
+        <GBAuthor>Itoh,M.</GBAuthor>
+        <GBAuthor>Hotta,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Partial abrogation of antiviral activity of interferon by the NS5A protein of hepatitis C virus</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1341</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Hotta,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (08-JAN-1998) Contact:Hak Hotta Kobe University School of Medicine, Department of Microbiology; 7-5-1 Kusunoki-cho, Chuo-ku, Kobe, Hyogo 650, Japan</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>On Jul 10, 1998 this sequence version replaced gi:3298132.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1341</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1341</GBInterval_to>
+          <GBInterval_accession>AB010249.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>HCV-1bJk</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1341</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1341</GBInterval_to>
+          <GBInterval_accession>AB010249.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAA31545.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>SGSWLKDVWDWICTVLTDFKTWLQSKLLPKLPGVPFFSCQRGYKGVWRGDGIMQTTCPCGAQITGHVKNGSMRIVGPKTCSNTWHGTFPINAYTTGPCTPSPAPNYSRALWRVAAEEYVEITRVGDFHYVTGMTTDNVKCPCQVPAPEFFTELDGVRLHRYAPACRPLLRVDVTFQVGLNQYLVGSQLPCEPEPDVAVLTSMLTDPSHITAETAKRRPARGSPPSLASSSASQLSAPSLKATCTTHHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEDEREVSVAAEILRKSKNFPPALPIWARPDYNPPLLESWKSPDYVPPAVHGCPLPPTTGPPIPPPRKKRTVVLTESTVSSALAELATKTFGSSGSSAVDSGTATAPPDQTSDDGDKESDIESYSSMPPLEGEPGDPDLSDGSWSTVSGEAGDDVVCC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>1..1341</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1341</GBInterval_to>
+          <GBInterval_accession>AB010249.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>SGSWLKDVWDWICTVLTDFKTWLQSKLLPKLPGVPFFSCQRGYKGVWRGDGIMQTTCPCGAQITGHVKNGSMRIVGPKTCSNTWHGTFPINAYTTGPCTPSPAPNYSRALWRVAAEEYVEITRVGDFHYVTGMTTDNVKCPCQVPAPEFFTELDGVRLHRYAPACRPLLRVDVTFQVGLNQYLVGSQLPCEPEPDVAVLTSMLTDPSHITAETAKRRPARGSPPSLASSSASQLSAPSLKATCTTHHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEDEREVSVAAEILRKSKNFPPALPIWARPDYNPPLLESWKSPDYVPPAVHGCPLPPTTGPPIPPPRKKRTVVLTESTVSSALAELATKTFGSSGSSAVDSGTATAPPDQTSDDGDKESDIESYSSMPPLEGEPGDPDLSDGSWSTVSGEAGDDVVCC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>tccggatcctggctaaaggatgtttgggactggatatgcacggtgttgactgacttcaagacctggctccagtccaagctcctgccgaaattgccgggagtccctttcttctcatgccaacgcgggtacaagggagtctggcggggggacggcatcatgcaaaccacctgcccatgtggagcacaaattaccggacatgtcaaaaacggttccatgaggatcgttgggcctaaaacctgcagcaacacgtggcacggaacgttccccatcaacgcgtacaccacaggcccctgcacaccctccccggcgccgaactattccagggcgctgtggcgggtggctgctgaagagtacgtggagattacgcgggtgggggacttccactacgtgacgggtatgaccaccgacaacgtaaaatgcccgtgccaggtcccggcccccgaattcttcactgaattggacggggtgcggttgcacaggtacgctccggcgtgcagacctctcctacgggtggatgtcacattccaggtcgggctcaaccaatacctggttgggtcacagctcccatgcgagcctgagccggatgtggcagtgctcacttccatgctcaccgacccctcccacattacagcagagacggctaaacgtaggccggccagggggtctcccccctccttggccagctcttcagctagccaattgtctgcgccttccttgaaggcaacatgcactacccaccatgactccccggacgctgacctcatcgaggccaacctcctgtggcggcaggagatgggcggaaacatcacccgtgtggagtcagaaaataaggtggtaattttggactctttcgacccgcttcgagcggaagaggatgagagggaagtatccgttgcagcagagatcctgcgaaaatccaaaaatttccccccggcgttgcccatatgggcacgcccggattacaaccctccactgttagagtcctggaaaagtccggactacgtccctccggcggtgcatgggtgcccattgccgcctaccacgggccctccaataccgcctccacggaaaaagaggacggttgttctgacagagtccaccgtgtcttctgccttggcggagctggctactaagactttcggcagctccggatcgtcggccgttgacagcggcacggcgaccgcccctcccgatcagacctctgacgacggtgacaaagaatctgacattgagtcgtactcctccatgcccccccttgagggggagccgggggaccctgatctcagcgacgggtcttggtctaccgtgagcggggaggccggcgacgacgtcgtctgctgc</GBSeq_sequence>
+</GBSeq>

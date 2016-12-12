@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AB522978</GBSeq_locus>
+  <GBSeq_length>523</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>25-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>02-MAR-2010</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 1a gene for core protein, partial cds, isolate: HPA015</GBSeq_definition>
+  <GBSeq_primary-accession>AB522978</GBSeq_primary-accession>
+  <GBSeq_accession-version>AB522978.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|AB522978.1|</GBSeqid>
+    <GBSeqid>gi|290352290</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus subtype 1a</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 1a</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Tanimoto,T.</GBAuthor>
+        <GBAuthor>Nguyen,H.C.</GBAuthor>
+        <GBAuthor>Ishizaki,A.</GBAuthor>
+        <GBAuthor>Chung,P.T.</GBAuthor>
+        <GBAuthor>Hoang,T.T.</GBAuthor>
+        <GBAuthor>Nguyen,V.T.</GBAuthor>
+        <GBAuthor>Kageyama,S.</GBAuthor>
+        <GBAuthor>Oka,S.</GBAuthor>
+        <GBAuthor>Pham,V.T.</GBAuthor>
+        <GBAuthor>Ichimura,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Multiple routes of hepatitis C virus transmission among injection drug users in Hai Phong, Northern Vietnam</GBReference_title>
+      <GBReference_journal>J. Med. Virol. 82 (8), 1355-1363 (2010)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1002/jmv.21787</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>20572071</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..523</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Tanimoto,T.</GBAuthor>
+        <GBAuthor>Ishizaki,A.</GBAuthor>
+        <GBAuthor>Phan,T.T.C.</GBAuthor>
+        <GBAuthor>Ichimura,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (23-SEP-2009) Contact:Tomoaki Tanimoto Kanazawa University, Graduate School of Medical Science, Department of Viral Infection and International Health; Takaramachi 13-1, Kanazawa, Ishikawa 920-8640, Japan</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..523</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>523</GBInterval_to>
+          <GBInterval_accession>AB522978.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 1a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>HPA015</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>plasma</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:31646</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Viet Nam: Hai Phong</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2007</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>190..&gt;523</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>190</GBInterval_from>
+          <GBInterval_to>523</GBInterval_to>
+          <GBInterval_accession>AB522978.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAI78857.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRPEGRTWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPTD</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggatcacccgctcaatgcctggagatttgggcgtgcccccgcaagaccgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccatgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgtcgcccacaggacgttaagttcccgggtggcggtcagatcgttggtggagtttacttgttgccgcgcaggggccctagattgggtgtgcgcgcgacgaggaagacttccgagcggtcgcaacctcgaggtagacgtcagcctatccccaaggcgcgtcggcccgagggcaggacctgggctcagcccgggtacccttggcccctctatggcaatgagggctgcgggtgggcgggatggctcctgtccccccgtggttctcggcctagttggggccccacagacc</GBSeq_sequence>
+</GBSeq>

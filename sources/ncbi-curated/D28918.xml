@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPCE1P01</GBSeq_locus>
+  <GBSeq_length>606</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>22-DEC-1995</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus gene for E1 protein, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>D28918</GBSeq_primary-accession>
+  <GBSeq_accession-version>D28918.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|D28918.1|HPCE1P01</GBSeqid>
+    <GBSeqid>gi|1130526</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>E1 protein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>101..200</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chayama,K.</GBAuthor>
+        <GBAuthor>Kobayashi,M.</GBAuthor>
+        <GBAuthor>Tsubota,A.</GBAuthor>
+        <GBAuthor>Koida,I.</GBAuthor>
+        <GBAuthor>Arase,Y.</GBAuthor>
+        <GBAuthor>Saitoh,S.</GBAuthor>
+        <GBAuthor>Ikeda,K.</GBAuthor>
+        <GBAuthor>Kumada,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Molecular analysis of intraspousal transmission of hepatitis C virus</GBReference_title>
+      <GBReference_journal>J. Hepatol. 22 (4), 431-439 (1995)</GBReference_journal>
+      <GBReference_pubmed>7665861</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..100; 201..606</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chayama,K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>3</GBReference_reference>
+      <GBReference_position>1..606</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chayama,K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (12-MAR-1994) Kazuaki Chayama, Toranomon Hospital, Department of Gastroenteroloty; 2-2-2 Toranomon, Minato-ku, Tokyo 105, Japan (E-mail:bio@t-hospi.snet.or.jp, Tel:044-877-5111, Fax:044-877-5333)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..606</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>606</GBInterval_to>
+          <GBInterval_accession>D28918.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>couplelh</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>pMHCE11h</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;606</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>606</GBInterval_to>
+          <GBInterval_accession>D28918.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>putative</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E1 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAA06045.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>YIPLVGAPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTIPASAYEVRNVSGVYQVTNDCSNSSIVYEAADLIMHTPGCVPCVREGNISRCWVALTPTLAARNSSVPTMTIRRHVDLLVGAAALCSAMYVGDLCGSVFLVSQLFTFSPRRYNTAQDCNCSIYPGHVSGHRMAWDMMMNWSPTAALVVSQ</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ggtacattccgctcgtcggcgccccgctaggaggcgctgccagggccctggcgcatggcgtccgggttctggaggacggcgtgaactatgcaacagggaatttgcccggttgctctttctctatcttcctcttagccttgctgtcttgcttgaccatcccagcttccgcttacgaagtgcgcaacgtgtccggggtgtaccaggtcacgaacgactgctccaactcaagtattgtgtatgaggcagcggacttgatcatgcacacccccgggtgcgtgccctgcgtccgggagggtaacatctcccgttgctgggtagcgctgactcccacgcttgcggccaggaatagcagcgtccccaccatgacaatacgacgccatgtcgatttgctcgttggggcggctgctctctgctccgctatgtacgtgggagatctctgcggatctgtttttcttgtctcccagctgttcaccttctcaccccgccggtacaacacggcgcaagactgcaattgctcaatctaccccggccacgtatcaggtcaccgcatggcttgggatatgatgatgaactggtcacctacggcggccctagtggtatcgcagt</GBSeq_sequence>
+</GBSeq>

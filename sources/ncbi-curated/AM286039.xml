@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AM286039</GBSeq_locus>
+  <GBSeq_length>573</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>15-NOV-2006</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 1b partial gene for polyprotein, core protein, genomic RNA, isolate Pt9-2 clone 2</GBSeq_definition>
+  <GBSeq_primary-accession>AM286039</GBSeq_primary-accession>
+  <GBSeq_accession-version>AM286039.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|AM286039.1|</GBSeqid>
+    <GBSeqid>gi|118026027</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>core protein</GBKeyword>
+    <GBKeyword>polyprotein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus subtype 1b</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 1b</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Morice,Y.</GBAuthor>
+        <GBAuthor>Miladi,A.</GBAuthor>
+        <GBAuthor>Lavergne,J.P.</GBAuthor>
+        <GBAuthor>Germanidis,G.</GBAuthor>
+        <GBAuthor>Pagkalos,E.</GBAuthor>
+        <GBAuthor>Sakellariou,G.</GBAuthor>
+        <GBAuthor>Penin,F.</GBAuthor>
+        <GBAuthor>Pawlotsky,J.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>First description of seroconversion against Hepatitis C Virus F protein</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Morice,Y.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (04-JUL-2006) Morice Y., Department of Virology, INSERM U635, Henri Mondor Hospital, 51 av Mal de Lattre de Tassigny, Creteil, 94010, FRANCE</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AM286039.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 1b</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>Pt9-2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:31647</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>genotype: 1b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AM286039.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>CAL07811.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>GOA:A0JJ77</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR002521</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR002522</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>UniProtKB/TrEMBL:A0JJ77</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRAPRKTSERSQPRGRRQPIPKARQPEGRAWAQPGYPWPLYGNEGMGWAGWLLSPRGSRPSWGPTDPRRRSRNLGKVIDTLTCGLADLMGYIPLVGGPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTIPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AM286039.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRAPRKTSERSQPRGRRQPIPKARQPEGRAWAQPGYPWPLYGNEGMGWAGWLLSPRGSRPSWGPTDPRRRSRNLGKVIDTLTCGLADLMGYIPLVGGPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTIPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgtcgcccacaggacgtcaagttcccgggcggtggtcagatcgttggtggagtctacctactgccgcgcaggggccccaggttgggtgtgcgcgcacctaggaagacttccgagcggtcacaacctcgtggaaggcgacaacctatccccaaggctcgccagcccgagggtagggcctgggctcagcccgggtacccttggcccctctatggcaatgagggcatggggtgggcaggatggctcctgtcaccccgtggttctcggcctagttggggccccacggacccccggcgtaggtcgcgtaatttgggtaaggtcatcgataccctcacatgcggccttgccgacctcatggggtacattccgctcgtcggcggccccctagggggcgctgccagggccctggcgcatggcgtccgggttctggaggacggcgtgaactatgcaacagggaatctgcccggttgctctttctctatcttcctcttggctttgctatcctgtctgaccatcccagcttccgct</GBSeq_sequence>
+</GBSeq>

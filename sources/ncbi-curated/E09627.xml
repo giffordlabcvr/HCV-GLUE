@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>E09627</GBSeq_locus>
+  <GBSeq_length>1008</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>04-NOV-2005</GBSeq_update-date>
+  <GBSeq_create-date>29-SEP-1997</GBSeq_create-date>
+  <GBSeq_definition>DNA encoding novel HCV proteinase that cleaves between the amino acids 1026 and 1027 of HCV protein</GBSeq_definition>
+  <GBSeq_primary-accession>E09627</GBSeq_primary-accession>
+  <GBSeq_accession-version>E09627.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|E09627.1|</GBSeqid>
+    <GBSeqid>pat|JP|1995184648|1</GBSeqid>
+    <GBSeqid>gi|22026254</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 1995184648-A/1</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1008</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Shimotoono,K.</GBAuthor>
+        <GBAuthor>Hijikata,M.</GBAuthor>
+        <GBAuthor>Kato,N.</GBAuthor>
+        <GBAuthor>Ootsuyama,Y.</GBAuthor>
+        <GBAuthor>Nibuya,H.</GBAuthor>
+        <GBAuthor>Kakiuchi,N.</GBAuthor>
+        <GBAuthor>Komoda,Y.</GBAuthor>
+        <GBAuthor>Motoi,Y.</GBAuthor>
+        <GBAuthor>Tanji,Y.</GBAuthor>
+        <GBAuthor>Hirowatari,Y.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>HCV PROTEINASE ACTIVE SUBSTANCE, ITS PRODUCTION AND METHOD FOR ASSAYING THE SAME PROTEINASE AND INHIBITOR FOR THE SAME POTEINASE</GBReference_title>
+      <GBReference_journal>Patent: JP 1995184648-A 1 25-JUL-1995; SHIMOTOONO KUNITADA, SUMITOMO METAL IND LTD, SOUYAKU GIJUTSU KENKYUSHO:KK</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Unknown (Hepatitis C virus)~PN JP 1995184648-A/1~PD 25-JUL-1995~PF 05-FEB-1993 JP 1993018854~PR 07-FEB-1992 JP 92P 22657, 18-SEP-1992 JP 92P 249240, PR 04-DEC-1992 JP 92P 325303~PI SHIMOTOONO KUNITADA, HIJIKATA MAKOTO, KATO NORIYUKI, PI OOTSUYAMA YUUKO,~PI NIBUYA HIROSHI, KAKIUCHI NOBUKO, KOMODA YASUMASA, PI MOTOI YASUTSUGU,~PI TANJI YASUNORI, HIROWATARI YUJI~PC C12N9/50,C07K14/47,C12N1/21,C12N15/09,G01N33/576//C07K14/18, PC (C12N9/50,~PC C12R1:19),(C12N1/21,C12R1:19);~CC strandedness: Double;~CC topology: Linear;~FH Key Location/Qualifiers~FH~FT source 1..1008~FT /organism="Unclassified"~FT mat_peptide 1..1008~FT /product="proteinase"~FT misc_feature 1..1008~FT /note="this region consists of HCV gene FT between the bases~FT 3021 and 4028"</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1008</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1008</GBInterval_to>
+          <GBInterval_accession>E09627.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ccgctcatggtgctccaggctggcatgactagagtgccgtactttgtacgcgctcaggggctcatccgtgcatgcatgttagtgcggaaggtcgctggaggccactatgtccaaatggccttcatgaagctggccgcgctgacaggtacgtacgtatatgaccatcttactccactgcgggattgggcccacgcgggcctacgagaccttgcggtggcagtagagcccgtcgtcttctctgacatggagactaagatcatcacctggggggcagacaccgcggcgtgtggggacatcatctcgggtctaccagtctccgcccgaagggggaaggagatacttctaggaccggccgatagttttggagagcaggggtggcggctccttgcgcctatcacggcctattcccaacaaacgcggggcctgcttggctgtatcatcactagcctcacaggtcgggacaagaaccaggtcgatggggaggttcaggtgctctccaccgcaacgcaatctttcctggcgacctgcgtcaatggcgtgtgttggaccgtctaccatggtgccggctcgaagaccctggccggcccgaagggtccaatcacccaaatgtacaccaatgtagaccaggacctcgtcggctggccggcgccccccggggcgcgctccatgacaccgtgcacctgcggcagctcggacctttacttggtcacgaggcatgccgatgtcattccggtgcgccggcgaggcgacagcagggggagtgtactctcccctaggcccgtctcctacctgaagggctcctcgggtggaccactgctttgcccttcggggcacgttgtaggcatcttccgggctgctgcttgcacccggggggttgcgaaggcggtggacttcatacccgttgagtctatggaaactaccatgcggtctccggtcttcacagacaactcatcccctccggccgtaccgcaaacattccaagtggcacatttacacgctcccactggc</GBSeq_sequence>
+</GBSeq>

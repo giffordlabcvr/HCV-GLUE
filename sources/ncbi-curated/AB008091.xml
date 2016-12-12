@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AB008091</GBSeq_locus>
+  <GBSeq_length>533</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>06-OCT-2007</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus NS5A gene, partial cds, strain: JaIFN9</GBSeq_definition>
+  <GBSeq_primary-accession>AB008091</GBSeq_primary-accession>
+  <GBSeq_accession-version>AB008091.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|AB008091.1|</GBSeqid>
+    <GBSeqid>gi|157940053</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Kato,T.</GBAuthor>
+        <GBAuthor>Mizokami,M.</GBAuthor>
+        <GBAuthor>Orito,E.</GBAuthor>
+        <GBAuthor>Ohba,K.</GBAuthor>
+        <GBAuthor>Nakano,T.</GBAuthor>
+        <GBAuthor>Kondo,Y.</GBAuthor>
+        <GBAuthor>Tanaka,Y.</GBAuthor>
+        <GBAuthor>Ueda,R.</GBAuthor>
+        <GBAuthor>Mukaide,M.</GBAuthor>
+        <GBAuthor>Yasuda,K.</GBAuthor>
+        <GBAuthor>Iino,S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Amino acid substitutions in NS5A region of GB virus C and response to interferon therapy</GBReference_title>
+      <GBReference_journal>J. Med. Virol. 57 (4), 376-382 (1999)</GBReference_journal>
+      <GBReference_pubmed>10089050</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..533</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Kato,T.</GBAuthor>
+        <GBAuthor>Mizokami,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (09-OCT-1997) Takanobu Kato, Nagoya City University Medical School, Second Department of Medicine; Kawasumi, Mizuho, Nagoya, Aichi 467-8601, Japan (E-mail:takanobu@med.nagoya-cu.ac.jp, Tel:81-52-851-5511, Fax:81-52-852-0849)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..533</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>533</GBInterval_to>
+          <GBInterval_accession>AB008091.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>JaIFN9</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;533</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>533</GBInterval_to>
+          <GBInterval_accession>AB008091.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;533</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>533</GBInterval_to>
+          <GBInterval_accession>AB008091.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAF81637.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>PLLRDEVTFQVGLNQYPVGSQLPCEPEPDVVVVTSMLTDPSHITAETAKRRLARGSPPSLASSSASQLSAPSLKATCTTHHDSPDVDLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEDEREPSVAAEILRKSKKFPPALPVWARPDYNPPLLESWKDPGYVPPVVHGCP</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>aacccctcctacgggacgaggtcacattccaagtcgggctcaaccaatacccggttgggtcacagctcccatgcgagcccgaaccggatgtagtggtggtcacttccatgctcactgacccctcccacattacagcagagacggcaaagcgtaggctggccagggggtctcccccctccttggccagctcttcagctagccagttgtctgcgccttctctgaaggcgacatgcactacccatcacgactccccggatgttgacctcatcgaggccaaccttctgtggcggcaggagatgggcgggaacatcacccgtgtggagtcggagaacaaagtagtaatcttggactctttcgacccgcttcgagcggaggaggacgagagggaaccatccgttgcagcggagatcttgcggaaatccaagaagttccccccagcgctgcccgtatgggcacgcccggattacaatcctccactgctagagtcctggaaagacccgggctacgtccctccggtggtacacgggtgtcca</GBSeq_sequence>
+</GBSeq>

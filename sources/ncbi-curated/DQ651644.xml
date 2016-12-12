@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DQ651644</GBSeq_locus>
+  <GBSeq_length>570</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>17-AUG-2006</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus clone TVC17B2 envelope glycoprotein (E2) gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>DQ651644</GBSeq_primary-accession>
+  <GBSeq_accession-version>DQ651644.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|DQ651644.1|</GBSeqid>
+    <GBSeqid>gi|110182707</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..570</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Troesch,M.</GBAuthor>
+        <GBAuthor>Meunier,I.</GBAuthor>
+        <GBAuthor>Lapierre,P.</GBAuthor>
+        <GBAuthor>Lapointe,N.</GBAuthor>
+        <GBAuthor>Alvarez,F.</GBAuthor>
+        <GBAuthor>Boucher,M.</GBAuthor>
+        <GBAuthor>Soudeyns,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Study of a novel hypervariable region in hepatitis C virus (HCV) E2 envelope glycoprotein</GBReference_title>
+      <GBReference_journal>Virology 352 (2), 357-367 (2006)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1016/j.virol.2006.05.015</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>16781757</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..570</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Troesch,M.</GBAuthor>
+        <GBAuthor>Meunier,I.</GBAuthor>
+        <GBAuthor>Lapierre,P.</GBAuthor>
+        <GBAuthor>Lapointe,N.</GBAuthor>
+        <GBAuthor>Alvarez,F.</GBAuthor>
+        <GBAuthor>Boucher,M.</GBAuthor>
+        <GBAuthor>Soudeyns,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (24-MAY-2006) Unite d'Immunopathologie Virale, Centre de Recherche, CHU Sainte-Justine, 3175 Cote Sainte-Catherine, Room 6735, Montreal, Quebec H3T 1C5, Canada</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..570</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>570</GBInterval_to>
+          <GBInterval_accession>DQ651644.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>TVC17B2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Canada</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;570</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>570</GBInterval_to>
+          <GBInterval_accession>DQ651644.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>E2</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;570</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>570</GBInterval_to>
+          <GBInterval_accession>DQ651644.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>E2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>envelope glycoprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ABG55357.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>AWDMMMNWSPTTALVVAQLLRIPQAILDMIAGAHWGVLAGIAYFSMVGNWAKVLVVLLLFAGVDAQTHVTGGAAARRASAFAGLFTQGPKQNVQLINTNGSWHINSTALNCNDSLNTGWVAGLFYHYTFNSSGCPERLTSCRPLTDFAQGWGPISYTNGSGPDQRPYCWHYPPKPCGIVPAKNVCGPVYC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gcatgggatatgatgatgaactggtcccctacgacggcgttggtagtagctcagctgctccggatcccacaagccatcctggacatgatcgctggtgcccactggggagtcctggcgggcatagcgtatttctccatggtggggaactgggcgaaggtcctggtagtgctgctgctatttgccggcgtcgacgcgcaaacccacgtcaccgggggggctgccgcccgccgcgcgtctgcatttgctggtctcttcacacaaggccccaagcaaaacgtccagctgatcaacaccaacggcagttggcacatcaatagcacggccttgaactgcaatgatagccttaacaccggctgggtagcagggcttttctaccactacacattcaactcttcaggctgtcctgagaggttgaccagctgccgacccctcaccgattttgcccagggctggggccctatcagttacaccaacggaagtggccccgaccaacgcccctactgctggcactaccctccaaaaccctgtggtattgtgcccgcaaagaacgtgtgtggcccagtatattgc</GBSeq_sequence>
+</GBSeq>

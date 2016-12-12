@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KF420502</GBSeq_locus>
+  <GBSeq_length>1373</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-AUG-2015</GBSeq_update-date>
+  <GBSeq_create-date>10-NOV-2013</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate DI1D_07 nonstructural protein 5A gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KF420502</GBSeq_primary-accession>
+  <GBSeq_accession-version>KF420502.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KF420502.1|</GBSeqid>
+    <GBSeqid>gi|556544163</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1373</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Le Guillou-Guillemette,H.</GBAuthor>
+        <GBAuthor>Ducancelle,A.</GBAuthor>
+        <GBAuthor>Bertrais,S.</GBAuthor>
+        <GBAuthor>Lemaire,C.</GBAuthor>
+        <GBAuthor>Pivert,A.</GBAuthor>
+        <GBAuthor>Veillon,P.</GBAuthor>
+        <GBAuthor>Bouthry,E.</GBAuthor>
+        <GBAuthor>Alain,S.</GBAuthor>
+        <GBAuthor>Thibault,V.</GBAuthor>
+        <GBAuthor>Abravanel,F.</GBAuthor>
+        <GBAuthor>Rosenberg,A.R.</GBAuthor>
+        <GBAuthor>Henquell,C.</GBAuthor>
+        <GBAuthor>Andre-Garnier,E.</GBAuthor>
+        <GBAuthor>Petsaris,O.</GBAuthor>
+        <GBAuthor>Vallet,S.</GBAuthor>
+        <GBAuthor>Bour,J.B.</GBAuthor>
+        <GBAuthor>Baazia,Y.</GBAuthor>
+        <GBAuthor>Trimoulet,P.</GBAuthor>
+        <GBAuthor>Andre,P.</GBAuthor>
+        <GBAuthor>Gaudy-Graffin,C.</GBAuthor>
+        <GBAuthor>Bettinger,D.</GBAuthor>
+        <GBAuthor>Larrat,S.</GBAuthor>
+        <GBAuthor>Signori-Schmuck,A.</GBAuthor>
+        <GBAuthor>Saoudin,H.</GBAuthor>
+        <GBAuthor>Pozzetto,B.</GBAuthor>
+        <GBAuthor>Lagathu,G.</GBAuthor>
+        <GBAuthor>Minjolle-Cha,S.</GBAuthor>
+        <GBAuthor>Stoll-Keller,F.</GBAuthor>
+        <GBAuthor>Pawlotsky,J.M.</GBAuthor>
+        <GBAuthor>Izopet,J.</GBAuthor>
+        <GBAuthor>Payan,C.</GBAuthor>
+        <GBAuthor>Lunel-Fabiani,F.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Identification of a duplicated V3 domain in NS5A associated with cirrhosis and hepatocellular carcinoma in HCV-1b patients</GBReference_title>
+      <GBReference_journal>J. Clin. Virol. 69, 203-209 (2015)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1016/j.jcv.2015.06.096</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>26209408</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1373</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Le Guillou-Guillemette,H.</GBAuthor>
+        <GBAuthor>Pivert,A.</GBAuthor>
+        <GBAuthor>Bertrais,S.</GBAuthor>
+        <GBAuthor>Veillon,P.</GBAuthor>
+        <GBAuthor>Ducancelle,A.</GBAuthor>
+        <GBAuthor>Bouthry,E.</GBAuthor>
+        <GBAuthor>Alain,S.</GBAuthor>
+        <GBAuthor>Thibault,V.</GBAuthor>
+        <GBAuthor>Abravanel,F.</GBAuthor>
+        <GBAuthor>Rosenberg,A.R.</GBAuthor>
+        <GBAuthor>Henquell,C.</GBAuthor>
+        <GBAuthor>Andre-Garnier,E.</GBAuthor>
+        <GBAuthor>Petsaris,O.</GBAuthor>
+        <GBAuthor>Vallet,S.</GBAuthor>
+        <GBAuthor>Bour,J.-B.</GBAuthor>
+        <GBAuthor>Baazia,Y.</GBAuthor>
+        <GBAuthor>Trimoulet,P.</GBAuthor>
+        <GBAuthor>Andre,P.</GBAuthor>
+        <GBAuthor>Gaudy-Graffin,C.</GBAuthor>
+        <GBAuthor>Bettinger,D.</GBAuthor>
+        <GBAuthor>Larrat,S.</GBAuthor>
+        <GBAuthor>Signori-Schmuck,A.</GBAuthor>
+        <GBAuthor>Saoudin,H.</GBAuthor>
+        <GBAuthor>Pozzetto,B.</GBAuthor>
+        <GBAuthor>Lagathu,G.</GBAuthor>
+        <GBAuthor>Minjolle-Cha,S.</GBAuthor>
+        <GBAuthor>Stoll-Keller,F.</GBAuthor>
+        <GBAuthor>Pawlotsky,J.-M.</GBAuthor>
+        <GBAuthor>Izopet,J.</GBAuthor>
+        <GBAuthor>Payan,C.</GBAuthor>
+        <GBAuthor>Lunel-Fabiani,F.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (17-JUL-2013) Laboratoire de Virologie-HIFI Laboratory UPRES 3859, SFR 4208, University Hospital of Angers, 4 rue Larrey, Angers 49933, France</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1373</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1373</GBInterval_to>
+          <GBInterval_accession>KF420502.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>DI1D_07</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>serum from HCV infected french patient</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>France</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2007</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1 b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1373</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1373</GBInterval_to>
+          <GBInterval_accession>KF420502.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>nonstructural protein 5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AGZ62553.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>VWDWVCTVLADFKIWLQSKLLPRLPGVPFFSCQRGYKGVWRGDGIMQTTCPCGAQITGHVKNGSMRIVGPKACSNTWHGTFPINAYTTGPCTPSPAPNYSKALWRVAAEEYVEVTQVGDFHYVTGMTTDNLKCPCQVPAPEFFTEVDGVRLHRYAPACKPLLRDEVTFQVGLNQYLVGSQLPCEPEPDVAVLTSMLTDPSHITAETAKRRLARGSPPSLASSSASQLSAPSLKATCTTHHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLRAEEDENEISVPAEILRKSRKFPRAMPIWARPDYNPPLLESWKDPDYVPPVVHGCPLPPTKAPPIPPPRRKRTVVLTESTVSSALAELATKTFGSSGSSVVGSSTAIALSDQPSDGGGTGSDAPGGSGSSALDSGIATAPLDQTPDDRGGGRDVESYSSMPPLEGEPGDPDLSDGSWS</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gtttgggactgggtgtgcacagtgttggctgactttaagatctggctccagtccaagcttttgccgcggctgccaggagtycctttcttctcgtgtcaacgtgggtacaagggagtctggcggggagacggcattatgcagaccacctgcccatgtggagcacaaatcaccggacatgtaaaaaacggttccatgaggatcgttgggcctaaagcctgcagcaacacatggcatggaacattccccatcaacgcgtacaccacgggcccctgcacaccctccccagcgccaaactattccaaagcgctgtggcgagtggctgctgargagtacgtggaggtcacgcaggtgggggatttccactacgtgacgggcatgaccactgataacttgaagtgcccatgccaggttccggcccccgaattcttcacagaggtggatggggtgcggctgcacaggtacgccccggcgtgcaaacctctcctgcgggatgaggtcacgttccaggtcgggcttaaccaatacctggttgggtcacagctcccatgtgagcccgagccggatgtagcagtgctcacttccatgcttaccgacccctcccacatcacagcagagacggctaagcgtaggctggccagggggtctcccccctccttggccagctcctcagctagccagttgtctgcgccttccttgaaggcgacgtgcactacccatcatgactccccagacgctgacctcattgaggccaatctcctgtggcggcaggagatgggcggaaacatcacccgcgtggagtcagaaaacaaggtagtaatcctggactcttttgacccgcttcgggcggaggaggatgagaatgaaatatccgttccggcggagatcctgcggaaatccaggaaattccctcgggcratgcccatatgggcacgcccggattataatcctccactgctagaatcctggaaggacccggactacgtccctccggtggtacacgggtgcccactgccacccaccaaggcccctccaataccacccccacggagaaagaggacggttgtcctgacagagtccactgtgtcttctgccttggcggagctcgctacgaagacttttggcagctccggatcgtcggtcgttggtagcagcacggcgatcgccctttctgaccagccctccgatggtggcggcacgggatccgacgctcccggtggctccggatcatcggccttagacagcggcattgcgactgccccacttgaccagacccccgacgaccgcgggggaggaagagacgtggagtcgtactcctccatgccccctcttgagggggagccgggggaccccgatctcagcgacgggtcttggtc</GBSeq_sequence>
+</GBSeq>

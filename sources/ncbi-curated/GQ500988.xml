@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>GQ500988</GBSeq_locus>
+  <GBSeq_length>543</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>24-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>06-OCT-2009</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate P13.B protease (NS3) gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>GQ500988</GBSeq_primary-accession>
+  <GBSeq_accession-version>GQ500988.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|GQ500988.1|</GBSeqid>
+    <GBSeqid>gi|260169889</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..543</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Susser,S.</GBAuthor>
+        <GBAuthor>Welsch,C.</GBAuthor>
+        <GBAuthor>Wang,Y.</GBAuthor>
+        <GBAuthor>Zettler,M.</GBAuthor>
+        <GBAuthor>Domingues,F.S.</GBAuthor>
+        <GBAuthor>Karey,U.</GBAuthor>
+        <GBAuthor>Hughes,E.</GBAuthor>
+        <GBAuthor>Ralston,R.</GBAuthor>
+        <GBAuthor>Tong,X.</GBAuthor>
+        <GBAuthor>Herrmann,E.</GBAuthor>
+        <GBAuthor>Zeuzem,S.</GBAuthor>
+        <GBAuthor>Sarrazin,C.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Characterization of resistance to the protease inhibitor boceprevir in hepatitis C virus-infected patients</GBReference_title>
+      <GBReference_journal>Hepatology 50 (6), 1709-1718 (2009)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1002/hep.23192</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>19787809</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..543</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Susser,S.</GBAuthor>
+        <GBAuthor>Welsch,C.</GBAuthor>
+        <GBAuthor>Wang,Y.</GBAuthor>
+        <GBAuthor>Zettler,M.</GBAuthor>
+        <GBAuthor>Domingues,F.S.</GBAuthor>
+        <GBAuthor>Karey,U.</GBAuthor>
+        <GBAuthor>Hughes,E.</GBAuthor>
+        <GBAuthor>Ralston,R.</GBAuthor>
+        <GBAuthor>Tong,X.</GBAuthor>
+        <GBAuthor>Herrmann,E.</GBAuthor>
+        <GBAuthor>Zeuzem,S.</GBAuthor>
+        <GBAuthor>Sarrazin,C.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (20-AUG-2009) Innere Medizin 1, J. W. Goethe University Hospital, Theodor-Stern-Kai 7, Frankfurt/Main, Hessen 60590, Germany</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..543</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>543</GBInterval_to>
+          <GBInterval_accession>GQ500988.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>P13.B</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>France</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>14-Apr-2004</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;543</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>543</GBInterval_to>
+          <GBInterval_accession>GQ500988.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS3</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;543</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>543</GBInterval_to>
+          <GBInterval_accession>GQ500988.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>protease</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ACX32444.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>APITAYAQQTRGLLGCIITSLTGRDKNQVEGEVQVVSTATQSFLATCVNGVCWTVYHGAGSKTLAGQKGPITQMYTNVDQDLVGWQAPPGARSLKPCTCGSSDLYLVTRHADVIPVRRRGDSRGSLLSPRPVSYLKGSSGGPLLCPSGDAVGIFRAAVCTRGVAKAVDFVPVESMETTMRS</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gcacccatcacggcttacgcccagcagacccgggggctacttgggtgcatcatcactagcctcacagggcgtgataagaaccaggtcgagggagaggttcaagtggtttccaccgcaacgcaatctttcctggcgacctgcgtcaacggcgtgtgttggactgtctaccatggtgccggctcaaagaccttagccggccaaaaaggcccaattacccaaatgtacaccaatgtggaccaggacctcgtcggctggcaggcaccccccggggcgcgttccttaaaaccatgcacctgcggcagctcggacctttacttggtcacgaggcatgctgacgtcattccggtgcgccggcggggcgacagcagggggagcctgctttcccccaggcccgtctcctacttgaaaggctcctcgggtggtcctttgctctgcccctcgggggacgctgtgggcatcttccgggctgccgtgtgcacccggggggttgcgaaggcggtggactttgtgcccgtcgagtccatggaaaccaccatgcggtcc</GBSeq_sequence>
+</GBSeq>

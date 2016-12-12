@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>LG088406</GBSeq_locus>
+  <GBSeq_length>576</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>29-JUN-2016</GBSeq_update-date>
+  <GBSeq_create-date>29-JUN-2016</GBSeq_create-date>
+  <GBSeq_definition>KR 1020150085128-A/3: NOVEL FUSION PROTEINS AND USE THEREOF FOR PREPARING HEPATITIS C VACCINES</GBSeq_definition>
+  <GBSeq_primary-accession>LG088406</GBSeq_primary-accession>
+  <GBSeq_accession-version>LG088406.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|LG088406.1|</GBSeqid>
+    <GBSeqid>pat|KR|1020150085128|3</GBSeqid>
+    <GBSeqid>gi|1041292553</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>KR 1020150085128-A/3</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..576</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Roingeard,P.</GBAuthor>
+        <GBAuthor>Hourioux,C.</GBAuthor>
+        <GBAuthor>Patient,R.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>NOVEL FUSION PROTEINS AND USE THEREOF FOR PREPARING HEPATITIS C VACCINES</GBReference_title>
+      <GBReference_journal>Patent: KR 1020150085128-A 3 22-JUL-2015; UNIVERSITE FRANCOIS RABELAIS DE TOURS</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>KN KR 1020157018046-A/3~AN KR 1020157018046~AD 2015-07-06~PN KR 1020150085128~PD 2015-07-22~AT NOVEL FUSION PROTEINS AND USE THEREOF FOR PREPARING HEPATITIS~AT C VACCINES~AI Roingeard, Philippe|Hourioux, Christophe|Patient, Romuald~AA UNIVERSITE FRANCOIS RABELAIS DE TOURS~PR~OS Hepatitis C virus~TY DNA~FH Key Location/Qualifiers~FT CDS (1)..(576)</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..576</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>576</GBInterval_to>
+          <GBInterval_accession>LG088406.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>taccaagtacgcaactcctcgggcctttaccatgtcaccaatgattgccctaactcgagtattgtgtacgagacggccgataccatcctacactctccggggtgtgtcccttgcgttcgcgagggcaatgcctcaaaatgttgggtggcggtggcccctacagtcgccaccagagacggcaagctccccacaacgcagcttcgacgtcacatcgatctgctcgtcaggagcgccaccctctgctcggccctctatgtgggggacttgtgcgggtccgtcttcctcgtcggtcaactgttcaccttctcccccaggcgccactggacaacgcaagactgcaactgttccatgtaccccggccatataacgggtcaccgtatggcatgggacatgatgatgaactggtcccctacgacagcgctggtagtagctcagctgctcagggtcccgcaagccatcttggacatgatcgctggtgcccactggggagtcctagcgggcatagcgtatttctccatggtggggaactgggcgaaggtcctggtggtgctgttgctgttcgccagcgtcgatgcg</GBSeq_sequence>
+</GBSeq>

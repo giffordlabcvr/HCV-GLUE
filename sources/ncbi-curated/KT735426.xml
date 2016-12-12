@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KT735426</GBSeq_locus>
+  <GBSeq_length>1131</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>22-NOV-2015</GBSeq_update-date>
+  <GBSeq_create-date>22-NOV-2015</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 14DH045 polyprotein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KT735426</GBSeq_primary-accession>
+  <GBSeq_accession-version>KT735426.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KT735426.1|</GBSeqid>
+    <GBSeqid>gi|953067932</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1131</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chen,M.</GBAuthor>
+        <GBAuthor>Ma,Y.</GBAuthor>
+        <GBAuthor>Chen,H.</GBAuthor>
+        <GBAuthor>Luo,H.</GBAuthor>
+        <GBAuthor>Dai,J.</GBAuthor>
+        <GBAuthor>Song,L.</GBAuthor>
+        <GBAuthor>Yang,C.</GBAuthor>
+        <GBAuthor>Mei,J.</GBAuthor>
+        <GBAuthor>Yang,L.</GBAuthor>
+        <GBAuthor>Dong,L.</GBAuthor>
+        <GBAuthor>Jia,M.</GBAuthor>
+        <GBAuthor>Lu,L.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Multiple Introduction and Naturally Occuring Drug Resistance of HCV among HIV-Infected Intravenous Drug Users in Yunnan: An Origin of China's HIV/HCV Epidemics</GBReference_title>
+      <GBReference_journal>PLoS ONE 10 (11), E0142543 (2015)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1371/journal.pone.0142543</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>26562015</GBReference_pubmed>
+      <GBReference_remark>Publication Status: Online-Only</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1131</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chen,M.</GBAuthor>
+        <GBAuthor>Ma,Y.</GBAuthor>
+        <GBAuthor>Chen,H.</GBAuthor>
+        <GBAuthor>Luo,H.</GBAuthor>
+        <GBAuthor>Dai,J.</GBAuthor>
+        <GBAuthor>Song,L.</GBAuthor>
+        <GBAuthor>Yang,C.</GBAuthor>
+        <GBAuthor>Mei,J.</GBAuthor>
+        <GBAuthor>Yang,L.</GBAuthor>
+        <GBAuthor>Dong,L.</GBAuthor>
+        <GBAuthor>Jia,M.</GBAuthor>
+        <GBAuthor>Lu,L.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (12-SEP-2015) Institute for AIDS/STD Control and Prevention, Yunnan Center for Disease Control and Prevention, No 158, Dongsi Street, Kunming, Yunan 650022, China</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1131</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1131</GBInterval_to>
+          <GBInterval_accession>KT735426.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>14DH045</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>China</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2014</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>subtype</GBQualifier_name>
+          <GBQualifier_value>3b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1131</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1131</GBInterval_to>
+          <GBInterval_accession>KT735426.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>contains E1 and E2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ALO51698.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>SGLYILTNDCSNESIVYEADDVILHLPGCVPCTAAGNQTSCWTPVSPTVAVKYPGAATASIRNHVDMLVGAATLCSALYVGDLCGAVFLMGQAFTFRPRRHMTVQTCNCSIYPGHITGHRMAWDMMMNWSPAIGLIVSHLMRLPQTFLDLVVGAHWGVMAGLAYFSMQGNWAKVGIVLIMFSGVDAXTHVSGGAAAHSTSMLTRLFTPGAKQALHLVNTNGSWHINSTALNCNDSINTGFIAGLIYYHKFNSTGCPARMSSCKPITAFEQGWGPLTDANMSGPSEDRPYCWHYPPRPCBTVKALTVCGPVYCFTPSPVVVGTTDARGLPTYTFGENETDVFLLTSLRPPQGRWFGCVWMNSTGFVKTCGCPPCNIYG</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>tccggcctatacatacttaccaacgactgctctaaygagagcattgtgtatgaggccgacgatgtgatcttgcacctacccggatgcgtgccctgcaccgcagccggcaaccaaacatcgtgctggacaccggtatcaccaacagtggccgtcaaatatcctggtgcggccaccgcatcgatccgcaatcatgtggatatgctggtgggcgcagccacgttgtgctcagcactatacgtcggggacctctgcggggccgtgttccttatgggacaagcattcaccttcaggcctcgccgacacatgactgtacagacatgcaactgctcgatttacccaggccacattacaggacatcgtatggcgtgggatatgatgatgaactggtcccctgcaatcgggctgatagtatcacacttgatgcggttgcctcaaaccttccttgacctggtcgtaggggcccactggggtgtgatggcaggcctygcctacttctccatgcaaggtaactgggctaaggtcggcatcgtgctgatcatgttctcgggagtggatgcgraaacacacgtcagcggtggcgccgcggctcactctacttccatgctcacgcgcctgttcaccccgggygcgaaacaggccctgcacttagtgaataccaatggatcatggcacatcaacagcactgccctgaattgtaatgattccataaacaccgggttcatagcagggctcatctactatcacaagttcaactccacgggatgtccggcccgaatgtccagctgcaagcccatcacagctttcgagcaggggtggggtccactgacagatgccaacatgtccgggcccagtgaggacagaccatactgctggcactacccacccaggccctgcracacagtcaaggcattgacagtctgcgggcccgtctactgcttcacgccatcgccggtagtggtgggcaccactgatgccaggggcttgccaacttacacctttggtgagaacgagacagatgtgttcttgctgacctccttgaggcccccccaaggccggtggtttggatgtgtgtggatgaatagtacggggtttgtgaagacctgcgggtgccccccttgcaatatctatggg</GBSeq_sequence>
+</GBSeq>

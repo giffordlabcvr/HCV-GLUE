@@ -35,6 +35,9 @@
 
   create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
 
+  # these modules download the curated sequences from NCBI
+  create module --fileName modules/hcvCuratedNcbiImporter.xml curatedNcbiImporter
+
   # these modules download the refseqs from NCBI
   create module --fileName modules/hcvNcbiRefSeqsImporter.xml ncbi-refseqs-importer
   create module --fileName modules/hcvNcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer

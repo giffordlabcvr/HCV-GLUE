@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPCNS1SPJ</GBSeq_locus>
+  <GBSeq_length>1615</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>03-DEC-1992</GBSeq_update-date>
+  <GBSeq_create-date>02-AUG-1993</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus core protein (NS1) gene</GBSeq_definition>
+  <GBSeq_primary-accession>M74813</GBSeq_primary-accession>
+  <GBSeq_accession-version>M74813.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|M74813.1|HPCNS1SPJ</GBSeqid>
+    <GBSeqid>gi|329791</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>NS1 protein</GBKeyword>
+    <GBKeyword>core protein</GBKeyword>
+    <GBKeyword>envelope-associated protein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1615</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Cha,T.A.</GBAuthor>
+        <GBAuthor>Beall,E.</GBAuthor>
+        <GBAuthor>Irvine,B.</GBAuthor>
+        <GBAuthor>Kolberg,J.</GBAuthor>
+        <GBAuthor>Chien,D.</GBAuthor>
+        <GBAuthor>Kuo,G.</GBAuthor>
+        <GBAuthor>Urdea,M.S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>At least five related, but distinct, hepatitis C viral genotypes exist</GBReference_title>
+      <GBReference_journal>Proc. Natl. Acad. Sci. U.S.A. 89 (15), 7144-7148 (1992)</GBReference_journal>
+      <GBReference_pubmed>1323128</GBReference_pubmed>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>Original source text: Hepatitis C virus (individual_isolate US4) cDNA to genomic RNA.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1615</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1615</GBInterval_to>
+          <GBInterval_accession>M74813.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>US4</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>agtgtcgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggatcaacccgctcaatgcctggagatttgggcgtgcccccgcgagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccatgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgcccacaggacgttaagttcccgggcggtggccaggtcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggtcgcaacctcgtggaaggcgacaacctatccccaaggctcgccagcccgagggcagggcctgggctcagcccgggtacccttggcccctctatggcaatgagggcatggggtgggcaggatggctcctgtcaccccgtggctctcggcctagttggggccccacggacccccggcgtaggtcgcgtaatttgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgctcgtcggcgccccccttaggggcgctgccagggccttggcgcatggcgtccgggttctggaggacggcgtgaactacgcaacagggaatctgcccggttgctccttttctatcttcctcttggctctgctgtcctgtctgaccatcccagcttccgcttatgaagtgcgcaacgtgtccggagtgtaccatgtcacgaacgactgctccaacgcaagtattgtgtatgaggcagcggacatgatcatgcacacccccgggtgcgtgccctgcgttcgggagaacaactcctcccggtgctgggtagcgctgactcccacgctcgcggccaggaacgccagcgtccccaccacgacaatacgacgtcacgtcgatttgctcgttggggcggctaccctctgttccgctatgtacgtgggagacctctgcggatctgttttcctcatctcccagctgttcaccttctcgcctcgccggcatgagacagtgcaggactgcaattgctccctctatcccggccacgtatcaggccaccgcatggcttgggatatgatgatgaactggtcacctacaacagccctagtggtatcgcagttactccggatcccacaagccgtcatggatatggtggcgggggcccactggggagtcctggcgggccttgcctactattccatggtgggcaactgggctaaggtcttgattgtgatgctactctttgccggcgttgacgggcacacctacacgacaggggggacggtagcccgcagcacgcaggggcttgtgggcttcctttcgcctgggccgtcccagaatatccagctcataaacaccaacggcagctggcacatcaacaggactgccctgaattgcaaagacaccctccagaccgggttcattgctgcgctgttctacagacacaagttcaactcgtccggatgcccagagcgcatggcca</GBSeq_sequence>
+</GBSeq>

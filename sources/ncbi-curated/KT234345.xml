@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KT234345</GBSeq_locus>
+  <GBSeq_length>2055</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>29-SEP-2015</GBSeq_update-date>
+  <GBSeq_create-date>04-AUG-2015</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate B2907 nonstructural protein NS3-4A gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KT234345</GBSeq_primary-accession>
+  <GBSeq_accession-version>KT234345.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KT234345.1|</GBSeqid>
+    <GBSeqid>gi|908270962</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..2055</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Berger,K.L.</GBAuthor>
+        <GBAuthor>Scherer,J.</GBAuthor>
+        <GBAuthor>Ranga,M.</GBAuthor>
+        <GBAuthor>Sha,N.</GBAuthor>
+        <GBAuthor>Stern,J.O.</GBAuthor>
+        <GBAuthor>Quinson,A.M.</GBAuthor>
+        <GBAuthor>Kukolj,G.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Baseline Polymorphisms and Emergence of Drug Resistance in the NS3/4A Protease of Hepatitis C Virus Genotype 1 following Treatment with Faldaprevir and Pegylated Interferon Alpha 2a/Ribavirin in Phase 2 and Phase 3 Studies</GBReference_title>
+      <GBReference_journal>Antimicrob. Agents Chemother. 59 (10), 6017-6025 (2015)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1128/AAC.00932-15</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>26195509</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..2055</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Berger,K.L.</GBAuthor>
+        <GBAuthor>Scherer,J.</GBAuthor>
+        <GBAuthor>Ranga,M.</GBAuthor>
+        <GBAuthor>Sha,N.</GBAuthor>
+        <GBAuthor>Stern,J.O.</GBAuthor>
+        <GBAuthor>Quinson,A.-M.</GBAuthor>
+        <GBAuthor>Kukolj,G.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (29-JUN-2015) Boehringer Ingelheim Pharmaceuticals Inc., 900 Ridgebury Road, Ridgefield, CT 06877, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..2055</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2055</GBInterval_to>
+          <GBInterval_accession>KT234345.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>B2907</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>plasma</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>subtype</GBQualifier_name>
+          <GBQualifier_value>1a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>previous HCV antiviral treatment: interferon+ribavirin experienced</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;2055</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2055</GBInterval_to>
+          <GBInterval_accession>KT234345.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>protease</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>nonstructural protein NS3-4A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AKT06416.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>APITAYAQQTRGLLGCIITSLTGRDKNQVEGEVQIVSTAAQTFLATCINGVCWTVYHGAGTRTIASPKGPVIQMYTNVDKDLVGWPAPQGSRSLTPCTCGSSDLYLVTRHADVIPVRRRGDSRGSLLSPRPISYLKGSSGGPLLCPAGHVVGIFRAAVCTRGVAKAVDFIPVENLETTMRSPVFTDNSSPPAVPQSFQVAHLHAPTGSGKSTKVPAAYAAQGYKVLVLNPSVAATLGFGAYMSKAHGIDPNIRTGVRTITTGSSITYSTYGKFLADGGCSGGAYDIIICDECHSTDATSILGIGTVLDQAETAGARLVVLATATPPGSVTVPHPNIEEVALSTTGEIPFYGKAIPLEVIKGGRHLIFCHSKKKCDELAAKLVALGVNAVAYYRGLDVSVIPTSGDVVVVATDALMTGYTGDFDSVIDCNTCVTQTVDFSLDPTFTIETTTLPQDAVSRTQRRGRTGRGKPGIYRFVAPGERPSGMFDSSVLCECYDAGCAWYELTPAETTVRLRAYMNTPGLPVCQDHLEFWEGVFTGLTHIDAHFLSQTKQSGENFPYLVAYQATVCARAQAPPPSWDQMWKCLTRLKPTLHGPTPLLYRLGAVQNEVTLTHPVTKYIMTCMSADLEVVTSTWVLVGGVLAALAAYCLSTGCVVIVGRVVLSGKPAIIPDREVLYREFDEMEEC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gcgcccatcacagcatacgcccagcagacaaggggcctcctgggatgtataatcaccagcctaactggccgggacaaaaaccaagtggagggtgaggtccagattgtgtcaactgctgcccagactttcctggcaacatgcatcaacggggtatgctggactgtctaccatggagcaggtacgaggaccatcgcatcacccaaaggccccgttatccagatgtacaccaatgtggacaaagaccttgtgggctggcccgctccccagggtagccgctcattaacaccttgcacctgcggctcctcggacctttacctggtcacgaggcacgccgatgtcatccccgtgcgccggcgaggcgatagcaggggtagcctgctttcgccccggcccatctcttacttgaaaggctcttcggggggtccgcttctgtgccccgcgggacacgtcgtgggtatatttagggccgcggtgtgtacccgtggagtggctaaggcggtggactttatccctgtggagaacctagagacaaccatgagatccccggtgttcacggacaactcctctccaccagcagtgccccagagcttccaggtggctcacctgcatgctcccacaggcagcggtaagagcaccaaggtgccggctgcgtatgcagctcagggctacaaggtgctagtgctcaacccctccgttgctgctacactgggctttggtgcttacatgtccaaggcccatgggatcgatcctaacatcaggaccggggtgaggacaattaccactggcagctccattacgtactccacctacggcaagtttcttgccgacggcgggtgctcagggggtgcctatgacataataatctgtgacgagtgccactccacagatgccacatccatcttgggcatcggcaccgtccttgaccaagcagagaccgcgggagcgagactggtagtgctcgccaccgctacccctccgggttctgtcactgtgccccatcctaacatcgaggaggttgctctgtccaccaccggagagatccctttctacggcaaggctatccccctcgaagtratcaagggggggagacatctcatcttctgccactcaaagaagaagtgcgacgagctcgccgcgaagctggtcgctttgggcgtcaatgccgtggcctattaccgcggtcttgacgtgtctgtcatcccgaccagcggtgatgttgtcgttgtggcaactgatgctctcatgaccggctataccggcgacttcgactcggtgatagactgcaacacgtgtgtcacccagacagtcgatttcagccttgaccctaccttcaccattgagacaaccacgcttcctcaggatgctgtctcccgcactcaacgtcggggcaggactggcagggggaagccaggcatctacagatttgtggcgccgggagagcgcccctccggcatgttcgactcgtccgtcctctgtgagtgctatgacgcgggctgtgcttggtatgagctcacgcccgccgagactacagttaggctacgagcgtacatgaacaccccggggctccccgtgtgccaggaccatcttgaattttgggagggcgtctttacgggcctcacccatatagatgcccactttctatcccagacaaagcagagtggggaaaactttccttacctggtagcgtaccaagccaccgtgtgcgctagggctcaagcccctcccccatcgtgggaccagatgtggaagtgtttgacccgcctcaagcccaccctccatggaccaacacccctgctatacagactgggcgctgttcagaatgaagtcaccttgacgcacccagtcaccaaatacatcatgacatgcatgtcggccgacctggaggtcgtcacgagtacctgggtgctcgttggcggcgtcctggccgccttggctgcgtattgcctgtcaacaggctgcgtggtcatagtgggcagggtcgtcttgtccgggaagccggcaatcatacctgacagggaagtcctctaccgagagttcgatgagatggaagagtgc</GBSeq_sequence>
+</GBSeq>

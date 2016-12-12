@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>E03333</GBSeq_locus>
+  <GBSeq_length>1398</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>04-NOV-2005</GBSeq_update-date>
+  <GBSeq_create-date>06-JUN-1997</GBSeq_create-date>
+  <GBSeq_definition>DNA encoding the peptide that has HCV antigenic activity</GBSeq_definition>
+  <GBSeq_primary-accession>E03333</GBSeq_primary-accession>
+  <GBSeq_accession-version>E03333.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|E03333.1|</GBSeqid>
+    <GBSeqid>pat|JP|1992030791|2</GBSeqid>
+    <GBSeqid>gi|2171550</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 1992030791-A/2</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1398</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Shimotoono,K.</GBAuthor>
+        <GBAuthor>Kato,N.</GBAuthor>
+        <GBAuthor>Hijikata,M.</GBAuthor>
+        <GBAuthor>Kunai,K.</GBAuthor>
+        <GBAuthor>Kikuchi,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>STRUCTURAL PROTEIN GENE, RECOMBINANT VECTOR, RECOMBINANT VIRUS AND POLYPEPTIDE AND PRODUCTION OF POLYPEPTIDE</GBReference_title>
+      <GBReference_journal>Patent: JP 1992030791-A 2 03-FEB-1992; SHIMOTOONO KUNITADA, TOKUYAMA SODA CO LTD</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>PN JP 1992030791-A/2~PD 03-FEB-1992~PF 29-MAY-1990 JP 1990137223~PI SHIMOTOONO KUNITADA, KATO NORIYUKI, HIJIKATA MAKOTO, PI KUNAI KENJI,~PI KIKUCHI MASAYOSHI~PC C12N15/51,C07K13/00,C12P21/02,(C12P21/02,C12R1:91); CC strandedness: Double;~CC topology: Linear;~CC hypothetical: No;~CC anti-sense: No;~FH Key Location/Qualifiers~FH~FT CDS 1..398~FT /product="peptide that has HCV antigenic FT activity"~FT mat_peptide 1..1395~FT /product="peptide that has HCV antigenic FT activity"~FT misc_feature 1..126~FT /note="silkworm nuclear polyhedrosis gene from FT pBF124"~FT misc_feature 127..133~FT /note="EcoRI linker"~FT misc_feature 134..1384~FT /note="structural protein of HCV" FT misc_feature 1385..1391~FT /note="EcoRI linker"~FT misc_feature 1392..1398~FT /note="part of pBF 124"</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1398</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1398</GBInterval_to>
+          <GBInterval_accession>E03333.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgccgaattattcatacacccccaccatcgggcgtacttacgtgtacgacaataaatattacaaaaacttggggtgtcttatcaaaaacgccaagcgcaagaagcacctagtcgaacatgaacgggaattccgatggctcctgtcaccccgaggctcccggcctagaaggggccctaacgacccccggcgtaggtcgcgtaatctgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgcttgtcggcgcccccctaggaggcgctgccaggaccctggcgcatggcgtccgggttctggaggacggcgtgaactatgcaacagggaatctgcccggttgctctttctctatcttcctcttagctttgctgtcttgtttgaccatcccagcttccgcttacgaggtgcgcaacgtgtccgggatataccatgtcacgaacgactgctccaactcaagtattgtgtatgaggcagcggacatgatcatgcacacccccgggtgcgtgccctgcgtccgggagagtaatttctcccgttgctgggtagcgctcactcccacgctcgcggccaggaacagcagcatccccaccacgacaatacgacgccacgtcgatttgctcgttggggcggctgctctctgttccgctatgtacgttggggatctctgcggatccgtttttctcgtctcccagctgttcaccttctcacctcgccggtatgagacggtacaagattgcaattgctcaatctatcccggccacgtatcaggtcaccgcatggcttgggatatgatgatgaactggtcacctacaacggccctagtggtatcgcagctactccggatcccacaagccgtcgtggacatggtggcgggggcccactggggtgtcctagcgggccttgcctactattccatggtggggaactgggctaaggctccgattgtgatgctactctttgctggcgttgacgggcacacccacgtgacagggggaagggtagcctccagcacccagagcctcgtgtcctggctctcacaaggcccatctcagaaaatccaactcgtgaacaccaacggcagctggcacatcaacaggaccgctctgaattgcaatgactccctccaaactgggttcattgctgcgctgttctacgcacacaggttcaacgcgtccgggtgcccagagcgcatggctagctgccgccccatcgatgagttcgctcaggggtggggtcccatcactcatgatatgcctgagagctcggaccagaggccatatgggctcgacgacgcgcctcgaccgcgcgggatcgctgctgcgtcgcaggtgtgtggtccagagtattgcttcactccgaggaattctagatag</GBSeq_sequence>
+</GBSeq>

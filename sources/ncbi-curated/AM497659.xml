@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AM497659</GBSeq_locus>
+  <GBSeq_length>2055</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>08-JAN-2008</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus partial mRNA for NS3/4A protein, clone FR_HCVNS3/4A_3a-2NS_3</GBSeq_definition>
+  <GBSeq_primary-accession>AM497659</GBSeq_primary-accession>
+  <GBSeq_accession-version>AM497659.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|AM497659.1|</GBSeqid>
+    <GBSeqid>gi|164509768</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>NS3/4A gene</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Piodi,A.</GBAuthor>
+        <GBAuthor>Chouteau,P.</GBAuthor>
+        <GBAuthor>Barbotte,L.</GBAuthor>
+        <GBAuthor>Brillet,R.</GBAuthor>
+        <GBAuthor>Hezode,C.</GBAuthor>
+        <GBAuthor>Dhumeaux,D.</GBAuthor>
+        <GBAuthor>Pawlotsky,J.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Mechanisms of HCV Genotype 3-induced hepatocellular steatosis</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..2055</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chouteau,P.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (23-FEB-2007) Chouteau P., Infectious diseases - Virology, INSERM Research Center 841 (IMRB), Mondor Hospital - 51, Avenue du Marechal de Lattre de Tassigny, 94010 Creteil, FRANCE</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..2055</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2055</GBInterval_to>
+          <GBInterval_accession>AM497659.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>serotype</GBQualifier_name>
+          <GBQualifier_value>3a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>FR_HCVNS3/4A_3a-2NS_3</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;2055</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2055</GBInterval_to>
+          <GBInterval_accession>AM497659.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS3/4A</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;2055</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2055</GBInterval_to>
+          <GBInterval_accession>AM497659.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS3/4A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>function</GBQualifier_name>
+          <GBQualifier_value>HCV protease</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3/4A protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>CAM56152.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>GOA:B0B3J6</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR000745</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR001650</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR004109</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR009003</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR011492</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR014001</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>InterPro:IPR014021</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>UniProtKB/TrEMBL:B0B3J6</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>APITAYTQQTRGLLGTIVTSLTGRDKNVVTGEVQVLSTATQTFLGTTVGGVMWTVYHGAGSRTLAVAKHPALQMYTNVDQDLVGWPAPPGAKSLEPCACGSADLYLVTREADVIPARRRGDSTASLLSPRPLACLKGSSGGPVMCPSGHVAGIFRAAVCTRGVAKALQFIPVETLSTQARSPSFSDNSTPPAVPQSYQVGYLHAPTGSGKSTKVPAAYVAQGYNVLVLNPSVAATLGFGSFMSRAYGIDPNIRTGNRTVTTGAKLTYSTYGKFLADGGCSGGAYDVIICDECHAQDATSILGIGTVLDQAETAGVRLTVLATATPPGSITVPHSNIEEVALGSEGEIPFYGKAIPIALLKGGRHLVFCHSKKKCDEMASRLRGMGLNAVAYYRGLDVSVIPTTGDVVVCATDALMTGFTGDFDSVIDCNVAVEQYVDFSLDPTFSIETRTAPQDAVSRSQRRGRTGRGRLGTYRYVTPGERPSGMFDSVVLCGCYDAGCSWYDLQPAETTVRLRAYLSTPGLPVCQDHLDFWESVFTGLTHIDAHFLSQTKQQGLNFSYLTAYQATVCARAQAPPPSWDETWKCLVRLKPTLHGPTPLLYRLGPVQNEICLTHPVTKYIMACMSADLEVTTSTWVLLGGVLAALAAYCLSVGCVVIVGHIELGGKPALVPDKEVLYQQYDEMEEC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gccccgatcacagcatacactcagcaaactaggggtcttctagggactattgtaactagcttgactggcagggataagaacgtggtgaccggtgaagtgcaggtgctttccacggctacccagaccttcctaggcacaacagtaggaggggttatgtggactgtttaccatggtgcaggttcgagaacgctcgcggtcgctaaacatcctgcgctccaaatgtacacaaatgtagatcaggaccttgttgggtggccagcccctccgggggccaagtctcttgaaccgtgtgcatgcgggtctgcagacttatatttggttacccgcgaagctgatgtcatccctgctcgacgcaggggggactccacagcgagcttgctcagtcctaggcctctcgcctgcctcaagggttcctctggaggtcctgttatgtgcccttcggggcatgttgcgggaatctttagggccgctgtgtgcaccagaggtgtagcaaaggccctacagtttataccagtggaaacccttagcacacaggctaggtctccatctttctctgacaattcgactcctcctgctgttccacagagctatcaagtagggtaccttcatgccccgaccggcagcggtaagagcacaaaggtcccggccgcttatgtagcgcaaggatataatgttcttgtgctgaatccatcggtagcggccacgctaggcttcggctctttcatgtcgcgtgcctatgggatcgaccccaacatccgcactgggaaccgcaccgttacaactggtgccaaactgacctattccacctacggtaagtttctcgcggacgggggttgctccgggggggcatatgatgtgattatttgtgatgaatgccatgcccaagacgccactagcatattgggtataggcacggtcttagatcaggctgagacggctggggtgaggctgacggttttagcgacagcaactcccccaggcagcatcactgtgccacattctaacatcgaagaagtggccctgggctctgaaggtgagatccctttctacggtaaggctataccgatagccctgctcaagggggggaggcaccttgtcttttgccattccaagaaaaaatgtgacgagatggcgtccagactcagaggcatggggctcaacgctgtagcgtactataggggtctcgatgtgtccgtcataccaacaacaggggacgtcgtagtttgcgctactgacgccctcatgaccggattcaccggggacttcgactctgtcatagattgcaacgtggctgttgaacagtacgttgacttcagcctggaccccaccttttccattgagacccgcactgctccccaagatgcggtttcccgcagccaacgtcgtggccgtacgggccgaggtagactcggtacgtatcgatatgtcacccccggtgaaagaccgtctggaatgtttgactcggttgttctctgtgggtgctatgacgcgggctgctcgtggtacgatctgcagcccgctgagaccacagtcagactgagagcttacttgtccacgccggggctacctgtctgccaagaccatttagacttttgggagagcgttttcactggactaactcacatagatgcccattttctgtcacagacaaagcagcagggacttaacttctcgtacctaactgcctaccaagccactgtgtgcgcccgcgcacaggctcctcccccaagttgggacgagacgtggaagtgtctcgtgcggcttaagccaacactacatggacctacgccccttctgtaccggttggggcccgtccaaaatgaaatctgtttgacacaccccgtcacaaaatacatcatggcatgcatgtcagctgatctggaagtaaccaccagcacctgggtgttgcttggaggggtcctcgcggccctagcggcctactgtttgtcagttggctgcgtcgtgatcgtgggtcatattgagctggggggtaagccggcactcgttccagacaaagaggttctgtaccaacaatatgatgagatggaggagtgc</GBSeq_sequence>
+</GBSeq>

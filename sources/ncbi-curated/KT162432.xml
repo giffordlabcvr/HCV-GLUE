@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>KT162432</GBSeq_locus>
+  <GBSeq_length>735</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>09-NOV-2015</GBSeq_update-date>
+  <GBSeq_create-date>09-NOV-2015</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 18610 NS3 protease gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>KT162432</GBSeq_primary-accession>
+  <GBSeq_accession-version>KT162432.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|KT162432.1|</GBSeqid>
+    <GBSeqid>gi|946715721</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..735</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Zhou,K.</GBAuthor>
+        <GBAuthor>Liang,Z.</GBAuthor>
+        <GBAuthor>Wang,C.</GBAuthor>
+        <GBAuthor>Lan,Y.</GBAuthor>
+        <GBAuthor>Hu,F.</GBAuthor>
+        <GBAuthor>Tang,X.</GBAuthor>
+        <GBAuthor>Ning,C.</GBAuthor>
+        <GBAuthor>Tucker,J.D.</GBAuthor>
+        <GBAuthor>Cai,W.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Natural Polymorphisms Conferring Resistance to NS3 Protease Inhibitors in Treatment-Naive HIV/HCV Co-infected Patients in China</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..735</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Zhou,K.</GBAuthor>
+        <GBAuthor>Liang,Z.</GBAuthor>
+        <GBAuthor>Wang,C.</GBAuthor>
+        <GBAuthor>Lan,Y.</GBAuthor>
+        <GBAuthor>Hu,F.</GBAuthor>
+        <GBAuthor>Tang,X.</GBAuthor>
+        <GBAuthor>Ning,C.</GBAuthor>
+        <GBAuthor>Tucker,J.D.</GBAuthor>
+        <GBAuthor>Cai,W.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (20-MAY-2015) Infectious Disease, Guangzhou Eighth People's Hospital, No. 627, Dongfeng Dong Rd, Guangzhou, Guangdong 510000, China</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..735</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>735</GBInterval_to>
+          <GBInterval_accession>KT162432.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>18610</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>serum</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>China</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;735</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>735</GBInterval_to>
+          <GBInterval_accession>KT162432.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3 protease</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ALM24457.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>APITAYAQQTRGLLGTIVTSLTGRDKNVVTGEVQVLSTATQTFLGTTVGGVMWTVYHGAGSRTLAGAKHPALQMYTNVDQDLVGWPAPPGAKSLEPCTCGSADLYLVTRDADVIPARRRGDSTASLLSPRPLACLKGSSGGPVMCPSGHVAGIFRAAVCTRGVAKALQFIPVETLNTQARSPSFSDNSTPPAVPQSYQVGYLHAPTGSGKSTKVPAAYVAQGYNVLVLNPSVAATLGFGSFMSRA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gctccgatcacagcataygcccagcaaactaggggccttcttgggactattgtaaccagcttgactggcagrgataagaatgtggtgaccggtgaagtgcaggtactttctacagccacccagaccttcctaggtacaacagtagggggggttatgtggactgtttaccatggtgcaggctcgagaacacttgcgggcgctaaacatcccgcgctccagatgtacacaaacgtggatcaagacctcgttgggtggccagcccctccaggggctaagtctcttgaaccgtgcacctgcggatccgcagacttatacttggttacccgcgatgctgatgtcatccctgctcggcgcaggggggactccacagcgagcttgctcagtcctagacctctcgcctgtcttaagggttcttctggaggtcctgttatgtgcccttcggggcatgtcgcggggatctttagggctgctgtgtgcaccagaggtgtagcaaaagctttacagttcataccagtggaaaccctcaacacacaggctaggtctccatctttctctgacaattcaactcctcctgctgttccgcagagctaccaggtggggtaccttcatgccccgaccggcagcggcaagagcacaaaggtcccggccgcttatgtagcacaaggatataacgttctcgtgctgaatccatcggtggcggccacactgggcttcggctctttcatgtcacgtgct</GBSeq_sequence>
+</GBSeq>

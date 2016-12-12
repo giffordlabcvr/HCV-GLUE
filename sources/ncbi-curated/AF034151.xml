@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AF034151</GBSeq_locus>
+  <GBSeq_length>1367</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>21-JUN-2001</GBSeq_update-date>
+  <GBSeq_create-date>27-NOV-1997</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus non-structural 5A protein (NS5A) gene, complete cds</GBSeq_definition>
+  <GBSeq_primary-accession>AF034151</GBSeq_primary-accession>
+  <GBSeq_accession-version>AF034151.2</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AF034151.2|</GBSeqid>
+    <GBSeqid>gi|13630117</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1367</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Gale,M.J. Jr.</GBAuthor>
+        <GBAuthor>Korth,M.J.</GBAuthor>
+        <GBAuthor>Tang,N.M.</GBAuthor>
+        <GBAuthor>Tan,S.L.</GBAuthor>
+        <GBAuthor>Hopkins,D.A.</GBAuthor>
+        <GBAuthor>Dever,T.E.</GBAuthor>
+        <GBAuthor>Polyak,S.J.</GBAuthor>
+        <GBAuthor>Gretch,D.R.</GBAuthor>
+        <GBAuthor>Katze,M.G.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Evidence that hepatitis C virus resistance to interferon is mediated through repression of the PKR protein kinase by the nonstructural 5A protein</GBReference_title>
+      <GBReference_journal>Virology 230 (2), 217-227 (1997)</GBReference_journal>
+      <GBReference_pubmed>9143277</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1367</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Polyak,S.J.</GBAuthor>
+        <GBAuthor>Khabar,K.S.</GBAuthor>
+        <GBAuthor>Paschal,D.M.</GBAuthor>
+        <GBAuthor>Ezelle,H.J.</GBAuthor>
+        <GBAuthor>Duverlie,G.</GBAuthor>
+        <GBAuthor>Barber,G.N.</GBAuthor>
+        <GBAuthor>Levy,D.E.</GBAuthor>
+        <GBAuthor>Mukaida,N.</GBAuthor>
+        <GBAuthor>Gretch,D.R.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Hepatitis C virus nonstructural 5A protein induces interleukin-8, leading to partial inhibition of the interferon-induced antiviral response</GBReference_title>
+      <GBReference_journal>J. Virol. 75 (13), 6095-6106 (2001)</GBReference_journal>
+      <GBReference_pubmed>11390611</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>3</GBReference_reference>
+      <GBReference_position>1..1367</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Gale,M.J.</GBAuthor>
+        <GBAuthor>Blakely,C.M.</GBAuthor>
+        <GBAuthor>Kwieciszewski,B.</GBAuthor>
+        <GBAuthor>Tan,S.-L.</GBAuthor>
+        <GBAuthor>Dossett,M.</GBAuthor>
+        <GBAuthor>Korth,M.J.</GBAuthor>
+        <GBAuthor>Polyak,S.J.</GBAuthor>
+        <GBAuthor>Katze,M.G.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Control of the interferon-induced PKR protein kinase by the nonstructural 5A (NS5A) protein of hepatitis C virus: molecular mechanisms of kinase regulation and correlation with interferon sensitivity</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>4</GBReference_reference>
+      <GBReference_position>1..1367</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Polyak,S.J.</GBAuthor>
+        <GBAuthor>Gretch,D.R.</GBAuthor>
+        <GBAuthor>Korth,M.J.</GBAuthor>
+        <GBAuthor>Dossett,M.</GBAuthor>
+        <GBAuthor>Gale,M.J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (11-NOV-1997) Microbiology, University of Washington, 1705 N.E. Pacific St., Box 357242, Seattle, WA 98195, USA</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>5</GBReference_reference>
+      <GBReference_position>1..1367</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Polyak,S.J.</GBAuthor>
+        <GBAuthor>Khabar,K.S.A.</GBAuthor>
+        <GBAuthor>Paschal,D.M.</GBAuthor>
+        <GBAuthor>Ezelle,H.</GBAuthor>
+        <GBAuthor>Rezeiq,M.</GBAuthor>
+        <GBAuthor>Duverlie,G.</GBAuthor>
+        <GBAuthor>Barber,G.N.</GBAuthor>
+        <GBAuthor>Levy,D.E.</GBAuthor>
+        <GBAuthor>Mukaida,N.</GBAuthor>
+        <GBAuthor>Gretch,D.R.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (15-SEP-2000) Laboratory Medicine, Virology Division 359690, University of Washington, 325 9th Ave, Seattle, WA 98115, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>On Apr 16, 2001 this sequence version replaced gi:2645887.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1367</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1367</GBInterval_to>
+          <GBInterval_accession>AF034151.2</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>HCV-1b</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>genotype 1b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>3..1361</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>3</GBInterval_from>
+          <GBInterval_to>1361</GBInterval_to>
+          <GBInterval_accession>AF034151.2</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>3..1361</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>3</GBInterval_from>
+          <GBInterval_to>1361</GBInterval_to>
+          <GBInterval_accession>AF034151.2</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>inhibitor of the PKR protein kinase; mutations in NS5A have been associated with sensitivity to interferon therapy in HCV infected patients</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>non-structural 5A protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAB87527.2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MGSGSWLKDVWDWICTVLADLKTWLQSKLLPRLPGVPFLSCQRGYKGVWRGDGIMNTTCPCAAQITGHVKNGSMRIVGPKTCSNTWHGTFPTNAYTTGPCTPSPAPNYSRALWRVAAEEYVEVTRVGDFHYVTGMTTDNVKCPCQVPAPEFFTEVDGVRLHRYAPACKPLLRDEVVFQVGLNQFPVGSQLPCEPEPDVAVLTSMLTDPSHITAETAKRKLARGSPPSLASSSASQLSAPSLKATCTTRHDSPDADLIEANLLWRQEMGGNITRVESENKVVILDSFDPLHAEEDEKEVSVPAEILRKSKRFPPALPIWARPDYNPPLLEPWKDPDYVPPVVHGCPLPPNKAPPIPPPRRKRTVVLTESTVSSALAELATKTFGSSGSSAVDSGTASAPPDQSTDNGDTGSDVESYSSMPPLEGEPGDPDLSDGSWSTVSEEAGEDVVCCSMS</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ccatgggctccggctcgtggctaaaggatgtttgggactggatatgcacggtgctggctgacttaaagacctggctccagtccaagctcctgccgcggttaccgggagtccccttcctctcatgccaacgtgggtacaagggagtctggcggggagacggcatcatgaacaccacctgcccatgtgcagcacagatcaccggacatgtcaaaaacggttccatgaggatcgttgggcctaaaacctgcagcaacacgtggcacgggacattccccaccaacgcgtacaccacgggcccctgcacaccctccccggcgccaaactattctagggcgctgtggcgagtggctgctgaggagtacgtggaggttacgcgggtgggggatttccactacgtgacgggcatgaccactgacaacgtaaaatgcccatgccaggttccggcccccgaattcttcacagaagtggatggggtgcggctgcataggtacgccccggcatgcaaacctctcctacgggatgaggtcgtattccaggtcgggctcaaccaattcccggtcgggtcacagctcccgtgtgaacccgaaccggatgtggcggtgctcacttccatgctcaccgacccctcccacattacagcggagacggcgaagcgtaagctggccagggggtcccccccctccttggccagctcttcagctagccagttgtctgcgccttccttgaaggcaacatgcactacccgtcacgactccccagatgctgacctcatcgaggccaacctcctgtggcggcaggagatgggcggaaacatcacccgcgtggagtcagagaacaaggtagtaattctggactcttttgacccgcttcatgcggaggaggatgagaaggaggtatccgttccggcggagatcctgcggaagtccaagaggttccctccagcgttgcccatttgggcacgcccggattacaaccctccactgctagagccctggaaagacccggactacgtccctccggtggtacatgggtgcccactgccacctaacaaggcccctccaataccacccccacggagaaagaggacggttgtcctgacagagtccaccgtgtcttctgccctggcggagcttgccacaaaaaccttcggcagctccggatcgtcggccgtcgacagcggcacggcgagcgcccctcctgaccagtccaccgacaacggcgacacaggatccgacgttgagtcgtactcctccatgcccccccttgagggagagccgggggaccccgatctcagcgacgggtcttggtccaccgtgagcgaggaggccggtgaggacgtcgtctgctgctcaatgtcctaaggatcc</GBSeq_sequence>
+</GBSeq>

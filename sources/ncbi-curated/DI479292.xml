@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DI479292</GBSeq_locus>
+  <GBSeq_length>2055</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>20-AUG-2015</GBSeq_update-date>
+  <GBSeq_create-date>20-AUG-2015</GBSeq_create-date>
+  <GBSeq_definition>KR 1020140098867-A/1: HEPATITIS C VIRUS VARIANTS</GBSeq_definition>
+  <GBSeq_primary-accession>DI479292</GBSeq_primary-accession>
+  <GBSeq_accession-version>DI479292.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|DI479292.1|</GBSeqid>
+    <GBSeqid>pat|KR|1020140098867|1</GBSeqid>
+    <GBSeqid>gi|931206465</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>KR 1020140098867-A/1</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..2055</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Lin,C.</GBAuthor>
+        <GBAuthor>Kieffer,T.</GBAuthor>
+        <GBAuthor>Sarrazin,C.</GBAuthor>
+        <GBAuthor>Kwong,A.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>HEPATITIS C VIRUS VARIANTS</GBReference_title>
+      <GBReference_journal>Patent: KR 1020140098867-A 1 08-AUG-2014; VERTEX PHARMACEUTICALS INCORPORATED</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>KN KR 1020147020931-A/1~AN KR 1020147020931~AD 2014-07-24~PN KR 1020140098867~PD 2014-08-08~AT HEPATITIS C VIRUS VARIANTS~AI Lin, Chao|Kieffer, Tara|Sarrazin, Christoph|Kwong, Ann~AA VERTEX PHARMACEUTICALS INCORPORATED~PR US 60/854,598=2006-10-25|US 60/735,577=2005-11-11~OS Hepatitis C virus~TY DNA~FH Key Location/Qualifiers</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..2055</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2055</GBInterval_to>
+          <GBInterval_accession>DI479292.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gcgcctattacggcctactcccaacagacgcgaggcctacttggctgcatcatcactagcctcacaggccgggacaggaaccaggtcgagggggaggtccaagtggtctccaccgcaacacaatctttcctggcgacctgcgtcaatggcgtgtgttggactgtctatcatggtgccggctcaaagacccttgccggcccaaagggcccaatcacccaaatgtacaccaatgtggaccaggacctcgtcggctggcaagcgccccccggggcgcgttccttgacaccatgcacctgcggcagctcggacctttacttggtcacgaggcatgccgatgtcattccggtgcgccggcggggcgacagcagggggagcctactctcccccaggcccgtctcctacttgaagggctcttcgggcggtccactgctctgcccctcggggcacgctgtgggcatctttcgggctgccgtgtgcacccgaggggttgcgaaggcggtggactttgtacccgtcgagtctatggaaaccactatgcggtccccggtcttcacggacaactcgtcccctccggccgtaccgcagacattccaggtggcccatctacacgcccctactggtagcggcaagagcactaaggtgccggctgcgtatgcagcccaagggtataaggtgcttgtcctgaacccgtccgtcgccgccaccctaggtttcggggcgtatatgtctaaggcacatggtatcgaccctaacatcagaaccggggtaaggaccatcaccacgggtgcccccatcacgtactccacctatggcaagtttcttgccgacggtggttgctctgggggcgcctatgacatcataatatgtgatgagtgccactcaactgactcgaccactatcctgggcatcggcacagtcctggaccaagcggagacggctggagcgcgactcgtcgtgctcgccaccgctacgcctccgggatcggtcaccgtgccacatccaaacatcgaggaggtggctctgtccagcactggagaaatccccttttatggcaaagccatccccatcgagaccatcaagggggggaggcacctcattttctgccattccaagaagaaatgtgatgagctcgccgcgaagctgtccggcctcggactcaatgctgtagcatattaccggggccttgatgtatccgtcataccaactagcggagacgtcattgtcgtagcaacggacgctctaatgacgggctttaccggcgatttcgactcagtgatcgactgcaatacatgtgtcacccagacagtcgacttcagcctggacccgaccttcaccattgagacgacgaccgtgccacaagacgcggtgtcacgctcgcagcggcgaggcaggactggtaggggcaggatgggcatttacaggtttgtgactccaggagaacggccctcgggcatgttcgattcctcggttctgtgcgagtgctatgacgcgggctgtgcttggtacgagctcacgcccgccgagacctcagttaggttgcgggcttacctaaacacaccagggttgcccgtctgccaggaccatctggagttctgggagagcgtctttacaggcctcacccacatagacgcccatttcttgtcccagactaagcaggcaggagacaacttcccctacctggtagcataccaggctacggtgtgcgccagggctcaggctccacctccatcgtgggaccaaatgtggaagtgtctcatacggctaaagcctacgctgcacgggccaacgcccctgctgtataggctgggagccgttcaaaacgaggttactaccacacaccccataaccaaatacatcatggcatgcatgtcggctgacctggaggtcgtgacgagcacctgggtgctggtaggcggagtcctagcagctctggccgcgtattgcctgacaacaggcagcgtggtcattgtgggcaggatcatcttgtccggaaagccggccatcattcccgacagggaagtcctttaccgggagttcgatgagatggaagagtgc</GBSeq_sequence>
+</GBSeq>

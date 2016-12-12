@@ -261,10 +261,6 @@
           <GBQualifier_value>ACE82459.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:190684442</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>
           <GBQualifier_value>MSTNPKPQRKTNVTPTVAHRTSSSRVAVRSLVEFTCCRAGALDWVCARRGRLPSGRNLEVDVSLSPRRVGPRAGPGLSPGTLGPSMAMRVAGGRDGSCLPVALGLAGAPQTPGVGRATWVRSSIPLRAASPTSWGTYRSSAPLLEALPGPWRMASGFWKTA</GBQualifier_value>
         </GBQualifier>

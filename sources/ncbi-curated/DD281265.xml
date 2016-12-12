@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DD281265</GBSeq_locus>
+  <GBSeq_length>1115</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>22-JUL-2006</GBSeq_update-date>
+  <GBSeq_create-date>22-JUL-2006</GBSeq_create-date>
+  <GBSeq_definition>HCV truncated genome RNA</GBSeq_definition>
+  <GBSeq_primary-accession>DD281265</GBSeq_primary-accession>
+  <GBSeq_accession-version>DD281265.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|DD281265.1|</GBSeqid>
+    <GBSeqid>pat|WO|2006001517|15</GBSeqid>
+    <GBSeqid>gi|110658358</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>WO 2006001517-A/15</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1115</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Maki,N.</GBAuthor>
+        <GBAuthor>Kiyosawa,K.</GBAuthor>
+        <GBAuthor>Tanaka,E.</GBAuthor>
+        <GBAuthor>Mori,K.</GBAuthor>
+        <GBAuthor>Yamaguchi,K.</GBAuthor>
+        <GBAuthor>Yagi,S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>HCV truncated genome RNA</GBReference_title>
+      <GBReference_journal>Patent: WO 2006001517-A 15 05-JAN-2006; Advanced Life Science Institute Inc</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Hepatitis C virus~PN WO 2006001517-A/15~PD 05-JAN-2006~PF 24-JUN-2005 WO 2005JP012162~PR 25-JUN-2004 JP 04P 188543,28-JUN-2004 JP 04P 190144, PR 24-SEP-2004 JP 04P 277677~PI noboru maki,kendo kiyosawa,eiji tanaka,kenichi mori,kenjiro PI yamaguchi,~PI shintaro yagi~CC~FH Key Location/Qualifiers~FT CDS (229)..(1113)</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1115</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1115</GBInterval_to>
+          <GBInterval_accession>DD281265.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggatcaacccgctcaatgcctggagatttgggcgtgcccccgcgagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccatgagcacgaatcctaaacctcaaaaaaaacccaaatgtaacaccaaccgccgcccacaggacgtcaagttcccgggcggtggtcagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggtcgcaacctcgtggaaggcgacaacctatccccaaggctcgccggcccgagggtagggcctgggctcagcccgggtacccttggcccctctatggcgatgagggcctagggtgggcaggatggctcctgtcaccccgcggctcccggcctagttggggccccactgacccccggcgtaggtcgcgtaatctgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgctcgtcggcgcccccttaggaggcgttgccagggccctggcgcatggcgtccgggttctggaagacagcgtgaactacgcaacagggaatctgcccggttgctctttctctatcttcctcttagctttgctgtcctgcttgactgtcccggcttccgcttgcaaaactcccacgctcgcggccagggagctaaaccttggaatcgccacaatcttgctcgccatatttggtccgctcgtggcgctccagactggcctatttagggtgccgtacttcgtgcgcgcccaagggctcatccgtgcgtgcatgttggtgcggaaagtctctgggggtcatcatgtccaaatggctcttgtgaggctagctgctctaacgggcacgtacgtttatgaccatcttactccgctgcgggactggcccacgcgggcctgcgagatcttgcggtggctgttgagcccgtcatcttctctgac</GBSeq_sequence>
+</GBSeq>

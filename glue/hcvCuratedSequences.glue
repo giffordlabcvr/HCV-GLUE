@@ -1,12 +1,12 @@
 
   # import curated NCBI sequences from files
-  import source sources/ncbi-curated
+  import source --batchSize 1000 sources/ncbi-curated 
 
   # module to populate fields from Genbank XML
   create module --fileName modules/hcvGenbankXmlPopulator.xml gb-populator
 
   # populate certain fields from Genbank XML.
-  module gb-populator populate -w "source.name = 'ncbi-curated'"
+  module gb-populator populate --batchSize 1000 -w "source.name = 'ncbi-curated'"
 
   # copy the genbank genotype / subtypes into genotype / subtype, and indicate their provanance
   multi-copy field sequence -w "source.name = 'ncbi-curated' and gb_genotype != null" gb_genotype genotype

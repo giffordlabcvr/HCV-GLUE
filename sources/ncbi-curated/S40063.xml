@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>S40063</GBSeq_locus>
+  <GBSeq_length>623</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>24-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>21-SEP-1992</GBSeq_create-date>
+  <GBSeq_definition>putative non-structural 3 region NS3 [hepatitis C virus HCV, Genomic RNA, 623 nt]</GBSeq_definition>
+  <GBSeq_primary-accession>S40063</GBSeq_primary-accession>
+  <GBSeq_accession-version>S40063.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>bbm|226284</GBSeqid>
+    <GBSeqid>bbs|109202</GBSeqid>
+    <GBSeqid>gb|S40063.1|</GBSeqid>
+    <GBSeqid>gi|251674</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..623</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chou,W.H.</GBAuthor>
+        <GBAuthor>Sheu,L.</GBAuthor>
+        <GBAuthor>Cheng,S.F.</GBAuthor>
+        <GBAuthor>Sheu,S.H.</GBAuthor>
+        <GBAuthor>Lu,C.F.</GBAuthor>
+        <GBAuthor>Saito,I.</GBAuthor>
+        <GBAuthor>Miyamura,T.</GBAuthor>
+        <GBAuthor>Lin,S.Y.</GBAuthor>
+        <GBAuthor>Wu,J.S.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Molecular cloning of cDNA of hepatitis C virus (HCV) genome from a healthy carrier in an aboriginal community in Taiwan with high prevalence of HCV infection</GBReference_title>
+      <GBReference_journal>Jpn. J. Med. Sci. Biol. 44 (4), 147-157 (1991)</GBReference_journal>
+      <GBReference_pubmed>1668238</GBReference_pubmed>
+      <GBReference_remark>GenBank staff at the National Library of Medicine created this entry [NCBI gibbsq 109202] from the original journal article.</GBReference_remark>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..623</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>623</GBInterval_to>
+          <GBInterval_accession>S40063.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>22..603</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>22</GBInterval_from>
+          <GBInterval_to>603</GBInterval_to>
+          <GBInterval_accession>S40063.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>putative non-structural 3 region NS3</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>22..603</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>22</GBInterval_from>
+          <GBInterval_to>603</GBInterval_to>
+          <GBInterval_accession>S40063.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>putative non-structural 3 region NS3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAB22557.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>SVIDCNTCVTQTVDFSLDPTFTIETTTVPQDAVSRSQRRGRTGRGRGGIYRFVTPGERPSGMFDSSVLCECYDAGCAWYELTPAETSVRLRAYLNTPGLPVCQDHLEFWESVFTGLTHIDAHFLSQTKQAGDNFPYLVAYQATVCARAQAPPPSWDQMWKCLIRLKPTLHGPTPLLYRLGSVQNEVILTHPITK</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ggctataccggcgacttcgactcagtgatcgactgtaacacatgtgtcacccagacagtcgatttcagtttggaccctaccttcaccattgagacgacaaccgtgcctcaagacgcggtgtcgcgctcgcagcggcgaggtagaactggcaggggtaggggaggcatctacaggtttgtgactccgggagaacggccctcgggcatgtttgattcctcggtcctgtgtgagtgctatgacgcgggctgtgcttggtatgagctcacgcccgctgagacctcggttaggttacgggcttacctaaatacaccagggttgcccgtctgccaggaccatctggagttctgggagagcgtctttacaggcctcacccacatagatgcccacttcttgtcccagactaaacaggcaggagacaacttcccctacctggtagcataccaagctacggtgtgtgccagggctcaggccccacctccatcgtgggatcaaatgtggaagtgtctcatacggcttaagcctacgctgcacgggccaacacccctgctgtataggctaggatccgtccaaaatgaggtcatcctcacacaccccataaccaaatacatcatgacatgcatgtc</GBSeq_sequence>
+</GBSeq>

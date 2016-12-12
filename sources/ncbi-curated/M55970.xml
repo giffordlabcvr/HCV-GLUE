@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPCCEXPA</GBSeq_locus>
+  <GBSeq_length>978</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>06-MAY-1996</GBSeq_update-date>
+  <GBSeq_create-date>02-AUG-1993</GBSeq_create-date>
+  <GBSeq_definition>Human hepatitis virus C capsid and envelope:x proteins, 5' end</GBSeq_definition>
+  <GBSeq_primary-accession>M55970</GBSeq_primary-accession>
+  <GBSeq_accession-version>M55970.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|M55970.1|HPCCEXPA</GBSeqid>
+    <GBSeqid>gi|329735</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>capsid protein</GBKeyword>
+    <GBKeyword>envelope-associated protein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..978</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Inchauspe,G.</GBAuthor>
+        <GBAuthor>Zebedee,S.L.</GBAuthor>
+        <GBAuthor>Nasoff,M.S.</GBAuthor>
+        <GBAuthor>Sugitani,M.</GBAuthor>
+        <GBAuthor>Abe,K.</GBAuthor>
+        <GBAuthor>Prince,A.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Cloning and nucleotide sequence analysis of structural and nonstructural regions of the Hutchinson strain of hepatitus C</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>sites</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+        <GBAuthor>Okada,S.</GBAuthor>
+        <GBAuthor>Sugiyama,Y.</GBAuthor>
+        <GBAuthor>Yotsumoto,S.</GBAuthor>
+        <GBAuthor>Tanaka,T.</GBAuthor>
+        <GBAuthor>Yoshizawa,H.</GBAuthor>
+        <GBAuthor>Tsuda,F.</GBAuthor>
+        <GBAuthor>Miyakawa,Y.</GBAuthor>
+        <GBAuthor>Mayumi,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>The 5'-terminal sequence of the hepatitis C virus genome</GBReference_title>
+      <GBReference_journal>Jpn. J. Exp. Med. 60 (3), 167-177 (1990)</GBReference_journal>
+      <GBReference_pubmed>2170712</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>3</GBReference_reference>
+      <GBReference_position>sites</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Kuo,G.</GBAuthor>
+        <GBAuthor>Choo,Q.-L.</GBAuthor>
+        <GBAuthor>Alter,H.J.</GBAuthor>
+        <GBAuthor>Gitnick,G.L.</GBAuthor>
+        <GBAuthor>Redeker,A.G.</GBAuthor>
+        <GBAuthor>Purcell,R.H.</GBAuthor>
+        <GBAuthor>Miyamura,T.</GBAuthor>
+        <GBAuthor>Dienstag,J.L.</GBAuthor>
+        <GBAuthor>Alter,M.J.</GBAuthor>
+        <GBAuthor>Stevens,C.E.</GBAuthor>
+        <GBAuthor>Tegtmeier,G.E.</GBAuthor>
+        <GBAuthor>Bonino,F.</GBAuthor>
+        <GBAuthor>Colombo,M.</GBAuthor>
+        <GBAuthor>Lee,W.-S.</GBAuthor>
+        <GBAuthor>Kuo,C.</GBAuthor>
+        <GBAuthor>Berger,K.</GBAuthor>
+        <GBAuthor>Shuster,J.R.</GBAuthor>
+        <GBAuthor>Overby,L.R.</GBAuthor>
+        <GBAuthor>Bradley,D.W.</GBAuthor>
+        <GBAuthor>Houghton,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>An assay for circulating antibodies to a major etiologic virus of human non-A, non-B hepatitis</GBReference_title>
+      <GBReference_journal>Science 244 (4902), 362-364 (1989)</GBReference_journal>
+      <GBReference_pubmed>2496467</GBReference_pubmed>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>Original source text: Hepatitis C virus (strain Hutchinson) plasma/liver cDNA to genomic RNA.</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..978</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>978</GBInterval_to>
+          <GBInterval_accession>M55970.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>strain</GBQualifier_name>
+          <GBQualifier_value>Hutchinson</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>tissue_type</GBQualifier_name>
+          <GBQualifier_value>plasma/liver</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>lab_host</GBQualifier_name>
+          <GBQualifier_value>Pan troglodytes</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;978</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>978</GBInterval_to>
+          <GBInterval_accession>M55970.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>capsid and envelope:x proteins</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAA98989.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTIPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRPEGRTWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPTDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTVPASAYQVRNSSGLYHVTNDCPNSSVVYEAADAILHTPGCVPCVREGNASRCWVAVTPTVATRDGKLPTTQLRRHIDLLVGSATLCSALYVGDLCGSVFLVGQLFTFSPRRHWTTQDCNCSIYPGHITGHRMAWDMMMNW</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgattcccaaacctcaaagaaaaaccaaacgtaacaccaaccgtcgcccacaggacgtcaagttcccgggtggcggtcagatcgttggtggagtttacttgttgccgcgcaggggccctagattgggtgtgcgcgcgacgaggaagacttccgagcggtcgcaacctcgaggtagacgtcagcctatccccaaggcacgtcggcccgagggcaggacctgggctcagcccgggtacccttggcccctctatggcaatgagggttgcgggtgggcgggatggctcctgtctccccgtggctctcggcctagctggggccccacagacccccggcgtaggtcgcgcaatttgggtaaggtcatcgatacccttacgtgcggcttcgccgacctcatggggtacataccgctcgtcggcgcccctcttggaggcgctgccagggccctggcgcatggcgtccgggttctggaagacggcgtgaactatgcaacagggaaccttcctggttgctctttctctatcttccttctggccctgctctcttgcctgactgtgcccgcttcagcctaccaagtgcgcaattcctcggggctttaccatgtcaccaatgattgccctaactcgagtgttgtgtacgaggcggccgatgccatcctgcacactccggggtgtgtcccttgcgttcgcgagggtaacgcctcgaggtgttgggtggcggtgacccccacggtggccaccagggacggcaaactccccacaacgcagcttcgacgtcatatcgatctgcttgtcgggagcgccaccctctgctcggccctctacgtgggggacctgtgcgggtctgtctttcttgttggtcaactgtttaccttctctcccaggcgccactggacgacgcaagactgcaattgttctatctatcccggccatataacgggtcatcgcatggcatgggatatgatgatgaactgg</GBSeq_sequence>
+</GBSeq>

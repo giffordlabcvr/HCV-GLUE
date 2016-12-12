@@ -6,7 +6,7 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>18-FEB-2010</GBSeq_update-date>
+  <GBSeq_update-date>24-JUL-2016</GBSeq_update-date>
   <GBSeq_create-date>30-NOV-2009</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus isolate D417 polyprotein gene, partial cds</GBSeq_definition>
   <GBSeq_primary-accession>FJ515145</GBSeq_primary-accession>
@@ -130,10 +130,6 @@
           <GBQualifier_value>ACT37211.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:253912863</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>
           <GBQualifier_value>GIYHVTNDCSNSSIVYEAADVIMHTPGCVPCVREDNSSRCWVALTPTLAARNSSVPTTTIRRHVDLLVGAAAFCSAMYVGDLCGSVFLVSQLFTFSPRRYETVQDCNCSIY</GBQualifier_value>
         </GBQualifier>
@@ -207,10 +203,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>ACT37212.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:253912864</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>

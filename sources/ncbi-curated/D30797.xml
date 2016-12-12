@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPCENV61</GBSeq_locus>
+  <GBSeq_length>1144</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>26-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>08-DEC-1994</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus (isolate VN998) gene for NS5, partial cds and 3'UTR</GBSeq_definition>
+  <GBSeq_primary-accession>D30797</GBSeq_primary-accession>
+  <GBSeq_accession-version>D30797.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|D30797.1|HPCENV61</GBSeqid>
+    <GBSeqid>gi|600376</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_secondary-accessions>
+    <GBSecondary-accn>D17495</GBSecondary-accn>
+  </GBSeq_secondary-accessions>
+  <GBSeq_keywords>
+    <GBKeyword>NS5</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1094..1127</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Tokita,H.</GBAuthor>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+        <GBAuthor>Tsuda,F.</GBAuthor>
+        <GBAuthor>Song,P.</GBAuthor>
+        <GBAuthor>Nakata,S.</GBAuthor>
+        <GBAuthor>Chosa,T.</GBAuthor>
+        <GBAuthor>Iizuka,H.</GBAuthor>
+        <GBAuthor>Mishiro,S.</GBAuthor>
+        <GBAuthor>Miyakawa,Y.</GBAuthor>
+        <GBAuthor>Mayumi,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Hepatitis C virus variants from Vietnam are classifiable into the seventh, eighth, and ninth major genetic groups</GBReference_title>
+      <GBReference_journal>Proc. Natl. Acad. Sci. U.S.A. 91 (23), 11022-11026 (1994)</GBReference_journal>
+      <GBReference_pubmed>7972001</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1144</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (23-MAY-1994) Hiroaki Okamoto, Jichi Medical School, Immunology Division; Minamikawachi-machi, Kawachi-gun, Tochigi 329-04, Japan (E-mail:hokamoto@jichi.ac.jp, Tel:0285-44-2111(ex.3334), Fax:0285-44-1557)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1144</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1144</GBInterval_to>
+          <GBInterval_accession>D30797.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>VN998</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..1096</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1096</GBInterval_to>
+          <GBInterval_accession>D30797.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAA06458.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>VTERDIQTEHDIYQCCQLEPAARKAITSLTDRLYCGGPMVNSKGQACGYRRCRASGVLTTSLGNTLTCYLKAQAACRAAGLRDFDMLVCGDDLVVISESVGVSEDASALRAFTEAMTRYSAPPGDEPRPEYDLELITSCSSNVSVAHDNNGQRYYYLTRDPTTPISRAAWETARHTPVNSWLGNIIMYAPTIWVRMVLMTHFFGILQSQETLHKALDFDMYGVTYSITPLDLPQIIQRLHGMAAFSLHGYSPGELNRVASSLRLLGAPPLRAWRHRARAVRAKLIAQGGKAAICGKYLFNWAVKTKLKLTPIPGASSLDLSGWFVAGGRGGDIFHSVSRARPRMLLLCLLLLSVGVGIFLLPAR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>3'UTR</GBFeature_key>
+      <GBFeature_location>1097..1144</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1097</GBInterval_from>
+          <GBInterval_to>1144</GBInterval_to>
+          <GBInterval_accession>D30797.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>function</GBQualifier_name>
+          <GBQualifier_value>3'UTR with 17nt of T-stretch</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ggtcacagagcgcgacattcagacagagcacgacatctaccagtgctgccagttagagcccgcagcgcggaaagccattacttcgcttactgaccggctgtactgcggtggccccatggttaactctaaaggtcaggcatgtgggtaccgcaggtgcagggccagtggcgtattaactaccagcctaggcaacactctgacttgctacttgaaagctcaagcggcatgcagggctgctgggctgagggactttgatatgttggtctgcggagacgatcttgtcgttatttcggagagtgtgggggtctcggaggatgccagtgcactgagagctttcacggaagctatgaccaggtactcggctcctcctggagacgaaccacggccggagtacgatcttgagctaatcacatcttgctcttcaaacgtgtccgtagcccatgacaacaatggacagagatactactacctcacaagagacccgaccacgcctatttctcgggcggcctgggaaaccgcccgacatactccggtgaattcctggttgggtaatatcatcatgtacgctcccacaatatgggtacgcatggtactgatgacacatttctttggaatactccagtcccaagaaacactccataaagcgcttgacttcgacatgtacggagtcacgtactctatcactccgttggacttacctcagatcatccagcggttacatggtatggccgccttctcactccatggttattctcccggcgaactcaaccgggtggcatccagcctcagattgcttggggcgccaccgttgagagcctggagacatcgggccagggcggtcagagcaaagctcattgctcagggggggaaagccgctatttgcggcaagtacctcttcaactgggcggtgaagaccaagctcaagctcactccaatacccggtgcgagctccctagacttatcggggtggttcgtagcgggtggtcgcgggggggacatatttcacagcgtgtcccgggcccgaccccgcatgttactcctgtgcctactcctactttctgtaggggtaggcatcttccttcttcccgctcggtaagagggaagcctaaagctacactccattaatgttttttttttttttttt</GBSeq_sequence>
+</GBSeq>

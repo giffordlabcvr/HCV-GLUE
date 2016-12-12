@@ -88,7 +88,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>genotype:?\s+[1-9]([a-zA-Z]+)</matchPattern>
+				<matchPattern>genotype:?\s+[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
@@ -103,7 +103,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>subtype\s+[1-9]([a-zA-Z]+)</matchPattern>
+				<matchPattern>subtype\s+[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
@@ -115,7 +115,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
+				<matchPattern>[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
@@ -136,7 +136,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
+				<matchPattern>[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
@@ -149,7 +149,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
+				<matchPattern>[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
@@ -161,7 +161,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>([a-zA-Z]+)</matchPattern>
+				<matchPattern>([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
@@ -178,7 +178,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>subtype\s+[1-9]([a-zA-Z]+)</matchPattern>
+				<matchPattern>subtype\s+[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
@@ -190,7 +190,7 @@
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>[1-9]([a-zA-Z]+)</matchPattern>
+				<matchPattern>[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>

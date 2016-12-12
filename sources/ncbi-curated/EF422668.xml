@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>EF422668</GBSeq_locus>
+  <GBSeq_length>1041</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>23-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>18-APR-2007</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 01266_03 NS5B protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>EF422668</GBSeq_primary-accession>
+  <GBSeq_accession-version>EF422668.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|EF422668.1|</GBSeqid>
+    <GBSeqid>gi|145227141</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1041</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Hofmann,W.P.</GBAuthor>
+        <GBAuthor>Polta,A.</GBAuthor>
+        <GBAuthor>Herrmann,E.</GBAuthor>
+        <GBAuthor>Mihm,U.</GBAuthor>
+        <GBAuthor>Kronenberger,B.</GBAuthor>
+        <GBAuthor>Sonntag,T.</GBAuthor>
+        <GBAuthor>Lohmann,V.</GBAuthor>
+        <GBAuthor>Schonberger,B.</GBAuthor>
+        <GBAuthor>Zeuzem,S.</GBAuthor>
+        <GBAuthor>Sarrazin,C.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Mutagenic effect of ribavirin on hepatitis C nonstructural 5B quasispecies in vitro and during antiviral therapy</GBReference_title>
+      <GBReference_journal>Gastroenterology 132 (3), 921-930 (2007)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1053/j.gastro.2006.12.005</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>17383421</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1041</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Hofmann,W.P.</GBAuthor>
+        <GBAuthor>Polta,A.</GBAuthor>
+        <GBAuthor>Herrmann,E.</GBAuthor>
+        <GBAuthor>Mihm,U.</GBAuthor>
+        <GBAuthor>Kronenberger,B.</GBAuthor>
+        <GBAuthor>Sonntag,T.</GBAuthor>
+        <GBAuthor>Lohmann,V.</GBAuthor>
+        <GBAuthor>Schoenberger,B.</GBAuthor>
+        <GBAuthor>Zeuzem,S.</GBAuthor>
+        <GBAuthor>Sarrazin,C.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (05-FEB-2007) Internal Medicine II, Saarland University Hospital, Kirrbergerstrasse, Homburg / Saar 66421, Germany</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1041</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1041</GBInterval_to>
+          <GBInterval_accession>EF422668.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>01266_03</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Germany</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1041</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1041</GBInterval_to>
+          <GBInterval_accession>EF422668.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5B protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ABP48594.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>LAPEARQAIRSLTERLYIGGPLTNSKGQNCGYRRCRASGVLTTSCGNTLTCYLKASAACRAAKLQDCTMLVCGDDLVVICESAGTQEDAASLRVFTEAMTRYSAPPGDPPQPEYDLELITSCSSNVSVAHDASGKRVYYLTRDPTTPLARAAWETARHTPVNSWLGNIIMYAPTLWARMILMTHFFSILLAQEQLEKALDCQIYGACYSIEPLDLPQIIQRLHGLSAFSLHSYSPGEINRVASCLRKLGVPPLRVWRHRARSVRAKLLSQGGRAATCGRYLFNWAVKTKLKLTPIPAASQLDLSNWFVAGYSGGDIYHSLSRARPRWFMWCLLLLSVGVGIYLLPNR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ttggcccccgaagccagacaggccataaggtcgctcacagagcggctttatatcgggggtcccctgactaattcaaaagggcagaactgcggttatcgccggtgccgcgcgagcggcgtgctgacgactagctgcggtaacacccttacatgctatctgaaggcctctgcggcctgtcgagctgcaaagctccaggactgcacaatgctcgtgtgcggagacgacctcgtcgttatctgtgaaagcgcgggaacccaagaggacgcggcgagcctacgagtcttcacggaggctatgactaggtactctgccccccccggggacccgccccaaccagaatacgacttggagctgataacatcatgctcctccaatgtgtcggtcgcgcacgatgcatccggcaagagagtatactacctcacccgtgaccccaccaccccccttgcgcgggctgcgtgggaaacagctagacacactccagtcaactcctggctaggcaacatcatcatgtatgcgcccactttgtgggcaaggatgattctgatgacccatttcttctccatccttctagcccaggagcaacttgaaaaggccctagattgtcagatctacggggcctgttactccatagagccacttgacctacctcagatcattcagcgactccatggtcttagcgcattttcactccacagttactctccaggtgagatcaatagggtggcttcatgcctcaggaaacttggggtaccgcccttgcgagtctggagacatcgggccagaagtgtccgcgctaagctactgtcccaggggggaagggccgccacgtgtggccgctacctcttcaactgggcagtaaagaccaaacttaaactcactccaatcccggctgcgtctcagttggacttgtccaactggttcgtcgctggttacagcgggggagacatatatcacagcctgtctcgtgcccgaccccgctggttcatgtggtgcctactcctactttctgtaggggtaggcatctacctgctccccaaccga</GBSeq_sequence>
+</GBSeq>

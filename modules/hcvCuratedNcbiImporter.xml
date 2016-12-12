@@ -13,7 +13,7 @@
        to retrieve. See ncbiImporterGiNumbers.xml and ncbiImporterPrimaryAccessions.xml for syntax examples -->
   <eSearchTerm>
   	"Hepatitis C"[Organism] AND 
-  	8500:20000[SLEN]
+  	500:20000[SLEN]
   </eSearchTerm>
   <sequenceFormat>GENBANK_XML</sequenceFormat>
   <!-- This specifies the field of the GenBank document which will be used as the GLUE sequence ID. The options are:
@@ -25,11 +25,11 @@
        If omitted, defaults to false. -->
   <overwriteExisting>false</overwriteExisting>
   <!-- Maximum number of records to download and add/update in the GLUE source. If omitted, no maximum. -->
-  <maxDownloaded>10</maxDownloaded>
+  <maxDownloaded>200000</maxDownloaded>
   <!-- Retrieval operates in batches to avoid overloading NCBI. 
        This is the number of sequences to retrieve per batch -->
   <eFetchBatchSize>500</eFetchBatchSize>
   <!-- Maximum size of the search result set. If omitted, defaults to 4000. This maximum is applied at the initial NCBI
        search step -->
-  <eSearchRetMax>10</eSearchRetMax>
+  <eSearchRetMax>200000</eSearchRetMax>
 </ncbiImporter>

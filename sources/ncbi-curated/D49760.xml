@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPVJK020B7</GBSeq_locus>
+  <GBSeq_length>1151</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>17-FEB-1996</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate JK020 gene for NS5, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>D49760</GBSeq_primary-accession>
+  <GBSeq_accession-version>D49760.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|D49760.1|HPVJK020B7</GBSeqid>
+    <GBSeqid>gi|1197160</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>NS5</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Tokita,H.</GBAuthor>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+        <GBAuthor>Iizuka,H.</GBAuthor>
+        <GBAuthor>Kishimoto,J.</GBAuthor>
+        <GBAuthor>Tsuda,F.</GBAuthor>
+        <GBAuthor>Lesmana,L.A.</GBAuthor>
+        <GBAuthor>Miyakawa,Y.</GBAuthor>
+        <GBAuthor>Mayumi,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Hepatitis C virus variants from Jakarta, Indonesia classifiable into novel genotypes in the second (2e and 2f), tenth (10a) and eleventh (11a) genetic groups</GBReference_title>
+      <GBReference_journal>J. Gen. Virol. 77 (PT 2), 293-301 (1996)</GBReference_journal>
+      <GBReference_pubmed>8627233</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1151</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>3</GBReference_reference>
+      <GBReference_position>1..1151</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Okamoto,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (17-MAR-1995) Hiroaki Okamoto, Jichi Medical School, Immunology Division; Minamikawachi-machi, Kawachi-gun, Tochigi 329-04, Japan (E-mail:hokamoto@jichi.ac.jp, Tel:0285-44-2111(ex.3334), Fax:0285-44-1557)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1151</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1151</GBInterval_to>
+          <GBInterval_accession>D49760.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>JK020</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..1096</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1096</GBInterval_to>
+          <GBInterval_accession>D49760.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>inference</GBQualifier_name>
+          <GBQualifier_value>non-experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAA08594.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>VTERDIRTEESIYLACSLPEQARTAIHSLTERLYVGGPMMNSKGQSCGYRRCRASGVLTTSLGNTITCYVKALAACKAAGIVSPTMLVCGDDLVVISESQGTEEDEQNLRAFTEAMTRYSAPPGDPPKPEYDLELVTSCSSNVSVALDPRGRRRYYLTRDPTTPLARAAWETVKHSPVDSWLGNIIQYAPTIWARMVLMTHFFSILVAQDTLNQSLNFEMYGAVYSVSPLDLPAIIERLHGLDAFSLHTYSPHELTRVAAALRKLGAPPLRAWKSRARAVRASLIVQGGKAAICGRYLFNWAVKTKLKLTPLPEARLLDLSSWFTVGAGGGDIYHSVSRARPRILLLGLLLLSVGVGLFLLPAR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>3'UTR</GBFeature_key>
+      <GBFeature_location>1097..1151</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1097</GBInterval_from>
+          <GBInterval_to>1151</GBInterval_to>
+          <GBInterval_accession>D49760.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>inference</GBQualifier_name>
+          <GBQualifier_value>non-experimental evidence, no additional details recorded</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>function</GBQualifier_name>
+          <GBQualifier_value>3'UTR with 20nt of T-stretch</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ggtcacggagagggacatcaggaccgaggaatcaatatacctcgcctgctctcttcctgagcaggcccgtaccgccatacactcactgactgagagactttacgtgggaggccccatgatgaacagcaaggggcaatcctgcggatataggcgttgccgtgcgagcggcgtgctcacaacaagcttggggaacaccataacatgttatgtgaaggcgctcgcagcctgcaaggctgctggcatagtttcccccacaatgctcgtgtgcggcgacgaccttgtagtcatctcagagagtcaggggactgaggaggatgagcaaaacctgagagcctttacagaggctatgaccaggtactctgcccctcccggagaccccccaaaaccagaatatgacctagagctggttacatcatgctcttccaatgtatctgtggctttggatccgcgaggccgccgcaggtattacctgactagagaccctaccactcctctcgccagggctgcctgggagacagtgaaacactcccctgtcgattcgtggctgggaaatatcatccaatacgcccctaccatatgggcgcgtatggtcctaatgacacattttttcagcatcttggtggctcaggacaccctgaaccagagtctcaactttgagatgtatggtgctgtatactcagtgtctcccttggacctccctgccataattgaaaggttacatgggcttgacgccttttccctgcacacatactctccccacgaactcacacgggtggcagctgctctcagaaaacttggagcaccccctcttagagcgtggaagagtcgggctcgtgcggtaagggcgtccctcattgtccaaggagggaaggcggctatatgcggccgctatctcttcaattgggcagtgaagacaaagctcaaactcactccattgccggaggcgcgcctcctggacttgtccagttggttcaccgtcggcgccggcgggggcgacatatatcacagcgtgtcgcgagcccgaccccgcatcttactccttggcctactcctactcagcgtaggagtaggcctctttttactccccgctcggtagagcggcacaccttagctacactccatagctaactgtttttttttttttttttttt</GBSeq_sequence>
+</GBSeq>

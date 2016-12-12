@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>FJ807130</GBSeq_locus>
+  <GBSeq_length>653</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>29-MAR-2013</GBSeq_update-date>
+  <GBSeq_create-date>09-DEC-2009</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate PAT90 NS5B gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>FJ807130</GBSeq_primary-accession>
+  <GBSeq_accession-version>FJ807130.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|FJ807130.1|</GBSeqid>
+    <GBSeqid>gi|269996344</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..653</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>de Bruijne,J.</GBAuthor>
+        <GBAuthor>Schinkel,J.</GBAuthor>
+        <GBAuthor>Prins,M.</GBAuthor>
+        <GBAuthor>Koekkoek,S.M.</GBAuthor>
+        <GBAuthor>Aronson,S.J.</GBAuthor>
+        <GBAuthor>van Ballegooijen,M.W.</GBAuthor>
+        <GBAuthor>Reesink,H.W.</GBAuthor>
+        <GBAuthor>Molenkamp,R.</GBAuthor>
+        <GBAuthor>van de Laar,T.J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Emergence of hepatitis C virus genotype 4: phylogenetic analysis reveals three distinct epidemiological profiles</GBReference_title>
+      <GBReference_journal>J. Clin. Microbiol. 47 (12), 3832-3838 (2009)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1128/JCM.01146-09</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>19794040</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..653</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>van de Laar,T.J.W.</GBAuthor>
+        <GBAuthor>de Bruijne,J.</GBAuthor>
+        <GBAuthor>Schinkel,J.</GBAuthor>
+        <GBAuthor>Prins,M.</GBAuthor>
+        <GBAuthor>Koekkoek,S.M.</GBAuthor>
+        <GBAuthor>Aronson,S.J.</GBAuthor>
+        <GBAuthor>van Ballegooijen,M.</GBAuthor>
+        <GBAuthor>Reesink,H.W.</GBAuthor>
+        <GBAuthor>Molenkamp,R.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (06-MAR-2009) Infectious Diseases, Health Service Amsterdam, Nieuwe Achtergracht 100, Amsterdam 1018 WT, Netherlands</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..653</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>653</GBInterval_to>
+          <GBInterval_accession>FJ807130.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>PAT90</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>Surinamese injecting drug user</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Netherlands</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>2006</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>4d</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;653</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>653</GBInterval_to>
+          <GBInterval_accession>FJ807130.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5B</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ACZ57506.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>EVYQCCDLEPEARKVISALTERLYVGGPMYNSKGDLCGTRRCRASGVFTTSFGNTLTCYLKASAAIRAAGLKDCTMLVCGDDLVVIAESDGXEEDKRALGAFTEAMTRYSAPPGDAPQPAYDLELITSCSSNVSVAHDGTGKRVYYLTRDPETPLARAAWETARHTPVNSWLGNIIIYAPTIWVRMVLMTHFFSILQSQEALEKALDFDMYGVTYSIT</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gaggtctatcagtgttgcgacctagagcccgaagcccgcaaggtgatatccgccctcacagagagactctacgtgggcggtcccatgtacaacagcaagggagacctttgcgggactcgacggtgccgcgcaagcggcgtattcaccaccagctttgggaacacactgacgtgctatcttaaggccagcgcagccatcagggctgcaggcctaaaggactgcaccatgctggtttgtggtgacgacttagtcgttatcgctgagagcgatggcgyggaggaggacaaacgtgccctcggagccttcacggaggctatgacgaggtactcagccccccccggagacgccccacaaccggcatatgacctggagctcataacatcgtgctcctccaatgtttccgttgcacacgacgggactggcaaaagggtctactacctgacccgcgaccctgagactcccctggcacgggctgcctgggagacagctcgacacactccagtcaactcttggcttgggaacatcataatctacgcgcccaccatttgggtgcgcatggttttgatgacccacttcttctcaatactccaaagccaggaggcccttgagaaagcactggacttcgacatgtacggagtcacatactctatcac</GBSeq_sequence>
+</GBSeq>

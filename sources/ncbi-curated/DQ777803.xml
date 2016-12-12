@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DQ777803</GBSeq_locus>
+  <GBSeq_length>605</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>01-NOV-2006</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate NK38 core protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>DQ777803</GBSeq_primary-accession>
+  <GBSeq_accession-version>DQ777803.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|DQ777803.1|</GBSeqid>
+    <GBSeqid>gi|110767064</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..605</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Xia,X.</GBAuthor>
+        <GBAuthor>Takebe,Y.</GBAuthor>
+        <GBAuthor>Tee,K.K.</GBAuthor>
+        <GBAuthor>Lin,Y.</GBAuthor>
+        <GBAuthor>Tai,H.</GBAuthor>
+        <GBAuthor>Zhao,W.</GBAuthor>
+        <GBAuthor>Li,X.J.</GBAuthor>
+        <GBAuthor>Wu,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>HCV genotypes distribution among Hepatitis C patients in Kunming, China</GBReference_title>
+      <GBReference_journal>Unpublished</GBReference_journal>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..605</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Xia,X.</GBAuthor>
+        <GBAuthor>Takebe,Y.</GBAuthor>
+        <GBAuthor>Tee,K.K.</GBAuthor>
+        <GBAuthor>Lin,Y.</GBAuthor>
+        <GBAuthor>Tai,H.</GBAuthor>
+        <GBAuthor>Zhao,W.</GBAuthor>
+        <GBAuthor>Li,X.J.</GBAuthor>
+        <GBAuthor>Wu,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (13-JUN-2006) Biological Engineering Department, Kunming University of Science and Technology, Bailong Campus, Kunming, Yunnan 650224, People's Republic of China</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..605</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>605</GBInterval_to>
+          <GBInterval_accession>DQ777803.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>NK38</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>plasma</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>China</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>Mar-2005</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>3b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>5'UTR</GBFeature_key>
+      <GBFeature_location>1..265</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>265</GBInterval_to>
+          <GBInterval_accession>DQ777803.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>266..&gt;605</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>266</GBInterval_from>
+          <GBInterval_to>605</GBInterval_to>
+          <GBInterval_accession>DQ777803.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ABG90852.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTLPKPQRQTKRNTPRRPQNVKFPGGGQIVGGVYVLPRRGPRLGVRAVRKTSERSQPRGRRQPIPKARPREGRSWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWXPSTPG</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gtctagccatggcgttagtacgagtgtcgtgcagcctccaggcccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaatcgccgggacgaccgggtcctttcttggaacaacccgctcaatgcccggaaatttgggcgtgcccccgcgagatcactagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtaaaccgtgcatcatgagcacacttcctaaacctcaaagacaaaccaaaagaaacacaccccgtcgcccacagaacgttaagttcccgggcggcgggcagatcgttggtggagtatatgtgctgccgcgcaggggcccacgattgggtgtgcgcgcagtacgtaagacttccgagcggtcgcaacctcgcggacggcgtcagcctatccccaaggcacgcccacgcgagggccggtcctgggctcagcctgggtacccctggcccctctatgggaatgagggctgcggttgggcaggatggctcttgtccccccgcggctctcgccctagttgggscccaagcacccccgggc</GBSeq_sequence>
+</GBSeq>

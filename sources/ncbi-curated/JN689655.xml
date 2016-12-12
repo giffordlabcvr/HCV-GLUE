@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>JN689655</GBSeq_locus>
+  <GBSeq_length>1356</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-MAY-2013</GBSeq_update-date>
+  <GBSeq_create-date>14-MAY-2013</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 3a isolate P7524sC19 NS5A gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>JN689655</GBSeq_primary-accession>
+  <GBSeq_accession-version>JN689655.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|JN689655.1|</GBSeqid>
+    <GBSeqid>gi|399149397</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus subtype 3a</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 3a</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1356</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Bittar,C.</GBAuthor>
+        <GBAuthor>Jardim,A.C.</GBAuthor>
+        <GBAuthor>Yamasaki,L.H.</GBAuthor>
+        <GBAuthor>Carareto,C.M.</GBAuthor>
+        <GBAuthor>Pinho,J.R.</GBAuthor>
+        <GBAuthor>Lemey,P.</GBAuthor>
+        <GBAuthor>de Carvalho-Mello,I.M.</GBAuthor>
+        <GBAuthor>Rahal,P.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>On Hepatitis C Virus Evolution: The Interaction between Virus and Host towards Treatment Outcome</GBReference_title>
+      <GBReference_journal>PLoS ONE 8 (4), E62393 (2013)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1371/journal.pone.0062393</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>23638063</GBReference_pubmed>
+      <GBReference_remark>Publication Status: Online-Only</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1356</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Bittar,C.</GBAuthor>
+        <GBAuthor>Jardim,A.C.G.</GBAuthor>
+        <GBAuthor>Yamasaki,L.H.T.</GBAuthor>
+        <GBAuthor>de Carvalho-Mello,I.M.V.G.</GBAuthor>
+        <GBAuthor>Rahal,P.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (31-AUG-2011) Department of Biology, UNESP - Sao Paulo State University, Rua Cristovao Colombo, 2265 - Jardim Nazareth, Sao Jose do Rio Preto, Sao Paulo 15054-000, Brazil</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1356</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1356</GBInterval_to>
+          <GBInterval_accession>JN689655.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 3a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>P7524sC19</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:356426</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Brazil</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>3a</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1356</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1356</GBInterval_to>
+          <GBInterval_accession>JN689655.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AFP27437.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>SGDWLRDIWDWVCTVLSDFKTWLSAKIMPALPGLPFISCQKGYKGVWRGDGVMSTRCSCGATIAGHVKNGSMRLAGPRTCANMWYGTFPINEYTTGPSTPCPSPNYTRALWRVAANSYVEVRRVGDFHYITGATEDELKCPCQVPAAEFFTEVDGVRLHRYAPPCKPLLRDEITFVVGLNSYTIGSQLPCEPEPDVSVLTSMLRDPSHITAETAARRLARGSPPSEASSSASQLSAPSLKATCQTHRPHPDAELVDANLLWRQEMGSNITRVESETKVVILDSFEPLRAEADDAEPSVAAECFKKPPKYPPALPIWARPDYNPPLLDRWKAPDYEPPTVHGCALPPRGAPPVPPPRRKRAIQLDDSNVSAALAALAEKSFPSSKPQEENSSSSGVDTQSSTTSRVPPSPKGESDTESCSSMPPLEGEPGDPDLSCDSWSTVSDSEEQSVVCC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>agcggcgactggctgcgtgacatctgggactgggtttgcacggtgttgtccgacttcaagacatggctctccgccaagatcatgccagctctccctggactgcccttcatttcctgccagaagggatacaagggcgtgtggcggggagatggtgtgatgtcgacacgctgttcctgcggagctacaatagccggccatgtgaagaatgggtccatgcgacttgcagggccgcgtacatgtgctaacatgtggtacggtacctttcccatcaatgagtacaccacaggacccagcacaccctgcccatcacccaattacactcgcgcactatggcgcgtggctgccaacagctacgtcgaagtgcgtcgagtgggggacttccattacattacgggggccacagaagatgagctcaagtgtccgtgccaagtgccggctgccgagttcttcaccgaagtggatggggtgagactccaccgttacgcccctccatgcaagcccctgttgagagatgagatcactttcgtggtagggttaaattcttacacgataggatctcaactcccctgtgagcccgaaccagacgtttctgtactcacctcgatgttgagagacccttcccatatcaccgccgaaacggcagcgcgccgccttgcgcgcgggtcccctccatcggaagcaagctcgtccgccagtcaactgtcggctccgtcgttgaaggccacttgccaaacgcataggcctcacccagacgctgagctagtggacgctaacttgttgtggcggcaagagatgggcagcaacatcacacgggtagagtctgagacaaaggttgtgattcttgattcattcgaacctctgagggctgaagcggatgacgctgaaccctcggtggctgcagagtgtttcaagaaacctcccaagtatcctccagcccttcccatctgggctaggccagactacaaccctccactgttagatcgctggaaagcaccggattatgaaccaccaactgtccatggatgcgccttaccaccacggggcgctccaccggtgcctccacctcggaggaaaagagcaattcagttggatgactccaacgtgtctgcggcgttagctgcgctagcggaaaaatcatttccatcctcgaaaccgcaggaagagaatagctcatcctctggggtcgacacacagtccagcactacttccagggtgcccccttctccgaaaggggagtccgatacagagtcatgctcgtccatgcctcctctcgagggagagccgggcgatccggacctgagttgcgactcttggtccaccgttagtgacagcgaggagcagagcgtggtctgctgc</GBSeq_sequence>
+</GBSeq>

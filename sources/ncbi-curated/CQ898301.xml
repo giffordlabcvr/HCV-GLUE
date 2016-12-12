@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>CQ898301</GBSeq_locus>
+  <GBSeq_length>2398</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>08-NOV-2004</GBSeq_update-date>
+  <GBSeq_create-date>08-NOV-2004</GBSeq_create-date>
+  <GBSeq_definition>Sequence 4 from Patent WO2004092386</GBSeq_definition>
+  <GBSeq_primary-accession>CQ898301</GBSeq_primary-accession>
+  <GBSeq_accession-version>CQ898301.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|CQ898301.1|</GBSeqid>
+    <GBSeqid>pat|WO|2004092386|4</GBSeqid>
+    <GBSeqid>gi|55582645</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Rehermann,B.</GBAuthor>
+        <GBAuthor>Racanelli,V.</GBAuthor>
+        <GBAuthor>Behrens,S.E.</GBAuthor>
+        <GBAuthor>Tautz,N.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Inducing a t cell response with recombinant pestivirus replicons or recombinant pestivirus replicon-transfected dendritic cells</GBReference_title>
+      <GBReference_journal>Patent: WO 2004092386-A2 4 28-OCT-2004; THE GOVERNMENT OF THE UNITED STATES OF AMERICA (US); Justus-Liebig-Universitaet Giessen (DE)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..2398</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>2398</GBInterval_to>
+          <GBInterval_accession>CQ898301.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atggagttgatcacaaatgaacttttatacaaaacatacaaacaaaaacccgctggagtggaggaaccagtatacgaccaagctggtaaccctttgtttggagaaagaggagtgattcatccgcagtcaacgctaaaacttccacataaaagaggggagcgtgaagtccccaccaatctggcttctttaccaaaaagaggtgactgcaggtcgggtaacagcaaggggcctgtgagtggaatctacttaaaaccagggccgttattctaccaagattataaaggacctgtctatcatagagccccattggagttttttgaggaggcgtctatgtgtgagacaactaaaagaatagggagagtaactggtagtgacagcagattataccacatttacgtgtgtattgatgggtgcataatagtcaagagtgctacaaaagaccgccagaaagtactcaagtgggtccacaacactaaactgccccctatgggtttcaagctgcgcacctattacggcctactcccaacagacgcgaggcctacttggctgcatcatcactagcctcacaggccgggacaggaaccaggtcgagggggaggtccaagtggtctccaccgcaacacaatctttcctggcgacctgcgtcaatggcgtgtgttggactgtctatcatggtgccggctcaaagacccttgccggcccaaagggcccaatcacccaaatgtacaccaatgtggaccaggacctcgtcggctggcaagcgccccccggggcgcgttccttgacaccatgcacctgcggcagctcggacctttacttggtcacgaggcatgccgatgtcattccggtgcgccggcggggcgacagcagggggagcctactctcccccaggcccgtctcctacttgaagggctcttcgggcggtccactgctctgcccctcggggcacgctgtgggcatctttcgggctgccgtgtgcacccgaggggttgcgaaggcggtggactttgtacccgtcgagtctatggaaaccactatgcggtccccggtcttcacggacaactcgtcccctccggccgtaccgcagacattccaggtggcccatctacacgcccctactggtagcggcaagagcactaaggtgccggctgcgtatgcagcccaagggtataaggtgcttgtcctgaacccgtccgtcgccgccaccctaggtttcggggcgtatatgtctaaggcacatggtatcgaccctaacatcagaaccggggtaaggaccatcaccacgggtgcccccatcacgtactccacctatggcaagtttcttgccgacggtggttgctctgggggcgcctatgacatcataatatgtgatgagtgccactcaactgactcgaccactatcctgggcatcggcacagtcctggaccaagcggagacggctggagcgcgactcgtcgtgctcgccaccgctacgcctccgggatcggtcaccgtgccacatccaaacatcgaggaggtggctctgtccagcactggagaaatccccttttatggcaaagccatccccatcgagaccatcaagggggggaggcacctcattttctgccattccaagaagaaatgtgatgagctcgccgcgaagctgtccggcctcggactcaatgctgtagcatattaccggggccttgatgtatccgtcataccaactagcggagacgtcattgtcgtagcaacggacgctctaatgacgggctttaccggcgatttcgactcagtgatcgactgcaatacatgtgtcacccagacagtcgacttcagcctggacccgaccttcaccattgagacgacgaccgtgccacaagacgcggtgtcacgctcgcagcggcgaggcaggactggtaggggcaggatgggcatttacaggtttgtgactccaggagaacggccctcgggcatgttcgattcctcggttctgtgcgagtgctatgacgcgggctgtgcttggtacgagctcacgcccgccgagacctcagttaggttgcgggcttacctaaacacaccagggttgcccgtctgccaggaccatctggagttctgggagagcgtctttacaggcctcacccacatagacgcccatttcttgtcccagactaagcaggcaggagacaacttcccctacctggtagcataccaggctacggtgtgcgccagggctcaggctccacctccatcgtgggaccaaatgtggaagtgtctcatacggctaaagcctacgctgcacgggccaacgcccctgctgtataggctgggagccgttcaaaacgaggttactaccacacaccccataaccaaatacatcatggcatgcatgtcggctgacctggaggtcgtcacgtag</GBSeq_sequence>
+</GBSeq>

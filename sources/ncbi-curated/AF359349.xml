@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AF359349</GBSeq_locus>
+  <GBSeq_length>585</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>20-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>06-MAY-2001</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 42 months core protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>AF359349</GBSeq_primary-accession>
+  <GBSeq_accession-version>AF359349.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AF359349.1|</GBSeqid>
+    <GBSeqid>gi|13958006</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..585</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Flichman,D.</GBAuthor>
+        <GBAuthor>Kott,V.</GBAuthor>
+        <GBAuthor>Sookoian,S.</GBAuthor>
+        <GBAuthor>Campos,R.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Acute hepatitis C in a chronically HIV-infected patient: evolution of different viral genomic regions</GBReference_title>
+      <GBReference_journal>World J. Gastroenterol. 9 (7), 1496-1500 (2003)</GBReference_journal>
+      <GBReference_pubmed>12854149</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..585</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Kott,V.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (12-MAR-2001) Catedra de Virologia, Fac. de Farmacia y Bioquimica, Junin 956 4th floor, Capital Federal 1113, Argentina</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..585</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>585</GBInterval_to>
+          <GBInterval_accession>AF359349.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>42 months</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1a</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;585</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>585</GBInterval_to>
+          <GBInterval_accession>AF359349.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAK50756.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKVRRPEGRTWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPTDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTVPASAYQVR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgtcgcccacaggacgtcaagttcccgggtggcggtcagatcgttggtggagtttacttgttgccgcgcaggggccctagattgggtgtgcgcgcgacgaggaagacttccgagcggtcgcaacctcgaggtagacgtcagcctatccccaaggtacgtcggcccgagggcaggacctgggctcagcccgggtacccttggcccctctacggcaatgagggctgcgggtgggcgggatggctcctgtctccccgtggctctcggcctagctggggccccacagacccccggcgtaggtcgcgcaatttgggtaaggtcatcgatacccttacgtgcggcttcgccgacctcatggggtacataccgctcgtcggcgcccctcttggaggtgctgccagggccctggcgcatggcgtccgggttctggaagacggcgtgaactatgcaacagggaaccttcctggttgctctttctctatcttccttctggccctgctctcttgcctgactgtgcccgcttcggcctaccaagtgcgc</GBSeq_sequence>
+</GBSeq>

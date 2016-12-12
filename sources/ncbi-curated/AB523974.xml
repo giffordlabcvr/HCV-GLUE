@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AB523974</GBSeq_locus>
+  <GBSeq_length>573</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>20-NOV-2015</GBSeq_update-date>
+  <GBSeq_create-date>20-NOV-2015</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 1b Core gene for core protein, partial cds, isolate: 72</GBSeq_definition>
+  <GBSeq_primary-accession>AB523974</GBSeq_primary-accession>
+  <GBSeq_accession-version>AB523974.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|AB523974.1|</GBSeqid>
+    <GBSeqid>gi|953948884</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus subtype 1b</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 1b</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Nakamoto,S.</GBAuthor>
+        <GBAuthor>Imazeki,F.</GBAuthor>
+        <GBAuthor>Arai,M.</GBAuthor>
+        <GBAuthor>Yasui,S.</GBAuthor>
+        <GBAuthor>Nakamura,M.</GBAuthor>
+        <GBAuthor>Haga,Y.</GBAuthor>
+        <GBAuthor>Sasaki,R.</GBAuthor>
+        <GBAuthor>Kanda,T.</GBAuthor>
+        <GBAuthor>Shirasawa,H.</GBAuthor>
+        <GBAuthor>Yokosuka,O.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Effect of Hepatitis C Virus Genotype 1b Core and NS5A Mutations on Response to Peginterferon Plus Ribavirin Combination Therapy</GBReference_title>
+      <GBReference_journal>Int J Mol Sci 16 (9), 21177-21190 (2015)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.3390/ijms160921177</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>26370958</GBReference_pubmed>
+      <GBReference_remark>DOI:10.3390/ijms160921177; Publication Status: Online-Only</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Nakamoto,S.</GBAuthor>
+        <GBAuthor>Imazeki,F.</GBAuthor>
+        <GBAuthor>Fukai,K.</GBAuthor>
+        <GBAuthor>Fujiwara,K.</GBAuthor>
+        <GBAuthor>Arai,M.</GBAuthor>
+        <GBAuthor>Kanda,T.</GBAuthor>
+        <GBAuthor>Yonemitsu,Y.</GBAuthor>
+        <GBAuthor>Yokosuka,O.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (29-SEP-2009) Contact:Shingo Nakamoto Chiba University, Graduate School of Medicine, Medicine and Clinical Oncology; Inohana 1-8-1, Chiba, Chiba 260-8670, Japan</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AB523974.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 1b</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>72</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>serum</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:31647</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>subtype 1b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AB523974.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>Core</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AB523974.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>Core</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAT57414.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPQDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARQPEGRAWAQPGYPWPLYGNEGMGWAGWLLSPRGSRPSWGPTDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPLGGAARALAHGVRVLEDGVNYATGNLPGCSFSIFLLALLSCLTTPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacaaatcctaaaccccaaagaaaaaccaaacgtaacaccaaccgccgcccacaggacgtcaagttcccgggcggtggtcagatcgttggtggagtttacctgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttccgagcggtcgcaacctcgtggaaggcgacaacctatccccaaggctcgccagcccgagggcagggcctgggctcagcccgggtacccttggcccctctatggcaacgagggcatggggtgggcaggatggctcctgtcaccccgtggctcccggcctagttggggccccaccgacccccggcgtaggtcgcgtaatttgggtaaggtcatcgataccctcacatgcggcttcgccgacctcatggggtacattccgctcgtcggcgcccccctagggggcgctgccagggccctggcacatggtgtccgggttctggaggacggcgtaaattatgcaacagggaatttgcccggttgctctttctctatcttcctcttggctctgctgtcctgtttgaccaccccagcttccgct</GBSeq_sequence>
+</GBSeq>

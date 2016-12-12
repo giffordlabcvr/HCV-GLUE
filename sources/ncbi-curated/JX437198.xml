@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>JX437198</GBSeq_locus>
+  <GBSeq_length>1776</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>25-OCT-2012</GBSeq_update-date>
+  <GBSeq_create-date>14-AUG-2012</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate 104 NS5B protein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>JX437198</GBSeq_primary-accession>
+  <GBSeq_accession-version>JX437198.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|JX437198.1|</GBSeqid>
+    <GBSeqid>gi|400131046</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1776</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Le Pogam,S.</GBAuthor>
+        <GBAuthor>Yan,J.M.</GBAuthor>
+        <GBAuthor>Chhabra,M.</GBAuthor>
+        <GBAuthor>Ilnicka,M.</GBAuthor>
+        <GBAuthor>Kang,H.</GBAuthor>
+        <GBAuthor>Kosaka,A.</GBAuthor>
+        <GBAuthor>Ali,S.</GBAuthor>
+        <GBAuthor>Chin,D.J.</GBAuthor>
+        <GBAuthor>Shulman,N.S.</GBAuthor>
+        <GBAuthor>Smith,P.</GBAuthor>
+        <GBAuthor>Klumpp,K.</GBAuthor>
+        <GBAuthor>Najera,I.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Characterization of Hepatitis C Virus (HCV) Quasispecies Dynamics upon Short-Term Dual Therapy with the HCV NS5B Nucleoside Polymerase Inhibitor Mericitabine and the NS3/4 Protease Inhibitor Danoprevir</GBReference_title>
+      <GBReference_journal>Antimicrob. Agents Chemother. 56 (11), 5494-5502 (2012)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1128/AAC.01035-12</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>22869576</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1776</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Le Pogam,S.</GBAuthor>
+        <GBAuthor>Yan,J.M.</GBAuthor>
+        <GBAuthor>Chhabra,M.</GBAuthor>
+        <GBAuthor>Ilnicka,M.</GBAuthor>
+        <GBAuthor>Kang,H.</GBAuthor>
+        <GBAuthor>Kosaka,A.</GBAuthor>
+        <GBAuthor>Ali,S.</GBAuthor>
+        <GBAuthor>Chin,D.</GBAuthor>
+        <GBAuthor>Shulman,N.</GBAuthor>
+        <GBAuthor>Smith,P.</GBAuthor>
+        <GBAuthor>Klumpp,K.</GBAuthor>
+        <GBAuthor>Najera,I.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (27-JUL-2012) Virology Discovery, Hoffman-La Roche Inc., 340 Kingsland Street, Nutley, NJ 07110, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1776</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1776</GBInterval_to>
+          <GBInterval_accession>JX437198.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>104</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>New Zealand</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>19-Nov-2008</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>1a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>day 1</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..1776</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1776</GBInterval_to>
+          <GBInterval_accession>JX437198.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5B protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AFP67706.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>SMSYSWTGALITPCAAEEQKLPINALSNSLLRHHNLVYSTTSRSASQRQKKVTFDRLQVLDNHYQDVLKEVKAAASKVKAXLLSVEEACSLTPPHSARSKFGYGAKDVRXHARKAVNHINSVWQDLLEDSVTPIDTTIMAKNEVFCVQPEKGGRKPARLIVXPDLGVRVCEKMALYDVVSKLPIAVMGSSYGFQYSPGQRVEFLVQAWKSKKTPMGFSYDTRCFDSTVTESDIRTEEAIYQCCDLDPQARVAIKSLTERLYVGGPLTNSRGENCGYRRCRASGVLTTSCGNTLTCYIKALASCRAAGLRDCTMLVCGDDLVVICESQGVQEDAANLRAFTEAMTRYSAPPGDPPQPEYDLELITSCSSNVSVAHDGTGKRVYYLTRDPTTPLARAAWETARHTPVNSWLGNIIMFAPTLWARMILMTHFFSVLIARDQLEQALDCEIYGACYSIEPLDLPPIIQRLHGLSAFSLHSYSPGEINRVAACLRKLGVPPLRAWKHRARSVRARLLSRGGRAAICGKYLFNWAVRTKLKLTPIXAAGQLDLSGWFTAGYSGGDIYHSVSRARPRWFWFCLLLLAAGVGIYLLPNR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>tcratgtcytattcctggacaggcgcacttatcaccccgtgtgccgcggaagaacaaaaattgcctatyaaygcactgagcaactcgctrctrcgtcaccacaatctygtgtattcyaccacctcacgcagtgctagccagaggcagaagaaagtcacatttgacagactgcaggttctggacaaccactaccaggacgtgctcaaggaggttaaggcggcggcgtcaaargtgaaggctarcttgctatctgtagaggaagcttgcagcctgacgcccccacattcrgccagatcyaaatttggctatggggcaaaagacgtccgywgccatgccagaaaggccgtaaaccacatcaactccgtgtggcaagaccttctggaagacagtgtaacaccaatagacactaccatcatggctaagaacgaagttttctgcgttcagcctgagaagggrggtcgtaagccagctcgtctcatcgtgtwccccgacctgggtgtgcgcgtgtgcgagaagatggccctatacgacgtggtcagcaaactccctatagccgtgatgggaagctcctacggattccartactcaccaggacagcgggttgaattcctygtkcaagcrtggaaatccaagaaracyccratggggttttcatatgatacccgctgcttygactccacagtcactgagagcgayatccgtacggaagaggcaatctaccagtgttgtgacctggacccccaagcccgcgtggccatcaagtccctcaccgagagrctttatgtcgggggccccctyaccaattcaaggggggaaaactgcggctatcgcaggtgccgcgcragcggcgtactgacaactagctgtggtaayaccctcacttgctacatyaaggccctagcatcctgtcgagccgcagggctccgggactgcaccatgctcgtgtgtggcgacgacytagtcgttatctgygaaagtcagggagtccaggaggacgcagcgaacctgagagccttcacggaggctatgaccaggtactccgctccccccggggaccccccccaaccagaatacgacttggagctcataacatcrtgctcctctaacgtgtcrgtcgcccacgacggcactggaaaragggtctattaccttacycgtgaccctacaacccccctcgcaagagctgcgtgggagacagcaagacacactccagtcaattcctggctaggcaacataatcatgtttgcccccacattgtgggcgagaatgatactgatgacccacttcttcagtgtcctcatagccagggatcaacttgaacaggccctcgattgcgaaatctacggagcctgctactccatagaaccactkgacctacctccaatcattcaragactccatggccttagcgcgttctcwctccacagttactctccaggtgaaatcaatagggtggccgcatgcctcagaaaacttggggttccgcccttgcgagcttggaagcaccgggcccggagcgtccgcgctaggctcctgtccagaggaggcagagctgccatatgtggcaagtacctcttcaattgggcagtgagaacaaagctcaaactcactccaatascggccgctggccagctggacctrtccggctggttcacggctggctacagcgggggagacatttatcacagcgtgtctcgtgcccggccccgctggttctggttctgcctactcctgctagctgcaggggtaggcatctacctcctycccaaccgwtga</GBSeq_sequence>
+</GBSeq>

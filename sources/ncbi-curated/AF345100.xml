@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AF345100</GBSeq_locus>
+  <GBSeq_length>978</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>15-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>27-MAR-2001</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate SCpostSC1c10 polyprotein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>AF345100</GBSeq_primary-accession>
+  <GBSeq_accession-version>AF345100.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AF345100.1|</GBSeqid>
+    <GBSeqid>gi|13448471</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..978</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Mao,Q.</GBAuthor>
+        <GBAuthor>Ray,S.C.</GBAuthor>
+        <GBAuthor>Laeyendecker,O.</GBAuthor>
+        <GBAuthor>Ticehurst,J.R.</GBAuthor>
+        <GBAuthor>Strathdee,S.A.</GBAuthor>
+        <GBAuthor>Vlahov,D.</GBAuthor>
+        <GBAuthor>Thomas,D.L.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Human immunodeficiency virus seroconversion and evolution of the hepatitis C virus quasispecies</GBReference_title>
+      <GBReference_journal>J. Virol. 75 (7), 3259-3267 (2001)</GBReference_journal>
+      <GBReference_pubmed>11238852</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..978</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Mao,Q.</GBAuthor>
+        <GBAuthor>Ray,S.C.</GBAuthor>
+        <GBAuthor>Laeyendecker,O.</GBAuthor>
+        <GBAuthor>Ticehurst,J.R.</GBAuthor>
+        <GBAuthor>Strathdee,S.A.</GBAuthor>
+        <GBAuthor>Vlahov,D.</GBAuthor>
+        <GBAuthor>Thomas,D.L.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (02-FEB-2001) Medicine, Division of Infectious Diseases, Johns Hopkins University School of Medicine, 720 Rutland Avenue, Ross 1159, Baltimore, MD 21205, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..978</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>978</GBInterval_to>
+          <GBInterval_accession>AF345100.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>SCpostSC1c10</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>c10</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>subject SC, postSC1 visit</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;978</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>978</GBInterval_to>
+          <GBInterval_accession>AF345100.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAK27058.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>FLLALLSCLTVPASAYQVRNSSGLYHVTNDCPNSSIVFEAVDAILHTPGCLPCVREGNISRCWVAVTPTVATRDGRLPTTQLRRHIDLLVGSATLCSALYVGDLCGSVFLVGQLFTFSPRRYWTTQDCNCSIYPGHIGGHRMAWDMMMNWSPTAALVVAQLLRIPQAILDMIAGAHWGVLAGIAYFSMVGNWAKVVVVLLLFAGVDARSIITGRSAGHTVSGLTGLFAPGAKQNIQLINTNGSWHINRTALNCNDSLNTGWIAGLLYHHKFNSSGCPERLASCRPLTDFDQGWGPITYANGSGPDQRPYCWHYPPKPCGIVPAKSV</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>&lt;1..45</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>45</GBInterval_to>
+          <GBInterval_accession>AF345100.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>FLLALLSCLTVPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>46..621</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>46</GBInterval_from>
+          <GBInterval_to>621</GBInterval_to>
+          <GBInterval_accession>AF345100.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E1 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>YQVRNSSGLYHVTNDCPNSSIVFEAVDAILHTPGCLPCVREGNISRCWVAVTPTVATRDGRLPTTQLRRHIDLLVGSATLCSALYVGDLCGSVFLVGQLFTFSPRRYWTTQDCNCSIYPGHIGGHRMAWDMMMNWSPTAALVVAQLLRIPQAILDMIAGAHWGVLAGIAYFSMVGNWAKVVVVLLLFAGVDA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>622..&gt;978</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>622</GBInterval_from>
+          <GBInterval_to>978</GBInterval_to>
+          <GBInterval_accession>AF345100.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E2 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>RSIITGRSAGHTVSGLTGLFAPGAKQNIQLINTNGSWHINRTALNCNDSLNTGWIAGLLYHHKFNSSGCPERLASCRPLTDFDQGWGPITYANGSGPDQRPYCWHYPPKPCGIVPAKSV</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>ttccttctggccctgctctcttgcttgactgtacccgcttcggcctaccaagtgcgcaactcctcggggctttaccacgtcaccaatgactgccctaactcgagtattgtgttcgaggcggtcgatgccatcctgcatactccggggtgcctcccttgcgttcgcgagggtaacatctcgaggtgttgggtggcggtgacccccacggtggccaccagggacggcagactccccacaacgcagcttcgacggcatatcgatctgcttgtcgggagcgccaccctctgctcagccctctacgtgggggacttgtgcgggtctgtctttcttgtcggccaactgttcaccttctctcccaggcgctactggacgacgcaggactgcaattgttctatctatcccggccatatagggggtcatcgcatggcatgggatatgatgatgaactggtcccctacggcggcgttagtagtagctcagctgctccggatcccacaagccatcttggacatgatcgctggtgctcactggggagtcctagcgggcatagcgtatttctccatggtggggaactgggcgaaggtcgtggtagtgctgctgctatttgccggcgtcgacgcgagatccatcatcactgggagaagtgccggccacaccgtgtctggtcttactggtctcttcgcaccaggcgccaagcagaacatccagctgatcaacaccaacggtagttggcacatcaataggacggctttgaactgcaatgatagccttaacaccggctggatagcagggctcctctaccaccacaaattcaactcctcgggctgtcctgagaggttggccagctgccgaccccttactgattttgaccagggctggggccctatcacttatgccaatggaagcggccccgaccaacgcccctactgctggcactaccccccaaaaccttgtggtattgtgcctgcgaagagcgtg</GBSeq_sequence>
+</GBSeq>

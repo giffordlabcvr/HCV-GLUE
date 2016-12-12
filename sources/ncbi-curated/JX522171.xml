@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>JX522171</GBSeq_locus>
+  <GBSeq_length>601</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>16-JAN-2013</GBSeq_update-date>
+  <GBSeq_create-date>16-JAN-2013</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate GZ822 E1 gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>JX522171</GBSeq_primary-accession>
+  <GBSeq_accession-version>JX522171.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|JX522171.1|</GBSeqid>
+    <GBSeqid>gi|441420223</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..601</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Rong,X.</GBAuthor>
+        <GBAuthor>Lu,L.</GBAuthor>
+        <GBAuthor>Wang,J.</GBAuthor>
+        <GBAuthor>Xiong,H.</GBAuthor>
+        <GBAuthor>Huang,J.</GBAuthor>
+        <GBAuthor>Chen,J.</GBAuthor>
+        <GBAuthor>Huang,K.</GBAuthor>
+        <GBAuthor>Xu,R.</GBAuthor>
+        <GBAuthor>Wang,M.</GBAuthor>
+        <GBAuthor>Zhang,X.</GBAuthor>
+        <GBAuthor>Guo,T.</GBAuthor>
+        <GBAuthor>Liu,Y.</GBAuthor>
+        <GBAuthor>Gao,G.</GBAuthor>
+        <GBAuthor>Fu,Y.</GBAuthor>
+        <GBAuthor>Nelson,K.E.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Correlation of Viral Loads with HCV Genotypes: Higher Levels of Virus Were Revealed among Blood Donors Infected with 6a Strains</GBReference_title>
+      <GBReference_journal>PLoS ONE 7 (12), E52467 (2012)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1371/journal.pone.0052467</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>23285053</GBReference_pubmed>
+      <GBReference_remark>Publication Status: Online-Only</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..601</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Fu,Y.</GBAuthor>
+        <GBAuthor>Rong,X.</GBAuthor>
+        <GBAuthor>Lu,L.</GBAuthor>
+        <GBAuthor>Huang,J.</GBAuthor>
+        <GBAuthor>Huang,K.</GBAuthor>
+        <GBAuthor>Xu,R.</GBAuthor>
+        <GBAuthor>Wang,M.</GBAuthor>
+        <GBAuthor>Zhang,X.</GBAuthor>
+        <GBAuthor>Xiong,H.</GBAuthor>
+        <GBAuthor>Guo,T.</GBAuthor>
+        <GBAuthor>Nelson,K.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (24-AUG-2012) Guangzhou Blood Center, 31 Lu Yuan Road, Guangzhou, Guangdong 510095, China</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>##Assembly-Data-START## Assembly Method DNAStar v. Version 10.1 Sequencing Technology Sanger dideoxy sequencing ##Assembly-Data-END##</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..601</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>601</GBInterval_to>
+          <GBInterval_accession>JX522171.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>GZ822</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>serum from blood donor</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>China</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>01-Nov-2009</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;601</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>601</GBInterval_to>
+          <GBInterval_accession>JX522171.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AGC30576.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>FLFADLMGYIPVVGAPLGGVAAALAHGVRAIEDGINYATGNLPGCSFSIFLLALLSCLTTPASALTYGNSSGLYHLTNDCXNSSIVLEADTMILHLPGCLPCVRVGNQSTCWHAVSPTLATPNASAPATGFRRHVDLLAGAAVVCSSLYVGDLCGSLFLAGQLFTFQPRRHWTVQDCNCSIYTGHVTGHRMAWDMMMNWS</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>tttcttttcgccgacctcatggggtacattcccgtcgtgggcgcgcctttgggcggcgtcgcggctgcgctcgcacacggtgtgagggcaatcgaggacgggatcaattatgcaacaggraatcttcccggttgctctttctctatcttcctcttggcactactctcgtgcctcacaacgccagcttcggctcttacctayggtaactccagtgggctataccatctcacaaatgattgtyccaactccagcatcgtgctggaggcggataccatgatcttgcatttgcctggatgcttgccttgtgtgagggtcggtaatcagtccacctgctggcatgctgtgtcccccaccctagccacaccaaatgcttccgcgcccgcgacgggattccgcaggcatgtggatctacttgcgggcgctgcagtggtttgctcatccctgtatgtcggggatctgtgcggctctctctttttggcgggacaactatttaccttccagccccgccgtcattggactgtgcaagactgcaactgctccatctatacaggccacgtcaccggccacaggatggcttgggatatgatgatgaactggtccc</GBSeq_sequence>
+</GBSeq>

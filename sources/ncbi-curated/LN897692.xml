@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>LN897692</GBSeq_locus>
+  <GBSeq_length>573</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>01-DEC-2015</GBSeq_update-date>
+  <GBSeq_create-date>01-DEC-2015</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 3a Core/Core+1 gene for Core/Core+1 protein, isolate 3T2-GR</GBSeq_definition>
+  <GBSeq_primary-accession>LN897692</GBSeq_primary-accession>
+  <GBSeq_accession-version>LN897692.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>emb|LN897692.1|</GBSeqid>
+    <GBSeqid>gi|958109187</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus subtype 3a</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 3a</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>Karamitros,T.</GBAuthor>
+        <GBAuthor>Kakkanas,A.</GBAuthor>
+        <GBAuthor>Katsoulidou,A.</GBAuthor>
+        <GBAuthor>Sypsa,V.</GBAuthor>
+        <GBAuthor>Dalagiorgou,G.</GBAuthor>
+        <GBAuthor>Mavromara,P.</GBAuthor>
+        <GBAuthor>Hatzakis,A.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Detection of specific antibodies to HCV-ARF/CORE+1 protein in patients treated with pegylated interferon plus ribavirin</GBReference_title>
+      <GBReference_journal>J. Viral Hepat. 19 (3), 182-188 (2012)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1111/j.1365-2893.2011.01502.x</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>22329372</GBReference_pubmed>
+      <GBReference_remark>Sequence used for in vitro expression of HCV subtype 3A ARF/core+1 recombinant proteins</GBReference_remark>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Karamitros,T.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (29-SEP-2015) Applied Evolutionary Virology, ZOOLOGY DEPARTMENT, UNIVERSITY OF OXFORD, SOUTH PARKS ROAD OX1 3PS, UNITED KINGDOM</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>LN897692.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 3a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>3T2-GR</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:356426</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>gene</GBFeature_key>
+      <GBFeature_location>1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>LN897692.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>Core/Core+1</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>LN897692.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>gene</GBQualifier_name>
+          <GBQualifier_value>Core/Core+1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>Core/ Core+1 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>CUS20078.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTLPKPQRKTKRNTIRRPQDIKFPGGGQIVGGVYVLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRSEGRSWAQPGYPWPLYGNEGCGWAGWLPSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPVGGVARALAHGVRALEDGINFATGNLPGCSFSIFLLALFSCLINPAAS</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacacttcctaaacctcaaagaaaaaccaaaagaaacaccatccgtcgcccacaggacattaagttcccgggtggcggacagatcgttggtggagtatacgtgttgccgcgcaggggcccacgattgggtgtgcgcgcgacgcgtaaaacttctgaacggtcacagccacgcggacggcggcagcctatccccaaggcgcgtcggagcgaaggccggtcctgggctcagcccgggtacccttggcccctttatggtaacgagggctgcgggtgggcagggtggctcccgtccccacgcggctcccgtccatcttggggcccaaatgacccccggcgaaggtcccgcaatttgggtaaagtcatcgataccctcacgtgcggattcgccgacctcatggggtacatcccgctcgtcggcgctcccgtaggaggcgtcgcaagagccctcgcgcacggcgtgagggcccttgaagacgggataaatttcgcaacagggaacttgcccggttgctccttttctatcttccttcttgctctattctcttgtttaattaatcccgcagctagt</GBSeq_sequence>
+</GBSeq>

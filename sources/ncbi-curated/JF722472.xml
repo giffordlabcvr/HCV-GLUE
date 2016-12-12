@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>JF722472</GBSeq_locus>
+  <GBSeq_length>709</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>29-JUN-2012</GBSeq_update-date>
+  <GBSeq_create-date>01-MAY-2012</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate P022_NL(NL)_2b_1985.0 RNA polymerase gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>JF722472</GBSeq_primary-accession>
+  <GBSeq_accession-version>JF722472.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|JF722472.1|</GBSeqid>
+    <GBSeqid>gi|380003270</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..709</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Markov,P.V.</GBAuthor>
+        <GBAuthor>van de Laar,T.J.</GBAuthor>
+        <GBAuthor>Thomas,X.V.</GBAuthor>
+        <GBAuthor>Aronson,S.J.</GBAuthor>
+        <GBAuthor>Weegink,C.J.</GBAuthor>
+        <GBAuthor>van den Berk,G.E.</GBAuthor>
+        <GBAuthor>Prins,M.</GBAuthor>
+        <GBAuthor>Pybus,O.G.</GBAuthor>
+        <GBAuthor>Schinkel,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Colonial history and contemporary transmission shape the genetic diversity of hepatitis C virus genotype 2 in amsterdam</GBReference_title>
+      <GBReference_journal>J. Virol. 86 (14), 7677-7687 (2012)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1128/JVI.06910-11</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>22573865</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..709</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>van de Laar,T.J.W.</GBAuthor>
+        <GBAuthor>Markov,P.</GBAuthor>
+        <GBAuthor>Thomas,X.V.</GBAuthor>
+        <GBAuthor>Aronson,S.</GBAuthor>
+        <GBAuthor>Weegink,C.</GBAuthor>
+        <GBAuthor>van den Berk,G.</GBAuthor>
+        <GBAuthor>Prins,M.</GBAuthor>
+        <GBAuthor>Pybus,O.G.</GBAuthor>
+        <GBAuthor>Schinkel,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (14-MAR-2011) Medical Microbiology and Infection Control, VU Medical Centre, De Boelelaan 1117, Amsterdam, Noord Holland 1081 HV, The Netherlands</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..709</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>709</GBInterval_to>
+          <GBInterval_accession>JF722472.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>P022_NL(NL)_2b_1985.0</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>man who has sex with men</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Netherlands</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>collection_date</GBQualifier_name>
+          <GBQualifier_value>03-Jan-1985</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>2b</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;709</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>709</GBInterval_to>
+          <GBInterval_accession>JF722472.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>NS5B</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>2</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>RNA polymerase</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AFD28310.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>STVTERDIRTEESIYQACSLPEEARTVIHSLTERLYVGGPMTNSKGQSCGYRRCRASGVFTTSMGNTMTCYIKALAACKAAGIVDPIMLVCGDDLVVISESQGNEEDERNLRAFTEAMTRYSAPPGDLPRPEYDLELITSCSSNVSVALDPRGRRRYYLTRDPTTPIARAAWETARHSPVNSWLGNIIQYAPTIWVRMVIMTHFFSILLAQDTLNQNLNFEMYGAVYSVNPLDLPA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atcaacagtcacggagagggacataagaacagaagaatccatatatcaggcttgttccctgcctgaagaggccagaactgtcatacactcgctcactgagagactctacgtaggagggcccatgacaaacagcaaaggtcaatcctgcggttacaggcgttgccgcgcaagcggtgttttcactactagtatggggaataccatgacatgctacatcaaagcccttgcagcgtgcaaagctgcggggatcgtggaccccattatgctggtgtgtggagacgacctggtcgtcatctcagagagccaaggcaacgaggaggacgagcggaacctgagagctttcacggaggctatgaccaggtattcagcccctcccggtgaccttcccagaccggaatatgacttggagcttataacatcctgctcctcaaacgtatcggtagcgctggaccctcggggtcgccgccggtactacctaaccagagaccctaccactccaatcgcccgagctgcttgggaaacagcaagacactcccctgtcaattcttggctgggtaacatcatccaatacgcccctacaatctgggtccggatggtcataatgacccacttcttctccatactcttggcccaggacactctgaaccaaaatctcaattttgagatgtacggggcagtatattcggtcaatccattagacctaccggcc</GBSeq_sequence>
+</GBSeq>

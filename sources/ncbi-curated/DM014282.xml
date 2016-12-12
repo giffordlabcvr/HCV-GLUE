@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>DM014282</GBSeq_locus>
+  <GBSeq_length>1989</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>27-FEB-2009</GBSeq_update-date>
+  <GBSeq_create-date>27-FEB-2009</GBSeq_create-date>
+  <GBSeq_definition>Intracellular Production of Hepatitis C E1 and E2 Truncated Polypeptides</GBSeq_definition>
+  <GBSeq_primary-accession>DM014282</GBSeq_primary-accession>
+  <GBSeq_accession-version>DM014282.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|DM014282.1|</GBSeqid>
+    <GBSeqid>pat|JP|2008195722|2</GBSeqid>
+    <GBSeqid>gi|224449541</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 2008195722-A/2</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1989</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Chien,D.</GBAuthor>
+        <GBAuthor>Glaser,E.</GBAuthor>
+        <GBAuthor>Choo,Q.</GBAuthor>
+        <GBAuthor>Abrignani,S.</GBAuthor>
+        <GBAuthor>Houghton,M.</GBAuthor>
+        <GBAuthor>Selby,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Intracellular Production of Hepatitis C E1 and E2 Truncated</GBReference_title>
+      <GBReference_journal>Patent: JP 2008195722-A 2 28-AUG-2008; Chiron Corporation</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Hepatitis C virus~PN JP 2008195722-A/2~PD 28-AUG-2008~PF 26-FEB-2008 JP 2008044964~PR 06-MAY-1997 US 60/045675~PI david chien,edward glaser,qui-lim choo,sergio abrignani, PI michael houghton,~PI mark selby~CC~FH Key Location/Qualifiers~FT CDS (1)..(1989)</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1989</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1989</GBInterval_to>
+          <GBInterval_accession>DM014282.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atggtggggaactgggcgaaggtcctggtagtgctgctgctatttgccggcgtcgacgcggaaacccacgtcaccgggggaagtgccggccacactgtgtctggatttgttagcctcctcgcaccaggcgccaagcagaacgtccagctgatcaacaccaacggcagttggcacctcaatagcacggccctgaactgcaatgatagcctcaacaccggctggttggcagggcttttctatcaccacaagttcaactcttcaggctgtcctgagaggctagccagctgccgaccccttaccgattttgaccagggctggggccctatcagttatgccaacggaagcggccccgaccagcgcccctactgctggcactaccccccaaaaccttgcggtattgtgcccgcgaagagtgtgtgtggtccggtatattgcttcactcccagccccgtggtggtgggaacgaccgacaggtcgggcgcgcccacctacagctggggtgaaaatgatacggacgtcttcgtccttaacaataccaggccaccgctgggcaattggttcggttgtacctggatgaactcaactggattcaccaaagtgtgcggagcgcctccttgtgtcatcggaggggcgggcaacaacaccctgcactgccccactgattgcttccgcaagcatccggacgccacatactctcggtgcggctccggtccctggatcacacccaggtgcctggtcgactacccgtataggctttggcattatccttgtaccatcaactacaccatatttaaaatcaggatgtacgtgggaggggtcgaacacaggctggaagctgcctgcaactggacgcggggcgaacgttgcgatctggaagatagggacaggtccgagctcagcccgttactgctgaccactacacagtggcaggtcctcccgtgttccttcacaaccctgccagccttgtccaccggcctcatccacctccaccagaacattgtggacgtgcagtacttgtacggggtggggtcaagcatcgcgtcctgggccattaagtgggagtacgtcgtcctcctgttccttctgcttgcagacgcgcgcgtctgctcctgcttgtggatgatgctactcatatcccaagcggaagcggctttggagaacctcgtaatacttaatgcagcatccctggccgggacgcacggtcttgtatccttcctcgtgttcttctgctttgcatggtatctgaagggtaagtgggtgcccggagcggtctacaccttctacgggatgtggcctctcctcctgctcctgttggcgttgccccagcgggcgtacgcgctggacacggaggtggccgcgtcgtgtggcggtgttgttctcgtcgggttgatggcgctaactctgtcaccatattacaagcgctatatcagctggtgcttgtggtggcttcagtattttctgaccagggtggaagcgcaactgcacgtgtggattccccccctcaacgtccgaggggggcgcgacgccgtcatcttactcatgtgtgctgtacacccgactctggtatttgacatcaccaaattgctgctggccgtcttcggacccctttggattcttcaagccagtttgcttaaagtaccctactttgtgcgcgtccaaggccttctccggttctgcgcgttagcgcggaagatgatcggaggccattacgtgcaaatggtcatcattaagttaggggcgcttactggcacctatgtttataaccatctcactcctcttcgggactgggcgcacaacggcttgcgagatctggccgtggctgtagagccagtcgtcttctcccaaatggagaccaagctcatcacgtggggggcagataccgccgcgtgcggtgacatcatcaacggcttgcctgtttccgcccgcaggggccgggagatactgctcgggccagccgatggaatggtctccaagggttggaggttgctg</GBSeq_sequence>
+</GBSeq>

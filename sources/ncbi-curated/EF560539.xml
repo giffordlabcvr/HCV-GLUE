@@ -6,7 +6,7 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>04-JUN-2007</GBSeq_update-date>
+  <GBSeq_update-date>23-JUL-2016</GBSeq_update-date>
   <GBSeq_create-date>03-JUN-2007</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus isolate SP1v1 clone 03 polyprotein gene, partial cds</GBSeq_definition>
   <GBSeq_primary-accession>EF560539</GBSeq_primary-accession>
@@ -130,10 +130,6 @@
         <GBQualifier>
           <GBQualifier_name>protein_id</GBQualifier_name>
           <GBQualifier_value>ABQ60034.1</GBQualifier_value>
-        </GBQualifier>
-        <GBQualifier>
-          <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:148366692</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>

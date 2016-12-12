@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>4UPZ_C</GBSeq_locus>
+  <GBSeq_length>504</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>20-AUG-2014</GBSeq_update-date>
+  <GBSeq_create-date>15-AUG-2014</GBSeq_create-date>
+  <GBSeq_definition>Chain C, Mammalian 80s Hcv-ires Initiation Complex With Eif5b Post-like State</GBSeq_definition>
+  <GBSeq_primary-accession>4UPZ_C</GBSeq_primary-accession>
+  <GBSeq_accession-version>4UPZ_C</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>pdb|4UPZ|C</GBSeqid>
+    <GBSeqid>gi|672884424</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..504</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Yamamoto,H.</GBAuthor>
+        <GBAuthor>Unbehaun,A.</GBAuthor>
+        <GBAuthor>Loerke,J.</GBAuthor>
+        <GBAuthor>Behrmann,E.</GBAuthor>
+        <GBAuthor>Collier,M.</GBAuthor>
+        <GBAuthor>Burger,J.</GBAuthor>
+        <GBAuthor>Mielke,T.</GBAuthor>
+        <GBAuthor>Spahn,C.M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Structure of the mammalian 80S initiation complex with initiation factor 5B on HCV-IRES RNA</GBReference_title>
+      <GBReference_journal>Nat. Struct. Mol. Biol. 21 (8), 721-727 (2014)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1038/nsmb.2859</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>25064512</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..504</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Yamamoto,H.</GBAuthor>
+        <GBAuthor>Unbehaun,A.</GBAuthor>
+        <GBAuthor>Loerke,J.</GBAuthor>
+        <GBAuthor>Behrmann,E.</GBAuthor>
+        <GBAuthor>Marianne,C.</GBAuthor>
+        <GBAuthor>Burge,J.</GBAuthor>
+        <GBAuthor>Mielke,T.</GBAuthor>
+        <GBAuthor>Spahn,C.M.T.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (18-JUN-2014)</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>3 Hcv-ires</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..504</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>504</GBInterval_to>
+          <GBInterval_accession>4UPZ_C</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>other RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gccagccccctgatgggggcgacactccaccatgaatcactcccctgtgaggaactactgtcttcacgcagaaagcgtctagccatggcgttagtatgagtgtcgtgcagcctccaggaccccccctcccgggagagccatagtggtctgcggaaccggtgagtacaccggaattgccaggacgaccgggtcctttcttggataaacccgctcaatgcctggagatttgggcgtgcccccgcaagactgctagccgagtagtgttgggtcgcgaaaggccttgtggtactgcctgatagggtgcttgcgagtgccccgggaggtctcgtagaccgtgcaccatgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgtcgcccacaggacgtcaagttcccgggtggcggtctagacgccgagatcagaaatccctctctcggatcgcatttggacttctgccttcgggcaccacggtcggatccgaatt</GBSeq_sequence>
+</GBSeq>

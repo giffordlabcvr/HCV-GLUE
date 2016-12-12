@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>EF154708</GBSeq_locus>
+  <GBSeq_length>1892</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>26-DEC-2006</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus clone VAF191 genotype 2a NS3 gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>EF154708</GBSeq_primary-accession>
+  <GBSeq_accession-version>EF154708.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|EF154708.1|</GBSeqid>
+    <GBSeqid>gi|119712441</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1892</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Eisenbach,C.</GBAuthor>
+        <GBAuthor>Freyse,A.</GBAuthor>
+        <GBAuthor>Lupu,C.M.</GBAuthor>
+        <GBAuthor>Weigand,K.</GBAuthor>
+        <GBAuthor>Ernst,E.</GBAuthor>
+        <GBAuthor>Hoyler,B.</GBAuthor>
+        <GBAuthor>Stremmel,W.</GBAuthor>
+        <GBAuthor>Bugert,J.J.</GBAuthor>
+        <GBAuthor>Encke,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Multigenotype HCV-NS3 recombinant vaccinia viruses as a model for evaluation of cross-genotype immunity induced by HCV vaccines in the mouse</GBReference_title>
+      <GBReference_journal>Vaccine 24 (24), 5140-5148 (2006)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1016/j.vaccine.2006.04.013</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>16713033</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1892</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Eisenbach,C.</GBAuthor>
+        <GBAuthor>Freyse,A.</GBAuthor>
+        <GBAuthor>Lupu,C.M.</GBAuthor>
+        <GBAuthor>Weigand,K.</GBAuthor>
+        <GBAuthor>Ernst,E.</GBAuthor>
+        <GBAuthor>Hoyler,B.</GBAuthor>
+        <GBAuthor>Stremmel,W.</GBAuthor>
+        <GBAuthor>Bugert,J.J.</GBAuthor>
+        <GBAuthor>Encke,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (03-DEC-2006) Dept. of Gastroenterology, University of Heidelberg, Im Neuenheimer Feld 410, Heidelberg 69120, Germany</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1892</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1892</GBInterval_to>
+          <GBInterval_accession>EF154708.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>serum</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>VAF191</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>country</GBQualifier_name>
+          <GBQualifier_value>Germany</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>genotype</GBQualifier_name>
+          <GBQualifier_value>2a</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1892</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1892</GBInterval_to>
+          <GBInterval_accession>EF154708.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ABL96707.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>APITAYAQQTRGLLGAIVVSMTGRDKTEQAGEIQVLSTVTQSFLGTSISGVLWTVYHGAGNKTLAGSRGPVTQMYSSAEGDLVGWPSPPGTKSLEPCTCGAVDLYLVTRNADVIPARRRGDKRGALLSPRPLSTLKGSSGGPVLCPRGHAVGIFRAAVCSRGVAKSIDFIPVETLDIVTRSPTFSDNSTPPAVPQTYQVGYLHAPTGSGKSTKVPAAYAAQGYKVLVLNPSVAATLGFGAYMSKAHGINPNIRTGVRTVTTGEAITYSTYGKFLTDGGCAGGAYDIIICDECHAVDATTILGIGTVLDQAETAGVRLTVLATATPPGSVTTPHPNIEEVALGQEGEIPFYGKAIPLSYIKGGRHLIFCHSKKKCDELAAALRGMGLNAVAYYRGLDVSVIPIQGDVVVVATDALMTGFTGDFDSVIDCNVAVTQVVDFSLDPTFTITTQTVPQDAVSRSQRRGRTGRGRLGIYRYVSSGERASGMFDSVVLCECYDAGAAWYELTPVETTVRLGAYFNTPGLPVCQDHLEFWEAVFTGLSHIDAHFLSQTKQAGDNCAYLTAYQATVCARAKAPPPSWDVMWKCLLRLKPTLVGPTPLLYRLGSVTNEVTLTHPVTKYIATCMQADLEVMT</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gcccccatcactgcttacgctcagcagacacgaggcctcttgggcgccatagtggtgagcatgacggggcgcgacaagacagaacaggccggggaaatccaggtcctatccacagtcactcagtctttcctcggaacatccatttcgggggttttatggactgtctaccacggagctggcaacaagaccctagctggctcacgaggtccggtcacgcagatgtactccagtgctgagggggacttggtagggtggcccagccctcctgggactaagtctttggagccgtgcacgtgtggggcggttgacctatacctggtcacgcggaatgctgatgtcatcccggctcgaaggcgcggggacaagcggggagcgctgctctccccgagacctctttcgaccttgaaggggtcttcggggggaccggtgctctgccccaggggccacgctgtcgggatcttccgggcagctgtgtgctctcggggcgtggcaaagtctatagatttcatccccgttgagacacttgacatcgtcacgcggtctcccacctttagtgacaacagcacaccaccggctgtgccccagacctatcaggtcgggtacttgcatgccccaactggcagtgggaaaagcaccaaagtccctgccgcgtacgcagctcaggggtataaggtgctagtgctcaatccctcggtggctgccaccctggggtttggggcgtacatgtccaaggcgcatggcatcaatcccaacattaggactggagtcagaactgtgacgaccggggaggccatcacgtactccacgtatggcaaattcctcaccgatgggggctgcgcaggcggcgcctatgacatcatcatatgcgacgaatgccatgcggtggatgccactaccatcctcggcatcggaacagttcttgatcaagcagagacggccggggtcaggttgactgtgctggctacggccacgccccccgggtcagtgacgactccccatcccaatatagaagaggtagccctcgggcaggagggtgagatccccttctatgggaaggcaatccccctgtcttacatcaagggggggagacacttgattttctgccactcaaagaaaaaatgcgacgagctcgcggcggcccttcggggtatgggcttgaacgctgtggcatattacagagggttggacgtctccgtgataccaattcagggagatgtagtggtcgtcgccaccgatgccctcatgacagggtttactggagactttgactcagtgatcgactgcaacgtagcggtcactcaagtcgtagacttcagcctggaccccaccttcactataaccacacaaaccgtcccccaagacgctgtctcacgtagccaacgtcgggggcgcacaggtagaggaagactgggcatttataggtacgtttccagtggtgagcgagcctcaggaatgtttgatagcgtagtgctctgtgagtgctacgacgcaggggctgcatggtatgagcttacaccagtggagaccactgtcaggctaggcgcgtatttcaacacgcctggtttgcctgtatgccaagaccatcttgagttttgggaggcagttttcactggcctctcacacatagacgctcacttcctttcccaaacaaagcaagcgggggataactgtgcatacttaacagcctatcaggctacagtgtgtgccagagctaaagcccctcccccgtcttgggacgtcatgtggaagtgcttacttcgactcaagcccacactcgtgggccctacacctcttctctaccgcttgggctctgttaccaacgaggtcacccttacgcatcctgtgacgaaatacatcgccacttgcatgcaagctgaccttgaggtcatgac</GBSeq_sequence>
+</GBSeq>

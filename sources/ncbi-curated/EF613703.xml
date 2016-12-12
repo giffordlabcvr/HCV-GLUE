@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>EF613703</GBSeq_locus>
+  <GBSeq_length>567</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>23-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>25-JUN-2007</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus isolate A3b-2006 NS3 protease gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>EF613703</GBSeq_primary-accession>
+  <GBSeq_accession-version>EF613703.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|EF613703.1|</GBSeqid>
+    <GBSeqid>gi|149212896</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..567</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Cubero,M.</GBAuthor>
+        <GBAuthor>Esteban,J.I.</GBAuthor>
+        <GBAuthor>Otero,T.</GBAuthor>
+        <GBAuthor>Sauleda,S.</GBAuthor>
+        <GBAuthor>Bes,M.</GBAuthor>
+        <GBAuthor>Esteban,R.</GBAuthor>
+        <GBAuthor>Guardia,J.</GBAuthor>
+        <GBAuthor>Quer,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Naturally occurring NS3-protease-inhibitor resistant mutant A156T in the liver of an untreated chronic hepatitis C patient</GBReference_title>
+      <GBReference_journal>Virology 370 (2), 237-245 (2008)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1016/j.virol.2007.10.006</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>18006035</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..567</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Cubero,M.</GBAuthor>
+        <GBAuthor>Esteban,J.I.</GBAuthor>
+        <GBAuthor>Otero,T.</GBAuthor>
+        <GBAuthor>Sauleda,S.</GBAuthor>
+        <GBAuthor>Bes,M.</GBAuthor>
+        <GBAuthor>Esteban,R.</GBAuthor>
+        <GBAuthor>Guardia,J.</GBAuthor>
+        <GBAuthor>Quer,J.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (15-MAY-2007) Liver Unit, Department Internal Medicine, Hospital Vall d'Hebron, UAB, Ciberehd, Pg. Vall d'Hebron 119-129, Barcelona 08035, Spain</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..567</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>567</GBInterval_to>
+          <GBInterval_accession>EF613703.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>A3b-2006</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>whole liver tissue lysate from patient with chronic infection of genotype 1a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>host</GBQualifier_name>
+          <GBQualifier_value>Homo sapiens</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;567</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>567</GBInterval_to>
+          <GBInterval_accession>EF613703.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3 protease</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>ABR22690.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>APITAYAQQTRGLLGCIITSLTGRDKNQVEGEVQIVSTAAQTFLATCINGVCWTVYHGAGTRTIASSKGPVIQMYTNVDQDLVGWPAPQGARSLTPCTCGSSDLYLVTRHADVIPVRRRGDGRGSLLSPRPISYLKGSSGGPLLCPAGHAVGIFRAAVCTRGVAKAVDFIPVEGLETTMRSPVFSDNSS</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>gcgcccatcacggcgtacgcccagcagacgaggggcctcttgggatgcataatcaccagcttgaccggccgggacaaaaaccaggtggagggtgaggttcagatcgtgtcaactgctgcccagactttcttagcaacctgcattaacggagtgtgctggactgtctaccacggggccggaacaaggaccatcgcgtcatctaagggtcctgtcatccagatgtacaccaatgtagaccaagacctcgtaggctggcccgctccccaaggtgcccgctcactgacaccctgcacttgcggctcctcggacctttacctggtcacgaggcacgccgatgtcattcccgtacgccggcggggtgatggcaggggcagcctgctttcgccccggcccatctcttacctgaaaggctcctcggggggcccactgctgtgccccgcgggacacgccgtaggcattttcagagccgcggtgtgcacccgtggagtggctaaagcggtggactttatccctgtagagggcctagagacaaccatgaggtccccggtgttctcggacaattcctcc</GBSeq_sequence>
+</GBSeq>

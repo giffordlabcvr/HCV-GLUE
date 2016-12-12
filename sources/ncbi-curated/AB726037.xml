@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AB726037</GBSeq_locus>
+  <GBSeq_length>573</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>22-NOV-2012</GBSeq_update-date>
+  <GBSeq_create-date>22-NOV-2012</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 4a gene for polyprotein, partial cds, isolate: Core_22</GBSeq_definition>
+  <GBSeq_primary-accession>AB726037</GBSeq_primary-accession>
+  <GBSeq_accession-version>AB726037.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|AB726037.1|</GBSeqid>
+    <GBSeqid>gi|425029602</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus subtype 4a</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 4a</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_authors>
+        <GBAuthor>El-Shamy,A.</GBAuthor>
+        <GBAuthor>Shoji,I.</GBAuthor>
+        <GBAuthor>El-Akel,W.</GBAuthor>
+        <GBAuthor>Bilasy,S.E.</GBAuthor>
+        <GBAuthor>Deng,L.</GBAuthor>
+        <GBAuthor>El-Raziky,M.</GBAuthor>
+        <GBAuthor>Jiang,D.P.</GBAuthor>
+        <GBAuthor>Esmat,G.</GBAuthor>
+        <GBAuthor>Hotta,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>NS5A Sequence Heterogeneity of Hepatitis C Virus Genotype 4a Predicts Clinical Outcome of Pegylated-Interferon-Ribavirin Therapy in Egyptian Patients</GBReference_title>
+      <GBReference_journal>J. Clin. Microbiol. 50 (12), 3886-3892 (2012)</GBReference_journal>
+      <GBReference_xref>
+        <GBXref>
+          <GBXref_dbname>doi</GBXref_dbname>
+          <GBXref_id>10.1128/JCM.02109-12</GBXref_id>
+        </GBXref>
+      </GBReference_xref>
+      <GBReference_pubmed>22993188</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..573</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>El-shamy,A.</GBAuthor>
+        <GBAuthor>Shoji,I.</GBAuthor>
+        <GBAuthor>El-Akel,W.</GBAuthor>
+        <GBAuthor>Ide,Y.</GBAuthor>
+        <GBAuthor>Bilasy,S.</GBAuthor>
+        <GBAuthor>Deng,L.</GBAuthor>
+        <GBAuthor>El-Raziky,M.</GBAuthor>
+        <GBAuthor>Jiang,D.</GBAuthor>
+        <GBAuthor>Esmat,G.</GBAuthor>
+        <GBAuthor>Hotta,H.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (05-JUN-2012) Contact:Hak Hotta Graduate School of Medicine, Kobe University, Microbiology; 7-5-1 Kusunoki-cho, Chuo-ku, Kobe, Hyogo 650-0017, Japan</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AB726037.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 4a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>Core_22</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolation_source</GBQualifier_name>
+          <GBQualifier_value>Egyptian chronically hepatitis C virus infected patient</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:31653</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AB726037.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>BAM67107.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRSEGRSWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFLLALLSCLTVPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>AB726037.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>Core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRSEGRSWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFLLALLSCLTVPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgccccatggacgttaagttcccgggtggcggccagatcgttggcggagtttacttgttgccgcgcaggggcccccggttgggtgtgcgcgcgactcggaagacttcggagcggtcgcaacctcgtgggagacgccaacctatccccaaggcgcgtcgatccgagggaaggtcctgggcacagccaggatatccatggcctctttacggtaatgagggttgcgggtgggcaggatggctcttgtccccccgcggttctcgaccgtcttggggcccaaatgatccccggcggaggtcccgcaatctgggtaaagtcatcgataccctaacctgcggcttcgccgacctcatgggatacatcccgctcgtgggcgcccctgttggtggcgtcgccagggccctggcacatggcgtcagggccgtggaggacgggatcaattatgcaacggggaatcttcccggttgctctttctctatcttcctcttggcacttctctcgtgcctgactgtccccgcttcggcc</GBSeq_sequence>
+</GBSeq>

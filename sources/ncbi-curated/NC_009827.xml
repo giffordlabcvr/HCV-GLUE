@@ -6,15 +6,15 @@
   <GBSeq_moltype>RNA</GBSeq_moltype>
   <GBSeq_topology>linear</GBSeq_topology>
   <GBSeq_division>VRL</GBSeq_division>
-  <GBSeq_update-date>26-JUL-2011</GBSeq_update-date>
+  <GBSeq_update-date>23-AUG-2016</GBSeq_update-date>
   <GBSeq_create-date>01-OCT-2007</GBSeq_create-date>
   <GBSeq_definition>Hepatitis C virus genotype 6, complete genome</GBSeq_definition>
   <GBSeq_primary-accession>NC_009827</GBSeq_primary-accession>
   <GBSeq_accession-version>NC_009827.1</GBSeq_accession-version>
   <GBSeq_other-seqids>
     <GBSeqid>ref|NC_009827.1|</GBSeqid>
-    <GBSeqid>gnl|NCBI_GENOMES|21385</GBSeqid>
     <GBSeqid>gi|157781214</GBSeqid>
+    <GBSeqid>gnl|NCBI_GENOMES|21385</GBSeqid>
   </GBSeq_other-seqids>
   <GBSeq_project>PRJNA20939</GBSeq_project>
   <GBSeq_keywords>
@@ -176,7 +176,352 @@
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>db_xref</GBQualifier_name>
-          <GBQualifier_value>GI:157781215</GBQualifier_value>
+          <GBQualifier_value>GeneID:11027174</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTLPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARPSQGRTWGQPGYPWPLYGNEGCGWAGWLMSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGLADLMGYIPVVGGPLGGVAAALAHGVRAIEDGINYATGNLPGCSFSIFILALLSCLTTPASALTYGNSSGLYHLTNDCPRSSIVLEAEAMILHLAGCVPCVRAGNISRCWHPVSPTLAVPNASVPASGFRKHVDLLAGAAVVCSSMYIGDLCGAVFLAGQLATFSPRIHDITQDCNCSVYTGHVTGHRMAWDMMMNWSPTTTLVLSSILRVPEIVLEVFAGGHWGVLIAIAYFGMSGNWLKVIAVLFLFAGVEATTTVGRAAGRSAYLFTSIFSSGPNQKIQLINTNGSWHINRTALNCIDSLQTGFLSALFYRSNFNSTGCSERLGACKPLEHFQQGWGPITHKSNITGPSEDRPYCWHYAPRECSVVPASSVCGPVYCFTPSPVVVGTTDRLGNPTYNWGENETDVFMLESLRPPQGGWFGCTWMNSTGFTKTCGAPPCQLIPGDYNSSSNQLLCPTDCFRKHPEATYQKCGSGPWLTPRCLVDYPYRLWHYPCTVNYTIHKVRMFIGGVEHRFDAACNWTRGDRCDLYDRDRIEMSPLLFSTTQLAILPCSFTTMPALSTGLIHLHQNIVDVQYLYGVSSSIVSWAVKWEYVVLMFLVLADARICTCLWLMLLVGKVEAALERLVVLNAASAAGTAGWCWTLIFLCCVWHVKGRLVPACTYTALGMWPILLVILALPQRAYAWDNSQAASLGVVALLVLTIFTLSPMYKQLLTHAIWWNQYMLARAEAMIHDWVPDLRVRGGRDAIILLTCLLHPHLGFEVTKILLAILAPLYILQHSLLKVPYFVRAHILLRACMFFRKVAAGKYVQACLLRLGAWTGTYIYDHLAPLSEWASDGLRDLAVAVEPVIFSPMEKKIITWGADTAACGDILRGLPVSARLGDLVLLGPADDMRHGGWKLLAPITAYAQQTRGLVGTIVTSLTGRDKNEAEGEVQVVSTATQSFLATTINGVLWTVYHGAGSKNLAGPKGPVCQMYTNVDQDLVGWPAPLGARSLAPCTCGSSDLYLVTRGADVIPARRRGDTRAALLSPRPISTLKGSSGGPLMCPSGHVVGLFRAAVCTRGVAKALDFIPVENMDTTMRSPVFTDNSSPPAVPQTYQVGYLHAPTGSGKSTRVPAAYATQGYKVLVLNPSVAATLSFGAYMSKAHGIDPNIRTGVRTITTGGPVTYSTYGKFLADGGCSGGAYDIIICDECHSTDPTTVLGIGTVLDQAETAGVRLTVLATATPPGSVTVPHPNITETALPTTGEIPFYGKCIPLEFIKGGRHLIFCHSKKKCDELSKQLTSLGLNAVAFYRGVDVAVIPTSGDVVVCATDALMTGYTGDFDSVIDCNVAVTQVVDFSLDPTFSIETTTVPQDAVSRSQRRGRTGRGKPGVYRFVSQGERPSGMFDSVVLCEAYDTGCAWYELTPAETTVRLRAYLNTPGLPVCQDHLEFWEGVFTGLTHIDAHFLSQTKQGGENFAYLVAYQATVCARAKAPPPSWDVMWKCLTRLKPTLTGPTPLLYRLGAVQNEIVTTHPITKYIMTCMSADLEVITSTWVIVGGVLAALAAYCLTVGCVVICGRIVTSGKPAVVPDREVLYQQFDEMEECSKHIPYLVEGQQIAEQFKQKVLGLLQAGTKHAEELKPAIHSTWPRVEEFWRKHMWNFVSGIQYLAGLSTLPGSPAVASLMSFTASLTSPLRTSQTLLLNILGGWIASQVAPPSASTAFVVSGLAGATVASIGLGRVIVDILAGYGAGVAGALVAFKIMSGECPSTEDMVNLLPALLSPGALVVGVVCAAILRRHVGPSEGANQWMNRLIAFASRGNHVSPTHYVPETDASNKVTQILSSLTITSLLRRLHQWIHEDTSTPCASSWLRDVWDWVCTVLSDFKTWLKAKITPRIPGIPFISCQAGYRGVWAGDGVCHTTCSCGAQIAGHVKNGSMKITGPRMCSNTWHGTFPINATTTSPSVPVPAPNYKRALWRVSAEEYVEVERHGDRHYVVGVTADGLKCPCQVPGPEFFTEVDGVRIHRYAPPCKPLLRDEVSFSVGLLEFVVGSQLPCEPEPDVTVVTSMLTDPSHITAETASRRLKRGSPPSLASSSASQLSAPSLKATCTANGDHPDAELIEANLLWRQEMGSNITRVESETKVVILDSFDPLVAEYDDREISVSAECHRPPRPKFPPALPIWARPDYNPPLLQKWQMPGYEPPVVSGCALPPAKPTPIPPPRRKRLIQLDESAVSQALQQLADKVFVEDTSTSEPSSGLGGSIAGPSSPDPTTADDTCSDAGSFSSMPPLEGEPGDPDLSTGSWSTVSEEDDVVCCSMSYTWTGALITPCAAEEEKLPINPLSNSLIRHHNMVYSTTSRSAGLRQKKVTFDRLQVVDQHYQDVLKEIKLRASTVHARLLSTEEACSLTPPHSARSRYGYGARDVRSHTSKAVKHIDSVWEDLLEDNATPIPTTIMAKNEVFCVDPSKGGRKPARLIVYPDLSVRVCEKMALYDVTQKLPKTVMGSAYGFQYSPSQRVEYLLKMWRSKKTPMGFSYDTRCFDSTVTERDIRTEEDIYQSCQLDPTARKAISSLTERLYCGGPMFNSKGESCGYRRCRASGVLTTSLGNTLTCYLKAQAACRAANIKNFDMLVCGDDLVVICESAGVQEDVVALRAFTDAMIRYSAPPGDAPQPTYDLELITSCSSNVSVAHDGTGQRYYYLTRDCTTPLARAAWETARHTPVNSWLGNIIMYAPTIWVRMVLMTHFFSILQCQEQLEAALNFDMYGVTYSVTPLDLPAIIQRLHGMAAFSLHGYSPTELNRVGASLRKLGAPPLRAWRHRARAVRAKLIAQGGKAAICGKYLFNWAVKTKLKLTPLAAASQLDLSGWFVAGYDGGDIYHSVSRARPRLLLLGLLLLTVGVGIFLLPAR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>343..915</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>343</GBInterval_from>
+          <GBInterval_to>915</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272659.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>MSTLPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARPSQGRTWGQPGYPWPLYGNEGCGWAGWLMSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGLADLMGYIPVVGGPLGGVAAALAHGVRAIEDGINYATGNLPGCSFSIFILALLSCLTTPASA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>916..1491</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>916</GBInterval_from>
+          <GBInterval_to>1491</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E1 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272660.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>LTYGNSSGLYHLTNDCPRSSIVLEAEAMILHLAGCVPCVRAGNISRCWHPVSPTLAVPNASVPASGFRKHVDLLAGAAVVCSSMYIGDLCGAVFLAGQLATFSPRIHDITQDCNCSVYTGHVTGHRMAWDMMMNWSPTTTLVLSSILRVPEIVLEVFAGGHWGVLIAIAYFGMSGNWLKVIAVLFLFAGVEA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>1492..2595</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1492</GBInterval_from>
+          <GBInterval_to>2595</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E2 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272661.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>TTTVGRAAGRSAYLFTSIFSSGPNQKIQLINTNGSWHINRTALNCIDSLQTGFLSALFYRSNFNSTGCSERLGACKPLEHFQQGWGPITHKSNITGPSEDRPYCWHYAPRECSVVPASSVCGPVYCFTPSPVVVGTTDRLGNPTYNWGENETDVFMLESLRPPQGGWFGCTWMNSTGFTKTCGAPPCQLIPGDYNSSSNQLLCPTDCFRKHPEATYQKCGSGPWLTPRCLVDYPYRLWHYPCTVNYTIHKVRMFIGGVEHRFDAACNWTRGDRCDLYDRDRIEMSPLLFSTTQLAILPCSFTTMPALSTGLIHLHQNIVDVQYLYGVSSSIVSWAVKWEYVVLMFLVLADARICTCLWLMLLVGKVEA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>2596..2784</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>2596</GBInterval_from>
+          <GBInterval_to>2784</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>p7 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272662.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>ALERLVVLNAASAAGTAGWCWTLIFLCCVWHVKGRLVPACTYTALGMWPILLVILALPQRAYA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>2785..3435</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>2785</GBInterval_from>
+          <GBInterval_to>3435</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS2 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272663.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>WDNSQAASLGVVALLVLTIFTLSPMYKQLLTHAIWWNQYMLARAEAMIHDWVPDLRVRGGRDAIILLTCLLHPHLGFEVTKILLAILAPLYILQHSLLKVPYFVRAHILLRACMFFRKVAAGKYVQACLLRLGAWTGTYIYDHLAPLSEWASDGLRDLAVAVEPVIFSPMEKKIITWGADTAACGDILRGLPVSARLGDLVLLGPADDMRHGGWKLL</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>3436..5328</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>3436</GBInterval_from>
+          <GBInterval_to>5328</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS3 protease/helicase</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>NS3 proteinase / ATPase / helicase peptide</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272664.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>APITAYAQQTRGLVGTIVTSLTGRDKNEAEGEVQVVSTATQSFLATTINGVLWTVYHGAGSKNLAGPKGPVCQMYTNVDQDLVGWPAPLGARSLAPCTCGSSDLYLVTRGADVIPARRRGDTRAALLSPRPISTLKGSSGGPLMCPSGHVVGLFRAAVCTRGVAKALDFIPVENMDTTMRSPVFTDNSSPPAVPQTYQVGYLHAPTGSGKSTRVPAAYATQGYKVLVLNPSVAATLSFGAYMSKAHGIDPNIRTGVRTITTGGPVTYSTYGKFLADGGCSGGAYDIIICDECHSTDPTTVLGIGTVLDQAETAGVRLTVLATATPPGSVTVPHPNITETALPTTGEIPFYGKCIPLEFIKGGRHLIFCHSKKKCDELSKQLTSLGLNAVAFYRGVDVAVIPTSGDVVVCATDALMTGYTGDFDSVIDCNVAVTQVVDFSLDPTFSIETTTVPQDAVSRSQRRGRTGRGKPGVYRFVSQGERPSGMFDSVVLCEAYDTGCAWYELTPAETTVRLRAYLNTPGLPVCQDHLEFWEGVFTGLTHIDAHFLSQTKQGGENFAYLVAYQATVCARAKAPPPSWDVMWKCLTRLKPTLTGPTPLLYRLGAVQNEIVTTHPITKYIMTCMSADLEVIT</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>5329..5490</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>5329</GBInterval_from>
+          <GBInterval_to>5490</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS4A protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272665.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>STWVIVGGVLAALAAYCLTVGCVVICGRIVTSGKPAVVPDREVLYQQFDEMEEC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>5491..6273</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>5491</GBInterval_from>
+          <GBInterval_to>6273</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS4B protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272666.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>SKHIPYLVEGQQIAEQFKQKVLGLLQAGTKHAEELKPAIHSTWPRVEEFWRKHMWNFVSGIQYLAGLSTLPGSPAVASLMSFTASLTSPLRTSQTLLLNILGGWIASQVAPPSASTAFVVSGLAGATVASIGLGRVIVDILAGYGAGVAGALVAFKIMSGECPSTEDMVNLLPALLSPGALVVGVVCAAILRRHVGPSEGANQWMNRLIAFASRGNHVSPTHYVPETDASNKVTQILSSLTITSLLRRLHQWIHEDTSTPC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>6274..7626</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>6274</GBInterval_from>
+          <GBInterval_to>7626</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5A protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272667.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>ASSWLRDVWDWVCTVLSDFKTWLKAKITPRIPGIPFISCQAGYRGVWAGDGVCHTTCSCGAQIAGHVKNGSMKITGPRMCSNTWHGTFPINATTTSPSVPVPAPNYKRALWRVSAEEYVEVERHGDRHYVVGVTADGLKCPCQVPGPEFFTEVDGVRIHRYAPPCKPLLRDEVSFSVGLLEFVVGSQLPCEPEPDVTVVTSMLTDPSHITAETASRRLKRGSPPSLASSSASQLSAPSLKATCTANGDHPDAELIEANLLWRQEMGSNITRVESETKVVILDSFDPLVAEYDDREISVSAECHRPPRPKFPPALPIWARPDYNPPLLQKWQMPGYEPPVVSGCALPPAKPTPIPPPRRKRLIQLDESAVSQALQQLADKVFVEDTSTSEPSSGLGGSIAGPSSPDPTTADDTCSDAGSFSSMPPLEGEPGDPDLSTGSWSTVSEEDDVVCC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>7627..9399</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>7627</GBInterval_from>
+          <GBInterval_to>9399</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>NS5B RNA-dependent RNA polymerase</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>RdRp</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272668.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>SMSYTWTGALITPCAAEEEKLPINPLSNSLIRHHNMVYSTTSRSAGLRQKKVTFDRLQVVDQHYQDVLKEIKLRASTVHARLLSTEEACSLTPPHSARSRYGYGARDVRSHTSKAVKHIDSVWEDLLEDNATPIPTTIMAKNEVFCVDPSKGGRKPARLIVYPDLSVRVCEKMALYDVTQKLPKTVMGSAYGFQYSPSQRVEYLLKMWRSKKTPMGFSYDTRCFDSTVTERDIRTEEDIYQSCQLDPTARKAISSLTERLYCGGPMFNSKGESCGYRRCRASGVLTTSLGNTLTCYLKAQAACRAANIKNFDMLVCGDDLVVICESAGVQEDVVALRAFTDAMIRYSAPPGDAPQPTYDLELITSCSSNVSVAHDGTGQRYYYLTRDCTTPLARAAWETARHTPVNSWLGNIIMYAPTIWVRMVLMTHFFSILQCQEQLEAALNFDMYGVTYSVTPLDLPAIIQRLHGMAAFSLHGYSPTELNRVGASLRKLGAPPLRAWRHRARAVRAKLIAQGGKAAICGKYLFNWAVKTKLKLTPLAAASQLDLSGWFVAGYDGGDIYHSVSRARPRLLLLGLLLLTVGVGIFLLPAR</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>join(343..370,372..721)</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>343</GBInterval_from>
+          <GBInterval_to>370</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+        <GBInterval>
+          <GBInterval_from>372</GBInterval_from>
+          <GBInterval_to>721</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_operator>join</GBFeature_operator>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>-2/+1 frameshift protein F; position predicted based on homology to protein F/predicted ribosomal slippage site in HCV1 RefSeq NC_004102.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>protein F</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272658.1</GBQualifier_value>
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>db_xref</GBQualifier_name>
@@ -184,7 +529,42 @@
         </GBQualifier>
         <GBQualifier>
           <GBQualifier_name>translation</GBQualifier_name>
-          <GBQualifier_value>MSTLPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARPSQGRTWGQPGYPWPLYGNEGCGWAGWLMSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGLADLMGYIPVVGGPLGGVAAALAHGVRAIEDGINYATGNLPGCSFSIFILALLSCLTTPASALTYGNSSGLYHLTNDCPRSSIVLEAEAMILHLAGCVPCVRAGNISRCWHPVSPTLAVPNASVPASGFRKHVDLLAGAAVVCSSMYIGDLCGAVFLAGQLATFSPRIHDITQDCNCSVYTGHVTGHRMAWDMMMNWSPTTTLVLSSILRVPEIVLEVFAGGHWGVLIAIAYFGMSGNWLKVIAVLFLFAGVEATTTVGRAAGRSAYLFTSIFSSGPNQKIQLINTNGSWHINRTALNCIDSLQTGFLSALFYRSNFNSTGCSERLGACKPLEHFQQGWGPITHKSNITGPSEDRPYCWHYAPRECSVVPASSVCGPVYCFTPSPVVVGTTDRLGNPTYNWGENETDVFMLESLRPPQGGWFGCTWMNSTGFTKTCGAPPCQLIPGDYNSSSNQLLCPTDCFRKHPEATYQKCGSGPWLTPRCLVDYPYRLWHYPCTVNYTIHKVRMFIGGVEHRFDAACNWTRGDRCDLYDRDRIEMSPLLFSTTQLAILPCSFTTMPALSTGLIHLHQNIVDVQYLYGVSSSIVSWAVKWEYVVLMFLVLADARICTCLWLMLLVGKVEAALERLVVLNAASAAGTAGWCWTLIFLCCVWHVKGRLVPACTYTALGMWPILLVILALPQRAYAWDNSQAASLGVVALLVLTIFTLSPMYKQLLTHAIWWNQYMLARAEAMIHDWVPDLRVRGGRDAIILLTCLLHPHLGFEVTKILLAILAPLYILQHSLLKVPYFVRAHILLRACMFFRKVAAGKYVQACLLRLGAWTGTYIYDHLAPLSEWASDGLRDLAVAVEPVIFSPMEKKIITWGADTAACGDILRGLPVSARLGDLVLLGPADDMRHGGWKLLAPITAYAQQTRGLVGTIVTSLTGRDKNEAEGEVQVVSTATQSFLATTINGVLWTVYHGAGSKNLAGPKGPVCQMYTNVDQDLVGWPAPLGARSLAPCTCGSSDLYLVTRGADVIPARRRGDTRAALLSPRPISTLKGSSGGPLMCPSGHVVGLFRAAVCTRGVAKALDFIPVENMDTTMRSPVFTDNSSPPAVPQTYQVGYLHAPTGSGKSTRVPAAYATQGYKVLVLNPSVAATLSFGAYMSKAHGIDPNIRTGVRTITTGGPVTYSTYGKFLADGGCSGGAYDIIICDECHSTDPTTVLGIGTVLDQAETAGVRLTVLATATPPGSVTVPHPNITETALPTTGEIPFYGKCIPLEFIKGGRHLIFCHSKKKCDELSKQLTSLGLNAVAFYRGVDVAVIPTSGDVVVCATDALMTGYTGDFDSVIDCNVAVTQVVDFSLDPTFSIETTTVPQDAVSRSQRRGRTGRGKPGVYRFVSQGERPSGMFDSVVLCEAYDTGCAWYELTPAETTVRLRAYLNTPGLPVCQDHLEFWEGVFTGLTHIDAHFLSQTKQGGENFAYLVAYQATVCARAKAPPPSWDVMWKCLTRLKPTLTGPTPLLYRLGAVQNEIVTTHPITKYIMTCMSADLEVITSTWVIVGGVLAALAAYCLTVGCVVICGRIVTSGKPAVVPDREVLYQQFDEMEECSKHIPYLVEGQQIAEQFKQKVLGLLQAGTKHAEELKPAIHSTWPRVEEFWRKHMWNFVSGIQYLAGLSTLPGSPAVASLMSFTASLTSPLRTSQTLLLNILGGWIASQVAPPSASTAFVVSGLAGATVASIGLGRVIVDILAGYGAGVAGALVAFKIMSGECPSTEDMVNLLPALLSPGALVVGVVCAAILRRHVGPSEGANQWMNRLIAFASRGNHVSPTHYVPETDASNKVTQILSSLTITSLLRRLHQWIHEDTSTPCASSWLRDVWDWVCTVLSDFKTWLKAKITPRIPGIPFISCQAGYRGVWAGDGVCHTTCSCGAQIAGHVKNGSMKITGPRMCSNTWHGTFPINATTTSPSVPVPAPNYKRALWRVSAEEYVEVERHGDRHYVVGVTADGLKCPCQVPGPEFFTEVDGVRIHRYAPPCKPLLRDEVSFSVGLLEFVVGSQLPCEPEPDVTVVTSMLTDPSHITAETASRRLKRGSPPSLASSSASQLSAPSLKATCTANGDHPDAELIEANLLWRQEMGSNITRVESETKVVILDSFDPLVAEYDDREISVSAECHRPPRPKFPPALPIWARPDYNPPLLQKWQMPGYEPPVVSGCALPPAKPTPIPPPRRKRLIQLDESAVSQALQQLADKVFVEDTSTSEPSSGLGGSIAGPSSPDPTTADDTCSDAGSFSSMPPLEGEPGDPDLSTGSWSTVSEEDDVVCCSMSYTWTGALITPCAAEEEKLPINPLSNSLIRHHNMVYSTTSRSAGLRQKKVTFDRLQVVDQHYQDVLKEIKLRASTVHARLLSTEEACSLTPPHSARSRYGYGARDVRSHTSKAVKHIDSVWEDLLEDNATPIPTTIMAKNEVFCVDPSKGGRKPARLIVYPDLSVRVCEKMALYDVTQKLPKTVMGSAYGFQYSPSQRVEYLLKMWRSKKTPMGFSYDTRCFDSTVTERDIRTEEDIYQSCQLDPTARKAISSLTERLYCGGPMFNSKGESCGYRRCRASGVLTTSLGNTLTCYLKAQAACRAANIKNFDMLVCGDDLVVICESAGVQEDVVALRAFTDAMIRYSAPPGDAPQPTYDLELITSCSSNVSVAHDGTGQRYYYLTRDCTTPLARAAWETARHTPVNSWLGNIIMYAPTIWVRMVLMTHFFSILQCQEQLEAALNFDMYGVTYSVTPLDLPAIIQRLHGMAAFSLHGYSPTELNRVGASLRKLGAPPLRAWRHRARAVRAKLIAQGGKAAICGKYLFNWAVKTKLKLTPLAAASQLDLSGWFVAGYDGGDIYHSVSRARPRLLLLGLLLLTVGVGIFLLPAR</GBQualifier_value>
+          <GBQualifier_value>MSTLPKPQRKPKETPTVAQWTSSSRAAARSLVEFTCCRAGAHDWVCAPQERHPSDPSPEVGANLYPRRAHLRAGPGVSLATPGPCMGMRAAGGQAGLCLPAALALLGAQTTPGVGPVIWVRSSIP</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>join(343..370,372..718)</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>343</GBInterval_from>
+          <GBInterval_to>370</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+        <GBInterval>
+          <GBInterval_from>372</GBInterval_from>
+          <GBInterval_to>718</GBInterval_to>
+          <GBInterval_accession>NC_009827.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_operator>join</GBFeature_operator>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>locus_tag</GBQualifier_name>
+          <GBQualifier_value>HCV6_gp1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>protein F</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>YP_009272669.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>MSTLPKPQRKPKETPTVAQWTSSSRAAARSLVEFTCCRAGAHDWVCAPQERHPSDPSPEVGANLYPRRAHLRAGPGVSLATPGPCMGMRAAGGQAGLCLPAALALLGAQTTPGVGPVIWVRSSIP</GBQualifier_value>
         </GBQualifier>
       </GBFeature_quals>
     </GBFeature>

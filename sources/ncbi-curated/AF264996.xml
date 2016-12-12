@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>AF264996</GBSeq_locus>
+  <GBSeq_length>1344</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>RNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>14-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>05-OCT-2000</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus subtype 1a clone 3-8w6 polyprotein gene, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>AF264996</GBSeq_primary-accession>
+  <GBSeq_accession-version>AF264996.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|AF264996.1|</GBSeqid>
+    <GBSeqid>gi|10644125</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_source>Hepatitis C virus subtype 1a</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 1a</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1344</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Nousbaum,J.</GBAuthor>
+        <GBAuthor>Polyak,S.J.</GBAuthor>
+        <GBAuthor>Ray,S.C.</GBAuthor>
+        <GBAuthor>Sullivan,D.G.</GBAuthor>
+        <GBAuthor>Larson,A.M.</GBAuthor>
+        <GBAuthor>Carithers,R.L. Jr.</GBAuthor>
+        <GBAuthor>Gretch,D.R.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Prospective characterization of full-length hepatitis C virus NS5A quasispecies during induction and combination antiviral therapy</GBReference_title>
+      <GBReference_journal>J. Virol. 74 (19), 9028-9038 (2000)</GBReference_journal>
+      <GBReference_pubmed>10982347</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..1344</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Polyak,S.J.</GBAuthor>
+        <GBAuthor>Nousbaum,J.</GBAuthor>
+        <GBAuthor>Ray,S.C.</GBAuthor>
+        <GBAuthor>Sullivan,D.G.</GBAuthor>
+        <GBAuthor>Larson,A.M.</GBAuthor>
+        <GBAuthor>Carithers,R.L. Jr.</GBAuthor>
+        <GBAuthor>Gretch,D.R.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Direct Submission</GBReference_title>
+      <GBReference_journal>Submitted (09-MAY-2000) Laboratory Medicine, University of Washington, Box 359690, 325 9th Avenue, Seattle, WA 98104-2499, USA</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1344</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1344</GBInterval_to>
+          <GBInterval_accession>AF264996.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 1a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>genomic RNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>isolate</GBQualifier_name>
+          <GBQualifier_value>patient 3</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:31646</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>3-8w6</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>subtype</GBQualifier_name>
+          <GBQualifier_value>1a</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>clones derived from patients 3, 9, 16 and 20 during the first 6 weeks of induction and combination therapy</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>&lt;1..&gt;1344</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1344</GBInterval_to>
+          <GBInterval_accession>AF264996.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial5 value="true"/>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>NS5A</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>polyprotein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAG21136.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>SGSWLRDIWDWICEVLSDFKTWLKAKLMPQLPGIPFVSCQRGYKGVWRVDGIMHTRCHCGAEITGHVKNGTMRIVGPRTCRNMWSGTFPINAYTTGPCTPLPAPNYTFALWRVSAEEYVEIRQVGDFHYVTGMTTDNLKCPCQVPSPEFFTELDGVRLHRFAPPCKPLLREEVSFRVGLHEYPVGSQLPCEPEPDVAVLTSMLTDPSHITAEAAGRRLARGSPPSEASSSASQLSAPSLKATCTANHDSPDAELIEANLLWRQEMGGNITRVESENKVVILDSFDPLVAEEDEREISVPAEILRKSRRFARALPIWARPDYNPPLVETWKKPDYEPPVVHGCPLPPPRSPPVPPPRKKRTVVLTESTLPTALAELATKSFGSSSTSGITGDDTATSSEPAPSDCPPDSDAESYSSMPPLEGEPGDPDLSDGSWSTVSSGADTEDVVCC</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>tccggttcctggctaagggacatctgggactggatatgcgaggtgttgagcgactttaagacctggctaaaagctaagctcatgccacagctgcctgggatcccctttgtgtcctgccagcgcgggtataagggggtctggcgagtggacggcatcatgcacactcgctgccactgtggagctgagatcactggacatgtcaaaaacgggacgatgaggatcgtcggtcctaggacctgcaggaacatgtggagtgggaccttccccattaatgcctacaccacgggcccctgtaccccccttcctgcgccgaactacacgttcgcgctatggagggtgtctgcagaggaatatgtggagataaggcaggtgggggacttccactacgtgacgggtatgactactgacaatctcaaatgcccgtgccaggtcccatcgcccgaatttttcacagaattagacggggtgcgcctacataggtttgcgcccccttgcaagcccttgctgcgggaggaggtatcattcagagtaggactccacgagtacccggtggggtcgcaattaccctgcgagcccgaaccggacgtggccgtgttgacgtccatgctcaccgacccctcccatataacagcagaggcagccgggagaaggttggcgaggggatcacccccttctgaggccagctcctcggctagccaactgtccgctccatctctcaaggcaacttgcaccgccaaccatgactcccctgacgccgagctcatagaggctaatctcctgtggaggcaggagatgggcggcaacatcaccagggttgagtcagagaacaaagtggtgattttggactcctttgatccgcttgtggcagaggaagatgagcgggagatctccgtgcccgcggaaattctgcggaagtctcggagattcgcccgggccttgcccatttgggcgcggccggactacaaccccccgctagtagagacgtggaaaaagcctgactacgaaccacctgtggttcatggctgcccgctaccacctccacggtctcctcctgtgcctccgcctcggaagaagcgtacggtggtcctcaccgaatcaaccctacctactgccttggccgagcttgccaccaaaagctttggcagctcctcaacttccggcattacgggcgacgatacggcaacatcctctgagcccgccccttctgactgcccccctgactccgacgctgagtcctattcttccatgccccccctcgagggggagcctggggatccggatctcagcgacgggtcatggtcgacggtcagtagtggggccgacacggaagatgtcgtgtgctgc</GBSeq_sequence>
+</GBSeq>

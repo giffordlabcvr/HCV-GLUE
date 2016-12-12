@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HV497215</GBSeq_locus>
+  <GBSeq_length>1779</GBSeq_length>
+  <GBSeq_strandedness>double</GBSeq_strandedness>
+  <GBSeq_moltype>DNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>PAT</GBSeq_division>
+  <GBSeq_update-date>31-OCT-2011</GBSeq_update-date>
+  <GBSeq_create-date>31-OCT-2011</GBSeq_create-date>
+  <GBSeq_definition>JP 2011517397-A/1: In vitro method to determine whether a drug candidate active against a target protein is active against a variant of said protein</GBSeq_definition>
+  <GBSeq_primary-accession>HV497215</GBSeq_primary-accession>
+  <GBSeq_accession-version>HV497215.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>dbj|HV497215.1|</GBSeqid>
+    <GBSeqid>pat|JP|2011517397|1</GBSeqid>
+    <GBSeqid>gi|354748581</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>JP 2011517397-A/1</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..1779</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Lahmar,M.</GBAuthor>
+        <GBAuthor>Valarche,I.</GBAuthor>
+        <GBAuthor>Mehtali,M.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>In vitro method to determine whether a drug candidate active against a target protein is active against a variant of said protein</GBReference_title>
+      <GBReference_journal>Patent: JP 2011517397-A 1 09-JUN-2011; VIVALIS</GBReference_journal>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_comment>OS Hepatitis C Virus~PN JP 2011517397-A/1~PD 09-JUN-2011~PF 16-MAR-2009 JP 2010550220~PR 14-MAR-2008 EP 08300146.1~PI medhi lahmar,isabelle valarche,majid mehtali~CC This description about &lt;220&gt; can't be interpreted CC &lt;220&gt;~CC &lt;221&gt; misc_feature~CC &lt;223&gt; genotype 1b polymerase NS5B~FH Key Location/Qualifiers</GBSeq_comment>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..1779</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>1779</GBInterval_to>
+          <GBInterval_accession>HV497215.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>unassigned DNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:11103</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgtcaatgtcctacacatggacaggtgccttgatcacgccatgcgctgcggaggagagcaagttgcccatcaatccgttgagcaactctttgctgcgtcaccacagtatggtctactccacaacatctcgcagcgcaagtctgcggcagaagaaggtaacctttgacagaatgcaagtcctggacgaccactaccgggacgtgctcaaggagatgaaggcgaaggcgtccacagttaaggctaggcttctatctatagaggaggcctgcaaactgacgcccccacattcggccaaatccaaatttggctacggggcgaaggacgtccggagcctatccagcagggccgtcaaccacatccgctccgtgtgggaggacttgctggaagacactgaaacaccaattgataccaccatcatggcaaaaaatgaggttttctgcgtccaaccagagaaaggaggccgcaagccagctcgccttatcgtattcccagacctgggggtacgtgtatgcgagaagatggccctttacgacgtggtctccacccttcctcaggccgtgatgggcccctcatacggattccagtactctcctgggcagcgggtcgagttcctggtgaatacctggaaatcaaagaaatgccctatgggcttctcatatgacacccgctgctttgactcaacggtcactgagaatgacatccgtactgaggagtcaatctaccaatgttgtgacttggcccccgaagccagacaggccataaagtcgctcacagagcggctctacatcgggggtcccctgactaattcaaaagggcagaactgcggttatcgccggtgccgcgcgagcggtgtgctgacgactagctgcggcaataccctcacatgctacttgaaagccactgcggcctgtcgagctgcaaagctccaggactgcacgatgctcgtgaacggagacgaccttgtcgttatctgcgaaagcgcgggaacccaggaggatgcggcgagcctacgagtcttcacggaggctatgactaggtactctgccccccccggggacccgccccaaccagaatacgacttggagctgataacgtcatgctcctccaatgtgtcggtcgcgcacgatgcatccggcaaaagggtgtactacctcacccgtgaccccaccacccccctcgcacgggctgcgtgggagacagttagacacactccagtcaactcctggctaggcaatatcatcatgtatgcgcccaccctatgggcgaggatgattctgatgactcatttcttctctatccttctagctcaggagcaacttgaaaaagccctggattgtcagatctacggggcctgctactccattgagccacttgacctacctcagatcatcgaacgactccatggtcttagcgcattttcactccatagttactctccaggtgagatcaatagggtggcttcatgcctcaggaaacttggggtaccgcccttgcgagtctggagacatcgggccagaagtgtccgcgctaagctgctgtcccagggggggagggccgccacatgcggcaaatacctcttcaactgggcagtaaggaccaagcttaaactcactccaatcccggctgcgtcccagctagacttgtccggctggttcgttgctggttacaacgggggagacatatatcacagcctgtctcgtgcccgaccccgttggttcatgttgtgcctactcctactttctgtaggggtaggcatctacctgctccccaaccggtaa</GBSeq_sequence>
+</GBSeq>

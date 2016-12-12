@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GBSeq>
+  <GBSeq_locus>HPCCOPRT</GBSeq_locus>
+  <GBSeq_length>957</GBSeq_length>
+  <GBSeq_strandedness>single</GBSeq_strandedness>
+  <GBSeq_moltype>mRNA</GBSeq_moltype>
+  <GBSeq_topology>linear</GBSeq_topology>
+  <GBSeq_division>VRL</GBSeq_division>
+  <GBSeq_update-date>19-JUL-2016</GBSeq_update-date>
+  <GBSeq_create-date>08-JUN-1996</GBSeq_create-date>
+  <GBSeq_definition>Hepatitis C virus type 4c (clone GB358) core protein and E1 protein mRNA, partial cds</GBSeq_definition>
+  <GBSeq_primary-accession>L38338</GBSeq_primary-accession>
+  <GBSeq_accession-version>L38338.1</GBSeq_accession-version>
+  <GBSeq_other-seqids>
+    <GBSeqid>gb|L38338.1|HPCCOPRT</GBSeqid>
+    <GBSeqid>gi|1369770</GBSeqid>
+  </GBSeq_other-seqids>
+  <GBSeq_keywords>
+    <GBKeyword>E1 protein</GBKeyword>
+    <GBKeyword>core protein</GBKeyword>
+  </GBSeq_keywords>
+  <GBSeq_source>Hepatitis C virus subtype 4c</GBSeq_source>
+  <GBSeq_organism>Hepatitis C virus subtype 4c</GBSeq_organism>
+  <GBSeq_taxonomy>Viruses; ssRNA viruses; ssRNA positive-strand viruses, no DNA stage; Flaviviridae; Hepacivirus</GBSeq_taxonomy>
+  <GBSeq_references>
+    <GBReference>
+      <GBReference_reference>1</GBReference_reference>
+      <GBReference_position>1..957</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Stuyver,L.</GBAuthor>
+        <GBAuthor>van Arnhem,W.</GBAuthor>
+        <GBAuthor>Wyseur,A.</GBAuthor>
+        <GBAuthor>Hernandez,F.</GBAuthor>
+        <GBAuthor>Delaporte,E.</GBAuthor>
+        <GBAuthor>Maertens,G.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Classification of hepatitis C viruses based on phylogenetic analysis of the envelope 1 and nonstructural 5B regions and identification of five additional subtypes</GBReference_title>
+      <GBReference_journal>Proc. Natl. Acad. Sci. U.S.A. 91 (21), 10134-10138 (1994)</GBReference_journal>
+      <GBReference_pubmed>7524083</GBReference_pubmed>
+    </GBReference>
+    <GBReference>
+      <GBReference_reference>2</GBReference_reference>
+      <GBReference_position>1..957</GBReference_position>
+      <GBReference_authors>
+        <GBAuthor>Stuyver,L.</GBAuthor>
+        <GBAuthor>Wyseur,A.</GBAuthor>
+        <GBAuthor>van Arnhem,W.</GBAuthor>
+        <GBAuthor>Lunel,F.</GBAuthor>
+        <GBAuthor>Laurent-Puig,P.</GBAuthor>
+        <GBAuthor>Pawlotsky,J.-M.</GBAuthor>
+        <GBAuthor>Kleter,B.</GBAuthor>
+        <GBAuthor>Bassit,L.</GBAuthor>
+        <GBAuthor>Nkengasong,J.</GBAuthor>
+        <GBAuthor>van Doorn,L.-J.</GBAuthor>
+        <GBAuthor>Maertens,G.</GBAuthor>
+      </GBReference_authors>
+      <GBReference_title>Hepatitis C virus genotyping by means of 5'-UR/core line probe assays and molecular analysis of untypeable samples</GBReference_title>
+      <GBReference_journal>Virus Res. 38 (2-3), 137-157 (1995)</GBReference_journal>
+      <GBReference_pubmed>8578855</GBReference_pubmed>
+    </GBReference>
+  </GBSeq_references>
+  <GBSeq_feature-table>
+    <GBFeature>
+      <GBFeature_key>source</GBFeature_key>
+      <GBFeature_location>1..957</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>957</GBInterval_to>
+          <GBInterval_accession>L38338.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>organism</GBQualifier_name>
+          <GBQualifier_value>Hepatitis C virus subtype 4c</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>mol_type</GBQualifier_name>
+          <GBQualifier_value>mRNA</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>db_xref</GBQualifier_name>
+          <GBQualifier_value>taxon:44022</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>clone</GBQualifier_name>
+          <GBQualifier_value>GB358</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>type</GBQualifier_name>
+          <GBQualifier_value>4c</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mRNA</GBFeature_key>
+      <GBFeature_location>1..&gt;957</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>957</GBInterval_to>
+          <GBInterval_accession>L38338.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>transcription</GBQualifier_name>
+          <GBQualifier_value>ATGAGCACGAATCCTAAACCTCAAAGAAAAACCAAACGTAACACCAACCGCCGCCCCATGGACGTTAAGTTCCCGGGCGGTGGCCAGATCGTTGGCGGAGTTTACTTGTTGCCGCGCAGGGGCCCCAGGTTGGGTGTGCGCGCGACTAGGAAGACTTCGGAGCGGTCGCAACCTCGTGGGAGACGTCAGCCTATCCCCAAGGCACGTCGATCTGAGGGAAGGTCCTGGGCTCAGCCCGGGTACCCATGGCCTCTTTACGGTAATGAGGGTTGCGGGTGGGCGGGATGGCTCCTGTCACCTCGTGGCTCTCGACCGTCTTGGGGCCCAAATGATCCCCGGCGAAGGTCCCGCAACTTGGGTAAGGTCATCGATACCCTAACCTGCGGCTTTGCCGACCTCATGGGATACATCCCGCTCGTAGGCGCCCCCGTGGGTGGCGTCGCCAGGGCCCTGGCACACGGTGTTAGGGCTGTGGAGGACGGGATCAATTATGCGACAGGGAATCTTCCCGGTTGCTCTTTCTCTATCTTCTTCTTGGCACTTCTTTCGTGCCTGACTGTTCCCACCTCGGCCGTCAACTATCGCAATGCCTCGGGCATCTATCACATCACCAATGACTGCCCGAACTCGAGCATAGTGTACGAGACCGAGCACCACATCCTACACCTCCCAGGGTGTTTACCCTGCGTGAGGGTTGGGAATCAGTCACGCTGCTGGGTGGCCCTCACTCCCACCGTGGCGGCGCCTTACATCGGCGCTCCGCTTGAATCCCTCCGGAGTCATGTGGATCTGATGGTAGGTGCCGCTACTGCGTGCTCCGCTCTTTACATCGGAGACCTGTGCGGTGGCGTATTTTTGGTTGGTCAGATGTTCTCTTTCCAGCCGCGGCGCCACTGGACTACGCAGGACTGCAATTGTTCCATCTACGCGGGGCACGTTACGGGCCACAGGATGGCA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>CDS</GBFeature_key>
+      <GBFeature_location>1..&gt;957</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>957</GBInterval_to>
+          <GBInterval_accession>L38338.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>codon_start</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>transl_table</GBQualifier_name>
+          <GBQualifier_value>1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein and E1 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>protein_id</GBQualifier_name>
+          <GBQualifier_value>AAB02117.1</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>translation</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRSEGRSWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFFLALLSCLTVPTSAVNYRNASGIYHITNDCPNSSIVYETEHHILHLPGCLPCVRVGNQSRCWVALTPTVAAPYIGAPLESLRSHVDLMVGAATACSALYIGDLCGGVFLVGQMFSFQPRRHWTTQDCNCSIYAGHVTGHRMA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>1..573</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>1</GBInterval_from>
+          <GBInterval_to>573</GBInterval_to>
+          <GBInterval_accession>L38338.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>core protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>putative</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>MSTNPKPQRKTKRNTNRRPMDVKFPGGGQIVGGVYLLPRRGPRLGVRATRKTSERSQPRGRRQPIPKARRSEGRSWAQPGYPWPLYGNEGCGWAGWLLSPRGSRPSWGPNDPRRRSRNLGKVIDTLTCGFADLMGYIPLVGAPVGGVARALAHGVRAVEDGINYATGNLPGCSFSIFFLALLSCLTVPTSA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+    <GBFeature>
+      <GBFeature_key>mat_peptide</GBFeature_key>
+      <GBFeature_location>574..&gt;957</GBFeature_location>
+      <GBFeature_intervals>
+        <GBInterval>
+          <GBInterval_from>574</GBInterval_from>
+          <GBInterval_to>957</GBInterval_to>
+          <GBInterval_accession>L38338.1</GBInterval_accession>
+        </GBInterval>
+      </GBFeature_intervals>
+      <GBFeature_partial3 value="true"/>
+      <GBFeature_quals>
+        <GBQualifier>
+          <GBQualifier_name>product</GBQualifier_name>
+          <GBQualifier_value>E1 protein</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>note</GBQualifier_name>
+          <GBQualifier_value>putative</GBQualifier_value>
+        </GBQualifier>
+        <GBQualifier>
+          <GBQualifier_name>peptide</GBQualifier_name>
+          <GBQualifier_value>VNYRNASGIYHITNDCPNSSIVYETEHHILHLPGCLPCVRVGNQSRCWVALTPTVAAPYIGAPLESLRSHVDLMVGAATACSALYIGDLCGGVFLVGQMFSFQPRRHWTTQDCNCSIYAGHVTGHRMA</GBQualifier_value>
+        </GBQualifier>
+      </GBFeature_quals>
+    </GBFeature>
+  </GBSeq_feature-table>
+  <GBSeq_sequence>atgagcacgaatcctaaacctcaaagaaaaaccaaacgtaacaccaaccgccgccccatggacgttaagttcccgggcggtggccagatcgttggcggagtttacttgttgccgcgcaggggccccaggttgggtgtgcgcgcgactaggaagacttcggagcggtcgcaacctcgtgggagacgtcagcctatccccaaggcacgtcgatctgagggaaggtcctgggctcagcccgggtacccatggcctctttacggtaatgagggttgcgggtgggcgggatggctcctgtcacctcgtggctctcgaccgtcttggggcccaaatgatccccggcgaaggtcccgcaacttgggtaaggtcatcgataccctaacctgcggctttgccgacctcatgggatacatcccgctcgtaggcgcccccgtgggtggcgtcgccagggccctggcacacggtgttagggctgtggaggacgggatcaattatgcgacagggaatcttcccggttgctctttctctatcttcttcttggcacttctttcgtgcctgactgttcccacctcggccgtcaactatcgcaatgcctcgggcatctatcacatcaccaatgactgcccgaactcgagcatagtgtacgagaccgagcaccacatcctacacctcccagggtgtttaccctgcgtgagggttgggaatcagtcacgctgctgggtggccctcactcccaccgtggcggcgccttacatcggcgctccgcttgaatccctccggagtcatgtggatctgatggtaggtgccgctactgcgtgctccgctctttacatcggagacctgtgcggtggcgtatttttggttggtcagatgttctctttccagccgcggcgccactggactacgcaggactgcaattgttccatctacgcggggcacgttacgggccacaggatggca</GBSeq_sequence>
+</GBSeq>
