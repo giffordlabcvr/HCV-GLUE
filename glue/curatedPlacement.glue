@@ -1,0 +1,8 @@
+project hcv
+
+  module maxLikelihoodPlacer
+    place sequence -w "source.name = 'ncbi-curated'" --batchSize 500 -o placementss/curatedPlacement.xml -d curatedPlacementData
+    exit
+ 
+ 
+  exit
