@@ -1,0 +1,24 @@
+<textFilePopulator>
+	<columnDelimiterRegex>\t</columnDelimiterRegex>
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>GenBank Accession</header>
+		<fieldName>sequenceID</fieldName>
+		<matchPattern>([0-9A-Z_]+)</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+	</textFileColumn>
+	<textFileColumn>
+		<header>Subtype/Genotype (ViPR)</header>
+		<fieldName>vipr_genotype</fieldName>
+		<matchPattern>([0-9])[a-z]+</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+		<nullRegex>-N/A-</nullRegex>
+	</textFileColumn>
+	<textFileColumn>
+		<header>Subtype/Genotype (ViPR)</header>
+		<fieldName>vipr_subtype</fieldName>
+		<matchPattern>[0-9]([a-z]+)</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+		<nullRegex>-N/A-</nullRegex>
+	</textFileColumn>
+</textFilePopulator>

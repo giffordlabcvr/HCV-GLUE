@@ -45,3 +45,7 @@
   create module --fileName modules/referenceGenotypesPopulator.xml reference-genotypes-populator
 
   create module --fileName modules/equineHepacivirusAlignmentImporter.xml equineHepacivirusAlignmentImporter  
+  
+  create module -f modules/viprSubtypePopulator.xml
+  create module -f modules/epaSubtypePopulator.xml
+  

@@ -185,12 +185,12 @@
 		</gbQualifier>
 		<gbQualifier name="strain">
 			<fieldPopulator fieldName="gb_genotype">
-				<matchPattern>([1-9])[a-zA-Z]+</matchPattern>
+				<matchPattern>^([1-9])[a-zA-Z]|[xX][a-zA-Z]$</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>
 			<fieldPopulator fieldName="gb_subtype">
-				<matchPattern>[1-9]([a-zA-Z]|[xX][a-zA-Z])</matchPattern>
+				<matchPattern>^[1-9]([a-zA-Z]|[xX][a-zA-Z])$</matchPattern>
 				<outputTemplate>${g1?lower_case}</outputTemplate>
 				<overwriteExistingNonNull>false</overwriteExistingNonNull>
 			</fieldPopulator>

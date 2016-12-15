@@ -1,0 +1,24 @@
+<textFilePopulator>
+	<columnDelimiterRegex>\t</columnDelimiterRegex>
+	<textFileColumn>
+		<identifier>true</identifier>
+		<header>queryName</header>
+		<fieldName>sequenceID</fieldName>
+		<matchPattern>ncbi-curated/([0-9A-Za-z_]+)</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+	</textFileColumn>
+	<textFileColumn>
+		<header>genotypeFinalClade</header>
+		<fieldName>epa_genotype</fieldName>
+		<matchPattern>AL_([0-9])</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+	<textFileColumn>
+		<header>subtypeFinalClade</header>
+		<fieldName>epa_subtype</fieldName>
+		<matchPattern>AL_[0-9]([a-z]+)</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+</textFilePopulator>

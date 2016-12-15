@@ -25,6 +25,11 @@ schema-project hcv
     create field genotyping_method VARCHAR
     create field gb_genotype VARCHAR
     create field gb_subtype VARCHAR
+    create field vipr_genotype VARCHAR 10
+    create field vipr_subtype VARCHAR 10
+    create field epa_genotype VARCHAR 10
+    create field epa_subtype VARCHAR 10
+
     # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20
     exit
