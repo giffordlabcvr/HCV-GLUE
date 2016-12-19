@@ -77,7 +77,21 @@
 			<fieldPopulator fieldName="gb_host">
 				<valueConverter>
 					<matchPattern>.*Homo [sS]apiens.*</matchPattern>
+					<matchPattern>.*[Pp]atient.*</matchPattern>
+					<matchPattern>.*[Hh]uman.*</matchPattern>
 					<outputTemplate>Homo sapiens</outputTemplate>
+				</valueConverter>
+				<valueConverter>
+					<matchPattern>.*[Cc]himpanzee.*</matchPattern>
+					<outputTemplate>Pan troglodytes</outputTemplate>
+				</valueConverter>
+				<valueConverter>
+					<matchPattern>.*[Mm]ouse.*</matchPattern>
+					<outputTemplate>Mus musculus</outputTemplate>
+				</valueConverter>
+				<valueConverter>
+					<matchPattern>.*[Hh]orse.*</matchPattern>
+					<outputTemplate>Equus caballus</outputTemplate>
 				</valueConverter>
 			</fieldPopulator>
 		</gbQualifier>

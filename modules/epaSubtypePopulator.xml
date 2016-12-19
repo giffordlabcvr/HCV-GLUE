@@ -21,4 +21,18 @@
 		<outputTemplate>${g1}</outputTemplate>
 		<nullRegex>-</nullRegex>
 	</textFileColumn>
+	<textFileColumn>
+		<header>genotypeFinalClade</header>
+		<fieldName>epa_genotype_final_clade</fieldName>
+		<matchPattern>(.*)</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
+	<textFileColumn>
+		<header>subtypeFinalClade</header>
+		<fieldName>epa_subtype_final_clade</fieldName>
+		<matchPattern>(.*)</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+		<nullRegex>-</nullRegex>
+	</textFileColumn>
 </textFilePopulator>

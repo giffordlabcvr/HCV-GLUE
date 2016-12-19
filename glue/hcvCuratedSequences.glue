@@ -9,8 +9,15 @@
   module gb-populator populate --batchSize 1000 -w "source.name = 'ncbi-curated'"
 
   # copy the genbank genotype / subtypes into genotype / subtype, and indicate their provanance
-  multi-copy field sequence -w "source.name = 'ncbi-curated' and gb_genotype != null" gb_genotype genotype
-  multi-copy field sequence -w "source.name = 'ncbi-curated' and gb_subtype != null" gb_subtype subtype
-  multi-set field sequence -w "source.name = 'ncbi-curated' and gb_genotype != null" genotyping_method "Genbank XML"
+  multi-copy field sequence -w "source.name = 'ncbi-curated' and epa_genotype != null" epa_genotype genotype
+  multi-copy field sequence -w "source.name = 'ncbi-curated' and epa_subtype != null" epa_subtype subtype
+  multi-set field sequence -w "source.name = 'ncbi-curated' and epa_genotype != null" genotyping_method "EPA genotyping"
   
   multi-set field sequence -w "source.name = 'ncbi-curated' and gb_recombinant = null" gb_recombinant false
+  
+  # vipr genotyping results
+  module viprSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f tabular/vipr/45125869619-ViprAllHcv.tsv
+  
+  # EPA genotyping results
+  module epaSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f genotyping/curatedGenotypes_part1.tsv
+  module epaSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f genotyping/curatedGenotypes_part2.tsv

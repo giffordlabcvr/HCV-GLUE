@@ -1,19 +1,21 @@
-sequence ncbi-curated FJ025855 set field --noCommit subtype 'w'
-sequence ncbi-curated FJ025856 set field --noCommit subtype 'w'
-sequence ncbi-curated FJ025854 unset field --noCommit subtype
-sequence ncbi-curated DQ278891 unset field --noCommit subtype
-sequence ncbi-curated DQ278893 unset field --noCommit subtype
-sequence ncbi-curated AY878650 unset field --noCommit subtype
-sequence ncbi-curated AY878651 unset field --noCommit subtype
-sequence ncbi-curated EU408330 set field --noCommit subtype 'xa'
-sequence ncbi-curated EU408331 set field --noCommit subtype 'xa'
-sequence ncbi-curated EU408332 set field --noCommit subtype 'xa'
-sequence ncbi-curated JX183549 unset field --noCommit subtype
-sequence ncbi-curated JX183550 unset field --noCommit subtype
-sequence ncbi-curated JX183551 unset field --noCommit subtype
-sequence ncbi-curated JX183552 set field --noCommit subtype 'xb'
-sequence ncbi-curated JX183553 unset field --noCommit subtype
-sequence ncbi-curated JX183554 unset field --noCommit subtype
-sequence ncbi-curated JX183557 set field --noCommit subtype 'xe'
-sequence ncbi-curated JX183558 unset field --noCommit subtype
+# correct some misclassified genbank submissions according to Smith et al. 2014.
+
+sequence ncbi-curated FJ025855 set field --noCommit gb_subtype 'w'
+sequence ncbi-curated FJ025856 set field --noCommit gb_subtype 'w'
+sequence ncbi-curated FJ025854 unset field --noCommit gb_subtype
+sequence ncbi-curated DQ278891 unset field --noCommit gb_subtype
+sequence ncbi-curated DQ278893 unset field --noCommit gb_subtype
+sequence ncbi-curated AY878650 unset field --noCommit gb_subtype
+sequence ncbi-curated AY878651 unset field --noCommit gb_subtype
+sequence ncbi-curated EU408330 set field --noCommit gb_subtype 'xa'
+sequence ncbi-curated EU408331 set field --noCommit gb_subtype 'xa'
+sequence ncbi-curated EU408332 set field --noCommit gb_subtype 'xa'
+sequence ncbi-curated JX183549 unset field --noCommit gb_subtype
+sequence ncbi-curated JX183550 unset field --noCommit gb_subtype
+sequence ncbi-curated JX183551 unset field --noCommit gb_subtype
+sequence ncbi-curated JX183552 set field --noCommit gb_subtype 'xb'
+sequence ncbi-curated JX183553 unset field --noCommit gb_subtype
+sequence ncbi-curated JX183554 unset field --noCommit gb_subtype
+sequence ncbi-curated JX183557 set field --noCommit gb_subtype 'xe'
+sequence ncbi-curated JX183558 unset field --noCommit gb_subtype
 commit
