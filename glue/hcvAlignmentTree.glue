@@ -24,7 +24,7 @@
   alignment AL_MASTER
     set field displayName "Hepatitis C Virus (HCV)"
     # reference sequences
-    add member -w "source.name in ('concatenated-refseqs', 'hcv-additional-refs', 'ncbi-curated')
+    add member -w "source.name in ('concatenated-refseqs', 'hcv-additional-refs', 'ncbi-refseqs')"
     # curated members
     add member -w "source.name = 'ncbi-curated' and \
       (gb_host = 'Homo sapiens' or gb_host = null) and \
@@ -174,7 +174,6 @@
   # Unassigned subtypes
   create reference REF_2_unassigned_JF735110 ncbi-refseqs JF735110
   create reference REF_2_unassigned_JF735116 ncbi-refseqs JF735116
-nassigned_JF735116 ncbi-refseqs JF735116
   create reference REF_2_unassigned_JF735117 ncbi-curated JF735117
   create reference REF_2_unassigned_JF735118 ncbi-refseqs JF735118
   create reference REF_2_unassigned_JF735119 ncbi-refseqs JF735119
