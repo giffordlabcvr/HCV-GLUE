@@ -1173,66 +1173,69 @@
   reference REF_6_unassigned_KJ470625 inherit feature-location -rs AL_6 whole_genome
 
   # Provisional subtype references
-  
-  # we should uncomment these once the hand-crafted alignment has been checked
   reference REF_1f_L38350_L38371
-    # inherit feature-location -rs AL_1 Core
-    # inherit feature-location -rs AL_1 E1
-    # inherit feature-location -rs AL_1 NS5B
+    inherit feature-location -rs --truncateCdn AL_1 Core
+    inherit feature-location -rs --truncateCdn AL_1 E1
+    inherit feature-location -rs --truncateCdn AL_1 NS5B
+
     exit
   reference REF_2g_X93323
-    # inherit feature-location -rs AL_2 NS5B
+    inherit feature-location -rs --truncateCdn AL_2 NS5B
     exit
   reference REF_2h_X93327
-    # inherit feature-location -rs AL_2 NS5B
+    inherit feature-location -rs --truncateCdn AL_2 NS5B
     exit
   reference REF_2n_L39309_L44602
-    # inherit feature-location -rs AL_2 Core
-    # inherit feature-location -rs AL_2 E1
-    # inherit feature-location -rs AL_2 NS5B
+    inherit feature-location -rs --truncateCdn AL_2 Core
+    inherit feature-location -rs --truncateCdn AL_2 E1
+    inherit feature-location -rs --truncateCdn AL_2 NS5B
     exit
   reference REF_2o_L38333_L38373
-    # inherit feature-location -rs AL_2 Core
-    # inherit feature-location -rs AL_2 E1
-    # inherit feature-location -rs AL_2 NS5B
+    inherit feature-location -rs --truncateCdn AL_2 Core
+    inherit feature-location -rs --truncateCdn AL_2 E1
+    inherit feature-location -rs --truncateCdn AL_2 NS5B
     exit
   reference REF_2p_L39300_L44601
-    # inherit feature-location -rs AL_2 Core
-    # inherit feature-location -rs AL_2 E1
-    # inherit feature-location -rs AL_2 NS5B
+    inherit feature-location -rs --truncateCdn AL_2 Core
+    inherit feature-location -rs --truncateCdn AL_2 E1
+    inherit feature-location -rs --truncateCdn AL_2 NS5B
     exit
   reference REF_2s_JQ924942_HM777447_HM777332
-    # inherit feature-location -rs AL_2 Core
-    # inherit feature-location -rs AL_2 E1
-    # inherit feature-location -rs AL_2 NS5B
+    inherit feature-location -rs --truncateCdn AL_2 Core
+    inherit feature-location -rs --truncateCdn AL_2 E1
+    inherit feature-location -rs --truncateCdn AL_2 NS5B
     exit
   reference REF_3c_D16612_D14198_D16613
-    # inherit feature-location -rs AL_3 Core
-    # inherit feature-location -rs AL_3 E1
-    # inherit feature-location -rs AL_3 NS5B
+    inherit feature-location -rs --truncateCdn AL_3 Core
+    inherit feature-location -rs --truncateCdn AL_3 E1
+    inherit feature-location -rs --truncateCdn AL_3 NS5B
     exit
   reference REF_3f_D16614_D14203_D16615
-    # inherit feature-location -rs AL_3 Core
-    # inherit feature-location -rs AL_3 E1
-    # inherit feature-location -rs AL_3 NS5B
+    inherit feature-location -rs --truncateCdn AL_3 Core
+    inherit feature-location -rs --truncateCdn AL_3 E1
+    inherit feature-location -rs --truncateCdn AL_3 NS5B
     exit
   reference REF_4e_L29589_L29590
-    # inherit feature-location -rs AL_4 Core
-    # inherit feature-location -rs AL_4 E1
-    # inherit feature-location -rs AL_4 NS5B
+    inherit feature-location -rs --truncateCdn AL_4 Core
+    inherit feature-location -rs --truncateCdn AL_4 E1
+    inherit feature-location -rs --truncateCdn AL_4 NS5B
     exit
   reference REF_4h_L29610_L29611
-    # inherit feature-location -rs AL_4 Core
-    # inherit feature-location -rs AL_4 E1
-    # inherit feature-location -rs AL_4 NS5B
+    inherit feature-location -rs --truncateCdn AL_4 Core
+    inherit feature-location -rs --truncateCdn AL_4 E1
+    inherit feature-location -rs --truncateCdn AL_4 NS5B
     exit
   reference REF_4i_L36439_L36437
-    # inherit feature-location -rs AL_4 Core
-    # inherit feature-location -rs AL_4 E1
-    # inherit feature-location -rs AL_4 NS5B
+    inherit feature-location -rs --truncateCdn AL_4 Core
+    inherit feature-location -rs --truncateCdn AL_4 E1
+    inherit feature-location -rs --truncateCdn AL_4 NS5B
     exit
   reference REF_4j_L36438
-    # inherit feature-location -rs AL_4 NS5B
+    inherit feature-location -rs --truncateCdn AL_4 NS5B
+  	feature-location precursor_polyprotein remove segment 2 339
+  	feature-location precursor_polyprotein add segment 2 337  
+  	feature-location NS5B remove segment 2 339
+  	feature-location NS5B add segment 2 337  
     exit
 
   
