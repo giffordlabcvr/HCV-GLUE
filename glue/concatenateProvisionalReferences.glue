@@ -1,19 +1,22 @@
 create source concatenated-refseqs
 
-concatenate sequence -g 10 concatenated-refseqs REF_1f_L38350_L38371 ncbi-refseqs-subgenomic L38350 ncbi-refseqs-subgenomic L38371
+# the gaps between constituent sequences need to preserve the reading frame
+# otherwise reference sequence validation complains.
+
+concatenate sequence -g 12 concatenated-refseqs REF_1f_L38350_L38371 ncbi-refseqs-subgenomic L38350 ncbi-refseqs-subgenomic L38371
 sequence concatenated-refseqs REF_1f_L38350_L38371
   set field genotype 1
   set field subtype f
   set field reference_status "provisional"
   exit
-  
-concatenate sequence -g 10 concatenated-refseqs REF_2n_L39309_L44602 ncbi-refseqs-subgenomic L39309 ncbi-refseqs-subgenomic L44602
+
+concatenate sequence -g 11 concatenated-refseqs REF_2n_L39309_L44602 ncbi-refseqs-subgenomic L39309 ncbi-refseqs-subgenomic L44602
 sequence concatenated-refseqs REF_2n_L39309_L44602
   set field genotype 2
   set field subtype n
   set field reference_status "provisional"
   exit
-  
+
 concatenate sequence -g 10 concatenated-refseqs REF_2o_L38333_L38373 ncbi-refseqs-subgenomic L38333 ncbi-refseqs-subgenomic L38373
 sequence concatenated-refseqs REF_2o_L38333_L38373
   set field genotype 2
@@ -21,14 +24,14 @@ sequence concatenated-refseqs REF_2o_L38333_L38373
   set field reference_status "provisional"
   exit
 
-concatenate sequence -g 10 concatenated-refseqs REF_2p_L39300_L44601 ncbi-refseqs-subgenomic L39300 ncbi-refseqs-subgenomic L44601
+concatenate sequence -g 11 concatenated-refseqs REF_2p_L39300_L44601 ncbi-refseqs-subgenomic L39300 ncbi-refseqs-subgenomic L44601
 sequence concatenated-refseqs REF_2p_L39300_L44601
   set field genotype 2
   set field subtype p
   set field reference_status "provisional"
   exit
 
-concatenate sequence -g 10 concatenated-refseqs REF_2s_JQ924942_HM777447 ncbi-refseqs-subgenomic JQ924942 ncbi-refseqs-subgenomic HM777447
+concatenate sequence -g 11 concatenated-refseqs REF_2s_JQ924942_HM777447 ncbi-refseqs-subgenomic JQ924942 ncbi-refseqs-subgenomic HM777447
 concatenate sequence -g 10 concatenated-refseqs REF_2s_JQ924942_HM777447_HM777332 concatenated-refseqs REF_2s_JQ924942_HM777447 ncbi-refseqs-subgenomic HM777332
 delete sequence concatenated-refseqs REF_2s_JQ924942_HM777447
 sequence concatenated-refseqs REF_2s_JQ924942_HM777447_HM777332
@@ -37,7 +40,7 @@ sequence concatenated-refseqs REF_2s_JQ924942_HM777447_HM777332
   set field reference_status "provisional"
   exit
   
-concatenate sequence -g 10 concatenated-refseqs REF_3c_D16612_D14198 ncbi-refseqs-subgenomic D16612 ncbi-refseqs-subgenomic D14198
+concatenate sequence -g 9 concatenated-refseqs REF_3c_D16612_D14198 ncbi-refseqs-subgenomic D16612 ncbi-refseqs-subgenomic D14198
 concatenate sequence -g 10 concatenated-refseqs REF_3c_D16612_D14198_D16613 concatenated-refseqs REF_3c_D16612_D14198 ncbi-refseqs-subgenomic D16613
 delete sequence concatenated-refseqs REF_3c_D16612_D14198
 sequence concatenated-refseqs REF_3c_D16612_D14198_D16613
@@ -46,7 +49,7 @@ sequence concatenated-refseqs REF_3c_D16612_D14198_D16613
   set field reference_status "provisional"
   exit
 
-concatenate sequence -g 10 concatenated-refseqs REF_3f_D16614_D14203 ncbi-refseqs-subgenomic D16614 ncbi-refseqs-subgenomic D14203
+concatenate sequence -g 9 concatenated-refseqs REF_3f_D16614_D14203 ncbi-refseqs-subgenomic D16614 ncbi-refseqs-subgenomic D14203
 concatenate sequence -g 10 concatenated-refseqs REF_3f_D16614_D14203_D16615 concatenated-refseqs REF_3f_D16614_D14203 ncbi-refseqs-subgenomic D16615
 delete sequence concatenated-refseqs REF_3f_D16614_D14203
 sequence concatenated-refseqs REF_3f_D16614_D14203_D16615
@@ -55,21 +58,21 @@ sequence concatenated-refseqs REF_3f_D16614_D14203_D16615
   set field reference_status "provisional"
   exit
   
-concatenate sequence -g 10 concatenated-refseqs REF_4e_L29589_L29590 ncbi-refseqs-subgenomic L29589 ncbi-refseqs-subgenomic L29590
+concatenate sequence -g 11 concatenated-refseqs REF_4e_L29589_L29590 ncbi-refseqs-subgenomic L29589 ncbi-refseqs-subgenomic L29590
 sequence concatenated-refseqs REF_4e_L29589_L29590
   set field genotype 4
   set field subtype e
   set field reference_status "provisional"
   exit
   
-concatenate sequence -g 10 concatenated-refseqs REF_4h_L29610_L29611 ncbi-refseqs-subgenomic L29610 ncbi-refseqs-subgenomic L29611
+concatenate sequence -g 11 concatenated-refseqs REF_4h_L29610_L29611 ncbi-refseqs-subgenomic L29610 ncbi-refseqs-subgenomic L29611
 sequence concatenated-refseqs REF_4h_L29610_L29611
   set field genotype 4
   set field subtype h
   set field reference_status "provisional"
   exit
   
-concatenate sequence -g 10 concatenated-refseqs REF_4i_L36439_L36437 ncbi-refseqs-subgenomic L36439 ncbi-refseqs-subgenomic L36437
+concatenate sequence -g 11 concatenated-refseqs REF_4i_L36439_L36437 ncbi-refseqs-subgenomic L36439 ncbi-refseqs-subgenomic L36437
 sequence concatenated-refseqs REF_4i_L36439_L36437
   set field genotype 4
   set field subtype i
