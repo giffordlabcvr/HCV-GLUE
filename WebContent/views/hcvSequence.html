@@ -25,6 +25,12 @@
 				<tr>
 					<td><b>Sequence Length</b></td><td>{{renderResult.sequence.length}}</td>
 				</tr>
+				<tr>
+					<td><b>Recombinant?</b></td><td>{{renderResult.sequence.recombinant ? "Yes" : "No"}}</td>
+				</tr>
+				<tr>
+					<td><b>Lab construct?</b></td><td>{{renderResult.sequence.labConstruct ? "Yes" : "No"}}</td>
+				</tr>
 				<tr ng-repeat="alignment in renderResult.sequence.alignmentMembership track by $index" ng-show="alignment.constrainingReference">
 					<td><b>Clade membership</b></td>
 					<td><a href="#project/alignment/{{alignment.name}}">{{alignment.renderedName}}</a></td>
@@ -53,6 +59,9 @@
 				</tr>
 				<tr>
 					<td><b>Country of Origin</b></td><td>{{handleNull(renderResult.sequence.country)}}</td>
+				</tr>
+				<tr>
+					<td><b>Host Species</b></td><td><em>{{handleNull(renderResult.sequence.host)}}</em></td>
 				</tr>
 				<tr>
 					<td><b>Collection Year</b></td><td>{{handleNull(renderResult.sequence.collectionYear)}}</td>

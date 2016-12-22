@@ -1,59 +1,47 @@
-<h2>HCV-GLUE</h2>
-
-	<table class="table">
-		<tr>
-<td>
-<h4>Overview</h4>
+<h3>Background</h3>
 The emergence of clinically-relevant hepatitis C virus (HCV) resistance to direct-acting 
-antiviral drugs in parallel with advances in next generation sequencing
+antiviral drugs in parallel with advances in next-generation sequencing
 technology means there is a need for computational resources that allow clinicians to 
 make optimal treatment decisions based on analysis of virus sequence data. 
-These resources are also an important component of efforts to study and monitor HCV genetic variation, 
-and to evaluate its impact on disease course and treatment outcome. 
+These resources will also be an important component of efforts to study and monitor HCV genetic variation, 
+and to evaluate its impact on epidemiology, disease course and treatment outcome. 
+<h3>HCV-GLUE: Sequence Data Resource</h3>
+HCV-GLUE is a bioinformatic resource for the curation and analysis of HCV sequence data.
+The resource can be used either via a web site or via an offline version 
+aimed at more experienced bioinformaticians.
+<p>
+The web site includes:
+<ul>
+<li>A curated database of NCBI HCV <a href="#/project/sequence" target="_blank">sequences</a>, with metadata.</li>
+<li>A curated database of HCV <a href="#/project/alignment" target="_blank">clades</a> (genotypes, subtypes) and reference sequences.</li>
+<li>Curated multiple-sequence alignments for all the NCBI sequences assigned to each clade.</li>
+<li>A curated database of amino-acid <a href="#/project/rav" target="_blank">substitutions</a> associated with drug resistance including their frequencies in different clades.</li>
+<li>An <a href="#analysisTool" target="_blank">analysis tool</a> supporting genotyping and drug resistance analysis of submitted consensus (FASTA) sequences.</li>
+</ul>
+</p>
+<p>
+The offline version of the resource includes all the functionality available in the web site plus:
+<ul>
+<li>A rich set of bioinformatic functions for exploring the dataset.</li>
+<li>Some basic tools for the analysis of NGS sequences (SAM/BAM files).</li>
+</ul>
+For more information about obtaining and using the offline HCV-GLUE resource, please contact 
+<a href="http://www.gla.ac.uk/researchinstitutes/iii/staff/joshsinger" target="_blank">Josh Singer</a>.
+</p>
+<h3>Data Sources</h3>
+Data relating to structural, evolutionary, epidemiological and phenotypic aspects of HCV were obtained 
+from various sources. 
+<ul>
+<li>HCV clade definitions and reference sequences were obtained from the <a href="http://talk.ictvonline.org/ictv_wikis/flaviviridae/w/sg_flavi/56.hcv-classification" 
+	target="_blank">ICTV HCV classification resource</a>, updated in May 2015.</li>
+<li>HCV virus sequences and their metadata were obtained from <a href="https://www.ncbi.nlm.nih.gov/nuccore" target="_blank">the NCBI Nucleotide database.</a></li>
+<li>Drug resistance-associated substitutions were obtained from a number of <a href="#/project/drug_resistance_publication" target="_blank">recent surveys</a> of <em>in vitro</em> experimental results.</li>
+</ul>
+The various datasets are integrated together in <a href="http://tools.glue.cvr.ac.uk">GLUE</a>, 
+a data-centric software framework for capturing, developing and utilising nucleotide-level virus evolutionary 
+hypotheses.
 
-HCV-GLUE is interactive online framework for rapid, standardised analysis of HCV sequence data.
-
-<h4>Data sources</h4>
-Data relating to structural, evolutionary and phenotypic aspects of HCV were obtained 
-from various sources. These are integrated together in <a href="http://tools.glue.cvr.ac.uk">GLUE</a>, a data-centric software 
-framework for capturing, developing and utilising nucleotide-level virus evolutionary 
-hypotheses. The result is a GLUE project specific to HCV.
-</td>
-<td>
-<img alt="HCV-GLUE data sources" width="700" src="images/web_diag_1.png">
-</td>
-</tr>
-</table>
-
-<h4>HCV-GLUE project structure</h4>
-
-The data objects relating to the virus and the fine-grained relationships between these 
-objects are captured in the GLUE relational model. A fragment of the model is shown.
-
-<img alt="HCV-GLUE project structure" width="1100" src="images/web_diag_2.png">
-
-
-<h4>Web analysis tool</h4>
-
-The HCV-GLUE project is embedded into an <a href="#/analysisTool">interactive sequence analysis tool</a> which operates over the world wide web.
-
-<img alt="HCV-GLUE project structure" width="1100" src="images/web_diag_3.png">
-
-<h4>References</h4>
-
-<ol>
-<li>D.B. Smith, J. Bukh, C. Kuiken, A. Scott Muerhoff, C.M. Rice, A.T. Stapleton, and P. Simmonds (2014), 
-“Expanded Classification of Hepatitis C Virus Into 7 Genotypes and 67 Subtypes: Updated Criteria and Genotype Assignment Web Resource”, 
-HEPATOLOGY, 59:318-327</li>
-<li>C. Kuiken, C. Combet, J. Bukh, T. Shin-I, G. Deleage, M. Mizokami, R. Richardson, E. Sablon, K. Yusim, J-M. Pawlotsky, P. Simmonds, and the Los Alamos HIV database group (2006), 
-“A Comprehensive System for Consistent Numbering of HCV Sequences, Proteins and Epitopes”, 
-HEPATOLOGY, 44:1355-1361</li>
-<li>S.F. Altschul, T.L. Madden, A.A. Schäffer, J. Zhang, Z. Zhang, W. Miller, and D.J. Lipman (1997), 
-"Gapped BLAST and PSI-BLAST: a new generation of protein database search programs", 
-Nucleic Acids Res., 25:3389-3402</li>
-</ol>
-
-<h4>Collaborators</h4>
+<h3>Collaborators</h3>
 
 	<table class="table">
 		<tr>
@@ -61,7 +49,7 @@ Nucleic Acids Res., 25:3389-3402</li>
 				<a href="http://www.stop-hcv.ox.ac.uk/">MRC-Stop HCV Consortium</a>
 			</td>
 			<td>
-				<img align="middle" alt="STOP-HCV logo" src="images/STOP-HCV-logo-with-strapline.gif">
+				<img align="right" alt="STOP-HCV logo" src="images/STOP-HCV-logo-with-strapline.gif">
 			</td>
 		</tr>	
 		<tr>
@@ -69,7 +57,7 @@ Nucleic Acids Res., 25:3389-3402</li>
 				<a href="http://www.hcvresearchuk.org/">HCV Research UK</a>
 			</td>
 			<td>
-				<img align="middle" alt="HCV Research UK logo" src="images/hcv_research_uk_logo.png">		
+				<img align="right" alt="HCV Research UK logo" src="images/hcv_research_uk_logo.png">		
 			</td>
 		</tr>
 	</table>

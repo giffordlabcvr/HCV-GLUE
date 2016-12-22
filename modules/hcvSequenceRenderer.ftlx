@@ -24,6 +24,9 @@
 	<@elem tag="country" expr="gb_country_official"/>
 	<@elem tag="collectionYear" expr="gb_collection_year"/>
 	<@elem tag="length" expr="gb_length"/>
+	<@elem tag="host" expr="gb_host"/>
+	<@elem tag="labConstruct" expr="gb_lab_construct" type="Boolean"/>
+	<@elem tag="recombinant" expr="gb_recombinant" type="Boolean"/>
 	<creationDate>${renderProperty('gb_create_date')}</creationDate>
 	<@elem tag="pubmedId" expr="gb_pubmed_id"/>
 	<@elem tag="isolate" expr="gb_isolate"/>
