@@ -59,8 +59,8 @@
 	</variationCategory>  -->
 	<variationCategory>
 		<name>resistance_associated_variants</name>
-		<displayName>Resistance-associated variants</displayName>
-		<description>Amino acids at a given codon location which have been associated with drug resistance</description>
+		<displayName>Resistance-associated substitutions</displayName>
+		<description>Amino acid substitutions associated with drug resistance</description>
 		<whereClause>is_resistance_associated_variant = 'true'</whereClause>
 		<selectedByDefault>true</selectedByDefault>
 		<objectRendererModule>hcvResistanceAssociatedVariantRenderer</objectRendererModule>

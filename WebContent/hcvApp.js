@@ -105,7 +105,7 @@ function ($scope, glueWS, glueWebToolConfig) {
 	$scope.brand = "HCV-GLUE";
 	$scope.homeMenuTitle = "Home";
 	$scope.analysisMenuTitle = "Analysis";
-	$scope.analysisToolMenuTitle = "Sequence Typing and Interpretation";
+	$scope.analysisToolMenuTitle = "Genotyping and Interpretation";
 	$scope.projectBrowserMenuTitle = "Sequence Database";
 	$scope.drugResistanceMenuTitle = "Drug Resistance";
 	$scope.projectBrowserAlignmentMenuTitle = "Clade Tree";

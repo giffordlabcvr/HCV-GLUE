@@ -4,11 +4,16 @@
 	HCV-GLUE analyses resistance to these DAA drugs. 
 	</p>
 
-	<table class="table table-nonfluid table-striped table-bordered">
+	<table class="table table-striped table-bordered">
 		<thead>
 			<th>Drug</th>		
 			<th>Category</th>		
 			<th>Company code</th>		
+			<colgroup>
+		       <col span="1" style="width: 25%;">
+		       <col span="1" style="width: 50%;">
+		       <col span="1" style="width: 25%;">
+		    </colgroup>
 		</thead>
 		<tbody>
 			<tr ng-repeat="drug in drugs track by $index">

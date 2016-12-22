@@ -1,4 +1,4 @@
-<div ng-app="projectBrowser">
+<div>
 	<h2>Sequences</h2>
 
 
@@ -6,8 +6,7 @@
 	<span ng-show="listSequenceResult.length == 0">None</span>
 	<div ng-show="listSequenceResult.length > 0">
 		<paging-buttons paging-context="pagingContext"></paging-buttons>
-		<p>Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}</p>
-
+		Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
 		<table class="table table-striped table-bordered">
 			<thead>
 				<th>NCBI Nucleotide ID</th>
@@ -18,6 +17,15 @@
 				<th>Collection Year</th>
 				<th>Reference</th>
 			</thead>
+			<colgroup>
+		       <col span="1" style="width: 10%;">
+		       <col span="1" style="width: 10%;">
+		       <col span="1" style="width: 10%;">
+		       <col span="1" style="width: 20%;">
+		       <col span="1" style="width: 15%;">
+		       <col span="1" style="width: 10%;">
+		       <col span="1" style="width: 20%;">
+			</colgroup>
 			<tbody>
 				<tr ng-repeat="sequenceResult in listSequenceResult track by $index">
 					<td><a href="#project/sequence/{{sequenceResult['source.name']}}/{{sequenceResult.sequenceID}}">{{sequenceResult.sequenceID}}</a></td>
@@ -33,5 +41,6 @@
 				</tr>
 			</tbody>
 		</table>
+		<paging-buttons paging-context="pagingContext"></paging-buttons>
 	</div>
 </div>

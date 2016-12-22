@@ -6,14 +6,19 @@
 	</p>
 
 	<paging-buttons paging-context="pagingContext"></paging-buttons>
-	<p>Substitutions {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}</p>
+	Substitutions {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
 
-	<table class="table table-nonfluid table-striped table-bordered">
+	<table class="table table-striped table-bordered">
 		<thead>
 			<th>Gene</th>		
 			<th>Substitution(s)</th>		
 			<th></th>		
 		</thead>
+		<colgroup>
+	       <col span="1" style="width: 25%;">
+	       <col span="1" style="width: 25%;">
+	       <col span="1" style="width: 50%;">
+		</colgroup>
 		<tbody>
 			<tr ng-repeat="rav in ravs track by $index">
 				<td>{{rav['featureLoc.feature.name']}}</td>
@@ -22,6 +27,7 @@
 			</tr>
 		</tbody>
 	</table>
+	<paging-buttons paging-context="pagingContext"></paging-buttons>
 	<h4>Notes</h4>
 	<ul>
 		<li>Codon locations are based on the H77 reference sequence (AF009606)</li>
