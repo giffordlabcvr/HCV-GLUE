@@ -20,11 +20,6 @@ projectBrowser.controller('hcvSequencesCtrl',
 					 "gb_collection_year",
 					 "gb_pubmed_id"] );
 			
-			$scope.pagingContext.setDefaultSortOrder([
-			    { property: "sequenceID", displayName: "NCBI Nucleotide ID", order: "+" }
-			]);
-
-			
 			$scope.pagingContext.setSortableProperties([
 	            { property:"sequenceID", displayName: "NCBI Nucleotide ID" },
 	            { property:"gb_create_date", displayName: "Creation Date" },
@@ -34,5 +29,17 @@ projectBrowser.controller('hcvSequencesCtrl',
 	            { property:"gb_pubmed_id", displayName: "PubMed ID" },
 	            { property:"gb_length", displayName: "Sequence Length" }
             ]);
-	
+
+			$scope.pagingContext.setDefaultSortOrder([
+  			    { property: "sequenceID", displayName: "NCBI Nucleotide ID", order: "+" }
+			]);
+
+			$scope.pagingContext.setFilterProperties([
+         		{ property: "sequenceID", displayName: "NCBI Nucleotide ID", filterHints: {type: "String", inputType:"text"} },
+        		{ property: "gb_length", displayName: "Sequence Length", filterHints: {type: "Integer", inputType:"number"} },
+        		{ property: "gb_create_date", displayName: "Creation Date", filterHints: {type: "Date", inputType:"date"} }
+			]);
+			                          			
+			$scope.pagingContext.setDefaultFilterElems([]);
+
 }]);
