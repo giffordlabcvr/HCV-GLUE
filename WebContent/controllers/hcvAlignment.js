@@ -38,6 +38,16 @@ hcvApp.controller('hcvAlignmentCtrl',
 	            { property:"sequence.gb_pubmed_id", displayName: "PubMed ID" },
 	            { property:"sequence.gb_length", displayName: "Sequence Length" }
             ]);
+			
+			
+			$scope.pagingContext.setFilterProperties([
+           		{ property: "sequence.sequenceID", displayName: "NCBI Nucleotide ID", filterHints: {type: "String", inputType:"text"} },
+          		{ property: "sequence.gb_length", displayName: "Sequence Length", filterHints: {type: "Integer", inputType:"number"} },
+          		{ property: "sequence.gb_create_date", displayName: "Creation Date", filterHints: {type: "Date", inputType:"date"} }
+  			]);
+  			                          			
+  			$scope.pagingContext.setDefaultFilterElems([]);
+
 
 			$scope.rasNoteWhereClause = "variation.is_resistance_associated_variant = 'true' and alignment.name = '"+$scope.almtName+"'";
 			$scope.rasNoteFields = [
@@ -72,7 +82,27 @@ hcvApp.controller('hcvAlignmentCtrl',
 			    .error(glueWS.raiseErrorDialog(dialogs, "listing RAS frequency notes"));
 			}
 			
-			$scope.rasPagingContext = pagingContext.createPagingContext($scope.updateRasPage);
+			$scope.updateRasCount = function(pContext) {
+				console.log("updateRasCount", pContext);
+				
+				var cmdParams = {
+			            "whereClause": $scope.rasNoteWhereClause
+				};
+				pContext.extendCountCmdParams(cmdParams);
+				glueWS.runGlueCommand("", {
+			    	"count": { 
+				        "var-almt-note":cmdParams
+			    	} 
+				})
+			    .success(function(data, status, headers, config) {
+					console.info('count RAS frequency notes raw result', data);
+					$scope.rasPagingContext.setTotalItems(data.countResult.count);
+					$scope.rasPagingContext.firstPage();
+			    })
+			    .error(glueWS.raiseErrorDialog(dialogs, "counting RAS frequency notes"));
+			}
+			
+			$scope.rasPagingContext = pagingContext.createPagingContext($scope.updateRasCount, $scope.updateRasPage);
 
 			$scope.rasPagingContext.setDefaultSortOrder([
 			    { property: "variation.featureLoc.feature.name", displayName: "Gene", order: "+" }
@@ -85,19 +115,7 @@ hcvApp.controller('hcvAlignmentCtrl',
 	            { property:"ncbi_curated_frequency", displayName: "Frequency" }
             ]);
 			
-			glueWS.runGlueCommand("", {
-		    	"count": { 
-			        "var-almt-note":{
-			            "whereClause": $scope.rasNoteWhereClause
-			        }
-		    	} 
-			})
-		    .success(function(data, status, headers, config) {
-				console.info('count RAS frequency notes raw result', data);
-				$scope.rasPagingContext.setTotalItems(data.countResult.count);
-				$scope.rasPagingContext.firstPage();
-		    })
-		    .error(glueWS.raiseErrorDialog(dialogs, "counting RAS frequency notes"));
+			$scope.rasPagingContext.countChanged();
 
 			
 		}]);

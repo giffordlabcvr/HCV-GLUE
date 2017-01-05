@@ -23,11 +23,11 @@
 		</p>
 	</div>
 	<h3>Curated NCBI clade member sequences</h3>
-	<span ng-show="memberList.length == 0">No sequences assigned to this clade</span>
+	<p>The following table lists NCBI sequences which were assigned to {{renderResult.alignment.renderedName}} (or any of its descendent clades) by the HCV-GLUE genotyping algorithm.
+	Sequences marked as recombinants, lab constructs or with a non-human host species are excluded from the list.</p>
+	<paging-buttons paging-context="pagingContext"></paging-buttons>
+	<span ng-show="memberList.length == 0">No sequences</span>
 	<div ng-show="memberList.length > 0">
-		<p>The following table lists NCBI sequences which were assigned to {{renderResult.alignment.renderedName}} (or any of its descendent clades) by the HCV-GLUE genotyping algorithm.
-		Sequences marked as recombinants, lab constructs or with a non-human host species are excluded from the list.</p>
-		<paging-buttons paging-context="pagingContext"></paging-buttons>
 		Members {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
 		<table class="table table-striped table-bordered">
 			<thead>
