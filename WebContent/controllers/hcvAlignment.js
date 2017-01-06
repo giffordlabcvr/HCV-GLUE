@@ -29,8 +29,8 @@ hcvApp.controller('hcvAlignmentCtrl',
 
 			
 			$scope.pagingContext.setSortableProperties([
-            { property:"alignment.name", displayName: "Genotype / Subtype" },
-            { property:"sequence.sequenceID", displayName: "NCBI Nucleotide ID" },
+                { property:"alignment.name", displayName: "Genotype / Subtype" },
+                { property:"sequence.sequenceID", displayName: "NCBI Nucleotide ID" },
 	            { property:"sequence.gb_create_date", displayName: "Creation Date" },
 	            { property:"sequence.gb_country_official", displayName: "Country of Origin" },
 	            { property:"sequence.gb_collection_year", displayName: "Collection Year" },
@@ -41,9 +41,15 @@ hcvApp.controller('hcvAlignmentCtrl',
 			
 			
 			$scope.pagingContext.setFilterProperties([
-           		{ property: "sequence.sequenceID", displayName: "NCBI Nucleotide ID", filterHints: {type: "String", inputType:"text"} },
-          		{ property: "sequence.gb_length", displayName: "Sequence Length", filterHints: {type: "Integer", inputType:"number"} },
-          		{ property: "sequence.gb_create_date", displayName: "Creation Date", filterHints: {type: "Date", inputType:"date"} }
+           		{ property:"sequence.sequenceID", displayName: "NCBI Nucleotide ID", filterHints: {type: "String"} },
+          		{ property:"sequence.gb_length", displayName: "Sequence Length", filterHints: {type: "Integer"} },
+          		{ property:"sequence.gb_create_date", displayName: "Creation Date", filterHints: {type: "Date"} },
+                { property:"alignment.displayName", displayName: "Genotype / Subtype", filterHints: {type: "String"}  },
+	            { property:"sequence.gb_country_official", displayName: "Country of Origin", filterHints: {type: "String"} },
+	            { property:"sequence.gb_collection_year", displayName: "Collection Year", filterHints: {type: "Integer"} },
+	            { property:"sequence.gb_isolate", displayName: "Isolate ID", filterHints: {type: "String"} },
+	            { property:"sequence.gb_pubmed_id", displayName: "PubMed ID", filterHints: {type: "String"} }
+
   			]);
   			                          			
   			$scope.pagingContext.setDefaultFilterElems([]);
@@ -114,6 +120,16 @@ hcvApp.controller('hcvAlignmentCtrl',
 	            { property:"variation.rav_substitutions", displayName: "Substitutions" },
 	            { property:"ncbi_curated_frequency", displayName: "Frequency" }
             ]);
+
+			
+			$scope.rasPagingContext.setFilterProperties([
+	     		{ property: "variation.featureLoc.feature.name", displayName: "Gene", filterHints: {type: "String"} },
+	    		{ property: "variation.rav_substitutions", displayName: "Substitutions", filterHints: {type: "Integer"} },
+	    		{ property: "ncbi_curated_frequency", displayName: "Frequency (percentage)", filterHints: {type: "Double"} }
+			]);
+			                          			
+			$scope.rasPagingContext.setDefaultFilterElems([]);
+
 			
 			$scope.rasPagingContext.countChanged();
 

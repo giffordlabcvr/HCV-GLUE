@@ -22,13 +22,13 @@
 			</div>
 		</p>
 	</div>
-	<h3>Curated NCBI clade member sequences</h3>
-	<p>The following table lists NCBI sequences which were assigned to {{renderResult.alignment.renderedName}} (or any of its descendent clades) by the HCV-GLUE genotyping algorithm.
-	Sequences marked as recombinants, lab constructs or with a non-human host species are excluded from the list.</p>
+	<h3>NCBI Sequences within {{renderResult.alignment.renderedName}}</h3>
+	<p>The following sequences were assigned to {{renderResult.alignment.renderedName}}{{renderResult.alignment.child == null ? "" : " (or one of its descendent clades)"}} by the HCV-GLUE genotyping algorithm.</p>
+	<p>Sequences identified as recombinants, lab constructs or having a non-human host species are excluded from the list.</p>
 	<paging-buttons paging-context="pagingContext"></paging-buttons>
 	<span ng-show="memberList.length == 0">No sequences</span>
 	<div ng-show="memberList.length > 0">
-		Members {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
+		Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
 		<table class="table table-striped table-bordered">
 			<thead>
 				<th>NCBI Nucleotide ID</th>
@@ -52,7 +52,7 @@
 		    </colgroup>
 			<tbody>
 				<tr ng-repeat="member in memberList track by $index">
-					<td><a href="#project/sequence/ncbi-curated/{{member['sequence.sequenceID']}}">
+					<td><a href="#project/sequence/ncbi-curated/{{member['sequence.sequenceID']}}" target="_blank">
 							{{member['sequence.sequenceID']}} </a></td>
 					<td><a href="#project/alignment/{{member['alignment.name']}}">
 							{{member['alignment.displayName']}} </a></td>
@@ -74,8 +74,9 @@
 	<h3>Resistance associated substitutions</h3>
 	<span ng-show="rasNoteList.length == 0">No significant data</span>
 	<div ng-show="rasNoteList.length > 0">
-		<p>The table below summarises the occurence of resistance-associated substitutions across all NCBI curated sequences belonging to 
-		{{renderResult.alignment.renderedName}}. Resistance-associated substitutions are omitted if fewer than 30 clade members were available, 
+		<p>The table below summarises the occurence of resistance-associated substitutions across all NCBI sequences within 
+		{{renderResult.alignment.renderedName}}.</p>
+		<p>Resistance-associated substitutions are omitted if fewer than 30 clade members were available, 
 		or if fewer than 1% of clade members contained the substitution.</p>
 		<paging-buttons paging-context="rasPagingContext"></paging-buttons>
 		Substitutions {{rasPagingContext.firstItemIndex}} to {{rasPagingContext.lastItemIndex}} of {{rasPagingContext.totalItems}}

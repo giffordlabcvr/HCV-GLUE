@@ -17,21 +17,25 @@ hcvApp.controller('hcvRavsCtrl',
 					            ];
 
 			
-			glueWS.runGlueCommand("", {
-				"count":{
-					"variation":{
+			$scope.updateCount = function(pContext) {
+				console.log("updateCount", pContext);
+				var cmdParams = {
 						"whereClause":$scope.whereClause
+				};
+				pContext.extendCountCmdParams(cmdParams);
+				glueWS.runGlueCommand("", {
+					"count":{
+						"variation":cmdParams
 					}
 				}
+				)
+			    .success(function(data, status, headers, config) {
+					console.info('count variations raw result', data);
+					pContext.setTotalItems(data.countResult.count);
+					pContext.firstPage();
+			    })
+			    .error(glueWS.raiseErrorDialog(dialogs, "counting variations"));
 			}
-			)
-		    .success(function(data, status, headers, config) {
-				console.info('count variations raw result', data);
-				$scope.pagingContext.setTotalItems(data.countResult.count);
-				$scope.pagingContext.firstPage();
-		    })
-		    .error(glueWS.raiseErrorDialog(dialogs, "counting variations"));
-
 			
 			$scope.updatePage = function(pContext) {
 				console.log("updatePage", pContext);
@@ -50,7 +54,7 @@ hcvApp.controller('hcvRavsCtrl',
 				.error(glueWS.raiseErrorDialog(dialogs, "retrieving resistance associated substitutions"));
 			}
 			
-			$scope.pagingContext = pagingContext.createPagingContext($scope.updatePage);
+			$scope.pagingContext = pagingContext.createPagingContext($scope.updateCount, $scope.updatePage);
 
 			$scope.pagingContext.setDefaultSortOrder([
 	            { property:"featureLoc.feature.name", displayName: "Gene", order: "+" },
@@ -64,5 +68,12 @@ hcvApp.controller('hcvRavsCtrl',
   	            { property:"rav_substitutions", displayName: "Substitutions" }
               ]);
 
+			$scope.pagingContext.setFilterProperties([
+	            { property:"featureLoc.feature.name", displayName: "Gene", filterHints: {type: "String"} },
+	            { property:"rav_substitutions", displayName: "Substitutions", filterHints: {type: "String"} }
+	        ]);
+			                          			                          			
+  			$scope.pagingContext.setDefaultFilterElems([]);
+  			$scope.pagingContext.countChanged();
 
 		}]);

@@ -23,21 +23,6 @@ hcvApp.controller('hcvDrugResistancePublicationCtrl',
 					                "variation.rav_substitutions"
 					            ];
 
-			glueWS.runGlueCommand("", {
-				"count":{
-					"custom-table-row":{
-						"whereClause":$scope.whereClause,
-						"tableName":"drug_resistance_finding"
-					}
-				}
-			}
-			)
-		    .success(function(data, status, headers, config) {
-				console.info('count findings raw result', data);
-				$scope.pagingContext.setTotalItems(data.countResult.count);
-				$scope.pagingContext.firstPage();
-		    })
-		    .error(glueWS.raiseErrorDialog(dialogs, "counting findings"));
 			
 
 			
@@ -52,6 +37,28 @@ hcvApp.controller('hcvDrugResistancePublicationCtrl',
 			})
 			.error(glueWS.raiseErrorDialog(dialogs, "rendering drug resistance publication"));
 
+			
+			$scope.updateCount = function(pContext) {
+				console.log("updatePage", pContext);
+				var cmdParams = {
+					"whereClause":$scope.whereClause,
+					"tableName":"drug_resistance_finding"
+				};
+				pContext.extendCountCmdParams(cmdParams);
+				glueWS.runGlueCommand("", {
+					"count":{
+						"custom-table-row":cmdParams
+					}
+				}
+				)
+			    .success(function(data, status, headers, config) {
+					console.info('count findings raw result', data);
+					pContext.setTotalItems(data.countResult.count);
+					pContext.firstPage();
+			    })
+			    .error(glueWS.raiseErrorDialog(dialogs, "counting findings"));
+			}
+			
 			$scope.updatePage = function(pContext) {
 				console.log("updatePage", pContext);
 				var cmdParams = {
@@ -70,7 +77,7 @@ hcvApp.controller('hcvDrugResistancePublicationCtrl',
 				.error(glueWS.raiseErrorDialog(dialogs, "retrieving drug resistance findings"));
 			}
 
-			$scope.pagingContext = pagingContext.createPagingContext($scope.updatePage);
+			$scope.pagingContext = pagingContext.createPagingContext($scope.updateCount, $scope.updatePage);
 			
 			$scope.pagingContext.setDefaultSortOrder([
                 { property:"variation.featureLoc.feature.name", displayName: "Gene", order: "+" },
@@ -87,5 +94,20 @@ hcvApp.controller('hcvDrugResistancePublicationCtrl',
   	            { property:"max_fold_change", displayName: "Maximum EC50 Fold Change" },
   	            { property:"drug.id", displayName: "Drug" }
               ]);
+
+			$scope.pagingContext.setFilterProperties([
+         		{ property:"replicon_clade.displayName", displayName: "Replicon Clade", filterHints: {type: "String"} },
+	            { property:"min_fold_change", displayName: "Min. EC50 Fold Change", filterHints: {type: "Double"} },
+	            { property:"max_fold_change", displayName: "Max. EC50 Fold Change", filterHints: {type: "Double"} },
+           		{ property:"drug.id", displayName: "Drug", filterHints: {type: "String"} },
+           		{ property:"variation.featureLoc.feature.name", displayName: "Gene", filterHints: {type: "String"} },
+           		{ property:"variation.rav_substitutions", displayName: "Substitutions", filterHints: {type: "String"} }
+    	      ]);
+  			                          			
+  			$scope.pagingContext.setDefaultFilterElems([]);
+
+  			
+  			
+			$scope.pagingContext.countChanged();
 
 		}]);

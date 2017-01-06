@@ -1,7 +1,7 @@
 <div>
 	<h2>Sequences</h2>
 
-
+	<p>This page contains all NCBI sequences identified as Hepatitis C Virus.</p>
 
 	<paging-buttons paging-context="pagingContext"></paging-buttons>
 	<span ng-show="listSequenceResult.length == 0">None</span>
@@ -28,7 +28,7 @@
 			</colgroup>
 			<tbody>
 				<tr ng-repeat="sequenceResult in listSequenceResult track by $index">
-					<td><a href="#project/sequence/{{sequenceResult['source.name']}}/{{sequenceResult.sequenceID}}">{{sequenceResult.sequenceID}}</a></td>
+					<td><a href="#project/sequence/{{sequenceResult['source.name']}}/{{sequenceResult.sequenceID}}" target="_blank">{{sequenceResult.sequenceID}}</a></td>
 					<td>{{sequenceResult.gb_create_date}}</td>
 					<td>{{sequenceResult.gb_length}}</td>
 					<td>{{handleNull(sequenceResult.gb_isolate)}}</td>

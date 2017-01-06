@@ -1,4 +1,4 @@
-<div ng-cloak ng-app="hcvApp">
+<div ng-cloak>
 	<h2>{{drPubRenderResult.drugPublication.displayName}}</h2>
 		{{drPubRenderResult.drugPublication.authors}}
 		<br/>
@@ -8,11 +8,13 @@
 		<br/>
 		<a href="{{drPubRenderResult.drugPublication.webLink}}" target="_blank">View publication <span class="glyphicon glyphicon-link"></span></a>
 	<h4>Resistance Findings</h4>
+	<p>The following drug resistance findings were collated from {{drPubRenderResult.drugPublication.displayName}}.</p>
 	<paging-buttons paging-context="pagingContext"></paging-buttons>
 	<div ng-show="drugResistanceFindings.length == 0">
-	No resistance findings collated
+	No resistance findings collated.
 	</div>
 	<div ng-show="drugResistanceFindings.length > 0">
+		<p>
 		Findings {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
 		<table class="table table-striped table-bordered">
 			<thead>
@@ -40,5 +42,6 @@
 			</tbody>
 		</table>
 		<paging-buttons paging-context="pagingContext"></paging-buttons>
+		</p>
 	</div>	
 </div>
