@@ -21,7 +21,8 @@
 		<renderedName>${referenceSequence.getRenderedName()}</renderedName>
 	</referenceSequence>
 </#list>
-	<@elem tag="country" expr="gb_country_official"/>
+	<@elem tag="country" expr="gb_country_short"/>
+	<@elem tag="country_iso" expr="gb_country_iso"/>
 	<@elem tag="collectionYear" expr="gb_collection_year"/>
 	<@elem tag="length" expr="gb_length"/>
 	<@elem tag="host" expr="gb_host"/>

@@ -70,7 +70,6 @@
 		</gbQualifier>
 		<gbQualifier name="country">
 			<isoCountryFieldPopulator fieldName="gb_country_iso" codeStyle="ALPHA_3"/>
-			<isoCountryFieldPopulator fieldName="gb_country_official" codeStyle="OFFICIAL"/>
 			<fieldPopulator fieldName="gb_country"/>
 		</gbQualifier>
 		<gbQualifier name="host">

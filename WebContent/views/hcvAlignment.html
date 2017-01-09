@@ -59,7 +59,7 @@
 					<td>{{member['sequence.gb_create_date']}}</td>
 					<td>{{member['sequence.gb_length']}}</td>
 					<td>{{handleNull(member['sequence.gb_isolate'])}}</td>
-					<td>{{handleNull(member['sequence.gb_country_official'])}}</td>
+					<td>{{member['sequence.gb_country_short'] ? (member['sequence.gb_country_short']+" ("+member['sequence.gb_country_iso']+")"):"-"}}</td>
 					<td>{{handleNull(member['sequence.gb_collection_year'])}}</td>
 					<td ng-show="member['sequence.gb_pubmed_id'] == null">-</td>
 					<td ng-show="member['sequence.gb_pubmed_id'] != null">

@@ -22,4 +22,7 @@
   multi-copy field sequence -w "source.name = 'ncbi-curated' and epa_genotype != null" epa_genotype genotype
   multi-copy field sequence -w "source.name = 'ncbi-curated' and epa_subtype != null" epa_subtype subtype
   multi-set field sequence -w "source.name = 'ncbi-curated' and epa_genotype != null" genotyping_method "EPA genotyping"
+
+  # update gb_country_short based on gb_country_iso
+  run file glue/hcvCountryUpdate.glue
   

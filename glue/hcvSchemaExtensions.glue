@@ -14,7 +14,7 @@ schema-project hcv
     create field gb_pubmed_id VARCHAR
     create field gb_country VARCHAR
     create field gb_country_iso VARCHAR
-    create field gb_country_official VARCHAR
+    create field gb_country_short VARCHAR 50
     create field gb_collection_year INTEGER 
     create field gb_collection_month VARCHAR
     create field gb_collection_month_day INTEGER
