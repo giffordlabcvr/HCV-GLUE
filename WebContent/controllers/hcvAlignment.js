@@ -125,7 +125,7 @@ hcvApp.controller('hcvAlignmentCtrl',
 			
 			$scope.rasPagingContext.setFilterProperties([
 	     		{ property: "variation.featureLoc.feature.name", displayName: "Gene", filterHints: {type: "String"} },
-	    		{ property: "variation.rav_substitutions", displayName: "Substitutions", filterHints: {type: "Integer"} },
+	    		{ property: "variation.rav_substitutions", displayName: "Substitutions", filterHints: {type: "String"} },
 	    		{ property: "ncbi_curated_frequency", displayName: "Frequency (percentage)", filterHints: {type: "Double"} }
 			]);
 			                          			
