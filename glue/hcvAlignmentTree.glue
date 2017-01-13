@@ -27,9 +27,9 @@
     add member -w "source.name in ('concatenated-refseqs', 'hcv-additional-refs', 'ncbi-refseqs', 'ncbi-refseqs-subgenomic')"
     # curated members
     add member -w "source.name = 'ncbi-curated' and \
-      (gb_host = 'Homo sapiens' or gb_host = null) and \
-      (gb_lab_construct = null or gb_lab_construct = 'false') and \
-      (gb_recombinant = null or gb_recombinant = 'false') and \
+      ( gb_host = 'Homo sapiens' or gb_host = null ) and \
+      ( gb_lab_construct = 'false' ) and \
+      ( gb_recombinant = 'false' ) and \
       ( epa_genotype != null )"
     extract child AL_1 --refName REF_1_AF009606
     demote member AL_1 --whereClause "sequence.genotype = '1'" 

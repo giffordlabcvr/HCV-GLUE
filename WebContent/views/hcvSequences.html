@@ -1,7 +1,7 @@
 <div>
 	<h2>Sequences</h2>
 
-	<p>This page contains all NCBI sequences identified as Hepatitis C Virus.</p>
+	<p>This dataset contains all NCBI sequences identified as Hepatitis C Virus.</p>
 
 	<paging-buttons paging-context="pagingContext"></paging-buttons>
 	<span ng-show="listSequenceResult.length == 0">None</span>
@@ -10,7 +10,8 @@
 		<table class="table table-striped table-bordered">
 			<thead>
 				<th>NCBI Nucleotide ID</th>
-				<th>Creation Date</th>
+				<th>NCBI Entry Creation Date</th>
+				<th>NCBI Last Update Date</th>
 				<th>Sequence Length</th>
 				<th>Isolate ID</th>
 				<th>Country of Origin</th>
@@ -21,15 +22,17 @@
 		       <col span="1" style="width: 10%;">
 		       <col span="1" style="width: 10%;">
 		       <col span="1" style="width: 10%;">
+		       <col span="1" style="width: 10%;">
 		       <col span="1" style="width: 20%;">
 		       <col span="1" style="width: 15%;">
 		       <col span="1" style="width: 10%;">
-		       <col span="1" style="width: 20%;">
+		       <col span="1" style="width: 15%;">
 			</colgroup>
 			<tbody>
 				<tr ng-repeat="sequenceResult in listSequenceResult track by $index">
 					<td><a href="#project/sequence/{{sequenceResult['source.name']}}/{{sequenceResult.sequenceID}}" target="_blank">{{sequenceResult.sequenceID}}</a></td>
 					<td>{{sequenceResult.gb_create_date}}</td>
+					<td>{{sequenceResult.gb_update_date}}</td>
 					<td>{{sequenceResult.gb_length}}</td>
 					<td>{{handleNull(sequenceResult.gb_isolate)}}</td>
 					<td>{{sequenceResult.gb_country_short ? (sequenceResult.gb_country_short+" ("+sequenceResult.gb_country_iso+")"):"-"}}</td>

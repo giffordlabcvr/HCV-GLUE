@@ -33,7 +33,8 @@
 			<thead>
 				<th>NCBI Nucleotide ID</th>
 				<th>Genotype / Subtype</th>
-				<th>Creation Date</th>
+				<th>NCBI Entry Creation Date</th>
+				<th>NCBI Last Update Date</th>
 				<th>Sequence Length</th>
 				<th>Isolate ID</th>
 				<th>Country of Origin</th>
@@ -45,10 +46,11 @@
 		       <col span="1" style="width: 10%;">
 		       <col span="1" style="width: 10%;">
 		       <col span="1" style="width: 10%;">
-		       <col span="1" style="width: 20%;">
-		       <col span="1" style="width: 15%;">
 		       <col span="1" style="width: 10%;">
 		       <col span="1" style="width: 15%;">
+		       <col span="1" style="width: 15%;">
+		       <col span="1" style="width: 10%;">
+		       <col span="1" style="width: 10%;">
 		    </colgroup>
 			<tbody>
 				<tr ng-repeat="member in memberList track by $index">
@@ -57,6 +59,7 @@
 					<td><a href="#project/alignment/{{member['alignment.name']}}">
 							{{member['alignment.displayName']}} </a></td>
 					<td>{{member['sequence.gb_create_date']}}</td>
+					<td>{{member['sequence.gb_update_date']}}</td>
 					<td>{{member['sequence.gb_length']}}</td>
 					<td>{{handleNull(member['sequence.gb_isolate'])}}</td>
 					<td>{{member['sequence.gb_country_short'] ? (member['sequence.gb_country_short']+" ("+member['sequence.gb_country_iso']+")"):"-"}}</td>

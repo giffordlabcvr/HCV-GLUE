@@ -10,6 +10,8 @@
 
   # if there's no evidence the sequence is a recombinant, assume it is not.
   multi-set field sequence -w "source.name = 'ncbi-curated' and gb_recombinant = null" gb_recombinant false
+  # same for lab constructs.
+  multi-set field sequence -w "source.name = 'ncbi-curated' and gb_lab_construct = null" gb_lab_construct false
   
   # ViPR genotyping results
   module viprSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f tabular/vipr/45125869619-ViprAllHcv.tsv

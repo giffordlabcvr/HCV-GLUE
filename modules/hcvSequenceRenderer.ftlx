@@ -29,6 +29,7 @@
 	<@elem tag="labConstruct" expr="gb_lab_construct" type="Boolean"/>
 	<@elem tag="recombinant" expr="gb_recombinant" type="Boolean"/>
 	<creationDate>${renderProperty('gb_create_date')}</creationDate>
+	<updateDate>${renderProperty('gb_update_date')}</updateDate>
 	<@elem tag="pubmedId" expr="gb_pubmed_id"/>
 	<@elem tag="isolate" expr="gb_isolate"/>
 </sequence>
