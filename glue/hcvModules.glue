@@ -48,4 +48,8 @@
   
   create module -f modules/viprSubtypePopulator.xml
   create module -f modules/epaSubtypePopulator.xml
-  
+
+  create module --moduleType fastaAlignmentExporter
+  create module --moduleType fastaProteinAlignmentExporter
+  create module --moduleType nucleotideConsensusGenerator
+  create module --moduleType aminoAcidConsensusGenerator  
