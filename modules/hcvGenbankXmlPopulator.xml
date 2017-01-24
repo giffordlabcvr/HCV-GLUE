@@ -71,6 +71,10 @@
 		<gbQualifier name="country">
 			<isoCountryFieldPopulator fieldName="gb_country_iso" codeStyle="ALPHA_3"/>
 			<fieldPopulator fieldName="gb_country"/>
+			<fieldPopulator fieldName="gb_place_sampled">
+				<matchPattern>^.*:(.*)$</matchPattern>
+				<outputTemplate>${g1?trim}</outputTemplate>
+			</fieldPopulator>
 		</gbQualifier>
 		<gbQualifier name="host">
 			<fieldPopulator fieldName="gb_host">
