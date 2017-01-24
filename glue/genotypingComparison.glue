@@ -1,93 +1,267 @@
-# All NCBI curated
-count sequence -w "source.name = 'ncbi-curated'" 
+# All non-recombinant, non-construct NCBI curated
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false'" 
 
-# NCBI curated where genotype is defined in the metadata
-count sequence -w "source.name = 'ncbi-curated' and \
-	gb_genotype != null" 
+# All non-construct NCBI recombinants
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'true' and gb_lab_construct = 'false'" 
 
-# NCBI curated where genotype and subtype are defined in the metadata
-count sequence -w "source.name = 'ncbi-curated' and \
-	gb_genotype != null and gb_subtype != null" 
+# Section: Metadata, EPA and ViPR genotypes assigned
+# Result: Metadata, EPA and ViPR all agree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype != null and \
+    gb_genotype = epa_genotype and epa_genotype = vipr_genotype and vipr_genotype = gb_genotype"
+# Result: Metadata and EPA agree on genotype but disagree with ViPR
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype != null and \
+    gb_genotype = epa_genotype and epa_genotype != vipr_genotype and vipr_genotype != gb_genotype"
+# Result: EPA and ViPR agree on genotype but disagree with Metadata
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype != null and \
+    gb_genotype != epa_genotype and epa_genotype = vipr_genotype and vipr_genotype != gb_genotype"
+# Result: ViPR and Metadata agree on genotype but disagree with EPA
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype != null and \
+    gb_genotype != epa_genotype and epa_genotype != vipr_genotype and vipr_genotype = gb_genotype"
+# Result: Metadata, EPA and ViPR all disagree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype != null and \
+    gb_genotype != epa_genotype and epa_genotype != vipr_genotype and vipr_genotype != gb_genotype"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype != null"
+# Section end
 
-# NCBI curated recombinants (according to metadata)
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'true'"
+# Section: Only metadata and EPA genotypes assigned
+# Result: Metadata and EPA agree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype == null and \
+    gb_genotype = epa_genotype"
+# Result: Metadata and EPA disagree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype == null and \
+    gb_genotype != epa_genotype"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype != null and \
+    vipr_genotype == null"
+# Section end
 
-# Genotype correctness
+# Section: Only metadata and ViPR genotypes assigned
+# Result: ViPR and metadata agree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype == null and \
+    vipr_genotype != null and \
+    vipr_genotype = gb_genotype"
+# Result: ViPR and metadata disagree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype == null and \
+    vipr_genotype != null and \
+    vipr_genotype != gb_genotype"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype == null and \
+    vipr_genotype != null"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype
-# 2. Metadata and ViPR agree, but EPA differs on genotype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and \
-	epa_genotype != null and \
-	vipr_genotype != null and \
-	gb_genotype = vipr_genotype and gb_genotype != epa_genotype" 
+# Section: Only metadata genotype assigned
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and \
+    epa_genotype == null and \
+    vipr_genotype == null"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype
-# 2. Metadata and EPA agree, but ViPR differs on genotype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and \
-	epa_genotype != null and \
-	vipr_genotype != null and \
-	gb_genotype = epa_genotype and gb_genotype != vipr_genotype" 
-	
+# Section: Only EPA and ViPR genotypes assigned
+# Result: EPA and ViPR agree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype == null and \
+    epa_genotype != null and \
+    vipr_genotype != null and \
+    epa_genotype = vipr_genotype"
+# Result: EPA and ViPR disagree on genotype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype == null and \
+    epa_genotype != null and \
+    vipr_genotype != null and \
+    epa_genotype != vipr_genotype"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype == null and \
+    epa_genotype != null and \
+    vipr_genotype != null"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype
-# 2. EPA and ViPR agree, but Metadata differs on genotype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and \
-	epa_genotype != null and \
-	vipr_genotype != null and \
-	epa_genotype = vipr_genotype and gb_genotype != epa_genotype" 
+# Section: Only EPA genotype assigned
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype == null and \
+    epa_genotype != null and \
+    vipr_genotype == null"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype
-# 2. EPA, ViPR and Metadata differ on genotype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and \
-	epa_genotype != null and \
-	vipr_genotype != null and \
-	epa_genotype != vipr_genotype and epa_genotype != gb_genotype and vipr_genotype != gb_genotype" 
+# Section: Only ViPR genotype assigned
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype == null and \
+    epa_genotype == null and \
+    vipr_genotype != null"
+# Section end
 
-# Subtype correctness
+# Section: Neither metadata, EPA nor ViPR define genotype
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype == null and \
+    epa_genotype == null and \
+    vipr_genotype == null"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype and subtype
-# 2. Metadata and ViPR agree, but EPA differs on genotype or subtype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and gb_subtype != null and \
-	epa_genotype != null and epa_subtype != null and \
-	vipr_genotype != null and vipr_subtype != null and \
-	gb_genotype = vipr_genotype and gb_subtype = vipr_subtype and (gb_genotype != epa_genotype or gb_subtype != epa_subtype)" 
+# Section: Metadata, EPA and ViPR subtypes assigned
+# Result: Metadata, EPA and ViPR all agree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null and \
+    gb_genotype = epa_genotype and gb_subtype = epa_subtype and epa_genotype = vipr_genotype and epa_subtype = vipr_subtype and vipr_genotype = gb_genotype and vipr_subtype = gb_subtype"
+# Result: Metadata and EPA agree on subtype but disagree with ViPR
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null and \
+    gb_genotype = epa_genotype and gb_subtype = epa_subtype and (epa_genotype != vipr_genotype or epa_subtype != vipr_subtype) and (vipr_genotype != gb_genotype or vipr_subtype != gb_subtype)"
+# Result: EPA and ViPR agree on subtype but disagree with Metadata
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null and \
+    (gb_genotype != epa_genotype or gb_subtype != epa_subtype) and epa_genotype = vipr_genotype and epa_subtype = vipr_subtype and (vipr_genotype != gb_genotype or vipr_subtype != gb_subtype)"
+# Result: ViPR and Metadata agree on subtype but disagree with EPA
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null and \
+    (gb_genotype != epa_genotype or gb_subtype != epa_subtype) and (epa_genotype != vipr_genotype or epa_subtype != vipr_subtype) and vipr_genotype = gb_genotype and vipr_subtype = gb_subtype"
+# Result: Metadata, EPA and ViPR all disagree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null and \
+    (gb_genotype != epa_genotype or gb_subtype != epa_subtype) and (epa_genotype != vipr_genotype or epa_subtype != vipr_subtype) and (vipr_genotype != gb_genotype or vipr_subtype != gb_subtype)"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype and subtype
-# 2. Metadata and EPA agree, but ViPR differs on genotype or subtype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and gb_subtype != null and \
-	epa_genotype != null and epa_subtype != null and \
-	vipr_genotype != null and vipr_subtype != null and \
-	gb_genotype = epa_genotype and gb_subtype = epa_subtype and (gb_genotype != vipr_genotype or gb_subtype != vipr_subtype)" 
-	
+# Section: Only metadata and EPA subtypes assigned
+# Result: Metadata and EPA agree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    (vipr_genotype == null or vipr_subtype == null) and \
+    gb_genotype = epa_genotype and gb_subtype = epa_subtype"
+# Result: Metadata and EPA disagree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    (vipr_genotype == null or vipr_subtype == null) and \
+    (gb_genotype != epa_genotype or gb_subtype != epa_subtype)"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    epa_genotype != null and epa_subtype != null and \
+    (vipr_genotype == null or vipr_subtype == null)"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype and subtype
-# 2. EPA and ViPR agree, but Metadata differs on genotype or subtype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and gb_subtype != null and \
-	epa_genotype != null and epa_subtype != null and \
-	vipr_genotype != null and vipr_subtype != null and \
-	epa_genotype = vipr_genotype and epa_subtype = vipr_subtype and (gb_genotype != epa_genotype or gb_subtype != epa_subtype)" 
+# Section: Only metadata and ViPR subtypes assigned
+# Result: ViPR and metadata agree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    (epa_genotype == null or epa_subtype == null) and \
+    vipr_genotype != null and vipr_subtype != null and \
+    vipr_genotype = gb_genotype and vipr_subtype = gb_subtype"
+# Result: ViPR and metadata disagree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    (epa_genotype == null or epa_subtype == null) and \
+    vipr_genotype != null and vipr_subtype != null and \
+    (vipr_genotype != gb_genotype or vipr_subtype != gb_subtype)"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    (epa_genotype == null or epa_subtype == null) and \
+    vipr_genotype != null and vipr_subtype != null"
+# Section end
 
-# NCBI curated non-recombinants, where
-# 1. Metadata, EPA and ViPR all define genotype and subtype
-# 2. EPA, ViPR and Metadata differ on genotype or subtype
-count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and \
-	gb_genotype != null and gb_subtype != null and \
-	epa_genotype != null and epa_subtype != null and \
-	vipr_genotype != null and vipr_subtype != null and \
-	( ( epa_genotype != vipr_genotype and epa_genotype != gb_genotype and vipr_genotype != gb_genotype ) or \
-	  ( epa_subtype != vipr_subtype and epa_subtype != gb_subtype and vipr_subtype != gb_subtype ) )" 
+# Section: Only metadata subtype assigned
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    gb_genotype != null and gb_subtype != null and \
+    (epa_genotype == null or epa_subtype == null) and \
+    (vipr_genotype == null or vipr_subtype == null)"
+# Section end
+
+# Section: Only EPA and ViPR subtypes assigned
+# Result: EPA and ViPR agree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    (gb_genotype == null or gb_subtype == null) and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null and \
+    epa_genotype = vipr_genotype and epa_subtype = vipr_subtype"
+# Result: EPA and ViPR disagree on subtype
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    (gb_genotype == null or gb_subtype == null) and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null and \
+    (epa_genotype != vipr_genotype or epa_subtype != vipr_subtype)"
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    (gb_genotype == null or gb_subtype == null) and \
+    epa_genotype != null and epa_subtype != null and \
+    vipr_genotype != null and vipr_subtype != null"
+# Section end
+
+# Section: Only EPA subtype assigned
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    (gb_genotype == null or gb_subtype == null) and \
+    epa_genotype != null and epa_subtype != null and \
+    (vipr_genotype == null or vipr_subtype == null)"
+# Section end
+
+# Section: Only ViPR subtype assigned
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    (gb_genotype == null or gb_subtype == null) and \
+    (epa_genotype == null or epa_subtype == null) and \
+    vipr_genotype != null and vipr_subtype != null"
+# Section end
+
+# Section: Neither metadata, EPA nor ViPR define subtype
+# Result: Total
+count sequence -w "source.name = 'ncbi-curated' and gb_recombinant = 'false' and gb_lab_construct = 'false' and \
+    (gb_genotype == null or gb_subtype == null) and \
+    (epa_genotype == null or epa_subtype == null) and \
+    (vipr_genotype == null or vipr_subtype == null)"
+# Section end
+
 
