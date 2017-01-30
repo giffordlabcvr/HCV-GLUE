@@ -1,7 +1,10 @@
-  # ViPR genotyping results
-  module viprSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f tabular/vipr/45125869619-ViprAllHcv.tsv
+  multi-unset field sequence -a epa_genotype
+  multi-unset field sequence -a epa_genotype_final_clade
+  multi-unset field sequence -a epa_subtype
+  multi-unset field sequence -a epa_subtype_final_clade
   
-  # EPA genotyping results
+  
+
   module epaSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f genotyping/curatedGenotypes_part1.tsv
   module epaSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f genotyping/curatedGenotypes_part2.tsv
 
