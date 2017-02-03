@@ -11,6 +11,6 @@
 
 	<!-- where the alignment will come from -->
 	<alignmentAlignmentName>AL_UNCONSTRAINED</alignmentAlignmentName>
-	<alignmentRelatedRefName>H77_AF009606</alignmentRelatedRefName>
+	<alignmentRelatedRefName>REF_MASTER_NC_004102</alignmentRelatedRefName>
 	<alignmentFeatureName>precursor_polyprotein</alignmentFeatureName>
 </maxLikelihoodPlacer>

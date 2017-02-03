@@ -1458,7 +1458,7 @@ AACGGGGAGATAAACACTCCAGGCCAATAGGCCATTCGGTTTTTTTGTTTTTTTTTTTTTTTTTTTTTTT
 TTTTTTTTTTTTTTTT------------------------------------------------------
 ----------------------------------------------------------------------
 -------------------------------------------------------------
->confirmed.ncbi-refseqs.AF009606
+>confirmed.ncbi-refseqs.NC_004102
 ----GCCAGCCCCC-TGATGGGGGCGACACTCCACCAT-GAATCACTCCCCTGTGAGGAACTACTGTCTT
 CACGCAGAAAGCGTCTAGCCATGGCGTTAGTATGAGTGTCGTGCAGCCTCCAGGACCCCCCCTCCCGGGA
 GAGCCATAGTGGTCTGCGGAACCGGTGAGTACACCGGAATTGCCAGGACGACCGGGTCCTTTC--TTGGA
@@ -3064,7 +3064,7 @@ AACGGGCGGCCTCAAGCAACACTCCATTTGCCCTTTTTTTTTTTTTTTTTTTTTT---------------
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 -------------------------------------------------------------
->confirmed.ncbi-refseqs.D84262
+>confirmed.ncbi-refseqs.NC_009827
 ----GCCAGCCCC-TTAAC-GGGGCGACACTCCACCAT-G-ATCACTCCCCTGTGAGGAACTACTGTCTT
 CACGCAGAAAGCGTCTAGCCATGGCGTTAGTATGAGTGTCGTGCAGCCTCCAGGCCCCCCCCTCCCGGGA
 GAGCCATAGTAGTCTGCGGAACCGGTGAGTACACCGGAATTGCCAGGACGACCGGGTCCTTTCCATTGGA
@@ -22920,7 +22920,7 @@ GAGCGGCACACATTAGCTACACTCCATAGC----------------------------------------
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 -------------------------------------------------------------
->confirmed.ncbi-refseqs.EF108306
+>confirmed.ncbi-refseqs.NC_030791
 ---------------------------------------GAATCACTCCCCTGCGAGGAACCACTGTCCT
 CACGCAGAAAGCGTCTAGCCATGACGTTAGTATGAGTGTCGTACAGCCTCCAGGACCCCCCCTCCCGGGA
 GAGCCATAGTGGTCTGCGGAACCGGTGAGTACACCGGAATTGCCGGGAAGACTGGGTCCTTTC--TTGGA
@@ -24526,7 +24526,7 @@ AGCTGGGAGCTAAACACTCC--------------------------------------------------
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 -------------------------------------------------------------
->confirmed.ncbi-refseqs.Y11604
+>confirmed.ncbi-refseqs.NC_009825
 --------------------------------------------------------------------TT
 CACGCAGAAAGCGTCTAGCCATGGCGTTAGTATGAGTGTTGTACAGCCTCCAGGACCCCCCCTCCCGGGA
 GAGCCATAGTGGTCTTCGGAACCGGTGAGTACACCGGAATCGCCGGGATGACCGGGTCCTTTC--TTGGA

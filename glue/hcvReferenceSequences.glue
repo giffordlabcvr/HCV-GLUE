@@ -19,9 +19,15 @@
   # 2. some mis-aligned sections were deleted for 2 of these: 
   #    provisional.concatenated-refseqs.REF_3c_D16612_D14198_D16613
   #    provisional.concatenated-refseqs.REF_3f_D16614_D14203_D16615 
-  # 3. 2 sequences were renamed to their RefSeq equivalents:
+  # 3. Certain sequences were renamed to their RefSeq equivalents:
+  #    AF009606 was renamed NC_004102
   #    D17763 was renamed NC_009824
+  #    Y11604 was renamed NC_009825
   #    Y13184 was renamed NC_009826
+  #    D84262 was renamed NC_009827
+  #    EF108306 was renamed NC_030791
+  #    Genotype 2 reference was not renamed as the RefSeq version is a molecular clone.
+  # 4. The 2l references were added using MAFFT (see GLUE commands below)  
   
   # outgroup is not added at present.
   

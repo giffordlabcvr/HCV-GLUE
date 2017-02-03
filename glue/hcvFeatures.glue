@@ -83,8 +83,8 @@
 	feature 3UTR set field displayName "3' UTR"
 
 
-  create reference H77_AF009606 ncbi-refseqs AF009606
-  reference H77_AF009606
+  create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102
+  reference REF_MASTER_NC_004102
     add feature-location 5UTR
     feature-location 5UTR
       add segment 1 341

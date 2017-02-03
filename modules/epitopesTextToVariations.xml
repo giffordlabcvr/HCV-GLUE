@@ -1,6 +1,6 @@
 <freemarkerTextToGlueTransformer>
 	<freemarkerTemplate><![CDATA[
-reference H77_AF009606
+reference REF_MASTER_NC_004102
   feature-location precursor_polyprotein
 <#list rows as row>
   <#assign h77Start>${row["H77_START"]?trim}</#assign>

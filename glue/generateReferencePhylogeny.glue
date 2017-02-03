@@ -2,7 +2,7 @@ project hcv
 
   module raxmlPhylogenyGenerator
     # with outgroup
-    generate nucleotide phylogeny AL_UNCONSTRAINED -r H77_AF009606 -f precursor_polyprotein -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')" -o trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS -d referencePhylogenyData
+    generate nucleotide phylogeny AL_UNCONSTRAINED -r REF_MASTER_NC_004102 -f precursor_polyprotein -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')" -o trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS -d referencePhylogenyData
     exit
   
   module figTreeAnnotationExporter 

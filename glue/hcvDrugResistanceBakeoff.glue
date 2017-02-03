@@ -1,4 +1,4 @@
-reference H77_AF009606
+reference REF_MASTER_NC_004102
   feature-location NS3
     create variation rav_NS3_V36L -t AMINO_ACID "Resistance associated variant"
     variation rav_NS3_V36L

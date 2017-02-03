@@ -24,7 +24,7 @@ commit
     set link-target --noCommit drug custom-table-row/drug/${drug_id}
     set link-target --noCommit drug_resistance_publication custom-table-row/drug_resistance_publication/${publication_id}
     set link-target --noCommit replicon_clade alignment/AL_${replicon_clade}
-    set link-target --noCommit variation reference/H77_AF009606/feature-location/${gene}/variation/RAS_${gene}_${substitutions}
+    set link-target --noCommit variation reference/REF_MASTER_NC_004102/feature-location/${gene}/variation/RAS_${gene}_${substitutions}
 <#if min_fold_change != "">
     set field --noCommit min_fold_change ${min_fold_change}
 </#if>

@@ -3,5 +3,5 @@
 
   # add segments to the unconstrained alignment based on this. 
   alignment AL_UNCONSTRAINED
-    derive segments AL_EHV_HCV_UNCONSTRAINED --linkingReference H77_AF009606 --whereClause "sequence.sequenceID = 'JQ434008'"
+    derive segments AL_EHV_HCV_UNCONSTRAINED --linkingReference REF_MASTER_NC_004102 --whereClause "sequence.sequenceID = 'JQ434008'"
     exit

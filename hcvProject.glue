@@ -30,9 +30,6 @@ project hcv
   # build tree of alignments, with relevant reference sequences.
   run file glue/hcvAlignmentTree.glue
 
-  # reference sequences used by Emma's group, but not already covered above
-  run file glue/hcvAdditionalRefs.glue
-  
   # resistance associated substitutions
   # REINSTATE
   # run file glue/hcvDrugResistance.glue

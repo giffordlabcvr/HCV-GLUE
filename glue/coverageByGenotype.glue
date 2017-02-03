@@ -1,15 +1,15 @@
 # Count the number of sequences in each genotype which cover each genome feature by at least 90% 
 # feature coverage within genotype 1
-alignment AL_1 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_1_AF009606
+alignment AL_1 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_1_NC_004102
 # feature coverage within genotype 2
-alignment AL_2 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_2_AB047639
+alignment AL_2 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_2_D00944
 # feature coverage within genotype 3
-alignment AL_3 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_3_JF735123
+alignment AL_3 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_3_NC_009824
 # feature coverage within genotype 4
-alignment AL_4 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_4_JF735138
+alignment AL_4 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_4_NC_009825
 # feature coverage within genotype 5
-alignment AL_5 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_5_AF064490
+alignment AL_5 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_5_NC_009826
 # feature coverage within genotype 6
-alignment AL_6 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_6_D84262
+alignment AL_6 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_6_NC_009827
 # feature coverage within genotype 7
-alignment AL_7 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_7_EF108306
+alignment AL_7 show feature-presence -c -w "sequence.source.name = 'ncbi-curated'" -r REF_7_NC_030791

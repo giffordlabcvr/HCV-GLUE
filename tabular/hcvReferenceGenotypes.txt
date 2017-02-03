@@ -1,5 +1,5 @@
 SourceName,PrimAcc,genotype,subtype,reference_status
-ncbi-refseqs,AF009606,1,a,confirmed
+ncbi-refseqs,NC_004102,1,a,confirmed
 ncbi-refseqs,M62321,1,a,confirmed
 ncbi-refseqs,M67463,1,a,confirmed
 ncbi-refseqs,HQ850279,1,a,confirmed
@@ -70,7 +70,7 @@ ncbi-refseqs,FJ407092,3,i,confirmed
 ncbi-refseqs,JX227955,3,i,confirmed
 ncbi-refseqs,D63821,3,k,confirmed
 ncbi-refseqs,JF735122,3,k,confirmed
-ncbi-refseqs,Y11604,4,a,confirmed
+ncbi-refseqs,NC_009825,4,a,confirmed
 ncbi-refseqs,DQ988074,4,a,confirmed
 ncbi-refseqs,DQ418789,4,a,confirmed
 ncbi-refseqs,FJ462435,4,b,confirmed
@@ -113,7 +113,7 @@ ncbi-refseqs,Y12083,6,a,confirmed
 ncbi-refseqs,AY859526,6,a,confirmed
 ncbi-refseqs,HQ639936,6,a,confirmed
 ncbi-refseqs,EU246930,6,a,confirmed
-ncbi-refseqs,D84262,6,b,confirmed
+ncbi-refseqs,NC_009827,6,b,confirmed
 ncbi-refseqs,EF424629,6,c,confirmed
 ncbi-refseqs,D84263,6,d,confirmed
 ncbi-refseqs,DQ314805,6,e,confirmed
@@ -162,7 +162,7 @@ ncbi-refseqs,KM252790,6,xd,confirmed
 ncbi-refseqs,KM252791,6,xd,confirmed
 ncbi-refseqs,JX183557,6,xe,confirmed
 ncbi-refseqs,KM252792,6,xe,confirmed
-ncbi-refseqs,EF108306,7,a,confirmed
+ncbi-refseqs,NC_030791,7,a,confirmed
 ncbi-refseqs,AJ851228,1,-,unassigned
 ncbi-refseqs,KC248195,1,-,unassigned
 ncbi-refseqs,HQ537007,1,-,unassigned

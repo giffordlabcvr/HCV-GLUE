@@ -5,7 +5,7 @@
 		<featureName>precursor_polyprotein</featureName>
 		<includesSequenceContent>true</includesSequenceContent>
 		<variationScanHint>
-			<referenceSequence>H77_AF009606</referenceSequence>
+			<referenceSequence>REF_MASTER_NC_004102</referenceSequence>
 			<multiReference>true</multiReference>
 			<descendentFeatures>true</descendentFeatures>
 		</variationScanHint>

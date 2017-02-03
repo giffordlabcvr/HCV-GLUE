@@ -1,16 +1,16 @@
   create module --fileName modules/hcvCommonAaPolymorphismGenerator.xml hcvCommonAaPolymorphismGenerator
 
   module hcvCommonAaPolymorphismGenerator
-    generate AL_MASTER -r H77_AF009606 -f Core -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f E1 -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f E2 -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f p7 -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f NS2 -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f NS3 -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f NS4A -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f NS4B -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f NS5A -c -w "sequence.source.name = 'ncbi-curated'"
-    generate AL_MASTER -r H77_AF009606 -f NS5B -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f Core -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f E1 -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f E2 -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f p7 -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f NS2 -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f NS3 -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f NS4A -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f NS4B -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f NS5A -c -w "sequence.source.name = 'ncbi-curated'"
+    generate AL_MASTER -r REF_MASTER_NC_004102 -f NS5B -c -w "sequence.source.name = 'ncbi-curated'"
   exit
   
   

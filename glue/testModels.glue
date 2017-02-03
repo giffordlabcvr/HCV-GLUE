@@ -1,7 +1,7 @@
 project hcv
 
   module hcvModelTester
-    test models AL_UNCONSTRAINED -r H77_AF009606 -f precursor_polyprotein -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')" -d modelTestResults
+    test models AL_UNCONSTRAINED -r REF_MASTER_NC_004102 -f precursor_polyprotein -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional','outgroup')" -d modelTestResults
     exit
   
   exit

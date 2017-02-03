@@ -1,14 +1,14 @@
 
   # Master alignment
-  create alignment AL_MASTER -r H77_AF009606
+  create alignment AL_MASTER -r REF_MASTER_NC_004102
 
-  create reference REF_1_AF009606 ncbi-refseqs AF009606
-  create reference REF_2_AB047639 ncbi-refseqs AB047639
-  create reference REF_3_JF735123 ncbi-refseqs JF735123
-  create reference REF_4_JF735138 ncbi-refseqs JF735138
-  create reference REF_5_AF064490 ncbi-refseqs AF064490
-  create reference REF_6_D84262 ncbi-refseqs D84262
-  create reference REF_7_EF108306 ncbi-refseqs EF108306
+  create reference REF_1_NC_004102 ncbi-refseqs NC_004102
+  create reference REF_2_D00944 ncbi-refseqs D00944
+  create reference REF_3_NC_009824 ncbi-refseqs NC_009824
+  create reference REF_4_NC_009825 ncbi-refseqs NC_009825
+  create reference REF_5_NC_009826 ncbi-refseqs NC_009826
+  create reference REF_6_NC_009827 ncbi-refseqs NC_009827
+  create reference REF_7_NC_030791 ncbi-refseqs NC_030791
   
   # Recombinants  
   create reference REF_RF2k_1b_AY587845 ncbi-refseqs AY587845
@@ -24,26 +24,26 @@
   alignment AL_MASTER
     set field displayName "Hepatitis C Virus (HCV)"
     # reference sequences
-    add member -w "source.name in ('concatenated-refseqs', 'hcv-additional-refs', 'ncbi-refseqs', 'ncbi-refseqs-subgenomic')"
+    add member -w "source.name in ('concatenated-refseqs', 'ncbi-refseqs', 'ncbi-refseqs-subgenomic')"
     # curated members
     add member -w "source.name = 'ncbi-curated' and \
       ( gb_host = 'Homo sapiens' or gb_host = null ) and \
       ( gb_lab_construct = 'false' ) and \
       ( gb_recombinant = 'false' ) and \
       ( epa_genotype != null )"
-    extract child AL_1 --refName REF_1_AF009606
+    extract child AL_1 --refName REF_1_NC_004102
     demote member AL_1 --whereClause "sequence.genotype = '1'" 
-    extract child AL_2 --refName REF_2_AB047639
+    extract child AL_2 --refName REF_2_D00944
     demote member AL_2 --whereClause "sequence.genotype = '2'" 
-    extract child AL_3 --refName REF_3_JF735123
+    extract child AL_3 --refName REF_3_NC_009824
     demote member AL_3 --whereClause "sequence.genotype = '3'" 
-    extract child AL_4 --refName REF_4_JF735138
+    extract child AL_4 --refName REF_4_NC_009825
     demote member AL_4 --whereClause "sequence.genotype = '4'" 
-    extract child AL_5 --refName REF_5_AF064490
+    extract child AL_5 --refName REF_5_NC_009826
     demote member AL_5 --whereClause "sequence.genotype = '5'" 
-    extract child AL_6 --refName REF_6_D84262
+    extract child AL_6 --refName REF_6_NC_009827
     demote member AL_6 --whereClause "sequence.genotype = '6'" 
-    extract child AL_7 --refName REF_7_EF108306
+    extract child AL_7 --refName REF_7_NC_030791
     demote member AL_7 --whereClause "sequence.genotype = '7'" 
 
     # Recombinants
@@ -68,7 +68,7 @@
 
     exit
 
-  create reference REF_1a_AF009606 ncbi-refseqs AF009606
+  create reference REF_1a_NC_004102 ncbi-refseqs NC_004102
   create reference REF_1b_D90208 ncbi-refseqs D90208
   create reference REF_1c_D14853 ncbi-refseqs D14853
   create reference REF_1d_KJ439768 ncbi-refseqs KJ439768
@@ -95,7 +95,7 @@
   create reference REF_1_unassigned_KC248195 ncbi-refseqs KC248195
 
   alignment AL_1 
-    extract child AL_1a --refName REF_1a_AF009606
+    extract child AL_1a --refName REF_1a_NC_004102
     demote member AL_1a --whereClause "sequence.genotype = '1' and sequence.subtype = 'a'" 
     extract child AL_1b --refName REF_1b_D90208
     demote member AL_1b --whereClause "sequence.genotype = '1' and sequence.subtype = 'b'" 
@@ -297,7 +297,7 @@
     demote member AL_3_unassigned_JF735124 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_3_unassigned_JF735124'"
     exit
 
-  create reference REF_4a_Y11604 ncbi-refseqs Y11604
+  create reference REF_4a_NC_009825 ncbi-refseqs NC_009825
   create reference REF_4b_FJ462435 ncbi-refseqs FJ462435
   create reference REF_4c_FJ462436 ncbi-refseqs FJ462436
   create reference REF_4d_DQ418786 ncbi-refseqs DQ418786
@@ -335,7 +335,7 @@
   create reference REF_4_unassigned_JX227964 ncbi-refseqs JX227964
 
   alignment AL_4
-    extract child AL_4a --refName REF_4a_Y11604
+    extract child AL_4a --refName REF_4a_NC_009825
     demote member AL_4a --whereClause "sequence.genotype = '4' and sequence.subtype = 'a'"
     extract child AL_4b --refName REF_4b_FJ462435
     demote member AL_4b --whereClause "sequence.genotype = '4' and sequence.subtype = 'b'"
@@ -415,15 +415,15 @@
     demote member AL_4_unassigned_JX227964 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JX227964'"
     exit
 
-  create reference REF_5a_AF064490 ncbi-refseqs AF064490
+  create reference REF_5a_NC_009826 ncbi-refseqs NC_009826
 
   alignment AL_5
-    extract child AL_5a --refName REF_5a_AF064490
+    extract child AL_5a --refName REF_5a_NC_009826
     demote member AL_5a --whereClause "sequence.genotype = '5' and sequence.subtype = 'a'"
     exit
 
   create reference REF_6a_Y12083 ncbi-refseqs Y12083
-  create reference REF_6b_D84262 ncbi-refseqs D84262
+  create reference REF_6b_NC_009827 ncbi-refseqs NC_009827
   create reference REF_6c_EF424629 ncbi-refseqs EF424629
   create reference REF_6d_D84263 ncbi-refseqs D84263
   create reference REF_6e_DQ314805 ncbi-refseqs DQ314805
@@ -472,7 +472,7 @@
   alignment AL_6
     extract child AL_6a --refName REF_6a_Y12083
     demote member AL_6a --whereClause "sequence.genotype = '6' and sequence.subtype = 'a'"
-    extract child AL_6b --refName REF_6b_D84262
+    extract child AL_6b --refName REF_6b_NC_009827
     demote member AL_6b --whereClause "sequence.genotype = '6' and sequence.subtype = 'b'"
     extract child AL_6c --refName REF_6c_EF424629
     demote member AL_6c --whereClause "sequence.genotype = '6' and sequence.subtype = 'c'"
@@ -578,10 +578,10 @@
     exit
 
 
-  create reference REF_7a_EF108306 ncbi-refseqs EF108306
+  create reference REF_7a_NC_030791 ncbi-refseqs NC_030791
   
   alignment AL_7
-    extract child AL_7a --refName REF_7a_EF108306
+    extract child AL_7a --refName REF_7a_NC_030791
     demote member AL_7a --whereClause "sequence.genotype = '7' and sequence.subtype = 'a'"
     exit
 
@@ -592,13 +592,13 @@
 
   # spread feature locations throughout the tree, correcting as necessary.
   
-  reference REF_1_AF009606 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_2_AB047639 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_3_JF735123 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_4_JF735138 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_5_AF064490 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_6_D84262 inherit feature-location -rs AL_MASTER whole_genome
-  reference REF_7_EF108306 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_1_NC_004102 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_2_D00944 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_3_NC_009824 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_4_NC_009825 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_5_NC_009826 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_6_NC_009827 inherit feature-location -rs AL_MASTER whole_genome
+  reference REF_7_NC_030791 inherit feature-location -rs AL_MASTER whole_genome
 
   # Recombinants
   reference REF_RF2k_1b_AY587845 inherit feature-location -rs AL_MASTER whole_genome
@@ -617,7 +617,7 @@
   reference REF_RF2b_1b_3_AB677530 inherit feature-location -rs AL_MASTER whole_genome
   reference REF_RF2b_1b_4_AB677527 inherit feature-location -rs AL_MASTER whole_genome
 
-  reference REF_1a_AF009606 inherit feature-location -rs AL_1 whole_genome
+  reference REF_1a_NC_004102 inherit feature-location -rs AL_1 whole_genome
   reference REF_1b_D90208 inherit feature-location -rs AL_1 whole_genome
   reference REF_1c_D14853 inherit feature-location -rs AL_1 whole_genome
   reference REF_1d_KJ439768 inherit feature-location -rs AL_1 whole_genome
@@ -662,7 +662,7 @@
   reference REF_3i_FJ407092 inherit feature-location -rs AL_3 whole_genome
   reference REF_3k_D63821 inherit feature-location -rs AL_3 whole_genome
 
-  reference REF_4a_Y11604 inherit feature-location -rs AL_4 whole_genome
+  reference REF_4a_NC_009825 inherit feature-location -rs AL_4 whole_genome
   reference REF_4b_FJ462435 inherit feature-location -rs AL_4 whole_genome
   reference REF_4c_FJ462436 inherit feature-location -rs AL_4 whole_genome
   reference REF_4d_DQ418786 inherit feature-location -rs AL_4 whole_genome
@@ -682,12 +682,12 @@
   reference REF_4v_JX227960 inherit feature-location -rs AL_4 whole_genome
   reference REF_4w_FJ025855 inherit feature-location -rs AL_4 whole_genome
 
-  reference REF_5a_AF064490 inherit feature-location -rs AL_5 whole_genome
+  reference REF_5a_NC_009826 inherit feature-location -rs AL_5 whole_genome
 
   reference REF_6a_Y12083 inherit feature-location -rs AL_6 whole_genome
   reference REF_6a_Y12083 remove feature-location 3UTR
   
-  reference REF_6b_D84262 inherit feature-location -rs AL_6 whole_genome
+  reference REF_6b_NC_009827 inherit feature-location -rs AL_6 whole_genome
   reference REF_6c_EF424629 inherit feature-location -rs AL_6 whole_genome
   reference REF_6d_D84263 inherit feature-location -rs AL_6 whole_genome
   reference REF_6e_DQ314805 inherit feature-location -rs AL_6 whole_genome
@@ -715,7 +715,7 @@
   reference REF_6xd_KM252789 inherit feature-location -rs AL_6 whole_genome
   reference REF_6xe_JX183557 inherit feature-location -rs AL_6 whole_genome
 
-  reference REF_7a_EF108306 inherit feature-location -rs AL_7 whole_genome
+  reference REF_7a_NC_030791 inherit feature-location -rs AL_7 whole_genome
 
   # additional reference sequences which are just tip alignment members
   create reference REF_1a_EF407457 ncbi-refseqs EF407457
@@ -862,8 +862,8 @@
   reference REF_4v_JX227959 inherit feature-location -rs AL_4v whole_genome
   create reference REF_4w_FJ025856 ncbi-refseqs FJ025856
   reference REF_4w_FJ025856 inherit feature-location -rs AL_4w whole_genome
-  create reference REF_5a_NC_009826 ncbi-refseqs NC_009826
-  reference REF_5a_NC_009826 inherit feature-location -rs AL_5a whole_genome
+  create reference REF_5a_AF064490 ncbi-refseqs AF064490
+  reference REF_5a_AF064490 inherit feature-location -rs AL_5a whole_genome
   create reference REF_6a_AY859526 ncbi-refseqs AY859526
   reference REF_6a_AY859526 inherit feature-location -rs AL_6a whole_genome
   create reference REF_6a_EU246930 ncbi-refseqs EU246930
@@ -1239,10 +1239,10 @@
     exit
   reference REF_4j_L36438
     inherit feature-location -rs --truncateCdn AL_4 NS5B
-  	feature-location precursor_polyprotein remove segment 2 330
-  	feature-location precursor_polyprotein add segment 2 328  
-  	feature-location NS5B remove segment 2 330
-  	feature-location NS5B add segment 2 328  
+  	feature-location precursor_polyprotein remove segment 3 331
+  	feature-location precursor_polyprotein add segment 3 329  
+  	feature-location NS5B remove segment 3 331
+  	feature-location NS5B add segment 3 329  
     exit
 
   
