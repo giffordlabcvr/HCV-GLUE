@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blastFastaAlignmentImporter>
+  <idClauseExtractorFormatter>
+    <matchPattern><![CDATA[\w+\.(?<source>[A-Za-z0-9\-_]+)\.(?<seqID>[A-Za-z0-9\-_]+)]]></matchPattern>
+    <outputTemplate>source.name = '${source}' and sequenceID = '${seqID}'</outputTemplate>
+  </idClauseExtractorFormatter>
+</blastFastaAlignmentImporter>

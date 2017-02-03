@@ -40,8 +40,8 @@ sequence concatenated-refseqs REF_2s_JQ924942_HM777447_HM777332
   set field reference_status "provisional"
   exit
   
-concatenate sequence -g 9 concatenated-refseqs REF_3c_D16612_D14198 ncbi-refseqs-subgenomic D16612 ncbi-refseqs-subgenomic D14198
-concatenate sequence -g 10 concatenated-refseqs REF_3c_D16612_D14198_D16613 concatenated-refseqs REF_3c_D16612_D14198 ncbi-refseqs-subgenomic D16613
+concatenate sequence -g 11 concatenated-refseqs REF_3c_D16612_D14198 ncbi-refseqs-subgenomic D16612 ncbi-refseqs-subgenomic D14198
+concatenate sequence -g 11 concatenated-refseqs REF_3c_D16612_D14198_D16613 concatenated-refseqs REF_3c_D16612_D14198 ncbi-refseqs-subgenomic D16613
 delete sequence concatenated-refseqs REF_3c_D16612_D14198
 sequence concatenated-refseqs REF_3c_D16612_D14198_D16613
   set field genotype 3
@@ -49,8 +49,8 @@ sequence concatenated-refseqs REF_3c_D16612_D14198_D16613
   set field reference_status "provisional"
   exit
 
-concatenate sequence -g 9 concatenated-refseqs REF_3f_D16614_D14203 ncbi-refseqs-subgenomic D16614 ncbi-refseqs-subgenomic D14203
-concatenate sequence -g 10 concatenated-refseqs REF_3f_D16614_D14203_D16615 concatenated-refseqs REF_3f_D16614_D14203 ncbi-refseqs-subgenomic D16615
+concatenate sequence -g 11 concatenated-refseqs REF_3f_D16614_D14203 ncbi-refseqs-subgenomic D16614 ncbi-refseqs-subgenomic D14203
+concatenate sequence -g 11 concatenated-refseqs REF_3f_D16614_D14203_D16615 concatenated-refseqs REF_3f_D16614_D14203 ncbi-refseqs-subgenomic D16615
 delete sequence concatenated-refseqs REF_3f_D16614_D14203
 sequence concatenated-refseqs REF_3f_D16614_D14203_D16615
   set field genotype 3

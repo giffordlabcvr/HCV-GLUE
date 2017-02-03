@@ -157,6 +157,7 @@
   create reference REF_2i_DQ155561 ncbi-refseqs DQ155561
   create reference REF_2j_HM777358 ncbi-refseqs HM777358
   create reference REF_2k_AB031663 ncbi-refseqs AB031663
+  create reference REF_2l_KC197235 ncbi-refseqs KC197235
   create reference REF_2m_JF735111 ncbi-refseqs JF735111
   create reference REF_2q_FN666428 ncbi-refseqs FN666428
   create reference REF_2r_JF735115 ncbi-refseqs JF735115
@@ -200,6 +201,8 @@
     demote member AL_2j --whereClause "sequence.genotype = '2' and sequence.subtype = 'j'"
     extract child AL_2k --refName REF_2k_AB031663
     demote member AL_2k --whereClause "sequence.genotype = '2' and sequence.subtype = 'k'"
+    extract child AL_2l --refName REF_2l_KC197235
+    demote member AL_2l --whereClause "sequence.genotype = '2' and sequence.subtype = 'l'"
     extract child AL_2m --refName REF_2m_JF735111
     demote member AL_2m --whereClause "sequence.genotype = '2' and sequence.subtype = 'm'"
     extract child AL_2q --refName REF_2q_FN666428
@@ -643,6 +646,7 @@
   reference REF_2j_HM777358 inherit feature-location -rs AL_2 whole_genome
   reference REF_2j_HM777358 remove feature-location 3UTR
   reference REF_2k_AB031663 inherit feature-location -rs AL_2 whole_genome
+  reference REF_2l_KC197235 inherit feature-location -rs AL_2 whole_genome
   reference REF_2m_JF735111 inherit feature-location -rs AL_2 whole_genome
   reference REF_2q_FN666428 inherit feature-location -rs AL_2 whole_genome
   reference REF_2r_JF735115 inherit feature-location -rs AL_2 whole_genome
@@ -776,6 +780,8 @@
   reference REF_2j_JF735113 inherit feature-location -rs AL_2j whole_genome
   create reference REF_2k_JX227953 ncbi-refseqs JX227953
   reference REF_2k_JX227953 inherit feature-location -rs AL_2k whole_genome
+  create reference REF_2l_KC197240 ncbi-refseqs KC197240
+  reference REF_2l_KC197240 inherit feature-location -rs AL_2l whole_genome
   create reference REF_2m_JX227967 ncbi-refseqs JX227967
   reference REF_2m_JX227967 inherit feature-location -rs AL_2m whole_genome
   create reference REF_2q_FN666429 ncbi-refseqs FN666429
@@ -951,6 +957,7 @@
   alignment AL_2i set field displayName "HCV Subtype 2i"
   alignment AL_2j set field displayName "HCV Subtype 2j"
   alignment AL_2k set field displayName "HCV Subtype 2k"
+  alignment AL_2l set field displayName "HCV Subtype 2l"
   alignment AL_2m set field displayName "HCV Subtype 2m"
   alignment AL_2q set field displayName "HCV Subtype 2q"
   alignment AL_2r set field displayName "HCV Subtype 2r"
@@ -1232,10 +1239,10 @@
     exit
   reference REF_4j_L36438
     inherit feature-location -rs --truncateCdn AL_4 NS5B
-  	feature-location precursor_polyprotein remove segment 2 339
-  	feature-location precursor_polyprotein add segment 2 337  
-  	feature-location NS5B remove segment 2 339
-  	feature-location NS5B add segment 2 337  
+  	feature-location precursor_polyprotein remove segment 2 330
+  	feature-location precursor_polyprotein add segment 2 328  
+  	feature-location NS5B remove segment 2 330
+  	feature-location NS5B add segment 2 328  
     exit
 
   

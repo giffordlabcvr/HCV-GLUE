@@ -45,6 +45,8 @@ ncbi-refseqs,JF735113,2,j,confirmed
 ncbi-refseqs,HM777359,2,j,confirmed
 ncbi-refseqs,AB031663,2,k,confirmed
 ncbi-refseqs,JX227953,2,k,confirmed
+ncbi-refseqs,KC197235,2,l,confirmed
+ncbi-refseqs,KC197240,2,l,confirmed
 ncbi-refseqs,JF735111,2,m,confirmed
 ncbi-refseqs,JX227967,2,m,confirmed
 ncbi-refseqs,FN666428,2,q,confirmed

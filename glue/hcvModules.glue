@@ -30,10 +30,14 @@
      
   # module to import the Smith 2015 alignment 
   create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter
-  # module to import the edited alignment
+  # modules to import the edited alignment
   create module --fileName modules/editedAlignmentImporter.xml editedAlignmentImporter
+  create module --fileName modules/blastFastaAlignmentImporter.xml blastFastaAlignmentImporter
 
   create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
+  # as above but uses blastFastaImporter
+  create module --fileName modules/hcvMafftAlignerRelaxed.xml hcvMafftAlignerRelaxed
+
 
   # these modules download the curated sequences from NCBI
   create module --fileName modules/hcvCuratedNcbiImporter.xml curatedNcbiImporter
@@ -53,3 +57,15 @@
   create module --moduleType fastaProteinAlignmentExporter
   create module --moduleType nucleotideConsensusGenerator
   create module --moduleType aminoAcidConsensusGenerator  
+  
+  
+  create module --fileName modules/drugCategoryTextToCustomTableRows.xml drugCategoryTextToCustomTableRows
+  create module --fileName modules/drugSubCategoryTextToCustomTableRows.xml drugSubCategoryTextToCustomTableRows
+  create module --fileName modules/drugTextToCustomTableRows.xml drugTextToCustomTableRows
+  create module --fileName modules/resistanceAssociatedSubstitutionsToVariations.xml resistanceAssociatedSubstitutionsToVariations
+  create module -f modules/drugResistancePublicationTextToCustomTableRows.xml drugResistancePublicationTextToCustomTableRows
+  create module -f modules/drugResistanceFindingTextToCustomTableRows.xml drugResistanceFindingTextToCustomTableRows
+  create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources hcvResistanceAssociatedVariantRenderer
+  create module --fileName modules/hcvDrugPublicationRenderer.xml --loadResources hcvDrugPublicationRenderer
+  create module --fileName modules/hcvDrugRenderer.xml --loadResources hcvDrugRenderer
+  

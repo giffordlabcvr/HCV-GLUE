@@ -6,6 +6,7 @@
 	<specificPrimaryAccessions>
 	
 		<!-- Confirmed genotype/subtype references -->
+		<!-- <primaryAccession>NC_004102</primaryAccession> Geno 1 / 1a refseq mentioned in Smith et al. as AF009606 -->
 		<primaryAccession>AF009606</primaryAccession>
 		<primaryAccession>M62321</primaryAccession>
 		<primaryAccession>M67463</primaryAccession>
@@ -33,6 +34,7 @@
 		<primaryAccession>KJ439781</primaryAccession>
 		<primaryAccession>KJ439775</primaryAccession>
 		<primaryAccession>KJ439774</primaryAccession>
+		<!-- <primaryAccession>NC_009823</primaryAccession>  Geno 2 / 2a refseq: infectious clone of D00944 -->
 		<primaryAccession>D00944</primaryAccession>
 		<primaryAccession>AB047639</primaryAccession>
 		<primaryAccession>HQ639944</primaryAccession>
@@ -59,7 +61,7 @@
 		<primaryAccession>JF735115</primaryAccession>
 		<primaryAccession>KC197238</primaryAccession>
 		<primaryAccession>JF735112</primaryAccession>
-		<primaryAccession>NC_009824</primaryAccession> <!-- mentioned as D17763 in Smith et al. -->
+		<primaryAccession>NC_009824</primaryAccession> <!-- Geno 3 / 3a refseq mentioned as D17763 in Smith et al. -->
 		<primaryAccession>D28917</primaryAccession>
 		<primaryAccession>X76918</primaryAccession>
 		<primaryAccession>JN714194</primaryAccession>
@@ -75,6 +77,7 @@
 		<primaryAccession>JX227955</primaryAccession>
 		<primaryAccession>D63821</primaryAccession>
 		<primaryAccession>JF735122</primaryAccession>
+		<!-- <primaryAccession>NC_009825</primaryAccession> Geno 4 / 4a reference mentioned as Y11604 in Smith et al 2014 -->
 		<primaryAccession>Y11604</primaryAccession>
 		<primaryAccession>DQ988074</primaryAccession>
 		<primaryAccession>DQ418789</primaryAccession>
@@ -113,11 +116,12 @@
 		<primaryAccession>FJ025855</primaryAccession>
 		<primaryAccession>FJ025856</primaryAccession>
 		<primaryAccession>AF064490</primaryAccession>
-		<primaryAccession>NC_009826</primaryAccession>  <!-- mentioned as Y13184 in Smith et al. -->
+		<primaryAccession>NC_009826</primaryAccession>  <!-- Geno 5 / 5a reference mentioned as Y13184 in Smith et al. -->
 		<primaryAccession>Y12083</primaryAccession>
 		<primaryAccession>AY859526</primaryAccession>
 		<primaryAccession>HQ639936</primaryAccession>
 		<primaryAccession>EU246930</primaryAccession>
+		<!-- <primaryAccession>NC_009827</primaryAccession> Geno 6 / 6b reference mentioned as D84262 in Smith et al. -->
 		<primaryAccession>D84262</primaryAccession>
 		<primaryAccession>EF424629</primaryAccession>
 		<primaryAccession>D84263</primaryAccession>
@@ -166,8 +170,13 @@
 		<primaryAccession>KM252791</primaryAccession>
 		<primaryAccession>JX183557</primaryAccession>
 		<primaryAccession>KM252792</primaryAccession>
+		<!-- <primaryAccession>NC_030791</primaryAccession> Geno 7 / 7a reference mentioned as EF108306 in Smith et al. 2014 -->
 		<primaryAccession>EF108306</primaryAccession>
 		<primaryAccession>JX183552</primaryAccession>
+
+		<!-- 2l references mentioned in "Note added in proofs" at end of Smith et al. 2014 -->
+		<primaryAccession>KC197235</primaryAccession>
+		<primaryAccession>KC197240</primaryAccession>
 
 		<!-- Unconfirmed full genome subtypes -->		
 		<primaryAccession>AJ851228</primaryAccession>

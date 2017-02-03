@@ -11,9 +11,6 @@
   # The genotypes of these reference sequences were provided by D. Smith, in the alignment file.
   multi-set field sequence -w "source.name = 'ncbi-refseqs'" genotyping_method "Provided with alignment"
   
-  # create an unconstrained alignment
-  create alignment AL_UNCONSTRAINED
-
   run file glue/concatenateProvisionalReferences.glue
   
   # module to import the edited alignment
@@ -28,9 +25,8 @@
   
   # outgroup is not added at present.
   
-  
   # import the edited alignment
-  module editedAlignmentImporter import AL_UNCONSTRAINED -f alignments/Smith_Extended.edited.fasta
+  module blastFastaAlignmentImporter import AL_UNCONSTRAINED -f alignments/Smith_Extended.edited.fasta
 
   ## GLUE commands to import the original alignment and to extend it to provisional / recombinant / outgroup references.
 
@@ -43,3 +39,7 @@
   ## extend the unconstrained alignment to the provisional subtype references
   # extend alignment AL_UNCONSTRAINED hcvMafftAligner -w "sequence.reference_status in ('provisional', 'recombinant')" 
 
+  ## add the 2l subtype references to the unconstrained alignment
+  # alignment AL_UNCONSTRAINED add member ncbi-refseqs KC197235
+  # alignment AL_UNCONSTRAINED add member ncbi-refseqs KC197240
+  # extend alignment AL_UNCONSTRAINED hcvMafftAlignerRelaxed -w "sequence.sequenceID in ('KC197235', 'KC197240')"
