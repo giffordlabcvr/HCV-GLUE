@@ -14,7 +14,6 @@ alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB031663	2	2/k	2/k/AB031663
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB047639	2	2/a	2/a/AB047639
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB661382	2	2/b	2/b/AB661382
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB661388	2	2/b	2/b/AB661388
-alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AF009606	1	1/a	1/a/AF009606
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AF064490	5	5/a	5/a/AF064490
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AJ851228	1	1/-	1/-/AJ851228
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AM910652	1	1/g	1/g/AM910652
@@ -29,7 +28,6 @@ alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D49374	3	3/b	3/b/D49374
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D50409	2	2/c	2/c/D50409
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D63821	3	3/k	3/k/D63821
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D63822	6	6/g	6/g/D63822
-alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84262	6	6/b	6/b/D84262
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84263	6	6/d	6/d/D84263
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84264	6	6/k	6/k/D84264
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84265	6	6/h	6/h/D84265
@@ -52,7 +50,6 @@ alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835768	6	6/n	6/n/DQ835768
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835769	6	6/j	6/j/DQ835769
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835770	6	6/i	6/i/DQ835770
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ988074	4	4/a	4/a/DQ988074
-alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF108306	7	7/a	7/a/EF108306
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF407457	1	1/a	1/a/EF407457
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424625	6	6/q	6/q/EF424625
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424626	6	6/p	6/p/EF424626
@@ -164,10 +161,12 @@ alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227971	4	4/g	4/g/JX227971
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227972	4	4/m	4/m/JX227972
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227976	4	4/r	4/r/JX227976
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227977	4	4/o	4/o/JX227977
+alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197235	2	2/l	2/l/KC197235
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197236	2	2/-	2/-/KC197236
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197237	2	2/-	2/-/KC197237
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197238	2	2/t	2/t/KC197238
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197239	2	2/-	2/-/KC197239
+alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197240	2	2/l	2/l/KC197240
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248193	1	1/l	1/l/KC248193
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248194	1	1/e	1/e/KC248194
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248195	1	1/-	1/-/KC248195
@@ -208,8 +207,11 @@ alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252792	6	6/xe	6/xe/KM252792
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M58335	1	1/b	1/b/M58335
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M62321	1	1/a	1/a/M62321
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M67463	1	1/a	1/a/M67463
+alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_004102	1	1/a	1/a/NC_004102
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009824	3	3/a	3/a/NC_009824
+alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009825	4	4/a	4/a/NC_009825
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009826	5	5/a	5/a/NC_009826
+alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009827	6	6/b	6/b/NC_009827
+alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_030791	7	7/a	7/a/NC_030791
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/X76918	3	3/a	3/a/X76918
-alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/Y11604	4	4/a	4/a/Y11604
 alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/Y12083	6	6/a	6/a/Y12083
