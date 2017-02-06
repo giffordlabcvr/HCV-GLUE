@@ -24,8 +24,7 @@ project hcv
   run file glue/hcvOutgroupAlignment.glue
   
   # curated sequences
-  # REINSTATE
-  #run file glue/hcvCuratedSequences.glue
+  run file glue/hcvCuratedSequences.glue
  
   # build tree of alignments, with relevant reference sequences.
   run file glue/hcvAlignmentTree.glue
@@ -50,8 +49,7 @@ project hcv
   #run file glue/hcvGenerateVariationFrequencies.glue
 
   # import phylogeny
-  # REINSTATE
-  # run file glue/importPhylogeny.glue
+  run file glue/importPhylogeny.glue
 
   validate
 
