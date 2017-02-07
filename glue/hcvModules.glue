@@ -71,4 +71,7 @@
 
   create module --fileName modules/lanlMetadataImporter.xml
 
+  create module --fileName modules/hcvVariationFrequenciesGenerator.xml variationFrequenciesGenerator
+
+
   

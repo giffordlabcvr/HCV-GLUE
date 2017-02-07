@@ -1,5 +1,3 @@
-create module --fileName modules/hcvVariationFrequenciesGenerator.xml variationFrequenciesGenerator
-
 # some lines commented out for a faster build
 
 module variationFrequenciesGenerator
