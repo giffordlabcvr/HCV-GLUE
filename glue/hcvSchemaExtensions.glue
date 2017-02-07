@@ -32,6 +32,10 @@ schema-project hcv
     create field epa_subtype VARCHAR 10
     create field epa_genotype_final_clade VARCHAR 200
     create field epa_subtype_final_clade VARCHAR 200
+    create field lanl_country_iso VARCHAR 50
+    create field lanl_problematic_sequence VARCHAR 50
+    create field lanl_sampling_year INTEGER
+
 
     # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20

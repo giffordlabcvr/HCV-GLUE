@@ -1,0 +1,10 @@
+#	Patient Code	Patient Id	Accession	Name	Genotype	Start	Stop	Country	Sampling Year	Sequence Length	Organism	GB Submission	Problematic Sequence
+1			X53131	HCT18	1a	690	1652			963	Hepatitis C virus	1991-03-27	
+2			X53132	HCT23	1a	726	1652			927	Hepatitis C virus	1991-03-27	
+3			X53133	HCT27	1a	726	1652			927	Hepatitis C virus	1991-03-27	
+4			X53134	TH	1a	690	1652			963	Hepatitis C virus	1991-03-27	
+5			X53135	EC1	1a	690	1265	UNITED STATES		576	Hepatitis C virus	1991-03-27	
+6	JK1	825	X61591	JK1	1b	18	2689	JAPAN		2672	HCV	1991-10-28	
+7			X61593	JK2	1b	18	2689	JAPAN		2672	Hepatitis C virus	1991-10-28	
+8			X61594	JK4	1b	18	2689	JAPAN		2672	Hepatitis C virus	1991-10-28	
+9	JK1	825	X61596	JK1-full	1b	18	9428	JAPAN		9408	HCV	1991-10-28	

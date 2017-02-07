@@ -21,6 +21,19 @@
   multi-copy field sequence -w "source.name = 'ncbi-curated' and epa_subtype != null" epa_subtype subtype
   multi-set field sequence -w "source.name = 'ncbi-curated' and epa_genotype != null" genotyping_method "EPA genotyping"
 
+  # LANL metadata
+  run file glue/importLanlMetadata.glue
+  # Fill in country where possible
+  multi-copy field sequence -w "source.name = 'ncbi-curated' and gb_country_iso = null and lanl_country_iso != null" lanl_country_iso gb_country_iso
+  
+  # fill in sampling year where possible
+  multi-copy field sequence -w "source.name = 'ncbi-curated' and gb_collection_year = null and lanl_sampling_year != null" lanl_sampling_year gb_collection_year
+  
+  # set lab construct to true based on LANL problematic sequence = Synthetic
+  multi-set field sequence -w "source.name = 'ncbi-curated' and gb_lab_construct = false and lanl_problematic_sequence = 'Synthetic'" gb_lab_construct true
+
   # update gb_country_short based on gb_country_iso
   run file glue/hcvCountryUpdate.glue
+
+  
   

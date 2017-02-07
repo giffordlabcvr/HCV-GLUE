@@ -1,0 +1,6 @@
+#	Patient Code	Patient Id	Accession	Name	Genotype	Start	Stop	Country	Sampling Year	Sequence Length	Organism	GB Submission	Problematic Sequence
+1			X61592	JK3	1b	18	2689	JAPAN		2672	Hepatitis C virus	1992-03-10	
+2			X61595	JK5	1b	18	2689	JAPAN		2672	Hepatitis C virus	1992-03-10	
+3			X65547	HCVS4GR	1b	4198	4848			651	Hepatitis C virus	1992-04-28	
+4			X65924	HCVCEN	1b	31	1451			1418	Hepatitis C virus	1992-05-20	
+5			X67299	IMMUNOGLOBULIN/78	1b	929	1461			533	Hepatitis C virus	1992-08-04	
