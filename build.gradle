@@ -2,7 +2,7 @@ apply plugin: 'war'
 
 apply plugin: 'org.hidetake.ssh'
 
-project.ext.set("glueVersion", "0.1.90")
+project.ext.set("glueVersion", "0.1.98")
 
 remotes {
   gluehome_aws {
