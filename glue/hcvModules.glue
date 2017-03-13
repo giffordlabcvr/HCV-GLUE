@@ -73,5 +73,11 @@
 
   create module --fileName modules/hcvVariationFrequenciesGenerator.xml variationFrequenciesGenerator
 
+  create module --moduleType fastaExporter 
+
+  create module --fileName modules/hcvCollectionBoundsPopulator.xml
+
+  create module --fileName modules/ruXuDataMissingImporter.xml
+  create module --fileName modules/ruXuDataCorrectedImporter.xml
 
   

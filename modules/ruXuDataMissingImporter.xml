@@ -1,0 +1,93 @@
+<textFilePopulator>
+	<columnDelimiterRegex>\t</columnDelimiterRegex>
+	<textFileColumn>
+		<identifier>true</identifier>
+		<fieldName>sequenceID</fieldName>
+		<header>sequenceID</header>
+	</textFileColumn>
+	<textFileColumn>
+		<fieldName>gb_isolate</fieldName>
+		<header>gb_isolate</header>
+		<valueConverter>
+			<matchPattern>(\w+) deletion mutant</matchPattern>
+			<outputTemplate>${g1}-deletion-mutant</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>(?:strain) *(.+)</matchPattern>
+			<outputTemplate>${g1}</outputTemplate>
+		</valueConverter>
+	</textFileColumn>
+	<textFileColumn>
+		<fieldName>gb_host</fieldName>
+		<header>gb_host_missing</header>
+		<valueConverter>
+			<matchPattern>chimp</matchPattern>
+			<outputTemplate>Pan troglodytes</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>Homo sapians</matchPattern>
+			<outputTemplate>Homo sapiens</outputTemplate>
+		</valueConverter>
+	</textFileColumn>
+	<isoCountryTextFileColumn codeStyle="ALPHA_3">
+		<fieldName>gb_country_iso</fieldName>
+		<header>gb_country_short_missing</header>
+		<valueConverter>
+			<matchPattern>Thiland</matchPattern>
+			<outputTemplate>THA</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>Thai</matchPattern>
+			<outputTemplate>THA</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>Vitenam</matchPattern>
+			<outputTemplate>VNM</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>[Hh]ong[Kk]ong</matchPattern>
+			<outputTemplate>HKG</outputTemplate>
+		</valueConverter>
+	</isoCountryTextFileColumn>
+	<textFileColumn>
+		<fieldName>gb_place_sampled</fieldName>
+		<header>gb_place_sampled_missing</header>
+		<valueConverter>
+			<matchPattern>HoChiMinhCity</matchPattern>
+			<outputTemplate>Ho Chi Minh City</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>[Hh]ong[Kk]ong</matchPattern>
+			<outputTemplate>Hong Kong</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>(.*), ?[Yy]unan [Pp]rovince</matchPattern>
+			<outputTemplate>${g1}, Yunnan</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>(.*), ?(.*) [Pp]rovince</matchPattern>
+			<outputTemplate>${g1}, ${g2}</outputTemplate>
+		</valueConverter>
+	</textFileColumn>
+	<textFileColumn>
+		<fieldName>earliest_collection_year</fieldName>
+		<header>gb_collection_year_missing</header>
+		<matchPattern>^ *(\d{4}) *$</matchPattern>
+		<matchPattern>^ *(\d{4}) *(?:-) *(?:\d{4}) *$</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+	</textFileColumn>
+	<textFileColumn>
+		<fieldName>latest_collection_year</fieldName>
+		<header>gb_collection_year_missing</header>
+		<matchPattern>^ *(\d{4}) *$</matchPattern>
+		<matchPattern>^ *(?:\d{4}) *(?:-) *(\d{4}) *$</matchPattern>
+		<outputTemplate>${g1}</outputTemplate>
+	</textFileColumn>
+	<textFileColumn>
+		<fieldName>gb_pubmed_id</fieldName>
+		<header>gb_pubmed_id_missing</header>
+		<nullRegex>^(?:.*add.*)|(?: *)$</nullRegex>
+	</textFileColumn>
+
+
+</textFilePopulator>

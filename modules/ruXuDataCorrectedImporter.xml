@@ -1,0 +1,30 @@
+<textFilePopulator>
+	<columnDelimiterRegex>\t</columnDelimiterRegex>
+	<textFileColumn>
+		<identifier>true</identifier>
+		<fieldName>sequenceID</fieldName>
+		<header>sequenceID</header>
+	</textFileColumn>
+	<textFileColumn>
+		<fieldName>gb_place_sampled</fieldName>
+		<header>gb_place_sampled_corrected</header>
+		<overwriteExistingNonNull>true</overwriteExistingNonNull>
+		<valueConverter>
+			<matchPattern>Baisha county,Hainan island</matchPattern>
+			<outputTemplate>Baisha county, Hainan</outputTemplate>
+		</valueConverter>
+		<valueConverter>
+			<matchPattern>HK</matchPattern>
+			<outputTemplate>Hong Kong</outputTemplate>
+		</valueConverter>
+	</textFileColumn>
+	<textFileColumn>
+		<fieldName>gb_lab_construct</fieldName>
+		<header>gb_lab_construct_corrected</header>
+		<overwriteExistingNonNull>true</overwriteExistingNonNull>
+		<valueConverter>
+			<matchPattern>TURE</matchPattern>
+			<outputTemplate>true</outputTemplate>
+		</valueConverter>
+	</textFileColumn>
+</textFilePopulator>

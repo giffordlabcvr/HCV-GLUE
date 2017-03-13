@@ -23,7 +23,23 @@
 </#list>
 	<@elem tag="country" expr="gb_country_short"/>
 	<@elem tag="country_iso" expr="gb_country_iso"/>
-	<@elem tag="collectionYear" expr="gb_collection_year"/>
+	<@elem tag="earliestCollectionYear" expr="earliest_collection_year"/>
+	<@elem tag="latestCollectionYear" expr="latest_collection_year"/>
+<#if earliest_collection_year ?? || latest_collection_year ??>	
+<#if earliest_collection_year ?? && latest_collection_year ??>
+<#if earliest_collection_year == latest_collection_year>
+	<collectionYearRange>${renderProperty('earliest_collection_year')}</collectionYearRange>
+<#else>
+	<collectionYearRange>${renderProperty('earliest_collection_year')} to ${renderProperty('latest_collection_year')}</collectionYearRange>
+</#if>
+<#else>
+<#if earliest_collection_year ??>	
+	<collectionYearRange>${renderProperty('earliest_collection_year')} or later</collectionYearRange>
+<#else>
+	<collectionYearRange>${renderProperty('latest_collection_year')} or earlier</collectionYearRange>
+</#if>
+</#if>
+</#if>
 	<@elem tag="length" expr="gb_length"/>
 	<@elem tag="host" expr="gb_host"/>
 	<@elem tag="labConstruct" expr="gb_lab_construct" type="Boolean"/>

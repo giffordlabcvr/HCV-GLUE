@@ -63,7 +63,7 @@
 					<td>{{member['sequence.gb_length']}}</td>
 					<td>{{handleNull(member['sequence.gb_isolate'])}}</td>
 					<td>{{member['sequence.gb_country_short'] ? (member['sequence.gb_country_short']+" ("+member['sequence.gb_country_iso']+")"):"-"}}</td>
-					<td>{{handleNull(member['sequence.gb_collection_year'])}}</td>
+					<td>{{collectionYearRange(member['sequence.earliest_collection_year'], member['sequence.latest_collection_year'])}}</td>
 					<td ng-show="member['sequence.gb_pubmed_id'] == null">-</td>
 					<td ng-show="member['sequence.gb_pubmed_id'] != null">
 						<a href="https://www.ncbi.nlm.nih.gov/pubmed/{{member['sequence.gb_pubmed_id']}}" target="_blank">PubMed {{member['sequence.gb_pubmed_id']}} <span class="glyphicon glyphicon-link"></span></a>

@@ -1,0 +1,10 @@
+<genbankXmlPopulator>
+	<gbCreateDate>
+		<fieldPopulator fieldName="gb_create_date"/>
+		<!-- if collection year bounds have not yet been identified then create date can be used as latest collection year -->
+		<fieldPopulator fieldName="latest_collection_year">
+				<matchPattern>(\d{4})</matchPattern>
+				<outputTemplate>${g1}</outputTemplate>
+		</fieldPopulator>
+	</gbCreateDate>
+</genbankXmlPopulator>

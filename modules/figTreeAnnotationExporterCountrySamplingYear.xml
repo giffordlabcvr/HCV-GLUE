@@ -1,0 +1,6 @@
+<figTreeAnnotationExporter>
+	<figTreeAnnotation>
+		<annotationName>genotype</annotationName>
+		<valueFreemarkerTemplate>${renderNestedProperty('sequence.gb_country_iso')}/${renderNestedProperty('sequence.gb_collection_year')}/${renderNestedProperty('sequence.gb_create_date')}/${sequence.sequenceID}</valueFreemarkerTemplate>
+	</figTreeAnnotation>
+</figTreeAnnotationExporter>

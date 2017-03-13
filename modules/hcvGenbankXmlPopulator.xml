@@ -235,6 +235,15 @@
 				<matchPattern>(\d{4})</matchPattern>
 				<outputTemplate>${g1}</outputTemplate>
 			</fieldPopulator>
+			<!-- if collection year is specified here then we have tight bounds on the earliest / latest collection year -->
+			<fieldPopulator fieldName="earliest_collection_year">
+				<matchPattern>(\d{4})</matchPattern>
+				<outputTemplate>${g1}</outputTemplate>
+			</fieldPopulator>
+			<fieldPopulator fieldName="latest_collection_year">
+				<matchPattern>(\d{4})</matchPattern>
+				<outputTemplate>${g1}</outputTemplate>
+			</fieldPopulator>
 		</gbQualifier>
 	</gbFeature>
 </genbankXmlPopulator>
