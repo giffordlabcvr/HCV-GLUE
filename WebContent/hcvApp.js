@@ -1,4 +1,21 @@
-console.log("before hcvApp module definition");
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https:www.google-analytics.com/analytics.js','ga');
+	
+	  console.log("document.location.hostname", document.location.hostname);
+	  var trackingID;
+	  if(document.location.hostname.indexOf("hcv.glue.cvr.ac.uk") >= 0) {
+		  // HCV-GLUE production analytics account
+		  trackingID = 'UA-93745543-1';
+		  ga('create', trackingID, 'auto');
+	  } else {
+		  // sandbox analytics account
+		  trackingID = 'UA-93752139-1';
+		  ga('create', trackingID, 'none');
+	  }
+	  
+	  console.log("before hcvApp module definition");
 
 var hcvApp = angular.module('hcvApp', [
     'ngRoute',
@@ -7,7 +24,10 @@ var hcvApp = angular.module('hcvApp', [
     'home',
     'glueWS',
     'glueWebToolConfig',
-    'treeControl'
+    'treeControl',
+    'angulartics',
+    'angulartics.google.analytics',
+    'angular-cookie-law'
   ]);
 
 console.log("after hcvApp module definition");
