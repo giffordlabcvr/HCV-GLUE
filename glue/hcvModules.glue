@@ -14,7 +14,7 @@
 
   create module --fileName modules/hcvWebAnalysisTool.xml webAnalysisTool
   create module --fileName modules/hcvEpitopeRenderer.xml --loadResources hcvEpitopeRenderer
-  create module --fileName modules/hcvCommonAaPolymorphismRenderer.xml --loadResources hcvCommonAaPolymorphismRenderer
+  create module --fileName modules/hcvUncommonAaRenderer.xml --loadResources 
 
   create module --fileName modules/hcvAlignmentRenderer.xml --loadResources hcvAlignmentRenderer
   create module --fileName modules/hcvSequenceRenderer.xml --loadResources hcvSequenceRenderer
@@ -79,5 +79,8 @@
 
   create module --fileName modules/ruXuDataMissingImporter.xml
   create module --fileName modules/ruXuDataCorrectedImporter.xml
+  
+  create module --fileName modules/hcvCommonAaAnalyser.xml
+  create module -f modules/hcvAlignmentsToUncommonAaVariations.xml
 
   

@@ -50,13 +50,28 @@
 		<featureName>NS5B</featureName>
 		<deriveSequenceAnalysisFrom>precursor_polyprotein</deriveSequenceAnalysisFrom>
 	</featureAnalysisHint>
-	<!-- <variationCategory>
-		<name>common_aa_polymorphisms</name>
-		<displayName>Common amino acid polymorphisms</displayName>
-		<description>Amino acids at a given codon location which appear in public HCV sequences at a frequency between 1% and 99%</description>
-		<whereClause>is_common_aa_polymorphism = 'true'</whereClause>
-		<objectRendererModule>hcvCommonAaPolymorphismRenderer</objectRendererModule>
-	</variationCategory>  -->
+	<variationCategory>
+		<name>uncommon_aa_hcv</name>
+		<displayName>HCV-atypical substitutions</displayName>
+		<description>Amino acids which appear at a given codon in HCV sequences at a frequency of less than 5%</description>
+		<whereClause>name like 'uncommon_aa_%' and featureLoc.referenceSequence.name = 'REF_MASTER_NC_004102'</whereClause>
+		<objectRendererModule>hcvUncommonAaRenderer</objectRendererModule>
+	</variationCategory>
+	<variationCategory>
+		<name>uncommon_aa_genotype</name>
+		<displayName>Genotype-atypical substitutions</displayName>
+		<description>Amino acids which appear at a given codon in sequences with the same genotype at a frequency of less than 5%</description>
+		<whereClause>name like 'uncommon_aa_%' and featureLoc.referenceSequence.alignmentsWhereRefSequence.displayName like 'HCV Genotype%'</whereClause>
+		<objectRendererModule>hcvUncommonAaRenderer</objectRendererModule>
+	</variationCategory>
+	<variationCategory>
+		<name>uncommon_aa_subtype</name>
+		<displayName>Subtype-atypical substitutions</displayName>
+		<description>Amino acids which appear at a given codon in sequences with the same subtype at a frequency of less than 5%</description>
+		<whereClause>name like 'uncommon_aa_%' and featureLoc.referenceSequence.alignmentsWhereRefSequence.displayName like 'HCV Subtype%'</whereClause>
+		<selectedByDefault>true</selectedByDefault>
+		<objectRendererModule>hcvUncommonAaRenderer</objectRendererModule>
+	</variationCategory>
 	<variationCategory>
 		<name>resistance_associated_variants</name>
 		<displayName>Resistance-associated substitutions</displayName>
@@ -91,6 +106,7 @@
 		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
 		<reportAbsence>true</reportAbsence>
 	</variationCategory>
+	<!-- 
 	<variationCategory>
 		<name>epitopes_hla_a</name>
 		<displayName>HLA-A Epitopes</displayName>
@@ -164,7 +180,7 @@
 				 epitope_full_hla like 'HLA-L%'</whereClause>
 		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
 		<reportAbsence>true</reportAbsence>
-	</variationCategory>
+	</variationCategory>  -->
 	<variationCategory>
 		<name>epitopes_mhc_class_ii</name>
 		<displayName>MHC Class II Epitopes</displayName>
@@ -175,6 +191,7 @@
 		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
 		<reportAbsence>true</reportAbsence>
 	</variationCategory>
+	<!-- 
 	<variationCategory>
 		<name>epitopes_hla_dm</name>
 		<displayName>HLA-DM Epitopes</displayName>
@@ -220,4 +237,5 @@
 		<objectRendererModule>hcvEpitopeRenderer</objectRendererModule>
 		<reportAbsence>true</reportAbsence>
 	</variationCategory>
+	 -->
 </webAnalysisTool>

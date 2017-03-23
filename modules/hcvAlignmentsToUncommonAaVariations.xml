@@ -1,0 +1,11 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign almtName>${row["name"]?trim}</#assign>
+  <#assign referenceName>${row["refSequence.name"]?trim}</#assign>
+  <#list ["Core", "E1", "E2", "p7", "NS2", "NS3", "NS4A", "NS4B", "NS5A", "NS5B"] as featureName>
+module hcvCommonAaAnalyser generate variation uncommon-aas ${almtName} -r ${referenceName} -f ${featureName} -c -w "sequence.source.name = 'ncbi-curated' and referenceMember = false"
+  </#list>
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>

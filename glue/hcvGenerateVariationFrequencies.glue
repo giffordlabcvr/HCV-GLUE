@@ -1,11 +1,4 @@
-# some lines commented out for a faster build
-
 module variationFrequenciesGenerator
-  # generate frequencies for epitopes
-  ### generate frequencies AL_MASTER -q -c -w "sequence.source.name = 'ncbi-curated'" -r REF_MASTER_NC_004102 -m -f precursor_polyprotein -d -v "is_epitope = 'true'"
   # generate frequencies for resistance associated variants
   generate frequencies AL_MASTER -q -c -w "sequence.source.name = 'ncbi-curated'" -r REF_MASTER_NC_004102 -m -f precursor_polyprotein -d -v "is_resistance_associated_variant = 'true'"
-  # generate frequencies for common AA polymorphisms
-  ### generate frequencies AL_MASTER -q -c -w "sequence.source.name = 'ncbi-curated'" -r REF_MASTER_NC_004102 -m -f precursor_polyprotein -d -v "is_common_aa_polymorphism = 'true'"
-  
   exit

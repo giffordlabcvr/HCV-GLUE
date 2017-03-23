@@ -1,0 +1,13 @@
+<#include "/utils/glueDocUtils.ftlx">
+
+<uncommon_aa>
+	<name>${name}</name>
+	<renderedName>${getRenderedName()}</renderedName>
+	<@elem tag="description" expr="description"/>
+	<referenceSequence>${featureLoc.referenceSequence.name}</referenceSequence>
+	<feature>${featureLoc.feature.name}</feature>
+	<codonLabel>${name?keep_after(":")}</codonLabel>
+<#assign scannedAlmt = featureLoc.referenceSequence.alignmentsWhereRefSequence[0]>
+	<scannedAlignmentName>${scannedAlmt.name}</scannedAlignmentName>
+	<scannedAlignmentRenderedName>${scannedAlmt.renderedName}</scannedAlignmentRenderedName>
+</uncommon_aa>

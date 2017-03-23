@@ -144,9 +144,9 @@ function ($scope, glueWS, glueWebToolConfig) {
 	                            	    	dialogController: "displayEpitopeCtrl"
 	                            	    },
 	                            	    {
-	                            	    	renderer: "hcvCommonAaPolymorphismRenderer",
-	                            	    	dialogURL: "dialogs/displayCommonAa.html",
-	                            	    	dialogController: "displayCommonAaCtrl"
+	                            	    	renderer: "hcvUncommonAaRenderer",
+	                            	    	dialogURL: "dialogs/displayUncommonAa.html",
+	                            	    	dialogController: "displayUncommonAaCtrl"
 	                            	    },
 	                            	    {
 	                            	    	renderer: "hcvResistanceAssociatedVariantRenderer",
