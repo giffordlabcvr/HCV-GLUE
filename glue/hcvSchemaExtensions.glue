@@ -51,7 +51,6 @@ schema-project hcv
 
   table variation
     create field is_resistance_associated_variant BOOLEAN 
-    create field is_common_aa_polymorphism BOOLEAN 
     create field is_epitope BOOLEAN
     create field pubmed_id VARCHAR 50
     create field publication_date_year INTEGER
@@ -72,9 +71,6 @@ schema-project hcv
     create field epitope_effector_cell_culture_condition VARCHAR 50
     create field epitope_full_hla VARCHAR 50
     create field epitope_partial_hla VARCHAR 50
-    create field common_aa_polymorphism_reference_aa VARCHAR 50
-    create field common_aa_polymorphism_variation_aa VARCHAR 50
-    create field common_aa_polymorphism_codon VARCHAR 50
     exit
   
   table var_almt_note

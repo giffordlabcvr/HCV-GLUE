@@ -1,148 +1,148 @@
-name	refSequence.name
-AL_1a	REF_1a_NC_004102
-AL_1b	REF_1b_D90208
-AL_1c	REF_1c_D14853
-AL_1d	REF_1d_KJ439768
-AL_1e	REF_1e_KC248194
-AL_1f	REF_1f_L38350_L38371
-AL_1g	REF_1g_AM910652
-AL_1h	REF_1h_KC248198
-AL_1i	REF_1i_KJ439772
-AL_1j	REF_1j_KJ439773
-AL_1k	REF_1k_KJ439774
-AL_1l	REF_1l_KC248193
-AL_1m	REF_1m_KJ439778
-AL_1n	REF_1n_KJ439781
-AL_1	REF_1_NC_004102
-AL_1_unassigned_AJ851228	REF_1_unassigned_AJ851228
-AL_1_unassigned_HQ537007	REF_1_unassigned_HQ537007
-AL_1_unassigned_KC248195	REF_1_unassigned_KC248195
-AL_1_unassigned_KJ439776	REF_1_unassigned_KJ439776
-AL_1_unassigned_KJ439777	REF_1_unassigned_KJ439777
-AL_1_unassigned_KJ439779	REF_1_unassigned_KJ439779
-AL_1_unassigned_KJ439780	REF_1_unassigned_KJ439780
-AL_2a	REF_2a_D00944
-AL_2b	REF_2b_D10988
-AL_2c	REF_2c_D50409
-AL_2d	REF_2d_JF735114
-AL_2e	REF_2e_JF735120
-AL_2f	REF_2f_KC844042
-AL_2g	REF_2g_X93323
-AL_2h	REF_2h_X93327
-AL_2i	REF_2i_DQ155561
-AL_2j	REF_2j_HM777358
-AL_2k	REF_2k_AB031663
-AL_2l	REF_2l_KC197235
-AL_2m	REF_2m_JF735111
-AL_2n	REF_2n_L39309_L44602
-AL_2o	REF_2o_L38333_L38373
-AL_2p	REF_2p_L39300_L44601
-AL_2q	REF_2q_FN666428
-AL_2r	REF_2r_JF735115
-AL_2s	REF_2s_JQ924942_HM777447_HM777332
-AL_2t	REF_2t_KC197238
-AL_2u	REF_2u_JF735112
-AL_2	REF_2_D00944
-AL_2_unassigned_JF735110	REF_2_unassigned_JF735110
-AL_2_unassigned_JF735116	REF_2_unassigned_JF735116
-AL_2_unassigned_JF735117	REF_2_unassigned_JF735117
-AL_2_unassigned_JF735118	REF_2_unassigned_JF735118
-AL_2_unassigned_JF735119	REF_2_unassigned_JF735119
-AL_2_unassigned_KC197236	REF_2_unassigned_KC197236
-AL_2_unassigned_KC197237	REF_2_unassigned_KC197237
-AL_2_unassigned_KC197239	REF_2_unassigned_KC197239
-AL_3a	REF_3a_NC_009824
-AL_3b	REF_3b_D49374
-AL_3c	REF_3c_D16612_D14198_D16613
-AL_3d	REF_3d_KJ470619
-AL_3e	REF_3e_KJ470618
-AL_3f	REF_3f_D16614_D14203_D16615
-AL_3g	REF_3g_JX227954
-AL_3h	REF_3h_JF735121
-AL_3i	REF_3i_FJ407092
-AL_3k	REF_3k_D63821
-AL_3	REF_3_NC_009824
-AL_3_unassigned_JF735124	REF_3_unassigned_JF735124
-AL_4a	REF_4a_NC_009825
-AL_4b	REF_4b_FJ462435
-AL_4c	REF_4c_FJ462436
-AL_4d	REF_4d_DQ418786
-AL_4e	REF_4e_L29589_L29590
-AL_4f	REF_4f_EF589161
-AL_4g	REF_4g_FJ462432
-AL_4h	REF_4h_L29610_L29611
-AL_4i	REF_4i_L36439_L36437
-AL_4j	REF_4j_L36438
-AL_4k	REF_4k_EU392173
-AL_4l	REF_4l_FJ839870
-AL_4m	REF_4m_FJ462433
-AL_4n	REF_4n_FJ462441
-AL_4o	REF_4o_FJ462440
-AL_4p	REF_4p_FJ462431
-AL_4q	REF_4q_FJ462434
-AL_4r	REF_4r_FJ462439
-AL_4s	REF_4s_JF735136
-AL_4t	REF_4t_FJ839869
-AL_4v	REF_4v_JX227960
-AL_4w	REF_4w_FJ025855
-AL_4	REF_4_NC_009825
-AL_4_unassigned_FJ025854	REF_4_unassigned_FJ025854
-AL_4_unassigned_JF735127	REF_4_unassigned_JF735127
-AL_4_unassigned_JF735129	REF_4_unassigned_JF735129
-AL_4_unassigned_JF735130	REF_4_unassigned_JF735130
-AL_4_unassigned_JF735131	REF_4_unassigned_JF735131
-AL_4_unassigned_JF735132	REF_4_unassigned_JF735132
-AL_4_unassigned_JF735134	REF_4_unassigned_JF735134
-AL_4_unassigned_JF735135	REF_4_unassigned_JF735135
-AL_4_unassigned_JF735138	REF_4_unassigned_JF735138
-AL_4_unassigned_JX227964	REF_4_unassigned_JX227964
-AL_5a	REF_5a_NC_009826
-AL_5	REF_5_NC_009826
-AL_6a	REF_6a_Y12083
-AL_6b	REF_6b_NC_009827
-AL_6c	REF_6c_EF424629
-AL_6d	REF_6d_D84263
-AL_6e	REF_6e_DQ314805
-AL_6f	REF_6f_DQ835760
-AL_6g	REF_6g_D63822
-AL_6h	REF_6h_D84265
-AL_6i	REF_6i_DQ835770
-AL_6j	REF_6j_DQ835769
-AL_6k	REF_6k_D84264
-AL_6l	REF_6l_EF424628
-AL_6m	REF_6m_DQ835767
-AL_6n	REF_6n_DQ278894
-AL_6o	REF_6o_EF424627
-AL_6p	REF_6p_EF424626
-AL_6q	REF_6q_EF424625
-AL_6r	REF_6r_EU408328
-AL_6s	REF_6s_EU408329
-AL_6t	REF_6t_EF632071
-AL_6u	REF_6u_EU246940
-AL_6v	REF_6v_EU158186
-AL_6w	REF_6w_DQ278892
-AL_6xa	REF_6xa_EU408330
-AL_6xb	REF_6xb_JX183552
-AL_6xc	REF_6xc_KJ567651
-AL_6xd	REF_6xd_KM252789
-AL_6xe	REF_6xe_JX183557
-AL_6	REF_6_NC_009827
-AL_6_unassigned_DQ278891	REF_6_unassigned_DQ278891
-AL_6_unassigned_DQ278893	REF_6_unassigned_DQ278893
-AL_6_unassigned_JX183549	REF_6_unassigned_JX183549
-AL_6_unassigned_JX183550	REF_6_unassigned_JX183550
-AL_6_unassigned_JX183551	REF_6_unassigned_JX183551
-AL_6_unassigned_JX183553	REF_6_unassigned_JX183553
-AL_6_unassigned_JX183554	REF_6_unassigned_JX183554
-AL_6_unassigned_JX183558	REF_6_unassigned_JX183558
-AL_6_unassigned_KC844039	REF_6_unassigned_KC844039
-AL_6_unassigned_KC844040	REF_6_unassigned_KC844040
-AL_6_unassigned_KJ470620	REF_6_unassigned_KJ470620
-AL_6_unassigned_KJ470621	REF_6_unassigned_KJ470621
-AL_6_unassigned_KJ470622	REF_6_unassigned_KJ470622
-AL_6_unassigned_KJ470623	REF_6_unassigned_KJ470623
-AL_6_unassigned_KJ470624	REF_6_unassigned_KJ470624
-AL_6_unassigned_KJ470625	REF_6_unassigned_KJ470625
-AL_7a	REF_7a_NC_030791
-AL_7	REF_7_NC_030791
-AL_MASTER	REF_MASTER_NC_004102
+name	displayName	refSequence.name
+AL_1a	HCV Subtype 1a	REF_1a_NC_004102
+AL_1b	HCV Subtype 1b	REF_1b_D90208
+AL_1c	HCV Subtype 1c	REF_1c_D14853
+AL_1d	HCV Subtype 1d	REF_1d_KJ439768
+AL_1e	HCV Subtype 1e	REF_1e_KC248194
+AL_1f	HCV Subtype 1f (provisional)	REF_1f_L38350_L38371
+AL_1g	HCV Subtype 1g	REF_1g_AM910652
+AL_1h	HCV Subtype 1h	REF_1h_KC248198
+AL_1i	HCV Subtype 1i	REF_1i_KJ439772
+AL_1j	HCV Subtype 1j	REF_1j_KJ439773
+AL_1k	HCV Subtype 1k	REF_1k_KJ439774
+AL_1l	HCV Subtype 1l	REF_1l_KC248193
+AL_1m	HCV Subtype 1m	REF_1m_KJ439778
+AL_1n	HCV Subtype 1n	REF_1n_KJ439781
+AL_1	HCV Genotype 1	REF_1_NC_004102
+AL_1_unassigned_AJ851228	HCV Subtype 1_AJ851228 (unassigned)	REF_1_unassigned_AJ851228
+AL_1_unassigned_HQ537007	HCV Subtype 1_HQ537007 (unassigned)	REF_1_unassigned_HQ537007
+AL_1_unassigned_KC248195	HCV Subtype 1_KC248195 (unassigned)	REF_1_unassigned_KC248195
+AL_1_unassigned_KJ439776	HCV Subtype 1_KJ439776 (unassigned)	REF_1_unassigned_KJ439776
+AL_1_unassigned_KJ439777	HCV Subtype 1_KJ439777 (unassigned)	REF_1_unassigned_KJ439777
+AL_1_unassigned_KJ439779	HCV Subtype 1_KJ439779 (unassigned)	REF_1_unassigned_KJ439779
+AL_1_unassigned_KJ439780	HCV Subtype 1_KJ439780 (unassigned)	REF_1_unassigned_KJ439780
+AL_2a	HCV Subtype 2a	REF_2a_D00944
+AL_2b	HCV Subtype 2b	REF_2b_D10988
+AL_2c	HCV Subtype 2c	REF_2c_D50409
+AL_2d	HCV Subtype 2d	REF_2d_JF735114
+AL_2e	HCV Subtype 2e	REF_2e_JF735120
+AL_2f	HCV Subtype 2f	REF_2f_KC844042
+AL_2g	HCV Subtype 2g (provisional)	REF_2g_X93323
+AL_2h	HCV Subtype 2h (provisional)	REF_2h_X93327
+AL_2i	HCV Subtype 2i	REF_2i_DQ155561
+AL_2j	HCV Subtype 2j	REF_2j_HM777358
+AL_2k	HCV Subtype 2k	REF_2k_AB031663
+AL_2l	HCV Subtype 2l	REF_2l_KC197235
+AL_2m	HCV Subtype 2m	REF_2m_JF735111
+AL_2n	HCV Subtype 2n (provisional)	REF_2n_L39309_L44602
+AL_2o	HCV Subtype 2o (provisional)	REF_2o_L38333_L38373
+AL_2p	HCV Subtype 2p (provisional)	REF_2p_L39300_L44601
+AL_2q	HCV Subtype 2q	REF_2q_FN666428
+AL_2r	HCV Subtype 2r	REF_2r_JF735115
+AL_2s	HCV Subtype 2s (provisional)	REF_2s_JQ924942_HM777447_HM777332
+AL_2t	HCV Subtype 2t	REF_2t_KC197238
+AL_2u	HCV Subtype 2u	REF_2u_JF735112
+AL_2	HCV Genotype 2	REF_2_D00944
+AL_2_unassigned_JF735110	HCV Subtype 2_JF735110 (unassigned)	REF_2_unassigned_JF735110
+AL_2_unassigned_JF735116	HCV Subtype 2_JF735116 (unassigned)	REF_2_unassigned_JF735116
+AL_2_unassigned_JF735117	HCV Subtype 2_JF735117 (unassigned)	REF_2_unassigned_JF735117
+AL_2_unassigned_JF735118	HCV Subtype 2_JF735118 (unassigned)	REF_2_unassigned_JF735118
+AL_2_unassigned_JF735119	HCV Subtype 2_JF735119 (unassigned)	REF_2_unassigned_JF735119
+AL_2_unassigned_KC197236	HCV Subtype 2_KC197236 (unassigned)	REF_2_unassigned_KC197236
+AL_2_unassigned_KC197237	HCV Subtype 2_KC197237 (unassigned)	REF_2_unassigned_KC197237
+AL_2_unassigned_KC197239	HCV Subtype 2_KC197239 (unassigned)	REF_2_unassigned_KC197239
+AL_3a	HCV Subtype 3a	REF_3a_NC_009824
+AL_3b	HCV Subtype 3b	REF_3b_D49374
+AL_3c	HCV Subtype 3c (provisional)	REF_3c_D16612_D14198_D16613
+AL_3d	HCV Subtype 3d	REF_3d_KJ470619
+AL_3e	HCV Subtype 3e	REF_3e_KJ470618
+AL_3f	HCV Subtype 3f (provisional)	REF_3f_D16614_D14203_D16615
+AL_3g	HCV Subtype 3g	REF_3g_JX227954
+AL_3h	HCV Subtype 3h	REF_3h_JF735121
+AL_3i	HCV Subtype 3i	REF_3i_FJ407092
+AL_3k	HCV Subtype 3k	REF_3k_D63821
+AL_3	HCV Genotype 3	REF_3_NC_009824
+AL_3_unassigned_JF735124	HCV Subtype 3_JF735124 (unassigned)	REF_3_unassigned_JF735124
+AL_4a	HCV Subtype 4a	REF_4a_NC_009825
+AL_4b	HCV Subtype 4b	REF_4b_FJ462435
+AL_4c	HCV Subtype 4c	REF_4c_FJ462436
+AL_4d	HCV Subtype 4d	REF_4d_DQ418786
+AL_4e	HCV Subtype 4e (provisional)	REF_4e_L29589_L29590
+AL_4f	HCV Subtype 4f	REF_4f_EF589161
+AL_4g	HCV Subtype 4g	REF_4g_FJ462432
+AL_4h	HCV Subtype 4h (provisional)	REF_4h_L29610_L29611
+AL_4i	HCV Subtype 4i (provisional)	REF_4i_L36439_L36437
+AL_4j	HCV Subtype 4j (provisional)	REF_4j_L36438
+AL_4k	HCV Subtype 4k	REF_4k_EU392173
+AL_4l	HCV Subtype 4l	REF_4l_FJ839870
+AL_4m	HCV Subtype 4m	REF_4m_FJ462433
+AL_4n	HCV Subtype 4n	REF_4n_FJ462441
+AL_4o	HCV Subtype 4o	REF_4o_FJ462440
+AL_4p	HCV Subtype 4p	REF_4p_FJ462431
+AL_4q	HCV Subtype 4q	REF_4q_FJ462434
+AL_4r	HCV Subtype 4r	REF_4r_FJ462439
+AL_4s	HCV Subtype 4s	REF_4s_JF735136
+AL_4t	HCV Subtype 4t	REF_4t_FJ839869
+AL_4v	HCV Subtype 4v	REF_4v_JX227960
+AL_4w	HCV Subtype 4w	REF_4w_FJ025855
+AL_4	HCV Genotype 4	REF_4_NC_009825
+AL_4_unassigned_FJ025854	HCV Subtype 4_FJ025854 (unassigned)	REF_4_unassigned_FJ025854
+AL_4_unassigned_JF735127	HCV Subtype 4_JF735127 (unassigned)	REF_4_unassigned_JF735127
+AL_4_unassigned_JF735129	HCV Subtype 4_JF735129 (unassigned)	REF_4_unassigned_JF735129
+AL_4_unassigned_JF735130	HCV Subtype 4_JF735130 (unassigned)	REF_4_unassigned_JF735130
+AL_4_unassigned_JF735131	HCV Subtype 4_JF735131 (unassigned)	REF_4_unassigned_JF735131
+AL_4_unassigned_JF735132	HCV Subtype 4_JF735132 (unassigned)	REF_4_unassigned_JF735132
+AL_4_unassigned_JF735134	HCV Subtype 4_JF735134 (unassigned)	REF_4_unassigned_JF735134
+AL_4_unassigned_JF735135	HCV Subtype 4_JF735135 (unassigned)	REF_4_unassigned_JF735135
+AL_4_unassigned_JF735138	HCV Subtype 4_JF735138 (unassigned)	REF_4_unassigned_JF735138
+AL_4_unassigned_JX227964	HCV Subtype 4_J4227964 (unassigned)	REF_4_unassigned_JX227964
+AL_5a	HCV Subtype 5a	REF_5a_NC_009826
+AL_5	HCV Genotype 5	REF_5_NC_009826
+AL_6a	HCV Subtype 6a	REF_6a_Y12083
+AL_6b	HCV Subtype 6b	REF_6b_NC_009827
+AL_6c	HCV Subtype 6c	REF_6c_EF424629
+AL_6d	HCV Subtype 6d	REF_6d_D84263
+AL_6e	HCV Subtype 6e	REF_6e_DQ314805
+AL_6f	HCV Subtype 6f	REF_6f_DQ835760
+AL_6g	HCV Subtype 6g	REF_6g_D63822
+AL_6h	HCV Subtype 6h	REF_6h_D84265
+AL_6i	HCV Subtype 6i	REF_6i_DQ835770
+AL_6j	HCV Subtype 6j	REF_6j_DQ835769
+AL_6k	HCV Subtype 6k	REF_6k_D84264
+AL_6l	HCV Subtype 6l	REF_6l_EF424628
+AL_6m	HCV Subtype 6m	REF_6m_DQ835767
+AL_6n	HCV Subtype 6n	REF_6n_DQ278894
+AL_6o	HCV Subtype 6o	REF_6o_EF424627
+AL_6p	HCV Subtype 6p	REF_6p_EF424626
+AL_6q	HCV Subtype 6q	REF_6q_EF424625
+AL_6r	HCV Subtype 6r	REF_6r_EU408328
+AL_6s	HCV Subtype 6s	REF_6s_EU408329
+AL_6t	HCV Subtype 6t	REF_6t_EF632071
+AL_6u	HCV Subtype 6u	REF_6u_EU246940
+AL_6v	HCV Subtype 6v	REF_6v_EU158186
+AL_6w	HCV Subtype 6w	REF_6w_DQ278892
+AL_6xa	HCV Subtype 6xa	REF_6xa_EU408330
+AL_6xb	HCV Subtype 6xb	REF_6xb_JX183552
+AL_6xc	HCV Subtype 6xc	REF_6xc_KJ567651
+AL_6xd	HCV Subtype 6xd	REF_6xd_KM252789
+AL_6xe	HCV Subtype 6xe	REF_6xe_JX183557
+AL_6	HCV Genotype 6	REF_6_NC_009827
+AL_6_unassigned_DQ278891	HCV Subtype 6_DQ278891 (unassigned)	REF_6_unassigned_DQ278891
+AL_6_unassigned_DQ278893	HCV Subtype 6_DQ278893 (unassigned)	REF_6_unassigned_DQ278893
+AL_6_unassigned_JX183549	HCV Subtype 6_JX183549 (unassigned)	REF_6_unassigned_JX183549
+AL_6_unassigned_JX183550	HCV Subtype 6_JX183550 (unassigned)	REF_6_unassigned_JX183550
+AL_6_unassigned_JX183551	HCV Subtype 6_JX183551 (unassigned)	REF_6_unassigned_JX183551
+AL_6_unassigned_JX183553	HCV Subtype 6_JX183553 (unassigned)	REF_6_unassigned_JX183553
+AL_6_unassigned_JX183554	HCV Subtype 6_JX183554 (unassigned)	REF_6_unassigned_JX183554
+AL_6_unassigned_JX183558	HCV Subtype 6_JX183558 (unassigned)	REF_6_unassigned_JX183558
+AL_6_unassigned_KC844039	HCV Subtype 6_KC844039 (unassigned)	REF_6_unassigned_KC844039
+AL_6_unassigned_KC844040	HCV Subtype 6_KC844040 (unassigned)	REF_6_unassigned_KC844040
+AL_6_unassigned_KJ470620	HCV Subtype 6_KJ470620 (unassigned)	REF_6_unassigned_KJ470620
+AL_6_unassigned_KJ470621	HCV Subtype 6_KJ470621 (unassigned)	REF_6_unassigned_KJ470621
+AL_6_unassigned_KJ470622	HCV Subtype 6_KJ470622 (unassigned)	REF_6_unassigned_KJ470622
+AL_6_unassigned_KJ470623	HCV Subtype 6_KJ470623 (unassigned)	REF_6_unassigned_KJ470623
+AL_6_unassigned_KJ470624	HCV Subtype 6_KJ470624 (unassigned)	REF_6_unassigned_KJ470624
+AL_6_unassigned_KJ470625	HCV Subtype 6_KJ470625 (unassigned)	REF_6_unassigned_KJ470625
+AL_7a	HCV Subtype 7a	REF_7a_NC_030791
+AL_7	HCV Genotype 7	REF_7_NC_030791
+AL_MASTER	Hepatitis C Virus (HCV)	REF_MASTER_NC_004102
