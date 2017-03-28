@@ -53,21 +53,21 @@
 	<variationCategory>
 		<name>uncommon_aa_hcv</name>
 		<displayName>HCV-atypical substitutions</displayName>
-		<description>Amino acids which appear at a given codon in HCV sequences at a frequency of less than 5%</description>
+		<description>Amino acids which appear at a given codon in HCV sequences at a frequency of less than 1%</description>
 		<whereClause>name like 'uncommon_aa_%' and featureLoc.referenceSequence.name = 'REF_MASTER_NC_004102'</whereClause>
 		<objectRendererModule>hcvUncommonAaRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
 		<name>uncommon_aa_genotype</name>
 		<displayName>Genotype-atypical substitutions</displayName>
-		<description>Amino acids which appear at a given codon in sequences with the same genotype at a frequency of less than 5%</description>
+		<description>Amino acids which appear at a given codon in sequences with the same genotype at a frequency of less than 1%</description>
 		<whereClause>name like 'uncommon_aa_%' and featureLoc.referenceSequence.alignmentsWhereRefSequence.displayName like 'HCV Genotype%'</whereClause>
 		<objectRendererModule>hcvUncommonAaRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
 		<name>uncommon_aa_subtype</name>
 		<displayName>Subtype-atypical substitutions</displayName>
-		<description>Amino acids which appear at a given codon in sequences with the same subtype at a frequency of less than 5%</description>
+		<description>Amino acids which appear at a given codon in sequences with the same subtype at a frequency of less than 1%</description>
 		<whereClause>name like 'uncommon_aa_%' and featureLoc.referenceSequence.alignmentsWhereRefSequence.displayName like 'HCV Subtype%'</whereClause>
 		<selectedByDefault>true</selectedByDefault>
 		<objectRendererModule>hcvUncommonAaRenderer</objectRendererModule>
