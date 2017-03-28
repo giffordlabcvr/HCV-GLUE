@@ -15,9 +15,15 @@
 <div class="modal-body">
 	<h4>Details</h4>
 	<table class="table table-bordered table-striped">
+		<thead>
+			<col width="50%"></col>
+			<col width="50%"></col>
+		</thead>
 		<tr><td><b>Virus protein:</b></td><td>{{variation.feature}}</td></tr>
 		<tr><td><b>Codon:</b></td><td>{{variation.codonLabel}}</td></tr>
-		<tr><td><b>Uncommon in:</b></td><td><a href="#project/alignment/{{variation.scannedAlignmentName}}" target="_blank">{{variation.scannedAlignmentRenderedName}}</td></tr>
+		<tr><td><b>Atypical substitution:</b></td><td>{{pLocMatches[0].matchedValue}}</td></tr>
+		<tr><td><b>Clade in which this is atypical:</b></td><td><a href="#project/alignment/{{variation.scannedAlignmentName}}" target="_blank">{{variation.scannedAlignmentRenderedName}}</td></tr>
+		<tr><td><b>Typical substitutions in {{variation.scannedAlignmentRenderedName}}:</b></td><td>{{variation.commonAas.split('').join(", ")}}</td></tr>
 	</table>
 
 </div>

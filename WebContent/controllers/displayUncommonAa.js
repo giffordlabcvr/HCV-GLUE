@@ -4,6 +4,7 @@ analysisTool.controller('displayUncommonAaCtrl', ['$scope', '$modalInstance', '$
 		$modalInstance: $modalInstance,
 		variationCategory: data.variationCategory, 
 		variation: data.renderedVariation.uncommon_aa, 
-		ancestorAlmtNames: data.ancestorAlmtNames});
+		ancestorAlmtNames: data.ancestorAlmtNames,
+		pLocMatches: data.pLocMatches});
 }]);
 

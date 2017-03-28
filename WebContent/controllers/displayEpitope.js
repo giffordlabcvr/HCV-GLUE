@@ -5,6 +5,7 @@ analysisTool.controller('displayEpitopeCtrl', ['$scope', '$modalInstance', '$con
 		$modalInstance: $modalInstance,
 		variationCategory: data.variationCategory, 
 		variation: data.renderedVariation.epitope, 
-		ancestorAlmtNames: data.ancestorAlmtNames});
+		ancestorAlmtNames: data.ancestorAlmtNames,
+		pLocMatches: data.pLocMatches});
 	
 }]);

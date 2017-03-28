@@ -1,10 +1,15 @@
 // http://jasonwatmore.com/post/2014/03/25/AngularJS-A-better-way-to-implement-a-base-controller.aspx
 
 analysisTool.controller('displayVariationBase', ['$scope', '$modalInstance', 
-                                                 'variationCategory', 'variation', 'ancestorAlmtNames',
-    function($scope, $modalInstance, variationCategory, variation, ancestorAlmtNames ) {
+                                                 'variationCategory', 'variation', 'ancestorAlmtNames', 'pLocMatches',
+    function($scope, $modalInstance, variationCategory, variation, ancestorAlmtNames, pLocMatches ) {
+		console.log()
+	
 		$scope.variationCategory = variationCategory;
 		$scope.variation = variation;
+		$scope.pLocMatches = pLocMatches;
+		
+		console.log("pLocMatches", pLocMatches)
 		
 		$scope.data = {
 				freqView: "querySequenceClades",

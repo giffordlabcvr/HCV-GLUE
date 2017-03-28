@@ -4,6 +4,7 @@ analysisTool.controller('displayRAVCtrl', ['$scope', '$modalInstance', '$control
 		$modalInstance: $modalInstance,
 		variationCategory: data.variationCategory, 
 		variation: data.renderedVariation.resistance_associated_variant, 
-		ancestorAlmtNames: data.ancestorAlmtNames});
+		ancestorAlmtNames: data.ancestorAlmtNames,
+		pLocMatches: data.pLocMatches});
 	
 }]);

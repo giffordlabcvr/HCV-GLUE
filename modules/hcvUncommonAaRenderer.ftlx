@@ -10,4 +10,5 @@
 <#assign scannedAlmt = featureLoc.referenceSequence.alignmentsWhereRefSequence[0]>
 	<scannedAlignmentName>${scannedAlmt.name}</scannedAlignmentName>
 	<scannedAlignmentRenderedName>${scannedAlmt.renderedName}</scannedAlignmentRenderedName>
+	<commonAas>${patternLocs[0]?keep_after("[^")?keep_before("X]")}</commonAas>
 </uncommon_aa>
