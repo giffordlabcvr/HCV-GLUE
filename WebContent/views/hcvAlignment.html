@@ -25,8 +25,8 @@
 	<h3>NCBI Sequences within {{renderResult.alignment.renderedName}}</h3>
 	<p>The following sequences were assigned to {{renderResult.alignment.renderedName}}{{renderResult.alignment.child == null ? "" : " (or one of its descendent clades)"}} by the HCV-GLUE genotyping algorithm.</p>
 	<p>Sequences identified as recombinants, lab constructs or having a non-human host species are excluded from the list.</p>
-	<paging-buttons paging-context="pagingContext"></paging-buttons>
 	<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
+		<paging-buttons ng-show="!loadingSpinner" paging-context="pagingContext"></paging-buttons>
 		<span ng-show="memberList.length == 0">No sequences</span>
 		<div ng-show="memberList.length > 0">
 			Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}

@@ -3,10 +3,10 @@
 
 	<p>This dataset contains all NCBI sequences identified as Hepatitis C Virus.</p>
 
-	<paging-buttons paging-context="pagingContext">
-			<button type="button" class="btn btn-default" ng-click="downloadSequences('fastaExporter')">Download FASTA</button>
-	</paging-buttons>
 	<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
+		<paging-buttons ng-show="!loadingSpinner" paging-context="pagingContext">
+				<button type="button" class="btn btn-default" ng-click="downloadSequences('fastaExporter')">Download FASTA</button>
+		</paging-buttons>
 		<span ng-show="listSequenceResult.length == 0">None</span>
 		<div ng-show="listSequenceResult.length > 0">
 			Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
