@@ -1,6 +1,6 @@
 hcvApp.controller('hcvAlignmentCtrl', 
-		[ '$scope', '$routeParams', '$controller', 'glueWS', 'dialogs', 'pagingContext',
-		  function($scope, $routeParams, $controller, glueWS, dialogs, pagingContext) {
+		[ '$scope', '$routeParams', '$controller', 'glueWS', 'glueWebToolConfig', 'dialogs', 'pagingContext',
+		  function($scope, $routeParams, $controller, glueWS, glueWebToolConfig, dialogs, pagingContext) {
 			
 			addUtilsToScope($scope);
 
