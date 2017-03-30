@@ -6,48 +6,50 @@
 	<paging-buttons paging-context="pagingContext">
 			<button type="button" class="btn btn-default" ng-click="downloadSequences('fastaExporter')">Download FASTA</button>
 	</paging-buttons>
-	<span ng-show="listSequenceResult.length == 0">None</span>
-	<div ng-show="listSequenceResult.length > 0">
-		Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
-		<table class="table table-striped table-bordered">
-			<thead>
-				<th>NCBI Nucleotide ID</th>
-				<th>NCBI Entry Creation Date</th>
-				<th>NCBI Last Update Date</th>
-				<th>Sequence Length</th>
-				<th>Isolate ID</th>
-				<th>Country of Origin</th>
-				<th>Collection Year Range</th>
-				<th>Reference</th>
-			</thead>
-			<colgroup>
-		       <col span="1" style="width: 10%;">
-		       <col span="1" style="width: 10%;">
-		       <col span="1" style="width: 10%;">
-		       <col span="1" style="width: 10%;">
-		       <col span="1" style="width: 20%;">
-		       <col span="1" style="width: 15%;">
-		       <col span="1" style="width: 10%;">
-		       <col span="1" style="width: 15%;">
-			</colgroup>
-			<tbody>
-				<tr ng-repeat="sequenceResult in listSequenceResult track by $index">
-					<td><a href="#project/sequence/{{sequenceResult['source.name']}}/{{sequenceResult.sequenceID}}" target="_blank">{{sequenceResult.sequenceID}}</a></td>
-					<td>{{sequenceResult.gb_create_date}}</td>
-					<td>{{sequenceResult.gb_update_date}}</td>
-					<td>{{sequenceResult.gb_length}}</td>
-					<td>{{handleNull(sequenceResult.gb_isolate)}}</td>
-					<td>{{sequenceResult.gb_country_short ? (sequenceResult.gb_country_short+" ("+sequenceResult.gb_country_iso+")"):"-"}}</td>
-					<td>{{collectionYearRange(sequenceResult.earliest_collection_year, sequenceResult.latest_collection_year)}}</td>
-					<td ng-show="sequenceResult.gb_pubmed_id == null">-</td>
-					<td ng-show="sequenceResult.gb_pubmed_id != null">
-						<a href="https://www.ncbi.nlm.nih.gov/pubmed/{{sequenceResult.gb_pubmed_id}}" target="_blank">PubMed {{sequenceResult.gb_pubmed_id}} <span class="glyphicon glyphicon-link"></span></a>
-					</td>
-				</tr>
-			</tbody>
-		</table>
-		<paging-buttons paging-context="pagingContext">
-				<button type="button" class="btn btn-default" ng-click="downloadSequences('fastaExporter')">Download FASTA</button>
-		</paging-buttons>
+	<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
+		<span ng-show="listSequenceResult.length == 0">None</span>
+		<div ng-show="listSequenceResult.length > 0">
+			Sequences {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
+			<table class="table table-striped table-bordered">
+				<thead>
+					<th>NCBI Nucleotide ID</th>
+					<th>NCBI Entry Creation Date</th>
+					<th>NCBI Last Update Date</th>
+					<th>Sequence Length</th>
+					<th>Isolate ID</th>
+					<th>Country of Origin</th>
+					<th>Collection Year Range</th>
+					<th>Reference</th>
+				</thead>
+				<colgroup>
+			       <col span="1" style="width: 10%;">
+			       <col span="1" style="width: 10%;">
+			       <col span="1" style="width: 10%;">
+			       <col span="1" style="width: 10%;">
+			       <col span="1" style="width: 20%;">
+			       <col span="1" style="width: 15%;">
+			       <col span="1" style="width: 10%;">
+			       <col span="1" style="width: 15%;">
+				</colgroup>
+				<tbody>
+					<tr ng-repeat="sequenceResult in listSequenceResult track by $index">
+						<td><a href="#project/sequence/{{sequenceResult['source.name']}}/{{sequenceResult.sequenceID}}" target="_blank">{{sequenceResult.sequenceID}}</a></td>
+						<td>{{sequenceResult.gb_create_date}}</td>
+						<td>{{sequenceResult.gb_update_date}}</td>
+						<td>{{sequenceResult.gb_length}}</td>
+						<td>{{handleNull(sequenceResult.gb_isolate)}}</td>
+						<td>{{sequenceResult.gb_country_short ? (sequenceResult.gb_country_short+" ("+sequenceResult.gb_country_iso+")"):"-"}}</td>
+						<td>{{collectionYearRange(sequenceResult.earliest_collection_year, sequenceResult.latest_collection_year)}}</td>
+						<td ng-show="sequenceResult.gb_pubmed_id == null">-</td>
+						<td ng-show="sequenceResult.gb_pubmed_id != null">
+							<a href="https://www.ncbi.nlm.nih.gov/pubmed/{{sequenceResult.gb_pubmed_id}}" target="_blank">PubMed {{sequenceResult.gb_pubmed_id}} <span class="glyphicon glyphicon-link"></span></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<paging-buttons paging-context="pagingContext">
+					<button type="button" class="btn btn-default" ng-click="downloadSequences('fastaExporter')">Download FASTA</button>
+			</paging-buttons>
+		</div>
 	</div>
 </div>
