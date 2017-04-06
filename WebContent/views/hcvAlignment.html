@@ -27,7 +27,7 @@
 	<p>Sequences identified as recombinants, lab constructs or having a non-human host species are excluded from the list.</p>
 	<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
 		<paging-buttons ng-show="!loadingSpinner" paging-context="pagingContext">
-			<button type="button" class="btn btn-default" ng-click="downloadAlignment(renderResult.alignment.constrainingReference.name, 'fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
+			<button type="button" class="btn btn-default" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
 		</paging-buttons>
 		<span ng-show="memberList.length == 0">No sequences</span>
 		<div ng-show="memberList.length > 0">
@@ -75,7 +75,7 @@
 				</tbody>
 			</table>
 			<paging-buttons paging-context="pagingContext">
-				<button type="button" class="btn btn-default" ng-click="downloadAlignment(renderResult.alignment.constrainingReference.name, 'fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
+				<button type="button" class="btn btn-default" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
 			</paging-buttons>
 		</div>
 	</div>
