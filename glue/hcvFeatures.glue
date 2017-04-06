@@ -1,86 +1,87 @@
-  create feature whole_genome "Whole HCV genome"
-	feature whole_genome set field displayName "Whole genome"
-    feature whole_genome set metatag INFORMATIONAL true
+create feature whole_genome "Whole HCV genome"
+feature whole_genome set field displayName "Whole genome"
+feature whole_genome set metatag INCLUDE_IN_SUMMARY true
 
-    create feature 5UTR -p whole_genome "5' untranslated region"
-	feature 5UTR set field displayName "5' UTR"
+create feature 5UTR -p whole_genome "5' untranslated region"
+feature 5UTR set field displayName "5' UTR"
+feature 5UTR set metatag INCLUDE_IN_SUMMARY true
 
-    create feature precursor_polyprotein -p whole_genome "Precursor polyprotein"
-	  feature precursor_polyprotein set field displayName "Precursor polyprotein"
-      feature precursor_polyprotein set metatag OWN_CODON_NUMBERING true
-      feature precursor_polyprotein set metatag CODES_AMINO_ACIDS true
-      feature precursor_polyprotein set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature precursor_polyprotein -p whole_genome "Precursor polyprotein"
+feature precursor_polyprotein set field displayName "Precursor polyprotein"
+feature precursor_polyprotein set metatag OWN_CODON_NUMBERING true
+feature precursor_polyprotein set metatag CODES_AMINO_ACIDS true
+feature precursor_polyprotein set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-      create feature structural_proteins -p precursor_polyprotein "Structural proteins"
-	    feature structural_proteins set field displayName "Structural proteins"
-        feature structural_proteins set metatag INFORMATIONAL true
+create feature structural_proteins -p precursor_polyprotein "Structural proteins"
+feature structural_proteins set field displayName "Structural proteins"
+feature structural_proteins set metatag INFORMATIONAL true
 
-        create feature Core -p structural_proteins "Core"
-          feature Core set metatag OWN_CODON_NUMBERING true
-          feature Core set metatag INCLUDE_IN_SUMMARY true
-          feature Core set metatag CODES_AMINO_ACIDS true
-          feature Core set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature Core -p structural_proteins "Core"
+feature Core set metatag OWN_CODON_NUMBERING true
+feature Core set metatag INCLUDE_IN_SUMMARY true
+feature Core set metatag CODES_AMINO_ACIDS true
+feature Core set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature E1 -p structural_proteins "E1"
-          feature E1 set metatag OWN_CODON_NUMBERING true
-          feature E1 set metatag INCLUDE_IN_SUMMARY true
-          feature E1 set metatag CODES_AMINO_ACIDS true
-          feature E1 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature E1 -p structural_proteins "E1"
+feature E1 set metatag OWN_CODON_NUMBERING true
+feature E1 set metatag INCLUDE_IN_SUMMARY true
+feature E1 set metatag CODES_AMINO_ACIDS true
+feature E1 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature E2 -p structural_proteins "E2"
-          feature E2 set metatag OWN_CODON_NUMBERING true
-          feature E2 set metatag INCLUDE_IN_SUMMARY true
-          feature E2 set metatag CODES_AMINO_ACIDS true
-          feature E2 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature E2 -p structural_proteins "E2"
+feature E2 set metatag OWN_CODON_NUMBERING true
+feature E2 set metatag INCLUDE_IN_SUMMARY true
+feature E2 set metatag CODES_AMINO_ACIDS true
+feature E2 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-      create feature non_structural_proteins -p precursor_polyprotein "Non-structural proteins"
-	    feature non_structural_proteins set field displayName "Non-structural proteins"
-        feature non_structural_proteins set metatag INFORMATIONAL true
+create feature non_structural_proteins -p precursor_polyprotein "Non-structural proteins"
+feature non_structural_proteins set field displayName "Non-structural proteins"
+feature non_structural_proteins set metatag INFORMATIONAL true
 
-        create feature p7 -p non_structural_proteins "p7"
-          feature p7 set metatag OWN_CODON_NUMBERING true
-          feature p7 set metatag INCLUDE_IN_SUMMARY true
-          feature p7 set metatag CODES_AMINO_ACIDS true
-          feature p7 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature p7 -p non_structural_proteins "p7"
+feature p7 set metatag OWN_CODON_NUMBERING true
+feature p7 set metatag INCLUDE_IN_SUMMARY true
+feature p7 set metatag CODES_AMINO_ACIDS true
+feature p7 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature NS2 -p non_structural_proteins "NS2"
-          feature NS2 set metatag OWN_CODON_NUMBERING true
-          feature NS2 set metatag INCLUDE_IN_SUMMARY true
-          feature NS2 set metatag CODES_AMINO_ACIDS true
-          feature NS2 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature NS2 -p non_structural_proteins "NS2"
+feature NS2 set metatag OWN_CODON_NUMBERING true
+feature NS2 set metatag INCLUDE_IN_SUMMARY true
+feature NS2 set metatag CODES_AMINO_ACIDS true
+feature NS2 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature NS3 -p non_structural_proteins "NS3"
-          feature NS3 set metatag OWN_CODON_NUMBERING true
-          feature NS3 set metatag INCLUDE_IN_SUMMARY true
-          feature NS3 set metatag CODES_AMINO_ACIDS true
-          feature NS3 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature NS3 -p non_structural_proteins "NS3"
+feature NS3 set metatag OWN_CODON_NUMBERING true
+feature NS3 set metatag INCLUDE_IN_SUMMARY true
+feature NS3 set metatag CODES_AMINO_ACIDS true
+feature NS3 set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature NS4A -p non_structural_proteins "NS4A"
-          feature NS4A set metatag OWN_CODON_NUMBERING true
-          feature NS4A set metatag INCLUDE_IN_SUMMARY true
-          feature NS4A set metatag CODES_AMINO_ACIDS true
-          feature NS4A set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature NS4A -p non_structural_proteins "NS4A"
+feature NS4A set metatag OWN_CODON_NUMBERING true
+feature NS4A set metatag INCLUDE_IN_SUMMARY true
+feature NS4A set metatag CODES_AMINO_ACIDS true
+feature NS4A set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature NS4B -p non_structural_proteins "NS4B"
-          feature NS4B set metatag OWN_CODON_NUMBERING true
-          feature NS4B set metatag INCLUDE_IN_SUMMARY true
-          feature NS4B set metatag CODES_AMINO_ACIDS true
-          feature Core set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature NS4B -p non_structural_proteins "NS4B"
+feature NS4B set metatag OWN_CODON_NUMBERING true
+feature NS4B set metatag INCLUDE_IN_SUMMARY true
+feature NS4B set metatag CODES_AMINO_ACIDS true
+feature Core set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature NS5A -p non_structural_proteins "NS5A"
-          feature NS5A set metatag OWN_CODON_NUMBERING true
-          feature NS5A set metatag INCLUDE_IN_SUMMARY true
-          feature NS5A set metatag CODES_AMINO_ACIDS true
-          feature NS5A set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature NS5A -p non_structural_proteins "NS5A"
+feature NS5A set metatag OWN_CODON_NUMBERING true
+feature NS5A set metatag INCLUDE_IN_SUMMARY true
+feature NS5A set metatag CODES_AMINO_ACIDS true
+feature NS5A set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-        create feature NS5B -p non_structural_proteins "NS5B"
-          feature NS5B set metatag OWN_CODON_NUMBERING true
-          feature NS5B set metatag INCLUDE_IN_SUMMARY true
-          feature NS5B set metatag CODES_AMINO_ACIDS true
-          feature NS5B set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
+create feature NS5B -p non_structural_proteins "NS5B"
+feature NS5B set metatag OWN_CODON_NUMBERING true
+feature NS5B set metatag INCLUDE_IN_SUMMARY true
+feature NS5B set metatag CODES_AMINO_ACIDS true
+feature NS5B set metatag CODON_LABELER_MODULE kuiken2006CodonLabeler
 
-    create feature 3UTR -p whole_genome "3' UTR"
-	feature 3UTR set field displayName "3' UTR"
+create feature 3UTR -p whole_genome "3' UTR"
+feature 3UTR set field displayName "3' UTR"
 
 
   create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102
