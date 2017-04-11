@@ -28,6 +28,7 @@
 	<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
 		<paging-buttons ng-show="!loadingSpinner" paging-context="pagingContext">
 			<button type="button" class="btn btn-default" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
+			<button type="button" class="btn btn-default" ng-click="downloadMemberMetadata()">Download Metadata</button>
 		</paging-buttons>
 		<span ng-show="memberList.length == 0">No sequences</span>
 		<div ng-show="memberList.length > 0">
@@ -76,6 +77,7 @@
 			</table>
 			<paging-buttons paging-context="pagingContext">
 				<button type="button" class="btn btn-default" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
+				<button type="button" class="btn btn-default" ng-click="downloadMemberMetadata()">Download Metadata</button>
 			</paging-buttons>
 		</div>
 	</div>
