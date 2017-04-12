@@ -6,7 +6,7 @@
 	<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
 		<paging-buttons ng-show="!loadingSpinner" paging-context="pagingContext">
 				<button type="button" class="btn btn-default" ng-click="downloadSequences('fastaExporter')">Download FASTA</button>
-				<button type="button" class="btn btn-default" ng-click="downloadSequenceMetadata()">Download Metadata</button>
+				<button type="button" class="btn btn-default" ng-click="downloadSequenceMetadata()">Download metadata</button>
 		</paging-buttons>
 		<span ng-show="listSequenceResult.length == 0">None</span>
 		<div ng-show="listSequenceResult.length > 0">
@@ -50,7 +50,7 @@
 			</table>
 			<paging-buttons paging-context="pagingContext">
 					<button type="button" class="btn btn-default" ng-click="downloadSequences('fastaExporter')">Download FASTA</button>
-					<button type="button" class="btn btn-default" ng-click="downloadSequenceMetadata()">Download Metadata</button>
+					<button type="button" class="btn btn-default" ng-click="downloadSequenceMetadata()">Download metadata</button>
 			</paging-buttons>
 		</div>
 	</div>
