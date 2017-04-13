@@ -673,6 +673,7 @@
   create reference REF_6xd_KM252791 ncbi-refseqs KM252791
   create reference REF_6xe_KM252792 ncbi-refseqs KM252792
 
+  run file glue/hcvReferenceDisplayNames.glue
 
   run file glue/hcvAddWholeGenomeFeatureLocs.glue
   run file glue/hcvAdd5UTR3UTRFeatureLocs.glue
