@@ -1,0 +1,11 @@
+id	display_name	drug_resistance_publication
+ally_3	ALLY-3	-
+astral_3	ASTRAL-3	custom-table-row/drug_resistance_publication/Foster_et_al_2015
+c_edge_te	C-EDGE TE	-
+c_edge_tn	C-EDGE TN	-
+ion_1	ION-1	-
+ion_2	ION-2	-
+ion_3	ION-3	-
+lonestar	LONESTAR	-
+optimist_2	OPTIMIST-2	custom-table-row/drug_resistance_publication/Lawitz_et_al_2016
+trilogy_1	TRILOGY-1	-

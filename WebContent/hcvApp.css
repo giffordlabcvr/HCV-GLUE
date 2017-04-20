@@ -6,6 +6,10 @@
 	fill:#ff3333; 	
 }
 
+.vcat_official_resistance_associated_variants {
+	fill:#ff3333; 	
+}
+
 /* http://stackoverflow.com/questions/5110249/wildcard-in-css-for-classes */
 *[class^='vcat_epitopes_']{
 	fill:#b3e0ff; 	

@@ -1,0 +1,37 @@
+<div ng-controller="officialRAVsCtrl">
+	<div ng-show="multiRenderResult.resultDocument.length > 0">
+		<table class="table" width="100%">
+			<thead>
+				<col width="20%"></col>
+				<col width="80%"></col>
+				<tr>
+					<th>Substitution</th>
+					<th>Guidance</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="resultDocument in multiRenderResult.resultDocument">
+					<td>
+						<a ng-click="displayVariation(resultVariationCategory.name, resultDocument.officialGuidance.ravReferenceSequence, resultDocument.officialGuidance.ravFeature, resultDocument.officialGuidance.ravName, [])">{{resultDocument.officialGuidance.ravRenderedName}} <i class="glyphicon glyphicon-link"></i></a>
+					</td>
+					<td>
+						In {{resultDocument.officialGuidance.cladeRenderedName}}, this substitution is associated in clinical trials with resistance to some {{resultDocument.officialGuidance.drugCategoryDisplayName}}s in certain patient populations and is therefore mentioned in current guidelines.
+						<div ng-repeat="clinicalFinding in resultDocument.officialGuidance.clinicalFinding">
+							Key clinical trial: {{clinicalFinding.trialDisplayName}}, <a target="_blank" href="{{clinicalFinding.webLink}}">{{clinicalFinding.publicationDisplayName}} <i class="glyphicon glyphicon-link"></i></a> {{clinicalFinding.publication}} {{clinicalFinding.pubLocation}}
+						</div>
+						Please refer to the EASL, AASLD or WHO documents linked below for clinical recommendations.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h4>Clinical guidance documents</h4>
+	<ul>
+	<li><a target="_blank" href="http://www.easl.eu/research/our-contributions/clinical-practice-guidelines/detail/easl-recommendations-on-treatment-of-hepatitis-c-2016">EASL Recommendations on the Treatment of Hepatitis C (2016) <i class="glyphicon glyphicon-link"></i></a></li>
+	<li><a target="_blank" href="https://www.aasld.org/publications/practice-guidelines-0">AASLD Practice Guidelines <i class="glyphicon glyphicon-link"></i></a></li>
+	<li><a target="_blank" href="http://www.who.int/hepatitis/publications/hepatitis-c-guidelines-2016/en/">WHO Guidelines for the screening, care and treatment of persons with chronic hepatitis C infection <i class="glyphicon glyphicon-link"></i></a></li>
+	</ul>
+	
+	<div ng-show="multiRenderResult.resultDocument.length == 0">None found</div>
+
+</div>

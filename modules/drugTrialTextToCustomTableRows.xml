@@ -1,0 +1,16 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign id>${row["id"]?trim}</#assign>
+  <#assign displayName>${row["display_name"]?trim}</#assign>
+  <#assign publication>${row["drug_resistance_publication"]?trim}</#assign>
+  create custom-table-row drug_trial "${id}"
+  custom-table-row drug_trial "${id}"
+    set field display_name "${displayName}"
+<#if publication != "-">
+    set link-target drug_resistance_publication "${publication}"
+</#if>
+    exit
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>

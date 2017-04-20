@@ -1,0 +1,29 @@
+<#include "/utils/glueDocUtils.ftlx">
+
+<officialGuidance>
+	<ravReferenceSequence>${variation.featureLoc.referenceSequence.name}</ravReferenceSequence>
+	<ravFeature>${variation.featureLoc.feature.name}</ravFeature>
+	<ravName>${variation.name}</ravName>
+	<ravRenderedName>${variation.getRenderedName()}</ravRenderedName>
+	<ravSubstitutions>${variation.renderProperty('rav_substitutions')}</ravSubstitutions>
+	<#if drug_category ??>
+		<drugCategory>${drug_category.id}</drugCategory>
+		<drugCategoryDisplayName>${drug_category.display_name}</drugCategoryDisplayName>
+	</#if>
+	<cladeName>${alignment.name}</cladeName>
+	<cladeRenderedName>${alignment.getRenderedName()}</cladeRenderedName>
+	<#list drug_resistance_clinical_finding as clinical_finding>
+	<clinicalFinding glueType="Object[]">
+		<trialName>${clinical_finding.drug_trial.id}</trialName>
+		<trialDisplayName>${clinical_finding.drug_trial.display_name}</trialDisplayName>
+		<webLink>${clinical_finding.drug_trial.drug_resistance_publication.web_link}</webLink>
+		<publication>${clinical_finding.drug_trial.drug_resistance_publication.publication}</publication>
+		<publicationDisplayName>${clinical_finding.drug_trial.drug_resistance_publication.display_name}</publicationDisplayName>
+		<pubLocation>${clinical_finding.drug_trial.drug_resistance_publication.pub_location}</pubLocation>
+		<authors>${clinical_finding.drug_trial.drug_resistance_publication.authors}</authors>
+		<title>${clinical_finding.drug_trial.drug_resistance_publication.title}</title>
+		<year glueType="Integer">${clinical_finding.drug_trial.drug_resistance_publication.year?c}</year>
+	</clinicalFinding>
+	</#list>
+	
+</officialGuidance>

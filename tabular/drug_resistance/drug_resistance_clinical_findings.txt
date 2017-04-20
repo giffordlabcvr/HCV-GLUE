@@ -1,0 +1,3 @@
+id	alignment	drug_trial	drug_resistance_official_guidance	variation
+optimist_2_NS3_80K_1a	alignment/AL_1a	custom-table-row/drug_trial/optimist_2	custom-table-row/drug_resistance_official_guidance/NS3_80K	reference/REF_MASTER_NC_004102/feature-location/NS3/variation/RAS_NS3_80K
+astral_3_NS5A_93H_3	alignment/AL_3	custom-table-row/drug_trial/astral_3	custom-table-row/drug_resistance_official_guidance/NS5A_93H_3	reference/REF_MASTER_NC_004102/feature-location/NS5A/variation/RAS_NS5A_93H

@@ -10,3 +10,4 @@ module drugResistancePublicationTextToCustomTableRows transform tabular/drug_res
 
 module drugResistanceFindingTextToCustomTableRows transform tabular/drug_resistance/drugResistanceFindings.txt --run
 
+run file glue/drug_resistance_official_guidance.glue

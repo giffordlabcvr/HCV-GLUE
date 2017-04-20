@@ -1,0 +1,18 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign id>${row["id"]?trim}</#assign>
+  <#assign alignment>${row["alignment"]?trim}</#assign>
+  <#assign drugTrial>${row["drug_trial"]?trim}</#assign>
+  <#assign drugResistanceOfficialGuidance>${row["drug_resistance_official_guidance"]?trim}</#assign>
+  <#assign variation>${row["variation"]?trim}</#assign>
+  create custom-table-row drug_resistance_clinical_finding "${id}"
+  custom-table-row drug_resistance_clinical_finding "${id}"
+    set link-target alignment "${alignment}"
+    set link-target drug_trial "${drugTrial}"
+    set link-target drug_resistance_official_guidance "${drugResistanceOfficialGuidance}"
+    set link-target variation "${variation}"
+    exit
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>

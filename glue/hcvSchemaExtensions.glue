@@ -84,6 +84,9 @@ schema-project hcv
   create custom-table drug_sub_category
   create custom-table drug_resistance_finding --idFieldLength 200
   create custom-table drug_resistance_publication
+  create custom-table drug_resistance_official_guidance
+  create custom-table drug_trial
+  create custom-table drug_resistance_clinical_finding --idFieldLength 200
   
   create link drug drug_category -m MANY_TO_ONE
   create link drug drug_sub_category -m MANY_TO_ONE
@@ -91,6 +94,14 @@ schema-project hcv
   create link variation drug_resistance_finding -m ONE_TO_MANY 
   create link drug_resistance_finding -s replicon_clade alignment -m MANY_TO_ONE
   create link drug_resistance_finding drug -m MANY_TO_ONE
+  create link variation drug_resistance_official_guidance -m ONE_TO_MANY 
+  create link drug_resistance_official_guidance drug_category -m ONE_TO_ONE 
+  create link drug_resistance_official_guidance alignment -m ONE_TO_ONE
+  create link drug_resistance_official_guidance drug_resistance_clinical_finding -m ONE_TO_MANY
+  create link drug_resistance_clinical_finding drug_trial -m MANY_TO_ONE
+  create link drug_trial drug_resistance_publication -m ONE_TO_ONE
+  create link drug_resistance_clinical_finding variation -m ONE_TO_ONE
+  create link drug_resistance_clinical_finding alignment -m ONE_TO_ONE
 
   table drug
 	create field company_code VARCHAR 100
@@ -120,6 +131,10 @@ schema-project hcv
   table drug_resistance_finding
     create field min_fold_change DOUBLE
     create field max_fold_change DOUBLE
+    exit
+
+  table drug_trial 
+    create field display_name VARCHAR 100
     exit
     
     

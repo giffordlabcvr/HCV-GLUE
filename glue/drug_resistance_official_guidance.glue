@@ -1,0 +1,12 @@
+multi-unset link-target drug_trial -a drug_resistance_publication
+
+multi-delete drug_resistance_clinical_finding -a
+multi-delete drug_resistance_official_guidance -a
+multi-delete drug_trial -a
+
+module drugTrialTextToCustomTableRows transform tabular/drug_resistance/drug_trials.txt --run
+
+module drugOfficialGuidelinesTextToCustomTableRows transform tabular/drug_resistance/drug_resistance_official_guidance.txt --run
+
+module drugClinicalFindingsTextToCustomTableRows transform tabular/drug_resistance/drug_resistance_clinical_findings.txt --run
+

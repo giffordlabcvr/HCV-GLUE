@@ -155,6 +155,14 @@ function ($scope, glueWS, glueWebToolConfig) {
 	                            	    	dialogController: "displayRAVCtrl"
 	                            	    }
 	]);
+	glueWebToolConfig.setInterpretationViews([
+	                                          {
+	                                        	  vCatName: "official_resistance_associated_variants",
+	                                        	  interpretationViewURL: "views/officialRAVs.html",
+	                                        	  interpretationController: "officialRAVsCtrl"
+	                                          }
+	                                          
+	                                          ]);
 } ]);
 
 

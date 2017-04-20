@@ -69,15 +69,24 @@
 		<displayName>Subtype-atypical substitutions</displayName>
 		<description>Amino acids which appear at a given codon in sequences with the same subtype at a frequency of less than 1%</description>
 		<whereClause>name like 'uncommon_aa_%' and featureLoc.referenceSequence.alignmentsWhereRefSequence.displayName like 'HCV Subtype%'</whereClause>
-		<selectedByDefault>true</selectedByDefault>
+		<selectedByDefault>false</selectedByDefault>
 		<objectRendererModule>hcvUncommonAaRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
-		<name>resistance_associated_variants</name>
-		<displayName>Resistance-associated substitutions</displayName>
-		<description>Amino acid substitutions associated with drug resistance</description>
-		<whereClause>is_resistance_associated_variant = 'true'</whereClause>
+		<name>official_resistance_associated_variants</name>
+		<displayName>Drug resistance (current	 clinical guidance)</displayName>
+		<description>Substitutions with clinically-relevant drug resistance associations according to official EASL, AASLD and WHO guidelines</description>
+		<whereClause>is_resistance_associated_variant = 'true' and drug_resistance_official_guidance.id != null</whereClause>
 		<selectedByDefault>true</selectedByDefault>
+		<cladeMatchProperty>drug_resistance_official_guidance.alignment.name</cladeMatchProperty>
+		<objectRendererModule>hcvResistanceAssociatedVariantRenderer</objectRendererModule>
+	</variationCategory>
+	<variationCategory>
+		<name>resistance_associated_variants</name>
+		<displayName>Drug resistance with in vitro evidence</displayName>
+		<description>Substitutions with in vitro evidence for drug resistance</description>
+		<whereClause>is_resistance_associated_variant = 'true'</whereClause>
+		<selectedByDefault>false</selectedByDefault>
 		<objectRendererModule>hcvResistanceAssociatedVariantRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
