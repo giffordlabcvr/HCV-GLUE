@@ -17,6 +17,7 @@
 		<trialName>${clinical_finding.drug_trial.id}</trialName>
 		<trialDisplayName>${clinical_finding.drug_trial.display_name}</trialDisplayName>
 		<webLink>${clinical_finding.drug_trial.drug_resistance_publication.web_link}</webLink>
+		<publicationID>${clinical_finding.drug_trial.drug_resistance_publication.id}</publicationID>
 		<publication>${clinical_finding.drug_trial.drug_resistance_publication.publication}</publication>
 		<publicationDisplayName>${clinical_finding.drug_trial.drug_resistance_publication.display_name}</publicationDisplayName>
 		<pubLocation>${clinical_finding.drug_trial.drug_resistance_publication.pub_location}</pubLocation>

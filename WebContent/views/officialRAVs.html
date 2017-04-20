@@ -17,7 +17,7 @@
 					<td>
 						In {{resultDocument.officialGuidance.cladeRenderedName}}, this substitution is associated in clinical trials with resistance to some {{resultDocument.officialGuidance.drugCategoryDisplayName}}s in certain patient populations and is therefore mentioned in current guidelines.
 						<div ng-repeat="clinicalFinding in resultDocument.officialGuidance.clinicalFinding">
-							Key clinical trial: {{clinicalFinding.trialDisplayName}}, <a target="_blank" href="{{clinicalFinding.webLink}}">{{clinicalFinding.publicationDisplayName}} <i class="glyphicon glyphicon-link"></i></a> {{clinicalFinding.publication}} {{clinicalFinding.pubLocation}}
+							Key clinical trial: {{clinicalFinding.trialDisplayName}}, <a target="_blank" href="#project/drug_resistance_publication/{{clinicalFinding.publicationID}}">{{clinicalFinding.publicationDisplayName}} <i class="glyphicon glyphicon-link"></i></a> {{clinicalFinding.publication}} {{clinicalFinding.pubLocation}}
 						</div>
 						Please refer to the EASL, AASLD or WHO documents linked below for clinical recommendations.
 					</td>

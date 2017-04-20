@@ -9,6 +9,19 @@
 	<cladeDisplayName>${featureLoc.referenceSequence.alignmentsWhereRefSequence[0].getRenderedName()}</cladeDisplayName>
 	<feature>${featureLoc.feature.name}</feature>
 	<substitutions>${renderProperty('rav_substitutions')}</substitutions>
+	
+	
+	<#list drug_resistance_clinical_finding as clinical_finding>
+    <clinicalFinding glueType="Object[]">
+    	<cladeName>${clinical_finding.alignment.name}</cladeName>
+    	<cladeRenderedName>${clinical_finding.alignment.renderedName}</cladeRenderedName>
+	    <drugTrialName>${clinical_finding.drug_trial.id}</drugTrialName>
+	    <drugTrialDisplayName>${clinical_finding.drug_trial.display_name}</drugTrialDisplayName>
+	    <drugTrialPublicationId>${clinical_finding.drug_trial.drug_resistance_publication.id}</drugTrialPublicationId>
+	    <drugTrialPublicationDisplayName>${clinical_finding.drug_trial.drug_resistance_publication.display_name}</drugTrialPublicationDisplayName>
+    </clinicalFinding>
+    </#list>
+	
 	<#list drug_resistance_finding as drugResistanceFinding>
 	<drugResistanceFinding glueType="Object[]">
 		<drug>${drugResistanceFinding.drug.id}</drug>

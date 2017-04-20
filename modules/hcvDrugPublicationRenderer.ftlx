@@ -9,4 +9,21 @@
 	<title>${title}</title>
 	<webLink>${web_link}</webLink>
     <@elem tag="year" expr="year"/>
+    <#list drug_trial as trial>
+    <drugTrial glueType="Object[]">
+	    <drugTrialName>${trial.id}</drugTrialName>
+	    <drugTrialDisplayName>${trial.display_name}</drugTrialDisplayName>
+	    <#list trial.drug_resistance_clinical_finding as clinical_finding>
+	    <clinicalFinding glueType="Object[]">
+	    	<ravReference>${clinical_finding.variation.featureLoc.referenceSequence.name}</ravReference>
+	    	<ravFeature>${clinical_finding.variation.featureLoc.feature.name}</ravFeature>
+	    	<ravName>${clinical_finding.variation.name}</ravName>
+	    	<ravRenderedName>${clinical_finding.variation.renderedName}</ravRenderedName>
+	    	<ravSubstitutions>${clinical_finding.variation.rav_substitutions}</ravSubstitutions>
+	    	<cladeName>${clinical_finding.alignment.name}</cladeName>
+	    	<cladeRenderedName>${clinical_finding.alignment.renderedName}</cladeRenderedName>
+	    </clinicalFinding>
+    </#list>
+    </drugTrial>
+    </#list>
 </drugPublication>

@@ -17,9 +17,25 @@
 	</div>
 </div>
 <div class="modal-body">
-	<h4>Drug resistance</h4>
+
+	<div ng-show="variation.clinicalFinding != null && variation.clinicalFinding.length > 0">
+		<h4>Clinical drug resistance findings</h4>
+		<table class="table table-striped table-bordered table-nonfluid">
+				<tbody>
+					<tr ng-repeat="finding in variation.clinicalFinding">
+						<td>
+						Substitution {{rav.renderedName}} in <a href="#project/alignment/{{finding.cladeName}}">{{finding.cladeRenderedName}}</a> was associated with drug resistance in the
+						<a href="#project/drug_resistance_publication/{{finding.drugTrialPublicationId}}">{{finding.drugTrialDisplayName}}</a> trial
+						</td>
+					</tr>
+				</tbody>
+		</table>
+ 	</div>
+
+
+	<h4>In vitro drug resistance</h4>
 	<div ng-show="!variation.drugResistanceFinding">
-		<p>No research findings have been collated</p>
+		<p>No drug resistance findings have been collated</p>
 	</div>
 	<div ng-show="variation.drugResistanceFinding.length > 0">
 		<p>

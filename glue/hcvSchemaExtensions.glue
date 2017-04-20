@@ -99,8 +99,8 @@ schema-project hcv
   create link drug_resistance_official_guidance alignment -m ONE_TO_ONE
   create link drug_resistance_official_guidance drug_resistance_clinical_finding -m ONE_TO_MANY
   create link drug_resistance_clinical_finding drug_trial -m MANY_TO_ONE
-  create link drug_trial drug_resistance_publication -m ONE_TO_ONE
-  create link drug_resistance_clinical_finding variation -m ONE_TO_ONE
+  create link drug_trial drug_resistance_publication -m MANY_TO_ONE
+  create link drug_resistance_clinical_finding variation -m MANY_TO_ONE
   create link drug_resistance_clinical_finding alignment -m ONE_TO_ONE
 
   table drug
