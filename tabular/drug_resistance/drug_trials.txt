@@ -1,11 +1,15 @@
 id	display_name	drug_resistance_publication
-ally_3	ALLY-3	-
-astral_3	ASTRAL-3	custom-table-row/drug_resistance_publication/Foster_et_al_2015
-c_edge_te	C-EDGE TE	-
-c_edge_tn	C-EDGE TN	-
-ion_1	ION-1	-
-ion_2	ION-2	-
-ion_3	ION-3	-
-lonestar	LONESTAR	-
-optimist_2	OPTIMIST-2	custom-table-row/drug_resistance_publication/Lawitz_et_al_2016
-trilogy_1	TRILOGY-1	-
+ally_1	ALLY-1	Poordad_et_al_2016
+ally_2	ALLY-2	Luetkemeyer_et_al_2016
+astral_3	ASTRAL-3	Foster_et_al_2015
+c_edge_te	C-EDGE TE	Kwo_et_al_2017
+c_edge_tn	C-EDGE TN	Zeuzem_et_al_2015a
+ion_1	ION-1	Afdhal_et_al_2014a
+ion_2	ION-2	Afdhal_et_al_2014b
+ion_3	ION-3	Kowdley_et_al_2014
+ion_4	ION-4	Naggie_et_al_2015
+optimist_2	OPTIMIST-2	Lawitz_et_al_2016
+ion_post_hoc	Post-hoc pooled ION trial data	Zeuzem_et_al_2015b
+ally_3	ALLY-3	Nelson_et_al_2015
+ally_3_plus	ALLY-3+	Leroy_et_al_2016
+ai444040	AI444040	Sulkowski_et_al_2014

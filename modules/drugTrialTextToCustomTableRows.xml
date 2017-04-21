@@ -7,8 +7,8 @@
   create custom-table-row drug_trial "${id}"
   custom-table-row drug_trial "${id}"
     set field display_name "${displayName}"
-<#if publication != "-">
-    set link-target drug_resistance_publication "${publication}"
+<#if publication != "">
+    set link-target drug_resistance_publication "custom-table-row/drug_resistance_publication/${publication}"
 </#if>
     exit
 </#list>
