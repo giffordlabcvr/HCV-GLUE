@@ -85,6 +85,6 @@
 
   create module --fileName modules/drugOfficialGuidelinesTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalFindingsTextToCustomTableRows.xml
-  create module --fileName modules/drugTrialTextToCustomTableRows.xml
+  create module --fileName modules/drugClinicalStudyTextToCustomTableRows.xml
   
   

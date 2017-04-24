@@ -15,10 +15,10 @@
     <clinicalFinding glueType="Object[]">
     	<cladeName>${clinical_finding.alignment.name}</cladeName>
     	<cladeRenderedName>${clinical_finding.alignment.renderedName}</cladeRenderedName>
-	    <drugTrialName>${clinical_finding.drug_trial.id}</drugTrialName>
-	    <drugTrialDisplayName>${clinical_finding.drug_trial.display_name}</drugTrialDisplayName>
-	    <drugTrialPublicationId>${clinical_finding.drug_trial.drug_resistance_publication.id}</drugTrialPublicationId>
-	    <drugTrialPublicationDisplayName>${clinical_finding.drug_trial.drug_resistance_publication.display_name}</drugTrialPublicationDisplayName>
+	    <clinicalStudyName>${clinical_finding.drug_clinical_study.id}</clinicalStudyName>
+	    <clinicalStudyDisplayName>${clinical_finding.drug_clinical_study.display_name}</clinicalStudyDisplayName>
+	    <clinicalStudyPublicationId>${clinical_finding.drug_clinical_study.drug_resistance_publication.id}</clinicalStudyPublicationId>
+	    <clinicalStudyPublicationDisplayName>${clinical_finding.drug_clinical_study.drug_resistance_publication.display_name}</clinicalStudyPublicationDisplayName>
     </clinicalFinding>
     </#list>
 	

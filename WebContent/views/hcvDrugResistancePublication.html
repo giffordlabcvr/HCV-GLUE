@@ -7,19 +7,28 @@
 		<em>{{drPubRenderResult.drugPublication.publication}}</em>, {{drPubRenderResult.drugPublication.pubLocation}}, <b>{{drPubRenderResult.drugPublication.year}}</b>
 		<br/>
 		<a href="{{drPubRenderResult.drugPublication.webLink}}" target="_blank">Publication web version <span class="glyphicon glyphicon-link"></span></a>
-	<div ng-repeat="trial in drPubRenderResult.drugPublication.drugTrial">
-		<h4>Clinical drug resistance findings from the {{trial.drugTrialDisplayName}} trial</h4>
-		<table class="table table-striped table-bordered table-nonfluid">
-				<tbody>
-					<tr ng-repeat="finding in trial.clinicalFinding">
-						<td>
-						Substitution
-						<a href="#project/rav/{{finding.ravReference}}/{{finding.ravFeature}}/{{finding.ravName}}">{{finding.ravRenderedName}}</a>
-						in <a href="#project/alignment/{{finding.cladeName}}">{{finding.cladeRenderedName}}</a> was associated with drug resistance
-						</td>
-					</tr>
-				</tbody>
-		</table>
+	<div ng-repeat="study in drPubRenderResult.drugPublication.drugClinicalStudy">
+		<h4>Clinical study: {{study.drugClinicalStudyDisplayName}}</h4>
+		<div ng-show="study.associatedClinicalStudy != null && study.associatedClinicalStudy.length > 0">
+			<h4>Associated clinical studies</h4>
+			<div ng-repeat="associatedStudy in study.associatedClinicalStudy">
+				<a target="_blank" href="#project/drug_resistance_publication/{{associatedStudy.publicationID}}">{{associatedStudy.clinicalStudyDisplayName}} <i class="glyphicon glyphicon-link"></i></a>, {{associatedStudy.publicationDisplayName}}, {{associatedStudy.publication}} {{associatedStudy.pubLocation}}
+			</div>
+		</div>
+		<div ng-show="study.clinicalFinding != null && study.clinicalFinding.length > 0">
+			<h4>Clinical drug resistance findings</h4>
+			<table class="table table-striped table-bordered table-nonfluid">
+					<tbody>
+						<tr ng-repeat="finding in study.clinicalFinding">
+							<td>
+							Substitution
+							<a href="#project/rav/{{finding.ravReference}}/{{finding.ravFeature}}/{{finding.ravName}}">{{finding.ravRenderedName}}</a>
+							in <a href="#project/alignment/{{finding.cladeName}}">{{finding.cladeRenderedName}}</a> was associated with drug resistance
+							</td>
+						</tr>
+					</tbody>
+			</table>
+		</div>
  	</div>
 
 	<div ng-show="drugResistanceFindings.length > 0">

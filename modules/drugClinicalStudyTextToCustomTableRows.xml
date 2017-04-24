@@ -4,11 +4,17 @@
   <#assign id>${row["id"]?trim}</#assign>
   <#assign displayName>${row["display_name"]?trim}</#assign>
   <#assign publication>${row["drug_resistance_publication"]?trim}</#assign>
-  create custom-table-row drug_trial "${id}"
-  custom-table-row drug_trial "${id}"
+  <#assign childStudies>${row["child_studies"]?trim}</#assign>
+  create custom-table-row drug_clinical_study "${id}"
+  custom-table-row drug_clinical_study "${id}"
     set field display_name "${displayName}"
 <#if publication != "">
     set link-target drug_resistance_publication "custom-table-row/drug_resistance_publication/${publication}"
+</#if>
+<#if childStudies != "">
+	<#list childStudies?split(",") as childStudy>
+    add link-target child_study "custom-table-row/drug_clinical_study/${childStudy}"
+	</#list>
 </#if>
     exit
 </#list>
