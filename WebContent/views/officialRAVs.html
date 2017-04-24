@@ -16,6 +16,23 @@
 					</td>
 					<td>
 						In {{resultDocument.officialGuidance.cladeRenderedName}}, this substitution is associated in clinical studies with resistance to some {{resultDocument.officialGuidance.drugCategoryDisplayName}}s in certain patient populations and is therefore mentioned in current guidelines.
+						<h6>Clinical guidelines</h6>
+						<table class="table" width="100%">
+							<thead>
+								<col width="20%"></col>
+								<col width="80%"></col>
+								<tr>
+									<th>Source</th>
+									<th>Guideline</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="guideline in resultDocument.officialGuidance.drugGuideline">
+									<td>{{guideline.drugGuidelineSource}}</td>
+									<td><em>{{guideline.drugGuidelineText}}</em></td>
+								</tr>
+							</tbody>
+						</table>
 						<div ng-repeat="clinicalFinding in resultDocument.officialGuidance.clinicalFinding">
 							Key clinical study: <a target="_blank" href="#project/drug_resistance_publication/{{clinicalFinding.publicationID}}">{{clinicalFinding.clinicalStudyDisplayName}} <i class="glyphicon glyphicon-link"></i></a>, {{clinicalFinding.publicationDisplayName}}, {{clinicalFinding.publication}} {{clinicalFinding.pubLocation}}
 						</div>

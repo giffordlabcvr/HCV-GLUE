@@ -25,7 +25,7 @@
 					<tr ng-repeat="finding in variation.clinicalFinding">
 						<td>
 						Substitution {{rav.renderedName}} in <a href="#project/alignment/{{finding.cladeName}}">{{finding.cladeRenderedName}}</a> was associated with drug resistance in the
-						<a href="#project/drug_resistance_publication/{{finding.drugTrialPublicationId}}">{{finding.drugTrialDisplayName}}</a> trial
+						<a href="#project/drug_resistance_publication/{{finding.clinicalStudyPublicationId}}">{{finding.clinicalStudyDisplayName}}</a> study
 						</td>
 					</tr>
 				</tbody>

@@ -83,6 +83,7 @@
   create module --fileName modules/hcvCommonAaAnalyser.xml
   create module -f modules/hcvAlignmentsToUncommonAaVariations.xml
 
+  create module --fileName modules/drugGuidelinesTextToCustomTableRows.xml
   create module --fileName modules/drugOfficialGuidelinesTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalFindingsTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalStudyTextToCustomTableRows.xml

@@ -46,7 +46,7 @@ schema-project hcv
   table alignment
     # provisional / unassigned etc.
     create field status VARCHAR 20
-    create field phylogeny VARCHAR 50000
+    create field phylogeny VARCHAR 10000
     exit
 
   table variation
@@ -87,6 +87,8 @@ schema-project hcv
   create custom-table drug_resistance_official_guidance
   create custom-table drug_clinical_study
   create custom-table drug_resistance_clinical_finding --idFieldLength 200
+  create custom-table drug_guidance_guideline
+  create custom-table drug_guideline
   
   create link drug drug_category -m MANY_TO_ONE
   create link drug drug_sub_category -m MANY_TO_ONE
@@ -97,6 +99,8 @@ schema-project hcv
   create link variation drug_resistance_official_guidance -m ONE_TO_MANY 
   create link drug_resistance_official_guidance drug_category -m ONE_TO_ONE 
   create link drug_resistance_official_guidance alignment -m ONE_TO_ONE
+  create link drug_resistance_official_guidance drug_guidance_guideline -m ONE_TO_MANY
+  create link drug_guidance_guideline drug_guideline -m MANY_TO_ONE
   create link drug_resistance_official_guidance drug_resistance_clinical_finding -m ONE_TO_MANY
   create link drug_resistance_clinical_finding drug_clinical_study -m MANY_TO_ONE
   create link drug_clinical_study drug_resistance_publication -m MANY_TO_ONE
@@ -108,6 +112,11 @@ schema-project hcv
 	create field company_code VARCHAR 100
 	create field generation INTEGER
 	create field wave INTEGER
+    exit
+
+  table drug_guideline
+	create field source VARCHAR 50
+	create field text VARCHAR 1000
     exit
 
   

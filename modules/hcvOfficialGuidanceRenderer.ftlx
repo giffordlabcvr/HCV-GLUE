@@ -26,5 +26,11 @@
 		<year glueType="Integer">${clinical_finding.drug_clinical_study.drug_resistance_publication.year?c}</year>
 	</clinicalFinding>
 	</#list>
+	<#list drug_guidance_guideline as guidance_guideline>
+	<drugGuideline glueType="Object[]">
+		<drugGuidelineSource>${guidance_guideline.drug_guideline.source}</drugGuidelineSource>
+		<drugGuidelineText>${guidance_guideline.drug_guideline.text}</drugGuidelineText>
+	</drugGuideline>
+	</#list>
 	
 </officialGuidance>

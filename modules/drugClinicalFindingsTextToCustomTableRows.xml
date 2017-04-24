@@ -1,17 +1,21 @@
 <freemarkerTextToGlueTransformer>
 	<freemarkerTemplate><![CDATA[
 <#list rows as row>
-  <#assign id>${row["id"]?trim}</#assign>
-  <#assign alignment>${row["alignment"]?trim}</#assign>
   <#assign drugClinicalStudy>${row["drug_clinical_study"]?trim}</#assign>
+  <#assign variationRefSeq>${row["variation_reference"]?trim}</#assign>
+  <#assign variationFeature>${row["variation_feature"]?trim}</#assign>
+  <#assign variationName>${row["variation_name"]?trim}</#assign>
+  <#assign alignment>${row["alignment"]?trim}</#assign>
   <#assign drugResistanceOfficialGuidance>${row["drug_resistance_official_guidance"]?trim}</#assign>
-  <#assign variation>${row["variation"]?trim}</#assign>
+  <#assign id>${drugClinicalStudy}_${variationName}_${alignment}</#assign>
   create custom-table-row drug_resistance_clinical_finding "${id}"
   custom-table-row drug_resistance_clinical_finding "${id}"
-    set link-target alignment "${alignment}"
-    set link-target drug_clinical_study "${drugClinicalStudy}"
-    set link-target drug_resistance_official_guidance "${drugResistanceOfficialGuidance}"
-    set link-target variation "${variation}"
+    set link-target drug_clinical_study "custom-table-row/drug_clinical_study/${drugClinicalStudy}"
+    set link-target variation "reference/${variationRefSeq}/feature-location/${variationFeature}/variation/${variationName}"
+    set link-target alignment "alignment/${alignment}"
+    <#if drugResistanceOfficialGuidance != "">
+    set link-target drug_resistance_official_guidance "custom-table-row/drug_resistance_official_guidance/${drugResistanceOfficialGuidance}"
+	</#if>
     exit
 </#list>
 ]]></freemarkerTemplate>

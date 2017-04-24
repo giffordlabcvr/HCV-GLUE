@@ -195,7 +195,7 @@ task initHcvGlueDBGlueHomeAWS {
 			// create user gluetools with correct grants
 			execute "echo 'GRANT ALL ON HCV_GLUE.* TO \"hcvglue\"@\"localhost\" identified by \"hcvglue\";' | mysql -u root --password=root123"
 			// create HCV_GLUE database
-			execute "echo 'create database HCV_GLUE;' | mysql -u hcvglue --password=hcvglue" 
+			execute "echo 'create database HCV_GLUE character set UTF8;' | mysql -u hcvglue --password=hcvglue" 
 	    }
 	  }
   }
@@ -216,7 +216,7 @@ task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipHcvGlueDB') {
 	  ssh.run {
 	    session(remotes.gluehome_aws) {
 	 	  put from: '/tmp/hcv_glue.sql.gz', into: '/tmp/hcv_glue.sql.gz'
-	      execute 'echo "drop database HCV_GLUE; create database HCV_GLUE;" | mysql -u hcvglue --password=hcvglue HCV_GLUE'
+	      execute 'echo "drop database HCV_GLUE; create database HCV_GLUE character set UTF8;" | mysql -u hcvglue --password=hcvglue HCV_GLUE'
 	      execute 'gunzip -c /tmp/hcv_glue.sql.gz | mysql -u hcvglue --password=hcvglue HCV_GLUE'
 	      execute 'rm /tmp/hcv_glue.sql.gz'
 	    }

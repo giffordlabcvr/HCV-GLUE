@@ -1,0 +1,14 @@
+<freemarkerTextToGlueTransformer>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign id>${row["id"]?trim}</#assign>
+  <#assign source>${row["source"]?trim}</#assign>
+  <#assign text>${row["text"]?trim}</#assign>
+  create custom-table-row drug_guideline "${id}"
+  custom-table-row drug_guideline "${id}"
+    set field source "${source}"
+    set field text "${text}"
+    exit
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>
