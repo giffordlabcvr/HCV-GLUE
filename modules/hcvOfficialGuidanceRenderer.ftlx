@@ -28,6 +28,7 @@
 	</#list>
 	<#list drug_guidance_guideline as guidance_guideline>
 	<drugGuideline glueType="Object[]">
+		<drugGuidelineResistedDrug>${guidance_guideline.drug_guideline.resisted_drug.id}</drugGuidelineResistedDrug>
 		<drugGuidelineSource>${guidance_guideline.drug_guideline.source}</drugGuidelineSource>
 		<drugGuidelineText>${guidance_guideline.drug_guideline.text}</drugGuidelineText>
 	</drugGuideline>

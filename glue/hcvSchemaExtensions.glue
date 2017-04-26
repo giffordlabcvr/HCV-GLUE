@@ -101,6 +101,7 @@ schema-project hcv
   create link drug_resistance_official_guidance alignment -m ONE_TO_ONE
   create link drug_resistance_official_guidance drug_guidance_guideline -m ONE_TO_MANY
   create link drug_guidance_guideline drug_guideline -m MANY_TO_ONE
+  create link drug_guideline --srcLinkName resisted_drug drug -m ONE_TO_ONE
   create link drug_resistance_official_guidance drug_resistance_clinical_finding -m ONE_TO_MANY
   create link drug_resistance_clinical_finding drug_clinical_study -m MANY_TO_ONE
   create link drug_clinical_study drug_resistance_publication -m MANY_TO_ONE

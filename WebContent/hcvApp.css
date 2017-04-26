@@ -15,4 +15,17 @@
 	fill:#b3e0ff; 	
 }
 
+.epitopeAa {
+    text-anchor: middle;
+    alignment-baseline: central;
+	font-weight: bold;
+	fill: #5c5c5c;
+	font-size: 100%;
+}
+
+.epitopeAaBackground {
+	fill: #eeeeee;
+}
+
+
 

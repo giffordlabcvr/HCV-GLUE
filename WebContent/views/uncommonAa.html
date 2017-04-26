@@ -1,0 +1,36 @@
+<div ng-controller="uncommonAaCtrl">
+
+	<div ng-show="uncommonAaList != null && uncommonAaList.length > 0">
+		<p>
+		These substitutions were found in the query sequence but are atypical in 
+		<a href="#project/alignment/{{uncommonAaList[0].almtName}}" target="_blank">{{uncommonAaList[0].almtRenderedName}}</a>.
+		</p>
+		<table class="table table-striped table-bordered" width="100%">
+			<thead>
+				<col width="15%"></col>
+				<col width="15%"></col>
+				<col width="35%"></col>
+				<col width="35%"></col>
+				<tr>
+					<th>Virus protein</th>
+					<th>Codon</th>
+					<th>Atypical substitution found in query sequence</th>
+					<th>Typical substitutions in {{uncommonAaList[0].almtRenderedName}}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="uncommonAa in uncommonAaList">
+					<td>{{uncommonAa.featureName}}</td>
+					<td>{{uncommonAa.codonLabel}}</td>
+					<td>{{uncommonAa.foundAa}}</td>
+					<td>{{uncommonAa.commonAas}}</td>
+				</tr>
+			</tbody>
+		</table>
+	
+	
+	</div>
+	<div ng-show="uncommonAaList == null || uncommonAaList.length == 0">
+	No atypical substitutions found.
+	</div>
+</div>

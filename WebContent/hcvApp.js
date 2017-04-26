@@ -158,10 +158,32 @@ function ($scope, glueWS, glueWebToolConfig) {
 	glueWebToolConfig.setInterpretationViews([
 	                                          {
 	                                        	  vCatName: "official_resistance_associated_variants",
-	                                        	  interpretationViewURL: "views/officialRAVs.html",
-	                                        	  interpretationController: "officialRAVsCtrl"
+	                                        	  interpretationViewURL: "views/officialRAVs.html"
+	                                          },
+	                                          {
+	                                        	  vCatName: "uncommon_aa_subtype",
+	                                        	  interpretationViewURL: "views/uncommonAa.html"
+	                                          },
+	                                          {
+	                                        	  vCatName: "uncommon_aa_genotype",
+	                                        	  interpretationViewURL: "views/uncommonAa.html"
+	                                          },
+	                                          {
+	                                        	  vCatName: "uncommon_aa_hcv",
+	                                        	  interpretationViewURL: "views/uncommonAa.html"
+	                                          },
+	                                          {
+	                                        	  vCatName: "epitopes_all",
+	                                        	  interpretationViewURL: "views/epitope.html"
+	                                          },
+	                                          {
+	                                        	  vCatName: "epitopes_mhc_class_i",
+	                                        	  interpretationViewURL: "views/epitope.html"
+	                                          },
+	                                          {
+	                                        	  vCatName: "epitopes_mhc_class_ii",
+	                                        	  interpretationViewURL: "views/epitope.html"
 	                                          }
-	                                          
 	                                          ]);
 } ]);
 
