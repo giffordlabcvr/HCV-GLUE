@@ -89,6 +89,9 @@ schema-project hcv
   create custom-table drug_resistance_clinical_finding --idFieldLength 200
   create custom-table drug_guidance_guideline
   create custom-table drug_guideline
+  create custom-table drug_regimen
+  create custom-table drug_regimen_drug
+  create custom-table drug_regimen_alignment
   
   create link drug drug_category -m MANY_TO_ONE
   create link drug drug_sub_category -m MANY_TO_ONE
@@ -108,6 +111,20 @@ schema-project hcv
   create link drug_resistance_clinical_finding variation -m MANY_TO_ONE
   create link drug_resistance_clinical_finding alignment -m ONE_TO_ONE
   create link drug_clinical_study --srcLinkName parent_study drug_clinical_study --destLinkName child_study --multiplicity MANY_TO_ONE
+  create link drug_regimen drug_regimen_drug -m ONE_TO_MANY 
+  create link drug_regimen_drug drug -m MANY_TO_ONE 
+  create link drug_regimen drug_regimen_alignment -m ONE_TO_MANY 
+  create link drug_regimen_alignment alignment -m MANY_TO_ONE 
+
+  table drug_regimen
+	create field display_name VARCHAR 500
+	create field short_display_name VARCHAR 100
+    exit
+
+  table drug_regimen_alignment
+    # 'available' or 'suboptimal'
+	create field recommendation_level VARCHAR 20
+	exit
 
   table drug
 	create field company_code VARCHAR 100

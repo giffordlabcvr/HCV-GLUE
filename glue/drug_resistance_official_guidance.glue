@@ -5,7 +5,11 @@ multi-delete drug_resistance_official_guidance -a
 multi-delete drug_clinical_study -a
 multi-delete drug_guidance_guideline -a
 multi-delete drug_guideline -a
+multi-delete drug_regimen -a
+multi-delete drug_regimen_drug -a
+multi-delete drug_regimen_alignment -a
 
+module drugRegimensTextToCustomTableRows transform tabular/drug_resistance/drug_regimens.txt --run
 
 module drugGuidelinesTextToCustomTableRows transform tabular/drug_resistance/drug_guidelines.txt --run
 
