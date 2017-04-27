@@ -70,6 +70,8 @@
   create module --fileName modules/hcvOfficialGuidanceRenderer.xml --loadResources hcvOfficialGuidanceRenderer
   create module --fileName modules/hcvDrugPublicationRenderer.xml --loadResources hcvDrugPublicationRenderer
   create module --fileName modules/hcvDrugRenderer.xml --loadResources hcvDrugRenderer
+  create module --fileName modules/hcvDrugResistanceFindingRenderer.xml --loadResources hcvDrugResistanceFindingRenderer
+  create module --fileName modules/hcvDrugRegimenAlignmentRenderer.xml --loadResources hcvDrugRegimenAlignmentRenderer
 
   create module --fileName modules/lanlMetadataImporter.xml
 

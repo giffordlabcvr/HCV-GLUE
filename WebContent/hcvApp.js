@@ -161,6 +161,10 @@ function ($scope, glueWS, glueWebToolConfig) {
 	                                        	  interpretationViewURL: "views/officialRAVs.html"
 	                                          },
 	                                          {
+	                                        	  vCatName: "resistance_associated_variants",
+	                                        	  interpretationViewURL: "views/inVitroRAVs.html"
+	                                          },
+	                                          {
 	                                        	  vCatName: "uncommon_aa_subtype",
 	                                        	  interpretationViewURL: "views/uncommonAa.html"
 	                                          },

@@ -1,0 +1,31 @@
+<div>
+	<div ng-show="regimenAlignmentsMultiRenderResult.resultDocument.length > 0">
+		<p>Based on the sequence genotyping result, the following drug combinations are available, according to current EASL guidelines.</p>
+		<table class="table table-bordered table-striped" width="100%">
+			<thead>
+				<col width="33%"></col>
+				<col width="33%"></col>
+				<col width="33%"></col>
+				<tr>
+					<th>Drug combination</th>
+					<th>Availability</th>
+					<th>Individual drug details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="resultDocument in regimenAlignmentsMultiRenderResult.resultDocument">
+					<td>{{resultDocument.drugRegimenAlignment.drugRegimenDisplayName}}</td>
+					<td>{{resultDocument.drugRegimenAlignment.recommendationLevel == 'available' ? 'Available' : 'Available but suboptimal'}} for {{resultDocument.drugRegimenAlignment.alignmentRenderedName}}</td>
+					<td>
+						<div ng-repeat="daa in resultDocument.drugRegimenAlignment.daa">
+						{{daa.drugCategoryDisplayName}} : <a href="#project/drug/{{daa.drugId}}" target="_blank">{{daa.drugId}} <i class="glyphicon glyphicon-link"></i></a>
+						</div>
+					</td>	
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div ng-show="regimenAlignmentsMultiRenderResult.resultDocument.length == 0">
+		<p>Based on the sequence genotyping result, no drug combinations are available, according to current EASL guidelines.</p>
+	</div>
+</div>

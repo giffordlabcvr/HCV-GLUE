@@ -1,0 +1,17 @@
+<#include "/utils/glueDocUtils.ftlx">
+
+<drugRegimenAlignment>
+	<drugRegimenId>${drug_regimen.id}</drugRegimenId>
+	<drugRegimenDisplayName>${drug_regimen.display_name}</drugRegimenDisplayName>
+	<drugRegimenShortDisplayName>${drug_regimen.short_display_name}</drugRegimenShortDisplayName>
+	<alignmentName>${alignment.name}</alignmentName>
+	<alignmentRenderedName>${alignment.getRenderedName()}</alignmentRenderedName>
+	<recommendationLevel>${recommendation_level}</recommendationLevel>
+	<#list drug_regimen.drug_regimen_drug as drug_regimen_drug>
+	<daa glueType="Object[]">
+		<drugId>${drug_regimen_drug.drug.id}</drugId>
+		<drugCategoryId>${drug_regimen_drug.drug.drug_category.id}</drugCategoryId>
+		<drugCategoryDisplayName>${drug_regimen_drug.drug.drug_category.display_name}</drugCategoryDisplayName>
+	</daa>
+	</#list>
+</drugRegimenAlignment>

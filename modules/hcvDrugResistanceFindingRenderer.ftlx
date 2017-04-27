@@ -1,0 +1,21 @@
+<#include "/utils/glueDocUtils.ftlx">
+
+<resistanceFinding>
+	<ravReferenceSequence>${variation.featureLoc.referenceSequence.name}</ravReferenceSequence>
+	<ravFeature>${variation.featureLoc.feature.name}</ravFeature>
+	<ravName>${variation.name}</ravName>
+	<ravRenderedName>${variation.getRenderedName()}</ravRenderedName>
+	<drug>${drug.id}</drug	>
+	<repliconCladeName>${replicon_clade.name}</repliconCladeName>
+	<repliconCladeRenderedName>${replicon_clade.getRenderedName()}</repliconCladeRenderedName>
+	<webLink>${drug_resistance_publication.web_link}</webLink>
+	<publicationID>${drug_resistance_publication.id}</publicationID>
+	<publication>${drug_resistance_publication.publication}</publication>
+	<publicationDisplayName>${drug_resistance_publication.display_name}</publicationDisplayName>
+	<pubLocation>${drug_resistance_publication.pub_location}</pubLocation>
+	<authors>${drug_resistance_publication.authors}</authors>
+	<title>${drug_resistance_publication.title}</title>
+	<year glueType="Integer">${drug_resistance_publication.year?c}</year>
+	<@elem tag="minFoldChange" expr="readProperty('min_fold_change')" type="Double"/>
+	<@elem tag="maxFoldChange" expr="readProperty('max_fold_change')" type="Double"/>
+</resistanceFinding>

@@ -74,7 +74,7 @@
 	</variationCategory>
 	<variationCategory>
 		<name>official_resistance_associated_variants</name>
-		<displayName>Drug resistance (current	 clinical guidance)</displayName>
+		<displayName>Drug resistance (current clinical guidance)</displayName>
 		<description>Substitutions with clinically-relevant drug resistance associations according to official EASL, AASLD and WHO guidelines</description>
 		<whereClause>is_resistance_associated_variant = 'true' and drug_resistance_official_guidance.id != null</whereClause>
 		<selectedByDefault>true</selectedByDefault>
@@ -83,10 +83,12 @@
 	</variationCategory>
 	<variationCategory>
 		<name>resistance_associated_variants</name>
-		<displayName>Drug resistance with in vitro evidence</displayName>
+		<displayName>Drug resistance (in vitro evidence)</displayName>
 		<description>Substitutions with in vitro evidence for drug resistance</description>
 		<whereClause>is_resistance_associated_variant = 'true'</whereClause>
 		<selectedByDefault>false</selectedByDefault>
+		<cladeMatchProperty>drug_resistance_finding.drug.drug_regimen_drug.drug_regimen.drug_regimen_alignment.alignment.name</cladeMatchProperty>
+		<cladeMatchProperty>drug_resistance_finding.replicon_clade.name</cladeMatchProperty>
 		<objectRendererModule>hcvResistanceAssociatedVariantRenderer</objectRendererModule>
 	</variationCategory>
 	<variationCategory>
