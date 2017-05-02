@@ -136,6 +136,7 @@ function ($scope, glueWS, glueWebToolConfig) {
 	glueWS.setProjectURL("../../../gluetools-ws/project/hcv");
 	glueWebToolConfig.setAnalysisToolURL("../gluetools-web/www/analysisTool");
 	glueWebToolConfig.setAnalysisToolExampleSequenceURL("exampleSequences/exampleSequences.fasta");
+	glueWebToolConfig.setAnalysisToolExampleMsWindowsSequenceURL("exampleSequencesMsWindows/exampleSequences.fasta");
 	glueWebToolConfig.setProjectBrowserURL("../gluetools-web/www/projectBrowser");
 	glueWebToolConfig.setGlueWSURL("../gluetools-web/www/glueWS");
 	glueWebToolConfig.setRendererDialogs([
