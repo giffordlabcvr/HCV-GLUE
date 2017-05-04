@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featurePresenceRecorder>
+    <refNtCoverageFieldName>ref_nt_coverage_pct</refNtCoverageFieldName>
+    <minRefNtCoveragePct>25.0</minRefNtCoveragePct>
+</featurePresenceRecorder>

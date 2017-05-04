@@ -79,6 +79,10 @@ schema-project hcv
     create field ncbi_curated_total_absent INTEGER
     exit
 
+  table member_floc_note
+  	create field ref_nt_coverage_pct DOUBLE
+  	exit
+
   create custom-table drug
   create custom-table drug_category
   create custom-table drug_sub_category

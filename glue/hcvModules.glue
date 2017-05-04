@@ -59,6 +59,7 @@
   create module --moduleType nucleotideConsensusGenerator
   create module --moduleType aminoAcidConsensusGenerator  
   
+  create module --fileName modules/hcvFeaturePresenceRecorder.xml hcvFeaturePresenceRecorder
   
   create module --fileName modules/drugCategoryTextToCustomTableRows.xml drugCategoryTextToCustomTableRows
   create module --fileName modules/drugSubCategoryTextToCustomTableRows.xml drugSubCategoryTextToCustomTableRows
@@ -90,5 +91,8 @@
   create module --fileName modules/drugOfficialGuidelinesTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalFindingsTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalStudyTextToCustomTableRows.xml
+  
+  
+  
   
   
