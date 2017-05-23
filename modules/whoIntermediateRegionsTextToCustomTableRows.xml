@@ -1,0 +1,15 @@
+<freemarkerTextToGlueTransformer>
+	<columnDelimiterRegex>,</columnDelimiterRegex>
+	<freemarkerTemplate><![CDATA[
+<#list rows as row>
+  <#assign intermediateRegionName>${row["Intermediate Region Name"]?trim}</#assign>
+  <#assign intermediateRegionId>${intermediateRegionName?lower_case?replace(' ','_')?replace('-','_')}</#assign>
+  <#assign m49Code>${row["Intermediate Region Code"]?trim}</#assign>
+  create custom-table-row who_intermediate_region "${intermediateRegionId}"
+  custom-table-row who_intermediate_region "${intermediateRegionId}"
+    set field display_name "${intermediateRegionName}"
+    set field m49_code "${m49Code}"
+    exit
+</#list>
+]]></freemarkerTemplate>
+</freemarkerTextToGlueTransformer>

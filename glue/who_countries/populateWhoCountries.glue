@@ -1,0 +1,4 @@
+module whoRegionsTextToCustomTableRows transform tabular/who_countries/who_regions.csv --run
+module whoSubRegionsTextToCustomTableRows transform tabular/who_countries/who_sub_regions.csv --run
+module whoIntermediateRegionsTextToCustomTableRows transform tabular/who_countries/who_intermediate_regions.csv --run
+module whoCountriesTextToCustomTableRows transform tabular/who_countries/who_countries.txt --run

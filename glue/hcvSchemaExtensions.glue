@@ -169,5 +169,7 @@ schema-project hcv
     create field display_name VARCHAR 100
     exit
     
+  # WHO regions / countries etc (M49 standard)
+  run file glue/who_countries/whoCountriesSchemaExtension.glue
     
   exit

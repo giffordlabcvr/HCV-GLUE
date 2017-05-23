@@ -92,7 +92,10 @@
   create module --fileName modules/drugClinicalFindingsTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalStudyTextToCustomTableRows.xml
   
-  
+  create module -f modules/whoRegionsTextToCustomTableRows.xml
+  create module -f modules/whoSubRegionsTextToCustomTableRows.xml
+  create module -f modules/whoIntermediateRegionsTextToCustomTableRows.xml
+  create module -f modules/whoCountriesTextToCustomTableRows.xml  
   
   
   

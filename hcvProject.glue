@@ -14,6 +14,9 @@ project hcv
   # create modules from files
   run file glue/hcvModules.glue
 
+  # WHO regions / countries etc (M49 standard)
+  run file glue/who_countries/populateWhoCountries.glue
+
   # reference sequences and their unconstrained alignment
   run file glue/hcvReferenceSequences.glue
 
