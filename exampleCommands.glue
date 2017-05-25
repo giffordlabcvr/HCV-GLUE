@@ -1,19 +1,19 @@
 
 
 # List all sequences from Germany or France, from genotypes 1 or 4, collected before 2013
-list sequence -w "gb_country_iso in ('DEU','FRA') and latest_collection_year < 2013 and genotype in ('1','4')" sequenceID gb_country_iso latest_collection_year genotype
+list sequence -w "who_country.id in ('DEU','FRA') and latest_collection_year < 2013 and genotype in ('1','4')" sequenceID who_country.id latest_collection_year genotype
 
 # Within subtype 1a, list sequences from Germany or France before 2013.
-alignment AL_1a list member -w "sequence.gb_country_iso in ('DEU','FRA') and sequence.latest_collection_year < 2013" sequence.sequenceID sequence.gb_country_iso sequence.gb_isolate sequence.gb_create_date sequence.gb_length
+alignment AL_1a list member -w "sequence.who_country.id in ('DEU','FRA') and sequence.latest_collection_year < 2013" sequence.sequenceID sequence.who_country.id sequence.gb_isolate sequence.gb_create_date sequence.gb_length
 
 # Which subtype 1a sequences from Germany or France before 2013 cover the various HCV genes?
-alignment AL_1a show feature-presence -w "sequence.gb_country_iso in ('DEU','FRA') and sequence.latest_collection_year < 2013" -r REF_MASTER_NC_004102
+alignment AL_1a show feature-presence -w "sequence.who_country.id in ('DEU','FRA') and sequence.latest_collection_year < 2013" -r REF_MASTER_NC_004102
 
 # Within subtype 1a, scan sequences from Germany or France before 2013 for any drug resistance in NS5A
-alignment AL_1a variation frequency -w "sequence.gb_country_iso in ('DEU','FRA') and sequence.latest_collection_year < 2013" -r REF_MASTER_NC_004102 -f NS5A -v "is_resistance_associated_variant = true"
+alignment AL_1a variation frequency -w "sequence.who_country.id in ('DEU','FRA') and sequence.latest_collection_year < 2013" -r REF_MASTER_NC_004102 -f NS5A -v "is_resistance_associated_variant = true"
 
 # Within subtype 1a, find sequences from Germany or France before 2013 with the NS5A:28V resistance mutation
-alignment AL_1a variation member scan -w "sequence.gb_country_iso in ('DEU','FRA') and sequence.latest_collection_year < 2013" -r REF_MASTER_NC_004102 -f NS5A -v RAS_NS5A_28V --excludeAbsent
+alignment AL_1a variation member scan -w "sequence.who_country.id in ('DEU','FRA') and sequence.latest_collection_year < 2013" -r REF_MASTER_NC_004102 -f NS5A -v RAS_NS5A_28V --excludeAbsent
 
 # Export a protein alignment of sequences EU155379, EU862823, EU862824 in the NS5A region codon 10 to 45.
 module fastaProteinAlignmentExporter export AL_1a -r REF_MASTER_NC_004102 -f NS5A -l 10 45 -w "sequence.sequenceID in ('EU155379','EU862823','EU862824')" --preview

@@ -2,11 +2,11 @@
 	<columnDelimiterRegex>\t</columnDelimiterRegex>
 	<textFileColumn>
 		<identifier>true</identifier>
-		<fieldName>sequenceID</fieldName>
+		<property>sequenceID</property>
 		<header>sequenceID</header>
 	</textFileColumn>
 	<textFileColumn>
-		<fieldName>gb_place_sampled</fieldName>
+		<property>gb_place_sampled</property>
 		<header>gb_place_sampled_corrected</header>
 		<overwriteExistingNonNull>true</overwriteExistingNonNull>
 		<valueConverter>
@@ -19,7 +19,7 @@
 		</valueConverter>
 	</textFileColumn>
 	<textFileColumn>
-		<fieldName>gb_lab_construct</fieldName>
+		<property>gb_lab_construct</property>
 		<header>gb_lab_construct_corrected</header>
 		<overwriteExistingNonNull>true</overwriteExistingNonNull>
 		<valueConverter>

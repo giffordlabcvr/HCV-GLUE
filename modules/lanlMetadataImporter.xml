@@ -6,12 +6,6 @@
         <fieldName>sequenceID</fieldName>
         <header>Accession</header>
     </textFileColumn>
-    <!-- We now think the Los Alamos country is not reliable as it may be taken from the correspondance address -->
-    <!-- 
-	<isoCountryTextFileColumn codeStyle="ALPHA_3">
-		<fieldName>lanl_country_iso</fieldName>
-		<header>Country</header>
-	</isoCountryTextFileColumn>  -->
     <textFileColumn>
         <fieldName>lanl_sampling_year</fieldName>
         <header>Sampling Year</header>

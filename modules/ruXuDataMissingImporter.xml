@@ -2,11 +2,11 @@
 	<columnDelimiterRegex>\t</columnDelimiterRegex>
 	<textFileColumn>
 		<identifier>true</identifier>
-		<fieldName>sequenceID</fieldName>
+		<property>sequenceID</property>
 		<header>sequenceID</header>
 	</textFileColumn>
 	<textFileColumn>
-		<fieldName>gb_isolate</fieldName>
+		<property>gb_isolate</property>
 		<header>gb_isolate</header>
 		<valueConverter>
 			<matchPattern>(\w+) deletion mutant</matchPattern>
@@ -18,7 +18,7 @@
 		</valueConverter>
 	</textFileColumn>
 	<textFileColumn>
-		<fieldName>gb_host</fieldName>
+		<property>gb_host</property>
 		<header>gb_host_missing</header>
 		<valueConverter>
 			<matchPattern>chimp</matchPattern>
@@ -30,7 +30,7 @@
 		</valueConverter>
 	</textFileColumn>
 	<isoCountryTextFileColumn codeStyle="ALPHA_3">
-		<fieldName>gb_country_iso</fieldName>
+		<property>who_country</property>
 		<header>gb_country_short_missing</header>
 		<valueConverter>
 			<matchPattern>Thiland</matchPattern>
@@ -50,7 +50,7 @@
 		</valueConverter>
 	</isoCountryTextFileColumn>
 	<textFileColumn>
-		<fieldName>gb_place_sampled</fieldName>
+		<property>gb_place_sampled</property>
 		<header>gb_place_sampled_missing</header>
 		<valueConverter>
 			<matchPattern>HoChiMinhCity</matchPattern>
@@ -70,21 +70,21 @@
 		</valueConverter>
 	</textFileColumn>
 	<textFileColumn>
-		<fieldName>earliest_collection_year</fieldName>
+		<property>earliest_collection_year</property>
 		<header>gb_collection_year_missing</header>
 		<matchPattern>^ *(\d{4}) *$</matchPattern>
 		<matchPattern>^ *(\d{4}) *(?:-) *(?:\d{4}) *$</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</textFileColumn>
 	<textFileColumn>
-		<fieldName>latest_collection_year</fieldName>
+		<property>latest_collection_year</property>
 		<header>gb_collection_year_missing</header>
 		<matchPattern>^ *(\d{4}) *$</matchPattern>
 		<matchPattern>^ *(?:\d{4}) *(?:-) *(\d{4}) *$</matchPattern>
 		<outputTemplate>${g1}</outputTemplate>
 	</textFileColumn>
 	<textFileColumn>
-		<fieldName>gb_pubmed_id</fieldName>
+		<property>gb_pubmed_id</property>
 		<header>gb_pubmed_id_missing</header>
 		<nullRegex>^(?:.*add.*)|(?: *)$</nullRegex>
 	</textFileColumn>

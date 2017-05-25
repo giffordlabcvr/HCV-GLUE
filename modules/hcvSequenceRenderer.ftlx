@@ -21,8 +21,8 @@
 		<renderedName>${referenceSequence.getRenderedName()}</renderedName>
 	</referenceSequence>
 </#list>
-	<@elem tag="country" expr="gb_country_short"/>
-	<@elem tag="country_iso" expr="gb_country_iso"/>
+	<@elem tag="country" expr="context.display_name" context=who_country/>
+	<@elem tag="country_iso" expr="context.id" context=who_country/>
 	<@elem tag="earliestCollectionYear" expr="earliest_collection_year"/>
 	<@elem tag="latestCollectionYear" expr="latest_collection_year"/>
 <#if earliest_collection_year ?? || latest_collection_year ??>	

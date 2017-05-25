@@ -39,7 +39,7 @@
 						<td>{{sequenceResult.gb_update_date}}</td>
 						<td>{{sequenceResult.gb_length}}</td>
 						<td>{{handleNull(sequenceResult.gb_isolate)}}</td>
-						<td>{{sequenceResult.gb_country_short ? (sequenceResult.gb_country_short+" ("+sequenceResult.gb_country_iso+")"):"-"}}</td>
+						<td>{{sequenceResult['who_country.display_name'] ? (sequenceResult['who_country.display_name']+" ("+sequenceResult['who_country.id']+")"):"-"}}</td>
 						<td>{{collectionYearRange(sequenceResult.earliest_collection_year, sequenceResult.latest_collection_year)}}</td>
 						<td ng-show="sequenceResult.gb_pubmed_id == null">-</td>
 						<td ng-show="sequenceResult.gb_pubmed_id != null">
