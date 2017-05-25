@@ -17,8 +17,10 @@
   <#if countryId != ''>
   create custom-table-row who_country "${countryId}"
   custom-table-row who_country "${countryId}"
-    set field display_name "${countryName}"
+    set field full_name "${countryName}"
+    <#if m49Code != ''>
     set field m49_code "${m49Code}"
+    </#if>
     <#if regionId != ''>
     set link-target who_region "custom-table-row/who_region/${regionId}"
     </#if>

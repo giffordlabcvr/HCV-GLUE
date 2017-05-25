@@ -172,4 +172,6 @@ schema-project hcv
   # WHO regions / countries etc (M49 standard)
   run file glue/who_countries/whoCountriesSchemaExtension.glue
     
+  create link sequence who_country -m MANY_TO_ONE
+    
   exit

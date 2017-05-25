@@ -4,7 +4,7 @@ ABW	Aruba	533	Americas	Latin America and the Caribbean	Caribbean			x	Developing
 AFG	Afghanistan	4	Asia	Southern Asia		x	x		Developing
 AGO	Angola	24	Africa	Sub-Saharan Africa	Middle Africa	x			Developing
 AIA	Anguilla	660	Americas	Latin America and the Caribbean	Caribbean			x	Developing
-ALA	Aland Islands	248	Europe	Northern Europe					Developed
+ALA	Åland Islands	248	Europe	Northern Europe					Developed
 ALB	Albania	8	Europe	Southern Europe					Developed
 AND	Andorra	20	Europe	Southern Europe					Developed
 ARE	United Arab Emirates	784	Asia	Western Asia					Developing
@@ -27,7 +27,7 @@ BGR	Bulgaria	100	Europe	Eastern Europe					Developed
 BHR	Bahrain	48	Asia	Western Asia					Developing
 BHS	Bahamas	44	Americas	Latin America and the Caribbean	Caribbean			x	Developing
 BIH	Bosnia and Herzegovina	70	Europe	Southern Europe					Developed
-BLM	Saint Barthí©lemy	652	Americas	Latin America and the Caribbean	Caribbean				Developing
+BLM	Saint-Barthélemy	652	Americas	Latin America and the Caribbean	Caribbean				Developing
 BLR	Belarus	112	Europe	Eastern Europe					Developed
 BLZ	Belize	84	Americas	Latin America and the Caribbean	Central America			x	Developing
 BMU	Bermuda	60	Americas	Northern America					Developed
@@ -44,7 +44,7 @@ CCK	Cocos (Keeling) Islands	166	Oceania	Australia and New Zealand					Developed
 CHE	Switzerland	756	Europe	Western Europe					Developed
 CHL	Chile	152	Americas	Latin America and the Caribbean	South America				Developing
 CHN	China	156	Asia	Eastern Asia					Developing
-CIV	CíÇte d'Ivoire	384	Africa	Sub-Saharan Africa	Western Africa				Developing
+CIV	Côte d'Ivoire	384	Africa	Sub-Saharan Africa	Western Africa				Developing
 CMR	Cameroon	120	Africa	Sub-Saharan Africa	Middle Africa				Developing
 COD	Democratic Republic of the Congo	180	Africa	Sub-Saharan Africa	Middle Africa	x			Developing
 COG	Congo	178	Africa	Sub-Saharan Africa	Middle Africa				Developing
@@ -187,7 +187,7 @@ PRY	Paraguay	600	Americas	Latin America and the Caribbean	South America		x		Deve
 PSE	State of Palestine	275	Asia	Western Asia					Developing
 PYF	French Polynesia	258	Oceania	Polynesia				x	Developing
 QAT	Qatar	634	Asia	Western Asia					Developing
-REU	Rí©union	638	Africa	Sub-Saharan Africa	Eastern Africa				Developing
+REU	Réunion	638	Africa	Sub-Saharan Africa	Eastern Africa				Developing
 ROU	Romania	642	Europe	Eastern Europe					Developed
 RUS	Russian Federation	643	Europe	Eastern Europe					Developed
 RWA	Rwanda	646	Africa	Sub-Saharan Africa	Eastern Africa	x	x		Developing
@@ -228,6 +228,7 @@ TTO	Trinidad and Tobago	780	Americas	Latin America and the Caribbean	Caribbean		
 TUN	Tunisia	788	Africa	Northern Africa					Developing
 TUR	Turkey	792	Asia	Western Asia					Developing
 TUV	Tuvalu	798	Oceania	Polynesia		x		x	Developing
+TWN	Taiwan		Asia	Eastern Asia					Developed
 TZA	United Republic of Tanzania	834	Africa	Sub-Saharan Africa	Eastern Africa	x			Developing
 UGA	Uganda	800	Africa	Sub-Saharan Africa	Eastern Africa	x	x		Developing
 UKR	Ukraine	804	Europe	Eastern Europe					Developed
@@ -244,6 +245,7 @@ VNM	Viet Nam	704	Asia	South-eastern Asia					Developing
 VUT	Vanuatu	548	Oceania	Melanesia		x		x	Developing
 WLF	Wallis and Futuna Islands	876	Oceania	Polynesia					Developing
 WSM	Samoa	882	Oceania	Polynesia				x	Developing
+XKX	Kosovo		Europe	Southern Europe					Developed
 YEM	Yemen	887	Asia	Western Asia		x			Developing
 ZAF	South Africa	710	Africa	Sub-Saharan Africa	Southern Africa				Developing
 ZMB	Zambia	894	Africa	Sub-Saharan Africa	Eastern Africa	x	x		Developing

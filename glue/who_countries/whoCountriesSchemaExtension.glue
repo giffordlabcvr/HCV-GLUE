@@ -7,6 +7,7 @@ create custom-table who_sub_region
 table who_country
   create field m49_code INTEGER
   create field display_name VARCHAR 100
+  create field full_name VARCHAR 100
   create field is_ldc BOOLEAN
   create field is_lldc BOOLEAN
   create field is_sids BOOLEAN
