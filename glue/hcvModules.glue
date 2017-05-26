@@ -91,6 +91,8 @@
   create module --fileName modules/drugOfficialGuidelinesTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalFindingsTextToCustomTableRows.xml
   create module --fileName modules/drugClinicalStudyTextToCustomTableRows.xml
+
+  create module --fileName modules/whoRegionTreeRenderer.xml --loadResources
   
   create module -f modules/whoRegionsTextToCustomTableRows.xml
   create module -f modules/whoSubRegionsTextToCustomTableRows.xml

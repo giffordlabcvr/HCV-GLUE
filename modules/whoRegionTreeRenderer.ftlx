@@ -1,0 +1,17 @@
+<#include "/utils/glueDocUtils.ftlx">
+<whoRegion>
+	<id>${id}</id>
+	<displayName>${display_name}</displayName>
+	<#list who_sub_region as subRegion>
+    <whoSubRegion glueType="Object[]">
+		<id>${subRegion.id}</id>
+		<displayName>${subRegion.display_name}</displayName>
+		<#list subRegion.who_intermediate_region as intermediateRegion>
+	    <whoIntermediateRegion glueType="Object[]">
+			<id>${intermediateRegion.id}</id>
+			<displayName>${intermediateRegion.display_name}</displayName>
+	    </whoIntermediateRegion>
+	    </#list>
+    </whoSubRegion>
+    </#list>
+</whoRegion>

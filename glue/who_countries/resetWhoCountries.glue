@@ -1,0 +1,4 @@
+multi-delete who_country -a
+multi-delete who_region -a
+multi-delete who_sub_region -a
+multi-delete who_intermediate_region -a

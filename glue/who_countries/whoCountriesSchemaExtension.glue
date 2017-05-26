@@ -33,4 +33,6 @@ table who_intermediate_region
 create link who_country who_region -m MANY_TO_ONE
 create link who_country who_sub_region -m MANY_TO_ONE
 create link who_country who_intermediate_region -m MANY_TO_ONE
+create link who_intermediate_region who_sub_region -m MANY_TO_ONE
+create link who_sub_region who_region -m MANY_TO_ONE
   
