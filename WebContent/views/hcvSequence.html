@@ -40,7 +40,7 @@
 						<td><a href="#project/alignment/{{alignment.name}}">{{alignment.renderedName}}</a></td>
 					</tr>
 					<tr ng-if="alignment.featureCoverage">
-						<td><b>Coverage of Genome Region</b></td>
+						<td><b>Coverage of Genome Region</b><br/>based on homology with<br/><a href="#project/reference/{{alignment.constrainingReference.name}}">{{alignment.constrainingReference.renderedName}}</a></td>
 						<td><div ng-repeat="featureCoverage in alignment.featureCoverage track by $index">{{featureCoverage.featureRenderedName}}: {{toFixed(featureCoverage.coveragePct,2)}}%</div></td>
 					</tr>
 				</tbody>
