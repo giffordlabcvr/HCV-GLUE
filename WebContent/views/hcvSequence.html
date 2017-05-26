@@ -34,14 +34,19 @@
 				<tr>
 					<td><b>Lab construct?</b></td><td>{{renderResult.sequence.labConstruct ? "Yes" : "No"}}</td>
 				</tr>
-				<tr ng-repeat="alignment in renderResult.sequence.alignmentMembership track by $index" ng-show="alignment.constrainingReference">
-					<td><b>Clade membership</b></td>
-					<td><a href="#project/alignment/{{alignment.name}}">{{alignment.renderedName}}</a></td>
-				</tr>
+				<tbody ng-repeat="alignment in renderResult.sequence.alignmentMembership track by $index" ng-show="alignment.constrainingReference">
+					<tr>				
+						<td><b>Clade membership</b></td>
+						<td><a href="#project/alignment/{{alignment.name}}">{{alignment.renderedName}}</a></td>
+					</tr>
+					<tr ng-if="alignment.featureCoverage">
+						<td><b>Coverage of Genome Region</b></td>
+						<td><div ng-repeat="featureCoverage in alignment.featureCoverage track by $index">{{featureCoverage.featureRenderedName}}: {{toFixed(featureCoverage.coveragePct,2)}}%</div></td>
+					</tr>
+				</tbody>
 			</table>
-			
 			<div ng-show="renderResult.sequence.pubmedId">
-			<h4>Reference</h4>
+				<h4>Reference</h4>
 				<a href="https://www.ncbi.nlm.nih.gov/pubmed/{{renderResult.sequence.pubmedId}}" target="_blank">PubMed {{renderResult.sequence.pubmedId}} <span class="glyphicon glyphicon-link"></span></a>
 			</div>
 		</tr>
@@ -61,13 +66,19 @@
 					<td><b>Isolate ID</b></td><td>{{handleNull(renderResult.sequence.isolate)}}</td>
 				</tr>
 				<tr>
-					<td><b>Country of Origin</b></td><td>{{renderResult.sequence.country ? (renderResult.sequence.country+" ("+renderResult.sequence.country_iso+")"):"-"}}</td>
-				</tr>
-				<tr>
 					<td><b>Host Species</b></td><td><em>{{handleNull(renderResult.sequence.host)}}</em></td>
 				</tr>
 				<tr>
 					<td><b>Collection Year Range</b></td><td>{{handleNull(renderResult.sequence.collectionYearRange)}}</td>
+				</tr>
+				<tr>
+					<td><b>Country of Origin</b></td><td>{{renderResult.sequence.country ? (renderResult.sequence.country+" ("+renderResult.sequence.country_iso+")"):"-"}}</td>
+				</tr>
+				<tr ng-if="renderResult.sequence.country">
+					<td><b>Country Development Status</b></td><td>{{renderDevelopmentStatus(renderResult.sequence)}}</td>
+				</tr>
+				<tr ng-if="renderResult.sequence.country">
+					<td><b>Global Region</b></td><td>{{renderGlobalRegion(renderResult.sequence)}}</td>
 				</tr>
 			</table>	
 	    </div>

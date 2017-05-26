@@ -8,10 +8,20 @@
 		<name>${alignmentMembership.alignment.name}</name>
 		<renderedName>${alignmentMembership.alignment.getRenderedName()}</renderedName>
 <#if alignmentMembership.alignment.refSequence ??>
+<#assign constrainingRefName=alignmentMembership.alignment.refSequence.name>
 		<constrainingReference>
-			<name>${alignmentMembership.alignment.refSequence.name}</name>
+			<name>${constrainingRefName}</name>
 			<renderedName>${alignmentMembership.alignment.refSequence.getRenderedName()}</renderedName>
 		</constrainingReference>
+		<#list alignmentMembership.fLocNotes as fLocNote>
+		<#if fLocNote.featureLoc.referenceSequence.name = constrainingRefName>
+		<featureCoverage glueType="Object[]">
+			<featureName>${fLocNote.featureLoc.feature.name}</featureName>
+			<featureRenderedName>${fLocNote.featureLoc.feature.getRenderedName()}</featureRenderedName>
+			<@elem tag="coveragePct" expr="context.ref_nt_coverage_pct" type="Double" context=fLocNote/>
+		</featureCoverage>	
+		</#if>	
+		</#list>
 </#if>
 	</alignmentMembership>
 </#list>
@@ -23,6 +33,18 @@
 </#list>
 	<@elem tag="country" expr="context.display_name" context=who_country/>
 	<@elem tag="country_iso" expr="context.id" context=who_country/>
+<#if who_country ??>
+	<@elem tag="who_region" expr="context.id" context=who_country.who_region/>
+	<@elem tag="who_region_display_name" expr="context.display_name" context=who_country.who_region/>
+	<@elem tag="who_sub_region" expr="context.id" context=who_country.who_sub_region/>
+	<@elem tag="who_sub_region_display_name" expr="context.display_name" context=who_country.who_sub_region/>
+	<@elem tag="who_intermediate_region" expr="context.id" context=who_country.who_intermediate_region/>
+	<@elem tag="who_intermediate_region_display_name" expr="context.display_name" context=who_country.who_intermediate_region/>
+	<@elem tag="country_development_status" expr="context.development_status" context=who_country/>
+	<@elem tag="country_is_ldc" expr="context.is_ldc" type="Boolean" context=who_country/>
+	<@elem tag="country_is_lldc" expr="context.is_lldc" type="Boolean" context=who_country/>
+	<@elem tag="country_is_sids" expr="context.is_sids" type="Boolean" context=who_country/>
+</#if>
 	<@elem tag="earliestCollectionYear" expr="earliest_collection_year"/>
 	<@elem tag="latestCollectionYear" expr="latest_collection_year"/>
 <#if earliest_collection_year ?? || latest_collection_year ??>	
