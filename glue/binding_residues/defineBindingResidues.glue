@@ -1,0 +1,26 @@
+multi-delete variation -w "name like 'bindingResidue%'"
+
+reference REF_MASTER_NC_004102
+  feature-location precursor_polyprotein
+    create variation bindingResidue0Diff --translationType AMINO_ACID 
+    variation bindingResidue0Diff
+      create pattern-location "A.LFY" --labeledCodon 439 443 
+      exit
+    create variation bindingResidue1Diff --translationType AMINO_ACID 
+    variation bindingResidue1Diff
+      create pattern-location "(?:[^AX].LFY)|(?:A.[^LX]FY)|(?:A.L[^FX]Y)|(?:A.LF[^YX])" --labeledCodon 439 443 
+      exit
+    create variation bindingResidue2Diff --translationType AMINO_ACID 
+    variation bindingResidue2Diff
+      create pattern-location "(?:[^AX].[^LX]FY)|(?:[^AX].L[^FX]Y)|(?:[^AX].LF[^YX])|(?:A.[^LX][^FX]Y)|(?:A.[^LX]F[^YX])|(?:A.L[^FX][^YX])" --labeledCodon 439 443 
+      exit
+    create variation bindingResidue3Diff --translationType AMINO_ACID 
+    variation bindingResidue3Diff
+      create pattern-location "(?:A.[^LX][^FX][^YX])|(?:[^AX].L[^FX][^YX])|(?:[^AX].[^LX]F[^YX])|(?:[^AX].[^LX][^FX]Y)" --labeledCodon 439 443 
+      exit
+    create variation bindingResidue4Diff --translationType AMINO_ACID 
+    variation bindingResidue4Diff
+      create pattern-location "[^AX].[^LX][^FX][^YX]" --labeledCodon 439 443 
+      exit
+    exit
+  exit
