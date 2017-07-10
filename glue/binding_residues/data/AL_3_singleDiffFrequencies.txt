@@ -1,0 +1,16 @@
+referenceName	featureName	variationName	membersPresent	pctPresent	membersAbsent	pctAbsent
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.CFY	1	0.03	3080	99.97
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LFC	1	0.03	3080	99.97
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LFH	28	0.91	3053	99.09
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LFN	6	0.19	3075	99.81
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LFR	1	0.03	3080	99.97
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LFS	58	1.88	3023	98.12
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LIY	549	17.82	2532	82.18
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LLY	101	3.28	2980	96.72
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LMY	66	2.14	3015	97.86
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LSY	1	0.03	3080	99.97
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.LVY	10	0.32	3071	99.68
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.MFY	1	0.03	3080	99.97
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_A.SFY	1	0.03	3080	99.97
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_T.LFY	1	0.03	3080	99.97
+REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt3_V.LFY	23	0.75	3058	99.25
