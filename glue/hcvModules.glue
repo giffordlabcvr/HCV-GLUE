@@ -38,10 +38,6 @@
   # as above but uses blastFastaImporter
   create module --fileName modules/hcvMafftAlignerRelaxed.xml hcvMafftAlignerRelaxed
 
-
-  # these modules download the curated sequences from NCBI
-  create module --fileName modules/hcvCuratedNcbiImporter.xml curatedNcbiImporter
-
   # these modules download the refseqs from NCBI
   create module --fileName modules/hcvNcbiRefSeqsImporter.xml ncbi-refseqs-importer
   create module --fileName modules/hcvNcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer
@@ -50,9 +46,6 @@
 
   create module --fileName modules/equineHepacivirusAlignmentImporter.xml equineHepacivirusAlignmentImporter  
   
-  create module -f modules/viprSubtypePopulator.xml
-  create module -f modules/epaSubtypePopulator.xml
-
   create module --moduleType fastaExporter 
   create module --moduleType fastaAlignmentExporter
   create module --moduleType fastaProteinAlignmentExporter
@@ -74,17 +67,6 @@
   create module --fileName modules/hcvDrugResistanceFindingRenderer.xml --loadResources hcvDrugResistanceFindingRenderer
   create module --fileName modules/hcvDrugRegimenAlignmentRenderer.xml --loadResources hcvDrugRegimenAlignmentRenderer
 
-  create module --fileName modules/lanlMetadataImporter.xml
-
-  create module --fileName modules/hcvVariationFrequenciesGenerator.xml variationFrequenciesGenerator
-
-  create module --fileName modules/hcvCollectionBoundsPopulator.xml
-
-  create module --fileName modules/ruXuDataMissingImporter.xml
-  create module --fileName modules/ruXuDataCorrectedImporter.xml
-  
-  create module --fileName modules/hcvCommonAaAnalyser.xml
-  create module -f modules/hcvAlignmentsToUncommonAaVariations.xml
 
   create module --fileName modules/drugRegimensTextToCustomTableRows.xml
   create module --fileName modules/drugGuidelinesTextToCustomTableRows.xml

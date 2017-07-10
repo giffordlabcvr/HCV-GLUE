@@ -25,12 +25,6 @@
     set field displayName "Hepatitis C Virus (HCV)"
     # reference sequences
     add member -w "source.name in ('concatenated-refseqs', 'ncbi-refseqs', 'ncbi-refseqs-subgenomic')"
-    # curated members
-    add member -w "source.name = 'ncbi-curated' and \
-      ( gb_host = 'Homo sapiens' or gb_host = null ) and \
-      ( gb_lab_construct = 'false' ) and \
-      ( gb_recombinant = 'false' ) and \
-      ( epa_genotype != null )"
     extract child AL_1 --refName REF_1_NC_004102
     demote member AL_1 --whereClause "sequence.genotype = '1'" 
     extract child AL_2 --refName REF_2_D00944
@@ -127,25 +121,18 @@
     # Unassigned subtypes
     extract child AL_1_unassigned_AJ851228 --refName REF_1_unassigned_AJ851228
     demote member AL_1_unassigned_AJ851228 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'AJ851228'"
-    demote member AL_1_unassigned_AJ851228 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_1_unassigned_AJ851228'"
     extract child AL_1_unassigned_KJ439776 --refName REF_1_unassigned_KJ439776
     demote member AL_1_unassigned_KJ439776 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439776'"
-    demote member AL_1_unassigned_KJ439776 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_1_unassigned_KJ439776'"
     extract child AL_1_unassigned_KJ439777 --refName REF_1_unassigned_KJ439777
     demote member AL_1_unassigned_KJ439777 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439777'"
-    demote member AL_1_unassigned_KJ439777 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_1_unassigned_KJ439777'"
     extract child AL_1_unassigned_KJ439779 --refName REF_1_unassigned_KJ439779
     demote member AL_1_unassigned_KJ439779 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439779'"
-    demote member AL_1_unassigned_KJ439779 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_1_unassigned_KJ439779'"
     extract child AL_1_unassigned_KJ439780 --refName REF_1_unassigned_KJ439780
     demote member AL_1_unassigned_KJ439780 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ439780'"
-    demote member AL_1_unassigned_KJ439780 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_1_unassigned_KJ439780'"
     extract child AL_1_unassigned_HQ537007 --refName REF_1_unassigned_HQ537007
     demote member AL_1_unassigned_HQ537007 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'HQ537007'"
-    demote member AL_1_unassigned_HQ537007 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_1_unassigned_HQ537007'"
     extract child AL_1_unassigned_KC248195 --refName REF_1_unassigned_KC248195
     demote member AL_1_unassigned_KC248195 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC248195'"
-    demote member AL_1_unassigned_KC248195 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_1_unassigned_KC248195'"
     exit
 
   create reference REF_2a_D00944 ncbi-refseqs D00944
@@ -229,28 +216,20 @@
     # Unassigned subtypes
     extract child AL_2_unassigned_JF735110 --refName REF_2_unassigned_JF735110
     demote member AL_2_unassigned_JF735110 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735110'"
-    demote member AL_2_unassigned_JF735110 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_JF735110'"
     extract child AL_2_unassigned_JF735116 --refName REF_2_unassigned_JF735116
     demote member AL_2_unassigned_JF735116 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735116'"
-    demote member AL_2_unassigned_JF735116 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_JF735116'"
     extract child AL_2_unassigned_JF735117 --refName REF_2_unassigned_JF735117
     demote member AL_2_unassigned_JF735117 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735117'"
-    demote member AL_2_unassigned_JF735117 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_JF735117'"
     extract child AL_2_unassigned_JF735118 --refName REF_2_unassigned_JF735118
     demote member AL_2_unassigned_JF735118 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735118'"
-    demote member AL_2_unassigned_JF735118 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_JF735118'"
     extract child AL_2_unassigned_JF735119 --refName REF_2_unassigned_JF735119
     demote member AL_2_unassigned_JF735119 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735119'"
-    demote member AL_2_unassigned_JF735119 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_JF735119'"
     extract child AL_2_unassigned_KC197236 --refName REF_2_unassigned_KC197236
     demote member AL_2_unassigned_KC197236 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC197236'"
-    demote member AL_2_unassigned_KC197236 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_KC197236'"
     extract child AL_2_unassigned_KC197237 --refName REF_2_unassigned_KC197237
     demote member AL_2_unassigned_KC197237 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC197237'"
-    demote member AL_2_unassigned_KC197237 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_KC197237'"
     extract child AL_2_unassigned_KC197239 --refName REF_2_unassigned_KC197239
     demote member AL_2_unassigned_KC197239 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC197239'"
-    demote member AL_2_unassigned_KC197239 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_2_unassigned_KC197239'"
     exit
 
   create reference REF_3a_NC_009824 ncbi-refseqs NC_009824
@@ -294,7 +273,6 @@
     # Unassigned subtypes
     extract child AL_3_unassigned_JF735124 --refName REF_3_unassigned_JF735124
     demote member AL_3_unassigned_JF735124 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735124'"
-    demote member AL_3_unassigned_JF735124 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_3_unassigned_JF735124'"
     exit
 
   create reference REF_4a_NC_009825 ncbi-refseqs NC_009825
@@ -385,34 +363,24 @@
     # Unassigned subtypes
     extract child AL_4_unassigned_FJ025854 --refName REF_4_unassigned_FJ025854
     demote member AL_4_unassigned_FJ025854 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'FJ025854'"
-    demote member AL_4_unassigned_FJ025854 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_FJ025854'"
     extract child AL_4_unassigned_JF735127 --refName REF_4_unassigned_JF735127
     demote member AL_4_unassigned_JF735127 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735127'"
-    demote member AL_4_unassigned_JF735127 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735127'"
     extract child AL_4_unassigned_JF735129 --refName REF_4_unassigned_JF735129
     demote member AL_4_unassigned_JF735129 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735129'"
-    demote member AL_4_unassigned_JF735129 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735129'"
     extract child AL_4_unassigned_JF735130 --refName REF_4_unassigned_JF735130
     demote member AL_4_unassigned_JF735130 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735130'"
-    demote member AL_4_unassigned_JF735130 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735130'"
     extract child AL_4_unassigned_JF735131 --refName REF_4_unassigned_JF735131
     demote member AL_4_unassigned_JF735131 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735131'"
-    demote member AL_4_unassigned_JF735131 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735131'"
     extract child AL_4_unassigned_JF735132 --refName REF_4_unassigned_JF735132
     demote member AL_4_unassigned_JF735132 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735132'"
-    demote member AL_4_unassigned_JF735132 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735132'"
     extract child AL_4_unassigned_JF735134 --refName REF_4_unassigned_JF735134
     demote member AL_4_unassigned_JF735134 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735134'"
-    demote member AL_4_unassigned_JF735134 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735134'"
     extract child AL_4_unassigned_JF735135 --refName REF_4_unassigned_JF735135
     demote member AL_4_unassigned_JF735135 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735135'"
-    demote member AL_4_unassigned_JF735135 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735135'"
     extract child AL_4_unassigned_JF735138 --refName REF_4_unassigned_JF735138
     demote member AL_4_unassigned_JF735138 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JF735138'"
-    demote member AL_4_unassigned_JF735138 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JF735138'"
     extract child AL_4_unassigned_JX227964 --refName REF_4_unassigned_JX227964
     demote member AL_4_unassigned_JX227964 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX227964'"
-    demote member AL_4_unassigned_JX227964 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_4_unassigned_JX227964'"
     exit
 
   create reference REF_5a_NC_009826 ncbi-refseqs NC_009826
@@ -529,52 +497,36 @@
     # Unassigned subtypes
     extract child AL_6_unassigned_DQ278891 --refName REF_6_unassigned_DQ278891
     demote member AL_6_unassigned_DQ278891 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'DQ278891'"
-    demote member AL_6_unassigned_DQ278891 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_DQ278891'"
     extract child AL_6_unassigned_DQ278893 --refName REF_6_unassigned_DQ278893
     demote member AL_6_unassigned_DQ278893 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'DQ278893'"
-    demote member AL_6_unassigned_DQ278893 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_DQ278893'"
     extract child AL_6_unassigned_JX183549 --refName REF_6_unassigned_JX183549
     demote member AL_6_unassigned_JX183549 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183549'"
-    demote member AL_6_unassigned_JX183549 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_JX183549'"
     extract child AL_6_unassigned_JX183550 --refName REF_6_unassigned_JX183550
     demote member AL_6_unassigned_JX183550 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183550'"
-    demote member AL_6_unassigned_JX183550 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_JX183550'"
     extract child AL_6_unassigned_JX183551 --refName REF_6_unassigned_JX183551
     demote member AL_6_unassigned_JX183551 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183551'"
-    demote member AL_6_unassigned_JX183551 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_JX183551'"
     extract child AL_6_unassigned_JX183553 --refName REF_6_unassigned_JX183553
     demote member AL_6_unassigned_JX183553 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183553'"
-    demote member AL_6_unassigned_JX183553 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_JX183553'"
     extract child AL_6_unassigned_JX183554 --refName REF_6_unassigned_JX183554
     demote member AL_6_unassigned_JX183554 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183554'"
-    demote member AL_6_unassigned_JX183554 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_JX183554'"
     extract child AL_6_unassigned_JX183558 --refName REF_6_unassigned_JX183558
     demote member AL_6_unassigned_JX183558 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'JX183558'"
-    demote member AL_6_unassigned_JX183558 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_JX183558'"
     extract child AL_6_unassigned_KC844039 --refName REF_6_unassigned_KC844039
     demote member AL_6_unassigned_KC844039 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC844039'"
-    demote member AL_6_unassigned_KC844039 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KC844039'"
     extract child AL_6_unassigned_KC844040 --refName REF_6_unassigned_KC844040
     demote member AL_6_unassigned_KC844040 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KC844040'"
-    demote member AL_6_unassigned_KC844040 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KC844040'"
     extract child AL_6_unassigned_KJ470620 --refName REF_6_unassigned_KJ470620
     demote member AL_6_unassigned_KJ470620 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470620'"
-    demote member AL_6_unassigned_KJ470620 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KJ470620'"
     extract child AL_6_unassigned_KJ470621 --refName REF_6_unassigned_KJ470621
     demote member AL_6_unassigned_KJ470621 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470621'"
-    demote member AL_6_unassigned_KJ470621 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KJ470621'"
     extract child AL_6_unassigned_KJ470622 --refName REF_6_unassigned_KJ470622
     demote member AL_6_unassigned_KJ470622 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470622'"
-    demote member AL_6_unassigned_KJ470622 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KJ470622'"
     extract child AL_6_unassigned_KJ470623 --refName REF_6_unassigned_KJ470623
     demote member AL_6_unassigned_KJ470623 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470623'"
-    demote member AL_6_unassigned_KJ470623 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KJ470623'"
     extract child AL_6_unassigned_KJ470624 --refName REF_6_unassigned_KJ470624
     demote member AL_6_unassigned_KJ470624 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470624'"
-    demote member AL_6_unassigned_KJ470624 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KJ470624'"
     extract child AL_6_unassigned_KJ470625 --refName REF_6_unassigned_KJ470625
     demote member AL_6_unassigned_KJ470625 --whereClause "sequence.source.name = 'ncbi-refseqs' and sequence.sequenceID = 'KJ470625'"
-    demote member AL_6_unassigned_KJ470625 --whereClause "sequence.source.name = 'ncbi-curated' and sequence.epa_subtype_final_clade = 'AL_6_unassigned_KJ470625'"
     exit
 
 

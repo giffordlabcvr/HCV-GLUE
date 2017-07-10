@@ -1,8 +1,0 @@
-  # ViPR genotyping results
-  module viprSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f tabular/vipr/45125869619-ViprAllHcv.tsv
-  
-  # EPA genotyping results
-  module epaSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f genotyping/curatedGenotypes_part1.tsv
-  module epaSubtypePopulator populate --whereClause "source.name = 'ncbi-curated'" -f genotyping/curatedGenotypes_part2.tsv
-
-

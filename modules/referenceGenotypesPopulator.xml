@@ -3,25 +3,25 @@
 	<textFileColumn>
 		<identifier>true</identifier>
 		<header>SourceName</header>
-		<fieldName>source.name</fieldName>
+		<property>source.name</property>
 	</textFileColumn>
 	<textFileColumn>
 		<identifier>true</identifier>
 		<header>PrimAcc</header>
-		<fieldName>sequenceID</fieldName>
+		<property>sequenceID</property>
 	</textFileColumn>
 	<textFileColumn>
 		<header>genotype</header>
-		<fieldName>genotype</fieldName>
+		<property>genotype</property>
 	</textFileColumn>
 	<textFileColumn>
 		<header>subtype</header>
-		<fieldName>subtype</fieldName>
+		<property>subtype</property>
 		<nullRegex>-</nullRegex>
 	</textFileColumn>
 	<textFileColumn>
 		<header>reference_status</header>
-		<fieldName>reference_status</fieldName>
+		<property>reference_status</property>
 		<nullRegex>-</nullRegex>
 	</textFileColumn>
 </textFilePopulator>
