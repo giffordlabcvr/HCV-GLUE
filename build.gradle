@@ -1,5 +1,5 @@
 apply plugin: 'war'
-
+apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: 'org.hidetake.ssh'
 
 project.ext.set("glueVersion", "0.1.106")
@@ -224,6 +224,23 @@ task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipHcvGlueDB') {
   }
 }
 
+scmVersion {
+	hooks {
+        pre 'fileUpdate', [file: 'glue/hcvProjectSettings.glue', pattern: {v, c -> /set setting project-version $v/}, replacement: {v, c -> "set setting project-version $v"}]
+		pre 'commit', {v, p -> "Release version $v"}
+    }
+
+    scmVersion {
+        versionCreator 'versionWithBranch'
+	    repository {
+	        customKey = file('/Users/joshsinger/.ssh/github_id_rsa')
+	    }
+	    tag {
+	        prefix = 'HCV-GLUE'
+	    }
+    }
+
+}
 
 
 
