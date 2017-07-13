@@ -214,7 +214,7 @@ task initHcvGlueDBGlueHomeAWS {
 task buildHcvGlueDB(type: JavaExec, dependsOn: 'copyGluetoolsJar') {
 	classpath "build/runtimeJars/gluetools-core.jar"
 	main 'uk.ac.gla.cvr.gluetools.core.console.Console'
-	args '-c', 'local-gluetools-config.xml', '-ECO', '-i', 'run', 'file', 'hcvProject.glue'
+	args '-c', 'local-gluetools-config.xml', '-i', 'run', 'file', 'hcvProject.glue'
 }
 
 task dumpHcvGlueDB(type: Exec, dependsOn: 'buildHcvGlueDB') {
