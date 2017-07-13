@@ -20,11 +20,13 @@ repositories {
 configurations {
 	gluetoolsWebWar
 	gluetoolsWsWar
+	gluetoolsCore
 }
 
 dependencies {
     gluetoolsWebWar group: 'cvr.ac.uk', name: 'gluetools-web', version: project.glueVersion, transitive: false
     gluetoolsWsWar group: 'cvr.ac.uk', name: 'gluetools-ws', version: project.glueVersion, transitive: false
+    gluetoolsCore group: 'cvr.ac.uk', name: 'gluetools-core', version: project.glueVersion, transitive: false
 }
 
 
@@ -45,6 +47,12 @@ buildscript {
 war {
 	webAppDirName = 'WebContent'
 	archiveName 'hcvGlue.war'
+}
+
+task copyGluetoolsJar(type: Copy) {
+    from configurations.gluetoolsCore
+    into "$buildDir/runtimeJars"
+    rename('gluetools-core-'+project.glueVersion+'.jar', 'gluetools-core.jar')
 }
 
 task copyGluetoolsWebWar(type: Copy) {
@@ -242,6 +250,7 @@ scmVersion {
 	    }
     }
 
+	project.version = scmVersion.version
 }
 
 
