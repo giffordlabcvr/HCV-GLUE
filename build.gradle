@@ -2,7 +2,9 @@ apply plugin: 'war'
 apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: 'org.hidetake.ssh'
 
-project.ext.set("glueVersion", "0.1.112")
+project.ext.set("glueVersion", "0.1.113")
+
+project.version = scmVersion.version
 
 remotes {
   gluehome_aws {
@@ -211,10 +213,12 @@ task initHcvGlueDBGlueHomeAWS {
   }
 }
 
+def glueConfigFile = InetAddress.getLocalHost().getCanonicalHostName().equals('225pc177.cvr.gla.ac.uk') ? 'local-gluetools-config.xml' : 'remote-gluetools-config.xml'
+
 task buildHcvGlueDB(type: JavaExec, dependsOn: 'copyGluetoolsJar') {
 	classpath "build/runtimeJars/gluetools-core.jar"
 	main 'uk.ac.gla.cvr.gluetools.core.console.Console'
-	args '-c', 'local-gluetools-config.xml', '-i', 'run', 'file', 'hcvProject.glue'
+	args '-c', glueConfigFile, '-i', 'run', 'file', 'hcvProject.glue'
 }
 
 task dumpHcvGlueDB(type: Exec, dependsOn: 'buildHcvGlueDB') {
@@ -256,7 +260,6 @@ scmVersion {
 	    }
     }
 
-	project.version = scmVersion.version
 }
 
 
