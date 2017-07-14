@@ -36,7 +36,7 @@ schema-project hcv
     create field lanl_sampling_year INTEGER
     create field earliest_collection_year INTEGER
     create field latest_collection_year INTEGER
-
+    create field ncbi_incoming BOOLEAN
 
     # confirmed / provisional / recombinant / unassigned
     create field reference_status VARCHAR 20
