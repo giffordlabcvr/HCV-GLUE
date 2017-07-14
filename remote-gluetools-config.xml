@@ -26,17 +26,17 @@
 		</property>
 		<property>
 			<name>gluetools.core.programs.blast.search.threads</name>
-			<value>4</value>
+			<value>2</value>
 		</property>
 
 		<!-- RAxML-specific config -->
 		<property>
 			<name>gluetools.core.programs.raxml.raxmlhpc.executable</name>
-			<value>/opt/gluetools/raxml/bin/raxmlHPC-PTHREADS-SSE3</value>
+			<value>/opt/gluetools/raxml/bin/raxmlHPC-PTHREADS-AVX</value>
 		</property>
 		<property>
 			<name>gluetools.core.programs.raxml.raxmlhpc.cpus</name>
-			<value>4</value>
+			<value>2</value>
 		</property>
 		<property>
 			<name>gluetools.core.programs.raxml.temp.dir</name>
@@ -50,7 +50,7 @@
 		</property>
 		<property>
 			<name>gluetools.core.programs.mafft.cpus</name>
-			<value>4</value>
+			<value>2</value>
 		</property>
 		<property>
 			<name>gluetools.core.programs.mafft.temp.dir</name>
