@@ -2,7 +2,7 @@ apply plugin: 'war'
 apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: 'org.hidetake.ssh'
 
-project.ext.set("glueVersion", "0.1.120")
+project.ext.set("glueVersion", "0.1.121")
 
 project.version = scmVersion.version
 
