@@ -234,6 +234,16 @@ task zipHcvGlueDB(type: Exec, dependsOn: 'dumpHcvGlueDB') {
 	commandLine '/usr/bin/gzip', '-f', '/tmp/hcv_glue.sql'
 }
 
+task dumpHcvGlueDBOnBuildServer(type: Exec) {
+	glueDbsDir = '/opt/bitnami/apps/jenkins/gluedbs/hcv_glue'
+	commandLine '/bin/rm', '-rf', glueDbsDir
+	commandLine '/bin/mkdir', '-p', glueDbsDir
+	hcvGlueDbPath = glueDbsDir+'/hcv_glue_'+project.version+'.sql'
+	commandLine '/usr/bin/mysqldump', '-u', 'hcvglue', '--password=hcvglue', 'HCV_GLUE', '>', hcvGlueDbPath
+	commandLine '/bin/gzip', '-f', hcvGlueDbPath
+}
+
+
 task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipHcvGlueDB') {
   doLast {
 	  println "Uploading HCV-GLUE DB"
