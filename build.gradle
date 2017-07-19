@@ -244,7 +244,7 @@ task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipHcvGlueDB') {
   }
 }
 
-def scmCustomKey = InetAddress.getLocalHost().getCanonicalHostName().equals('225pc177.cvr.gla.ac.uk') ? '/Users/joshsinger/.ssh/github_id_rsa' : '/home/ubuntu/github_id_rsa'
+def scmCustomKey = InetAddress.getLocalHost().getCanonicalHostName().equals('225pc177.cvr.gla.ac.uk') ? '/Users/joshsinger/.ssh/github_id_rsa' : '/opt/bitnami/apps/jenkins/jenkins_home/.ssh/github_id_rsa'
 
 scmVersion {
 	hooks {
