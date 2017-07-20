@@ -110,6 +110,10 @@ hcvApp.config(['$routeProvider', 'projectBrowserStandardRoutesProvider',
         templateUrl: '../gluetools-web/www/analysisTool/analysisTool.html',
         controller: 'analysisToolCtrl'
       }).
+      when('/aboutGlueProject', {
+    	  templateUrl: './views/aboutGlueProject.html',
+    	  controller: 'aboutGlueProjectCtrl'
+      }).
       when('/home', {
     	  templateUrl: './modules/home/home.html',
     	  controller: 'homeCtrl'
@@ -133,6 +137,7 @@ function ($scope, glueWS, glueWebToolConfig) {
 	$scope.projectBrowserRavMenuTitle = "Resistance-associated Substitutions";
 	$scope.projectBrowserDrugPubMenuTitle = "Drug Resistance References";
 	$scope.projectBrowserSequenceMenuTitle = "Sequences";
+	$scope.glueProjectMenuTitle = "GLUE project";
 	glueWS.setProjectURL("../../../gluetools-ws/project/hcv");
 	glueWebToolConfig.setAnalysisToolURL("../gluetools-web/www/analysisTool");
 	glueWebToolConfig.setAnalysisToolExampleSequenceURL("exampleSequences/exampleSequences.fasta");

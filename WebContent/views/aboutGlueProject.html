@@ -1,0 +1,62 @@
+<h3>GLUE project</h3>
+<p>
+The HCV-GLUE web application is based on a linked dataset, packaged as a GLUE project. 
+GLUE projects can be loaded into the <a target="_blank" href="http://tools.glue.cvr.ac.uk">GLUE engine</a> which may be
+installed on a private computer. In this way, the HCV-GLUE functionality can be used for example to store private sequence data, 
+and extended, for example to add custom metadata or new analysis functions.  
+</p>
+<h4>Download GLUE project builds</h4>
+<p>
+The GLUE project comprises two layers, the core HCV-GLUE project, and the NCBI-HCV-GLUE extension.
+The core HCV-GLUE project contains the reference sequences and phylogenetic definitions along with RAS and epitope information.
+The NCBI-HCV-GLUE extension adds the HCV sequences derived from the NCBI nucleotide database and their metadata, 
+the set of atypical substitutions and RAS frequency data.
+</p>	
+	<table class="table table-striped table-bordered table-nonfluid">
+		<thead>
+			<colgroup>
+		       <col span="1" style="width: 50%;">
+		       <col span="1" style="width: 50%;">
+		    </colgroup>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>HCV-GLUE core project only</b></td>
+				<td>Download <a href="/hcv_glue_dbs/hcv_glue.sql.gz">hcv_glue.sql.gz</a></td>
+			</tr>
+			<tr>
+				<td><b>HCV-GLUE core project + NCBI-HCV-GLUE extension</b></td>
+				<td>Download <a href="/hcv_glue_dbs/ncbi_hcv_glue.sql.gz">ncbi_hcv_glue.sql.gz</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+
+<h4>Version information</h4>
+
+	<table class="table table-striped table-bordered table-nonfluid">
+		<thead>
+			<colgroup>
+		       <col span="1" style="width: 50%;">
+		       <col span="1" style="width: 50%;">
+		    </colgroup>
+		</thead>
+		<tbody>
+			<tr>
+				<td><b>HCV-GLUE core project version</b></td>
+				<td>{{hcvGlueProjectVersion}}</td>
+			</tr>
+			<tr>
+				<td><b>NCBI-HCV-GLUE extension version</b></td>
+				<td>{{ncbiHcvGlueExtensionProjectVersion}}</td>
+			</tr>
+			<tr>
+				<td><b>NCBI-HCV-GLUE extension build date</b></td>
+				<td>{{ncbiHcvGlueExtensionBuildDate}}</td>
+			</tr>
+			<tr>
+				<td><b>NCBI-HCV-GLUE extension build id</b></td>
+				<td>{{ncbiHcvGlueExtensionBuildId}}</td>
+			</tr>
+		</tbody>
+	</table>
