@@ -122,7 +122,7 @@ class DeployWarTask extends DefaultTask {
 		  println "Stopping Tomcat"
 		  taskSsh.run {
 		    session(remote) {
-		      execute 'sudo service tomcat7 stop'
+		      execute 'sudo service tomcat7 stop; sleep 10s'
 		      execute 'while true; do tcresult="$(sudo service tomcat7 status)" ; if [[ $tcresult != *"Tomcat servlet engine is running"* ]] ; then break ; fi ; sleep 0.5 ; echo "Tomcat is still running" ; done'
 		      execute 'sleep 5'
 		    }
@@ -166,7 +166,7 @@ task deployHcvGlueGluetoolsWsContextXmlGlueHomeAWS() {
 	  ssh.run {
 	    session(remotes.gluehome_aws) {
 	      put from: file.absolutePath, into: '/tmp/gluetools-ws.xml'
-	      execute 'sudo service tomcat7 stop'
+	      execute 'sudo service tomcat7 stop; sleep 10s'
 	      execute 'sudo mkdir -p /var/lib/tomcat7/conf/Catalina/hcv.glue.cvr.ac.uk'
 	      execute 'sudo mv /tmp/gluetools-ws.xml /var/lib/tomcat7/conf/Catalina/hcv.glue.cvr.ac.uk/gluetools-ws.xml'
 	      execute 'sudo service tomcat7 start'
