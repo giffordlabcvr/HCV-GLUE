@@ -74,8 +74,7 @@ task deployAll(dependsOn: ['deployGluetoolsWebWarGlueHomeAWS',
 	'deployGluetoolsWsWarGlueHomeAWS',
 	'deployHcvGlueWarGlueHomeAWS',
 	'deployHcvGlueGluetoolsWsContextXmlGlueHomeAWS',
-	'deployHcvGlueConfigGlueHomeAWS',
-	'deployHcvGlueDbToGlueHomeAWS'])
+	'deployHcvGlueConfigGlueHomeAWS'])
 
 task deployGluetoolsWebWarGlueHomeAWS(type: DeployWarTask, dependsOn: 'copyGluetoolsWebWar') {
     warFile = new File(buildDir, 'runtimeWars/gluetools-web.war')
