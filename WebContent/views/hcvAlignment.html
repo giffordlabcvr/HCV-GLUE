@@ -27,8 +27,16 @@
 	<p>Sequences identified as recombinants, lab constructs or having a non-human host species are excluded from the list.</p>
 	<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
 		<paging-buttons ng-show="!loadingSpinner" paging-context="pagingContext">
-			<button type="button" class="btn btn-default" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
-			<button type="button" class="btn btn-default" ng-click="downloadMemberMetadata()">Download metadata</button>
+			<div class="btn-group" dropdown is-open="status.isopen_downloadtype1">
+		      <button id="downloadtype-button1" type="button" class="btn btn-default" dropdown-toggle ng-disabled="disabled">
+		        Download <span class="caret"></span>
+		      </button>
+		      <ul class="dropdown-menu" role="menu" aria-labelledby="downloadtype-button1">
+				<li role="menuitem" ng-click="downloadSequences('fastaExporter')"><a>Download sequences</a></li>
+				<li role="menuitem" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')"><a>Download alignment</a></li>
+				<li role="menuitem" ng-click="downloadMemberMetadata()"><a>Download metadata</a></li>
+		      </ul>
+			</div>
 		</paging-buttons>
 		<span ng-show="memberList.length == 0">No sequences</span>
 		<div ng-show="memberList.length > 0">
@@ -76,8 +84,16 @@
 				</tbody>
 			</table>
 			<paging-buttons paging-context="pagingContext">
-				<button type="button" class="btn btn-default" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')">Download alignment</button>
-				<button type="button" class="btn btn-default" ng-click="downloadMemberMetadata()">Download metadata</button>
+				<div class="btn-group" dropdown is-open="status.isopen_downloadtype2">
+			      <button id="downloadtype-button2" type="button" class="btn btn-default" dropdown-toggle ng-disabled="disabled">
+			        Download <span class="caret"></span>
+			      </button>
+			      <ul class="dropdown-menu" role="menu" aria-labelledby="downloadtype-button1">
+					<li role="menuitem" ng-click="downloadSequences('fastaExporter')"><a>Download sequences</a></li>
+					<li role="menuitem" ng-click="downloadAlignment('fastaAlignmentExporter','fastaProteinAlignmentExporter')"><a>Download alignment</a></li>
+					<li role="menuitem" ng-click="downloadMemberMetadata()"><a>Download metadata</a></li>
+			      </ul>
+				</div>
 			</paging-buttons>
 		</div>
 	</div>
