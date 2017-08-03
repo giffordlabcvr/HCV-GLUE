@@ -212,7 +212,7 @@ task initHcvGlueDBGlueHomeAWS {
   }
 }
 
-def glueConfigFile = InetAddress.getLocalHost().getCanonicalHostName().equals('225pc177.cvr.gla.ac.uk') ? 'local-gluetools-config.xml' : 'remote-gluetools-config.xml'
+def glueConfigFile = InetAddress.getLocalHost().getCanonicalHostName().endsWith('gla.ac.uk') ? 'local-gluetools-config.xml' : 'remote-gluetools-config.xml'
 
 task wipeHcvGlueDB(type: Exec) {
 	commandLine 'echo', 'drop database HCV_GLUE; create database HCV_GLUE character set UTF8;', '|', 'mysql', '-u', 'hcvglue', '--password=hcvglue'
@@ -247,7 +247,7 @@ task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipHcvGlueDB') {
   }
 }
 
-def scmCustomKey = InetAddress.getLocalHost().getCanonicalHostName().equals('225pc177.cvr.gla.ac.uk') ? '/Users/joshsinger/.ssh/github_id_rsa' : '/opt/bitnami/apps/jenkins/jenkins_home/.ssh/github_id_rsa'
+def scmCustomKey = InetAddress.getLocalHost().getCanonicalHostName().endsWith('gla.ac.uk') ? '/Users/joshsinger/.ssh/github_id_rsa' : '/opt/bitnami/apps/jenkins/jenkins_home/.ssh/github_id_rsa'
 
 scmVersion {
 	hooks {
