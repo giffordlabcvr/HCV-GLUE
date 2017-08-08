@@ -103,8 +103,6 @@
 	<div ng-show="rasNoteList.length > 0">
 		<p>The table below summarises the occurence of resistance-associated substitutions across all NCBI sequences within 
 		{{renderResult.alignment.renderedName}}.</p>
-		<p>Resistance-associated substitutions are omitted if fewer than 10 clade members were available, 
-		or if fewer than 1% of clade members contained the substitution.</p>
 		<paging-buttons paging-context="rasPagingContext"></paging-buttons>
 		Substitutions {{rasPagingContext.firstItemIndex}} to {{rasPagingContext.lastItemIndex}} of {{rasPagingContext.totalItems}}
 		<table class="table table-striped table-bordered">
