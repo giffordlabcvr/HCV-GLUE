@@ -6,7 +6,15 @@
 		<jdbcUrl>jdbc:mysql://localhost:3306/HCV_GLUE?characterEncoding=UTF-8</jdbcUrl>	
 	</database>
 	<properties>
-	
+			<!-- Web files -->
+	    <property>
+			<name>gluetools.core.webfiles.enabled</name>
+			<value>true</value>
+		</property>
+		<property>
+			<name>gluetools.core.webfiles.root.dir</name>
+			<value>/opt/gluetools/glue_web_files</value>
+		</property>
 		<!-- BLAST-specific config -->
 		<property>
 			<name>gluetools.core.programs.blast.blastn.executable</name>
