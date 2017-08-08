@@ -1,6 +1,6 @@
   set setting ignore-nt-sequence-hyphens true
   set setting translate-beyond-possible-stop true
   set setting translate-beyond-definite-stop true
-  set setting project-version 0.1.18
+  set setting project-version 0.1.19
 
   
