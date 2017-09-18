@@ -81,5 +81,5 @@
   create module -f modules/whoIntermediateRegionsTextToCustomTableRows.xml
   create module -f modules/whoCountriesTextToCustomTableRows.xml  
   
-  
+  create module -f modules/hcvSequenceRecogniser.xml  
   
