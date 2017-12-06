@@ -15,6 +15,7 @@
   create module --fileName modules/hcvWebAnalysisTool.xml webAnalysisTool
   create module --fileName modules/hcvEpitopeRenderer.xml --loadResources hcvEpitopeRenderer
   create module --fileName modules/hcvUncommonAaRenderer.xml --loadResources 
+  create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources
 
   create module --fileName modules/hcvAlignmentRenderer.xml --loadResources hcvAlignmentRenderer
   create module --fileName modules/hcvSequenceRenderer.xml --loadResources hcvSequenceRenderer
@@ -53,26 +54,6 @@
   create module --moduleType aminoAcidConsensusGenerator  
   
   create module --fileName modules/hcvFeaturePresenceRecorder.xml hcvFeaturePresenceRecorder
-  
-  create module --fileName modules/drugCategoryTextToCustomTableRows.xml drugCategoryTextToCustomTableRows
-  create module --fileName modules/drugSubCategoryTextToCustomTableRows.xml drugSubCategoryTextToCustomTableRows
-  create module --fileName modules/drugTextToCustomTableRows.xml drugTextToCustomTableRows
-  create module --fileName modules/resistanceAssociatedSubstitutionsToVariations.xml resistanceAssociatedSubstitutionsToVariations
-  create module -f modules/drugResistancePublicationTextToCustomTableRows.xml drugResistancePublicationTextToCustomTableRows
-  create module -f modules/drugResistanceFindingTextToCustomTableRows.xml drugResistanceFindingTextToCustomTableRows
-  create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources hcvResistanceAssociatedVariantRenderer
-  create module --fileName modules/hcvOfficialGuidanceRenderer.xml --loadResources hcvOfficialGuidanceRenderer
-  create module --fileName modules/hcvDrugPublicationRenderer.xml --loadResources hcvDrugPublicationRenderer
-  create module --fileName modules/hcvDrugRenderer.xml --loadResources hcvDrugRenderer
-  create module --fileName modules/hcvDrugResistanceFindingRenderer.xml --loadResources hcvDrugResistanceFindingRenderer
-  create module --fileName modules/hcvDrugRegimenAlignmentRenderer.xml --loadResources hcvDrugRegimenAlignmentRenderer
-
-
-  create module --fileName modules/drugRegimensTextToCustomTableRows.xml
-  create module --fileName modules/drugGuidelinesTextToCustomTableRows.xml
-  create module --fileName modules/drugOfficialGuidelinesTextToCustomTableRows.xml
-  create module --fileName modules/drugClinicalFindingsTextToCustomTableRows.xml
-  create module --fileName modules/drugClinicalStudyTextToCustomTableRows.xml
 
   create module --fileName modules/whoRegionTreeRenderer.xml --loadResources
   

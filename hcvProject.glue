@@ -29,9 +29,6 @@ project hcv
   # import phylogeny
   run file glue/importPhylogeny.glue
 
-  # resistance associated substitutions
-  run file glue/hcvDrugResistance.glue
-
   # epitopes
   run file glue/hcvEpitopes.glue
 

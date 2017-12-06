@@ -1,4 +1,0 @@
-id	Display name
-NS3_inhibitor	NS3/4A protease inhibitor
-NS5A_inhibitor	NS5A inhibitor
-NS5B_inhibitor	NS5B RNA polymerase inhibitor

@@ -49,13 +49,9 @@ schema-project hcv
     exit
 
   table variation
-    create field is_resistance_associated_variant BOOLEAN 
     create field is_epitope BOOLEAN
     create field pubmed_id VARCHAR 50
     create field publication_date_year INTEGER
-    create field rav_substitutions VARCHAR 50
-    create field rav_first_codon INTEGER
-    create field rav_clinical_notes VARCHAR 500
     create field epitope_iedb_id INTEGER
     create field epitope_method VARCHAR 50
     create field epitope_protein VARCHAR 50
@@ -81,92 +77,6 @@ schema-project hcv
   table member_floc_note
   	create field ref_nt_coverage_pct DOUBLE
   	exit
-
-  create custom-table drug
-  create custom-table drug_category
-  create custom-table drug_sub_category
-  create custom-table drug_resistance_finding --idFieldLength 200
-  create custom-table drug_resistance_publication
-  create custom-table drug_resistance_official_guidance
-  create custom-table drug_clinical_study
-  create custom-table drug_resistance_clinical_finding --idFieldLength 200
-  create custom-table drug_guidance_guideline
-  create custom-table drug_guideline
-  create custom-table drug_regimen
-  create custom-table drug_regimen_drug
-  create custom-table drug_regimen_alignment
-  
-  create link drug drug_category -m MANY_TO_ONE
-  create link drug drug_sub_category -m MANY_TO_ONE
-  create link drug_resistance_publication drug_resistance_finding -m ONE_TO_MANY
-  create link variation drug_resistance_finding -m ONE_TO_MANY 
-  create link drug_resistance_finding -s replicon_clade alignment -m MANY_TO_ONE
-  create link drug_resistance_finding drug -m MANY_TO_ONE
-  create link variation drug_resistance_official_guidance -m ONE_TO_MANY 
-  create link drug_resistance_official_guidance drug_category -m ONE_TO_ONE 
-  create link drug_resistance_official_guidance alignment -m ONE_TO_ONE
-  create link drug_resistance_official_guidance drug_guidance_guideline -m ONE_TO_MANY
-  create link drug_guidance_guideline drug_guideline -m MANY_TO_ONE
-  create link drug_guideline --srcLinkName resisted_drug drug -m ONE_TO_ONE
-  create link drug_resistance_official_guidance drug_resistance_clinical_finding -m ONE_TO_MANY
-  create link drug_resistance_clinical_finding drug_clinical_study -m MANY_TO_ONE
-  create link drug_clinical_study drug_resistance_publication -m MANY_TO_ONE
-  create link drug_resistance_clinical_finding variation -m MANY_TO_ONE
-  create link drug_resistance_clinical_finding alignment -m ONE_TO_ONE
-  create link drug_clinical_study --srcLinkName parent_study drug_clinical_study --destLinkName child_study --multiplicity MANY_TO_ONE
-  create link drug_regimen drug_regimen_drug -m ONE_TO_MANY 
-  create link drug_regimen_drug drug -m MANY_TO_ONE 
-  create link drug_regimen drug_regimen_alignment -m ONE_TO_MANY 
-  create link drug_regimen_alignment alignment -m MANY_TO_ONE 
-
-  table drug_regimen
-	create field display_name VARCHAR 500
-	create field short_display_name VARCHAR 100
-    exit
-
-  table drug_regimen_alignment
-    # 'available' or 'suboptimal'
-	create field recommendation_level VARCHAR 20
-	exit
-
-  table drug
-	create field company_code VARCHAR 100
-	create field generation INTEGER
-	create field wave INTEGER
-    exit
-
-  table drug_guideline
-	create field source VARCHAR 50
-	create field text VARCHAR 1000
-    exit
-
-  
-  table drug_category
-	create field display_name VARCHAR 100
-    exit
-
-  table drug_sub_category
-	create field display_name VARCHAR 100
-    exit
-  
-  table drug_resistance_publication
-	create field display_name VARCHAR 100
-	create field authors VARCHAR 500
-	create field year INTEGER
-	create field title VARCHAR 500
-	create field publication VARCHAR 100
-	create field pub_location VARCHAR 100
-	create field web_link VARCHAR 500
-    exit
-    
-  table drug_resistance_finding
-    create field min_fold_change DOUBLE
-    create field max_fold_change DOUBLE
-    exit
-
-  table drug_clinical_study 
-    create field display_name VARCHAR 100
-    exit
     
   # WHO regions / countries etc (M49 standard)
   run file glue/who_countries/whoCountriesSchemaExtension.glue

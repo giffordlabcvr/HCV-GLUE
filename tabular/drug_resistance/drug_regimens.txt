@@ -1,9 +1,0 @@
-id	display_name	short_display_name	drugs	available_almts	suboptimal_almts
-sof	sofosbivir + ribavirin	SOF	sofosbuvir		AL_2,AL_3
-sof_ldv	sofosbuvir/ledipasvir ± ribavirin	SOF/LDV	sofosbuvir,ledipasvir	AL_1,AL_5,AL_6	
-sof_vel	sofosbuvir/velpatasvir ± ribavirin	SOF/VEL	sofosbuvir,velpatasvir	AL_1,AL_2,AL_3,AL_4,AL_5,AL_6	
-obv_ptv_r_dbv	ombitasvir/paritaprevir/ritonavir + dasabuvir ± ribavirin	OBV/PTV-r/DBV	ombitasvir,paritaprevir,dasabuvir	AL_1	
-obv_ptv_r	ombitasvir/paritaprevir/ritonavir ± ribavirin	OBV/PTV-r	ombitasvir,paritaprevir	AL_4	
-gzr_ebr	grazoprevir/elbasvir ± ribavirin	GZR/EBR	grazoprevir,elbasvir	AL_1,AL_4	
-sof_dcv	sofosbuvir + daclatasvir ± ribavirin	SOF/DCV	sofosbuvir,daclatasvir	AL_1,AL_2,AL_3,AL_4,AL_5,AL_6	
-sof_sim	sofosbuvir + simeprevir ± ribavirin	SOF/SIM	sofosbuvir,simeprevir	AL_4	AL_1
