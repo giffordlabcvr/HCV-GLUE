@@ -14,41 +14,58 @@ hcvApp.controller('aboutGlueProjectCtrl',
 			})
 			.error(glueWS.raiseErrorDialog(dialogs, "retrieving project-version setting"));
 
+			
 			glueWS.runGlueCommand("", {
 			    "show":{
-			        "setting":{
-			            "settingName":"extension-version"
+			        "extension-setting":{
+			            "extensionName":"hcv_dr",
+				        "extSettingName":"extension-version"
 			        }
 			    }
 			})
 			.success(function(data, status, headers, config) {
-				$scope.ncbiHcvGlueExtensionProjectVersion = data.projectShowSettingResult.settingValue;
+				$scope.hcvDRExtensionProjectVersion = data.projectShowExtensionSettingResult.extSettingValue;
 			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving extension-version setting"));
+			.error(glueWS.raiseErrorDialog(dialogs, "retrieving hcv_dr extension-version setting"));
 
 			glueWS.runGlueCommand("", {
 			    "show":{
-			        "setting":{
-			            "settingName":"extension-build-date"
+			        "extension-setting":{
+			            "extensionName":"ncbi_hcv",
+				        "extSettingName":"extension-version"
 			        }
 			    }
 			})
 			.success(function(data, status, headers, config) {
-				$scope.ncbiHcvGlueExtensionBuildDate = data.projectShowSettingResult.settingValue;
+				$scope.ncbiHcvGlueExtensionProjectVersion = data.projectShowExtensionSettingResult.extSettingValue;
 			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving extension-build-date setting"));
+			.error(glueWS.raiseErrorDialog(dialogs, "retrieving ncbi_hcv extension-version setting"));
 
 			glueWS.runGlueCommand("", {
 			    "show":{
-			        "setting":{
-			            "settingName":"extension-build-id"
+			        "extension-setting":{
+			            "extensionName":"ncbi_hcv",
+			            "extSettingName":"extension-build-date"
 			        }
 			    }
 			})
 			.success(function(data, status, headers, config) {
-				$scope.ncbiHcvGlueExtensionBuildId = data.projectShowSettingResult.settingValue;
+				$scope.ncbiHcvGlueExtensionBuildDate = data.projectShowExtensionSettingResult.extSettingValue;
 			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving extension-build-id setting"));
+			.error(glueWS.raiseErrorDialog(dialogs, "retrieving ncbi_hcv extension-build-date setting"));
+
+			glueWS.runGlueCommand("", {
+			    "show":{
+			        "extension-setting":{
+			            "extensionName":"ncbi_hcv",
+			            "extSettingName":"extension-build-id"
+			        }
+			    }
+			})
+			.success(function(data, status, headers, config) {
+				$scope.ncbiHcvGlueExtensionBuildId = data.projectShowExtensionSettingResult.extSettingValue;
+			})
+			.error(glueWS.raiseErrorDialog(dialogs, "retrieving ncbi_hcv extension-build-id setting"));
 
 			
 		} ]);

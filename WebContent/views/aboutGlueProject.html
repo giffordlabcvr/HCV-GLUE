@@ -7,10 +7,9 @@ and extended, for example to add custom metadata or new analysis functions.
 </p>
 <h4>Download GLUE project builds</h4>
 <p>
-The GLUE project consists of two layers, the core HCV-GLUE project, and the NCBI-HCV-GLUE extension.
-The core HCV-GLUE project contains the reference sequences and phylogenetic definitions along with RAS and epitope information.
-The NCBI-HCV-GLUE extension adds the HCV sequences derived from the NCBI nucleotide database and their metadata, 
-the set of atypical substitutions and RAS frequency data.
+Two project builds are available. The build including the NCBI-HCV-GLUE extension is larger but includes the 
+HCV sequences derived from the NCBI nucleotide database and their metadata, the set of atypical substitutions 
+and RAS frequency data.
 </p>	
 	<table class="table table-striped table-bordered table-nonfluid">
 		<thead>
@@ -21,11 +20,11 @@ the set of atypical substitutions and RAS frequency data.
 		</thead>
 		<tbody>
 			<tr>
-				<td><b>HCV-GLUE core project only</b></td>
+				<td><b>HCV-GLUE core project + HCV-DRUG-RESISTANCE extension</b></td>
 				<td>Download <a href="/hcv_glue_dbs/hcv_glue.sql.gz">hcv_glue.sql.gz</a></td>
 			</tr>
 			<tr>
-				<td><b>HCV-GLUE core project + NCBI-HCV-GLUE extension</b></td>
+				<td><b>HCV-GLUE core project + HCV-DRUG-RESISTANCE extension + NCBI-HCV-GLUE extension</b></td>
 				<td>Download <a href="/hcv_glue_dbs/ncbi_hcv_glue.sql.gz">ncbi_hcv_glue.sql.gz</a></td>
 			</tr>
 		</tbody>
@@ -45,6 +44,10 @@ the set of atypical substitutions and RAS frequency data.
 			<tr>
 				<td><b>HCV-GLUE core project version</b></td>
 				<td>{{hcvGlueProjectVersion}}</td>
+			</tr>
+			<tr>
+				<td><b>HCV-DRUG-RESISTANCE extension version</b></td>
+				<td>{{hcvDRExtensionProjectVersion}}</td>
 			</tr>
 			<tr>
 				<td><b>NCBI-HCV-GLUE extension version</b></td>
