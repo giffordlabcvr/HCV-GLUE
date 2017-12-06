@@ -27,7 +27,7 @@ hcvApp.controller('hcvDrugCtrl',
 			
 			glueWS.runGlueCommand("custom-table-row/drug/"+$scope.drugId, {
 				"render-object": {
-					"rendererModuleName":"hcvDrugRenderer"
+					"rendererModuleName":"hcvDRDrugRenderer"
 				}
 			})
 			.success(function(data, status, headers, config) {

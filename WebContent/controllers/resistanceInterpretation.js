@@ -23,7 +23,7 @@ analysisTool.controller('resistanceInterpretationCtrl',
 				        "whereClause":rWhereClause,
 				        "tableName":"drug_regimen_alignment",
 				        "allObjects":"false",
-				        "rendererModuleName":"hcvDrugRegimenAlignmentRenderer"
+				        "rendererModuleName":"hcvDRDrugRegimenAlignmentRenderer"
 				    }
 				})
 			    .success(function(data, status, headers, config) {

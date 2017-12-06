@@ -72,7 +72,7 @@ analysisTool.controller('inVitroRAVsCtrl',
 					        "whereClause":vWhereClause,
 					        "tableName":"drug_resistance_finding",
 					        "allObjects":"false",
-					        "rendererModuleName":"hcvDrugResistanceFindingRenderer"
+					        "rendererModuleName":"hcvDRDrugResistanceFindingRenderer"
 					    }
 					})
 				    .success(function(data, status, headers, config) {

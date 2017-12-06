@@ -46,7 +46,7 @@ analysisTool.controller('officialRAVsCtrl',
 					        "whereClause":vWhereClause,
 					        "tableName":"drug_resistance_official_guidance",
 					        "allObjects":"false",
-					        "rendererModuleName":"hcvOfficialGuidanceRenderer"
+					        "rendererModuleName":"hcvDROfficialGuidanceRenderer"
 					    }
 					})
 				    .success(function(data, status, headers, config) {

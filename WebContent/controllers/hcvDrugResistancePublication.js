@@ -28,7 +28,7 @@ hcvApp.controller('hcvDrugResistancePublicationCtrl',
 			
 			glueWS.runGlueCommand("custom-table-row/drug_resistance_publication/"+$scope.drPubId, {
 				"render-object": {
-					"rendererModuleName":"hcvDrugPublicationRenderer"
+					"rendererModuleName":"hcvDRDrugPublicationRenderer"
 				}
 			})
 			.success(function(data, status, headers, config) {
