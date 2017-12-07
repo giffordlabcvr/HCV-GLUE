@@ -1,6 +1,6 @@
 delete project hcv
 
-create project hcv "Hepatitis C variation analysis" --minVersion 0.1.133
+create project hcv "Hepatitis C variation analysis" --minVersion 0.1.135
 
 run file glue/hcvSchemaExtensions.glue
  
