@@ -27,7 +27,8 @@ var hcvApp = angular.module('hcvApp', [
     'treeControl',
     'angulartics',
     'angulartics.google.analytics',
-    'angular-cookie-law'
+    'angular-cookie-law',
+    'hljs'
   ]);
 
 console.log("after hcvApp module definition");
@@ -114,6 +115,18 @@ hcvApp.config(['$routeProvider', 'projectBrowserStandardRoutesProvider',
     	  templateUrl: './views/aboutGlueProject.html',
     	  controller: 'aboutGlueProjectCtrl'
       }).
+      when('/aboutGlueProject/exampleFastaReport', {
+    	  templateUrl: './views/exampleFastaReport.html',
+    	  controller: 'exampleFastaReportCtrl'
+      }).
+      when('/aboutGlueProject/exampleBamReport', {
+    	  templateUrl: './views/exampleBamReport.html',
+    	  controller: 'exampleBamReportCtrl'
+      }).
+      when('/aboutHcvGlue', {
+    	  templateUrl: './views/aboutHcvGlue.html',
+    	  controller: 'aboutHcvGlueCtrl'
+      }).
       when('/home', {
     	  templateUrl: './modules/home/home.html',
     	  controller: 'homeCtrl'
@@ -130,14 +143,15 @@ function ($scope, glueWS, glueWebToolConfig) {
 	$scope.homeMenuTitle = "Home";
 	$scope.analysisMenuTitle = "Analysis";
 	$scope.analysisToolMenuTitle = "Genotyping and Interpretation";
-	$scope.projectBrowserMenuTitle = "Sequence Database";
+	$scope.projectBrowserMenuTitle = "Sequence Data";
 	$scope.drugResistanceMenuTitle = "Drug Resistance";
-	$scope.projectBrowserAlignmentMenuTitle = "Clade Tree";
+	$scope.projectBrowserAlignmentMenuTitle = "NCBI Sequences by Clade";
 	$scope.projectBrowserDrugMenuTitle = "Direct-acting Antivirals";
 	$scope.projectBrowserRavMenuTitle = "Resistance-associated Substitutions";
 	$scope.projectBrowserDrugPubMenuTitle = "Drug Resistance References";
-	$scope.projectBrowserSequenceMenuTitle = "Sequences";
-	$scope.glueProjectMenuTitle = "GLUE project";
+	$scope.projectBrowserSequenceMenuTitle = "All NCBI Sequences";
+	$scope.glueProjectMenuTitle = "Offline version";
+	$scope.aboutHcvGlueMenuTitle = "About";
 	glueWS.setProjectURL("../../../gluetools-ws/project/hcv");
 	glueWebToolConfig.setAnalysisToolURL("../gluetools-web/www/analysisTool");
 	glueWebToolConfig.setAnalysisToolExampleSequenceURL("exampleSequences/exampleSequences.fasta");

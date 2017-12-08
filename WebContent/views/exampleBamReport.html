@@ -1,0 +1,504 @@
+<h2>Example JSON BAM report</h2>
+
+<div hljs language="json" no-escape>
+{
+    "bamReport":{
+        "bamFilePath":"ngsData.bam",
+        "samReferenceResults":[
+            {
+                "id":"RS15005637-A_S51.consensus1",
+                "samReference":{
+                    "name":"RS15005637-A_S51.consensus1",
+                    "length":9266,
+                    "index":0,
+                    "species":null,
+                    "assembly":null
+                },
+                "isForwardHcv":true,
+                "isReverseHcv":false,
+                "genotypingResult":{
+                    "queryName":"RS15005637-A_S51.consensus1",
+                    "genotypeFinalClade":"AL_1",
+                    "genotypeCladeBalance":"AL_1:100.00%",
+                    "genotypeClosestMemberAlignmentName":"AL_1a",
+                    "genotypeClosestMemberSourceName":"ncbi-refseqs",
+                    "genotypeClosestMemberSequenceID":"HQ850279",
+                    "subtypeFinalClade":"AL_1a",
+                    "subtypeCladeBalance":"AL_1a:100.00%",
+                    "subtypeClosestMemberAlignmentName":"AL_1a",
+                    "subtypeClosestMemberSourceName":"ncbi-refseqs",
+                    "subtypeClosestMemberSequenceID":"HQ850279"
+                },
+                "licensedDrugRegimens":[
+                    {
+                        "drugRegimen":{
+                            "id":"gzr_ebr",
+                            "displayName":"grazoprevir/elbasvir ± ribavirin",
+                            "shortDisplayName":"GZR/EBR",
+                            "daaDrugsInRegimen":{
+                                "drug":[
+                                    {
+                                        "id":"elbasvir",
+                                        "categoryId":"NS5A_inhibitor",
+                                        "categoryDisplayName":"NS5A inhibitor"
+                                    },
+                                    {
+                                        "id":"grazoprevir",
+                                        "categoryId":"NS3_inhibitor",
+                                        "categoryDisplayName":"NS3/4A protease inhibitor"
+                                    }
+                                ]
+                            }
+                        },
+                        "recommendationLevel":"available"
+                    },
+                    {
+                        "drugRegimen":{
+                            "id":"obv_ptv_r_dbv",
+                            "displayName":"ombitasvir/paritaprevir/ritonavir + dasabuvir ± ribavirin",
+                            "shortDisplayName":"OBV/PTV-r/DBV",
+                            "daaDrugsInRegimen":{
+                                "drug":[
+                                    {
+                                        "id":"dasabuvir",
+                                        "categoryId":"NS5B_inhibitor",
+                                        "categoryDisplayName":"NS5B RNA polymerase inhibitor"
+                                    },
+                                    {
+                                        "id":"ombitasvir",
+                                        "categoryId":"NS5A_inhibitor",
+                                        "categoryDisplayName":"NS5A inhibitor"
+                                    },
+                                    {
+                                        "id":"paritaprevir",
+                                        "categoryId":"NS3_inhibitor",
+                                        "categoryDisplayName":"NS3/4A protease inhibitor"
+                                    }
+                                ]
+                            }
+                        },
+                        "recommendationLevel":"available"
+                    },
+                    {
+                        "drugRegimen":{
+                            "id":"sof_dcv",
+                            "displayName":"sofosbuvir + daclatasvir ± ribavirin",
+                            "shortDisplayName":"SOF/DCV",
+                            "daaDrugsInRegimen":{
+                                "drug":[
+                                    {
+                                        "id":"daclatasvir",
+                                        "categoryId":"NS5A_inhibitor",
+                                        "categoryDisplayName":"NS5A inhibitor"
+                                    },
+                                    {
+                                        "id":"sofosbuvir",
+                                        "categoryId":"NS5B_inhibitor",
+                                        "categoryDisplayName":"NS5B RNA polymerase inhibitor"
+                                    }
+                                ]
+                            }
+                        },
+                        "recommendationLevel":"available"
+                    },
+                    {
+                        "drugRegimen":{
+                            "id":"sof_ldv",
+                            "displayName":"sofosbuvir/ledipasvir ± ribavirin",
+                            "shortDisplayName":"SOF/LDV",
+                            "daaDrugsInRegimen":{
+                                "drug":[
+                                    {
+                                        "id":"ledipasvir",
+                                        "categoryId":"NS5A_inhibitor",
+                                        "categoryDisplayName":"NS5A inhibitor"
+                                    },
+                                    {
+                                        "id":"sofosbuvir",
+                                        "categoryId":"NS5B_inhibitor",
+                                        "categoryDisplayName":"NS5B RNA polymerase inhibitor"
+                                    }
+                                ]
+                            }
+                        },
+                        "recommendationLevel":"available"
+                    },
+                    {
+                        "drugRegimen":{
+                            "id":"sof_sim",
+                            "displayName":"sofosbuvir + simeprevir ± ribavirin",
+                            "shortDisplayName":"SOF/SIM",
+                            "daaDrugsInRegimen":{
+                                "drug":[
+                                    {
+                                        "id":"simeprevir",
+                                        "categoryId":"NS3_inhibitor",
+                                        "categoryDisplayName":"NS3/4A protease inhibitor"
+                                    },
+                                    {
+                                        "id":"sofosbuvir",
+                                        "categoryId":"NS5B_inhibitor",
+                                        "categoryDisplayName":"NS5B RNA polymerase inhibitor"
+                                    }
+                                ]
+                            }
+                        },
+                        "recommendationLevel":"suboptimal"
+                    },
+                    {
+                        "drugRegimen":{
+                            "id":"sof_vel",
+                            "displayName":"sofosbuvir/velpatasvir ± ribavirin",
+                            "shortDisplayName":"SOF/VEL",
+                            "daaDrugsInRegimen":{
+                                "drug":[
+                                    {
+                                        "id":"sofosbuvir",
+                                        "categoryId":"NS5B_inhibitor",
+                                        "categoryDisplayName":"NS5B RNA polymerase inhibitor"
+                                    },
+                                    {
+                                        "id":"velpatasvir",
+                                        "categoryId":"NS5A_inhibitor",
+                                        "categoryDisplayName":"NS5A inhibitor"
+                                    }
+                                ]
+                            }
+                        },
+                        "recommendationLevel":"available"
+                    }
+                ],
+                "targetRefName":"REF_1a_HQ850279",
+                "easlNgsScanResult":[
+                    {
+                        "referenceName":"REF_MASTER_NC_004102",
+                        "featureName":"NS5A",
+                        "variationName":"RAS_NS5A_31M",
+                        "readsPresent":135,
+                        "pctPresent":30.133928571428573,
+                        "readsAbsent":313,
+                        "pctAbsent":69.86607142857143,
+                        "rasDetails":[
+                            {
+                                "easlOfficialGuidance":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "drugCategory":"NS5A_inhibitor",
+                                    "drugCategoryDisplayName":"NS5A inhibitor",
+                                    "cladeName":"AL_1a",
+                                    "cladeDisplayName":"HCV Subtype 1a",
+                                    "clinicalFinding":[
+                                        {
+                                            "clinicalStudyName":"c_edge_te",
+                                            "clinicalStudyDisplayName":"C-EDGE TE",
+                                            "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516351708",
+                                            "publicationID":"Kwo_et_al_2017",
+                                            "publication":"Gastroenterology",
+                                            "publicationDisplayName":"Kwo et al., 2017",
+                                            "pubLocation":"152(1):164-175",
+                                            "authors":"Kwo P, Gane EJ, Peng CY, Pearlman B, Vierling JM, Serfaty L, Buti M, Shafran S, Stryszak P, Lin L, Gress J, Black S, Dutko FJ, Robertson M, Wahl J, Lupinacci L, Barr E, Haber B",
+                                            "title":"Effectiveness of Elbasvir and Grazoprevir Combination, With or Without Ribavirin, for Treatment-Experienced Patients With Chronic Hepatitis C Infection",
+                                            "year":2017
+                                        },
+                                        {
+                                            "clinicalStudyName":"c_edge_tn",
+                                            "clinicalStudyDisplayName":"C-EDGE TN",
+                                            "webLink":"http://annals.org/aim/article/2279766/grazoprevir-elbasvir-combination-therapy-treatment-naive-cirrhotic-noncirrhotic-patients-chronic",
+                                            "publicationID":"Zeuzem_et_al_2015a",
+                                            "publication":"Annals of Internal Medicine",
+                                            "publicationDisplayName":"Zeuzem et al., 2015a",
+                                            "pubLocation":"163(1):1-13",
+                                            "authors":"Zeuzem S, Ghalib R, Reddy KR, Pockros PJ, Ben Ari Z, Zhao Y, Brown DD, Wan S, DiNubile MJ, Nguyen BY, Robertson MN, Wahl J, Barr E, Butterton JR",
+                                            "title":"Grazoprevir-Elbasvir Combination Therapy for Treatment-Naive Cirrhotic and Noncirrhotic Patients With Chronic Hepatitis C Virus Genotype 1, 4, or 6 Infection: A Randomized Trial",
+                                            "year":2015
+                                        },
+                                        {
+                                            "clinicalStudyName":"ion_post_hoc",
+                                            "clinicalStudyDisplayName":"Post-hoc pooled ION trial data analysis",
+                                            "webLink":"http://onlinelibrary.wiley.com/doi/10.1002/hep.28181/pdf",
+                                            "publicationID":"Zeuzem_et_al_2015b",
+                                            "publication":"Hepatology 2015",
+                                            "publicationDisplayName":"Zeuzem et al., 2015b",
+                                            "pubLocation":"62:254A",
+                                            "authors":"Zeuzem S, Mizokami M, Pianko S, Mangia A, Han KH, Martin R, et al.",
+                                            "title":"Prevalence of Pre-Treatment NS5A Resistance Associated Variants in Genotype 1 Patients Across Different Regions Using Deep Sequencing and Effect on Treatment Outcome with LDV/SOF",
+                                            "year":2015
+                                        }
+                                    ],
+                                    "drugGuideline":[
+                                        {
+                                            "drugGuidelineResistedDrug":"ledipasvir",
+                                            "drugGuidelineSource":"EASL",
+                                            "drugGuidelineText":"If reliable NS5A resistance testing is performed, treatment-experienced, DAA-naïve patients infected with genotype 1a with or without compensated cirrhosis who have NS5A RASs that confer high-level resistance to ledipasvir (M28A/G/T, Q30E/G/H/K/R, L31M/V, P32L/S, H58D, and/or Y93C/H/N/S) detected at baseline should be treated with the fixed-dose combination of sofosbuvir and ledipasvir for 12 weeks with ribavirin, whereas those without ledipasvir RASs at baseline can be treated with the fixed-dose combination of sofosbuvir and ledipasvir for 12 weeks without ribavirin (B1)."
+                                        },
+                                        {
+                                            "drugGuidelineResistedDrug":"elbasvir",
+                                            "drugGuidelineSource":"EASL",
+                                            "drugGuidelineText":"If reliable NS5A resistance testing is performed, treatment-naïve and treatment-experienced patients infected with subtype 1a with or without compensated cirrhosis should receive the combination of grazoprevir and elbasvir for 16 weeks with daily weight-based ribavirin (1000 or 1200 mg in patients <75 kg or ≥75 kg, respectively) if their HCV RNA level is >800,000 IU/ml and NS5A RASs that confer resistance to elbasvir (M28A/G/T, Q30D/E/G/H/K/L/R, L31F/M/V, H58D and/or Y93C/H/N/S) are present at baseline. Patients infected with subtype 1a with or without compensated cirrhosis with an HCV RNA level ≤800,000 IU/ml and those with an HCV RNA level >800,000 IU/ml without elbasvir NS5A RASs at baseline should receive the combination of grazoprevir and elbasvir for 12 weeks without ribavirin (B1)."
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "inVitroNgsScanResult":[
+                    {
+                        "referenceName":"REF_MASTER_NC_004102",
+                        "featureName":"NS3",
+                        "variationName":"RAS_NS3_170V",
+                        "readsPresent":334,
+                        "pctPresent":72.2943722943723,
+                        "readsAbsent":128,
+                        "pctAbsent":27.705627705627705,
+                        "rasDetails":[
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS3",
+                                    "rasName":"RAS_NS3_170V",
+                                    "rasRenderedName":"NS3:170V",
+                                    "rasSubstitutions":"170V",
+                                    "resistedDrug":"asunaprevir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":2,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS3",
+                                    "rasName":"RAS_NS3_170V",
+                                    "rasRenderedName":"NS3:170V",
+                                    "rasSubstitutions":"170V",
+                                    "resistedDrug":"paritaprevir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":2,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS3",
+                                    "rasName":"RAS_NS3_170V",
+                                    "rasRenderedName":"NS3:170V",
+                                    "rasSubstitutions":"170V",
+                                    "resistedDrug":"simeprevir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":2,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "referenceName":"REF_MASTER_NC_004102",
+                        "featureName":"NS5A",
+                        "variationName":"RAS_NS5A_31M",
+                        "readsPresent":135,
+                        "pctPresent":30.133928571428573,
+                        "readsAbsent":313,
+                        "pctAbsent":69.86607142857143,
+                        "rasDetails":[
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"daclatasvir",
+                                    "publication":{
+                                        "id":"Lontok_et_al_2015",
+                                        "displayName":"Lontok et al., 2015",
+                                        "webLink":"http://onlinelibrary.wiley.com/doi/10.1002/hep.27934/abstract"
+                                    },
+                                    "minFoldChange":105,
+                                    "maxFoldChange":105,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"daclatasvir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":100,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"daclatasvir",
+                                    "publication":{
+                                        "id":"Sarrazin_2016",
+                                        "displayName":"Sarrazin, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0168827815006297"
+                                    },
+                                    "minFoldChange":100,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"elbasvir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":100,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"ledipasvir",
+                                    "publication":{
+                                        "id":"Lontok_et_al_2015",
+                                        "displayName":"Lontok et al., 2015",
+                                        "webLink":"http://onlinelibrary.wiley.com/doi/10.1002/hep.27934/abstract"
+                                    },
+                                    "minFoldChange":554,
+                                    "maxFoldChange":554,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"ledipasvir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":100,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"ledipasvir",
+                                    "publication":{
+                                        "id":"Sarrazin_2016",
+                                        "displayName":"Sarrazin, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0168827815006297"
+                                    },
+                                    "minFoldChange":100,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"ombitasvir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":100,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            },
+                            {
+                                "inVitroResistanceFinding":{
+                                    "rasReferenceSequence":"REF_MASTER_NC_004102",
+                                    "rasFeature":"NS5A",
+                                    "rasName":"RAS_NS5A_31M",
+                                    "rasRenderedName":"NS5A:31M",
+                                    "rasSubstitutions":"31M",
+                                    "resistedDrug":"velpatasvir",
+                                    "publication":{
+                                        "id":"Pawlotsky_2016",
+                                        "displayName":"Pawlotsky, 2016",
+                                        "webLink":"http://www.sciencedirect.com/science/article/pii/S0016508516300555"
+                                    },
+                                    "minFoldChange":100,
+                                    "maxFoldChange":null,
+                                    "repliconCladeId":"AL_1a",
+                                    "repliconCladeDisplayName":"HCV Subtype 1a"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
+</div>

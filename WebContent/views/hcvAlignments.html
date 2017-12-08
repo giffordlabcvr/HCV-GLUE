@@ -1,10 +1,7 @@
 <div ng-app="hcvApp">
-	<h2>Clade Tree</h2>
-	<p>
-	HCV genotypes and subtypes arranged in a browsable tree matching the hypothesised evolutionary relationships. 
-	</p>
-	<p>
-	</p>
+	<h2>NCBI HCV Sequences by Clade</h2>
+	<p>Select a clade to view the sequences within that clade.</p>
+	<p>Clades may be expanded to reveal child clades.</p>
 	<treecontrol class="tree-light"
 	   tree-model="almtNameToDescendentTree['AL_MASTER']"
 	   expanded-nodes="almtNameToExpandedNodes['AL_MASTER']"
@@ -16,8 +13,6 @@
 		<li>HCV-GLUE clade definitions are based on 
 	the <a href="http://talk.ictvonline.org/ictv_wikis/flaviviridae/w/sg_flavi/56.hcv-classification" 
 	target="_blank">ICTV HCV classification resource</a>, updated in May 2015.</li>
-		<li>Expand/collapse nodes to explore the clade tree.</li>
-		<li>Click on a clade name to view the sequences within that clade, and other details.</li>
 		<li>Subtypes marked as "unassigned" do not yet have enough distinct isolates to assign a designation.</li>
 		<li>Subtypes marked as "provisional" have been assigned a designation, but require further distinct isolates for confirmation.</li>
 	</ul>

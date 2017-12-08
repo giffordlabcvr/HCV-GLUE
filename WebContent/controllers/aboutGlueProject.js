@@ -1,71 +1,37 @@
 hcvApp.controller('aboutGlueProjectCtrl', 
-		[ '$scope', 'glueWS', 'dialogs', 
-		function($scope, glueWS, dialogs) {
+		[ '$scope', 'glueWS', 'dialogs', 'saveFile', 'FileSaver', '$http', '$location', '$anchorScroll',
+		function($scope, glueWS, dialogs, saveFile, FileSaver, $http, $location, $anchorScroll) {
+
+			$scope.downloadResistanceGeno1 = function() {
+				var url;
+				if(userAgent.os.family.indexOf("Windows") !== -1) {
+					url = "exampleSequencesMsWindows/resistanceGeno1.fasta";
+				} else {
+					url = "exampleSequences/resistanceGeno1.fasta";
+				}
+				$http.get(url)
+				.success(function(data, status, headers, config) {
+					console.log("data", data);
+			    	var blob = new Blob([data], {type: "text/plain"});
+			    	saveFile.saveFile(blob, "resistanceGeno1.fasta file", "resistanceGeno1.fasta");
+			    })
+			    .error(glueWS.raiseErrorDialog(dialogs, "downloading resistanceGeno1.fasta file"));
+			}
+
+			$scope.downloadNgsData = function() {
+				var url = "exampleSequences/ngsData.bam";
+				$http.get(url)
+				.success(function(data, status, headers, config) {
+					console.log("data", data);
+			    	var blob = new Blob([data], {type: "text/plain"});
+			    	saveFile.saveFile(blob, "ngsData.bam file", "ngsData.bam");
+			    })
+			    .error(glueWS.raiseErrorDialog(dialogs, "downloading ngsData.bam file"));
+			}
 			
-			glueWS.runGlueCommand("", {
-			    "show":{
-			        "setting":{
-			            "settingName":"project-version"
-			        }
-			    }
-			})
-			.success(function(data, status, headers, config) {
-				$scope.hcvGlueProjectVersion = data.projectShowSettingResult.settingValue;
-			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving project-version setting"));
-
-			
-			glueWS.runGlueCommand("", {
-			    "show":{
-			        "extension-setting":{
-			            "extensionName":"hcv_dr",
-				        "extSettingName":"extension-version"
-			        }
-			    }
-			})
-			.success(function(data, status, headers, config) {
-				$scope.hcvDRExtensionProjectVersion = data.projectShowExtensionSettingResult.extSettingValue;
-			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving hcv_dr extension-version setting"));
-
-			glueWS.runGlueCommand("", {
-			    "show":{
-			        "extension-setting":{
-			            "extensionName":"ncbi_hcv",
-				        "extSettingName":"extension-version"
-			        }
-			    }
-			})
-			.success(function(data, status, headers, config) {
-				$scope.ncbiHcvGlueExtensionProjectVersion = data.projectShowExtensionSettingResult.extSettingValue;
-			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving ncbi_hcv extension-version setting"));
-
-			glueWS.runGlueCommand("", {
-			    "show":{
-			        "extension-setting":{
-			            "extensionName":"ncbi_hcv",
-			            "extSettingName":"extension-build-date"
-			        }
-			    }
-			})
-			.success(function(data, status, headers, config) {
-				$scope.ncbiHcvGlueExtensionBuildDate = data.projectShowExtensionSettingResult.extSettingValue;
-			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving ncbi_hcv extension-build-date setting"));
-
-			glueWS.runGlueCommand("", {
-			    "show":{
-			        "extension-setting":{
-			            "extensionName":"ncbi_hcv",
-			            "extSettingName":"extension-build-id"
-			        }
-			    }
-			})
-			.success(function(data, status, headers, config) {
-				$scope.ncbiHcvGlueExtensionBuildId = data.projectShowExtensionSettingResult.extSettingValue;
-			})
-			.error(glueWS.raiseErrorDialog(dialogs, "retrieving ncbi_hcv extension-build-id setting"));
-
+		    $scope.scrollTo = function(id) {
+		        $location.hash(id);
+		        $anchorScroll();
+		     }
 			
 		} ]);

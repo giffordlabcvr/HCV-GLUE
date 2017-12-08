@@ -1,43 +1,43 @@
-<h3>Background</h3>
-The emergence of clinically-relevant hepatitis C virus (HCV) resistance to direct-acting 
-antiviral drugs in parallel with advances in next-generation sequencing
-technology means there is a need for computational resources that allow clinicians to 
-make optimal treatment decisions based on analysis of virus sequence data. 
-These resources will also be an important component of efforts to study and monitor HCV genetic variation, 
-and to evaluate its impact on epidemiology, disease course and treatment outcome. 
-<h3>HCV-GLUE: Sequence Data Resource</h3>
-HCV-GLUE is a bioinformatic resource for the curation and analysis of HCV sequence data.
-The resource can be used either via a web site or via an offline version 
-aimed at more experienced bioinformaticians.
+
+<div class="row">
+	<div class="col-md-8">
+		<h1>HCV-GLUE</h1>
+		<h4>A Sequence Data Resource for Hepatitis C Virus</h4>
+		<p>
+			Hepatitis C virus (HCV) affects over 100 million
+			people worldwide and can lead to liver
+			disease and occasionally cirrhosis. While direct-acting
+			antiviral drugs (DAAs) have improved treatment prospects for HCV
+			significantly, drug resistance
+			has emerged both <em>in vitro</em> and in clinical trials. 
+			HCV exhibits a high level of genetic variation and so there is a need for computational 
+			resources to organise and analyse existing and new
+			HCV sequence data in 
+			research, public health and clinical contexts.
+		</p>
+		<p>HCV-GLUE is a bioinformatics resource for HCV sequence data. The web version can be used for basic analysis. 
+		An offline version of the resource can be installed by experienced bioinformaticians and can be used for more advanced work.</p>
+	</div>
+	<div class="col-md-4">
+		<img width="100%" src="images/hcvStructure.jpg" />
+	</div>
+</div>
+
+<h3>Web site highlights</h3>
 <p>
-The web site includes:
 <ul>
-<li>A curated database of NCBI HCV <a href="#/project/sequence" target="_blank">sequences</a>, with metadata.</li>
-<li>A curated database of HCV <a href="#/project/alignment" target="_blank">clades</a> (genotypes, subtypes) and reference sequences.</li>
-<li>Curated multiple-sequence alignments for all the NCBI sequences assigned to each clade.</li>
-<li>A curated database of amino-acid <a href="#/project/rav" target="_blank">substitutions</a> associated with drug resistance including their frequencies in different clades.</li>
-<li>An <a href="#analysisTool" target="_blank">analysis tool</a> supporting genotyping and drug resistance analysis of submitted consensus (FASTA) sequences.</li>
+<li>An <a href="#analysisTool" target="_blank">analysis tool</a> providing genotyping, analysis and visualisation of submitted FASTA sequences.</li>
+<li>A database of HCV sequences and metadata from NCBI, updated daily and arranged into <a href="#/project/alignment" target="_blank">clades</a> (genotypes, subtypes).</li>
+<li>A database of amino-acid <a href="#/project/rav" target="_blank">substitutions</a> associated with drug resistance.</li>
+<li>Pre-built multiple-sequence alignments of NCBI sequences, which may be downloaded in user-defined sections.</li>
 </ul>
 </p>
+<h3>Offline version</h3>
 <p>
-The offline version of the resource includes all the functionality available in the web site plus:
+The <a href="#aboutGlueProject">offline version of HCV-GLUE</a> includes all features of the web version plus:
 <ul>
 <li>A rich set of bioinformatic functions for exploring the dataset.</li>
-<li>Some basic tools for the analysis of NGS sequences (SAM/BAM files).</li>
+<li>Tools for the analysis of NGS sequences (SAM/BAM files).</li>
 </ul>
-For more information about obtaining and using the offline HCV-GLUE resource, please contact 
-<a href="http://www.gla.ac.uk/researchinstitutes/iii/staff/joshsinger" target="_blank">Josh Singer</a>.
 </p>
-<h3>Data Sources</h3>
-Data relating to structural, evolutionary, epidemiological and phenotypic aspects of HCV were obtained 
-from various sources. 
-<ul>
-<li>HCV clade definitions and reference sequences were obtained from the <a href="http://talk.ictvonline.org/ictv_wikis/flaviviridae/w/sg_flavi/56.hcv-classification" 
-	target="_blank">ICTV HCV classification resource</a>, updated in May 2015.</li>
-<li>HCV virus sequences and their metadata were obtained from <a href="https://www.ncbi.nlm.nih.gov/nuccore" target="_blank">the NCBI Nucleotide database.</a></li>
-<li>Drug resistance-associated substitutions were obtained from a number of <a href="#/project/drug_resistance_publication" target="_blank">recent surveys</a> of <em>in vitro</em> experimental results.</li>
-</ul>
-The various datasets are integrated together in <a href="http://tools.glue.cvr.ac.uk">GLUE</a>, 
-a data-centric software framework for capturing, developing and utilising nucleotide-level virus evolutionary 
-hypotheses.
 
