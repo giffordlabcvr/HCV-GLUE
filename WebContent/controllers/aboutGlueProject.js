@@ -18,17 +18,6 @@ hcvApp.controller('aboutGlueProjectCtrl',
 			    .error(glueWS.raiseErrorDialog(dialogs, "downloading resistanceGeno1.fasta file"));
 			}
 
-			$scope.downloadNgsData = function() {
-				var url = "exampleSequences/ngsData.bam";
-				$http.get(url)
-				.success(function(data, status, headers, config) {
-					console.log("data", data);
-			    	var blob = new Blob([data], {type: "text/plain"});
-			    	saveFile.saveFile(blob, "ngsData.bam file", "ngsData.bam");
-			    })
-			    .error(glueWS.raiseErrorDialog(dialogs, "downloading ngsData.bam file"));
-			}
-			
 		    $scope.scrollTo = function(id) {
 		        $location.hash(id);
 		        $anchorScroll();

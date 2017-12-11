@@ -143,7 +143,7 @@ We presume here that a suitable sequence assembly method has been used to genera
 raw sequencing data.</p>
 
 <p>
-Download the file <a ng-click="downloadNgsData()">ngsData.bam</a> and make sure a copy
+Download the file <a href="exampleSequences/ngsData.bam">ngsData.bam</a> and make sure a copy
 is present inside the directory from which you launched GLUE.</p>
 
 <p>We will use the <code>hcvDRSamReporter</code> module within HCV-GLUE to translate those 
@@ -187,7 +187,7 @@ A preview of the JSON output is available <a href="#/aboutGlueProject/exampleFas
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -p cmd-result-format:json -EC -i project hcv module hcvDRReporter invoke-function reportFasta resistanceGeno1.fasta</pre>
 </div>
-This example will produce a report for a SAM/BAM file, e.g. <a ng-click="downloadNgsData()">ngsData.bam</a>. 
+This example will produce a report for a SAM/BAM file, e.g. <a href="exampleSequences/ngsData.bam">ngsData.bam</a>. 
 A preview of the JSON output is available <a href="#/aboutGlueProject/exampleBamReport">here</a>.
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -p cmd-result-format:json -EC -i project hcv module hcvDRReporter invoke-function reportBam ngsData.bam</pre>
