@@ -63,4 +63,6 @@
   create module -f modules/whoCountriesTextToCustomTableRows.xml  
   
   create module -f modules/hcvSequenceRecogniser.xml  
+
+  create module -f modules/hcvWebVisualisationUtility.xml
   
