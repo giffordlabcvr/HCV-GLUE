@@ -123,9 +123,17 @@ hcvApp.config(['$routeProvider', 'projectBrowserStandardRoutesProvider',
     	  templateUrl: './views/exampleBamReport.html',
     	  controller: 'exampleBamReportCtrl'
       }).
-      when('/aboutHcvGlue', {
-    	  templateUrl: './views/aboutHcvGlue.html',
-    	  controller: 'aboutHcvGlueCtrl'
+      when('/versionInfo', {
+    	  templateUrl: './views/versionInfo.html',
+    	  controller: 'versionInfoCtrl'
+      }).
+      when('/team', {
+    	  templateUrl: './views/team.html',
+    	  controller: 'teamCtrl'
+      }).
+      when('/howToCite', {
+    	  templateUrl: './views/howToCite.html',
+    	  controller: 'howToCiteCtrl'
       }).
       when('/home', {
     	  templateUrl: './modules/home/home.html',
@@ -152,6 +160,10 @@ function ($scope, glueWS, glueWebToolConfig) {
 	$scope.projectBrowserSequenceMenuTitle = "All NCBI Sequences";
 	$scope.glueProjectMenuTitle = "Offline version";
 	$scope.aboutHcvGlueMenuTitle = "About";
+	$scope.aboutMenuTitle = "About";
+	$scope.teamTitle = "The HCV-GLUE team";
+	$scope.versionInfoTitle = "Version information";
+	$scope.howToCiteTitle = "How to cite";
 	glueWS.setProjectURL("../../../gluetools-ws/project/hcv");
 	glueWebToolConfig.setAnalysisToolURL("../gluetools-web/www/analysisTool");
 	glueWebToolConfig.setAnalysisToolExampleSequenceURL("exampleSequences/exampleSequences.fasta");

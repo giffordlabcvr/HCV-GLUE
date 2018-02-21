@@ -1,4 +1,4 @@
-hcvApp.controller('aboutHcvGlueCtrl', 
+hcvApp.controller('versionInfoCtrl', 
 		[ '$scope', 'glueWS', 'dialogs', 
 		function($scope, glueWS, dialogs) {
 
