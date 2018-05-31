@@ -30,7 +30,7 @@ project hcv
   run file glue/importPhylogeny.glue
 
   # epitopes
-  run file glue/hcvEpitopes.glue
+  # run file glue/hcvEpitopes.glue
 
   validate
 
