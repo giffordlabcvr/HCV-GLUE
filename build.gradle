@@ -215,7 +215,7 @@ task initHcvGlueDBGlueHomeAWS {
 def glueConfigFile = System.getProperty("user.name").equals('joshsinger') ? 'local-gluetools-config.xml' : 'remote-gluetools-config.xml'
 
 task wipeHcvGlueDB(type: Exec) {
-	commandLine 'echo', 'drop database HCV_GLUE; create database HCV_GLUE character set UTF8;', '|', 'mysql', '-u', 'hcvglue', '--password=hcvglue'
+	commandLine "bash", "-c", "echo 'drop database HCV_GLUE; create database HCV_GLUE character set UTF8;' | mysql -u hcvglue --password=hcvglue"
 }
 
 task buildHcvGlueDB(type: JavaExec, dependsOn: 'copyGluetoolsJar') {
