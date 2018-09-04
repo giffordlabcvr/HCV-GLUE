@@ -1,7 +1,6 @@
 <samReporter>
     <alignerModuleName>hcvCompoundAligner</alignerModuleName>
     <readLogInterval>30000</readLogInterval>
-    <samRefTextToReferenceQueryModuleName>samRefToTargetRefTransformer</samRefTextToReferenceQueryModuleName>
     <maxLikelihoodPlacerModuleName>maxLikelihoodPlacer</maxLikelihoodPlacerModuleName>
     <samReaderValidationStringency>SILENT</samReaderValidationStringency>
 </samReporter>
