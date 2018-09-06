@@ -75,29 +75,17 @@ hcvApp.config(['$routeProvider', 'projectBrowserStandardRoutesProvider',
     	  templateUrl: 'views/hcvDrug.html',
     	  controller: 'hcvDrugCtrl'
         });
-	// Drug resistance publications overview
+	// specific RAP
 	$routeProvider.
-    when('/project/drug_resistance_publication', {
-    	  templateUrl: 'views/hcvDrugResistancePublications.html',
-    	  controller: 'hcvDrugResistancePublicationsCtrl'
+    when('/project/rap/:id', {
+    	  templateUrl: 'views/hcvRap.html',
+    	  controller: 'hcvRapCtrl'
         });
-	// specific drug resistance publication
+	// RAPs overview
 	$routeProvider.
-    when('/project/drug_resistance_publication/:id', {
-    	  templateUrl: 'views/hcvDrugResistancePublication.html',
-    	  controller: 'hcvDrugResistancePublicationCtrl'
-        });
-	// specific RAV
-	$routeProvider.
-    when('/project/rav/:referenceName/:featureName/:variationName', {
-    	  templateUrl: 'views/hcvRav.html',
-    	  controller: 'hcvRavCtrl'
-        });
-	// RAVs overview
-	$routeProvider.
-    when('/project/rav', {
-    	  templateUrl: 'views/hcvRavs.html',
-    	  controller: 'hcvRavsCtrl'
+    when('/project/rap', {
+    	  templateUrl: 'views/hcvRaps.html',
+    	  controller: 'hcvRapsCtrl'
         });
 	// custom single alignment view
 	$routeProvider.
@@ -155,8 +143,7 @@ function ($scope, glueWS, glueWebToolConfig) {
 	$scope.drugResistanceMenuTitle = "Drug Resistance";
 	$scope.projectBrowserAlignmentMenuTitle = "NCBI Sequences by Clade";
 	$scope.projectBrowserDrugMenuTitle = "Direct-acting Antivirals";
-	$scope.projectBrowserRavMenuTitle = "Resistance-associated Substitutions";
-	$scope.projectBrowserDrugPubMenuTitle = "Drug Resistance References";
+	$scope.projectBrowserRapMenuTitle = "Resistance-associated Polymorphisms";
 	$scope.projectBrowserSequenceMenuTitle = "All NCBI Sequences";
 	$scope.glueProjectMenuTitle = "Offline version";
 	$scope.aboutHcvGlueMenuTitle = "About";

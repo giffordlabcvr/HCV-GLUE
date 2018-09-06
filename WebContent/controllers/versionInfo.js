@@ -28,13 +28,13 @@ hcvApp.controller('versionInfoCtrl',
 			glueWS.runGlueCommand("", {
 			    "show":{
 			        "extension-setting":{
-			            "extensionName":"hcv_dr",
+			            "extensionName":"phdr",
 				        "extSettingName":"extension-version"
 			        }
 			    }
 			})
 			.success(function(data, status, headers, config) {
-				$scope.hcvDRExtensionProjectVersion = data.projectShowExtensionSettingResult.extSettingValue;
+				$scope.phdrExtensionProjectVersion = data.projectShowExtensionSettingResult.extSettingValue;
 			})
 			.error(glueWS.raiseErrorDialog(dialogs, "retrieving hcv_dr extension-version setting"));
 

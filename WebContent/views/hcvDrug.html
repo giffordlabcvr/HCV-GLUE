@@ -1,39 +1,48 @@
 <div ng-cloak>
 	<h2>{{drugId}}</h2>
-	{{drugRenderResult.drug.category.displayName}}
+	Category: {{phdrDrug.category}}
 	<br/>	
-	{{drugRenderResult.drug.companyCode ? "Company code: "+drugRenderResult.drug.companyCode : ""}}
-	<h4>In vitro drug resistance findings</h4>
+	{{phdrDrug.producer}} code {{phdrDrug.researchCode}}
+	<h4>Resistance findings</h4>
 	<paging-buttons paging-context="pagingContext"></paging-buttons>
-	<div ng-show="drugResistanceFindings.length == 0">
+	<div ng-show="phdrFindings.length == 0">
 	No resistance findings collated
 	</div>
-	<div ng-show="drugResistanceFindings.length > 0">
+	<div ng-show="phdrFindings.length > 0">
 		Findings {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
 	
 		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
-					<th rowspan=2 style="width: 20%;">Gene</th>		
-					<th rowspan=2 style="width: 20%;">Resistant Substitution(s)</th>		
-					<th rowspan=2 style="width: 20%;">Replicon clade</th>		
-					<th colspan=2 style="width: 20%;">EC<sub>50</sub> Fold Change</th>		
-					<th rowspan=2 style="width: 20%;">Reference</th>
-				</tr>
-				<tr>
-					<th>Min</th>		
-					<th>Max</th>
+					<th style="width: 7%;">Gene</th>		
+					<th style="width: 15%;">Polymorphism(s)</th>		
+					<th style="width: 10%;">Genotype / subtype</th>		
+					<th style="width: 10%;"><em>In vitro</em> resistance level (EC<sub>50</sub> fold change)</th>		
+					<th style="width: 19%;">Clinical trials / study cohort</th>
+					<th style="width: 10%;">Associated drug regimens</th>
+					<th style="width: 7%;">Found at baseline?</th>
+					<th style="width: 7%;">Treatment-emergent?</th>
+					<th style="width: 15%;">Reference</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="finding in drugResistanceFindings track by $index">
-					<td>{{finding['variation.featureLoc.feature.name']}}</td>
-					<td><a href="#project/rav/{{finding['variation.featureLoc.referenceSequence.name']}}/{{finding['variation.featureLoc.feature.name']}}/{{finding['variation.name']}}">{{finding['variation.rav_substitutions']}}</a></td>
-					<td><a href="#project/alignment/{{finding['replicon_clade.name']}}">{{finding['replicon_clade.displayName']}}</td>
-					<td>{{finding['min_fold_change'] ? toFixed(finding['min_fold_change']) : handleNull(finding['min_fold_change'])}}</td>
-					<td>{{finding['max_fold_change'] ? toFixed(finding['max_fold_change']) : handleNull(finding['max_fold_change'])}}</td>
-					<td><a href="#project/drug_resistance_publication/{{finding['drug_resistance_publication.id']}}">
-						{{finding['drug_resistance_publication.display_name']}}</a></td>
+				<tr ng-repeat="finding in phdrFindings track by $index">
+					<td>{{finding.phdrResistanceFinding.rasGene}}</td>
+					<td><a href="#project/rap/{{finding.phdrResistanceFinding.rasId}}">{{finding.phdrResistanceFinding.displayStructure}}</a></td>
+					<td><a href="#project/alignment/{{finding.phdrResistanceFinding.clade.alignmentName}}">{{finding.phdrResistanceFinding.clade.displayName.replace("HCV ", "")}}</td>
+					<td>{{renderInVitroLevel(finding.phdrResistanceFinding.inVitroResult)}}</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult.clinicalTrial"><span ng-repeat="trial in finding.phdrResistanceFinding.inVivoResult.clinicalTrial track by $index"><span ng-if="$index > 0">;</span>
+						<a target="_blank" href="https://clinicaltrials.gov/ct2/show/{{trial.nctId}}">{{trial.displayName}}</a></span></td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult.cohortDescription">{{finding.phdrResistanceFinding.inVivoResult.cohortDescription}}</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult"><span ng-repeat="regimen in finding.phdrResistanceFinding.inVivoResult.regimen track by $index"><span ng-if="$index > 0">; </span>
+					{{regimen.displayName}}</span></td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult">{{finding.phdrResistanceFinding.inVivoResult.foundAtBaseline ? "Yes" : "No"}}</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult">{{finding.phdrResistanceFinding.inVivoResult.treatmentEmergent ? "Yes" : "No"}}</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
+					<td><a target="_blank" href="{{finding.phdrResistanceFinding.publication.url}}">{{finding.phdrResistanceFinding.publication.displayName}}</a></td>
 				</tr>
 			</tbody>
 		</table>

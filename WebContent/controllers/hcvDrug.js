@@ -4,42 +4,47 @@ hcvApp.controller('hcvDrugCtrl',
 
 			addUtilsToScope($scope);
 
-			$scope.drugRenderResult = null;
-			$scope.drugResistanceFindings = null;
+			$scope.phdrDrug = null;
+			$scope.phdrFindings = null;
 			$scope.drugId = $routeParams.id;
 			
 			$scope.pagingContext = null;
-			$scope.whereClause = "drug.id = '"+$scope.drugId+"'";
-			$scope.fieldNames = [
-					                "id",
-					                "replicon_clade.name",
-					                "replicon_clade.displayName",
-					                "min_fold_change",
-					                "max_fold_change",
-					                "drug_resistance_publication.id",
-					                "drug_resistance_publication.display_name",
-					                "variation.featureLoc.referenceSequence.name",
-					                "variation.featureLoc.feature.name",
-					                "variation.name",
-					                "variation.rav_substitutions"
-					            ];
-
+			$scope.whereClause = "phdr_drug.id = '"+$scope.drugId+"'";
 			
-			glueWS.runGlueCommand("custom-table-row/drug/"+$scope.drugId, {
+			$scope.renderInVitroLevel = function(inVitroResult) {
+				if(inVitroResult == null) {
+					return "-";
+				}
+				if(inVitroResult.minEC50FoldChange != null && inVitroResult.maxEC50FoldChange != null) {
+					if(inVitroResult.minEC50FoldChange == inVitroResult.maxEC50FoldChange) {
+						return toFixed(inVitroResult.minEC50FoldChange, 2);
+					} else {
+						return toFixed(inVitroResult.minEC50FoldChange, 2) + " - " + toFixed(inVitroResult.maxEC50FoldChange, 2);
+					}
+				}
+				if(inVitroResult.minEC50FoldChange == null) {
+					return " < " + toFixed(inVitroResult.maxEC50FoldChange, 2);
+				}
+				if(inVitroResult.maxEC50FoldChange == null) {
+					return " > " + toFixed(inVitroResult.minEC50FoldChange, 2);
+				}
+			};
+
+			glueWS.runGlueCommand("custom-table-row/phdr_drug/"+$scope.drugId, {
 				"render-object": {
-					"rendererModuleName":"hcvDRDrugRenderer"
+					"rendererModuleName":"phdrDrugRenderer"
 				}
 			})
 			.success(function(data, status, headers, config) {
-				$scope.drugRenderResult = data;
-				console.info('$scope.drugRenderResult', $scope.drugRenderResult);
+				$scope.phdrDrug = data.phdrDrug;
+				console.info('$scope.phdrDrug', $scope.phdrDrug);
 			})
 			.error(glueWS.raiseErrorDialog(dialogs, "rendering drug"));
 
 			$scope.updateCount = function(pContext) {
 				var cmdParams = {
 					"whereClause":$scope.whereClause,
-					"tableName":"drug_resistance_finding"
+					"tableName":"phdr_resistance_finding"
 				};
 				pContext.extendCountCmdParams(cmdParams);
 				glueWS.runGlueCommand("", {
@@ -59,16 +64,17 @@ hcvApp.controller('hcvDrugCtrl',
 				console.log("updatePage", pContext);
 				var cmdParams = {
 			            "whereClause":$scope.whereClause,
-			            "tableName":"drug_resistance_finding",
-			            "fieldName":$scope.fieldNames
+			            "allObjects": false,
+			            "tableName":"phdr_resistance_finding",
+			            "rendererModuleName": "phdrFindingListRenderer"
 				};
 				pContext.extendListCmdParams(cmdParams);
 				glueWS.runGlueCommand("", {
-			    	"list": { "custom-table-row": cmdParams } 
+			    	"multi-render": cmdParams 
 				})
 				.success(function(data, status, headers, config) {
-					$scope.drugResistanceFindings = tableResultAsObjectList(data);
-					console.info('$scope.drugResistanceFindings', $scope.drugResistanceFindings);
+					$scope.phdrFindings = data.multiRenderResult.resultDocument;
+					console.info('$scope.phdrFindings', $scope.phdrFindings);
 				})
 				.error(glueWS.raiseErrorDialog(dialogs, "retrieving drug resistance findings"));
 			}
@@ -76,30 +82,18 @@ hcvApp.controller('hcvDrugCtrl',
 			$scope.pagingContext = pagingContext.createPagingContext($scope.updateCount, $scope.updatePage);
 
 			$scope.pagingContext.setDefaultSortOrder([
-                { property:"variation.featureLoc.feature.name", displayName: "Gene", order: "+" },
-                { property:"variation.rav_first_codon", displayName: "Start Location", order: "+" },
-                { property:"variation.rav_substitutions", displayName: "Substitutions", order: "+" }
-            ]);
+  	            { property:"phdr_ras.sort_key", displayName: "Polymorphic locations", order: "+" },
+	            { property:"alignment.name", displayName: "Genotype / subtype", order: "+" }
+  			]);
 
 			$scope.pagingContext.setSortableProperties([
-	            { property:"variation.featureLoc.feature.name", displayName: "Gene" },
-	            { property:"variation.rav_first_codon", displayName: "Start Location" },
-	            { property:"variation.rav_substitutions", displayName: "Substitutions" },
-  	            { property:"replicon_clade.name", displayName: "Replicon Clade" },
-  	            { property:"min_fold_change", displayName: "Minimum EC50 Fold Change" },
-  	            { property:"max_fold_change", displayName: "Maximum EC50 Fold Change" },
-  	            { property:"drug_resistance_publication.id", displayName: "Reference" } 
+	            { property:"phdr_ras.sort_key", displayName: "Polymorphic locations" },
+	            { property:"alignment.name", displayName: "Genotype / subtype"}
             ]);
 
-			$scope.pagingContext.setFilterProperties([
-           		{ property:"replicon_clade.displayName", displayName: "Replicon Clade", filterHints: {type: "String"} },
-  	            { property:"min_fold_change", displayName: "Min. EC50 Fold Change", filterHints: {type: "Double"} },
-  	            { property:"max_fold_change", displayName: "Max. EC50 Fold Change", filterHints: {type: "Double"} },
-         		{ property:"drug_resistance_publication.display_name", displayName: "Reference", filterHints: {type: "String"} },
-                { property:"variation.featureLoc.feature.name", displayName: "Gene", filterHints: {type: "String"} },
-                { property:"variation.rav_substitutions", displayName: "Substitutions", filterHints: {type: "String"} }
-
-  	        ]);
+  			$scope.pagingContext.setFilterProperties([
+  	            { property:"alignment.displayName", altProperties:["alignment.name"], displayName: "Genotype / subtype", filterHints: {type: "String"} }
+  			]);
 			                          			
 			$scope.pagingContext.setDefaultFilterElems([]);
 

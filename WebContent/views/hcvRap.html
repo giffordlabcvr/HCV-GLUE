@@ -1,0 +1,76 @@
+<div ng-cloak>
+	<h3>Polymorphism {{rap.virusProtein}} <span ng-repeat="structure in rap.displayStructure track by $index"><span ng-if="$index > 0">; </span>{{structure}}</span></h3>
+	<div>
+		<p>These drug resistance findings have been curated from the literature.</p>
+		<p>
+			<table class="table table-striped table-bordered">
+				<thead>
+					<tr>
+						<th style="width: 10%;">Drug</th>		
+						<th style="width: 15%;">Genotype / subtype</th>		
+						<th style="width: 10%;"><em>In vitro</em> resistance level (EC<sub>50</sub> fold change)</th>		
+						<th style="width: 21%;">Clinical trials / study cohort</th>
+						<th style="width: 10%;">Associated drug regimens</th>
+						<th style="width: 8%;">Found at baseline?</th>
+						<th style="width: 8%;">Treatment-emergent?</th>
+						<th style="width: 18%;">Reference</th>
+					</tr>
+				</thead>
+				<tr ng-repeat="finding in rap.resistanceFinding track by $index">
+					<td><a href="#project/drug/{{finding.drug}}">{{finding.drug}}</a></td>
+					<td><a href="#project/alignment/{{finding.clade.alignmentName}}">{{finding.clade.displayName.replace("HCV ", "")}}</td>
+					<td>{{renderInVitroLevel(finding.inVitroResult)}}</td>
+					<td ng-if="finding.inVivoResult.clinicalTrial"><span ng-repeat="trial in finding.inVivoResult.clinicalTrial track by $index"><span ng-if="$index > 0">;</span>
+						<a target="_blank" href="https://clinicaltrials.gov/ct2/show/{{trial.nctId}}">{{trial.displayName}}</a></span></td>
+					<td ng-if="finding.inVivoResult.cohortDescription">{{finding.inVivoResult.cohortDescription}}</td>
+					<td ng-if="finding.inVivoResult"><span ng-repeat="regimen in finding.inVivoResult.regimen track by $index"><span ng-if="$index > 0">; </span>
+					{{regimen.displayName}}</span></td>
+					<td ng-if="finding.inVivoResult">{{finding.inVivoResult.foundAtBaseline ? "Yes" : "No"}}</td>
+					<td ng-if="finding.inVivoResult">{{finding.inVivoResult.treatmentEmergent ? "Yes" : "No"}}</td>
+					<td ng-if="finding.inVivoResult == null">-</td>
+					<td ng-if="finding.inVivoResult == null">-</td>
+					<td ng-if="finding.inVivoResult == null">-</td>
+					<td ng-if="finding.inVivoResult == null">-</td>
+					<td><a target="_blank" href="{{finding.publication.url}}">{{finding.publication.displayName}} [{{finding.publication.index}}]</a></td>
+				</tr>
+			</table>
+		</p>
+	</div>
+	<h4>References</h4>
+	<div ng-repeat="publication in rap.reference">
+	<p>
+	<small>[{{publication.index}}] <b>{{publication.title}}</b>
+	<br/>
+	{{publication.authors_full}}, {{publication.journal}}<span ng-if="publication.volume != null && publication.issue != null"> {{publication.volume}} ({{publication.issue}}),</span><span ng-if="publication.pages != null"> {{publication.pages}}</span> ({{publication.year}})</small>
+	<br/>
+	<small><a target="_blank" href="{{publication.url}}">{{publication.url}}</a></small>
+	</p>
+	</div>
+	
+	
+	
+<!-- 
+	<h4>Frequency across HCV genotypes and subtypes</h4>
+	<div ng-show="!rap.alignmentNote">
+		<p>Not present at significant numbers</p>
+	</div>
+	<div ng-show="rap.alignmentNote.length > 0">
+	<p>The table below summarises the occurence of {{rap.renderedName}} in various HCV genotypes and subtypes amongst curated sequences from NCBI Nucleotide.</p>		
+		<p>
+			<table class="table table-striped table-bordered">
+				<thead>
+					<th>Clade</th>
+					<th>Frequency</th>
+				</thead>
+				<tr ng-repeat="cladeFreq in rap.alignmentNote track by $index">
+					<td><a href="#project/alignment/{{cladeFreq.alignmentName}}">{{cladeFreq.alignmentRenderedName}}</a></td>
+					<td>{{cladeFreq.ncbiCuratedTotalPresent}} of {{cladeFreq.ncbiCuratedTotalPresent + cladeFreq.ncbiCuratedTotalAbsent}} ({{toFixed(cladeFreq.ncbiCuratedFrequencyPct, 2)}}%)</td>
+				</tr>
+			</table>
+		</p>
+	</div>
+
+	 -->
+
+
+</div>

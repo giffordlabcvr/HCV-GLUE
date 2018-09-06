@@ -1,0 +1,36 @@
+<div>
+	<h2>Resistance-associated polymorphisms</h2>
+	<p>
+	HCV-GLUE analyses sequences for these individual or combined amino acid substitutions and deletions.
+	</p>
+	<paging-buttons paging-context="pagingContext"></paging-buttons>
+	<span ng-show="raps.length == 0">None</span>
+	<div ng-show="raps.length > 0">	
+		Substitutions {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
+		<table class="table table-striped table-bordered">
+			<thead>
+				<th>Virus protein</th>		
+				<th>Polymorphism(s)</th>		
+				<th>Drug(s)</th>		
+				<th>Genotype(s) / Subtype(s)</th>		
+			</thead>
+			<colgroup>
+		       <col span="1" style="width: 15%;">
+		       <col span="1" style="width: 30%;">
+		       <col span="1" style="width: 30%;">
+			</colgroup>
+			<tbody>
+				<tr ng-repeat="rap in raps track by $index">
+					<td>{{rap.phdrRasVariation.gene}}</td>
+					<td><a href="#project/rap/{{rap.phdrRasVariation.id}}"><span ng-repeat="displayStructure in rap.phdrRasVariation.displayStructure track by $index"><span ng-if="$index > 0">; </span>
+					{{displayStructure}}</span></a></td>
+					<td><span ng-repeat="drug in rap.phdrRasVariation.drug track by $index"><span ng-if="$index > 0">, </span>
+					<a href="#project/drug/{{drug}}">{{drug}}</a></span></td>
+					<td><span ng-repeat="clade in rap.phdrRasVariation.clade track by $index"><span ng-if="$index > 0">, </span>
+					<a href="#project/alignment/{{clade.alignmentName}}">{{clade.alignmentDisplayName.replace("HCV ", "")}}</a></span></td>
+				</tr>
+			</tbody>
+		</table>
+		<paging-buttons paging-context="pagingContext"></paging-buttons>
+	</div>
+</div>
