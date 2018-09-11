@@ -36,12 +36,12 @@
 					<td ng-if="finding.phdrResistanceFinding.inVivoResult.cohortDescription">{{finding.phdrResistanceFinding.inVivoResult.cohortDescription}}</td>
 					<td ng-if="finding.phdrResistanceFinding.inVivoResult"><span ng-repeat="regimen in finding.phdrResistanceFinding.inVivoResult.regimen track by $index"><span ng-if="$index > 0">; </span>
 					{{regimen.displayName}}</span></td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult">{{finding.phdrResistanceFinding.inVivoResult.foundAtBaseline ? "Yes" : "No"}}</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult">{{finding.phdrResistanceFinding.inVivoResult.treatmentEmergent ? "Yes" : "No"}}</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult.foundAtBaseline != null">{{finding.phdrResistanceFinding.inVivoResult.foundAtBaseline ? "Yes" : "No"}}</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult.treatmentEmergent != null">{{finding.phdrResistanceFinding.inVivoResult.treatmentEmergent ? "Yes" : "No"}}</td>
 					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
 					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null || finding.phdrResistanceFinding.inVivoResult.foundAtBaseline == null">-</td>
+					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null || finding.phdrResistanceFinding.inVivoResult.treatmentEmergent == null">-</td>
 					<td><a target="_blank" href="{{finding.phdrResistanceFinding.publication.url}}">{{finding.phdrResistanceFinding.publication.displayName}}</a></td>
 				</tr>
 			</tbody>

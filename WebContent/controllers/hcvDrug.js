@@ -10,6 +10,40 @@ hcvApp.controller('hcvDrugCtrl',
 			
 			$scope.pagingContext = null;
 			$scope.whereClause = "phdr_drug.id = '"+$scope.drugId+"'";
+
+			$scope.hasInVitroFilter = function() {
+                // note property here is a dummy value.
+				return { property:"hasInVitro", displayName: "In vitro evidence?", filterHints: 
+            	{ type: "CustomBoolean", 
+              	  generatePredicateFromCustom: function(filterElem) {
+              		  console.log("filterElem", filterElem);
+              		  if(filterElem.predicate.operator == "true") {
+                		  	return "phdr_in_vitro_result != null";
+              		  } else {
+                		  	return "phdr_in_vitro_result = null";
+              		  }
+              	  }
+              	}
+              };
+			}
+			
+			$scope.hasInVivoFilter = function() {
+                // note property here is a dummy value.
+				return { property:"hasInVivo", displayName: "In vivo evidence?", filterHints: 
+            	{ type: "CustomBoolean", 
+              	  generatePredicateFromCustom: function(filterElem) {
+              		  console.log("filterElem", filterElem);
+              		  if(filterElem.predicate.operator == "true") {
+                		  	return "phdr_in_vivo_result != null";
+              		  } else {
+                		  	return "phdr_in_vivo_result = null";
+              		  }
+              	  }
+              	}
+              };
+			}
+
+
 			
 			$scope.renderInVitroLevel = function(inVitroResult) {
 				if(inVitroResult == null) {
@@ -92,7 +126,12 @@ hcvApp.controller('hcvDrugCtrl',
             ]);
 
   			$scope.pagingContext.setFilterProperties([
-  	            { property:"alignment.displayName", altProperties:["alignment.name"], displayName: "Genotype / subtype", filterHints: {type: "String"} }
+  	            { property:"alignment.displayName", altProperties:["alignment.name"], displayName: "Genotype / subtype", filterHints: {type: "String"} }, 
+  	            $scope.hasInVitroFilter(),
+  	            { property:"phdr_in_vitro_result.ec50_midpoint", displayName: "EC50 log fold change", filterHints: {type: "Double"} }, 
+  	            $scope.hasInVivoFilter(),
+  	            { property:"phdr_in_vivo_result.baseline", displayName: "Found at baseline?", filterHints: {type: "Boolean"} }, 
+  	            { property:"phdr_in_vivo_result.treatment_emergent", displayName: "Treatment emergent?", filterHints: {type: "Boolean"} }
   			]);
 			                          			
 			$scope.pagingContext.setDefaultFilterElems([]);

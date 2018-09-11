@@ -1,7 +1,7 @@
 <div ng-cloak>
-	<h3>Polymorphism {{rap.virusProtein}} <span ng-repeat="structure in rap.displayStructure track by $index"><span ng-if="$index > 0">; </span>{{structure}}</span></h3>
+	<h3>{{rap.virusProtein}} {{(rap.displayStructure.length > 1) ? "polymorphisms" : "polymorphism"}} <span ng-repeat="structure in rap.displayStructure track by $index"><span ng-if="$index > 0">; </span>{{structure}}</span></h3>
 	<div>
-		<p>These drug resistance findings have been curated from the literature.</p>
+		<p>The following resistance findings for {{(rap.displayStructure.length > 1) ? "these polymorphisms" : "this polymorphism"}} have been curated from the literature.</p>
 		<p>
 			<table class="table table-striped table-bordered">
 				<thead>
