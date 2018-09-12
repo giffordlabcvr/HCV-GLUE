@@ -22,12 +22,12 @@
 			<tbody>
 				<tr ng-repeat="rap in raps track by $index">
 					<td>{{rap.phdrRasVariation.gene}}</td>
-					<td><a href="#project/rap/{{rap.phdrRasVariation.id}}"><span ng-repeat="displayStructure in rap.phdrRasVariation.displayStructure track by $index"><span ng-if="$index > 0">; </span>
+					<td><a target="_blank" href="#project/rap/{{rap.phdrRasVariation.id}}"><span ng-repeat="displayStructure in rap.phdrRasVariation.displayStructure track by $index"><span ng-if="$index > 0">; </span>
 					{{displayStructure}}</span></a></td>
 					<td><span ng-repeat="drug in rap.phdrRasVariation.drug track by $index"><span ng-if="$index > 0">, </span>
-					<a href="#project/drug/{{drug}}">{{drug}}</a></span></td>
+					<a target="_blank" href="#project/drug/{{drug}}">{{drug}}</a></span></td>
 					<td><span ng-repeat="clade in rap.phdrRasVariation.clade track by $index"><span ng-if="$index > 0">, </span>
-					<a href="#project/alignment/{{clade.alignmentName}}">{{clade.alignmentDisplayName.replace("HCV ", "")}}</a></span></td>
+					<a target="_blank" href="#project/alignment/{{clade.alignmentName}}">{{clade.alignmentDisplayName.replace("HCV ", "")}}</a></span></td>
 				</tr>
 			</tbody>
 		</table>

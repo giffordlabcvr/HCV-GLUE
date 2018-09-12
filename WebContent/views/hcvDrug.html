@@ -1,48 +1,57 @@
 <div ng-cloak>
 	<h2>{{drugId}}</h2>
 	Category: {{phdrDrug.category}}
-	<br/>	
-	{{phdrDrug.producer}} code {{phdrDrug.researchCode}}
-	<h4>Resistance findings</h4>
-	<paging-buttons paging-context="pagingContext"></paging-buttons>
-	<div ng-show="phdrFindings.length == 0">
-	No resistance findings collated
+	<br/> {{phdrDrug.producer}} code {{phdrDrug.researchCode}}
+	<h4>Resistant polymorphisms</h4>
+	<div ng-show="phdrAlignmentRasDrugs.length > 0">
+	<small>
+		Polymorphisms are assigned to one of three categories according to the
+		strength of evidence for drug resistance.
+		<ul>
+			<li>Category I polymorphisms have the strongest evidence: either
+				(a) <em>in vitro</em> resistance level &ge; 5 and found at baseline
+				or treatment-emergent <em>in vivo</em>, or (b) both found at
+				baseline and treatment-emergent.
+			</li>
+			<li>Category II: <em>in vitro</em> level &ge; 50 or found at
+				baseline or treatment-emergent.
+			</li>
+			<li>Category III: <em>in vitro</em> level &ge; 5
+			</li>
+		</ul>
+	</small>
 	</div>
-	<div ng-show="phdrFindings.length > 0">
-		Findings {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
+	<paging-buttons paging-context="pagingContext"></paging-buttons>
+	<div ng-show="phdrAlignmentRasDrugs.length == 0">
+	No resistant polymorphisms collated
+	</div>
+	<div ng-show="phdrAlignmentRasDrugs.length > 0">
+		Polymorphisms {{pagingContext.firstItemIndex}} to {{pagingContext.lastItemIndex}} of {{pagingContext.totalItems}}
 	
 		<table class="table table-striped table-bordered">
 			<thead>
 				<tr>
-					<th style="width: 7%;">Gene</th>		
-					<th style="width: 15%;">Polymorphism(s)</th>		
-					<th style="width: 10%;">Genotype / subtype</th>		
-					<th style="width: 10%;"><em>In vitro</em> resistance level (EC<sub>50</sub> fold change)</th>		
-					<th style="width: 19%;">Clinical trials / study cohort</th>
-					<th style="width: 10%;">Associated drug regimens</th>
-					<th style="width: 7%;">Found at baseline?</th>
-					<th style="width: 7%;">Treatment-emergent?</th>
-					<th style="width: 15%;">Reference</th>
+					<th style="width: 12.5%;">Gene</th>		
+					<th style="width: 25%;">Polymorphism(s)</th>		
+					<th style="width: 12.5%;">Genotype / subtype</th>		
+					<th style="width: 12.5%;">Resistance category</th>		
+					<th style="width: 12.5%;">EC<sub>50</sub> fold change <em>in vitro</em></th>		
+					<th style="width: 12.5%;">Found at baseline <em>in vivo</em>?</th>
+					<th style="width: 12.5%;">Treatment-emergent <em>in vivo</em>?</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="finding in phdrFindings track by $index">
-					<td>{{finding.phdrResistanceFinding.rasGene}}</td>
-					<td><a href="#project/rap/{{finding.phdrResistanceFinding.rasId}}">{{finding.phdrResistanceFinding.displayStructure}}</a></td>
-					<td><a href="#project/alignment/{{finding.phdrResistanceFinding.clade.alignmentName}}">{{finding.phdrResistanceFinding.clade.displayName.replace("HCV ", "")}}</td>
-					<td>{{renderInVitroLevel(finding.phdrResistanceFinding.inVitroResult)}}</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult.clinicalTrial"><span ng-repeat="trial in finding.phdrResistanceFinding.inVivoResult.clinicalTrial track by $index"><span ng-if="$index > 0">;</span>
-						<a target="_blank" href="https://clinicaltrials.gov/ct2/show/{{trial.nctId}}">{{trial.displayName}}</a></span></td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult.cohortDescription">{{finding.phdrResistanceFinding.inVivoResult.cohortDescription}}</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult"><span ng-repeat="regimen in finding.phdrResistanceFinding.inVivoResult.regimen track by $index"><span ng-if="$index > 0">; </span>
-					{{regimen.displayName}}</span></td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult.foundAtBaseline != null">{{finding.phdrResistanceFinding.inVivoResult.foundAtBaseline ? "Yes" : "No"}}</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult.treatmentEmergent != null">{{finding.phdrResistanceFinding.inVivoResult.treatmentEmergent ? "Yes" : "No"}}</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null">-</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null || finding.phdrResistanceFinding.inVivoResult.foundAtBaseline == null">-</td>
-					<td ng-if="finding.phdrResistanceFinding.inVivoResult == null || finding.phdrResistanceFinding.inVivoResult.treatmentEmergent == null">-</td>
-					<td><a target="_blank" href="{{finding.phdrResistanceFinding.publication.url}}">{{finding.phdrResistanceFinding.publication.displayName}}</a></td>
+				<tr ng-repeat="alignmentRasDrug in phdrAlignmentRasDrugs track by $index">
+					<td>{{alignmentRasDrug.phdrAlignmentRasDrug.rasGene}}</td>
+					<td><a target="_blank" href="#project/rap/{{alignmentRasDrug.phdrAlignmentRasDrug.rasId}}">{{alignmentRasDrug.phdrAlignmentRasDrug.displayStructure}}</a></td>
+					<td><a target="_blank" href="#project/alignment/{{alignmentRasDrug.phdrAlignmentRasDrug.clade.alignmentName}}">{{alignmentRasDrug.phdrAlignmentRasDrug.clade.displayName.replace("HCV ", "")}}</td>
+					<td>{{alignmentRasDrug.phdrAlignmentRasDrug.displayResistanceCategory}}</td>
+					<td ng-if="alignmentRasDrug.phdrAlignmentRasDrug.inVitroMaxEc50Midpoint != null">{{toFixed(alignmentRasDrug.phdrAlignmentRasDrug.inVitroMaxEc50Midpoint, 2)}}</td>
+					<td ng-if="alignmentRasDrug.phdrAlignmentRasDrug.inVitroMaxEc50Midpoint == null">-</td>
+					<td ng-if="alignmentRasDrug.phdrAlignmentRasDrug.inVivoBaseline != null">{{alignmentRasDrug.phdrAlignmentRasDrug.inVivoBaseline ? "Yes" : "No"}}</td>
+					<td ng-if="alignmentRasDrug.phdrAlignmentRasDrug.inVivoBaseline == null">-</td>
+					<td ng-if="alignmentRasDrug.phdrAlignmentRasDrug.inVivoTreatmentEmergent != null">{{alignmentRasDrug.phdrAlignmentRasDrug.inVivoTreatmentEmergent ? "Yes" : "No"}}</td>
+					<td ng-if="alignmentRasDrug.phdrAlignmentRasDrug.inVivoTreatmentEmergent == null">-</td>
 				</tr>
 			</tbody>
 		</table>

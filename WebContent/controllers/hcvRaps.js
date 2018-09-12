@@ -7,7 +7,7 @@ hcvApp.controller('hcvRapsCtrl',
 			$scope.raps = [];
 
 			$scope.pagingContext = null;
-			$scope.whereClause = "phdr_resistance_finding != null"
+			$scope.whereClause = "phdr_alignment_ras.id != null"
 
 			
 			$scope.updateCount = function(pContext) {
@@ -64,8 +64,8 @@ hcvApp.controller('hcvRapsCtrl',
 
 			$scope.pagingContext.setFilterProperties([
 	            { property:"variation.featureLoc.feature.name", displayName: "Virus protein", filterHints: {type: "String"} },
-	            { property:"phdr_resistance_finding.alignment.displayName", altProperties:["phdr_resistance_finding.alignment.name"], displayName: "Genotype / subtype", filterHints: {type: "String"} },
-	            { property:"phdr_resistance_finding.phdr_drug.id", displayName: "Drug", altProperties:["phdr_resistance_finding.phdr_drug.abbreviation", "phdr_resistance_finding.phdr_drug.research_code"], filterHints: {type: "String"} }
+	            { property:"phdr_alignment_ras.alignment.displayName", altProperties:["phdr_alignment_ras.alignment.name"], displayName: "Genotype / subtype", filterHints: {type: "String"} },
+	            { property:"phdr_alignment_ras.phdr_alignment_ras_drug.phdr_drug.id", displayName: "Drug", altProperties:["phdr_alignment_ras.phdr_alignment_ras_drug.phdr_drug.abbreviation", "phdr_alignment_ras.phdr_alignment_ras_drug.phdr_drug.research_code"], filterHints: {type: "String"} }
 	        ]);
 			                          			                          			
   			$scope.pagingContext.setDefaultFilterElems([]);

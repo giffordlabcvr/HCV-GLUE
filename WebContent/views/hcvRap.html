@@ -1,24 +1,28 @@
 <div ng-cloak>
-	<h3>{{rap.virusProtein}} {{(rap.displayStructure.length > 1) ? "polymorphisms" : "polymorphism"}} <span ng-repeat="structure in rap.displayStructure track by $index"><span ng-if="$index > 0">; </span>{{structure}}</span></h3>
+	<h3>{{rap.virusProtein}} {{(rap.displayStructure.length > 1) ? "polymorphisms" : "polymorphism"}} <span ng-repeat="structure in rap.displayStructure track by $index"><span ng-if="$index > 0 && $index < rap.displayStructure.length-1">, </span><span ng-if="rap.displayStructure.length > 1 && $index == rap.displayStructure.length-1"> and </span>{{structure}}</span></h3>
 	<div>
-		<p>The following resistance findings for {{(rap.displayStructure.length > 1) ? "these polymorphisms" : "this polymorphism"}} have been curated from the literature.</p>
+		<p>The following resistance findings for {{(rap.displayStructure.length > 1) ? "these polymorphisms" : "this polymorphism"}} have been collated from the literature.</p>
 		<p>
 			<table class="table table-striped table-bordered">
 				<thead>
 					<tr>
-						<th style="width: 10%;">Drug</th>		
-						<th style="width: 15%;">Genotype / subtype</th>		
-						<th style="width: 10%;"><em>In vitro</em> resistance level (EC<sub>50</sub> fold change)</th>		
-						<th style="width: 21%;">Clinical trials / study cohort</th>
+						<th style="width: 8%;">Genotype / Subtype</th>		
+						<th style="width: 10%;">Polymorphism(s)</th>		
+						<th style="width: 6%;">Drug</th>		
+						<th style="width: 6%;">Resistance category *</th>		
+						<th style="width: 10%;">EC<sub>50</sub> fold change <em>in vitro</em></th>		
+						<th style="width: 20%;">Clinical trials / study cohort</th>
 						<th style="width: 10%;">Associated drug regimens</th>
-						<th style="width: 8%;">Found at baseline?</th>
-						<th style="width: 8%;">Treatment-emergent?</th>
+						<th style="width: 6%;">Found at baseline?</th>
+						<th style="width: 6%;">Treatment-emergent?</th>
 						<th style="width: 18%;">Reference</th>
 					</tr>
 				</thead>
 				<tr ng-repeat="finding in rap.resistanceFinding track by $index">
-					<td><a href="#project/drug/{{finding.drug}}">{{finding.drug}}</a></td>
-					<td><a href="#project/alignment/{{finding.clade.alignmentName}}">{{finding.clade.displayName.replace("HCV ", "")}}</td>
+					<td ng-if="finding.alignmentRas != null" rowspan="{{finding.alignmentRas.numFindings}}"><a target="_blank" href="#project/alignment/{{finding.alignmentRas.clade.alignmentName}}">{{finding.alignmentRas.clade.displayName.replace("HCV ", "")}}</td>
+					<td ng-if="finding.alignmentRas != null" rowspan="{{finding.alignmentRas.numFindings}}">{{finding.alignmentRas.displayStructure}}</td>
+					<td ng-if="finding.alignmentRasDrug != null" rowspan="{{finding.alignmentRasDrug.numFindings}}"><a target="_blank" href="#project/drug/{{finding.alignmentRasDrug.drug}}">{{finding.alignmentRasDrug.drug}}</a></td>
+					<td ng-if="finding.alignmentRasDrug != null" rowspan="{{finding.alignmentRasDrug.numFindings}}">{{finding.alignmentRasDrug.displayResistanceCategory}}</td>
 					<td>{{renderInVitroLevel(finding.inVitroResult)}}</td>
 					<td ng-if="finding.inVivoResult.clinicalTrial"><span ng-repeat="trial in finding.inVivoResult.clinicalTrial track by $index"><span ng-if="$index > 0">;</span>
 						<a target="_blank" href="https://clinicaltrials.gov/ct2/show/{{trial.nctId}}">{{trial.displayName}}</a></span></td>
@@ -35,8 +39,18 @@
 				</tr>
 			</table>
 		</p>
+		<small> 
+		* Drug resistance findings are assigned to one of
+			three categories according to the strength of evidence for drug
+			resistance. Category I findings have the strongest evidence: either
+			(a) <em>in vitro</em> resistance level &ge; 5 and found at baseline
+			or treatment-emergent <em>in vivo</em>, or (b) both found at baseline
+			and treatment-emergent. Category II: <em>in vitro</em> level &ge; 50
+			or found at baseline or treatment-emergent. Category III: <em>in
+				vitro</em> level &ge; 5
+		</small>
 	</div>
-	<h4>References</h4>
+	<h3>References</h3>
 	<div ng-repeat="publication in rap.reference">
 	<p>
 	<small>[{{publication.index}}] <b>{{publication.title}}</b>

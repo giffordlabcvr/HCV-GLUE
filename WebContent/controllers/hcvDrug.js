@@ -5,64 +5,11 @@ hcvApp.controller('hcvDrugCtrl',
 			addUtilsToScope($scope);
 
 			$scope.phdrDrug = null;
-			$scope.phdrFindings = null;
+			$scope.phdrAlignmentRasDrugs = null;
 			$scope.drugId = $routeParams.id;
 			
 			$scope.pagingContext = null;
 			$scope.whereClause = "phdr_drug.id = '"+$scope.drugId+"'";
-
-			$scope.hasInVitroFilter = function() {
-                // note property here is a dummy value.
-				return { property:"hasInVitro", displayName: "In vitro evidence?", filterHints: 
-            	{ type: "CustomBoolean", 
-              	  generatePredicateFromCustom: function(filterElem) {
-              		  console.log("filterElem", filterElem);
-              		  if(filterElem.predicate.operator == "true") {
-                		  	return "phdr_in_vitro_result != null";
-              		  } else {
-                		  	return "phdr_in_vitro_result = null";
-              		  }
-              	  }
-              	}
-              };
-			}
-			
-			$scope.hasInVivoFilter = function() {
-                // note property here is a dummy value.
-				return { property:"hasInVivo", displayName: "In vivo evidence?", filterHints: 
-            	{ type: "CustomBoolean", 
-              	  generatePredicateFromCustom: function(filterElem) {
-              		  console.log("filterElem", filterElem);
-              		  if(filterElem.predicate.operator == "true") {
-                		  	return "phdr_in_vivo_result != null";
-              		  } else {
-                		  	return "phdr_in_vivo_result = null";
-              		  }
-              	  }
-              	}
-              };
-			}
-
-
-			
-			$scope.renderInVitroLevel = function(inVitroResult) {
-				if(inVitroResult == null) {
-					return "-";
-				}
-				if(inVitroResult.minEC50FoldChange != null && inVitroResult.maxEC50FoldChange != null) {
-					if(inVitroResult.minEC50FoldChange == inVitroResult.maxEC50FoldChange) {
-						return toFixed(inVitroResult.minEC50FoldChange, 2);
-					} else {
-						return toFixed(inVitroResult.minEC50FoldChange, 2) + " - " + toFixed(inVitroResult.maxEC50FoldChange, 2);
-					}
-				}
-				if(inVitroResult.minEC50FoldChange == null) {
-					return " < " + toFixed(inVitroResult.maxEC50FoldChange, 2);
-				}
-				if(inVitroResult.maxEC50FoldChange == null) {
-					return " > " + toFixed(inVitroResult.minEC50FoldChange, 2);
-				}
-			};
 
 			glueWS.runGlueCommand("custom-table-row/phdr_drug/"+$scope.drugId, {
 				"render-object": {
@@ -78,7 +25,7 @@ hcvApp.controller('hcvDrugCtrl',
 			$scope.updateCount = function(pContext) {
 				var cmdParams = {
 					"whereClause":$scope.whereClause,
-					"tableName":"phdr_resistance_finding"
+					"tableName":"phdr_alignment_ras_drug"
 				};
 				pContext.extendCountCmdParams(cmdParams);
 				glueWS.runGlueCommand("", {
@@ -99,44 +46,46 @@ hcvApp.controller('hcvDrugCtrl',
 				var cmdParams = {
 			            "whereClause":$scope.whereClause,
 			            "allObjects": false,
-			            "tableName":"phdr_resistance_finding",
-			            "rendererModuleName": "phdrFindingListRenderer"
+			            "tableName":"phdr_alignment_ras_drug",
+			            "rendererModuleName": "phdrAlignmentRasDrugRenderer"
 				};
 				pContext.extendListCmdParams(cmdParams);
 				glueWS.runGlueCommand("", {
 			    	"multi-render": cmdParams 
 				})
 				.success(function(data, status, headers, config) {
-					$scope.phdrFindings = data.multiRenderResult.resultDocument;
-					console.info('$scope.phdrFindings', $scope.phdrFindings);
+					$scope.phdrAlignmentRasDrugs = data.multiRenderResult.resultDocument;
+					console.info('$scope.phdrAlignmentRasDrugs', $scope.phdrAlignmentRasDrugs);
 				})
-				.error(glueWS.raiseErrorDialog(dialogs, "retrieving drug resistance findings"));
+				.error(glueWS.raiseErrorDialog(dialogs, "retrieving alignment-ras-drug objects"));
 			}
 
 			$scope.pagingContext = pagingContext.createPagingContext($scope.updateCount, $scope.updatePage);
 
 			$scope.pagingContext.setDefaultSortOrder([
-  	            { property:"phdr_ras.sort_key", displayName: "Polymorphic locations", order: "+" },
-	            { property:"alignment.name", displayName: "Genotype / subtype", order: "+" }
+  	            { property:"numeric_resistance_category", displayName: "Resistance category", order: "+" },
+  	            { property:"phdr_alignment_ras.phdr_ras.sort_key", displayName: "Polymorphic locations", order: "+" },
+	            { property:"phdr_alignment_ras.alignment.name", displayName: "Genotype / subtype", order: "+" }
   			]);
 
 			$scope.pagingContext.setSortableProperties([
-	            { property:"phdr_ras.sort_key", displayName: "Polymorphic locations" },
-	            { property:"alignment.name", displayName: "Genotype / subtype"}
+	            { property:"phdr_alignment_ras.phdr_ras.sort_key", displayName: "Polymorphic locations" },
+	            { property:"phdr_alignment_ras.alignment.name", displayName: "Genotype / subtype"},
+	            { property:"numeric_resistance_category", displayName: "Resistance category"},
+	            { property:"in_vitro_max_ec50_midpoint", displayName: "EC50 log fold change"}
             ]);
 
   			$scope.pagingContext.setFilterProperties([
-  	            { property:"alignment.displayName", altProperties:["alignment.name"], displayName: "Genotype / subtype", filterHints: {type: "String"} }, 
-  	            $scope.hasInVitroFilter(),
-  	            { property:"phdr_in_vitro_result.ec50_midpoint", displayName: "EC50 log fold change", filterHints: {type: "Double"} }, 
-  	            $scope.hasInVivoFilter(),
-  	            { property:"phdr_in_vivo_result.baseline", displayName: "Found at baseline?", filterHints: {type: "Boolean"} }, 
-  	            { property:"phdr_in_vivo_result.treatment_emergent", displayName: "Treatment emergent?", filterHints: {type: "Boolean"} }
+  	            { property:"phdr_alignment_ras.alignment.displayName", altProperties:["phdr_alignment_ras.alignment.name"], displayName: "Genotype / subtype", filterHints: {type: "String"} }, 
+  	            { property:"any_in_vitro_evidence", displayName: "In vitro evidence?", filterHints: {type: "Boolean"} }, 
+  	            { property:"in_vitro_max_ec50_midpoint", displayName: "EC50 log fold change", filterHints: {type: "Double"} }, 
+  	            { property:"any_in_vivo_evidencee", displayName: "In vivo evidence?", filterHints: {type: "Boolean"} }, 
+  	            { property:"in_vivo_baseline", displayName: "Found at baseline?", filterHints: {type: "Boolean"} }, 
+  	            { property:"in_vivo_treatment_emergent", displayName: "Treatment emergent?", filterHints: {type: "Boolean"} }
   			]);
 			                          			
 			$scope.pagingContext.setDefaultFilterElems([]);
 
-			
 			$scope.pagingContext.countChanged();
 			
 		}]);
