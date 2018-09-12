@@ -1,0 +1,85 @@
+<div>
+	<div nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter">
+		<h2>Automated genotyping and interpretation</h2>
+		<p>Submit your sequence files in FASTA nucleotide format for automated analysis of the clade membership and interpretation of the nucleotide content.
+		<small ng-if="analysisToolExampleSequenceURL"><br/>For testing, download this <a ng-click="downloadExampleSequence()">example sequence file</a> and submit it for analysis.</small>
+		</p>
+		<div>
+			<div>
+	
+				<table class="table" width="100%">
+					<thead>
+						<col width="40%"></col>
+						<col width="20%"></col>
+						<col width="20%"></col>
+						<col width="20%"></col>
+						<tr>
+							<th>File</th>
+							<th ng-show="uploader.isHTML5">Size</th>
+							<th>Status</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in uploader.queue">
+							<td><strong>{{ item.file.name }}</strong></td>
+							<td ng-show="uploader.isHTML5" nowrap>{{
+								item.file.size/1024/1024|number:2 }} MB</td>
+							<td>
+								<span ng-show="item.isSuccess">
+									<i class="glyphicon glyphicon-ok"></i>
+								</span> 
+								<span ng-show="item.isCancel">
+									<i class="glyphicon glyphicon-ban-circle"></i>
+								</span>
+								<span ng-show="item.isUploading">
+									<i class="glyphicon glyphicon-transfer"></i>
+								</span>
+								<span ng-show="item.isError">
+									<i class="glyphicon glyphicon-remove"></i>
+								</span></td>
+							<td nowrap>
+								<button type="button" class="btn btn-primary btn-xs"
+									ng-click="item.upload()"
+									ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+									<span class="glyphicon glyphicon-upload"></span> Submit
+								</button>
+								<button type="button" class="btn btn-primary btn-xs"
+									ng-click="showAnalysisResults(item)" ng-disabled="!item.isSuccess">
+									<span class="glyphicon glyphicon-list"></span> Show analysis
+								</button>
+								<button type="button" class="btn btn-primary btn-xs"
+									ng-click="removeItem(item)">
+									<span class="glyphicon glyphicon-trash"></span> Remove
+								</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<div>
+					<label class="btn btn-primary" for="my-file-selector"> <input
+						id="my-file-selector" type="file" nv-file-select=""
+						uploader="uploader" multiple style="display: none;">
+						<span class="glyphicon glyphicon-plus-sign"></span> Add files
+					</label>
+					<button type="button" class="btn btn-primary btn-s"
+						ng-click="uploader.uploadAll()"
+						ng-disabled="!uploader.getNotUploadedItems().length">
+						<span class="glyphicon glyphicon-upload"></span> Submit all files
+					</button>
+					<button type="button" class="btn btn-primary btn-s"
+						ng-click="removeAll()"
+						ng-disabled="!uploader.queue.length">
+						<span class="glyphicon glyphicon-trash"></span> Remove all files
+					</button>
+				</div>
+	
+			</div>
+	
+			<div ng-show="fileItemUnderAnalysis">
+				<h3>Analysis Results</h3>
+			</div>
+		</div>
+	</div>
+</div>

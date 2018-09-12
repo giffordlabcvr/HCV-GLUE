@@ -18,9 +18,9 @@
 	  console.log("before hcvApp module definition");
 
 var hcvApp = angular.module('hcvApp', [
-    'ngRoute',
-    'analysisTool', 
+    'ngRoute', 
     'projectBrowser', 
+    'angularFileUpload', 
     'home',
     'glueWS',
     'glueWebToolConfig',
@@ -95,9 +95,9 @@ hcvApp.config(['$routeProvider', 'projectBrowserStandardRoutesProvider',
     });
 	
     $routeProvider.
-      when('/analysisTool', {
-        templateUrl: '../gluetools-web/www/analysisTool/analysisTool.html',
-        controller: 'analysisToolCtrl'
+      when('/hcvFastaAnalysis', {
+        templateUrl: '../views/hcvFastaAnalysis.html',
+        controller: 'hcvFastaAnalysisCtrl'
       }).
       when('/aboutGlueProject', {
     	  templateUrl: './views/aboutGlueProject.html',
