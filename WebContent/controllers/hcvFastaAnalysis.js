@@ -1,6 +1,6 @@
 hcvApp.controller('hcvFastaAnalysisCtrl', 
-		[ '$scope', '$controller', 'glueWS', 'glueWebToolConfig', 'dialogs', '$analytics',
-		  function($scope, $controller, glueWS, glueWebToolConfig, dialogs, $analytics) {
+		[ '$scope', '$controller', 'glueWS', 'glueWebToolConfig', 'dialogs', '$analytics', 'saveFile', 'FileSaver', '$http', '$window',
+		  function($scope, $controller, glueWS, glueWebToolConfig, dialogs, $analytics, saveFile, FileSaver, $http, $window) {
 			
 			addUtilsToScope($scope);
 
@@ -143,6 +143,47 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				}
 			}, false);
 
+			$scope.downloadExampleSequence = function() {
+				var url;
+				if(userAgent.os.family.indexOf("Windows") !== -1) {
+					url = "exampleSequences/exampleSequences.fasta";
+				} else {
+					url = "exampleSequencesMsWindows/exampleSequences.fasta";
+				}
+				$http.get(url)
+				.success(function(data, status, headers, config) {
+					console.log("data", data);
+			    	var blob = new Blob([data], {type: "text/plain"});
+			    	saveFile.saveFile(blob, "example sequence file", "exampleSequenceFile.fasta");
+			    })
+			    .error(glueWS.raiseErrorDialog(dialogs, "downloading example sequence file"));
+			};
 		    
-		    
+			$scope.viewFullReport = function(fileItem, sequenceId, phdrResult) {
+				if(fileItem.seqIdToReportUrl == null) {
+					fileItem.seqIdToReportUrl = {};
+				}
+				var reportUrl = fileItem.seqIdToReportUrl[sequenceId];
+				var fileName = "hcvReport.html";
+				if(reportUrl == null) {
+					glueWS.runGlueCommand("module/phdrRasReportTransformer", {
+						"transform-to-web-file": {
+							"webFileType": "WEB_PAGE",
+							"commandDocument":phdrResult,
+							"outputFile": fileName
+						}
+					})
+					.success(function(data, status, headers, config) {
+						console.info('transform-to-web-file result', data);
+						var transformerResult = data.freemarkerDocTransformerWebResult;
+						reportUrl = "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName;
+						fileItem.seqIdToReportUrl[sequenceId] = reportUrl;
+						$window.open(reportUrl, '_blank');
+					})
+					.error(glueWS.raiseErrorDialog(dialogs, "rendering full HCV report"));
+				} else {
+					$window.open(reportUrl, '_blank');
+				}
+			};
+			
 		}]);
