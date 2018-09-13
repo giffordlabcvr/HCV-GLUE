@@ -64,11 +64,32 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			}
 		    
 		    $scope.showAnalysisResults = function(item) {
-		    	$scope.fileItemUnderAnalysis = item;
-				$scope.summary = true;
+		    	$scope.setFileItemUnderAnalysis(item);
+		    	$scope.summary = true;
 				$scope.genomeVisualisation = false;
 		    };
 			
+		    $scope.setFileItemUnderAnalysis = function(item) {
+		    	if(item.sequenceReport == null) {
+		    		$scope.setSequenceReport(item, item.response.phdrWebReport.results[0]);
+		    	}
+		    	$scope.fileItemUnderAnalysis = item;
+		    }
+		    
+		    $scope.setSequenceReport = function(item, sequenceReport) {
+		    	if(sequenceReport.phdrReport.comparisonRef == null) {
+		    		console.log("sequenceReport", sequenceReport);
+		    		$scope.setComparisonRef(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs[0]);
+		    	}
+		    	item.sequenceReport = sequenceReport;
+		    }
+
+		    
+		    $scope.setComparisonRef = function(sequenceReport, comparisonRef) {
+		    	// need to nest comparisonRef within phdrReport to avoid breaking command doc assumptions.
+		    	sequenceReport.phdrReport.comparisonRef = comparisonRef;
+		    }
+
 		    $scope.getGenotype = function(sequenceResult) {
 		    	var genotypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'genotype'});
 		    	if(genotypeCladeResult == null) {
@@ -143,6 +164,44 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				}
 			}, false);
 
+			$scope.fetchSvg = function() {
+				var phdrResult = $scope.fileItemUnderAnalysis.response.phdrWebReport.results[0];
+				var visualisationHints = phdrResult.phdrReport.sequenceResult.visualisationHints;
+				glueWS.runGlueCommand("module/phdrVisualisationUtility", 
+						{ "visualise-feature": {
+						    "targetReferenceName": visualisationHints.targetReferenceName,
+						    "comparisonReferenceName": visualisationHints.comparisonRefs[0].refName,
+						    "featureName": visualisationHints.features[0],
+						    "queryNucleotides": visualisationHints.queryNucleotides,
+						    "queryToTargetRefSegments": visualisationHints.queryToTargetRefSegments,
+						    "queryDetails": []
+						  } }
+				).success(function(data, status, headers, config) {
+					console.info('visualise-feature result', data);
+					var featureVisualisation = data;
+					var fileName = "visualisation.svg";
+					glueWS.runGlueCommand("module/phdrFeatureToSvgTransformer", {
+						"transform-to-web-file": {
+							"webFileType": "WEB_PAGE",
+							"commandDocument":{
+								transformerInput: {
+									featureVisualisation: featureVisualisation.featureVisualisation,
+									ntWidth: 16
+								}
+							},
+							"outputFile": fileName
+						}
+					})
+					.success(function(data, status, headers, config) {
+						console.info('transform-to-web-file result', data);
+						var transformerResult = data.freemarkerDocTransformerWebResult;
+						$scope.visualisationSvgUrl = "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName;
+					})
+					.error(glueWS.raiseErrorDialog(dialogs, "rendering genome feature to SVG"));
+				})
+				.error(glueWS.raiseErrorDialog(dialogs, "visualising genome feature"));
+			}
+			
 			$scope.downloadExampleSequence = function() {
 				var url;
 				if(userAgent.os.family.indexOf("Windows") !== -1) {

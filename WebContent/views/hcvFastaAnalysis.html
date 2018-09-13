@@ -139,6 +139,42 @@
 						</table>
 					</p>
 				</div>
+				<div ng-if="genomeVisualisation">
+					<p>
+						<div class='table'>
+							<div style="padding-left: 15px;" class="row">
+								Query sequence: 
+								<div class="btn-group" dropdown is-open="status.qseqButtonOpen">
+							      <button id="qseq-button" type="button" class="btn btn-default" dropdown-toggle>
+							        {{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}} <span class="caret"></span>
+							      </button>
+							      <ul class="dropdown-menu" role="menu" aria-labelledby="qseq-button">
+							        <li ng-repeat="report in fileItemUnderAnalysis.response.phdrWebReport.results" ng-click="setSequenceReport(fileItemUnderAnalysis, report)" role="menuitem">
+							        	<a>{{report.phdrReport.sequenceResult.id}}</a></li>
+							      </ul>
+								</div>
+							</div>
+							<div style="padding-left: 15px;" class="row">
+								Reference sequence:
+								<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
+							      <button id="rseq-button" type="button" class="btn btn-default" dropdown-toggle>
+							        {{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}} <span class="caret"></span>
+							      </button>
+							      <ul class="dropdown-menu" role="menu" aria-labelledby="rseq-button">
+							        <li ng-repeat="comparisonRef in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs" 
+							        	ng-click="setComparisonRef(fileItemUnderAnalysis.sequenceReport, comparisonRef)" role="menuitem">
+							        	<a>{{comparisonRef.refDisplayName}}</a></li>
+							      </ul>
+								</div>
+							</div>
+							<div style="padding-left: 15px;" class="row">
+								<button type="button" class="btn btn-default" ng-click="updateSvg()">Update</button>
+							</div>
+						</div>				
+					</p>
+					<div style="overflow: auto" ng-include="visualisationSvgUrl">
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
