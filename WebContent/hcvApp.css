@@ -1,31 +1,28 @@
-*[class^='vcat_uncommon_aa_']{
-	fill:#ffc005; 	
+.resistanceBlock {
+	padding: 0px;
 }
 
-.vcat_resistance_associated_variants {
-	fill:#ff3333; 	
+.resistanceColourCode_susceptible {
+	background-color: #56d369;
+	color:#000000;
+	font-weight:bold;
 }
 
-.vcat_official_resistance_associated_variants {
-	fill:#ff3333; 	
+.resistanceColourCode_weak_resistance {
+	background-color: #fcf95a;
+	color:#000000;
+	font-weight:bold;
 }
 
-/* http://stackoverflow.com/questions/5110249/wildcard-in-css-for-classes */
-*[class^='vcat_epitopes_']{
-	fill:#b3e0ff; 	
+.resistanceColourCode_moderate_resistance {
+	background-color: #ffb349;
+	color:#000000;
+	font-weight:bold;
 }
 
-.epitopeAa {
-    text-anchor: middle;
-    alignment-baseline: central;
-	font-weight: bold;
-	fill: #5c5c5c;
-	font-size: 100%;
+.resistanceColourCode_strong_resistance {
+	background-color: #ff0202;
+	color:#ffffff;
+	font-weight:bold;
 }
-
-.epitopeAaBackground {
-	fill: #eeeeee;
-}
-
-
 

@@ -78,7 +78,67 @@
 			</div>
 	
 			<div ng-show="fileItemUnderAnalysis">
-				<h3>Analysis Results</h3>
+				<hr/>
+				<h4>Analysis of sequence file '{{fileItemUnderAnalysis.file.name}}'</h4>
+				<div class="btn-group">
+					<label
+						class="btn btn-default ng-pristine ng-untouched ng-valid active"
+						btn-checkbox ng-model="summary">Summary</label>
+					<label
+						class="btn btn-default ng-pristine ng-untouched ng-valid active"
+						btn-checkbox ng-model="genomeVisualisation">Genome visualisation</label>
+				</div>
+				<div ng-if="summary">
+					<p>
+						<table class="table table-striped table-bordered">
+							<thead>
+								<tr>
+									<th rowspan="2" style="width: 8%;">Sequence</th>		
+									<th rowspan="2" style="width: 8%;">Identified as HCV?</th>		
+									<th rowspan="2" style="width: 8%;">Genotype</th>		
+									<th rowspan="2" style="width: 8%;">Subtype</th>		
+									<th rowspan="2" style="width: 8%;">Closest reference sequence</th>		
+									<th colspan="5" style="width: 40%;">Drug resistance level</th>		
+									<th rowspan="2" style="width: 20%;">Full report</th>		
+								</tr>
+								<tr>
+									<th colspan="1" style="width: 8%;">glecaprevir</th>		
+									<th colspan="1" style="width: 8%;">voxilaprevir</th>		
+									<th colspan="1" style="width: 8%;">pibrentasvir</th>		
+									<th colspan="1" style="width: 8%;">velpatasvir</th>		
+									<th colspan="1" style="width: 8%;">sofosbuvir</th>		
+								</tr>
+							</thead>
+							<tbody>
+								<tr ng-repeat="phdrResult in fileItemUnderAnalysis.response.phdrWebReport.results track by $index">
+									<td>{{phdrResult.phdrReport.sequenceResult.id}}</td>
+									<td>{{phdrResult.phdrReport.sequenceResult.isForwardHcv ? "Yes" : "No"}}</td>
+									<td>{{getGenotype(phdrResult.phdrReport.sequenceResult)}}</td>
+									<td>{{getSubtype(phdrResult.phdrReport.sequenceResult)}}</td>
+									<td>{{getClosestReferenceSequence(phdrResult.phdrReport.sequenceResult)}}</td>
+									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'glecaprevir')}}">
+										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'glecaprevir')}}</span>
+									</td>
+									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}">
+										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}</span>
+									</td>
+									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}">
+										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}</span>
+									</td>
+									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'velpatasvir')}}">
+										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'velpatasvir')}}</span>
+									</td>
+									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'sofosbuvir')}}">
+										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'sofosbuvir')}}</span>
+									</td>
+									<td>
+									
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
