@@ -90,7 +90,7 @@
 						btn-checkbox ng-model="genomeVisualisation">Genome
 						visualisation</label>
 				</div>
-				<div ng-if="summary">
+				<div ng-show="summary">
 					<p>
 					<table class="table table-striped table-bordered">
 						<thead>
@@ -158,14 +158,14 @@
 			</div>
 		</div>
 	</div>
-	<div ng-if="genomeVisualisation" class="container-fluid">
+	<div ng-show="genomeVisualisation" class="container-fluid">
 		<div class="row">
 			<div class="genomeVisualisationControls col-md-10">
 				<p>
 				<div>
 					Visualise genome region:
 					<div class="btn-group" dropdown is-open="status.fButtonOpen">
-						<button id="f-button" type="button" class="btn btn-sm btn-default"
+						<button ng-disabled="visualisationUpdating" id="f-button" type="button" class="btn btn-sm btn-default"
 							dropdown-toggle>
 							{{fileItemUnderAnalysis.sequenceReport.phdrReport.feature.displayName}}
 							<span class="caret"></span>
@@ -184,7 +184,7 @@
 				<div>
 					of submitted sequence:
 					<div class="btn-group" dropdown is-open="status.qseqButtonOpen">
-						<button id="qseq-button" type="button" class="btn btn-sm btn-default"
+						<button ng-disabled="visualisationUpdating" id="qseq-button" type="button" class="btn btn-sm btn-default"
 							dropdown-toggle>
 							{{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}}
 							<span class="caret"></span>
@@ -202,9 +202,9 @@
 				</p>
 				<p>
 				<div>
-					against:
+					highlighting any differences with:
 					<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
-						<button id="rseq-button" type="button" class="btn btn-sm btn-default"
+						<button ng-disabled="visualisationUpdating" id="rseq-button" type="button" class="btn btn-sm btn-default"
 							dropdown-toggle>
 							{{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}}
 							<span class="caret"></span>
@@ -223,12 +223,15 @@
 				</p>
 			</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
 		    --><div class="col-md-2 updateVisualisationButton text-right">
-					<button type="button" class="btn btn-primary"
+					<button ng-disabled="visualisationUpdating" type="button" class="btn btn-primary"
 						ng-click="updateSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
 				</div>
 		</div>
-		<div class="row svgContainer"
-			<div style="overflow: auto;" ng-include="visualisationSvgUrl">
+		<div class="row svgContainer" us-spinner="{radius:23, width:7, length: 11}" spinner-on="visualisationUpdating" style="min-height: 100px; position: relative">
+			<div ng-if="visualisationSvgUrl == null && !visualisationUpdating">
+				<p class="text-center">No data</p>
+			</div>
+			<div id="visualisationSvg" style="overflow: auto;" data-onload="svgLoaded()" ng-include="visualisationSvgUrl">
 			</div>
 		</div>
 	</div>

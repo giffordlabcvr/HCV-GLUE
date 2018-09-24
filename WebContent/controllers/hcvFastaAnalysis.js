@@ -1,10 +1,14 @@
 hcvApp.controller('hcvFastaAnalysisCtrl', 
-		[ '$scope', '$controller', 'glueWS', 'glueWebToolConfig', 'dialogs', '$analytics', 'saveFile', 'FileSaver', '$http', '$window',
-		  function($scope, $controller, glueWS, glueWebToolConfig, dialogs, $analytics, saveFile, FileSaver, $http, $window) {
+		[ '$scope', '$controller', 'glueWS', 'glueWebToolConfig', 'dialogs', '$analytics', 'saveFile', 'FileSaver', '$http', '$window', '$timeout',
+		  function($scope, $controller, glueWS, glueWebToolConfig, dialogs, $analytics, saveFile, FileSaver, $http, $window, $timeout) {
 			
 			addUtilsToScope($scope);
 
 			$scope.analytics = $analytics;
+			$scope.visualisationUpdating = false;
+			$scope.svgUrlCache = {};
+			$scope.featureNameToScrollLeft = {};
+			$scope.lastFeatureName = null;
 			
 			$controller('fileConsumerCtrl', { $scope: $scope, 
 				glueWebToolConfig: glueWebToolConfig, 
@@ -80,9 +84,19 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    	if(sequenceReport.phdrReport.comparisonRef == null) {
 		    		$scope.setComparisonRef(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs[0]);
 		    	}
-		    	if(sequenceReport.phdrReport.feature == null) {
-		    		$scope.setFeature(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.features[0]);
+	    		var availableFeatures = sequenceReport.phdrReport.sequenceResult.visualisationHints.features;
+	    		var feature = sequenceReport.phdrReport.feature;
+		    	if(feature == null) {
+		    		feature = availableFeatures[0];
 		    	}
+	    		if(item.sequenceReport != null) {
+	    			var currentFeatureName = item.sequenceReport.phdrReport.feature.name;
+	    			var equivalentFeature = _.find(availableFeatures, function(availableFeature) { return availableFeature.name == currentFeatureName; });
+	    			if(equivalentFeature != null) {
+	    				feature = equivalentFeature;
+	    			}
+	    		}
+	    		$scope.setFeature(sequenceReport, feature);
 		    	item.sequenceReport = sequenceReport;
 		    }
 
@@ -171,43 +185,97 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				}
 			}, false);
 
+			$scope.svgLoaded = function() {
+				console.info('svgLoaded');
+				var visualisationSvgElem = document.getElementById('visualisationSvg');
+				if(visualisationSvgElem != null) {
+					var featureName = $scope.fileItemUnderAnalysis.sequenceReport.phdrReport.feature.name;
+					console.info('featureName', featureName);
+					var featureScrollLeft = $scope.featureNameToScrollLeft[featureName];
+					console.info('featureScrollLeft', featureScrollLeft);
+					if(featureScrollLeft != null) {
+						visualisationSvgElem.scrollLeft = featureScrollLeft;
+					} else {
+						visualisationSvgElem.scrollLeft = 0;
+					}
+					$scope.lastFeatureName = featureName;
+				}
+				$scope.visualisationUpdating = false;
+				
+				
+				
+			}
 			$scope.updateSvg = function() {
+				
+				$scope.visualisationUpdating = true;
 				var sequenceReport = $scope.fileItemUnderAnalysis.sequenceReport;
 				var visualisationHints = sequenceReport.phdrReport.sequenceResult.visualisationHints;
-				console.info('visualisationHints', visualisationHints);
-				glueWS.runGlueCommand("module/phdrVisualisationUtility", 
-						{ "visualise-feature": {
-						    "targetReferenceName": visualisationHints.targetReferenceName,
-						    "comparisonReferenceName": sequenceReport.phdrReport.comparisonRef.refName,
-						    "featureName": sequenceReport.phdrReport.feature.name,
-						    "queryNucleotides": visualisationHints.queryNucleotides,
-						    "queryToTargetRefSegments": visualisationHints.queryToTargetRefSegments,
-						    "queryDetails": []
-						  } }
-				).success(function(data, status, headers, config) {
-					console.info('visualise-feature result', data);
-					var featureVisualisation = data;
-					var fileName = "visualisation.svg";
-					glueWS.runGlueCommand("module/phdrFeatureToSvgTransformer", {
-						"transform-to-web-file": {
-							"webFileType": "WEB_PAGE",
-							"commandDocument":{
-								transformerInput: {
-									featureVisualisation: featureVisualisation.featureVisualisation,
-									ntWidth: 16
-								}
-							},
-							"outputFile": fileName
-						}
+
+				var cacheKey = $scope.fileItemUnderAnalysis.file.name+":"+
+					sequenceReport.phdrReport.sequenceResult.id+":"+
+					sequenceReport.phdrReport.comparisonRef.refName+":"+
+					sequenceReport.phdrReport.feature.name;
+				console.info('cacheKey', cacheKey);
+				
+				if($scope.lastFeatureName != null) {
+					var visualisationSvgElem = document.getElementById('visualisationSvg');
+					if(visualisationSvgElem != null) {
+						$scope.featureNameToScrollLeft[$scope.lastFeatureName]	= visualisationSvgElem.scrollLeft;
+					}
+				}
+				
+				var featureName = sequenceReport.phdrReport.feature.name;
+
+
+				var cachedSvgUrl = $scope.svgUrlCache[cacheKey];
+				
+				if(cachedSvgUrl != null) {
+					$timeout(function() {$scope.visualisationSvgUrl = cachedSvgUrl;});
+				} else {
+					console.info('visualisationHints', visualisationHints);
+					glueWS.runGlueCommand("module/phdrVisualisationUtility", 
+							{ "visualise-feature": {
+							    "targetReferenceName": visualisationHints.targetReferenceName,
+							    "comparisonReferenceName": sequenceReport.phdrReport.comparisonRef.refName,
+							    "featureName": featureName,
+							    "queryNucleotides": visualisationHints.queryNucleotides,
+							    "queryToTargetRefSegments": visualisationHints.queryToTargetRefSegments,
+							    "queryDetails": []
+							  } }
+					).success(function(data, status, headers, config) {
+						console.info('visualise-feature result', data);
+						var featureVisualisation = data;
+						var fileName = "visualisation.svg";
+						glueWS.runGlueCommand("module/phdrFeatureToSvgTransformer", {
+							"transform-to-web-file": {
+								"webFileType": "WEB_PAGE",
+								"commandDocument":{
+									transformerInput: {
+										featureVisualisation: featureVisualisation.featureVisualisation,
+										ntWidth: 16
+									}
+								},
+								"outputFile": fileName
+							}
+						})
+						.success(function(data, status, headers, config) {
+							console.info('transform-to-web-file result', data);
+							var transformerResult = data.freemarkerDocTransformerWebResult;
+							$scope.visualisationSvgUrl = "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName;
+							$scope.svgUrlCache[cacheKey] = $scope.visualisationSvgUrl;
+						})
+						.error(function(data, status, headers, config) {
+							$scope.visualisationUpdating = false;
+							var dlgFunction = glueWS.raiseErrorDialog(dialogs, "rendering genome feature to SVG");
+							dlgFunction(data, status, headers, config);
+						});
 					})
-					.success(function(data, status, headers, config) {
-						console.info('transform-to-web-file result', data);
-						var transformerResult = data.freemarkerDocTransformerWebResult;
-						$scope.visualisationSvgUrl = "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName;
-					})
-					.error(glueWS.raiseErrorDialog(dialogs, "rendering genome feature to SVG"));
-				})
-				.error(glueWS.raiseErrorDialog(dialogs, "visualising genome feature"));
+					.error(function(data, status, headers, config) {
+						$scope.visualisationUpdating = false;
+						var dlgFunction = glueWS.raiseErrorDialog(dialogs, "visualising genome feature");
+						dlgFunction(data, status, headers, config);
+					});
+				}
 			}
 			
 			$scope.downloadExampleSequence = function() {
