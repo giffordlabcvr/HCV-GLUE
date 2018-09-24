@@ -26,3 +26,30 @@
 	font-weight:bold;
 }
 
+
+.genomeVisualisationControls {
+	border: 2px solid #cecece;
+    border-radius: 10px;
+    margin-top: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+	vertical-align: top;
+	float: none;
+}
+
+.updateVisualisationButton {
+	padding-right: 0px;
+	display: inline-block;
+	vertical-align: bottom;
+	float: none;
+}
+
+.svgContainer {
+	border: 2px solid #cecece;
+	padding-top: 10px;
+    overflow: hidden;
+	margin-top: 15px;
+}

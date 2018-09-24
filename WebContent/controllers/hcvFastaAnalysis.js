@@ -78,8 +78,10 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    
 		    $scope.setSequenceReport = function(item, sequenceReport) {
 		    	if(sequenceReport.phdrReport.comparisonRef == null) {
-		    		console.log("sequenceReport", sequenceReport);
 		    		$scope.setComparisonRef(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs[0]);
+		    	}
+		    	if(sequenceReport.phdrReport.feature == null) {
+		    		$scope.setFeature(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.features[0]);
 		    	}
 		    	item.sequenceReport = sequenceReport;
 		    }
@@ -88,6 +90,11 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    $scope.setComparisonRef = function(sequenceReport, comparisonRef) {
 		    	// need to nest comparisonRef within phdrReport to avoid breaking command doc assumptions.
 		    	sequenceReport.phdrReport.comparisonRef = comparisonRef;
+		    }
+
+		    $scope.setFeature = function(sequenceReport, feature) {
+		    	// need to nest feature within phdrReport to avoid breaking command doc assumptions.
+		    	sequenceReport.phdrReport.feature = feature;
 		    }
 
 		    $scope.getGenotype = function(sequenceResult) {
@@ -164,14 +171,15 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				}
 			}, false);
 
-			$scope.fetchSvg = function() {
-				var phdrResult = $scope.fileItemUnderAnalysis.response.phdrWebReport.results[0];
-				var visualisationHints = phdrResult.phdrReport.sequenceResult.visualisationHints;
+			$scope.updateSvg = function() {
+				var sequenceReport = $scope.fileItemUnderAnalysis.sequenceReport;
+				var visualisationHints = sequenceReport.phdrReport.sequenceResult.visualisationHints;
+				console.info('visualisationHints', visualisationHints);
 				glueWS.runGlueCommand("module/phdrVisualisationUtility", 
 						{ "visualise-feature": {
 						    "targetReferenceName": visualisationHints.targetReferenceName,
-						    "comparisonReferenceName": visualisationHints.comparisonRefs[0].refName,
-						    "featureName": visualisationHints.features[0],
+						    "comparisonReferenceName": sequenceReport.phdrReport.comparisonRef.refName,
+						    "featureName": sequenceReport.phdrReport.feature.name,
 						    "queryNucleotides": visualisationHints.queryNucleotides,
 						    "queryToTargetRefSegments": visualisationHints.queryToTargetRefSegments,
 						    "queryDetails": []

@@ -1,43 +1,44 @@
 <div>
-	<div nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter">
+	<div nv-file-drop="" uploader="uploader"
+		filters="queueLimit, customFilter">
 		<h2>Automated genotyping and interpretation</h2>
-		<p>Submit your sequence files in FASTA nucleotide format for automated analysis of the genotype/subtype, drug resistance interpretation and genome visualisation.
-		<small><br/>For testing, download this <a ng-click="downloadExampleSequence()">example sequence file</a> and submit it for analysis.</small>
+		<p>
+			Submit your sequence files in FASTA nucleotide format for automated
+			analysis of the genotype/subtype, drug resistance interpretation and
+			genome visualisation. <small><br />For testing, download this
+				<a ng-click="downloadExampleSequence()">example sequence file</a>
+				and submit it for analysis.</small>
 		</p>
 		<div>
 			<div>
-	
+
 				<table class="table" width="100%">
 					<thead>
-						<col width="40%"></col>
-						<col width="20%"></col>
-						<col width="20%"></col>
-						<col width="20%"></col>
-						<tr>
-							<th>File</th>
-							<th ng-show="uploader.isHTML5">Size</th>
-							<th>Status</th>
-							<th>Actions</th>
-						</tr>
+					<col width="40%"></col>
+					<col width="20%"></col>
+					<col width="20%"></col>
+					<col width="20%"></col>
+					<tr>
+						<th>File</th>
+						<th ng-show="uploader.isHTML5">Size</th>
+						<th>Status</th>
+						<th>Actions</th>
+					</tr>
 					</thead>
 					<tbody>
 						<tr ng-repeat="item in uploader.queue">
 							<td><strong>{{ item.file.name }}</strong></td>
 							<td ng-show="uploader.isHTML5" nowrap>{{
 								item.file.size/1024/1024|number:2 }} MB</td>
-							<td>
-								<span ng-show="item.isSuccess">
-									<i class="glyphicon glyphicon-ok"></i>
-								</span> 
-								<span ng-show="item.isCancel">
-									<i class="glyphicon glyphicon-ban-circle"></i>
-								</span>
-								<span ng-show="item.isUploading">
-									<i class="glyphicon glyphicon-transfer"></i>
-								</span>
-								<span ng-show="item.isError">
-									<i class="glyphicon glyphicon-remove"></i>
-								</span></td>
+							<td><span ng-show="item.isSuccess"> <i
+									class="glyphicon glyphicon-ok"></i>
+							</span> <span ng-show="item.isCancel"> <i
+									class="glyphicon glyphicon-ban-circle"></i>
+							</span> <span ng-show="item.isUploading"> <i
+									class="glyphicon glyphicon-transfer"></i>
+							</span> <span ng-show="item.isError"> <i
+									class="glyphicon glyphicon-remove"></i>
+							</span></td>
 							<td nowrap>
 								<button type="button" class="btn btn-primary btn-xs"
 									ng-click="item.upload()"
@@ -45,7 +46,8 @@
 									<span class="glyphicon glyphicon-upload"></span> Submit
 								</button>
 								<button type="button" class="btn btn-primary btn-xs"
-									ng-click="showAnalysisResults(item)" ng-disabled="!item.isSuccess">
+									ng-click="showAnalysisResults(item)"
+									ng-disabled="!item.isSuccess">
 									<span class="glyphicon glyphicon-list"></span> Show analysis
 								</button>
 								<button type="button" class="btn btn-primary btn-xs"
@@ -56,12 +58,12 @@
 						</tr>
 					</tbody>
 				</table>
-	
+
 				<div>
 					<label class="btn btn-primary" for="my-file-selector"> <input
 						id="my-file-selector" type="file" nv-file-select=""
-						uploader="uploader" multiple style="display: none;">
-						<span class="glyphicon glyphicon-plus-sign"></span> Add files
+						uploader="uploader" multiple style="display: none;"> <span
+						class="glyphicon glyphicon-plus-sign"></span> Add files
 					</label>
 					<button type="button" class="btn btn-primary btn-s"
 						ng-click="uploader.uploadAll()"
@@ -69,112 +71,164 @@
 						<span class="glyphicon glyphicon-upload"></span> Submit all files
 					</button>
 					<button type="button" class="btn btn-primary btn-s"
-						ng-click="removeAll()"
-						ng-disabled="!uploader.queue.length">
+						ng-click="removeAll()" ng-disabled="!uploader.queue.length">
 						<span class="glyphicon glyphicon-trash"></span> Remove all files
 					</button>
 				</div>
-	
+
 			</div>
-	
+
 			<div ng-show="fileItemUnderAnalysis">
-				<hr/>
-				<h4>Analysis of sequence file '{{fileItemUnderAnalysis.file.name}}'</h4>
+				<hr />
+				<h4>Analysis of sequence file
+					'{{fileItemUnderAnalysis.file.name}}'</h4>
 				<div class="btn-group">
 					<label
 						class="btn btn-default ng-pristine ng-untouched ng-valid active"
-						btn-checkbox ng-model="summary">Summary</label>
-					<label
+						btn-checkbox ng-model="summary">Summary</label> <label
 						class="btn btn-default ng-pristine ng-untouched ng-valid active"
-						btn-checkbox ng-model="genomeVisualisation">Genome visualisation</label>
+						btn-checkbox ng-model="genomeVisualisation">Genome
+						visualisation</label>
 				</div>
 				<div ng-if="summary">
 					<p>
-						<table class="table table-striped table-bordered">
-							<thead>
-								<tr>
-									<th rowspan="2" style="width: 8%;">Sequence</th>		
-									<th rowspan="2" style="width: 8%;">Identified as HCV?</th>		
-									<th rowspan="2" style="width: 8%;">Genotype</th>		
-									<th rowspan="2" style="width: 8%;">Subtype</th>		
-									<th rowspan="2" style="width: 8%;">Closest reference sequence</th>		
-									<th colspan="5" style="width: 40%;">Drug resistance level</th>		
-									<th rowspan="2" style="width: 20%;">Full report</th>		
-								</tr>
-								<tr>
-									<th colspan="1" style="width: 8%;">glecaprevir</th>		
-									<th colspan="1" style="width: 8%;">voxilaprevir</th>		
-									<th colspan="1" style="width: 8%;">pibrentasvir</th>		
-									<th colspan="1" style="width: 8%;">velpatasvir</th>		
-									<th colspan="1" style="width: 8%;">sofosbuvir</th>		
-								</tr>
-							</thead>
-							<tbody>
-								<tr ng-repeat="phdrResult in fileItemUnderAnalysis.response.phdrWebReport.results track by $index">
-									<td>{{phdrResult.phdrReport.sequenceResult.id}}</td>
-									<td>{{phdrResult.phdrReport.sequenceResult.isForwardHcv ? "Yes" : "No"}}</td>
-									<td>{{getGenotype(phdrResult.phdrReport.sequenceResult)}}</td>
-									<td>{{getSubtype(phdrResult.phdrReport.sequenceResult)}}</td>
-									<td>{{getClosestReferenceSequence(phdrResult.phdrReport.sequenceResult)}}</td>
-									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'glecaprevir')}}">
-										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'glecaprevir')}}</span>
-									</td>
-									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}">
-										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}</span>
-									</td>
-									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}">
-										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}</span>
-									</td>
-									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'velpatasvir')}}">
-										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'velpatasvir')}}</span>
-									</td>
-									<td class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'sofosbuvir')}}">
-										<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult, 'sofosbuvir')}}</span>
-									</td>
-									<td>
-										<a ng-click="viewFullReport(fileItemUnderAnalysis, phdrResult.phdrReport.sequenceResult.id, phdrResult)">View full report <i class="glyphicon glyphicon-link"></i></a>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+					<table class="table table-striped table-bordered">
+						<thead>
+							<tr>
+								<th rowspan="2" style="width: 8%;">Sequence</th>
+								<th rowspan="2" style="width: 8%;">Identified as HCV?</th>
+								<th rowspan="2" style="width: 8%;">Genotype</th>
+								<th rowspan="2" style="width: 8%;">Subtype</th>
+								<th rowspan="2" style="width: 8%;">Closest reference
+									sequence</th>
+								<th colspan="5" style="width: 40%;">Drug resistance level</th>
+								<th rowspan="2" style="width: 20%;">Full report</th>
+							</tr>
+							<tr>
+								<th colspan="1" style="width: 8%;">glecaprevir</th>
+								<th colspan="1" style="width: 8%;">voxilaprevir</th>
+								<th colspan="1" style="width: 8%;">pibrentasvir</th>
+								<th colspan="1" style="width: 8%;">velpatasvir</th>
+								<th colspan="1" style="width: 8%;">sofosbuvir</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr
+								ng-repeat="phdrResult in fileItemUnderAnalysis.response.phdrWebReport.results track by $index">
+								<td>{{phdrResult.phdrReport.sequenceResult.id}}</td>
+								<td>{{phdrResult.phdrReport.sequenceResult.isForwardHcv ?
+									"Yes" : "No"}}</td>
+								<td>{{getGenotype(phdrResult.phdrReport.sequenceResult)}}</td>
+								<td>{{getSubtype(phdrResult.phdrReport.sequenceResult)}}</td>
+								<td>{{getClosestReferenceSequence(phdrResult.phdrReport.sequenceResult)}}</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'glecaprevir')}}">
+									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
+										'glecaprevir')}}</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}">
+									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
+										'voxilaprevir')}}</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}">
+									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
+										'pibrentasvir')}}</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'velpatasvir')}}">
+									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
+										'velpatasvir')}}</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'sofosbuvir')}}">
+									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
+										'sofosbuvir')}}</span>
+								</td>
+								<td><a
+									ng-click="viewFullReport(fileItemUnderAnalysis, phdrResult.phdrReport.sequenceResult.id, phdrResult)">View
+										full report <i class="glyphicon glyphicon-link"></i>
+								</a></td>
+							</tr>
+						</tbody>
+					</table>
 					</p>
 				</div>
-				<div ng-if="genomeVisualisation">
-					<p>
-						<div class='table'>
-							<div style="padding-left: 15px;" class="row">
-								Query sequence: 
-								<div class="btn-group" dropdown is-open="status.qseqButtonOpen">
-							      <button id="qseq-button" type="button" class="btn btn-default" dropdown-toggle>
-							        {{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}} <span class="caret"></span>
-							      </button>
-							      <ul class="dropdown-menu" role="menu" aria-labelledby="qseq-button">
-							        <li ng-repeat="report in fileItemUnderAnalysis.response.phdrWebReport.results" ng-click="setSequenceReport(fileItemUnderAnalysis, report)" role="menuitem">
-							        	<a>{{report.phdrReport.sequenceResult.id}}</a></li>
-							      </ul>
-								</div>
-							</div>
-							<div style="padding-left: 15px;" class="row">
-								Reference sequence:
-								<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
-							      <button id="rseq-button" type="button" class="btn btn-default" dropdown-toggle>
-							        {{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}} <span class="caret"></span>
-							      </button>
-							      <ul class="dropdown-menu" role="menu" aria-labelledby="rseq-button">
-							        <li ng-repeat="comparisonRef in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs" 
-							        	ng-click="setComparisonRef(fileItemUnderAnalysis.sequenceReport, comparisonRef)" role="menuitem">
-							        	<a>{{comparisonRef.refDisplayName}}</a></li>
-							      </ul>
-								</div>
-							</div>
-							<div style="padding-left: 15px;" class="row">
-								<button type="button" class="btn btn-default" ng-click="updateSvg()">Update</button>
-							</div>
-						</div>				
-					</p>
-					<div style="overflow: auto" ng-include="visualisationSvgUrl">
+			</div>
+		</div>
+	</div>
+	<div ng-if="genomeVisualisation" class="container-fluid">
+		<div class="row">
+			<div class="genomeVisualisationControls col-md-10">
+				<p>
+				<div>
+					Visualise genome region:
+					<div class="btn-group" dropdown is-open="status.fButtonOpen">
+						<button id="f-button" type="button" class="btn btn-sm btn-default"
+							dropdown-toggle>
+							{{fileItemUnderAnalysis.sequenceReport.phdrReport.feature.displayName}}
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu"
+							aria-labelledby="f-button">
+							<li
+								ng-repeat="feature in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.features"
+								ng-click="setFeature(fileItemUnderAnalysis.sequenceReport, feature)"
+								role="menuitem"><a>{{feature.displayName}}</a></li>
+						</ul>
 					</div>
 				</div>
+				</p>
+				<p>
+				<div>
+					of submitted sequence:
+					<div class="btn-group" dropdown is-open="status.qseqButtonOpen">
+						<button id="qseq-button" type="button" class="btn btn-sm btn-default"
+							dropdown-toggle>
+							{{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}}
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu"
+							aria-labelledby="qseq-button">
+							<li
+								ng-repeat="report in fileItemUnderAnalysis.response.phdrWebReport.results"
+								ng-click="setSequenceReport(fileItemUnderAnalysis, report)"
+								role="menuitem"><a>{{report.phdrReport.sequenceResult.id}}</a></li>
+						</ul>
+					</div>
+					(displayed in green)
+				</div>
+				</p>
+				<p>
+				<div>
+					against:
+					<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
+						<button id="rseq-button" type="button" class="btn btn-sm btn-default"
+							dropdown-toggle>
+							{{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}}
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu" role="menu"
+							aria-labelledby="rseq-button">
+							<li
+								ng-repeat="comparisonRef in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs"
+								ng-click="setComparisonRef(fileItemUnderAnalysis.sequenceReport, comparisonRef)"
+								role="menuitem"><a>{{comparisonRef.refDisplayName}}</a></li>
+						</ul>
+					</div>
+					(displayed in blue)
+				</div>
+
+				</p>
+			</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
+		    --><div class="col-md-2 updateVisualisationButton text-right">
+					<button type="button" class="btn btn-primary"
+						ng-click="updateSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
+				</div>
+		</div>
+		<div class="row svgContainer"
+			<div style="overflow: auto;" ng-include="visualisationSvgUrl">
 			</div>
 		</div>
 	</div>
