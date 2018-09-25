@@ -1,6 +1,6 @@
 hcvApp.controller('hcvFastaAnalysisCtrl', 
-		[ '$scope', '$controller', 'glueWS', 'glueWebToolConfig', 'dialogs', '$analytics', 'saveFile', 'FileSaver', '$http', '$window', '$timeout',
-		  function($scope, $controller, glueWS, glueWebToolConfig, dialogs, $analytics, saveFile, FileSaver, $http, $window, $timeout) {
+		[ '$scope', '$controller', 'glueWS', 'glueWebToolConfig', 'dialogs', '$analytics', 'saveFile', 'FileSaver', '$http', '$window', '$timeout', '$rootScope',
+		  function($scope, $controller, glueWS, glueWebToolConfig, dialogs, $analytics, saveFile, FileSaver, $http, $window, $timeout, $rootScope) {
 			
 			addUtilsToScope($scope);
 
@@ -9,6 +9,20 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			$scope.svgUrlCache = {};
 			$scope.featureNameToScrollLeft = {};
 			$scope.lastFeatureName = null;
+			
+			// begin experimental
+			var watchers;
+
+			$scope.$on('suspend', function () {
+			  watchers = $scope.$$watchers;
+			  $scope.$$watchers = [];
+			});
+
+			$scope.$on('resume', function () {
+			  $scope.$$watchers = watchers;
+			  watchers = null;
+			});
+			// end experimental
 			
 			$controller('fileConsumerCtrl', { $scope: $scope, 
 				glueWebToolConfig: glueWebToolConfig, 
@@ -262,7 +276,26 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 							console.info('transform-to-web-file result', data);
 							var transformerResult = data.freemarkerDocTransformerWebResult;
 							$scope.visualisationSvgUrl = "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName;
-							$scope.svgUrlCache[cacheKey] = $scope.visualisationSvgUrl;
+							// BEGIN experimental	
+							$scope.$broadcast('suspend');
+							$http.get($scope.visualisationSvgUrl)
+						    .then(function(response) {
+						        //console.log("get response.data", response.data);
+								var visualisationSvgElem = document.getElementById('visualisationSvg');
+								while(visualisationSvgElem.firstChild) {
+									visualisationSvgElem.removeChild(visualisationSvgElem.firstChild);
+								}
+								var parser = new DOMParser()
+								var svgDoc = parser.parseFromString(response.data, "text/xml");
+								var adoptedSvgElem = document.adoptNode(svgDoc.firstChild);
+								visualisationSvgElem.appendChild(adoptedSvgElem);
+								$scope.visualisationUpdating = false;
+								$scope.$broadcast('resume');
+						    });
+
+							// END experimental	
+							
+							//$scope.svgUrlCache[cacheKey] = $scope.visualisationSvgUrl;
 						})
 						.error(function(data, status, headers, config) {
 							$scope.visualisationUpdating = false;
