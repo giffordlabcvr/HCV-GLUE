@@ -9,6 +9,8 @@ hcvApp.controller('hcvAlignmentCtrl',
 				glueWS: glueWS, 
 				dialogs: dialogs});
 
+			$scope.displaySection = 'memberSequences';
+			
 			$scope.init($routeParams.alignmentName, 
 					"hcvAlignmentRenderer", "sequence.source.name = 'ncbi-curated' and referenceMember = false",
 					[
@@ -38,7 +40,8 @@ hcvApp.controller('hcvAlignmentCtrl',
 			$scope.initDevelopmentStatusFixedValueSet();
 			
 			$scope.pagingContext.setDefaultSortOrder([
-			    { property: "sequence.sequenceID", displayName: "NCBI Nucleotide ID", order: "+" }
+  	            { property:"sequence.gb_create_date", displayName: "NCBI Entry Creation Date", order: "-" }
+			    // { property: "sequence.sequenceID", displayName: "NCBI Nucleotide ID", order: "+" }
 			]);
 
 			
@@ -75,13 +78,11 @@ hcvApp.controller('hcvAlignmentCtrl',
   			]);
   			                          			
 
-			$scope.rasNoteWhereClause = "variation.is_resistance_associated_variant = 'true' and alignment.name = '"+$scope.almtName+"'";
+			$scope.rasNoteWhereClause = "variation.phdr_ras != null and alignment.name = '"+$scope.almtName+"'";
 			$scope.rasNoteFields = [
-                "variation.featureLoc.feature.name",
-                "variation.featureLoc.referenceSequence.name",
-                "variation.name",
-                "variation.rav_substitutions",
-                "variation.rav_first_codon",
+                "variation.phdr_ras.id",
+                "variation.phdr_ras.gene",
+                "variation.phdr_ras.structure",
                 "ncbi_curated_total_present",
                 "ncbi_curated_total_absent",
                 "ncbi_curated_frequency"
@@ -131,20 +132,19 @@ hcvApp.controller('hcvAlignmentCtrl',
 			$scope.rasPagingContext = pagingContext.createPagingContext($scope.updateRasCount, $scope.updateRasPage);
 
 			$scope.rasPagingContext.setDefaultSortOrder([
-			    { property: "variation.featureLoc.feature.name", displayName: "Gene", order: "+" }
+ 	            { property:"variation.phdr_ras.gene", displayName: "Virus protein", order: "+"  },
+	            { property:"variation.phdr_ras.sort_key", displayName: "Polymorphic locations", order: "+" }
 			]);
 
 			$scope.rasPagingContext.setSortableProperties([
-	            { property:"variation.featureLoc.feature.name", displayName: "Gene" },
-	            { property:"variation.rav_first_codon", displayName: "Start Location" },
-	            { property:"variation.rav_substitutions", displayName: "Substitutions" },
+   	            { property:"variation.phdr_ras.gene", displayName: "Virus protein" },
+	            { property:"variation.phdr_ras.sort_key", displayName: "Polymorphic locations" },
 	            { property:"ncbi_curated_frequency", displayName: "Frequency" }
             ]);
 
 			
 			$scope.rasPagingContext.setFilterProperties([
-	     		{ property: "variation.featureLoc.feature.name", displayName: "Gene", filterHints: {type: "String"} },
-	    		{ property: "variation.rav_substitutions", displayName: "Substitutions", filterHints: {type: "String"} },
+	     		{ property: "variation.phdr_ras.gene", displayName: "Virus protein", filterHints: {type: "String"} },
 	    		{ property: "ncbi_curated_frequency", displayName: "Frequency (percentage)", filterHints: {type: "Double"} }
 			]);
 			                          			
