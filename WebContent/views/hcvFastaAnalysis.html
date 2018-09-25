@@ -155,83 +155,83 @@
 					</table>
 					</p>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div ng-show="genomeVisualisation" class="container-fluid">
-		<div class="row">
-			<div class="genomeVisualisationControls col-md-10">
-				<p>
-				<div>
-					Visualise genome region:
-					<div class="btn-group" dropdown is-open="status.fButtonOpen">
-						<button ng-disabled="visualisationUpdating" id="f-button" type="button" class="btn btn-sm btn-default"
-							dropdown-toggle>
-							{{fileItemUnderAnalysis.sequenceReport.phdrReport.feature.displayName}}
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu"
-							aria-labelledby="f-button">
-							<li
-								ng-repeat="feature in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.features"
-								ng-click="setFeature(fileItemUnderAnalysis.sequenceReport, feature)"
-								role="menuitem"><a>{{feature.displayName}}</a></li>
-						</ul>
+				<div ng-show="genomeVisualisation" class="container-fluid">
+					<div class="row">
+						<div class="genomeVisualisationControls col-md-10">
+							<p>
+							<div>
+								Visualise genome region:
+								<div class="btn-group" dropdown is-open="status.fButtonOpen">
+									<button ng-disabled="visualisationUpdating" id="f-button" type="button" class="btn btn-sm btn-default"
+										dropdown-toggle>
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.feature.displayName}}
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu"
+										aria-labelledby="f-button">
+										<li
+											ng-repeat="feature in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.features"
+											ng-click="setFeature(fileItemUnderAnalysis.sequenceReport, feature)"
+											role="menuitem"><a>{{feature.displayName}}</a></li>
+									</ul>
+								</div>
+							</div>
+							</p>
+							<p>
+							<div>
+								of submitted sequence:
+								<div class="btn-group" dropdown is-open="status.qseqButtonOpen">
+									<button ng-disabled="visualisationUpdating" id="qseq-button" type="button" class="btn btn-sm btn-default"
+										dropdown-toggle>
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}}
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu"
+										aria-labelledby="qseq-button">
+										<li
+											ng-repeat="report in fileItemUnderAnalysis.response.phdrWebReport.results"
+											ng-click="setSequenceReport(fileItemUnderAnalysis, report)"
+											role="menuitem"><a>{{report.phdrReport.sequenceResult.id}}</a></li>
+									</ul>
+								</div>
+								(displayed in green)
+							</div>
+							</p>
+							<p>
+							<div>
+								highlighting any differences with:
+								<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
+									<button ng-disabled="visualisationUpdating" id="rseq-button" type="button" class="btn btn-sm btn-default"
+										dropdown-toggle>
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}}
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu"
+										aria-labelledby="rseq-button">
+										<li
+											ng-repeat="comparisonRef in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs"
+											ng-click="setComparisonRef(fileItemUnderAnalysis.sequenceReport, comparisonRef)"
+											role="menuitem"><a>{{comparisonRef.refDisplayName}}</a></li>
+									</ul>
+								</div>
+								(displayed in blue)
+							</div>
+			
+							</p>
+						</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
+					    --><div class="col-md-2 updateVisualisationButton text-right">
+								<button ng-disabled="visualisationUpdating" type="button" class="btn btn-primary"
+									ng-click="updateSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
+							</div>
+					</div>
+					<div class="row svgContainer" us-spinner="{radius:23, width:7, length: 11}" spinner-on="visualisationUpdating" style="min-height: 100px; position: relative">
+						<div ng-if="visualisationSvgUrl == null && !visualisationUpdating">
+							<p class="text-center">No data</p>
+						</div>
+						<div id="visualisationSvg" style="overflow: auto;" data-onload="svgUpdated()" ng-include="visualisationSvgUrl">
+						</div>
 					</div>
 				</div>
-				</p>
-				<p>
-				<div>
-					of submitted sequence:
-					<div class="btn-group" dropdown is-open="status.qseqButtonOpen">
-						<button ng-disabled="visualisationUpdating" id="qseq-button" type="button" class="btn btn-sm btn-default"
-							dropdown-toggle>
-							{{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}}
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu"
-							aria-labelledby="qseq-button">
-							<li
-								ng-repeat="report in fileItemUnderAnalysis.response.phdrWebReport.results"
-								ng-click="setSequenceReport(fileItemUnderAnalysis, report)"
-								role="menuitem"><a>{{report.phdrReport.sequenceResult.id}}</a></li>
-						</ul>
-					</div>
-					(displayed in green)
-				</div>
-				</p>
-				<p>
-				<div>
-					highlighting any differences with:
-					<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
-						<button ng-disabled="visualisationUpdating" id="rseq-button" type="button" class="btn btn-sm btn-default"
-							dropdown-toggle>
-							{{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}}
-							<span class="caret"></span>
-						</button>
-						<ul class="dropdown-menu" role="menu"
-							aria-labelledby="rseq-button">
-							<li
-								ng-repeat="comparisonRef in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs"
-								ng-click="setComparisonRef(fileItemUnderAnalysis.sequenceReport, comparisonRef)"
-								role="menuitem"><a>{{comparisonRef.refDisplayName}}</a></li>
-						</ul>
-					</div>
-					(displayed in blue)
-				</div>
-
-				</p>
-			</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
-		    --><div class="col-md-2 updateVisualisationButton text-right">
-					<button ng-disabled="visualisationUpdating" type="button" class="btn btn-primary"
-						ng-click="updateSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
-				</div>
-		</div>
-		<div class="row svgContainer" us-spinner="{radius:23, width:7, length: 11}" spinner-on="visualisationUpdating" style="min-height: 100px; position: relative">
-			<div ng-if="visualisationSvgUrl == null && !visualisationUpdating">
-				<p class="text-center">No data</p>
-			</div>
-			<div id="visualisationSvg" style="overflow: auto;" data-onload="svgUpdated()" ng-include="visualisationSvgUrl">
 			</div>
 		</div>
 	</div>
