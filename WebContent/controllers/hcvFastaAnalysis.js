@@ -213,12 +213,49 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 						visualisationSvgElem.scrollLeft = 0;
 					}
 					$scope.lastFeatureName = featureName;
-				}
+				} 
 				$scope.visualisationUpdating = false;
 				
 				
 				
 			}
+			$scope.updateSvgFromUrl = function(cacheKey, svgUrl) {
+				$scope.visualisationSvgUrl = svgUrl;
+				
+				// BEGIN experimental	
+				$http.get(svgUrl)
+			    .then(function(response) {
+			        //console.log("get response.data", response.data);
+					var visualisationSvgElem = document.getElementById('visualisationSvg');
+					/*
+					while(visualisationSvgElem.firstChild) {
+						visualisationSvgElem.removeChild(visualisationSvgElem.firstChild);
+					}
+					var parser = new DOMParser()
+					var svgDoc = parser.parseFromString(response.data, "text/xml");
+					var adoptedSvgElem = document.adoptNode(svgDoc.firstChild);
+					visualisationSvgElem.appendChild(adoptedSvgElem);
+					*/
+					console.log("suspending");
+					$rootScope.$suspend();
+					console.log("setting inner data");
+					visualisationSvgElem.innerHTML = response.data;
+					console.log("resuming");
+					$rootScope.$resume();
+					console.log("resumed");
+					$scope.svgUrlCache[cacheKey] = svgUrl;
+					$scope.svgLoaded();
+			    });
+
+				// END experimental	
+
+				// original version
+				/*$scope.svgUrlCache[cacheKey] = svgUrl;
+				  $scope.svgLoaded();*/
+				
+
+			}
+			
 			$scope.updateSvg = function() {
 				
 				$scope.visualisationUpdating = true;
@@ -240,11 +277,12 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				
 				var featureName = sequenceReport.phdrReport.feature.name;
 
-
 				var cachedSvgUrl = $scope.svgUrlCache[cacheKey];
 				
 				if(cachedSvgUrl != null) {
-					$timeout(function() {$scope.visualisationSvgUrl = cachedSvgUrl;});
+					$timeout(function() {
+						$scope.updateSvgFromUrl(cacheKey, cachedSvgUrl);
+					});
 				} else {
 					console.info('visualisationHints', visualisationHints);
 					glueWS.runGlueCommand("module/phdrVisualisationUtility", 
@@ -256,57 +294,38 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 							    "queryToTargetRefSegments": visualisationHints.queryToTargetRefSegments,
 							    "queryDetails": []
 							  } }
-					).success(function(data, status, headers, config) {
-						console.info('visualise-feature result', data);
-						var featureVisualisation = data;
-						var fileName = "visualisation.svg";
-						glueWS.runGlueCommand("module/phdrFeatureToSvgTransformer", {
-							"transform-to-web-file": {
-								"webFileType": "WEB_PAGE",
-								"commandDocument":{
-									transformerInput: {
-										featureVisualisation: featureVisualisation.featureVisualisation,
-										ntWidth: 16
-									}
-								},
-								"outputFile": fileName
-							}
-						})
-						.success(function(data, status, headers, config) {
-							console.info('transform-to-web-file result', data);
-							var transformerResult = data.freemarkerDocTransformerWebResult;
-							$scope.visualisationSvgUrl = "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName;
-							// BEGIN experimental	
-							$scope.$broadcast('suspend');
-							$http.get($scope.visualisationSvgUrl)
-						    .then(function(response) {
-						        //console.log("get response.data", response.data);
-								var visualisationSvgElem = document.getElementById('visualisationSvg');
-								while(visualisationSvgElem.firstChild) {
-									visualisationSvgElem.removeChild(visualisationSvgElem.firstChild);
+					).then(function onSuccess(response) {
+						    // Handle success
+						    var data = response.data;
+							console.info('visualise-feature result', data);
+							var featureVisualisation = data;
+							var fileName = "visualisation.svg";
+							glueWS.runGlueCommand("module/phdrFeatureToSvgTransformer", {
+								"transform-to-web-file": {
+									"webFileType": "WEB_PAGE",
+									"commandDocument":{
+										transformerInput: {
+											featureVisualisation: featureVisualisation.featureVisualisation,
+											ntWidth: 16
+										}
+									},
+									"outputFile": fileName
 								}
-								var parser = new DOMParser()
-								var svgDoc = parser.parseFromString(response.data, "text/xml");
-								var adoptedSvgElem = document.adoptNode(svgDoc.firstChild);
-								visualisationSvgElem.appendChild(adoptedSvgElem);
+							}).then(function onSuccess(response) {
+							    var data = response.data;
+								console.info('transform-to-web-file result', data);
+								var transformerResult = data.freemarkerDocTransformerWebResult;
+								$scope.updateSvgFromUrl(cacheKey, "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName);
+							}, function onError(response) {
 								$scope.visualisationUpdating = false;
-								$scope.$broadcast('resume');
-						    });
-
-							// END experimental	
-							
-							//$scope.svgUrlCache[cacheKey] = $scope.visualisationSvgUrl;
-						})
-						.error(function(data, status, headers, config) {
+								var dlgFunction = glueWS.raiseErrorDialog(dialogs, "rendering genome feature to SVG");
+								dlgFunction(response.data, response.status, response.headers, response.config);
+							});
+					}, function onError(response) {
+						    // Handle error
 							$scope.visualisationUpdating = false;
-							var dlgFunction = glueWS.raiseErrorDialog(dialogs, "rendering genome feature to SVG");
-							dlgFunction(data, status, headers, config);
-						});
-					})
-					.error(function(data, status, headers, config) {
-						$scope.visualisationUpdating = false;
-						var dlgFunction = glueWS.raiseErrorDialog(dialogs, "visualising genome feature");
-						dlgFunction(data, status, headers, config);
+							var dlgFunction = glueWS.raiseErrorDialog(dialogs, "visualising genome feature");
+							dlgFunction(response.data, response.status, response.headers, response.config);
 					});
 				}
 			}
