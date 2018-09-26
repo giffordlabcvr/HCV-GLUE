@@ -90,6 +90,7 @@ hcvApp.controller('hcvRapCtrl',
 			]);
 
 			$scope.freqNotePagingContext.setSortableProperties([
+	            { property: "alignment.name", displayName: "Genotype / subtype" },
 	            { property:"ncbi_curated_frequency", displayName: "Frequency" }
             ]);
 
