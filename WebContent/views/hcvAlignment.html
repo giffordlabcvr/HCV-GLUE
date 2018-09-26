@@ -116,7 +116,7 @@
 	</div>
 
 	<div ng-if="displaySection == 'polymorphismFrequencies'">
-		<p><small>Frequencies of resistance associated polymorphisms within {{renderResult.alignment.renderedName}}</small></p>
+		<p><small>Frequencies of resistance associated polymorphisms within {{renderResult.alignment.renderedName}} sequences</small></p>
 		<span ng-show="rasNoteList.length == 0">No significant data</span>
 		<div ng-show="rasNoteList.length > 0">
 			<paging-buttons paging-context="rasPagingContext"></paging-buttons>
@@ -125,19 +125,27 @@
 				<thead>
 					<th>Virus protein</th>
 					<th>Polymorphism(s)</th>
-					<th>Frequency</th>
+					<th>Polymorphism frequency in {{renderResult.alignment.renderedName.replace('HCV ', '')}}</th>
+					<th>Resisted drug(s)</th>
+					<th>Resisted Genotype(s) / Subtype(s)</th>
 				</thead>
 				<colgroup>
+			       <col span="1" style="width: 10%;">
 			       <col span="1" style="width: 20%;">
-			       <col span="1" style="width: 50%;">
+			       <col span="1" style="width: 20%;">
+			       <col span="1" style="width: 20%;">
 			       <col span="1" style="width: 30%;">
 			    </colgroup>
 				<tbody>
 					<tr ng-repeat="rasNote in rasNoteList track by $index">
-						<td>{{rasNote['variation.phdr_ras.gene']}}</td>
-						<td><a href="#project/rap/{{rasNote['variation.phdr_ras.id']}}" target="_blank">
-							{{rasNote['variation.phdr_ras.structure']}}</a></td>
-						<td>{{rasNote['ncbi_curated_total_present']}} of {{rasNote['ncbi_curated_total_present'] + rasNote['ncbi_curated_total_absent']}} ({{toFixed(rasNote['ncbi_curated_frequency'], 2)}}%)</td>
+						<td>{{rasNote.phdrRasFrequency.gene}}</td>
+						<td><a href="#project/rap/{{rasNote.phdrRasFrequency.rasId}}" target="_blank">
+							{{rasNote.phdrRasFrequency.structure}}</a></td>
+						<td>{{rasNote.phdrRasFrequency.ncbiCuratedTotalPresent}} of {{rasNote.phdrRasFrequency.ncbiCuratedTotalPresent + rasNote.phdrRasFrequency.ncbiCuratedTotalAbsent}} ({{toFixed(rasNote.phdrRasFrequency.ncbiCuratedFrequency, 2)}}%)</td>
+						<td><span ng-repeat="drug in rasNote.phdrRasFrequency.drug track by $index"><span ng-if="$index > 0">, </span>
+						<a target="_blank" href="#project/drug/{{drug}}">{{drug}}</a></span></td>
+						<td><span ng-repeat="clade in rasNote.phdrRasFrequency.resistedClade track by $index"><span ng-if="$index > 0">, </span>
+						<a target="_blank" href="#project/alignment/{{clade.alignmentName}}">{{clade.alignmentDisplayName.replace("HCV ", "")}}</a></span></td>
 					</tr>
 				</tbody>
 			</table>

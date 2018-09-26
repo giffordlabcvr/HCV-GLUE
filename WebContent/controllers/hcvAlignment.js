@@ -79,32 +79,23 @@ hcvApp.controller('hcvAlignmentCtrl',
   			                          			
 
 			$scope.rasNoteWhereClause = "variation.phdr_ras != null and alignment.name = '"+$scope.almtName+"'";
-			$scope.rasNoteFields = [
-                "variation.phdr_ras.id",
-                "variation.phdr_ras.gene",
-                "variation.phdr_ras.structure",
-                "ncbi_curated_total_present",
-                "ncbi_curated_total_absent",
-                "ncbi_curated_frequency"
-            ];
 
 			$scope.updateRasPage = function(pContext) {
 				console.log("updateRasPage", pContext);
 				
 				var cmdParams = {
+						"tableName": "var_almt_note",
 			            "whereClause": $scope.rasNoteWhereClause,
-			            "fieldName": $scope.rasNoteFields
+			            "allObjects": false,
+			            "rendererModuleName": "phdrRasFrequencyRenderer"
 				};
 				pContext.extendListCmdParams(cmdParams);
 				glueWS.runGlueCommand("", {
-				    "list":{
-				        "var-almt-note": cmdParams
-				    }
+				    "multi-render": cmdParams
 				})
 			    .success(function(data, status, headers, config) {
-					  console.info('listing RAS frequency notes', data);
-					  $scope.rasNoteList = tableResultAsObjectList(data);
-					  console.info('listing RAS frequency notes result as object list', $scope.rasNoteList);
+			    	$scope.rasNoteList = data.multiRenderResult.resultDocument;
+					console.info('listing RAS frequency notes result as object list', $scope.rasNoteList);
 			    })
 			    .error(glueWS.raiseErrorDialog(dialogs, "listing RAS frequency notes"));
 			}
@@ -145,6 +136,8 @@ hcvApp.controller('hcvAlignmentCtrl',
 			
 			$scope.rasPagingContext.setFilterProperties([
 	     		{ property: "variation.phdr_ras.gene", displayName: "Virus protein", filterHints: {type: "String"} },
+	            { property: "variation.phdr_ras.phdr_alignment_ras.alignment.displayName", altProperties:["variation.phdr_ras.phdr_alignment_ras.alignment.name"], displayName: "Resisted genotype / subtype", filterHints: {type: "String"} },
+	            { property: "variation.phdr_ras.phdr_alignment_ras.phdr_alignment_ras_drug.phdr_drug.id", displayName: "Drug", altProperties:["variation.phdr_ras.phdr_alignment_ras.phdr_alignment_ras_drug.phdr_drug.abbreviation", "variation.phdr_ras.phdr_alignment_ras.phdr_alignment_ras_drug.phdr_drug.research_code"], filterHints: {type: "String"} },
 	    		{ property: "ncbi_curated_frequency", displayName: "Frequency (percentage)", filterHints: {type: "Double"} }
 			]);
 			                          			
