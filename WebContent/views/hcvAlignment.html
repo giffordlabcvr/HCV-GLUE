@@ -24,8 +24,8 @@
 	
 	<div ng-if="displaySection == 'memberSequences'">
 		<p>
-			<small>The following sequences were assigned to {{renderResult.alignment.renderedName}}{{renderResult.alignment.child == null ? "" : " (or one of its descendent clades)"}} by the HCV-GLUE genotyping algorithm. 
-					Sequences identified as recombinants, lab constructs or having a non-human host species are excluded.</small>
+			Sequences assigned to {{renderResult.alignment.renderedName}} by HCV-GLUE genotyping. 
+			Recombinants, lab constructs and sequences from a non-human host are excluded.
 		</p>
 		<div us-spinner="{radius:23, width:7, length: 11}" spinner-on="loadingSpinner" style="min-height: 100px; position: relative">
 			<paging-buttons ng-show="!loadingSpinner" paging-context="pagingContext">
@@ -101,7 +101,7 @@
 		</div>
 	</div>
 	<div ng-if="displaySection == 'childClades'">
-		<p><small>The following clades group within {{renderResult.alignment.renderedName}}:</small></p>
+		<p>Clade which group within {{renderResult.alignment.renderedName}}.</small></p>
 		<span ng-show="!renderResult.alignment.child">None</span>
 		<div ng-repeat="child in renderResult.alignment.child track by $index">
 			<a href="#project/alignment/{{child.name}}">
@@ -112,25 +112,7 @@
 	
 
 	<div ng-if="displaySection == 'resistanceAssociatedPolymorphisms'">
-	
-		<div ng-show="phdrAlignmentRasDrugs.length > 0">
-			<small>
-				Polymorphisms are assigned to one of three categories according to the
-				strength of evidence for drug resistance.
-				<ul>
-					<li>Category I polymorphisms have the strongest evidence: either
-						(a) <em>in vitro</em> resistance level &ge; 5 and found at baseline
-						or treatment-emergent <em>in vivo</em>, or (b) both found at
-						baseline and treatment-emergent.
-					</li>
-					<li>Category II: <em>in vitro</em> level &ge; 50 or found at
-						baseline or treatment-emergent.
-					</li>
-					<li>Category III: <em>in vitro</em> level &ge; 5
-					</li>
-				</ul>
-			</small>
-			</div>
+		<p>Evidence for resistance associated polymorphisms within {{renderResult.alignment.renderedName}}.</p>
 			<paging-buttons paging-context="rapPagingContext"></paging-buttons>
 			<div ng-show="phdrAlignmentRasDrugs.length == 0">
 			No resistant polymorphisms collated
@@ -145,7 +127,7 @@
 							<th style="width: 10%;">Gene</th>		
 							<th style="width: 15%;">Polymorphism(s)</th>		
 							<th style="width: 10%;">Drug</th>		
-							<th style="width: 12.5%;">Resistance category</th>		
+							<th style="width: 12.5%;">Resistance category*</th>		
 							<th style="width: 12.5%;">EC<sub>50</sub> fold change <em>in vitro</em></th>		
 							<th style="width: 12.5%;">Found at baseline <em>in vivo</em>?</th>
 							<th style="width: 12.5%;">Treatment-emergent <em>in vivo</em>?</th>
@@ -168,6 +150,22 @@
 					</tbody>
 				</table>
 				<paging-buttons paging-context="rapPagingContext"></paging-buttons>
+				<p><small>
+				* Polymorphisms are assigned to one of three categories according to the
+				strength of evidence for drug resistance.
+				<ul>
+					<li>Category I polymorphisms have the strongest evidence: either
+						(a) <em>in vitro</em> resistance level &ge; 5 and found at baseline
+						or treatment-emergent <em>in vivo</em>, or (b) both found at
+						baseline and treatment-emergent.
+					</li>
+					<li>Category II: <em>in vitro</em> level &ge; 50 or found at
+						baseline or treatment-emergent.
+					</li>
+					<li>Category III: <em>in vitro</em> level &ge; 5
+					</li>
+				</ul>
+				</small></p>
 			</div>
 	
 	
@@ -175,8 +173,8 @@
 	</div>
 
 	<div ng-if="displaySection == 'polymorphismFrequencies'">
+		<p>Frequencies of resistance associated polymorphisms within {{renderResult.alignment.renderedName}} sequences</p>
 		<paging-buttons paging-context="freqNotePagingContext"></paging-buttons>
-		<p><small>Frequencies of resistance associated polymorphisms within {{renderResult.alignment.renderedName}} sequences</small></p>
 		<span ng-show="rasNoteList.length == 0">No significant data</span>
 		<div ng-show="rasNoteList.length > 0">
 			Polymorphisms {{freqNotePagingContext.firstItemIndex}} to {{freqNotePagingContext.lastItemIndex}} of {{freqNotePagingContext.totalItems}}
