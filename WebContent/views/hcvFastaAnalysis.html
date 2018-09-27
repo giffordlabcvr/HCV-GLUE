@@ -82,14 +82,27 @@
 				<hr />
 				<h4>Analysis of sequence file
 					'{{fileItemUnderAnalysis.file.name}}'</h4>
-				<div class="btn-group">
-					<label
-						class="btn btn-primary ng-pristine ng-untouched ng-valid active"
-						btn-checkbox ng-model="summary">Summary</label> <label
-						class="btn btn-primary ng-pristine ng-untouched ng-valid active"
-						btn-checkbox ng-model="genomeVisualisation">Genome
-						visualisation</label>
-				</div>
+
+					<p>
+						Please note that the HCV-GLUE drug resistance interpretation system has not yet been clinically validated. 
+						<br/>
+					   <b>No clinical decisions should be made based on the outputs of HCV-GLUE drug resistance analysis.</b>
+						<br/>
+					   Please subscribe to the <a target="_blank" 
+					   href="https://www.researchgate.net/project/HCV-GLUE-an-online-database-and-sequence-analysis-tool-supporting-treatment-and-eradication-of-hepatitis-C-virus">
+					   HCV-GLUE ResearchGate project</a> to be notified of updates.
+					</p>
+
+					<p>
+						<div class="btn-group">
+							<label
+								class="btn btn-primary ng-pristine ng-untouched ng-valid active"
+								btn-checkbox ng-model="summary">Summary</label> <label
+								class="btn btn-primary ng-pristine ng-untouched ng-valid active"
+								btn-checkbox ng-model="genomeVisualisation">Genome
+								visualisation</label>
+						</div>
+					</p>
 				<div ng-show="summary">
 					<p>
 					<table class="table table-striped table-bordered">
