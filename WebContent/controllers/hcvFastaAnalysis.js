@@ -207,7 +207,6 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			$scope.updateSvgFromUrl = function(cacheKey, svgUrl) {
 				$scope.visualisationSvgUrl = svgUrl;
 				$scope.svgUrlCache[cacheKey] = svgUrl;
-				$scope.svgUpdated();
 			}
 			
 			$scope.saveFeatureScrollLeft = function() {
