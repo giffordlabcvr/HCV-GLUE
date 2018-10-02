@@ -86,7 +86,8 @@ hcvApp.controller('hcvRapCtrl',
 			$scope.freqNotePagingContext = pagingContext.createPagingContext($scope.updateFreqNoteCount, $scope.updateFreqNotePage);
 
 			$scope.freqNotePagingContext.setDefaultSortOrder([
-  	            { property:"ncbi_curated_frequency", displayName: "Frequency", order: "-"   }
+  	            { property:"ncbi_curated_frequency", displayName: "Frequency", order: "-"   },
+  	            { property: "alignment.name", displayName: "Genotype / subtype", order: "+"   }
 			]);
 
 			$scope.freqNotePagingContext.setSortableProperties([
