@@ -11,7 +11,6 @@
   create module --fileName modules/hcvMaxLikelihoodPlacer.xml maxLikelihoodPlacer
   create module --fileName modules/hcvMaxLikelihoodGenotyper.xml maxLikelihoodGenotyper
 
-  create module --fileName modules/hcvWebAnalysisTool.xml webAnalysisTool
   create module --fileName modules/hcvEpitopeRenderer.xml --loadResources hcvEpitopeRenderer
   create module --fileName modules/hcvUncommonAaRenderer.xml --loadResources 
   create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources
