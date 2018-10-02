@@ -7,7 +7,7 @@ hcvApp.controller('hcvRapsCtrl',
 			$scope.raps = [];
 
 			$scope.pagingContext = null;
-			$scope.whereClause = "phdr_alignment_ras.id != null"
+			$scope.whereClause = "(phdr_alignment_ras.id != null)"
 
 			
 			$scope.updateCount = function(pContext) {

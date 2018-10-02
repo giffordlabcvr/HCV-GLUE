@@ -41,7 +41,7 @@ hcvApp.controller('hcvRapCtrl',
 			})
 			.error(glueWS.raiseErrorDialog(dialogs, "rendering resistance associated polymorphism"));
 
-			$scope.freqNoteWhereClause = "variation.phdr_ras.id = '"+$scope.rapId+"'";
+			$scope.freqNoteWhereClause = "(variation.phdr_ras.id = '"+$scope.rapId+"')";
 
 			$scope.updateFreqNotePage = function(pContext) {
 				console.log("updateFreqNotePage", pContext);

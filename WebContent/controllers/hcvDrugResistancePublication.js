@@ -9,7 +9,7 @@ hcvApp.controller('hcvDrugResistancePublicationCtrl',
 			$scope.drPubId = $routeParams.id;
 
 			$scope.pagingContext = null;
-			$scope.whereClause = "drug_resistance_publication.id = '"+$scope.drPubId+"'";
+			$scope.whereClause = "(drug_resistance_publication.id = '"+$scope.drPubId+"')";
 			$scope.fieldNames = [
 					                "id",
 					                "replicon_clade.name",

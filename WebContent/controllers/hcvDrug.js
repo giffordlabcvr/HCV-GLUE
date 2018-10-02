@@ -9,7 +9,7 @@ hcvApp.controller('hcvDrugCtrl',
 			$scope.drugId = $routeParams.id;
 			
 			$scope.pagingContext = null;
-			$scope.whereClause = "phdr_drug.id = '"+$scope.drugId+"'";
+			$scope.whereClause = "(phdr_drug.id = '"+$scope.drugId+"')";
 
 			glueWS.runGlueCommand("custom-table-row/phdr_drug/"+$scope.drugId, {
 				"render-object": {

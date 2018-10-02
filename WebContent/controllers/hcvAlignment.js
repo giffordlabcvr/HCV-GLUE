@@ -77,7 +77,7 @@ hcvApp.controller('hcvAlignmentCtrl',
   			]);
   			                          			
 
-			$scope.freqNoteWhereClause = "variation.phdr_ras.phdr_alignment_ras.id != null and alignment.name = '"+$scope.almtName+"'";
+			$scope.freqNoteWhereClause = "(variation.phdr_ras.phdr_alignment_ras.id != null and alignment.name = '"+$scope.almtName+"')";
 
 			$scope.updateFreqNotePage = function(pContext) {
 				console.log("updateFreqNotePage", pContext);
@@ -145,7 +145,7 @@ hcvApp.controller('hcvAlignmentCtrl',
 			
 			$scope.freqNotePagingContext.countChanged();
 
-			$scope.rapWhereClause = "phdr_alignment_ras.alignment.name = '"+$scope.almtName+"' or phdr_alignment_ras.alignment.parent.name = '"+$scope.almtName+"' or phdr_alignment_ras.alignment.parent.parent.name = '"+$scope.almtName+"'";
+			$scope.rapWhereClause = "(phdr_alignment_ras.alignment.name = '"+$scope.almtName+"' or phdr_alignment_ras.alignment.parent.name = '"+$scope.almtName+"' or phdr_alignment_ras.alignment.parent.parent.name = '"+$scope.almtName+"')";
 
 			$scope.updateRapPage = function(pContext) {
 				console.log("updateRapPage", pContext);
