@@ -113,27 +113,31 @@ This step uses BLAST+ to align the sequence with a reference, and so if the step
 Enter the GLUE command indicated below and check the output. Use 'Q' to exit the interactive table.
 <div hljs language="bash" no-escape>
 <pre>
-GLUE> module phdrFastaSequenceReporter amino-acid -i resistanceGeno1.fasta -r REF_MASTER_NC_004102 -f NS5A -t REF_1a_M62321
-+============+=========+=========+===========+
-| codonLabel | queryNt | acRefNt | aminoAcid |
-+============+=========+=========+===========+
-| 1          | 6164    | 6258    | S         |
-| 2          | 6167    | 6261    | G         |
-| 3          | 6170    | 6264    | S         |
-| 4          | 6173    | 6267    | W         |
-| 5          | 6176    | 6270    | L         |
-| 6          | 6179    | 6273    | R         |
-| 7          | 6182    | 6276    | D         |
-| 8          | 6185    | 6279    | I         |
-| 9          | 6188    | 6282    | W         |
-| 10         | 6191    | 6285    | D         |
-| 11         | 6194    | 6288    | W         |
-| 12         | 6197    | 6291    | I         |
-| 13         | 6200    | 6294    | C         |
-| 14         | 6203    | 6297    | E         |
-| 15         | 6206    | 6300    | V         |
-+============+=========+=========+===========+
-Rows 1 to 15 of 448 [F:first, L:last, P:prev, N:next, Q:quit]</pre>
+GLUE> module phdrFastaSequenceReporter amino-acid -i resistanceGeno1.fasta -r REF_MASTER_NC_004102 -f NS5A -t REF_1a_M62321 -a AL_UNCONSTRAINED
++==========+=========+==========+==========+===========+===========+===========+
+|codonLabel| queryNt | relRefNt | codonNts | aminoAcid |definiteAas|possibleAas|
++==========+=========+==========+==========+===========+===========+===========+
+|1         | 6164    | 6258     | TCC      | S         |S          |S          |
+|2         | 6167    | 6261     | GGC      | G         |G          |G          |
+|3         | 6170    | 6264     | TCC      | S         |S          |S          |
+|4         | 6173    | 6267     | TGG      | W         |W          |W          |
+|5         | 6176    | 6270     | CTA      | L         |L          |L          |
+|6         | 6179    | 6273     | AGG      | R         |R          |R          |
+|7         | 6182    | 6276     | GAC      | D         |D          |D          |
+|8         | 6185    | 6279     | ATC      | I         |I          |I          |
+|9         | 6188    | 6282     | TGG      | W         |W          |W          |
+|10        | 6191    | 6285     | GAC      | D         |D          |D          |
+|11        | 6194    | 6288     | TGG      | W         |W          |W          |
+|12        | 6197    | 6291     | ATA      | I         |I          |I          |
+|13        | 6200    | 6294     | TGC      | C         |C          |C          |
+|14        | 6203    | 6297     | GAG      | E         |E          |E          |
+|15        | 6206    | 6300     | GTG      | V         |V          |V          |
+|16        | 6209    | 6303     | TTG      | L         |L          |L          |
+|17        | 6212    | 6306     | AGC      | S         |S          |S          |
+|18        | 6215    | 6309     | GAC      | D         |D          |D          |
+|19        | 6218    | 6312     | TTT      | F         |F          |F          |
++==========+=========+==========+==========+===========+===========+===========+
+Rows 1 to 19 of 448 [F:first, L:last, P:prev, N:next, Q:quit]</pre>
 </div>
 </p>
 <h3 id="ngsAnalysis">Example use: Basic analysis of deep sequencing data</h3>
@@ -154,27 +158,31 @@ different amino acids residues at different locations within this gene.
 Enter the GLUE command indicated below and check the output. Use 'Q' to exit the interactive table.
 <div hljs language="bash" no-escape>
 <pre>
-GLUE> module phdrSamReporter amino-acid -i ngsData.bam -r REF_MASTER_NC_004102 -f NS5A -p
-+============+==========+===============+===========+=============+============+
-| codonLabel | samRefNt |ancConstrRefNt | aminoAcid | readsWithAA | pctAaReads |
-+============+==========+===============+===========+=============+============+
-| 1          | 6147     |6258           | Y         | 2           | 0.47       |
-| 1          | 6147     |6258           | S         | 418         | 99.05      |
-| 1          | 6147     |6258           | P         | 2           | 0.47       |
-| 2          | 6150     |6261           | S         | 2           | 0.48       |
-| 2          | 6150     |6261           | R         | 2           | 0.48       |
-| 2          | 6150     |6261           | G         | 417         | 99.05      |
-| 3          | 6153     |6264           | S         | 421         | 100.00     |
-| 4          | 6156     |6267           | *         | 1           | 0.24       |
-| 4          | 6156     |6267           | W         | 418         | 99.76      |
-| 5          | 6159     |6270           | L         | 354         | 100.00     |
-| 6          | 6162     |6273           | R         | 352         | 99.44      |
-| 6          | 6162     |6273           | K         | 1           | 0.28       |
-| 6          | 6162     |6273           | G         | 1           | 0.28       |
-| 7          | 6165     |6276           | D         | 354         | 100.00     |
-| 8          | 6168     |6279           | I         | 276         | 100.00     |
-+============+==========+===============+===========+=============+============+
-Rows 1 to 15 of 764 [F:first, L:last, P:prev, N:next, Q:quit]</pre></div>
+GLUE> module phdrSamReporter amino-acid -i ngsData.bam -r REF_MASTER_NC_004102 -f NS5A -p -a AL_UNCONSTRAINED
++============+==========+==========+===========+=============+============+
+| codonLabel | samRefNt | relRefNt | aminoAcid | readsWithAA | pctAaReads |
++============+==========+==========+===========+=============+============+
+| 1          | 6147     | 6258     | Y         | 1           | 0.32       |
+| 1          | 6147     | 6258     | S         | 314         | 99.37      |
+| 1          | 6147     | 6258     | P         | 1           | 0.32       |
+| 2          | 6150     | 6261     | S         | 1           | 0.32       |
+| 2          | 6150     | 6261     | R         | 1           | 0.32       |
+| 2          | 6150     | 6261     | G         | 313         | 99.37      |
+| 3          | 6153     | 6264     | S         | 315         | 100.00     |
+| 4          | 6156     | 6267     | W         | 315         | 100.00     |
+| 5          | 6159     | 6270     | L         | 314         | 100.00     |
+| 6          | 6162     | 6273     | R         | 312         | 99.36      |
+| 6          | 6162     | 6273     | K         | 1           | 0.32       |
+| 6          | 6162     | 6273     | G         | 1           | 0.32       |
+| 7          | 6165     | 6276     | D         | 314         | 100.00     |
+| 8          | 6168     | 6279     | I         | 274         | 100.00     |
+| 9          | 6171     | 6282     | W         | 274         | 100.00     |
+| 10         | 6174     | 6285     | D         | 253         | 100.00     |
+| 11         | 6177     | 6288     | *         | 1           | 0.40       |
+| 11         | 6177     | 6288     | W         | 252         | 99.60      |
+| 12         | 6180     | 6291     | I         | 197         | 100.00     |
++============+==========+==========+===========+=============+============+
+Rows 1 to 19 of 753 [F:first, L:last, P:prev, N:next, Q:quit]</pre></div>
 
 <h3 id="combinedReport">Example use: Combined genotyping and drug resistance analysis reports</h3>
 
@@ -186,11 +194,15 @@ and generate detailed reports in various formats.<p>
 <p>These commands will generate HTML files similar to those produced by the HCV-GLUE web application. 
 They can be executed from the UNIX prompt, i.e. without entering the GLUE interactive command line.</p>
 
-This first example will read in a FASTA file, e.g. <a ng-click="downloadResistanceGeno1()">resistanceGeno1.fasta</a> and produce a new HTML report <code>resistanceGeno1.html</code>. 
+This first example will read in a FASTA file, e.g. <a ng-click="downloadResistanceGeno1()">resistanceGeno1.fasta</a> and produce an HTML report file <code>resistanceGeno1.html</code>. 
+Click <a href="exampleReports/resistanceGeno1.html" target="_blank">here</a> for a preview of the report. 
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -i project hcv module phdrReportingController invoke-function reportFastaAsHtml resistanceGeno1.fasta resistanceGeno1.html</pre>
 </div>
+
 This example will read in a SAM/BAM file, e.g. <a href="exampleSequences/ngsData.bam">ngsData.bam</a> and produce a new HTML report <code>ngsData.html</code>. 
+Click <a href="exampleReports/ngsData.html" target="_blank">here</a> for a preview of the report. 
+
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -i project hcv module phdrReportingController invoke-function reportBamAsHtml ngsData.bam ngsData.html</pre>
 </div>
