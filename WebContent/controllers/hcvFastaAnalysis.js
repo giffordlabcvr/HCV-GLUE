@@ -83,6 +83,13 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    }
 		    
 		    $scope.setSequenceReport = function(item, sequenceReport) {
+		    	// e.g. null genotype
+		    	if(sequenceReport.phdrReport.sequenceResult.visualisationHints == null) {
+		    		$scope.setComparisonRef(sequenceReport, null);
+		    		$scope.setFeature(sequenceReport, null);
+		    		return;
+		    	}
+		    	
 		    	if(sequenceReport.phdrReport.comparisonRef == null) {
 		    		$scope.setComparisonRef(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs[0]);
 		    	}

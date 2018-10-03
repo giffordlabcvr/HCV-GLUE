@@ -175,9 +175,9 @@
 							<div>
 								Visualise genome region:
 								<div class="btn-group" dropdown is-open="status.fButtonOpen">
-									<button ng-disabled="visualisationUpdating" id="f-button" type="button" class="btn btn-sm btn-default"
+									<button ng-disabled="visualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null" id="f-button" type="button" class="btn btn-sm btn-default"
 										dropdown-toggle>
-										{{fileItemUnderAnalysis.sequenceReport.phdrReport.feature.displayName}}
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null ? "-" : fileItemUnderAnalysis.sequenceReport.phdrReport.feature.displayName}}
 										<span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu" role="menu"
@@ -214,9 +214,9 @@
 							<div>
 								highlighting any differences with:
 								<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
-									<button ng-disabled="visualisationUpdating" id="rseq-button" type="button" class="btn btn-sm btn-default"
+									<button ng-disabled="visualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null" id="rseq-button" type="button" class="btn btn-sm btn-default"
 										dropdown-toggle>
-										{{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}}
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null ? "-" : fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}}
 										<span class="caret"></span>
 									</button>
 									<ul class="dropdown-menu" role="menu"
@@ -233,7 +233,7 @@
 							</p>
 						</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
 					    --><div class="col-md-2 updateVisualisationButton text-right">
-								<button ng-disabled="visualisationUpdating" type="button" class="btn btn-primary"
+								<button ng-disabled="visualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null || fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null" type="button" class="btn btn-primary"
 									ng-click="updateSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
 							</div>
 					</div>
