@@ -210,7 +210,7 @@ hcvApp.controller('hcvAlignmentCtrl',
 	            { property:"phdr_drug.id", displayName: "Drug", altProperties:["phdr_drug.abbreviation", "phdr_drug.research_code"], filterHints: {type: "String"} },
   	            { property:"any_in_vitro_evidence", displayName: "In vitro evidence?", filterHints: {type: "Boolean"} }, 
   	            { property:"in_vitro_max_ec50_midpoint", displayName: "EC50 log fold change", filterHints: {type: "Double"} }, 
-  	            { property:"any_in_vivo_evidencee", displayName: "In vivo evidence?", filterHints: {type: "Boolean"} }, 
+  	            { property:"any_in_vivo_evidence", displayName: "In vivo evidence?", filterHints: {type: "Boolean"} }, 
   	            { property:"in_vivo_baseline", displayName: "Found at baseline?", filterHints: {type: "Boolean"} }, 
   	            { property:"in_vivo_treatment_emergent", displayName: "Treatment emergent?", filterHints: {type: "Boolean"} }
 			]);
