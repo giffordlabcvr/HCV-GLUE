@@ -252,6 +252,11 @@ def scmCustomKey = System.getProperty("user.name").equals('joshsinger') ? '/User
 scmVersion {
 	hooks {
         pre 'fileUpdate', [file: 'glue/hcvProjectSettings.glue', pattern: {v, c -> /set setting project-version $v/}, replacement: {v, c -> "set setting project-version $v"}]
+        pre 'fileUpdate', [file: 'WebContent/index.html', pattern: {v, c -> /hcvGlueVersion=$v/}, replacement: {v, c -> "hcvGlueVersion=$v"}]
+        pre 'fileUpdate', [file: 'WebContent/hcvAppDependencies.html', pattern: {v, c -> /hcvGlueVersion=$v/}, replacement: {v, c -> "hcvGlueVersion=$v"}]
+        pre 'fileUpdate', [file: 'WebContent/modules/home/home.html', pattern: {v, c -> /hcvGlueVersion=$v/}, replacement: {v, c -> "hcvGlueVersion=$v"}]
+        pre 'fileUpdate', [file: 'WebContent/views/aboutGlueProject.html', pattern: {v, c -> /hcvGlueVersion=$v/}, replacement: {v, c -> "hcvGlueVersion=$v"}]
+
 		pre 'commit', {v, p -> "Release version $v"}
     }
 
