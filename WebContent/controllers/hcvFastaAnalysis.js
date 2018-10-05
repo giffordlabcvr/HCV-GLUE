@@ -87,24 +87,23 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    	if(sequenceReport.phdrReport.sequenceResult.visualisationHints == null) {
 		    		$scope.setComparisonRef(sequenceReport, null);
 		    		$scope.setFeature(sequenceReport, null);
-		    		return;
+		    	} else {
+			    	if(sequenceReport.phdrReport.comparisonRef == null) {
+			    		$scope.setComparisonRef(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs[0]);
+			    	}
+		    		var availableFeatures = sequenceReport.phdrReport.sequenceResult.visualisationHints.features;
+		    		var feature = sequenceReport.phdrReport.feature;
+			    	if(feature == null) {
+			    		feature = availableFeatures[0];
+			    	}
+		    		if($scope.lastFeatureName != null) {
+		    			var equivalentFeature = _.find(availableFeatures, function(availableFeature) { return availableFeature.name == $scope.lastFeatureName; });
+		    			if(equivalentFeature != null) {
+		    				feature = equivalentFeature;
+		    			}
+		    		}
+		    		$scope.setFeature(sequenceReport, feature);
 		    	}
-		    	
-		    	if(sequenceReport.phdrReport.comparisonRef == null) {
-		    		$scope.setComparisonRef(sequenceReport, sequenceReport.phdrReport.sequenceResult.visualisationHints.comparisonRefs[0]);
-		    	}
-	    		var availableFeatures = sequenceReport.phdrReport.sequenceResult.visualisationHints.features;
-	    		var feature = sequenceReport.phdrReport.feature;
-		    	if(feature == null) {
-		    		feature = availableFeatures[0];
-		    	}
-	    		if($scope.lastFeatureName != null) {
-	    			var equivalentFeature = _.find(availableFeatures, function(availableFeature) { return availableFeature.name == $scope.lastFeatureName; });
-	    			if(equivalentFeature != null) {
-	    				feature = equivalentFeature;
-	    			}
-	    		}
-	    		$scope.setFeature(sequenceReport, feature);
 		    	item.sequenceReport = sequenceReport;
 		    }
 
