@@ -149,7 +149,11 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    			for(var j = 0; j < categoryScores.drugAssessments.length; j++) {
 		    				var drugAssessment = categoryScores.drugAssessments[j];
 		    				if(drugAssessment.drug.id == drugId) {
-		    					return drugAssessment.drugScore;
+		    					if(drugAssessment.sufficientCoverage) {
+		    						return drugAssessment.drugScore;
+		    					} else {
+		    						return 'insufficient_coverage';
+		    					}
 		    				}
 		    			}
 		    		}
@@ -164,7 +168,11 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    			for(var j = 0; j < categoryScores.drugAssessments.length; j++) {
 		    				var drugAssessment = categoryScores.drugAssessments[j];
 		    				if(drugAssessment.drug.id == drugId) {
-		    					return drugAssessment.drugScoreDisplayShort;
+		    					if(drugAssessment.sufficientCoverage) {
+		    						return drugAssessment.drugScoreDisplayShort;
+		    					} else {
+		    						return 'Insufficient coverage';
+		    					}
 		    				}
 		    			}
 		    		}

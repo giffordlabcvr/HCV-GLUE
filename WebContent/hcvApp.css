@@ -26,6 +26,11 @@
 	font-weight:bold;
 }
 
+.resistanceColourCode_insufficient_coverage {
+	background-color: #666666;
+	color:#ffffff;
+	font-weight:bold;
+}
 
 .genomeVisualisationControls {
 	border: 2px solid #cecece;
