@@ -48,6 +48,10 @@ th + th {
     font-size: 10pt;
 }
 
+#featureCoverageTable {
+    font-size: 10pt;
+}
+
 #resistanceAlgorithmNotes {
     font-size: 10pt;
 }
@@ -204,7 +208,10 @@ td, th {
 <tr><td><b>Sequance data format</b></td><td>
 Deep sequencing (SAM/BAM)
 </td></tr>
-<tr><td><b>Report generation date</b></td><td>02/10/2018</td></tr>
+
+
+
+<tr><td><b>Report generation date</b></td><td>12/10/2018</td></tr>
 </table>
 </div>
 <div id="logos">
@@ -242,8 +249,75 @@ Yes
 </tr>
 </table>
 </div>
+
+<div id="featureCoverage">
+
+
+<h3>Genome coding region coverage</h3>
+
+<table id="featureCoverageTable">
+<colgroup>
+    <col class="tableHeader"/>
+    <col/>
+</colgroup>
+<tr>
+<td><b>Precursor polyprotein</b></td>
+<td>99.5%</td>
+</tr>
+<tr>
+<td><b>Core</b></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><b>E1</b></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><b>E2</b></td>
+<td>99.7%</td>
+</tr>
+<tr>
+<td><b>p7</b></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><b>NS2</b></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><b>NS3</b></td>
+<td>99.4%</td>
+</tr>
+<tr>
+<td><b>NS4A</b></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><b>NS4B</b></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><b>NS5A</b></td>
+<td>100%</td>
+</tr>
+<tr>
+<td><b>NS5B</b></td>
+<td>98%</td>
+</tr>
+</table>
+
+
+
+
+
+</div>
+
+<div class="pagebreak"> </div>
+
 <div id="antiviralResistance">
 <h3>Antiviral resistance summary</h3>
+
+
 
 <p>
 	Please note that the HCV-GLUE drug resistance interpretation system has not yet been clinically validated. 
@@ -350,8 +424,8 @@ Category I polymorphisms have the strongest evidence: either (a) <em>in vitro</e
 (b) both found at baseline and treatment-emergent. Category II: <em>in vitro</em> level &ge; 50 or found at baseline or treatment-emergent.
 Category III: <em>in vitro</em> level &ge; 5</li>
 <li>Resistance level to a given drug is assigned to one of four categories. 
-Strong resistance: any category I polymorphism or multiple category II polymorphisms.
-Moderate resistance: any category II polymorphism or multiple category III polymorphisms. 
+Strong resistance: any category I polymorphisms.
+Moderate resistance: any category II polymorphisms. 
 Weak resistance: any category III polymorphisms. 
 Susceptible: none of the above.
 </li>
@@ -469,13 +543,16 @@ No
 <colgroup style="width:50%">
     <col>
 </colgroup>
-<tr><td><b>GLUE engine version</b></td><td>1.1.1</td></tr>
+<tr><td><b>GLUE engine version</b></td><td>1.1.3</td></tr>
 <tr><td><b>HCV project version</b></td><td>0.1.33</td></tr>
-<tr><td><b>PHE extension version</b></td><td>0.1.9</td></tr>
+<tr><td><b>PHE extension version</b></td><td>0.1.10</td></tr>
 <tr><td><b>Minimum read proportion</b></td><td>15%</td></tr>
 <tr><td><b>Minimum read depth</b></td><td>10</td></tr>
 <tr><td><b>Minimum base quality</b></td><td>5</td></tr>
 <tr><td><b>Minimum mapping quality</b></td><td>5</td></tr>
+<tr><td><b>Minimum coding region coverage for resistance analysis</b></td><td>90%</td></tr>
+
+
 </table>
 </div>
 
