@@ -2,7 +2,6 @@
 	<database>
 		<username>hcvglue</username>
 		<password>hcvglue</password>
-		<vendor>MySQL</vendor>
 		<jdbcUrl>jdbc:mysql://localhost:3306/HCV_GLUE?characterEncoding=UTF-8</jdbcUrl>	
 	</database>
 	<properties>
