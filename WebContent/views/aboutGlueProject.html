@@ -147,7 +147,7 @@ We presume here that a suitable sequence assembly method has been used to genera
 raw sequencing data.</p>
 
 <p>
-Download the file <a href="exampleSequences/ngsData.bam?hcvGlueVersion=0.1.41">ngsData.bam</a> and make sure a copy
+Download the file <a href="exampleSequences/ngsData.bam?hcvGlueVersion=0.1.42">ngsData.bam</a> and make sure a copy
 is present inside the directory from which you launched GLUE.</p>
 
 <p>We will use the <code>phdrSamReporter</code> module within HCV-GLUE to translate those 
@@ -195,13 +195,13 @@ and generate detailed reports in various formats.<p>
 They can be executed from the UNIX prompt, i.e. without entering the GLUE interactive command line.</p>
 
 This first example will read in a FASTA file, e.g. <a ng-click="downloadResistanceGeno1()">resistanceGeno1.fasta</a> and produce an HTML report file <code>resistanceGeno1.html</code>. 
-Click <a href="exampleReports/resistanceGeno1.html?hcvGlueVersion=0.1.41" target="_blank">here</a> for a preview of the report. 
+Click <a href="exampleReports/resistanceGeno1.html?hcvGlueVersion=0.1.42" target="_blank">here</a> for a preview of the report. 
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -i project hcv module phdrReportingController invoke-function reportFastaAsHtml resistanceGeno1.fasta resistanceGeno1.html</pre>
 </div>
 
 This example will read in a SAM/BAM file, e.g. <a href="exampleSequences/ngsData.bam">ngsData.bam</a> and produce a new HTML report <code>ngsData.html</code>. 
-Click <a href="exampleReports/ngsData.html?hcvGlueVersion=0.1.41" target="_blank">here</a> for a preview of the report. 
+Click <a href="exampleReports/ngsData.html?hcvGlueVersion=0.1.42" target="_blank">here</a> for a preview of the report. 
 
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -i project hcv module phdrReportingController invoke-function reportBamAsHtml ngsData.bam ngsData.html</pre>
@@ -218,7 +218,7 @@ This first example will produce a report for a FASTA file, e.g. <a ng-click="dow
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -p cmd-result-format:json -EC -i project hcv module phdrReportingController invoke-function reportFasta resistanceGeno1.fasta</pre>
 </div>
-This example will produce a report for a SAM/BAM file, e.g. <a href="exampleSequences/ngsData.bam?hcvGlueVersion=0.1.41">ngsData.bam</a>. 
+This example will produce a report for a SAM/BAM file, e.g. <a href="exampleSequences/ngsData.bam?hcvGlueVersion=0.1.42">ngsData.bam</a>. 
 <div hljs language="bash" no-escape>
 <pre>% gluetools.sh -p cmd-result-format:json -EC -i project hcv module phdrReportingController invoke-function reportBam ngsData.bam</pre>
 </div>
