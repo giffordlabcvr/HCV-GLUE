@@ -12,9 +12,8 @@ of offline HCV-GLUE is capable of a range of analysis functions. Some examples a
 
 <ol>
 	<li><a ng-click="scrollTo('installGlue')">Install the GLUE engine</a></li>
-	<li><a ng-click="scrollTo('downloadBuild')">Download an HCV-GLUE project build</a></li>
-	<li><a ng-click="scrollTo('installBuild')">Install the project build into the GLUE database</a></li>
-	<li><a ng-click="scrollTo('checkIntegrations')">Check that the MAFFT, RAxML and BLAST+ integrations are working correctly</a></li>
+	<li><a ng-click="scrollTo('downloadInstallBuild')">Download and install the HCV-GLUE project build</a></li>
+	<li><a ng-click="scrollTo('checkBuild')">Check the project build is working</a></li>
 	<li><a ng-click="scrollTo('ngsAnalysis')">Example use: Basic analysis of deep sequencing data</a></li>
 	<li><a ng-click="scrollTo('combinedReport')">Example use: Combined genotyping and drug resistance analysis reports</a></li>
 </ol>
@@ -26,50 +25,59 @@ queries about offline HCV-GLUE</p>
 <h3 id="installGlue">Install the GLUE engine</h3>
 
 Please follow the <a href="http://tools.glue.cvr.ac.uk/#/installation">GLUE installation instructions</a>. 
-The BLAST+, MAFFT and RAxML integration steps are required for most uses of Offline HCV-GLUE.
+We would strongly recommend a Docker-based installation of GLUE. 
 
-<h3 id="downloadBuild">Download an HCV-GLUE project build</h3>
+<h3 id="downloadInstallBuild">Download and install the HCV-GLUE project build</h3>
+Note: This step will erase anything that was previously in your database.
 
+<h5><b>Docker-based GLUE</b></h5>
 <p>
-There are two alternative builds for Offline HCV-GLUE. The smaller build includes the minimum set of packages for 
-genotyping and drug resistance analysis. The larger build also includes the NCBI-HCV-GLUE extension, i.e. HCV sequences 
-derived from the NCBI nucleotide database and their metadata and RAS frequency data.
-</p>	
-<table class="table table-striped table-bordered table-nonfluid">
-	<thead>
-		<colgroup>
-	       <col span="1" style="width: 50%;">
-	       <col span="1" style="width: 50%;">
-	    </colgroup>
-	</thead>
-	<tbody>
-		<tr>
-			<td><b>HCV-GLUE core project + PHE-HCV-DRUG-RESISTANCE extension</b></td>
-			<td>Download <a href="/hcv_glue_dbs/hcv_glue.sql.gz">hcv_glue.sql.gz</a></td>
-		</tr>
-		<tr>
-			<td><b>HCV-GLUE core project + PHE-HCV-DRUG-RESISTANCE extension + NCBI-HCV-GLUE extension</b></td>
-			<td>Download <a href="/hcv_glue_dbs/ncbi_hcv_glue.sql.gz">ncbi_hcv_glue.sql.gz</a></td>
-		</tr>
-	</tbody>
-</table>
-
-<h3 id="installBuild">Install the project build into the GLUE database</h3>
-<p>
-<b>Warning:</b> This step will overwrite any data currently in the GLUE database.
+<ol>
+<li>Make sure the <code>gluetools-mysql</code> container is running. </li>
+<li>The following UNIX command will install the HCV-GLUE project build.
+<div hljs language="js" no-escape>
+$ docker exec gluetools-mysql installGlueProject.sh ncbi_hcv_glue
+</div>
+</li>
+</ol>
 </p>
+
+<h5><b>Native GLUE</b></h5>
 <p>
-Unzip the package and load into your MySQL databse using a Unix command line, something like this:
+<ol>
+<li>Download <a href="/hcv_glue_dbs/ncbi_hcv_glue.sql.gz">ncbi_hcv_glue.sql.gz</a></li>
+<li>
+Load the build into your MySQL databse using a Unix command line, adjusting the details according to your system:
 <div hljs language="bash" no-escape>
 $ gunzip -c ncbi_hcv_glue.sql.gz | /usr/local/mysql/bin/mysql --user=gluetools --password=glue12345 GLUE_TOOLS
 </div>
+</li>
+</ol>
 </p>
-<p>Start the GLUE command line and use the <code>list project</code> GLUE command to validate that the project installed.</p>
+
+<h3 id="checkBuild">Check the project build is working</h3>
 <p>
+<ol>
+<li>
+Download the files <a ng-click="downloadResistanceGeno1()">resistanceGeno1.fasta</a> and 
+<a href="exampleSequences/ngsData.bam">ngsData.bam</a> to a local directory, e.g. <code>/home/fred/glue_data</code>
+</li>
+<li>
+Start the GLUE command line, ensuring that your local directory is accessible to GLUE:
+<h5><b>Docker-based GLUE</b></h5>
 <div hljs language="bash" no-escape>
+$ docker run --rm -it --name gluetools -v /home/fred/glue_data:/home/fred/glue_data -w /home/fred/glue_data --link gluetools-mysql cvrbioinformatics/gluetools:latest
+</div>
+<h5><b>Native GLUE</b></h5>
+<div hljs language="bash" no-escape>
+$ cd /home/fred/glue_data
+$ gluetools.sh
+</div>
+</li>
+<li>
+Use <code>list project</code> to check that the HCV project is there.
+<p>
 <pre>
-% gluetools.sh
-GLUE version 1.1.1
 Mode path: /
 GLUE> list project
 +======+================================+
@@ -79,19 +87,12 @@ GLUE> list project
 +======+================================+
 Projects found: 1</pre>
 </div>
+</li>
 </p>
-
-<h3 id="checkIntegrations">Check that the MAFFT, RAxML and BLAST+ integrations are working correctly</h3>
+<li>
 <p>
 We will use the <code>maxLikelihoodGenotyper</code> module within HCV-GLUE to assign a genotype and
-subtype for a sequence in a FASTA file. This will validate that MAFFT and RAxML are integrated and working correctly. 
-</p>
-<p>
-Download the file <a ng-click="downloadResistanceGeno1()">resistanceGeno1.fasta</a> and make sure a copy
-is present inside the directory from which you launched GLUE.</p>
-
-<p>
-Enter the GLUE commands indicated below and check the output.
+subtype for the sequence in the FASTA file. Enter the GLUE commands below and check the output.
 <div hljs language="bash" no-escape>
 <pre>
 GLUE> project hcv 
@@ -105,14 +106,14 @@ GLUE> module maxLikelihoodGenotyper genotype file --fileName resistanceGeno1.fas
 +===========+====================+===================+</pre>
 </div>
 </p>
+</li>
+<li>
 <p>
 We will use the <code>phdrFastaSequenceReporter</code> module within HCV-GLUE to translate the NS5A gene of this sequence to amino acids. 
-This step uses BLAST+ to align the sequence with a reference, and so if the step works it validates that BLAST+ is integrated and working correctly.
- 
-<p>
-Enter the GLUE command indicated below and check the output. Use 'Q' to exit the interactive table.
+Enter the GLUE command below and check the output. Use 'Q' to exit the interactive table.
 <div hljs language="bash" no-escape>
 <pre>
+Mode path: /project/hcv
 GLUE> module phdrFastaSequenceReporter amino-acid -i resistanceGeno1.fasta -r REF_MASTER_NC_004102 -f NS5A -t REF_1a_M62321 -a AL_UNCONSTRAINED
 +==========+=========+==========+==========+===========+===========+===========+
 |codonLabel| queryNt | relRefNt | codonNts | aminoAcid |definiteAas|possibleAas|
@@ -140,22 +141,20 @@ GLUE> module phdrFastaSequenceReporter amino-acid -i resistanceGeno1.fasta -r RE
 Rows 1 to 19 of 448 [F:first, L:last, P:prev, N:next, Q:quit]</pre>
 </div>
 </p>
+</li>
+</ol>
 <h3 id="ngsAnalysis">Example use: Basic analysis of deep sequencing data</h3>
 <p>
 Offline HCV-GLUE can be used for minority variant analysis of deep sequencing data in the form of SAM/BAM files 
 We presume here that a suitable sequence assembly method has been used to generate the SAM/BAM file from the 
 raw sequencing data.</p>
 
-<p>
-Download the file <a href="exampleSequences/ngsData.bam?hcvGlueVersion=0.1.44">ngsData.bam</a> and make sure a copy
-is present inside the directory from which you launched GLUE.</p>
-
 <p>We will use the <code>phdrSamReporter</code> module within HCV-GLUE to translate those 
 reads within the file which map to the NS5A gene. The function will report the balance of 
 different amino acids residues at different locations within this gene. 
 </p>
 <p>
-Enter the GLUE command indicated below and check the output. Use 'Q' to exit the interactive table.
+Enter the GLUE command below and check the output. Use 'Q' to exit the interactive table.
 <div hljs language="bash" no-escape>
 <pre>
 GLUE> module phdrSamReporter amino-acid -i ngsData.bam -r REF_MASTER_NC_004102 -f NS5A -p -a AL_UNCONSTRAINED
@@ -187,42 +186,31 @@ Rows 1 to 19 of 753 [F:first, L:last, P:prev, N:next, Q:quit]</pre></div>
 <h3 id="combinedReport">Example use: Combined genotyping and drug resistance analysis reports</h3>
 
 <p>Offline HCV-GLUE contains modules which run combined genotyping and drug resistance analysis procedures, 
-and generate detailed reports in various formats.<p>
+and generate detailed reports.<p>
 
-<h4>Generation of HTML reports</h4>
-
-<p>These commands will generate HTML files similar to those produced by the HCV-GLUE web application. 
-They can be executed from the UNIX prompt, i.e. without entering the GLUE interactive command line.</p>
-
-This first example will read in a FASTA file, e.g. <a ng-click="downloadResistanceGeno1()">resistanceGeno1.fasta</a> and produce an HTML report file <code>resistanceGeno1.html</code>. 
+<p>
+This first example will read in the FASTA file, <code>resistanceGeno1.fasta</code> and produce an HTML report file <code>resistanceGeno1.html</code>. 
 Click <a href="exampleReports/resistanceGeno1.html?hcvGlueVersion=0.1.44" target="_blank">here</a> for a preview of the report. 
 <div hljs language="bash" no-escape>
-<pre>% gluetools.sh -i project hcv module phdrReportingController invoke-function reportFastaAsHtml resistanceGeno1.fasta resistanceGeno1.html</pre>
+<pre>
+Mode path: /project/hcv
+GLUE> module phdrReportingController invoke-function reportFastaAsHtml resistanceGeno1.fasta resistanceGeno1.html
+</pre>
 </div>
+</p>
 
-This example will read in a SAM/BAM file, e.g. <a href="exampleSequences/ngsData.bam">ngsData.bam</a> and produce a new HTML report <code>ngsData.html</code>. 
+<p>
+The second example will read in the BAM file, <code>ngsData.bam</code> and produce a new HTML report <code>ngsData.html</code>. 
 Click <a href="exampleReports/ngsData.html?hcvGlueVersion=0.1.44" target="_blank">here</a> for a preview of the report. 
 
 <div hljs language="bash" no-escape>
-<pre>% gluetools.sh -i project hcv module phdrReportingController invoke-function reportBamAsHtml ngsData.bam ngsData.html</pre>
+<pre>
+Mode path: /project/hcv
+GLUE> module phdrReportingController invoke-function reportBamAsHtml ngsData.bam ngsData.html
+</pre>
 </div>
 
-<h4>Generation of XML / JSON reports</h4>
-
-<p>HCV-GLUE can also generate XML or JSON files containing the same genotyping and drug resistance reporting data but in a more machine-readable format. 
-These could be used e.g. for integration into a bioinformatics pipeline. </p>
-
-<p>Again these examples are executed directly from the UNIX prompt.</p>
-
-This first example will produce a report for a FASTA file, e.g. <a ng-click="downloadResistanceGeno1()">resistanceGeno1.fasta</a>. 
-<div hljs language="bash" no-escape>
-<pre>% gluetools.sh -p cmd-result-format:json -EC -i project hcv module phdrReportingController invoke-function reportFasta resistanceGeno1.fasta</pre>
-</div>
-This example will produce a report for a SAM/BAM file, e.g. <a href="exampleSequences/ngsData.bam?hcvGlueVersion=0.1.44">ngsData.bam</a>. 
-<div hljs language="bash" no-escape>
-<pre>% gluetools.sh -p cmd-result-format:json -EC -i project hcv module phdrReportingController invoke-function reportBam ngsData.bam</pre>
-</div>
-
-If XML output is required, use <code>cmd-result-format:xml</code>.
+<p>HCV-GLUE can also generate files containing genotyping and drug resistance reporting data in a machine-readable format (XML or JSON). 
+These could be used e.g. for integration into a bioinformatics pipeline. Contact the team if this is of interest.</p>
 
  
