@@ -6,11 +6,11 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 
 			$scope.analytics = $analytics;
 			$scope.visualisationUpdating = false;
+			$scope.phyloVisualisationUpdating = false;
 			$scope.svgUrlCache = {};
 			$scope.featureNameToScrollLeft = {};
 			$scope.lastFeatureName = null;
-	    	$scope.summary = true;
-			$scope.genomeVisualisation = false;
+	    	$scope.displaySection = 'summary';
 			
 			$controller('fileConsumerCtrl', { $scope: $scope, 
 				glueWebToolConfig: glueWebToolConfig, 
@@ -104,6 +104,13 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    		}
 		    		$scope.setFeature(sequenceReport, feature);
 		    	}
+		    	if(sequenceReport.phdrReport.sequenceResult.placements == null) {
+		    		$scope.setPlacement(sequenceReport, null);
+		    	} else {
+		    		if(sequenceReport, sequenceReport.phdrReport.placement == null) {
+			    		$scope.setPlacement(sequenceReport, sequenceReport.phdrReport.sequenceResult.placements[0]);
+		    		}
+		    	}
 		    	item.sequenceReport = sequenceReport;
 		    }
 
@@ -116,6 +123,11 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    $scope.setFeature = function(sequenceReport, feature) {
 		    	// need to nest feature within phdrReport to avoid breaking command doc assumptions.
 		    	sequenceReport.phdrReport.feature = feature;
+		    }
+
+		    $scope.setPlacement = function(sequenceReport, placement) {
+		    	// need to nest feature within phdrReport to avoid breaking command doc assumptions.
+		    	sequenceReport.phdrReport.placement = placement;
 		    }
 
 		    $scope.getGenotype = function(sequenceResult) {
@@ -179,26 +191,6 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    	}
 		    	return "-";
 		    };
-
-			$scope.$watch('summary', function(newObj, oldObj) {
-				if(!$scope.updating) {
-					$scope.updating = true;
-					if(newObj) {
-						$scope.genomeVisualisation = false;
-					}
-					$scope.updating = false;
-				}
-			}, false);
-
-			$scope.$watch('genomeVisualisation', function(newObj, oldObj) {
-				if(!$scope.updating) {
-					$scope.updating = true;
-					if(newObj) {
-						$scope.summary = false;
-					}
-					$scope.updating = false;
-				}
-			}, false);
 
 			$scope.svgUpdated = function() {
 				console.info('svgUpdated');

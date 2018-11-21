@@ -95,15 +95,12 @@
 
 					<p>
 						<div class="btn-group">
-							<label
-								class="btn btn-primary ng-pristine ng-untouched ng-valid active"
-								btn-checkbox ng-model="summary">Summary</label> <label
-								class="btn btn-primary ng-pristine ng-untouched ng-valid active"
-								btn-checkbox ng-model="genomeVisualisation">Genome
-								visualisation</label>
+					        <label class="btn btn-primary ng-pristine ng-untouched ng-valid active" ng-model="displaySection" btn-radio="'summary'">Summary</label>
+					        <label class="btn btn-primary ng-pristine ng-untouched ng-valid active" ng-model="displaySection" btn-radio="'genomeVisualisation'">Genome visualisation</label>
+					        <label class="btn btn-primary ng-pristine ng-untouched ng-valid active" ng-model="displaySection" btn-radio="'phyloPlacement'">Phylogenetic placement</label>
 						</div>
 					</p>
-				<div ng-show="summary">
+				<div ng-show="displaySection == 'summary'">
 					<p>
 					<table class="table table-striped table-bordered">
 						<thead>
@@ -168,7 +165,7 @@
 					</table>
 					</p>
 				</div>
-				<div ng-show="genomeVisualisation" class="container-fluid">
+				<div ng-show="displaySection == 'genomeVisualisation'" class="container-fluid">
 					<div class="row">
 						<div class="genomeVisualisationControls col-md-10">
 							<p>
@@ -243,6 +240,54 @@
 						</div>
 						<div id="visualisationSvg" style="overflow: auto;" data-onload="svgUpdated()" ng-include="visualisationSvgUrl">
 						</div>
+					</div>
+				</div>
+				<div ng-show="displaySection == 'phyloPlacement'" class="container-fluid">
+					<div class="row">
+						<div class="phyloVisualisationControls col-md-10">
+							<p>
+							<div>
+								Visualise placement:
+								<div class="btn-group" dropdown is-open="status.pButtonOpen">
+									<button ng-disabled="phyloVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null" id="p-button" type="button" class="btn btn-sm btn-default"
+										dropdown-toggle>
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.placement == null ? "-" : fileItemUnderAnalysis.sequenceReport.phdrReport.placement.placementIndex}}
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu"
+										aria-labelledby="p-button">
+										<li
+											ng-repeat="placement in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.placements"
+											ng-click="setPlacement(fileItemUnderAnalysis.sequenceReport, placement)"
+											role="menuitem"><a>{{placement.placementIndex}}</a></li>
+									</ul>
+								</div>
+							</div>
+							</p>
+							<p>
+							<div>
+								of submitted sequence:
+								<div class="btn-group" dropdown is-open="status.pseqButtonOpen">
+									<button ng-disabled="phyloVisualisationUpdating" id="pseq-button" type="button" class="btn btn-sm btn-default"
+										dropdown-toggle>
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}}
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu"
+										aria-labelledby="pseq-button">
+										<li
+											ng-repeat="report in fileItemUnderAnalysis.response.phdrWebReport.results"
+											ng-click="setSequenceReport(fileItemUnderAnalysis, report)"
+											role="menuitem"><a>{{report.phdrReport.sequenceResult.id}}</a></li>
+									</ul>
+								</div>
+							</div>
+							</p>
+						</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
+					    --><div class="col-md-2 updateVisualisationButton text-right">
+								<button ng-disabled="phyloVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.placement == null" type="button" class="btn btn-primary"
+									ng-click="updatePhyloSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
+							</div>
 					</div>
 				</div>
 			</div>
