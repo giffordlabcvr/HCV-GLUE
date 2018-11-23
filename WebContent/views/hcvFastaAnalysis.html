@@ -172,7 +172,7 @@
 							<div>
 								Visualise genome region:
 								<div class="btn-group" dropdown is-open="status.fButtonOpen">
-									<button ng-disabled="visualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null" id="f-button" type="button" class="btn btn-sm btn-default"
+									<button ng-disabled="featureVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null" id="f-button" type="button" class="btn btn-sm btn-default"
 										dropdown-toggle>
 										{{fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null ? "-" : fileItemUnderAnalysis.sequenceReport.phdrReport.feature.displayName}}
 										<span class="caret"></span>
@@ -191,7 +191,7 @@
 							<div>
 								of submitted sequence:
 								<div class="btn-group" dropdown is-open="status.qseqButtonOpen">
-									<button ng-disabled="visualisationUpdating" id="qseq-button" type="button" class="btn btn-sm btn-default"
+									<button ng-disabled="featureVisualisationUpdating" id="qseq-button" type="button" class="btn btn-sm btn-default"
 										dropdown-toggle>
 										{{fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.id}}
 										<span class="caret"></span>
@@ -211,7 +211,7 @@
 							<div>
 								highlighting any differences with:
 								<div class="btn-group" dropdown is-open="status.rseqButtonOpen">
-									<button ng-disabled="visualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null" id="rseq-button" type="button" class="btn btn-sm btn-default"
+									<button ng-disabled="featureVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null" id="rseq-button" type="button" class="btn btn-sm btn-default"
 										dropdown-toggle>
 										{{fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null ? "-" : fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef.refDisplayName}}
 										<span class="caret"></span>
@@ -230,15 +230,15 @@
 							</p>
 						</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
 					    --><div class="col-md-2 updateVisualisationButton text-right">
-								<button ng-disabled="visualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null || fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null" type="button" class="btn btn-primary"
-									ng-click="updateSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
+								<button ng-disabled="featureVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null || fileItemUnderAnalysis.sequenceReport.phdrReport.comparisonRef == null" type="button" class="btn btn-primary"
+									ng-click="updateFeatureSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
 							</div>
 					</div>
-					<div class="row svgContainer" us-spinner="{radius:23, width:7, length: 11}" spinner-on="visualisationUpdating" style="min-height: 100px; position: relative">
-						<div ng-if="visualisationSvgUrl == null && !visualisationUpdating">
+					<div class="row featureSvgContainer" us-spinner="{radius:23, width:7, length: 11}" spinner-on="featureVisualisationUpdating" style="min-height: 100px; position: relative">
+						<div ng-if="featureVisualisationSvgUrl == null && !featureVisualisationUpdating">
 							<p class="text-center">No data</p>
 						</div>
-						<div id="visualisationSvg" style="overflow: auto;" data-onload="svgUpdated()" ng-include="visualisationSvgUrl">
+						<div id="featureVisualisationSvg" style="overflow: auto;" data-onload="featureSvgUpdated()" ng-include="featureVisualisationSvgUrl">
 						</div>
 					</div>
 				</div>
@@ -288,6 +288,13 @@
 								<button ng-disabled="phyloVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.placement == null" type="button" class="btn btn-primary"
 									ng-click="updatePhyloSvg()"><i class="glyphicon glyphicon-refresh"></i> Update</button>
 							</div>
+					</div>
+						<div class="row phyloSvgContainer" us-spinner="{radius:23, width:7, length: 11}" spinner-on="phyloVisualisationUpdating" style="min-height: 100px; position: relative">
+						<div ng-if="phyloVisualisationSvgUrl == null && !phyloVisualisationUpdating">
+							<p class="text-center">No data</p>
+						</div>
+						<div style="overflow: auto;" data-onload="phyloSvgUpdated()" ng-include="phyloVisualisationSvgUrl">
+						</div>
 					</div>
 				</div>
 			</div>

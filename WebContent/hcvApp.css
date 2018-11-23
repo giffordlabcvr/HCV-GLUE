@@ -66,7 +66,14 @@
 	float: none;
 }
 
-.svgContainer {
+.featureSvgContainer {
+	border: 2px solid #cecece;
+	padding-top: 10px;
+    overflow: hidden;
+	margin-top: 15px;
+}
+
+.phyloSvgContainer {
 	border: 2px solid #cecece;
 	padding-top: 10px;
     overflow: hidden;
