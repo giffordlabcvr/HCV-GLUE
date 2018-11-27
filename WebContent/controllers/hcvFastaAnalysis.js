@@ -335,7 +335,9 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 									"functionName": "visualisePhyloAsSvg", 
 									"document": {
 										"inputDocument": {
-										    "treeDocument" : placement.tree, 
+										    "placerResult" : $scope.fileItemUnderAnalysis.response.phdrWebReport.placerResult, 
+										    "queryName" : sequenceReport.phdrReport.sequenceResult.id,
+										    "placementIndex" : placement.placementIndex,
 											"pxWidth" : 1136, 
 											"pxHeight" : 2000,
 										    "fileName": fileName
