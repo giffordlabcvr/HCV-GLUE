@@ -13,6 +13,21 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			$scope.lastFeatureName = null;
 	    	$scope.displaySection = 'summary';
 			
+	    	$scope.neighbourSlider = {
+	    			  value: 45,
+	    			  options: {
+	    			    precision: 2,
+	    			    floor: 0,
+	    			    ceil: 200,
+	    			    hideLimitLabels: true,
+	    			    hidePointerLabels: true,
+	    			    getLegend: function(value, sliderId) { return toFixed(value/100, 1); }, 
+	    			    step: 1,
+	    			    showTicks: 10,
+	    			    keyboardSupport: false,
+	    			  }
+	    			};
+	    	
 			$controller('fileConsumerCtrl', { $scope: $scope, 
 				glueWebToolConfig: glueWebToolConfig, 
 				glueWS: glueWS, 
@@ -81,6 +96,7 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    	}
 		    	$scope.fileItemUnderAnalysis = item;
 		    	$scope.featureVisualisationSvgUrl = null;
+		    	$scope.phyloVisualisationSvgUrl = null;
 		    }
 		    
 		    $scope.setSequenceReport = function(item, sequenceReport) {
@@ -316,7 +332,7 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 
 				var cacheKey = $scope.fileItemUnderAnalysis.file.name+":"+
 					sequenceReport.phdrReport.sequenceResult.id+":"+
-					placement.placementIndex;
+					placement.placementIndex+":"+$scope.neighbourSlider.value;
 				console.info('cacheKey', cacheKey);
 				
 
@@ -338,6 +354,7 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 										    "placerResult" : $scope.fileItemUnderAnalysis.response.phdrWebReport.placerResult, 
 										    "queryName" : sequenceReport.phdrReport.sequenceResult.id,
 										    "placementIndex" : placement.placementIndex,
+										    "maxDistance" : toFixed($scope.neighbourSlider.value/100, 2),
 											"pxWidth" : 1136, 
 											"pxHeight" : 2000,
 										    "fileName": fileName

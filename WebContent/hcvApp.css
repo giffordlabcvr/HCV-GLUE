@@ -79,3 +79,26 @@
     overflow: hidden;
 	margin-top: 15px;
 }
+
+
+.rzslider .rz-pointer {
+    background-color: #008cba;
+}
+
+
+.rzslider .rz-bar {
+  background: #cccccc;
+}
+
+.rzslider .rz-tick {
+  background: #cccccc;
+}
+
+.rzslider .rz-pointer.rz-active:after {
+    background-color: #008cba;
+}
+
+.rzslider .rz-pointer:after {
+  background: #ffffff;
+}
+

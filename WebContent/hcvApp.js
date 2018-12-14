@@ -28,7 +28,8 @@ var hcvApp = angular.module('hcvApp', [
     'angulartics',
     'angulartics.google.analytics',
     'angular-cookie-law',
-    'hljs'
+    'hljs',
+    'rzModule'
   ]);
 
 console.log("after hcvApp module definition");

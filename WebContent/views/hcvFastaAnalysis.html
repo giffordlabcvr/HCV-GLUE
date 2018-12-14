@@ -2,13 +2,14 @@
 	<div nv-file-drop="" uploader="uploader"
 		filters="queueLimit, customFilter">
 		<h2>Automated genotyping and interpretation</h2>
-		<p>
 			Submit your sequence files in FASTA nucleotide format for automated
 			analysis of the genotype/subtype, drug resistance interpretation and
 			genome visualisation. <small><br />For testing, download this
 				<a ng-click="downloadExampleSequence()">example sequence file</a>
 				and submit it for analysis.</small>
 		</p>
+		
+		
 		<div>
 			<div>
 
@@ -247,26 +248,7 @@
 						<div class="phyloVisualisationControls col-md-10">
 							<p>
 							<div>
-								Visualise placement:
-								<div class="btn-group" dropdown is-open="status.pButtonOpen">
-									<button ng-disabled="phyloVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null" id="p-button" type="button" class="btn btn-sm btn-default"
-										dropdown-toggle>
-										{{fileItemUnderAnalysis.sequenceReport.phdrReport.placement == null ? "-" : fileItemUnderAnalysis.sequenceReport.phdrReport.placement.placementIndex}}
-										<span class="caret"></span>
-									</button>
-									<ul class="dropdown-menu" role="menu"
-										aria-labelledby="p-button">
-										<li
-											ng-repeat="placement in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.placements"
-											ng-click="setPlacement(fileItemUnderAnalysis.sequenceReport, placement)"
-											role="menuitem"><a>{{placement.placementIndex}}</a></li>
-									</ul>
-								</div>
-							</div>
-							</p>
-							<p>
-							<div>
-								of submitted sequence:
+								Visualise submitted sequence:
 								<div class="btn-group" dropdown is-open="status.pseqButtonOpen">
 									<button ng-disabled="phyloVisualisationUpdating" id="pseq-button" type="button" class="btn btn-sm btn-default"
 										dropdown-toggle>
@@ -281,6 +263,27 @@
 											role="menuitem"><a>{{report.phdrReport.sequenceResult.id}}</a></li>
 									</ul>
 								</div>
+								placement number:
+								<div class="btn-group" dropdown is-open="status.pButtonOpen">
+									<button ng-disabled="phyloVisualisationUpdating || fileItemUnderAnalysis.sequenceReport.phdrReport.feature == null" id="p-button" type="button" class="btn btn-sm btn-default"
+										dropdown-toggle>
+										{{fileItemUnderAnalysis.sequenceReport.phdrReport.placement == null ? "-" : fileItemUnderAnalysis.sequenceReport.phdrReport.placement.placementIndex}}
+										<span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu"
+										aria-labelledby="p-button">
+										<li
+											ng-repeat="placement in fileItemUnderAnalysis.sequenceReport.phdrReport.sequenceResult.placements"
+											ng-click="setPlacement(fileItemUnderAnalysis.sequenceReport, placement)"
+											role="menuitem"><a>{{placement.placementIndex}}</a></li>
+									</ul>
+									
+								</div>
+							</div>
+							</p>
+							<p>
+							<div>
+								  Display neighbours within distance of {{toFixed(neighbourSlider.value/100, 2)}} mean substitutions/site <rzslider class="with-legend" rz-slider-model="neighbourSlider.value" rz-slider-options="neighbourSlider.options"></rzslider>
 							</div>
 							</p>
 						</div><!-- https://stackoverflow.com/questions/20547819/vertical-align-with-bootstrap-3
