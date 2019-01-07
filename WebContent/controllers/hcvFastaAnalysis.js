@@ -359,6 +359,7 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 					});
 				} else {
 					var fileName = "visualisation.svg";
+					var scrollbarWidth = 17;
 					glueWS.runGlueCommand("module/phdrSvgPhyloVisualisation", 
 							{ 
 								"invoke-function": {
@@ -369,8 +370,10 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 										    "queryName" : sequenceReport.phdrReport.sequenceResult.id,
 										    "placementIndex" : placement.placementIndex,
 										    "maxDistance" : toFixed($scope.neighbourSlider.value/100, 2),
-											"pxWidth" : 1136, 
-											"pxHeight" : 2000,
+											"pxWidth" : 1136 - scrollbarWidth, 
+											"pxHeight" : 2500,
+											"legendPxWidth" : 1136, 
+											"legendPxHeight" : 300,
 										    "fileName": fileName
 										}
 									}
