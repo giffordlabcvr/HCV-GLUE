@@ -124,12 +124,25 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    	if(sequenceReport.phdrReport.sequenceResult.placements == null) {
 		    		$scope.setPlacement(sequenceReport, null);
 		    	} else {
-		    		if(sequenceReport, sequenceReport.phdrReport.placement == null) {
+		    		if(sequenceReport.phdrReport.placement == null) {
 			    		$scope.setPlacement(sequenceReport, sequenceReport.phdrReport.sequenceResult.placements[0]);
 		    		}
 		    	}
 		    	item.sequenceReport = sequenceReport;
 		    }
+
+			$scope.$watch('displaySection', function(newObj, oldObj) {
+				if(newObj == "phyloPlacement") {
+					$scope.refreshSlider();
+				}
+			});
+		    
+		    $scope.refreshSlider = function() {
+		        $timeout(function () {
+		        	console.log("rzSliderForceRender");
+		            $scope.$broadcast('rzSliderForceRender');
+		        });
+		    };
 
 		    
 		    $scope.setComparisonRef = function(sequenceReport, comparisonRef) {
@@ -145,6 +158,7 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    $scope.setPlacement = function(sequenceReport, placement) {
 		    	// need to nest feature within phdrReport to avoid breaking command doc assumptions.
 		    	sequenceReport.phdrReport.placement = placement;
+				$scope.refreshSlider();
 		    }
 
 		    $scope.getGenotype = function(sequenceResult) {
