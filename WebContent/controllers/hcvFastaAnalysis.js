@@ -7,8 +7,9 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			$scope.analytics = $analytics;
 			$scope.featureVisualisationUpdating = false;
 			$scope.phyloVisualisationUpdating = false;
+			$scope.phyloLegendUpdating = false;
 			$scope.featureSvgUrlCache = {};
-			$scope.phyloSvgUrlCache = {};
+			$scope.phyloSvgResultObjectCache = {};
 			$scope.featureNameToScrollLeft = {};
 			$scope.lastFeatureName = null;
 	    	$scope.displaySection = 'summary';
@@ -96,7 +97,9 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    	}
 		    	$scope.fileItemUnderAnalysis = item;
 		    	$scope.featureVisualisationSvgUrl = null;
+		    	$scope.phyloVisualisationSvgResultObject = null;
 		    	$scope.phyloVisualisationSvgUrl = null;
+		    	$scope.phyloLegendSvgUrl = null;
 		    }
 		    
 		    $scope.setSequenceReport = function(item, sequenceReport) {
@@ -244,9 +247,12 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			
 			$scope.phyloSvgUpdated = function() {
 				$scope.phyloVisualisationUpdating = false;
-				
 			}
-			
+
+			$scope.phyloLegendSvgUpdated = function() {
+				$scope.phyloLegendUpdating = false;
+			}
+
 			$scope.updateFeatureSvgFromUrl = function(cacheKey, svgUrl) {
 				if(svgUrl == $scope.featureVisualisationSvgUrl) {
 					// onLoad does not get invoked again for the same URL.
@@ -257,13 +263,20 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				}
 			}
 
-			$scope.updatePhyloSvgFromUrl = function(cacheKey, svgUrl) {
-				if(svgUrl == $scope.phyloVisualisationSvgUrl) {
-					// onLoad does not get invoked again for the same URL.
+			$scope.updatePhyloSvgFromResultObject = function(cacheKey, svgResultObject) {
+				if(_.isEqual(svgResultObject, $scope.phyloVisualisationSvgResultObject)) {
+					// onLoad does not get invoked again for the same URLs.
 					$scope.phyloSvgUpdated();
+					$scope.phyloLegendSvgUpdated();
 				} else {
-					$scope.phyloVisualisationSvgUrl = svgUrl;
-					$scope.phyloSvgUrlCache[cacheKey] = svgUrl;
+					$scope.phyloSvgResultObjectCache[cacheKey] = svgResultObject;
+					$scope.phyloVisualisationSvgResultObject = svgResultObject;
+					$scope.phyloVisualisationSvgUrl = "/glue_web_files/"+
+					svgResultObject.treeTransformResult.freemarkerDocTransformerWebResult.webSubDirUuid+"/"+
+					svgResultObject.treeTransformResult.freemarkerDocTransformerWebResult.webFileName;
+					$scope.phyloLegendSvgUrl = "/glue_web_files/"+
+					svgResultObject.legendTransformResult.freemarkerDocTransformerWebResult.webSubDirUuid+"/"+
+					svgResultObject.legendTransformResult.freemarkerDocTransformerWebResult.webFileName;
 				}
 			}
 
@@ -341,6 +354,7 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			$scope.updatePhyloSvg = function() {
 				
 				$scope.phyloVisualisationUpdating = true;
+				$scope.phyloLegendUpdating = true;
 				var sequenceReport = $scope.fileItemUnderAnalysis.sequenceReport;
 				var placement = sequenceReport.phdrReport.placement;
 
@@ -350,15 +364,16 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				console.info('cacheKey', cacheKey);
 				
 
-				var cachedSvgUrl = $scope.phyloSvgUrlCache[cacheKey];
+				var cachedSvgResultObject = $scope.phyloSvgResultObjectCache[cacheKey];
 				
-				if(cachedSvgUrl != null) {
+				if(cachedSvgResultObject != null) {
 					$timeout(function() {
-						console.info('phylo SVG found in cache');
-						$scope.updatePhyloSvgFromUrl(cacheKey, cachedSvgUrl);
+						console.info('phylo SVG result object found in cache');
+						$scope.updatePhyloSvgFromResultObject(cacheKey, cachedSvgResultObject);
 					});
 				} else {
 					var fileName = "visualisation.svg";
+					var legendFileName = "legend.svg";
 					var scrollbarWidth = 17;
 					glueWS.runGlueCommand("module/phdrSvgPhyloVisualisation", 
 							{ 
@@ -373,8 +388,9 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 											"pxWidth" : 1136 - scrollbarWidth, 
 											"pxHeight" : 2500,
 											"legendPxWidth" : 1136, 
-											"legendPxHeight" : 300,
-										    "fileName": fileName
+											"legendPxHeight" : 80,
+										    "fileName": fileName,
+										    "legendFileName": legendFileName
 										}
 									}
 								} 
@@ -383,19 +399,21 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 						// Handle success
 					    var data = response.data;
 						console.info('visualisePhyloAsSvg result', data);
-						var transformerResult = data.freemarkerDocTransformerWebResult;
-						$scope.updatePhyloSvgFromUrl(cacheKey, "/glue_web_files/"+transformerResult.webSubDirUuid+"/"+transformerResult.webFileName);
+						var svgResultObj = data.visualisePhyloAsSvgResult;
+						$scope.updatePhyloSvgFromResultObject(cacheKey, svgResultObj);
 					}, function onError(response) {
-						    // Handle error
-							$scope.phyloVisualisationUpdating = false;
-							var dlgFunction = glueWS.raiseErrorDialog(dialogs, "visualising phylo tree");
-							dlgFunction(response.data, response.status, response.headers, response.config);
+					    // Handle error
+						$scope.phyloVisualisationUpdating = false;
+						$scope.phyloLegendUpdating = false;
+						var dlgFunction = glueWS.raiseErrorDialog(dialogs, "visualising phylo tree");
+						dlgFunction(response.data, response.status, response.headers, response.config);
 					});
 				}
 			}
 			
-			
-			
+		    $scope.getPlacementLabel = function(placement) {
+		    	return placement.placementIndex + " (" + toFixed(placement.likeWeightRatio * 100, 2) + "%)";
+		    }
 			
 			$scope.downloadExampleSequence = function() {
 				var url;
