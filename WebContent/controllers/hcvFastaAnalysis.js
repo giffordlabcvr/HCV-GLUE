@@ -164,67 +164,6 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				$scope.refreshSlider();
 		    }
 
-		    $scope.getGenotype = function(sequenceResult) {
-		    	var genotypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'genotype'});
-		    	if(genotypeCladeResult == null) {
-		    		return "-";
-		    	}
-		    	return genotypeCladeResult.shortRenderedName;
-		    };
-
-		    $scope.getSubtype = function(sequenceResult) {
-		    	var subtypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'subtype'});
-		    	if(subtypeCladeResult == null) {
-		    		return "-";
-		    	}
-		    	return subtypeCladeResult.shortRenderedName;
-		    };
-
-		    $scope.getClosestReferenceSequence = function(sequenceResult) {
-		    	var genotypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'genotype'});
-		    	if(genotypeCladeResult == null) {
-		    		return "-";
-		    	}
-		    	return genotypeCladeResult.closestTargetSequenceID;
-		    };
-
-		    $scope.getResistanceLevel = function(sequenceResult, drugId) {
-		    	if(sequenceResult.drugScores != null) { 
-		    		for(var i = 0; i < sequenceResult.drugScores.length; i++) {
-		    			var categoryScores = sequenceResult.drugScores[i];
-		    			for(var j = 0; j < categoryScores.drugAssessments.length; j++) {
-		    				var drugAssessment = categoryScores.drugAssessments[j];
-		    				if(drugAssessment.drug.id == drugId) {
-		    					if(drugAssessment.sufficientCoverage) {
-		    						return drugAssessment.drugScore;
-		    					} else {
-		    						return 'insufficient_coverage';
-		    					}
-		    				}
-		    			}
-		    		}
-		    	}
-		    	return "none";
-		    };
-
-		    $scope.getResistanceLevelText = function(sequenceResult, drugId) {
-		    	if(sequenceResult.drugScores != null) { 
-		    		for(var i = 0; i < sequenceResult.drugScores.length; i++) {
-		    			var categoryScores = sequenceResult.drugScores[i];
-		    			for(var j = 0; j < categoryScores.drugAssessments.length; j++) {
-		    				var drugAssessment = categoryScores.drugAssessments[j];
-		    				if(drugAssessment.drug.id == drugId) {
-		    					if(drugAssessment.sufficientCoverage) {
-		    						return drugAssessment.drugScoreDisplayShort;
-		    					} else {
-		    						return 'Insufficient coverage';
-		    					}
-		    				}
-		    			}
-		    		}
-		    	}
-		    	return "-";
-		    };
 
 			$scope.featureSvgUpdated = function() {
 				console.info('featureSvgUpdated');
@@ -457,5 +396,70 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 					$window.open(reportUrl, '_blank');
 				}
 			};
+
+		    $scope.getGenotype = function(sequenceResult) {
+		    	var genotypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'genotype'});
+		    	if(genotypeCladeResult == null) {
+		    		return "-";
+		    	}
+		    	return genotypeCladeResult.shortRenderedName;
+		    };
+
+		    $scope.getSubtype = function(sequenceResult) {
+		    	var subtypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'subtype'});
+		    	if(subtypeCladeResult == null) {
+		    		return "-";
+		    	}
+		    	return subtypeCladeResult.shortRenderedName;
+		    };
+
+		    $scope.getClosestReferenceSequence = function(sequenceResult) {
+		    	var genotypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'genotype'});
+		    	if(genotypeCladeResult == null) {
+		    		return "-";
+		    	}
+		    	return genotypeCladeResult.closestTargetSequenceID;
+		    };
+
+		    $scope.getResistanceLevel = function(sequenceResult, drugId) {
+		    	if(sequenceResult.drugScores != null) { 
+		    		for(var i = 0; i < sequenceResult.drugScores.length; i++) {
+		    			var categoryScores = sequenceResult.drugScores[i];
+		    			for(var j = 0; j < categoryScores.drugAssessments.length; j++) {
+		    				var drugAssessment = categoryScores.drugAssessments[j];
+		    				if(drugAssessment.drug.id == drugId) {
+		    					if(drugAssessment.sufficientCoverage) {
+		    						return drugAssessment.drugScore;
+		    					} else {
+		    						return 'insufficient_coverage';
+		    					}
+		    				}
+		    			}
+		    		}
+		    	}
+		    	return "none";
+		    };
+
+		    $scope.getResistanceLevelText = function(sequenceResult, drugId) {
+		    	if(sequenceResult.drugScores != null) { 
+		    		for(var i = 0; i < sequenceResult.drugScores.length; i++) {
+		    			var categoryScores = sequenceResult.drugScores[i];
+		    			for(var j = 0; j < categoryScores.drugAssessments.length; j++) {
+		    				var drugAssessment = categoryScores.drugAssessments[j];
+		    				if(drugAssessment.drug.id == drugId) {
+		    					if(drugAssessment.sufficientCoverage) {
+		    						return drugAssessment.drugScoreDisplayShort;
+		    					} else {
+		    						return 'Insufficient coverage';
+		    					}
+		    				}
+		    			}
+		    		}
+		    	}
+		    	return "-";
+		    };
+
 			
 		}]);
+
+

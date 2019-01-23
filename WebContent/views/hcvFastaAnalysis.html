@@ -112,15 +112,16 @@
 								<th rowspan="2" style="width: 8%;">Subtype</th>
 								<th rowspan="2" style="width: 8%;">Closest reference
 									sequence</th>
-								<th colspan="5" style="width: 40%;">Drug resistance level</th>
-								<th rowspan="2" style="width: 20%;">Full report</th>
+								<th colspan="6" style="width: 42%;">Drug resistance level</th>
+								<th rowspan="2" style="width: 18%;">Full report</th>
 							</tr>
 							<tr>
-								<th colspan="1" style="width: 8%;">glecaprevir</th>
-								<th colspan="1" style="width: 8%;">voxilaprevir</th>
-								<th colspan="1" style="width: 8%;">pibrentasvir</th>
-								<th colspan="1" style="width: 8%;">velpatasvir</th>
-								<th colspan="1" style="width: 8%;">sofosbuvir</th>
+								<th colspan="1" style="width: 7%;">glecaprevir</th>
+								<th colspan="1" style="width: 7%;">voxilaprevir</th>
+								<th colspan="1" style="width: 7%;">elbasvir</th>
+								<th colspan="1" style="width: 7%;">pibrentasvir</th>
+								<th colspan="1" style="width: 7%;">velpatasvir</th>
+								<th colspan="1" style="width: 7%;">sofosbuvir</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -141,6 +142,11 @@
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}">
 									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
 										'voxilaprevir')}}</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}">
+									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
+										'elbasvir')}}</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}">
