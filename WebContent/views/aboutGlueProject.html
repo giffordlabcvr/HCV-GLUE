@@ -200,13 +200,14 @@ GLUE> module phdrReportingController invoke-function reportFastaAsHtml resistanc
 </p>
 
 <p>
-The second example will read in the BAM file, <code>ngsData.bam</code> and produce a new HTML report <code>ngsData.html</code>. 
+The second example will read in the BAM file, <code>ngsData.bam</code> and produce a new HTML report <code>ngsData.html</code>, 
+using a 15% reads percentage minimum threshold for reporting polymorphisms.
 Click <a href="exampleReports/ngsData.html?hcvGlueVersion=0.1.48" target="_blank">here</a> for a preview of the report. 
 
 <div hljs language="bash" no-escape>
 <pre>
 Mode path: /project/hcv
-GLUE> module phdrReportingController invoke-function reportBamAsHtml ngsData.bam ngsData.html
+GLUE> module phdrReportingController invoke-function reportBamAsHtml ngsData.bam 15.0 ngsData.html
 </pre>
 </div>
 
