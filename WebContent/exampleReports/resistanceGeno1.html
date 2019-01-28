@@ -48,6 +48,10 @@ th + th {
     font-size: 10pt;
 }
 
+#substitutionsOfInterest {
+    font-size: 10pt;
+}
+
 #featureCoverageTable {
     font-size: 10pt;
 }
@@ -74,6 +78,14 @@ td, th {
     text-align: left;
     background-color: #dbf0ff;
 }
+
+#substitutionsOfInterest th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #dbf0ff;
+}
+
 
 #drugScores th {
     padding-top: 12px;
@@ -215,7 +227,7 @@ Consensus (FASTA)
 </tr>
 
 
-<tr><td><b>Report generation date</b></td><td>12/10/2018</td></tr>
+<tr><td><b>Report generation date</b></td><td>28/01/2019</td></tr>
 </table>
 </div>
 <div id="logos">
@@ -368,7 +380,7 @@ Yes
 	-
 </td>
 <td>
-	Q/K80K
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:80K" target="_blank">K/Q80K</a>
 </td>
 <td>
 	- 
@@ -377,13 +389,27 @@ Yes
 <td class="resistanceBlock resistanceColourCode_moderate_resistance"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr class="firstRow">
-<td rowspan = "2">NS5A inhibitors</td>
-<td>pibrentasvir</td>
+<td rowspan = "3">NS5A inhibitors</td>
+<td>elbasvir</td>
 <td>
-	Y93H
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30H" target="_blank">Q30H</a>,	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30H+93H" target="_blank">Q30H+Y93H</a>,	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:93H" target="_blank">Y93H</a>
 </td>
 <td>
-	Q30H+Y93H
+	- 
+</td>
+<td>
+	- 
+</td>
+<td>Strong resistance</td>
+<td class="resistanceBlock resistanceColourCode_strong_resistance"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+<td>pibrentasvir</td>
+<td>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:93H" target="_blank">Y93H</a>
+</td>
+<td>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30H+93H" target="_blank">Q30H+Y93H</a>
 </td>
 <td>
 	- 
@@ -394,7 +420,7 @@ Yes
 <tr>
 <td>velpatasvir</td>
 <td>
-	Q30H+Y93H,	Y93H
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30H+93H" target="_blank">Q30H+Y93H</a>,	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:93H" target="_blank">Y93H</a>
 </td>
 <td>
 	- 
@@ -453,7 +479,7 @@ Susceptible: none of the above.
 
 <th style="width:19%">Clinical trials / study cohort</th>
 <th style="width:8%">Associated drug regimens</th>
-<th style="width:8%">Fount at baseline?</th>
+<th style="width:8%">Found at baseline?</th>
 <th style="width:8%">Treatment-emergent?</th>
 <th style="width:13%">Reference</th>
 </tr>
@@ -461,7 +487,11 @@ Susceptible: none of the above.
 <tbody>
 <tr class="firstRow">
 <td rowspan = "2">NS3</td>
-<td rowspan = "2">Q/K80K</td>
+<td rowspan = "2">
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:80K" target="_blank">
+	K/Q80K
+	</a>
+</td>
 <td rowspan = "2">Subtype 1a</td>
 <td rowspan = "2">voxilaprevir</td>
 <td rowspan = "2">II</td>
@@ -509,89 +539,334 @@ No
 </td>
 </tr>
 <tr class="firstRow">
-<td rowspan = "1">NS5A</td>
-<td rowspan = "1">Q30H</td>
-<td rowspan = "1">Subtype 1a</td>
+<td rowspan = "8">NS5A</td>
+<td rowspan = "8">
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30H" target="_blank">
+	Q30H
+	</a>
+</td>
+<td rowspan = "8">Subtype 1a</td>
+<td rowspan = "7">elbasvir</td>
+<td rowspan = "7">I</td>
+<td id="resistanceFindingEven">
+4 - 79
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2017.12.015">Gottwein et al., 2018</a> [3]
+
+</td>
+</tr>
+<tr>
+<td >
+6
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+<a target="_blank" href="https://doi.org/10.1128/AAC.01390-15">Liu et al., 2015</a> [4]
+
+</td>
+</tr>
+<tr>
+<td id="resistanceFindingEven">
+7.5
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1002/cmdc.201300343">Coburn et al., 2013</a> [5]
+
+</td>
+</tr>
+<tr>
+<td >
+6
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+<a target="_blank" href="https://doi.org/10.1128/AAC.00051-16">Lahser et al., 2016</a> [6]
+
+</td>
+</tr>
+<tr>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105662">C-EDGE CO-INFECTION</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105701">C-EDGE TE</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105467">C-EDGE TN</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105454">C-SALVAGE</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02092350">C-SURFER</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT01717326">C-WORTHy</a>
+</td>
+<td id="resistanceFindingEven">
+EBR/GZR;
+EBR/GZR/RBV
+</td>
+<td id="resistanceFindingEven">
+Yes
+</td>
+<td id="resistanceFindingEven">
+No
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2016.10.017">Komatsu et al., 2017</a> [7]
+
+</td>
+</tr>
+<tr>
+<td >
+6 - 8
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2016.10.017">Komatsu et al., 2017</a> [7]
+
+</td>
+</tr>
+<tr>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105662">C-EDGE CO-INFECTION</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105701">C-EDGE TE</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105467">C-EDGE TN</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105454">C-SALVAGE</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02092350">C-SURFER</a>;
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT01717326">C-WORTHy</a>
+</td>
+<td id="resistanceFindingEven">
+EBR/GZR;
+EBR/GZR/RBV
+</td>
+<td id="resistanceFindingEven">
+Yes
+</td>
+<td id="resistanceFindingEven">
+No
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2017.01.050">Jacobson et al., 2017</a> [8]
+
+</td>
+</tr>
+<tr>
 <td rowspan = "1">velpatasvir</td>
 <td rowspan = "1">-</td>
-<td id="resistanceFindingEven">
+<td >
 2.3
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [3]
+<td >
+<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [9]
 
 </td>
 </tr>
 <tr class="firstRow">
-<td rowspan = "3">NS5A</td>
-<td rowspan = "3">Q30H+Y93H</td>
-<td rowspan = "3">Subtype 1a</td>
-<td rowspan = "1">pibrentasvir</td>
-<td rowspan = "1">II</td>
+<td rowspan = "5">NS5A</td>
+<td rowspan = "5">
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30H+93H" target="_blank">
+	Q30H+Y93H
+	</a>
+</td>
+<td rowspan = "5">Subtype 1a</td>
+<td rowspan = "2">elbasvir</td>
+<td rowspan = "2">I</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT01717326">C-WORTHy</a>
+</td>
+<td id="resistanceFindingEven">
+EBR/GZR;
+EBR/GZR/RBV
+</td>
+<td id="resistanceFindingEven">
+Yes
+</td>
+<td id="resistanceFindingEven">
+No
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1016/S0140-6736(14)61793-1">Sulkowski et al., 2015</a> [10]
+
+</td>
+</tr>
+<tr>
 <td >
 -
 </td>
 <td >
-<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02446717">Magellan-1, Part 2</a>
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02105701">C-EDGE TE</a>
 </td>
 <td >
-GLE/PIB
-</td>
-<td >
-Yes
+EBR/GZR;
+EBR/GZR/RBV
 </td>
 <td >
 No
 </td>
 <td >
-<a target="_blank" href="https://doi.org/10.1002/hep.29671">Poordad et al., 2018</a> [4]
+Yes
+</td>
+<td >
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2016.09.045">Kwo et al., 2017</a> [11]
+
+</td>
+</tr>
+<tr>
+<td rowspan = "1">pibrentasvir</td>
+<td rowspan = "1">II</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02446717">Magellan-1, Part 2</a>
+</td>
+<td id="resistanceFindingEven">
+GLE/PIB
+</td>
+<td id="resistanceFindingEven">
+Yes
+</td>
+<td id="resistanceFindingEven">
+No
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1002/hep.29671">Poordad et al., 2018</a> [12]
 
 </td>
 </tr>
 <tr>
 <td rowspan = "2">velpatasvir</td>
 <td rowspan = "2">I</td>
-<td id="resistanceFindingEven">
+<td >
 2835
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
+<td >
 -
 </td>
-<td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [3]
+<td >
+<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [9]
 
 </td>
 </tr>
 <tr>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02201901">ASTRAL-4</a>
+</td>
+<td id="resistanceFindingEven">
+SOF/VEL
+</td>
+<td id="resistanceFindingEven">
+Yes
+</td>
+<td id="resistanceFindingEven">
+No
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1056/NEJMoa1512614">Curry et al., 2015</a> [13]
+
+</td>
+</tr>
+<tr class="firstRow">
+<td rowspan = "12">NS5A</td>
+<td rowspan = "12">
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:93H" target="_blank">
+	Y93H
+	</a>
+</td>
+<td rowspan = "12">Subtype 1a</td>
+<td rowspan = "5">elbasvir</td>
+<td rowspan = "5">I</td>
 <td >
 -
 </td>
 <td >
-<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02201901">ASTRAL-4</a>
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT02092350">C-SURFER</a>
 </td>
 <td >
-SOF/VEL
+EBR/GZR
 </td>
 <td >
 Yes
@@ -600,14 +875,95 @@ Yes
 No
 </td>
 <td >
-<a target="_blank" href="https://doi.org/10.1056/NEJMoa1512614">Curry et al., 2015</a> [5]
+<a target="_blank" href="https://doi.org/10.1016/S2468-1253(17)30116-4">Bruchfeld et al., 2017</a> [14]
 
 </td>
 </tr>
-<tr class="firstRow">
-<td rowspan = "7">NS5A</td>
-<td rowspan = "7">Y93H</td>
-<td rowspan = "7">Subtype 1a</td>
+<tr>
+<td id="resistanceFindingEven">
+&gt; 1000
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2017.12.015">Gottwein et al., 2018</a> [3]
+
+</td>
+</tr>
+<tr>
+<td >
+600
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+<a target="_blank" href="https://doi.org/10.1002/cmdc.201300343">Coburn et al., 2013</a> [5]
+
+</td>
+</tr>
+<tr>
+<td id="resistanceFindingEven">
+220
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1128/AAC.01390-15">Liu et al., 2015</a> [4]
+
+</td>
+</tr>
+<tr>
+<td >
+220
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+-
+</td>
+<td >
+<a target="_blank" href="https://doi.org/10.1128/AAC.00051-16">Lahser et al., 2016</a> [6]
+
+</td>
+</tr>
+<tr>
 <td rowspan = "2">pibrentasvir</td>
 <td rowspan = "2">I</td>
 <td id="resistanceFindingEven">
@@ -626,7 +982,7 @@ No
 -
 </td>
 <td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1128/AAC.02558-16">Ng et al., 2017</a> [6]
+<a target="_blank" href="https://doi.org/10.1128/AAC.02558-16">Ng et al., 2017</a> [15]
 
 </td>
 </tr>
@@ -647,7 +1003,7 @@ No
 Yes
 </td>
 <td >
-<a target="_blank" href="https://doi.org/10.1002/hep.29671">Poordad et al., 2018</a> [4]
+<a target="_blank" href="https://doi.org/10.1002/hep.29671">Poordad et al., 2018</a> [12]
 
 </td>
 </tr>
@@ -670,7 +1026,7 @@ Yes
 -
 </td>
 <td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1016/S0168-8278(13)61192-7">Cheng et al., 2013</a> [7]
+<a target="_blank" href="https://doi.org/10.1016/S0168-8278(13)61192-7">Cheng et al., 2013</a> [16]
 
 </td>
 </tr>
@@ -691,7 +1047,7 @@ Yes
 -
 </td>
 <td >
-<a target="_blank" href="https://doi.org/10.1053/j.gastro.2017.12.015">Gottwein et al., 2018</a> [8]
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2017.12.015">Gottwein et al., 2018</a> [3]
 
 </td>
 </tr>
@@ -712,7 +1068,7 @@ Yes
 -
 </td>
 <td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [3]
+<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [9]
 
 </td>
 </tr>
@@ -738,7 +1094,7 @@ No
 Yes
 </td>
 <td >
-<a target="_blank" href="https://doi.org/10.1016/j.jhep.2017.11.032">Hezode et al., 2018</a> [9]
+<a target="_blank" href="https://doi.org/10.1016/j.jhep.2017.11.032">Hezode et al., 2018</a> [17]
 
 </td>
 </tr>
@@ -759,7 +1115,7 @@ No
 Yes
 </td>
 <td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1056/NEJMoa1613512">Bourlière et al., 2017</a> [10]
+<a target="_blank" href="https://doi.org/10.1056/NEJMoa1613512">Bourlière et al., 2017</a> [18]
 
 </td>
 </tr>
@@ -770,6 +1126,52 @@ Yes
 
 <div class="pagebreak"> </div>
 
+
+<div id="substitutionsOfInterestDiv">
+<h3>Other polymorphisms of interest</h3>
+<table id="substitutionsOfInterest">
+<thead>
+<tr>
+<th style="width:15%">Virus protein</th>
+<th style="width:15%">Polymorphism</th>
+<th style="width:70%">Notes</th>
+</thead>
+<tbody>
+<tr>
+	<td>NS5A</td>
+	<td>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:28M" target="_blank">
+	M28M
+	</a>
+</td>
+	<td>Associated with resistance in other subtypes of genotype 1</td>
+</tr>
+<tr>
+	<td>NS5A</td>
+	<td>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:28M+30H" target="_blank">
+	M28M+Q30H
+	</a>
+</td>
+	<td>Associated with resistance in genotypes other than genotype 1</td>
+</tr>
+<tr>
+	<td>NS5A</td>
+	<td>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:28M+93H" target="_blank">
+	M28M+Y93H
+	</a>
+</td>
+	<td>Associated with resistance in genotypes other than genotype 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<div class="pagebreak"> </div>
+
+
 <div id="configuration">
 <h3>System configuration</h3>
 <table id="systemConfigTable">
@@ -777,12 +1179,11 @@ Yes
     <col class="tableHeader"/>
 </colgroup>
 <colgroup style="width:50%">
-    <col>
+    <col/>
 </colgroup>
-<tr><td><b>GLUE engine version</b></td><td>1.1.3</td></tr>
-<tr><td><b>HCV project version</b></td><td>0.1.33</td></tr>
-<tr><td><b>PHE extension version</b></td><td>0.1.10</td></tr>
-<tr><td><b>Minimum coding region coverage for resistance analysis</b></td><td>90%</td></tr>
+<tr><td><b>GLUE engine version</b></td><td>1.1.28</td></tr>
+<tr><td><b>HCV project version</b></td><td>0.1.49</td></tr>
+<tr><td><b>PHE extension version</b></td><td>0.1.17</td></tr>
 
 
 </table>
@@ -815,60 +1216,6 @@ J. Hepatol.
 </p>
 <p>
 [3] 
-<b>Clinical Resistance to Velpatasvir (GS-5816), a Novel Pan-Genotypic Inhibitor of the Hepatitis C Virus NS5A Protein.</b>
-E. J. Lawitz, H. Dvory-Sobol, B. P. Doehle, A. S. Worth, J. McNally, D. M. Brainard, J. O. Link, M. D. Miller and H. Mo, 
-Antimicrob. Agents Chemother.
-	60(9),
-	5368-78
-(2016)
-<br/>
-<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">https://doi.org/10.1128/AAC.00763-16</a> 
-</p>
-<p>
-[4] 
-<b>Glecaprevir/Pibrentasvir in patients with hepatitis C virus genotype 1 or 4 and past direct-acting antiviral treatment failure.</b>
-F. Poordad, S. Pol, A. Asatryan, M. Buti, D. Shaw, C. Hézode, F. Felizarta, R. W. Reindollar, S. C. Gordon, S. Pianko, M. W. Fried, D. E. Bernstein, J. Gallant, C. W. Lin, Y. Lei, T. I. Ng, P. Krishnan, S. Kopecky-Bromberg, J. Kort and F. J. Mensa, 
-Hepatology
-	67(4),
-	1253-1260
-(2018)
-<br/>
-<a target="_blank" href="https://doi.org/10.1002/hep.29671">https://doi.org/10.1002/hep.29671</a> 
-</p>
-<p>
-[5] 
-<b>Sofosbuvir and Velpatasvir for HCV in Patients with Decompensated Cirrhosis.</b>
-M. P. Curry, J. G. O&#39;Leary, N. Bzowej, A. J. Muir, K. M. Korenblat, J. M. Fenkel, K. R. Reddy, E. Lawitz, S. L. Flamm, T. Schiano, L. Teperman, R. Fontana, E. Schiff, M. Fried, B. Doehle, D. An, J. McNally, A. Osinusi, D. M. Brainard, J. G. McHutchison, R. S. Brown, M. Charlton and ASTRAL-4 Investigators, 
-N. Engl. J. Med.
-	373(27),
-	2618-28
-(2015)
-<br/>
-<a target="_blank" href="https://doi.org/10.1056/NEJMoa1512614">https://doi.org/10.1056/NEJMoa1512614</a> 
-</p>
-<p>
-[6] 
-<b>Antiviral Activity and Resistance Profile of the Next-Generation Hepatitis C Virus NS5A Inhibitor Pibrentasvir.</b>
-T. I. Ng, P. Krishnan, T. Pilot-Matias, W. Kati, G. Schnell, J. Beyer, T. Reisch, L. Lu, T. Dekhtyar, M. Irvin, R. Tripathi, C. Maring, J. T. Randolph, R. Wagner and C. Collins, 
-Antimicrob. Agents Chemother.
-	61(5),
-(2017)
-<br/>
-<a target="_blank" href="https://doi.org/10.1128/AAC.02558-16">https://doi.org/10.1128/AAC.02558-16</a> 
-</p>
-<p>
-[7] 
-<b>GS-5816, A SECOND GENERATION HCV NS5A INHIBITOR WITH POTENT ANTIVIRAL ACTIVITY, BROAD GENOTYPIC COVERAGE AND A HIGH RESISTANCE BARRIER</b>
-G. Cheng, M. Yu, B. Peng, Y.-J. Lee, A. Trejo-Martin, R. Gong, C. Bush, A. Worth, M. Nash, K. Chan, H. Yang, R. Beran, Y. Tian, J. Perry, J. Taylor, C. Yang, M. Paulson, W. Delaney and J.O. Link, 
-J. Hepatol.
-	58(Supplement 1),
-	S484-S485
-(2013)
-<br/>
-<a target="_blank" href="https://doi.org/10.1016/S0168-8278(13)61192-7">https://doi.org/10.1016/S0168-8278(13)61192-7</a> 
-</p>
-<p>
-[8] 
 <b>Efficacy of NS5A Inhibitors Against Hepatitis C Virus Genotypes 1-7 and Escape Variants.</b>
 J. M. Gottwein, L. V. Pham, L. S. Mikkelsen, L. Ghanem, S. Ramirez, T. K. H. Scheel, T. H. R. Carlsen and J. Bukh, 
 Gastroenterology
@@ -879,7 +1226,149 @@ Gastroenterology
 <a target="_blank" href="https://doi.org/10.1053/j.gastro.2017.12.015">https://doi.org/10.1053/j.gastro.2017.12.015</a> 
 </p>
 <p>
+[4] 
+<b>Susceptibilities of genotype 1a, 1b, and 3 hepatitis C virus variants to the NS5A inhibitor elbasvir.</b>
+R. Liu, S. Curry, P. McMonagle, W. W. Yeh, S. W. Ludmerer, P. A. Jumes, W. L. Marshall, S. Kong, P. Ingravallo, S. Black, I. Pak, M. J. DiNubile and A. Y. Howe, 
+Antimicrob. Agents Chemother.
+	59(11),
+	6922-9
+(2015)
+<br/>
+<a target="_blank" href="https://doi.org/10.1128/AAC.01390-15">https://doi.org/10.1128/AAC.01390-15</a> 
+</p>
+<p>
+[5] 
+<b>Discovery of MK-8742: an HCV NS5A inhibitor with broad genotype activity.</b>
+C. A. Coburn, P. T. Meinke, W. Chang, C. M. Fandozzi, D. J. Graham, B. Hu, Q. Huang, S. Kargman, J. Kozlowski, R. Liu, J. A. McCauley, A. A. Nomeir, R. M. Soll, J. P. Vacca, D. Wang, H. Wu, B. Zhong, D. B. Olsen and S. W. Ludmerer, 
+ChemMedChem
+	8(12),
+	1930-40
+(2013)
+<br/>
+<a target="_blank" href="https://doi.org/10.1002/cmdc.201300343">https://doi.org/10.1002/cmdc.201300343</a> 
+</p>
+<p>
+[6] 
+<b>The Combination of Grazoprevir, a Hepatitis C Virus (HCV) NS3/4A Protease Inhibitor, and Elbasvir, an HCV NS5A Inhibitor, Demonstrates a High Genetic Barrier to Resistance in HCV Genotype 1a Replicons.</b>
+F. C. Lahser, K. Bystol, S. Curry, P. McMonagle, E. Xia, P. Ingravallo, R. Chase, R. Liu, T. Black, D. Hazuda, A. Y. Howe and E. Asante-Appiah, 
+Antimicrob. Agents Chemother.
+	60(5),
+	2954-64
+(2016)
+<br/>
+<a target="_blank" href="https://doi.org/10.1128/AAC.00051-16">https://doi.org/10.1128/AAC.00051-16</a> 
+</p>
+<p>
+[7] 
+<b>Regulatory Analysis of Effects of Hepatitis C Virus NS5A Polymorphisms on Efficacy of Elbasvir and Grazoprevir.</b>
+T. E. Komatsu, S. Boyd, A. Sherwat, L. Tracy, L. K. Naeger, J. J. O&#39;Rear and P. R. Harrington, 
+Gastroenterology
+	152(3),
+	586-597
+(2017)
+<br/>
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2016.10.017">https://doi.org/10.1053/j.gastro.2016.10.017</a> 
+</p>
+<p>
+[8] 
+<b>Safety and Efficacy of Elbasvir/Grazoprevir in Patients With Hepatitis C Virus Infection and Compensated Cirrhosis: An Integrated Analysis.</b>
+I. M. Jacobson, E. Lawitz, P. Y. Kwo, C. Hézode, C. Y. Peng, A. Y. M. Howe, P. Hwang, J. Wahl, M. Robertson, E. Barr and B. A. Haber, 
+Gastroenterology
+	152(6),
+	1372-1382.e2
+(2017)
+<br/>
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2017.01.050">https://doi.org/10.1053/j.gastro.2017.01.050</a> 
+</p>
+<p>
 [9] 
+<b>Clinical Resistance to Velpatasvir (GS-5816), a Novel Pan-Genotypic Inhibitor of the Hepatitis C Virus NS5A Protein.</b>
+E. J. Lawitz, H. Dvory-Sobol, B. P. Doehle, A. S. Worth, J. McNally, D. M. Brainard, J. O. Link, M. D. Miller and H. Mo, 
+Antimicrob. Agents Chemother.
+	60(9),
+	5368-78
+(2016)
+<br/>
+<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">https://doi.org/10.1128/AAC.00763-16</a> 
+</p>
+<p>
+[10] 
+<b>Efficacy and safety of 8 weeks versus 12 weeks of treatment with grazoprevir (MK-5172) and elbasvir (MK-8742) with or without ribavirin in patients with hepatitis C virus genotype 1 mono-infection and HIV/hepatitis C virus co-infection (C-WORTHY): a randomised, open-label phase 2 trial.</b>
+M. Sulkowski, C. Hezode, J. Gerstoft, J. M. Vierling, J. Mallolas, S. Pol, M. Kugelmas, A. Murillo, N. Weis, R. Nahass, O. Shibolet, L. Serfaty, M. Bourliere, E. DeJesus, E. Zuckerman, F. Dutko, M. Shaughnessy, P. Hwang, A. Y. Howe, J. Wahl, M. Robertson, E. Barr and B. Haber, 
+Lancet
+	385(9973),
+	1087-97
+(2015)
+<br/>
+<a target="_blank" href="https://doi.org/10.1016/S0140-6736(14)61793-1">https://doi.org/10.1016/S0140-6736(14)61793-1</a> 
+</p>
+<p>
+[11] 
+<b>Effectiveness of Elbasvir and Grazoprevir Combination, With or Without Ribavirin, for Treatment-Experienced Patients With Chronic Hepatitis C Infection.</b>
+P. Kwo, E. J. Gane, C. Y. Peng, B. Pearlman, J. M. Vierling, L. Serfaty, M. Buti, S. Shafran, P. Stryszak, L. Lin, J. Gress, S. Black, F. J. Dutko, M. Robertson, J. Wahl, L. Lupinacci, E. Barr and B. Haber, 
+Gastroenterology
+	152(1),
+	164-175.e4
+(2017)
+<br/>
+<a target="_blank" href="https://doi.org/10.1053/j.gastro.2016.09.045">https://doi.org/10.1053/j.gastro.2016.09.045</a> 
+</p>
+<p>
+[12] 
+<b>Glecaprevir/Pibrentasvir in patients with hepatitis C virus genotype 1 or 4 and past direct-acting antiviral treatment failure.</b>
+F. Poordad, S. Pol, A. Asatryan, M. Buti, D. Shaw, C. Hézode, F. Felizarta, R. W. Reindollar, S. C. Gordon, S. Pianko, M. W. Fried, D. E. Bernstein, J. Gallant, C. W. Lin, Y. Lei, T. I. Ng, P. Krishnan, S. Kopecky-Bromberg, J. Kort and F. J. Mensa, 
+Hepatology
+	67(4),
+	1253-1260
+(2018)
+<br/>
+<a target="_blank" href="https://doi.org/10.1002/hep.29671">https://doi.org/10.1002/hep.29671</a> 
+</p>
+<p>
+[13] 
+<b>Sofosbuvir and Velpatasvir for HCV in Patients with Decompensated Cirrhosis.</b>
+M. P. Curry, J. G. O&#39;Leary, N. Bzowej, A. J. Muir, K. M. Korenblat, J. M. Fenkel, K. R. Reddy, E. Lawitz, S. L. Flamm, T. Schiano, L. Teperman, R. Fontana, E. Schiff, M. Fried, B. Doehle, D. An, J. McNally, A. Osinusi, D. M. Brainard, J. G. McHutchison, R. S. Brown, M. Charlton and ASTRAL-4 Investigators, 
+N. Engl. J. Med.
+	373(27),
+	2618-28
+(2015)
+<br/>
+<a target="_blank" href="https://doi.org/10.1056/NEJMoa1512614">https://doi.org/10.1056/NEJMoa1512614</a> 
+</p>
+<p>
+[14] 
+<b>Elbasvir plus grazoprevir in patients with hepatitis C virus infection and stage 4-5 chronic kidney disease: clinical, virological, and health-related quality-of-life outcomes from a phase 3, multicentre, randomised, double-blind, placebo-controlled trial.</b>
+A. Bruchfeld, D. Roth, P. Martin, D. R. Nelson, S. Pol, M. C. Londoño, H. Monsour, M. Silva, P. Hwang, J. M. Arduino, M. Robertson, B. Y. Nguyen, J. Wahl, E. Barr and W. Greaves, 
+Lancet Gastroenterol Hepatol
+	2(8),
+	585-594
+(2017)
+<br/>
+<a target="_blank" href="https://doi.org/10.1016/S2468-1253(17)30116-4">https://doi.org/10.1016/S2468-1253(17)30116-4</a> 
+</p>
+<p>
+[15] 
+<b>Antiviral Activity and Resistance Profile of the Next-Generation Hepatitis C Virus NS5A Inhibitor Pibrentasvir.</b>
+T. I. Ng, P. Krishnan, T. Pilot-Matias, W. Kati, G. Schnell, J. Beyer, T. Reisch, L. Lu, T. Dekhtyar, M. Irvin, R. Tripathi, C. Maring, J. T. Randolph, R. Wagner and C. Collins, 
+Antimicrob. Agents Chemother.
+	61(5),
+(2017)
+<br/>
+<a target="_blank" href="https://doi.org/10.1128/AAC.02558-16">https://doi.org/10.1128/AAC.02558-16</a> 
+</p>
+<p>
+[16] 
+<b>GS-5816, A SECOND GENERATION HCV NS5A INHIBITOR WITH POTENT ANTIVIRAL ACTIVITY, BROAD GENOTYPIC COVERAGE AND A HIGH RESISTANCE BARRIER</b>
+G. Cheng, M. Yu, B. Peng, Y.-J. Lee, A. Trejo-Martin, R. Gong, C. Bush, A. Worth, M. Nash, K. Chan, H. Yang, R. Beran, Y. Tian, J. Perry, J. Taylor, C. Yang, M. Paulson, W. Delaney and J.O. Link, 
+J. Hepatol.
+	58(Supplement 1),
+	S484-S485
+(2013)
+<br/>
+<a target="_blank" href="https://doi.org/10.1016/S0168-8278(13)61192-7">https://doi.org/10.1016/S0168-8278(13)61192-7</a> 
+</p>
+<p>
+[17] 
 <b>Resistance analysis in patients with genotype 1-6 HCV infection treated with sofosbuvir/velpatasvir in the phase III studies.</b>
 C. Hezode, N. Reau, E. S. Svarovskaia, B. P. Doehle, R. Shanmugam, H. Dvory-Sobol, C. Hedskog, J. McNally, A. Osinusi, D. M. Brainard, M. D. Miller, H. Mo, S. K. Roberts, J. G. O&#39;Leary, S. D. Shafran and S. Zeuzem, 
 J. Hepatol.
@@ -890,7 +1379,7 @@ J. Hepatol.
 <a target="_blank" href="https://doi.org/10.1016/j.jhep.2017.11.032">https://doi.org/10.1016/j.jhep.2017.11.032</a> 
 </p>
 <p>
-[10] 
+[18] 
 <b>Sofosbuvir, Velpatasvir, and Voxilaprevir for Previously Treated HCV Infection.</b>
 M. Bourlière, S. C. Gordon, S. L. Flamm, C. L. Cooper, A. Ramji, M. Tong, N. Ravendhran, J. M. Vierling, T. T. Tran, S. Pianko, M. B. Bansal, V. de Lédinghen, R. H. Hyland, L. M. Stamm, H. Dvory-Sobol, E. Svarovskaia, J. Zhang, K. C. Huang, G. M. Subramanian, D. M. Brainard, J. G. McHutchison, E. C. Verna, P. Buggisch, C. S. Landis, Z. H. Younes, M. P. Curry, S. I. Strasser, E. R. Schiff, K. R. Reddy, M. P. Manns, K. V. Kowdley, S. Zeuzem and POLARIS-1 and POLARIS-4 Investigators, 
 N. Engl. J. Med.
