@@ -33,8 +33,9 @@
 					<td ng-if="finding.alignmentRasDrug != null" rowspan="{{finding.alignmentRasDrug.numFindings}}"><a target="_blank" href="#project/drug/{{finding.alignmentRasDrug.drug}}">{{finding.alignmentRasDrug.drug}}</a></td>
 					<td ng-if="finding.alignmentRasDrug != null" rowspan="{{finding.alignmentRasDrug.numFindings}}">{{finding.alignmentRasDrug.displayResistanceCategory}}</td>
 					<td>{{renderInVitroLevel(finding.inVitroResult)}}</td>
-					<td ng-if="finding.inVivoResult.clinicalTrial"><span ng-repeat="trial in finding.inVivoResult.clinicalTrial track by $index"><span ng-if="$index > 0">;</span>
-						<a target="_blank" href="https://clinicaltrials.gov/ct2/show/{{trial.nctId}}">{{trial.displayName}}</a></span></td>
+					<td ng-if="finding.inVivoResult.clinicalTrial"><span ng-if="finding.inVivoResult.clinicalTrial.length > 1">Pooled study of multiple trials:</span><span ng-repeat="trial in finding.inVivoResult.clinicalTrial track by $index"><span ng-if="$index > 0">;</span>
+						<a ng-if="trial.nctId != null" target="_blank" href="https://clinicaltrials.gov/ct2/show/{{trial.nctId}}">{{trial.displayName}}</a><span ng-if="trial.nctId == null">{{trial.displayName}}</span></span>
+					</td>
 					<td ng-if="finding.inVivoResult.cohortDescription">{{finding.inVivoResult.cohortDescription}}</td>
 					<td ng-if="finding.inVivoResult"><span ng-repeat="regimen in finding.inVivoResult.regimen track by $index"><span ng-if="$index > 0">; </span>
 					{{regimen.displayName}}</span></td>
