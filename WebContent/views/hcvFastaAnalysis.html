@@ -106,17 +106,18 @@
 					<table class="table table-striped table-bordered">
 						<thead>
 							<tr>
-								<th rowspan="2" style="width: 8%;">Sequence</th>
-								<th rowspan="2" style="width: 8%;">Identified as HCV?</th>
-								<th rowspan="2" style="width: 8%;">Genotype</th>
-								<th rowspan="2" style="width: 8%;">Subtype</th>
-								<th rowspan="2" style="width: 8%;">Closest reference
+								<th rowspan="2" style="width: 7%;">Sequence</th>
+								<th rowspan="2" style="width: 7%;">Identified as HCV?</th>
+								<th rowspan="2" style="width: 7%;">Genotype</th>
+								<th rowspan="2" style="width: 7%;">Subtype</th>
+								<th rowspan="2" style="width: 7%;">Closest reference
 									sequence</th>
-								<th colspan="8" style="width: 48%;">Drug resistance level</th>
-								<th rowspan="2" style="width: 12%;">Full report</th>
+								<th colspan="9" style="width: 54%;">Drug resistance level</th>
+								<th rowspan="2" style="width: 11%;">Full report</th>
 							</tr>
 							<tr>
 								<th colspan="1" style="width: 6%;">GLE</th>
+								<th colspan="1" style="width: 6%;">GZR</th>
 								<th colspan="1" style="width: 6%;">VOX</th>
 								<th colspan="1" style="width: 6%;">DCV</th>
 								<th colspan="1" style="width: 6%;">EBR</th>
@@ -139,6 +140,11 @@
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'glecaprevir')}}">
 									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
 										'glecaprevir')}}</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'grazoprevir')}}">
+									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
+										'grazoprevir')}}</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}">
@@ -176,8 +182,7 @@
 										'sofosbuvir')}}</span>
 								</td>
 								<td><a
-									ng-click="viewFullReport(fileItemUnderAnalysis, phdrResult.phdrReport.sequenceResult.id, phdrResult)">View
-										full report <i class="glyphicon glyphicon-link"></i>
+									ng-click="viewFullReport(fileItemUnderAnalysis, phdrResult.phdrReport.sequenceResult.id, phdrResult)">View <i class="glyphicon glyphicon-link"></i>
 								</a></td>
 							</tr>
 						</tbody>
