@@ -32,6 +32,7 @@
 
 	<!-- glue config file -->    
     <Environment name="configFilePath" type="java.lang.String" value="/opt/gluetools/conf/hcv-glue-gluetools-config.xml"/>
+    <Environment name="logLevel" type="java.lang.String" value="INFO"/>
     <Environment name="migrateSchema" type="java.lang.Boolean" value="false"/>
     
 
