@@ -2,35 +2,36 @@
 	padding: 0px;
 }
 
-.resistanceColourCode_susceptible {
+.resistanceColourCode_no_significant_resistance_detected {
 	background-color: #56d369;
 	color:#000000;
 	font-weight:bold;
 }
 
-.resistanceColourCode_weak_resistance {
+.resistanceColourCode_possible_resistance_detected {
 	background-color: #fcf95a;
 	color:#000000;
 	font-weight:bold;
 }
 
-.resistanceColourCode_moderate_resistance {
+.resistanceColourCode_probable_resistance_detected {
 	background-color: #ffb349;
 	color:#000000;
 	font-weight:bold;
 }
 
-.resistanceColourCode_strong_resistance {
+.resistanceColourCode_resistance_detected {
 	background-color: #ff0202;
 	color:#ffffff;
 	font-weight:bold;
 }
 
-.resistanceColourCode_insufficient_coverage {
+.resistanceColourCode_insufficient_coverage_or_research {
 	background-color: #666666;
 	color:#ffffff;
 	font-weight:bold;
 }
+
 
 .genomeVisualisationControls {
 	border: 2px solid #cecece;
@@ -58,6 +59,19 @@
 	float: none;
 }
 
+
+table.table-bordered{
+    border:1px solid #a9a9a9;
+  }
+table.table-bordered > thead > tr > th{
+    border:1px solid #a9a9a9;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #a9a9a9;
+}
+table.table-bordered > tr > td{
+    border:1px solid #a9a9a9;
+}
 
 .updateVisualisationButton {
 	padding-right: 0px;

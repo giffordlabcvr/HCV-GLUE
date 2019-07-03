@@ -428,10 +428,10 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    			for(var j = 0; j < categoryScores.drugAssessments.length; j++) {
 		    				var drugAssessment = categoryScores.drugAssessments[j];
 		    				if(drugAssessment.drug.id == drugId) {
-		    					if(drugAssessment.sufficientCoverage) {
+		    					if(drugAssessment.sufficientCoverage && drugAssessment.genotypeHasGoodResistanceLiterature) {
 		    						return drugAssessment.drugScore;
 		    					} else {
-		    						return 'insufficient_coverage';
+		    						return 'insufficient_coverage_or_research';
 		    					}
 		    				}
 		    			}

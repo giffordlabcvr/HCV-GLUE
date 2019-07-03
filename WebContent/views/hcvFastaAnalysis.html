@@ -83,17 +83,6 @@
 				<hr />
 				<h4>Analysis of sequence file
 					'{{fileItemUnderAnalysis.file.name}}'</h4>
-
-					<p>
-						Please note that the HCV-GLUE drug resistance interpretation system has not yet been clinically validated. 
-						<br/>
-					   <b>No clinical decisions should be made based on the outputs of HCV-GLUE drug resistance analysis.</b>
-						<br/>
-					   Please subscribe to the <a target="_blank" 
-					   href="https://www.researchgate.net/project/HCV-GLUE-an-online-database-and-sequence-analysis-tool-supporting-treatment-and-eradication-of-hepatitis-C-virus">
-					   HCV-GLUE ResearchGate project</a> to be notified of updates.
-					</p>
-
 					<p>
 						<div class="btn-group">
 					        <label class="btn btn-primary ng-pristine ng-untouched ng-valid active" ng-model="displaySection" btn-radio="'summary'">Summary</label>
@@ -102,29 +91,33 @@
 						</div>
 					</p>
 				<div ng-show="displaySection == 'summary'">
+
 					<p>
 					<table class="table table-striped table-bordered">
 						<thead>
 							<tr>
-								<th rowspan="2" style="width: 7%;">Sequence</th>
-								<th rowspan="2" style="width: 7%;">Identified as HCV?</th>
-								<th rowspan="2" style="width: 7%;">Genotype</th>
-								<th rowspan="2" style="width: 7%;">Subtype</th>
-								<th rowspan="2" style="width: 7%;">Closest reference
+								<th rowspan="2" style="width: 8%;">Sequence</th>
+								<th rowspan="2" style="width: 8%;">Identified as HCV?</th>
+								<th rowspan="2" style="width: 8%;">Genotype</th>
+								<th rowspan="2" style="width: 8%;">Subtype</th>
+								<th rowspan="2" style="width: 8%;">Closest reference
 									sequence</th>
-								<th colspan="9" style="width: 54%;">Drug resistance level</th>
-								<th rowspan="2" style="width: 11%;">Full report</th>
+								<th colspan="12" style="width: 48%;">Drug resistance detection</th>
+								<th rowspan="2" style="width: 12%;">Full report</th>
 							</tr>
 							<tr>
-								<th colspan="1" style="width: 6%;">GLE</th>
-								<th colspan="1" style="width: 6%;">GZR</th>
-								<th colspan="1" style="width: 6%;">VOX</th>
-								<th colspan="1" style="width: 6%;">DCV</th>
-								<th colspan="1" style="width: 6%;">EBR</th>
-								<th colspan="1" style="width: 6%;">LDV</th>
-								<th colspan="1" style="width: 6%;">PIB</th>
-								<th colspan="1" style="width: 6%;">VEL</th>
-								<th colspan="1" style="width: 6%;">SOF</th>
+								<th colspan="1" style="width: 4%;">GLE</th>
+								<th colspan="1" style="width: 4%;">GZR</th>
+								<th colspan="1" style="width: 4%;">PTV</th>
+								<th colspan="1" style="width: 4%;">VOX</th>
+								<th colspan="1" style="width: 4%;">DCV</th>
+								<th colspan="1" style="width: 4%;">EBR</th>
+								<th colspan="1" style="width: 4%;">LDV</th>
+								<th colspan="1" style="width: 4%;">OBV</th>
+								<th colspan="1" style="width: 4%;">PIB</th>
+								<th colspan="1" style="width: 4%;">VEL</th>
+								<th colspan="1" style="width: 4%;">DSV</th>
+								<th colspan="1" style="width: 4%;">SOF</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -138,48 +131,51 @@
 								<td>{{getClosestReferenceSequence(phdrResult.phdrReport.sequenceResult)}}</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'glecaprevir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'glecaprevir')}}</span>
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'grazoprevir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'grazoprevir')}}</span>
+									<span>&nbsp;</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'paritaprevir')}}">
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'voxilaprevir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'voxilaprevir')}}</span>
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'daclatasvir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'daclatasvir')}}</span>
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'elbasvir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'elbasvir')}}</span>
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'ledipasvir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'ledipasvir')}}</span>
+									<span>&nbsp;</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'ombitasvir')}}">
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'pibrentasvir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'pibrentasvir')}}</span>
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'velpatasvir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'velpatasvir')}}</span>
+									<span>&nbsp;</span>
+								</td>
+								<td
+									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'dasabuvir')}}">
+									<span>&nbsp;</span>
 								</td>
 								<td
 									class="resistanceBlock {{'resistanceColourCode_'+getResistanceLevel(phdrResult.phdrReport.sequenceResult, 'sofosbuvir')}}">
-									<span>{{getResistanceLevelText(phdrResult.phdrReport.sequenceResult,
-										'sofosbuvir')}}</span>
+									<span>&nbsp;</span>
 								</td>
 								<td><a
 									ng-click="viewFullReport(fileItemUnderAnalysis, phdrResult.phdrReport.sequenceResult.id, phdrResult)">View <i class="glyphicon glyphicon-link"></i>
@@ -188,6 +184,66 @@
 						</tbody>
 					</table>
 					</p>
+					
+					
+					<p>
+					 <div class="row">
+					    <div class="col-md-9">
+		  					<p>
+								Please note that the HCV-GLUE drug resistance interpretation system has not yet been formally validated for 
+								clinical use. 
+							</p>
+							<p>
+								HCV-GLUE detects the presence of resistance-associated substitutions (RAS) and variants in viral genome sequences 
+								and summarises the evidence that these confer resistance to direct-acting antiviral drugs (DAAs). 
+								It is essential to note that the prediction of reduced susceptibility to an individual DAA by HCV-GLUE is unlikely
+								to be of clinical relevance in treatment-naïve, non-cirrhotic patients, with the exception of elbasvir.
+								In the presence of cirrhosis or with a history of prior exposure to DAA, the antiviral susceptibility results 
+								may be of value in choosing an optimal treatment regimen. As such decisions are complex, we recommend that 
+								treatment selection should be taken by a multi-professional expert team only after review of relevant viral, 
+								patient and DAA-related factors.
+							</p>
+							<p>
+							   Please subscribe to the <a target="_blank" 
+							   href="https://www.researchgate.net/project/HCV-GLUE-an-online-database-and-sequence-analysis-tool-supporting-treatment-and-eradication-of-hepatitis-C-virus">
+							   HCV-GLUE ResearchGate project</a> to be notified of updates.
+							</p>
+					    </div>
+					    <div class="col-md-3">
+							<table class="table table-striped table-bordered">
+								<thead>
+									<tr>
+										<th colspan="2" style="">Drug resistance detection key</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="">Resistance detected</th>
+										<td class="resistanceBlock resistanceColourCode_resistance_detected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+									</tr>
+									<tr>
+										<td style="">Probable resistance detected</th>
+										<td class="resistanceBlock resistanceColourCode_probable_resistance_detected">&nbsp;</th>
+									</tr>
+									<tr>
+										<td style="">Possible resistance detected</th>
+										<td class="resistanceBlock resistanceColourCode_possible_resistance_detected">&nbsp;</th>
+									</tr>
+									<tr>
+										<td style="">No resistance detected</th>
+										<td class="resistanceBlock resistanceColourCode_no_significant_resistance_detected">&nbsp;</th>
+									</tr>
+									<tr>
+										<td style="">Insufficient coverage / research</th>
+										<td class="resistanceBlock resistanceColourCode_insufficient_coverage_or_research">&nbsp;</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>					
+					</p>
+					
+					
 				</div>
 				<div ng-show="displaySection == 'genomeVisualisation'" class="container-fluid">
 					<div class="row">
