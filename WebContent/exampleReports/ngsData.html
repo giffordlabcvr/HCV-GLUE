@@ -98,21 +98,33 @@ td, th {
 	padding: 0px;
 }
 
-.resistanceColourCode_susceptible {
+.footnoteList {
+   list-style: none;
+   margin-left: 0;
+   padding-left: 1.2em;
+   text-indent: -1.2em;
+}
+
+.resistanceColourCode_no_significant_resistance_detected {
 	background-color: #56d369;
 }
 
-.resistanceColourCode_weak_resistance {
+.resistanceColourCode_possible_resistance_detected {
 	background-color: #fcf95a;
 }
 
-.resistanceColourCode_moderate_resistance {
+.resistanceColourCode_probable_resistance_detected {
 	background-color: #ffb349;
 }
 
-.resistanceColourCode_strong_resistance {
+.resistanceColourCode_resistance_detected {
 	background-color: #ff0202;
 }
+
+.resistanceColourCode_insufficient_research {
+	background-color: #666666;
+}
+
 
 .rasColourCode_insignificant {
 	color: #aaaaaa;
@@ -223,7 +235,7 @@ Deep sequencing (SAM/BAM)
 
 
 
-<tr><td><b>Report generation date</b></td><td>26/04/2019</td></tr>
+<tr><td><b>Report generation date</b></td><td>03/07/2019</td></tr>
 </table>
 </div>
 <div id="logos">
@@ -246,6 +258,7 @@ Yes
 </td>
 <tr>
 
+
 <td><b>Genotype</b></td>
 <td>1</td>
 </tr>
@@ -262,121 +275,6 @@ Yes
 </table>
 </div>
 
-<div id="featureCoverage">
-
-
-<h3>Genome coding region coverage</h3>
-
-
-<table id="featureCoverageTable">
-<colgroup>
-    <col class="tableHeader"/>
-    <col/>
-    <col/>
-    <col/>
-    <col/>
-</colgroup>
-
-<thead>
-<tr>
-	<th rowspan="2">Genome region</th>
-	<th colspan="4">Proportion of nucleotide sites with depth</th>
-</tr>
-<tr>
-	<th>&ge; 1</th>
-	<th>&ge; 10</th>
-	<th>&ge; 100</th>
-	<th>&ge; 1000</th>
-</tr>
-<tr>
-<td><b>Precursor polyprotein</b></td>
-<td>99.5%</td>
-<td>99.4%</td>
-<td>96.8%</td>
-<td>8.5%</td>
-</tr>
-<tr>
-<td><b>Core</b></td>
-<td>100%</td>
-<td>100%</td>
-<td>93.7%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td><b>E1</b></td>
-<td>100%</td>
-<td>100%</td>
-<td>100%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td><b>E2</b></td>
-<td>99.7%</td>
-<td>99.7%</td>
-<td>97.9%</td>
-<td>11.8%</td>
-</tr>
-<tr>
-<td><b>p7</b></td>
-<td>100%</td>
-<td>100%</td>
-<td>100%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td><b>NS2</b></td>
-<td>100%</td>
-<td>100%</td>
-<td>92.8%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td><b>NS3</b></td>
-<td>99.4%</td>
-<td>99.2%</td>
-<td>92.8%</td>
-<td>4.2%</td>
-</tr>
-<tr>
-<td><b>NS4A</b></td>
-<td>100%</td>
-<td>100%</td>
-<td>100%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td><b>NS4B</b></td>
-<td>100%</td>
-<td>100%</td>
-<td>100%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td><b>NS5A</b></td>
-<td>100%</td>
-<td>100%</td>
-<td>99.3%</td>
-<td>0%</td>
-</tr>
-<tr>
-<td><b>NS5B</b></td>
-<td>98%</td>
-<td>98%</td>
-<td>98%</td>
-<td>31.6%</td>
-</tr>
-</table>
-
-
-
-
-
-
-
-
-</div>
-
-<div class="pagebreak"> </div>
 
 <div id="antiviralResistance">
 <h3>Antiviral resistance summary</h3>
@@ -384,10 +282,20 @@ Yes
 
 
 <p>
-	Please note that the HCV-GLUE drug resistance interpretation system has not yet been clinically validated. 
-	<br/>
-   <b>No clinical decisions should be made based on the outputs of HCV-GLUE drug resistance analysis.</b>
-	<br/>
+	Please note that the HCV-GLUE drug resistance interpretation system has not yet been formally validated for 
+	clinical use. 
+</p>
+<p>
+	HCV-GLUE detects the presence of resistance-associated substitutions (RAS) and variants in viral genome sequences 
+	and summarises the evidence that these confer resistance to direct-acting antiviral drugs (DAAs). 
+	It is essential to note that the prediction of reduced susceptibility to an individual DAA by HCV-GLUE is unlikely
+	to be of clinical relevance in treatment-naïve, non-cirrhotic patients, with the exception of elbasvir.
+	In the presence of cirrhosis or with a history of prior exposure to DAA, the antiviral susceptibility results 
+	may be of value in choosing an optimal treatment regimen. As such decisions are complex, we recommend that 
+	treatment selection should be taken by a multi-professional expert team only after review of relevant viral, 
+	patient and DAA-related factors.
+</p>
+<p>
    Please subscribe to the <a target="_blank" 
    href="https://www.researchgate.net/project/HCV-GLUE-an-online-database-and-sequence-analysis-tool-supporting-treatment-and-eradication-of-hepatitis-C-virus">
    HCV-GLUE ResearchGate project</a> to be notified of updates.
@@ -399,7 +307,7 @@ Yes
 	<th rowspan="2">Drug category</th>
 	<th rowspan="2">Drug</th>
 	<th colspan="3">Resistance-associated polymorphisms<sup>1</sup></th>
-	<th rowspan="2" colspan="2">Resistance level<sup>2</sup></th>
+	<th rowspan="2" colspan="2">Resistance detection level<sup>2</sup></th>
 </tr>
 <tr>
 	<th>Category I</th>
@@ -408,7 +316,7 @@ Yes
 </tr>
 </thead>
 <tr class="firstRow">
-<td rowspan = "3">NS3/4A protease inhibitors</td>
+<td rowspan = "4">NS3/4A protease inhibitors</td>
 <td>glecaprevir</td>
 <td>
 	-
@@ -419,8 +327,8 @@ Yes
 <td>
 	- 
 </td>
-<td>Susceptible</td>
-<td class="resistanceBlock resistanceColourCode_susceptible"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>No resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_no_significant_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr>
 <td>grazoprevir</td>
@@ -428,13 +336,27 @@ Yes
 	-
 </td>
 <td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:155R" target="_blank">R155R</a> (99.6%),	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:156A" target="_blank">A156A</a> (99.6%),	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:170V" target="_blank">I170V</a> (80.3%)
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:155R" target="_blank">R155R</a> (100%),	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:156A" target="_blank">A156A</a> (100%),	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:170V" target="_blank">I170V</a> (80%)
 </td>
 <td>
 	- 
 </td>
-<td>Moderate resistance</td>
-<td class="resistanceBlock resistanceColourCode_moderate_resistance"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>Probable resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_probable_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+<td>paritaprevir</td>
+<td>
+	-
+</td>
+<td>
+	- 
+</td>
+<td>
+	- 
+</td>
+<td>No resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_no_significant_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr>
 <td>voxilaprevir</td>
@@ -447,14 +369,14 @@ Yes
 <td>
 	- 
 </td>
-<td>Susceptible</td>
-<td class="resistanceBlock resistanceColourCode_susceptible"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>No resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_no_significant_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr class="firstRow">
-<td rowspan = "5">NS5A inhibitors</td>
+<td rowspan = "6">NS5A inhibitors</td>
 <td>daclatasvir</td>
 <td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (31.7%)
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (32%)
 </td>
 <td>
 	- 
@@ -462,13 +384,13 @@ Yes
 <td>
 	- 
 </td>
-<td>Strong resistance</td>
-<td class="resistanceBlock resistanceColourCode_strong_resistance"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>Resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr>
 <td>elbasvir</td>
 <td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (31.7%)
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (32%)
 </td>
 <td>
 	- 
@@ -476,13 +398,13 @@ Yes
 <td>
 	- 
 </td>
-<td>Strong resistance</td>
-<td class="resistanceBlock resistanceColourCode_strong_resistance"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>Resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr>
 <td>ledipasvir</td>
 <td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (31.7%)
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (32%)
 </td>
 <td>
 	- 
@@ -490,8 +412,22 @@ Yes
 <td>
 	- 
 </td>
-<td>Strong resistance</td>
-<td class="resistanceBlock resistanceColourCode_strong_resistance"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>Resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
+<td>ombitasvir</td>
+<td>
+	-
+</td>
+<td>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (32%)
+</td>
+<td>
+	- 
+</td>
+<td>Probable resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_probable_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr>
 <td>pibrentasvir</td>
@@ -504,13 +440,13 @@ Yes
 <td>
 	- 
 </td>
-<td>Susceptible</td>
-<td class="resistanceBlock resistanceColourCode_susceptible"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>No resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_no_significant_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr>
 <td>velpatasvir</td>
 <td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (31.7%)
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a> (32%)
 </td>
 <td>
 	- 
@@ -518,11 +454,25 @@ Yes
 <td>
 	- 
 </td>
-<td>Strong resistance</td>
-<td class="resistanceBlock resistanceColourCode_strong_resistance"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>Resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 <tr class="firstRow">
-<td rowspan = "1">NS5B RNA polymerase inhibitors</td>
+<td rowspan = "2">NS5B RNA polymerase inhibitors</td>
+<td>dasabuvir</td>
+<td>
+	-
+</td>
+<td>
+	- 
+</td>
+<td>
+	- 
+</td>
+<td>No resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_no_significant_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+</tr>
+<tr>
 <td>sofosbuvir</td>
 <td>
 	-
@@ -533,24 +483,10 @@ Yes
 <td>
 	- 
 </td>
-<td>Susceptible</td>
-<td class="resistanceBlock resistanceColourCode_susceptible"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td>No resistance detected</td>
+<td class="resistanceBlock resistanceColourCode_no_significant_resistance_detected"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 </tr>
 </table>
-<div id="resistanceAlgorithmNotes">
-<ol>
-<li>Polymorphisms are assigned to one of three categories according to the strength of evidence for drug resistance. 
-Category I polymorphisms have the strongest evidence: either (a) <em>in vitro</em> resistance level &ge; 5 and found at baseline or treatment-emergent <em>in vivo</em>, or 
-(b) both found at baseline and treatment-emergent. Category II: <em>in vitro</em> level &ge; 50 or found at baseline or treatment-emergent.
-Category III: <em>in vitro</em> level &ge; 5</li>
-<li>Resistance level to a given drug is assigned to one of four categories. 
-Strong resistance: any category I polymorphisms.
-Moderate resistance: any category II polymorphisms. 
-Weak resistance: any category III polymorphisms. 
-Susceptible: none of the above.
-</li>
-</ol>
-</div>
 </div>
 
 <div class="pagebreak"> </div>
@@ -580,11 +516,9 @@ Susceptible: none of the above.
 <tr class="firstRow">
 <td rowspan = "1">NS3</td>
 <td rowspan = "1">
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:155R" target="_blank">
-	R155R
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:155R" target="_blank">R155R</a>
 </td>
-<td rowspan = "1">99.6%</td>
+<td rowspan = "1">100%</td>
 <td rowspan = "1">260</td>
 <td rowspan = "1">Subtype 1a</td>
 <td rowspan = "1">grazoprevir</td>
@@ -614,11 +548,9 @@ Yes
 <tr class="firstRow">
 <td rowspan = "2">NS3</td>
 <td rowspan = "2">
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:156A" target="_blank">
-	A156A
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:156A" target="_blank">A156A</a>
 </td>
-<td rowspan = "2">99.6%</td>
+<td rowspan = "2">100%</td>
 <td rowspan = "2">284</td>
 <td rowspan = "2">Subtype 1a</td>
 <td rowspan = "2">grazoprevir</td>
@@ -671,11 +603,9 @@ Yes
 <tr class="firstRow">
 <td rowspan = "3">NS3</td>
 <td rowspan = "3">
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:170V" target="_blank">
-	I170V
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:170V" target="_blank">I170V</a>
 </td>
-<td rowspan = "3">80.3%</td>
+<td rowspan = "3">80%</td>
 <td rowspan = "3">416</td>
 <td rowspan = "3">Subtype 1a</td>
 <td rowspan = "3">grazoprevir</td>
@@ -753,15 +683,13 @@ No
 </td>
 </tr>
 <tr class="firstRow">
-<td rowspan = "21">NS5A</td>
-<td rowspan = "21">
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">
-	L31M
-	</a>
+<td rowspan = "23">NS5A</td>
+<td rowspan = "23">
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M" target="_blank">L31M</a>
 </td>
-<td rowspan = "21">31.7%</td>
-<td rowspan = "21">284</td>
-<td rowspan = "21">Subtype 1a</td>
+<td rowspan = "23">32%</td>
+<td rowspan = "23">284</td>
+<td rowspan = "23">Subtype 1a</td>
 <td rowspan = "5">daclatasvir</td>
 <td rowspan = "5">I</td>
 <td id="resistanceFindingEven">
@@ -1013,7 +941,7 @@ No
 </tr>
 <tr>
 <td >
-0.5 - 10
+0.50 - 10
 </td>
 <td >
 -
@@ -1163,7 +1091,7 @@ Yes
 </tr>
 <tr>
 <td >
-489.7 - 619.1
+489.70 - 619.10
 </td>
 <td >
 -
@@ -1183,10 +1111,56 @@ Yes
 </td>
 </tr>
 <tr>
+<td rowspan = "2">ombitasvir</td>
+<td rowspan = "2">II</td>
+<td id="resistanceFindingEven">
+2
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+-
+</td>
+<td id="resistanceFindingEven">
+<a target="_blank" href="https://doi.org/10.1128/AAC.04226-14">Krishnan et al., 2015</a> [15]
+
+</td>
+</tr>
+<tr>
+<td >
+-
+</td>
+<td >
+
+<a target="_blank" href="https://clinicaltrials.gov/ct2/show/NCT01464827">AVIATOR</a>
+</td>
+<td >
+PTV/r/OBV/DSV;
+PTV/r/OBV/DSV/RBV
+</td>
+<td >
+Yes
+</td>
+<td >
+No
+</td>
+<td >
+<a target="_blank" href="https://doi.org/10.1128/AAC.00998-15">Krishnan et al., 2015</a> [16]
+
+</td>
+</tr>
+<tr>
 <td rowspan = "3">velpatasvir</td>
 <td rowspan = "3">I</td>
 <td id="resistanceFindingEven">
-11.8
+11.80
 </td>
 <td id="resistanceFindingEven">
 -
@@ -1201,7 +1175,7 @@ Yes
 -
 </td>
 <td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1016/S0168-8278(13)61192-7">Cheng et al., 2013</a> [15]
+<a target="_blank" href="https://doi.org/10.1016/S0168-8278(13)61192-7">Cheng et al., 2013</a> [17]
 
 </td>
 </tr>
@@ -1222,7 +1196,7 @@ Yes
 -
 </td>
 <td >
-<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [16]
+<a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">Lawitz et al., 2016</a> [18]
 
 </td>
 </tr>
@@ -1244,16 +1218,33 @@ Yes
 No
 </td>
 <td id="resistanceFindingEven">
-<a target="_blank" href="https://doi.org/10.1056/NEJMoa1613512">Bourlière et al., 2017</a> [17]
+<a target="_blank" href="https://doi.org/10.1056/NEJMoa1613512">Bourlière et al., 2017</a> [19]
 
 </td>
 </tr>
 </tbody>
 </table>
+
+<div id="resistanceAlgorithmNotes">
+<ul class="footnoteList">
+<li>1. Polymorphisms are assigned to one of three categories according to the strength of evidence for drug resistance. 
+Category I polymorphisms have the strongest evidence: either (a) <em>in vitro</em> resistance level &ge; 5 and found at baseline or treatment-emergent <em>in vivo</em>, or 
+(b) both found at baseline and treatment-emergent. Category II: <em>in vitro</em> level &ge; 50 or found at baseline or treatment-emergent.
+Category III: <em>in vitro</em> level &ge; 5</li>
+<li>2. Resistance detection for a given drug is assigned to one of four categories. 
+Resistance detected: any category I polymorphisms.
+Probable resistance detected: any category II polymorphisms. 
+Possible resistance detected: any category III polymorphisms. 
+No signficant resistance detected: none of the above.
+</li>
+</ul>
+</div>
 </div>
 
 
 <div class="pagebreak"> </div>
+
+
 
 
 <div id="substitutionsOfInterestDiv">
@@ -1271,9 +1262,7 @@ No
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:24K+28M" target="_blank">
-	K24K+M28M
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:24K+28M" target="_blank">K24K+M28M</a>
 </td>
 <td>100%</td>
 <td>239</td>
@@ -1282,9 +1271,7 @@ No
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:24K+28M+30Q" target="_blank">
-	K24K+M28M+Q30Q
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:24K+28M+30Q" target="_blank">K24K+M28M+Q30Q</a>
 </td>
 <td>100%</td>
 <td>239</td>
@@ -1293,9 +1280,7 @@ No
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:24K+28M+30Q+37V+54H" target="_blank">
-	K24K+M28M+Q30Q+V37V+H54H
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:24K+28M+30Q+37V+54H" target="_blank">K24K+M28M+Q30Q+V37V+H54H</a>
 </td>
 <td>100%</td>
 <td>169</td>
@@ -1304,31 +1289,25 @@ No
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:28M" target="_blank">
-	M28M
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:28M" target="_blank">M28M</a>
 </td>
-<td>99.6%</td>
+<td>100%</td>
 <td>284</td>
 	<td>Associated with resistance in other subtypes of genotype 1</td>
 </tr>
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:28M+30Q+31M" target="_blank">
-	M28M+Q30Q+L31M
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:28M+30Q+31M" target="_blank">M28M+Q30Q+L31M</a>
 </td>
-<td>31.3%</td>
+<td>31%</td>
 <td>284</td>
 	<td>Associated with resistance in other subtypes of genotype 1</td>
 </tr>
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30Q" target="_blank">
-	Q30Q
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30Q" target="_blank">Q30Q</a>
 </td>
 <td>100%</td>
 <td>283</td>
@@ -1337,66 +1316,54 @@ No
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30Q+31M" target="_blank">
-	Q30Q+L31M
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:30Q+31M" target="_blank">Q30Q+L31M</a>
 </td>
-<td>31.7%</td>
+<td>32%</td>
 <td>284</td>
 	<td>Associated with resistance in other subtypes of genotype 1</td>
 </tr>
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M+54H" target="_blank">
-	L31M+H54H
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M+54H" target="_blank">L31M+H54H</a>
 </td>
-<td>41.8%</td>
+<td>42%</td>
 <td>213</td>
 	<td>Associated with resistance in other subtypes of genotype 1</td>
 </tr>
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M+54H+62E" target="_blank">
-	L31M+H54H+E62E
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:31M+54H+62E" target="_blank">L31M+H54H+E62E</a>
 </td>
-<td>59.1%</td>
+<td>59%</td>
 <td>149</td>
 	<td>Associated with resistance in other subtypes of genotype 1</td>
 </tr>
 <tr>
 	<td>NS5A</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:54H" target="_blank">
-	H54H
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS5A:54H" target="_blank">H54H</a>
 </td>
-<td>99.8%</td>
+<td>100%</td>
 <td>467</td>
 	<td>Associated with resistance in other subtypes of genotype 1</td>
 </tr>
 <tr>
 	<td>NS3</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:132I+170I" target="_blank">
-	I132I+I170I
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:132I+170I" target="_blank">I132I+I170I</a>
 </td>
-<td>43.8%</td>
+<td>44%</td>
 <td>128</td>
 	<td>Associated with resistance in genotypes other than genotype 1</td>
 </tr>
 <tr>
 	<td>NS3</td>
 	<td>
-	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:170I" target="_blank">
-	I170I
-	</a>
+	<a href="http://hcv.glue.cvr.ac.uk/#/project/rap/NS3:170I" target="_blank">I170I</a>
 </td>
-<td>19.2%</td>
+<td>19%</td>
 <td>416</td>
 	<td>Associated with resistance in genotypes other than genotype 1</td>
 </tr>
@@ -1408,6 +1375,117 @@ No
 <div class="pagebreak"> </div>
 
 
+<div id="featureCoverage">
+
+
+<h3>Genome coding region coverage</h3>
+
+
+<table id="featureCoverageTable">
+<colgroup>
+    <col class="tableHeader"/>
+    <col/>
+    <col/>
+    <col/>
+    <col/>
+</colgroup>
+
+<thead>
+<tr>
+	<th rowspan="2">Genome region</th>
+	<th colspan="4">Proportion of nucleotide sites with depth</th>
+</tr>
+<tr>
+	<th>&ge; 1</th>
+	<th>&ge; 10</th>
+	<th>&ge; 100</th>
+	<th>&ge; 1000</th>
+</tr>
+<tr>
+<td><b>Precursor polyprotein</b></td>
+<td>99.5%</td>
+<td>99.4%</td>
+<td>96.8%</td>
+<td>8.5%</td>
+</tr>
+<tr>
+<td><b>Core</b></td>
+<td>100%</td>
+<td>100%</td>
+<td>93.7%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><b>E1</b></td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><b>E2</b></td>
+<td>99.7%</td>
+<td>99.7%</td>
+<td>97.9%</td>
+<td>11.8%</td>
+</tr>
+<tr>
+<td><b>p7</b></td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><b>NS2</b></td>
+<td>100%</td>
+<td>100%</td>
+<td>92.8%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><b>NS3</b></td>
+<td>99.4%</td>
+<td>99.2%</td>
+<td>92.8%</td>
+<td>4.2%</td>
+</tr>
+<tr>
+<td><b>NS4A</b></td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><b>NS4B</b></td>
+<td>100%</td>
+<td>100%</td>
+<td>100%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><b>NS5A</b></td>
+<td>100%</td>
+<td>100%</td>
+<td>99.3%</td>
+<td>0%</td>
+</tr>
+<tr>
+<td><b>NS5B</b></td>
+<td>98%</td>
+<td>98%</td>
+<td>98%</td>
+<td>31.6%</td>
+</tr>
+</table>
+
+</div>
+
+<div class="pagebreak"> </div>
+
+
+
 <div id="configuration">
 <h3>System configuration</h3>
 <table id="systemConfigTable">
@@ -1417,9 +1495,9 @@ No
 <colgroup style="width:50%">
     <col/>
 </colgroup>
-<tr><td><b>GLUE engine version</b></td><td>1.1.39</td></tr>
-<tr><td><b>HCV project version</b></td><td>0.1.52</td></tr>
-<tr><td><b>PHE extension version</b></td><td>0.1.23</td></tr>
+<tr><td><b>GLUE engine version</b></td><td>1.1.41</td></tr>
+<tr><td><b>HCV project version</b></td><td>0.1.54</td></tr>
+<tr><td><b>PHE drug resistance extension version</b></td><td>0.1.24</td></tr>
 <tr><td><b>Minimum read proportion</b></td><td>15%</td></tr>
 <tr><td><b>Minimum read depth</b></td><td>10</td></tr>
 <tr><td><b>Minimum base quality</b></td><td>5</td></tr>
@@ -1587,6 +1665,28 @@ J. Hepatol.
 </p>
 <p>
 [15] 
+<b>In vitro and in vivo antiviral activity and resistance profile of ombitasvir, an inhibitor of hepatitis C virus NS5A.</b>
+P. Krishnan, J. Beyer, N. Mistry, G. Koev, T. Reisch, D. DeGoey, W. Kati, A. Campbell, L. Williams, W. Xie, C. Setze, A. Molla, C. Collins and T. Pilot-Matias, 
+Antimicrob. Agents Chemother.
+	59(2),
+	979-87
+(2015)
+<br/>
+<a target="_blank" href="https://doi.org/10.1128/AAC.04226-14">https://doi.org/10.1128/AAC.04226-14</a> 
+</p>
+<p>
+[16] 
+<b>Resistance analysis of baseline and treatment-emergent variants in hepatitis C virus genotype 1 in the AVIATOR study with paritaprevir-ritonavir, ombitasvir, and dasabuvir.</b>
+P. Krishnan, R. Tripathi, G. Schnell, T. Reisch, J. Beyer, M. Irvin, W. Xie, L. Larsen, D. Cohen, T. Podsadecki, T. Pilot-Matias and C. Collins, 
+Antimicrob. Agents Chemother.
+	59(9),
+	5445-54
+(2015)
+<br/>
+<a target="_blank" href="https://doi.org/10.1128/AAC.00998-15">https://doi.org/10.1128/AAC.00998-15</a> 
+</p>
+<p>
+[17] 
 <b>GS-5816, A SECOND GENERATION HCV NS5A INHIBITOR WITH POTENT ANTIVIRAL ACTIVITY, BROAD GENOTYPIC COVERAGE AND A HIGH RESISTANCE BARRIER</b>
 G. Cheng, M. Yu, B. Peng, Y.-J. Lee, A. Trejo-Martin, R. Gong, C. Bush, A. Worth, M. Nash, K. Chan, H. Yang, R. Beran, Y. Tian, J. Perry, J. Taylor, C. Yang, M. Paulson, W. Delaney and J.O. Link, 
 J. Hepatol.
@@ -1597,7 +1697,7 @@ J. Hepatol.
 <a target="_blank" href="https://doi.org/10.1016/S0168-8278(13)61192-7">https://doi.org/10.1016/S0168-8278(13)61192-7</a> 
 </p>
 <p>
-[16] 
+[18] 
 <b>Clinical Resistance to Velpatasvir (GS-5816), a Novel Pan-Genotypic Inhibitor of the Hepatitis C Virus NS5A Protein.</b>
 E. J. Lawitz, H. Dvory-Sobol, B. P. Doehle, A. S. Worth, J. McNally, D. M. Brainard, J. O. Link, M. D. Miller and H. Mo, 
 Antimicrob. Agents Chemother.
@@ -1608,7 +1708,7 @@ Antimicrob. Agents Chemother.
 <a target="_blank" href="https://doi.org/10.1128/AAC.00763-16">https://doi.org/10.1128/AAC.00763-16</a> 
 </p>
 <p>
-[17] 
+[19] 
 <b>Sofosbuvir, Velpatasvir, and Voxilaprevir for Previously Treated HCV Infection.</b>
 M. Bourlière, S. C. Gordon, S. L. Flamm, C. L. Cooper, A. Ramji, M. Tong, N. Ravendhran, J. M. Vierling, T. T. Tran, S. Pianko, M. B. Bansal, V. de Lédinghen, R. H. Hyland, L. M. Stamm, H. Dvory-Sobol, E. Svarovskaia, J. Zhang, K. C. Huang, G. M. Subramanian, D. M. Brainard, J. G. McHutchison, E. C. Verna, P. Buggisch, C. S. Landis, Z. H. Younes, M. P. Curry, S. I. Strasser, E. R. Schiff, K. R. Reddy, M. P. Manns, K. V. Kowdley, S. Zeuzem and POLARIS-1 and POLARIS-4 Investigators, 
 N. Engl. J. Med.
