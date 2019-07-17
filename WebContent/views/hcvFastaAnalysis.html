@@ -16,8 +16,8 @@
 				<table class="table" width="100%">
 					<thead>
 					<col width="40%"></col>
-					<col width="20%"></col>
-					<col width="20%"></col>
+					<col width="8%"></col>
+					<col width="32%"></col>
 					<col width="20%"></col>
 					<tr>
 						<th>File</th>
@@ -31,28 +31,50 @@
 							<td><strong>{{ item.file.name }}</strong></td>
 							<td ng-show="uploader.isHTML5" nowrap>{{
 								item.file.size/1024/1024|number:2 }} MB</td>
-							<td><span ng-show="item.isSuccess"> <i
-									class="glyphicon glyphicon-ok"></i>
-							</span> <span ng-show="item.isCancel"> <i
-									class="glyphicon glyphicon-ban-circle"></i>
-							</span> <span ng-show="item.isUploading"> <i
-									class="glyphicon glyphicon-transfer"></i>
-							</span> <span ng-show="item.isError"> <i
-									class="glyphicon glyphicon-remove"></i>
-							</span></td>
+							<td>
+								<span ng-if="item.requestStatus.code == 'COMPLETE' && item.response != null">
+									<span class="glyphicon glyphicon-ok"></span>
+									&nbsp;Complete
+								</span>
+								<span ng-if="item.requestStatus.code == 'COMPLETE' && item.commandError != null">
+									<span class="glyphicon glyphicon-exclamation-sign"></span>
+									&nbsp;Error
+								</span>
+								<span ng-if="item.requestStatus.code == 'COMPLETE' && item.response == null && item.commandError == null">
+									<span class="glyphicon glyphicon-cog"></span>
+									&nbsp;Running: retrieving result
+								</span>
+								<span ng-if="item.requestStatus.code == 'UPLOADING'">
+									<span class="glyphicon glyphicon-transfer"></span>
+									&nbsp;Uploading sequence data
+								</span>
+								<span ng-if="item.requestStatus.code == 'QUEUED'">
+									<span class="glyphicon glyphicon-hourglass"></span>
+									&nbsp;Position {{ item.requestStatus.placeInQueue+1 }} in request queue
+								</span>
+								<span ng-if="item.requestStatus.code == 'RUNNING'">
+									<span class="glyphicon glyphicon-cog"></span>
+									&nbsp;Running: {{ item.requestStatus.runningDescription }}
+								</span>
+							</td>
 							<td nowrap>
 								<button type="button" class="btn btn-primary btn-xs"
 									ng-click="item.upload()"
-									ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+									ng-disabled="item.isReady || item.isUploading || (item.isSuccess && item.commandError == null)">
 									<span class="glyphicon glyphicon-upload"></span> Submit
 								</button>
-								<button type="button" class="btn btn-primary btn-xs"
+								<button ng-if="item.commandError == null" type="button" class="btn btn-primary btn-xs"
 									ng-click="showAnalysisResults(item)"
-									ng-disabled="!item.isSuccess">
-									<span class="glyphicon glyphicon-list"></span> Show analysis
+									ng-disabled="item.response == null">
+									<span class="glyphicon glyphicon-list"></span> Show result
+								</button>
+								<button ng-if="item.commandError != null" type="button" class="btn btn-danger btn-xs"
+									ng-click="showError(item)">
+									<span class="glyphicon glyphicon-list"></span> Show result
 								</button>
 								<button type="button" class="btn btn-primary btn-xs"
-									ng-click="removeItem(item)">
+									ng-click="removeItem(item)"
+									ng-disabled="item.response == null && item.commandError == null">
 									<span class="glyphicon glyphicon-trash"></span> Remove
 								</button>
 							</td>

@@ -52,6 +52,10 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 						}
 				};
 		    	item.formData = [{command: JSON.stringify(commandObject)}];
+		    	item.headers = {"glue-async": "true"};
+		    	item.requestStatus = { "code": "UPLOADING" };
+		    	item.response = null;
+		    	item.commandError = null;
 		        console.info('formData', JSON.stringify(item.formData));
 		        console.info('onBeforeUploadItem', item);
 				$scope.analytics.eventTrack("submitFastaFile", 
@@ -65,13 +69,16 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				$scope.analytics.eventTrack("hcvFastaAnalysisResult", 
 						{  category: 'hcvFastaAnalysis', 
 							label: 'fileName:'+fileItem.file.name+',fileSize:'+fileItem.file.size });
-				fileItem.response = response;
-				console.log("hcvFastaAnalysis.response", response);
+				fileItem.requestStatus = response;
+				console.log("hcvFastaAnalysis.requestStatus initial", response);
+				$timeout(function() {
+					$scope.updateRequest(fileItem);
+				}, 3000);
 		    };
 		    $scope.uploader.onErrorItem = function(fileItem, response, status, headers) {
 		        console.info('onErrorItem', fileItem, response, status, headers);
-		        var errorFn = glueWS.raiseErrorDialog(dialogs, "processing sequence file \""+fileItem.file.name+"\"");
-		        errorFn(response, status, headers, {});
+		    	fileItem.requestStatus = { "code": "COMPLETE" };
+				fileItem.commandError = {data: response, status:status, headers:headers, config:response.config} ;
 		    };
 
 			$scope.removeAll = function() {
@@ -86,10 +93,40 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				item.remove();
 			}
 		    
+			$scope.updateRequest = function(fileItem) {
+				var requestID = fileItem.requestStatus.requestID;
+				glueWS.getGlueRequestStatus(requestID).then(function onSuccess(response) {
+					console.log("hcvFastaAnalysis.requestStatus polled", response.data);
+					fileItem.requestStatus = response.data;
+					if(fileItem.requestStatus.code == "COMPLETE" && fileItem.response == null && fileItem.commandError == null) {
+						glueWS.collectGlueRequestResult(requestID).then(function onSuccess(response) {
+							console.log("hcvFastaAnalysis.requestStatus.response async", response.data);
+							fileItem.response = response.data;
+						}, function onError(response) {
+							fileItem.commandError = response;
+						});
+					} else if (fileItem.requestStatus.code == "QUEUED" || fileItem.requestStatus.code == "RUNNING") { 
+						$timeout(function() {
+							$scope.updateRequest(fileItem);
+						}, 3000);
+					}
+				}, function onError(response) {
+					fileItem.requestStatus = { code: "COMPLETE" };
+					fileItem.commandError = response;
+				});
+			};
+			
 		    $scope.showAnalysisResults = function(item) {
 		    	$scope.setFileItemUnderAnalysis(item);
 		    };
-			
+
+		    $scope.showError = function(item) {
+				var dlgFunction = glueWS.raiseErrorDialog(dialogs, "executing command");
+				dlgFunction(item.commandError.data, item.commandError.status, item.commandError.headers, item.commandError.config);
+		    };
+
+		    
+		    
 		    $scope.setFileItemUnderAnalysis = function(item) {
 				$scope.saveFeatureScrollLeft();
 		    	if(item.sequenceReport == null) {
