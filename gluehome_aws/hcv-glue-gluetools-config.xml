@@ -186,15 +186,6 @@
 				<simpleCommandFilter words="render-object"/>
 			</modePathRegexFilter>			
 		</modePathRegexFilter>
-		<modePathRegexFilter>
-			<regex>^/project/hev</regex>
-		</modePathRegexFilter>
-		<modePathRegexFilter>
-			<regex>^/project/btv</regex>
-		</modePathRegexFilter>
-		<modePathRegexFilter>
-			<regex>^/project/rabv</regex>
-		</modePathRegexFilter>
 	</requestGatekeeper> 
 	<properties>
 			<!-- Web files -->
