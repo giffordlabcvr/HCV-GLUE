@@ -1435,60 +1435,60 @@ reference REF_7a_NC_030791
   feature-location 3UTR add segment 9382 9443
   exit
   
-reference REF_RF2_5_AM408911
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 318
-  exit
-  
-reference REF_RF2b_1a_JF779679
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 73
-  exit
-  
-reference REF_RF2b_1b_1_DQ364460
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 273
-  exit
-  
-reference REF_RF2b_1b_2_AB622121
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 341
-  add feature-location 3UTR
-  feature-location 3UTR add segment 9387 9452
-  exit
-  
-reference REF_RF2b_1b_3_AB677530
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 270
-  add feature-location 3UTR
-  feature-location 3UTR add segment 9316 9321
-  exit
-  
-reference REF_RF2b_1b_4_AB677527
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 341
-  add feature-location 3UTR
-  feature-location 3UTR add segment 9387 9471
-  exit
-  
-reference REF_RF2b_6w_EU643835
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 65
-  add feature-location 3UTR
-  feature-location 3UTR add segment 9123 9144
-  exit
-  
-reference REF_RF2i_6p_DQ155560
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 323
-  add feature-location 3UTR
-  feature-location 3UTR add segment 9360 9360
-  exit
-  
-reference REF_RF2k_1b_AY587845
-  add feature-location 5UTR
-  feature-location 5UTR add segment 1 268
-  add feature-location 3UTR
-  feature-location 3UTR add segment 9314 9357
-  exit
+# reference REF_RF2_5_AM408911
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 318
+#   exit
+#   
+# reference REF_RF2b_1a_JF779679
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 73
+#   exit
+#   
+# reference REF_RF2b_1b_1_DQ364460
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 273
+#   exit
+#   
+# reference REF_RF2b_1b_2_AB622121
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 341
+#   add feature-location 3UTR
+#   feature-location 3UTR add segment 9387 9452
+#   exit
+#   
+# reference REF_RF2b_1b_3_AB677530
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 270
+#   add feature-location 3UTR
+#   feature-location 3UTR add segment 9316 9321
+#   exit
+#   
+# reference REF_RF2b_1b_4_AB677527
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 341
+#   add feature-location 3UTR
+#   feature-location 3UTR add segment 9387 9471
+#   exit
+#   
+# reference REF_RF2b_6w_EU643835
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 65
+#   add feature-location 3UTR
+#   feature-location 3UTR add segment 9123 9144
+#   exit
+#   
+# reference REF_RF2i_6p_DQ155560
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 323
+#   add feature-location 3UTR
+#   feature-location 3UTR add segment 9360 9360
+#   exit
+#   
+# reference REF_RF2k_1b_AY587845
+#   add feature-location 5UTR
+#   feature-location 5UTR add segment 1 268
+#   add feature-location 3UTR
+#   feature-location 3UTR add segment 9314 9357
+#   exit
   

@@ -26,6 +26,9 @@ project hcv
   # build tree of alignments, with relevant reference sequences.
   run file glue/hcvAlignmentTree.glue
 
+  # add feature locations
+  run file glue/hcvFeatureLocations.glue
+
   # import phylogeny
   run file glue/importPhylogeny.glue
 

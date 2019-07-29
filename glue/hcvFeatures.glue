@@ -86,6 +86,11 @@ feature 3UTR set field displayName "3' UTR"
 
   create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102
   reference REF_MASTER_NC_004102
+    add feature-location whole_genome
+    feature-location whole_genome
+      add segment 1 9646
+      exit
+  
     add feature-location 5UTR
     feature-location 5UTR
       add segment 1 341

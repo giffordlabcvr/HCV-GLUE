@@ -34,6 +34,28 @@
   # import the edited alignment
   module blastFastaAlignmentImporter import AL_UNCONSTRAINED -f alignments/Smith_Extended.edited.fasta
 
+  alignment AL_UNCONSTRAINED 
+    # An N in this sequence at NT 3726 turned into a gap in the alignment.
+    member ncbi-refseqs NC_009825
+      remove segment 3070 3725 2722 3377
+	  remove segment 3727 7278 3379 6930
+      add segment 3070 7278 2722 6930
+	  exit
+
+    # An N in this sequence at NT 5377 turned into a gap in the alignment.
+    member ncbi-refseqs EU158186
+      remove segment 3070 5690 2756 5376
+	  remove segment 5692 7278 5378 6964
+      add segment 3070 7278 2756 6964
+	  exit
+
+	exit
+	
+	 
+	
+
+
+
   ## GLUE commands to import the original alignment and to extend it to provisional / recombinant / outgroup references.
 
   ## module to import the Smith 2015 alignment 
