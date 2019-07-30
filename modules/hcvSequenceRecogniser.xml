@@ -20,17 +20,17 @@
 	<referenceSequence>REF_2b_AB030907</referenceSequence>
 	<referenceSequence>REF_2k_AB031663</referenceSequence>
 	<referenceSequence>REF_2a_AB047639</referenceSequence>
-	<referenceSequence>REF_RF2b_1b_2_AB622121</referenceSequence>
+<!--	<referenceSequence>REF_RF2b_1b_2_AB622121</referenceSequence> -->
 	<referenceSequence>REF_2b_AB661382</referenceSequence>
 	<referenceSequence>REF_2b_AB661388</referenceSequence>
-	<referenceSequence>REF_RF2b_1b_4_AB677527</referenceSequence>
-	<referenceSequence>REF_RF2b_1b_3_AB677530</referenceSequence>
+<!--	<referenceSequence>REF_RF2b_1b_4_AB677527</referenceSequence> -->
+<!--	<referenceSequence>REF_RF2b_1b_3_AB677530</referenceSequence> -->
 	<referenceSequence>REF_5a_AF064490</referenceSequence>
 	<referenceSequence>REF_1_unassigned_AJ851228</referenceSequence>
-	<referenceSequence>REF_RF2_5_AM408911</referenceSequence>
+<!--	<referenceSequence>REF_RF2_5_AM408911</referenceSequence> -->
 	<referenceSequence>REF_1g_AM910652</referenceSequence>
 	<referenceSequence>REF_1c_AY051292</referenceSequence>
-	<referenceSequence>REF_RF2k_1b_AY587845</referenceSequence>
+<!--	<referenceSequence>REF_RF2k_1b_AY587845</referenceSequence> -->
 	<referenceSequence>REF_1c_AY651061</referenceSequence>
 	<referenceSequence>REF_6a_AY859526</referenceSequence>
 	<referenceSequence>REF_2a_D00944</referenceSequence>
@@ -46,7 +46,7 @@
 	<referenceSequence>REF_6k_D84264</referenceSequence>
 	<referenceSequence>REF_6h_D84265</referenceSequence>
 	<referenceSequence>REF_1b_D90208</referenceSequence>
-	<referenceSequence>REF_RF2i_6p_DQ155560</referenceSequence>
+<!--	<referenceSequence>REF_RF2i_6p_DQ155560</referenceSequence> -->
 	<referenceSequence>REF_2i_DQ155561</referenceSequence>
 	<referenceSequence>REF_6_unassigned_DQ278891</referenceSequence>
 	<referenceSequence>REF_6w_DQ278892</referenceSequence>
@@ -54,7 +54,7 @@
 	<referenceSequence>REF_6n_DQ278894</referenceSequence>
 	<referenceSequence>REF_6e_DQ314805</referenceSequence>
 	<referenceSequence>REF_6g_DQ314806</referenceSequence>
-	<referenceSequence>REF_RF2b_1b_1_DQ364460</referenceSequence>
+<!--	<referenceSequence>REF_RF2b_1b_1_DQ364460</referenceSequence> -->
 	<referenceSequence>REF_4d_DQ418786</referenceSequence>
 	<referenceSequence>REF_4a_DQ418789</referenceSequence>
 	<referenceSequence>REF_6f_DQ835760</referenceSequence>
@@ -94,7 +94,7 @@
 	<referenceSequence>REF_6xa_EU408331</referenceSequence>
 	<referenceSequence>REF_6xa_EU408332</referenceSequence>
 	<referenceSequence>REF_6w_EU643834</referenceSequence>
-	<referenceSequence>REF_RF2b_6w_EU643835</referenceSequence>
+<!--	<referenceSequence>REF_RF2b_6w_EU643835</referenceSequence> -->
 	<referenceSequence>REF_6w_EU643836</referenceSequence>
 	<referenceSequence>REF_1b_EU781827</referenceSequence>
 	<referenceSequence>REF_1b_EU781828</referenceSequence>
@@ -152,7 +152,7 @@
 	<referenceSequence>REF_4_unassigned_JF735135</referenceSequence>
 	<referenceSequence>REF_4s_JF735136</referenceSequence>
 	<referenceSequence>REF_4_unassigned_JF735138</referenceSequence>
-	<referenceSequence>REF_RF2b_1a_JF779679</referenceSequence>
+<!--	<referenceSequence>REF_RF2b_1a_JF779679</referenceSequence> -->
 	<referenceSequence>REF_3a_JN714194</referenceSequence>
 	<referenceSequence>REF_3b_JQ065709</referenceSequence>
 	<referenceSequence>REF_6_unassigned_JX183549</referenceSequence>
@@ -253,17 +253,17 @@
 		<referenceSequence>REF_2b_AB030907</referenceSequence>
 		<referenceSequence>REF_2k_AB031663</referenceSequence>
 		<referenceSequence>REF_2a_AB047639</referenceSequence>
-		<referenceSequence>REF_RF2b_1b_2_AB622121</referenceSequence>
+<!--		<referenceSequence>REF_RF2b_1b_2_AB622121</referenceSequence> -->
 		<referenceSequence>REF_2b_AB661382</referenceSequence>
 		<referenceSequence>REF_2b_AB661388</referenceSequence>
-		<referenceSequence>REF_RF2b_1b_4_AB677527</referenceSequence>
-		<referenceSequence>REF_RF2b_1b_3_AB677530</referenceSequence>
+<!--		<referenceSequence>REF_RF2b_1b_4_AB677527</referenceSequence> -->
+<!--		<referenceSequence>REF_RF2b_1b_3_AB677530</referenceSequence> -->
 		<referenceSequence>REF_5a_AF064490</referenceSequence>
 		<referenceSequence>REF_1_unassigned_AJ851228</referenceSequence>
-		<referenceSequence>REF_RF2_5_AM408911</referenceSequence>
+<!--		<referenceSequence>REF_RF2_5_AM408911</referenceSequence> -->
 		<referenceSequence>REF_1g_AM910652</referenceSequence>
 		<referenceSequence>REF_1c_AY051292</referenceSequence>
-		<referenceSequence>REF_RF2k_1b_AY587845</referenceSequence>
+<!--		<referenceSequence>REF_RF2k_1b_AY587845</referenceSequence> -->
 		<referenceSequence>REF_1c_AY651061</referenceSequence>
 		<referenceSequence>REF_6a_AY859526</referenceSequence>
 		<referenceSequence>REF_2a_D00944</referenceSequence>
@@ -279,7 +279,7 @@
 		<referenceSequence>REF_6k_D84264</referenceSequence>
 		<referenceSequence>REF_6h_D84265</referenceSequence>
 		<referenceSequence>REF_1b_D90208</referenceSequence>
-		<referenceSequence>REF_RF2i_6p_DQ155560</referenceSequence>
+<!--		<referenceSequence>REF_RF2i_6p_DQ155560</referenceSequence> -->
 		<referenceSequence>REF_2i_DQ155561</referenceSequence>
 		<referenceSequence>REF_6_unassigned_DQ278891</referenceSequence>
 		<referenceSequence>REF_6w_DQ278892</referenceSequence>
@@ -287,7 +287,7 @@
 		<referenceSequence>REF_6n_DQ278894</referenceSequence>
 		<referenceSequence>REF_6e_DQ314805</referenceSequence>
 		<referenceSequence>REF_6g_DQ314806</referenceSequence>
-		<referenceSequence>REF_RF2b_1b_1_DQ364460</referenceSequence>
+<!--		<referenceSequence>REF_RF2b_1b_1_DQ364460</referenceSequence> -->
 		<referenceSequence>REF_4d_DQ418786</referenceSequence>
 		<referenceSequence>REF_4a_DQ418789</referenceSequence>
 		<referenceSequence>REF_6f_DQ835760</referenceSequence>
@@ -327,7 +327,7 @@
 		<referenceSequence>REF_6xa_EU408331</referenceSequence>
 		<referenceSequence>REF_6xa_EU408332</referenceSequence>
 		<referenceSequence>REF_6w_EU643834</referenceSequence>
-		<referenceSequence>REF_RF2b_6w_EU643835</referenceSequence>
+<!--		<referenceSequence>REF_RF2b_6w_EU643835</referenceSequence> -->
 		<referenceSequence>REF_6w_EU643836</referenceSequence>
 		<referenceSequence>REF_1b_EU781827</referenceSequence>
 		<referenceSequence>REF_1b_EU781828</referenceSequence>
@@ -385,7 +385,7 @@
 		<referenceSequence>REF_4_unassigned_JF735135</referenceSequence>
 		<referenceSequence>REF_4s_JF735136</referenceSequence>
 		<referenceSequence>REF_4_unassigned_JF735138</referenceSequence>
-		<referenceSequence>REF_RF2b_1a_JF779679</referenceSequence>
+<!--		<referenceSequence>REF_RF2b_1a_JF779679</referenceSequence> -->
 		<referenceSequence>REF_3a_JN714194</referenceSequence>
 		<referenceSequence>REF_3b_JQ065709</referenceSequence>
 		<referenceSequence>REF_6_unassigned_JX183549</referenceSequence>

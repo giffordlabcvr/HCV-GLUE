@@ -55,7 +55,11 @@
   reference REF_2j_HM777358 feature-location NS5B add segment 7587 9110
   reference REF_2j_HM777358 remove feature-location 3UTR
   reference REF_2k_AB031663 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
+
   reference REF_2l_KC197235 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
+  # Not sure what went wrong here which meant I had to do this, possibly something to do with the BLAST based import of the alignment
+  reference REF_2l_KC197240 inherit feature-location -r --truncateCdn AL_UNCONSTRAINED -l REF_2l_KC197235 precursor_polyprotein
+
   reference REF_2m_JF735111 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_2q_FN666428 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_2r_JF735115 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
@@ -85,7 +89,11 @@
   reference REF_4l_FJ839870 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4m_FJ462433 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4n_FJ462441 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
-  reference REF_4o_FJ462440 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
+
+  reference REF_4o_JX227977 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
+  # For sequence JX227977 we had to inherit from neighbouring reference and use --truncateCdn rather than spanGaps
+  # This is because of 3 VERY SPURIOUS singleton NT insertions around the NT region 6695 to 6750
+  reference REF_4o_FJ462440 inherit feature-location -r --truncateCdn AL_UNCONSTRAINED -l REF_4o_JX227977 precursor_polyprotein
   reference REF_4p_FJ462431 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4q_FJ462434 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4r_FJ462439 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
@@ -169,7 +177,6 @@
   reference REF_2j_HM777359 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_2j_JF735113 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_2k_JX227953 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
-  reference REF_2l_KC197240 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_2m_JX227967 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_2q_FN666429 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_2q_FN666429 feature-location precursor_polyprotein remove segment 314 9398
@@ -205,7 +212,6 @@
   reference REF_4l_JX227957 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4m_JX227972 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4n_JX227970 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
-  reference REF_4o_JX227977 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4r_JX227976 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4v_HQ537008 inherit feature-location -rs AL_UNCONSTRAINED -l REF_MASTER_NC_004102 precursor_polyprotein
   reference REF_4v_HQ537008 feature-location precursor_polyprotein remove segment 257 9174

@@ -49,6 +49,20 @@
       add segment 3070 7278 2756 6964
 	  exit
 
+    # 2 x Ns in this sequence at NT 1024 turned into a gap in the alignment.
+    member ncbi-refseqs JX227955
+      remove segment 1059 1113 968 1022
+	  remove segment 1116 1514 1025 1423
+      add segment 1059 1514 968 1423
+	  exit
+
+    # I think something went wrong for the blast import of the alignment here.
+    #member ncbi-refseqs KC197240
+    #  remove segment 216 1045 179 1008
+    #  add segment 216 1046 179 1009
+	#  exit
+
+
 	exit
 	
 	 
