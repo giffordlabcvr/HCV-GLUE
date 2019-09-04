@@ -146,8 +146,7 @@
 							<tr
 								ng-repeat="phdrResult in fileItemUnderAnalysis.response.phdrWebReport.results track by $index">
 								<td>{{phdrResult.phdrReport.sequenceResult.id}}</td>
-								<td>{{phdrResult.phdrReport.sequenceResult.isForwardHcv ?
-									"Yes" : "No"}}</td>
+								<td>{{getIsHcv(phdrResult.phdrReport.sequenceResult)}}</td>
 								<td>{{getGenotype(phdrResult.phdrReport.sequenceResult)}}</td>
 								<td>{{getSubtype(phdrResult.phdrReport.sequenceResult)}}</td>
 								<td>{{getClosestReferenceSequence(phdrResult.phdrReport.sequenceResult)}}</td>

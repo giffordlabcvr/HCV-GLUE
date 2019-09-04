@@ -434,7 +434,20 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 				}
 			};
 
+			$scope.getIsHcv = function(sequenceResult) {
+				if(sequenceResult.isForwardHcv) {
+					return "Yes";
+				}
+				if(sequenceResult.isReverseHcv) {
+					return "Yes: reverse complement";
+				}
+				return "No";
+			};
+				
 		    $scope.getGenotype = function(sequenceResult) {
+		    	if(!sequenceResult.isForwardHcv) {
+		    		return "-";
+		    	}
 		    	var genotypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'genotype'});
 		    	if(genotypeCladeResult == null) {
 		    		return "-";
@@ -443,6 +456,9 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    };
 
 		    $scope.getSubtype = function(sequenceResult) {
+		    	if(!sequenceResult.isForwardHcv) {
+		    		return "-";
+		    	}
 		    	var subtypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'subtype'});
 		    	if(subtypeCladeResult == null) {
 		    		return "-";
@@ -451,6 +467,9 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 		    };
 
 		    $scope.getClosestReferenceSequence = function(sequenceResult) {
+		    	if(!sequenceResult.isForwardHcv) {
+		    		return "-";
+		    	}
 		    	var genotypeCladeResult = _.find(sequenceResult.genotypingResult.queryCladeCategoryResult, function(qccr) {return qccr.categoryName == 'genotype'});
 		    	if(genotypeCladeResult == null) {
 		    		return "-";
