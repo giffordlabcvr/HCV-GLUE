@@ -1,22 +1,27 @@
 apply plugin: 'war'
 apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: 'org.hidetake.ssh'
+apply plugin: 'com.bmuschko.cargo'
 
-project.ext.set("glueVersion", "1.1.48")
+project.ext.set("glueVersion", "1.1.49")
+
+ssh.settings { knownHosts = allowAnyHosts }
 
 project.version = scmVersion.version
 
 remotes {
-  gluehome_aws {
-    host = '52.16.113.119'
-    user = 'ubuntu'
-    identity = file('/Users/joshsinger/.ssh/gluehome-aws.pem')
+  hcvglue_cvr {
+    host = 'hcv-glue.cvr.gla.ac.uk'
+    user = 'sing01j'
+    identity = file('/Users/joshsinger/.ssh/hcv-glue_id_rsa')
   }
   
 }
 
 repositories {
 	mavenLocal()
+	// cargo
+	mavenCentral()
 }
 
 configurations {
@@ -29,12 +34,14 @@ dependencies {
     gluetoolsWebWar group: 'cvr.ac.uk', name: 'gluetools-web', version: project.glueVersion, transitive: false
     gluetoolsWsWar group: 'cvr.ac.uk', name: 'gluetools-ws', version: project.glueVersion, transitive: false
     gluetoolsCore group: 'cvr.ac.uk', name: 'gluetools-core', version: project.glueVersion, transitive: false
+    cargo group: 'org.codehaus.cargo', name: 'cargo-core-uberjar', version: '1.7.4'
+	cargo group: 'org.codehaus.cargo', name: 'cargo-ant', version: '1.7.4'
 }
 
 
 buildscript {
   repositories {
-    // for ssh-deploy stuff
+    // for ssh-deploy stuff, cargo
     jcenter()
     // for axion-release
     mavenCentral()
@@ -43,7 +50,39 @@ buildscript {
     classpath group: 'org.hidetake', name: 'gradle-ssh-plugin', version: '1.1.3'
     classpath group: 'commons-io', name: 'commons-io', version: '1.3.2'
     classpath group: 'pl.allegro.tech.build', name: 'axion-release-plugin', version: '1.9.3'
+    classpath group: 'com.bmuschko', name: 'gradle-cargo-plugin', version:'2.6'
   }
+}
+
+task deployDeps(dependsOn: ['copyGluetoolsWebWar', 
+	'gluetoolsWsWithContextWar', 'deployGluetoolsConfigHcvGlueCVR'])
+
+cargoRedeployRemote.dependsOn deployDeps
+
+cargo {
+    containerId = 'tomcat7x'
+    port = 80
+    
+    deployable {
+    	file = new File(buildDir, 'runtimeWars/gluetools-ws.war')
+        context = '/gluetools-ws'
+    }
+    deployable {
+    	file = new File(buildDir, 'runtimeWars/gluetools-web.war')
+        context = '/gluetools-web'
+    }
+
+	// hcvGlue war has context path /
+    deployable {
+        context = '/'
+    }
+
+    remote {
+        hostname = 'hcv-glue.cvr.gla.ac.uk'
+        // credentials in ~/.gradle/gradle.properties
+        username = System.getProperty("hcv_glue.tomcat.mgmt.username")
+        password = System.getProperty("hcv_glue.tomcat.mgmt.password")
+    }
 }
 
 war {
@@ -66,110 +105,34 @@ task copyGluetoolsWebWar(type: Copy) {
 task copyGluetoolsWsWar(type: Copy) {
     from configurations.gluetoolsWsWar
     into "$buildDir/runtimeWars"
-    rename('gluetools-ws-'+project.glueVersion+'.war', 'gluetools-ws.war')
+    rename('gluetools-ws-'+project.glueVersion+'.war', 'gluetools-ws-without-context.war')
 }
 
-
-task deployAll(dependsOn: ['deployGluetoolsWebWarGlueHomeAWS',
-	'deployGluetoolsWsWarGlueHomeAWS',
-	'deployHcvGlueWarGlueHomeAWS',
-	'deployHcvGlueGluetoolsWsContextXmlGlueHomeAWS',
-	'deployHcvGlueConfigGlueHomeAWS'])
-
-task deployGluetoolsWebWarGlueHomeAWS(type: DeployWarTask, dependsOn: 'copyGluetoolsWebWar') {
-    warFile = new File(buildDir, 'runtimeWars/gluetools-web.war')
-    remote = remotes.gluehome_aws
-    taskBuildDir = buildDir
-	warBaseName = org.apache.commons.io.FilenameUtils.getBaseName(warFile.name)
-    touchFile = new File(taskBuildDir.name, '/deploy.'+warBaseName+'.'+remote.name+'.touchfile')
-    inputs.file warFile
-    outputs.file touchFile
-    taskSsh = ssh
+task gluetoolsWsWithContextWar(type: Jar, dependsOn: copyGluetoolsWsWar) {
+    destinationDir = new File(buildDir, 'runtimeWars')
+    archiveName = 'gluetools-ws.war' 
+    from zipTree(new File(buildDir, 'runtimeWars/gluetools-ws-without-context.war'))
+    from(file("hcvglue_cvr/gluetools-ws-context.xml")) {
+        into ('META-INF')
+        rename("gluetools-ws-context.xml", "context.xml")
+    }
 }
 
-task deployGluetoolsWsWarGlueHomeAWS(type: DeployWarTask, dependsOn: 'copyGluetoolsWsWar') {
-    warFile = new File(buildDir, 'runtimeWars/gluetools-ws.war')
-    remote = remotes.gluehome_aws
-    taskBuildDir = buildDir
-	warBaseName = org.apache.commons.io.FilenameUtils.getBaseName(warFile.name)
-    touchFile = new File(taskBuildDir, '/deploy.'+warBaseName+'.'+remote.name+'.touchfile')
-    inputs.file warFile
-    outputs.file touchFile
-    taskSsh = ssh
-}
-
-task deployHcvGlueWarGlueHomeAWS(type: DeployWarTask, dependsOn: war) {
-    warFile = new File(buildDir, '/libs/hcvGlue.war')
-    remote = remotes.gluehome_aws
-    taskBuildDir = buildDir
-	warBaseName = org.apache.commons.io.FilenameUtils.getBaseName(warFile.name)
-    touchFile = new File(taskBuildDir, '/deploy.'+warBaseName+'.'+remote.name+'.touchfile')
-    inputs.file warFile
-    outputs.file touchFile
-    taskSsh = ssh
-}
-
-class DeployWarTask extends DefaultTask {
-	File warFile
-	org.hidetake.groovy.ssh.core.Remote remote
-	File taskBuildDir
-	String warBaseName
-    File touchFile
-    org.hidetake.groovy.ssh.core.Service taskSsh
-
-    @TaskAction
-    def deploy() {
-		  println "Stopping Tomcat"
-		  taskSsh.run {
-		    session(remote) {
-		      execute 'sudo service tomcat7 stop; sleep 10s'
-		      execute 'while true; do tcresult="$(sudo service tomcat7 status)" ; if [[ $tcresult != *"Tomcat servlet engine is running"* ]] ; then break ; fi ; sleep 0.5 ; echo "Tomcat is still running" ; done'
-		      execute 'sleep 5'
-		    }
-		  }
-		  println "Uploading "+warFile
-		  taskSsh.run {
-		    session(remote) {
-		      put from: warFile.absolutePath, into: '/tmp/'+warFile.name
-		      execute 'sudo mkdir -p /var/lib/tomcat7/webapps_hcv'
-		      execute 'sudo chmod a+rwx /var/lib/tomcat7/webapps_hcv'
-		      execute 'sudo rm -rf /var/lib/tomcat7/webapps_hcv/'+warBaseName
-		      execute 'sudo rm -rf /var/lib/tomcat7/webapps_hcv/'+warFile.name
-		      execute 'sudo mv /tmp/'+warFile.name+' /var/lib/tomcat7/webapps_hcv/'+warFile.name
-		      execute 'sudo rm -rf /var/lib/tomcat7/work/Catalina/hcv.glue.cvr.ac.uk/'+warBaseName
-		      execute 'sudo rm -rf /var/cache/tomcat7/Catalina/hcv.glue.cvr.ac.uk/'+warBaseName
-		      
-		    }
-		  }
-		  println "Starting Tomcat"
-		  taskSsh.run {
-		    session(remote) {
-		      execute 'sudo service tomcat7 start'
-		    }
-		  }
-		  touchFile.delete()
-		  taskBuildDir.mkdirs()
-		  touchFile.createNewFile()
-	}
-}
+task deployAll(dependsOn: ['cargoRedeployRemote'])
 
 
-
-// config for HCV-GLUE gluetools-ws webapp 
-task deployHcvGlueGluetoolsWsContextXmlGlueHomeAWS() {
-  ext.file = new File(projectDir, '/gluehome_aws/gluetools-ws-context.xml')
-  ext.touchfile = new File(buildDir, '/deployGlueWSConfigGlueHomeAWS.touchfile')
+// gluetools xml config for CVR vm 
+task deployGluetoolsConfigHcvGlueCVR() {
+  ext.file = new File(projectDir, '/hcvglue_cvr/hcv-glue-gluetools-config.xml')
+  ext.touchfile = new File(buildDir, '/deployGluetoolsConfigHcvGlueCVR.touchfile')
   inputs.file file
   outputs.file touchfile
   doLast {
 	  println "Uploading "+file.name
 	  ssh.run {
-	    session(remotes.gluehome_aws) {
-	      put from: file.absolutePath, into: '/tmp/gluetools-ws.xml'
-	      execute 'sudo service tomcat7 stop; sleep 10s'
-	      execute 'sudo mkdir -p /var/lib/tomcat7/conf/Catalina/hcv.glue.cvr.ac.uk'
-	      execute 'sudo mv /tmp/gluetools-ws.xml /var/lib/tomcat7/conf/Catalina/hcv.glue.cvr.ac.uk/gluetools-ws.xml'
-	      execute 'sudo service tomcat7 start'
+	    session(remotes.hcvglue_cvr) {
+	      put from: file.absolutePath, into: '/tmp/hcv-glue-gluetools-config.xml'
+	      execute 'mv /tmp/hcv-glue-gluetools-config.xml /opt/gluetools/conf'
 	    }
 	  }
 	  touchfile.delete()
@@ -177,41 +140,6 @@ task deployHcvGlueGluetoolsWsContextXmlGlueHomeAWS() {
 	  touchfile.createNewFile()
   }
 }
-
-// config for HCV-GLUE glue engine which tells it where to find its database. 
-task deployHcvGlueConfigGlueHomeAWS {
-  ext.file = new File(projectDir, '/gluehome_aws/hcv-glue-gluetools-config.xml')
-  ext.touchfile = new File(buildDir, '/deployHcvGlueConfigGlueHomeAWS.touchfile')
-  inputs.file file
-  outputs.file touchfile
-  doLast {
-	  println "Uploading "+file.name
-	  ssh.run {
-	    session(remotes.gluehome_aws) {
-	      execute "sudo mkdir -p /opt/gluetools/conf"
-	      put from: file, into: '/tmp'
-	      execute "sudo mv /tmp/hcv-glue-gluetools-config.xml /opt/gluetools/conf/"
-	    }
-	  }
-	  touchfile.delete()
-	  buildDir.mkdirs()
-	  touchfile.createNewFile()
-  }
-}
-
-task initHcvGlueDBGlueHomeAWS {
-  doLast {
-	  ssh.run {
-	    session(remotes.gluehome_aws) {
-			// create user gluetools with correct grants
-			execute "echo 'GRANT ALL ON HCV_GLUE.* TO \"hcvglue\"@\"localhost\" identified by \"hcvglue\";' | mysql -u root --password=root123"
-			// create HCV_GLUE database
-			execute "echo 'create database HCV_GLUE character set UTF8;' | mysql -u hcvglue --password=hcvglue" 
-	    }
-	  }
-  }
-}
-
 def glueConfigFile = System.getProperty("user.name").equals('joshsinger') ? 'local-gluetools-config.xml' : 'remote-gluetools-config.xml'
 
 task wipeHcvGlueDB(type: Exec) {
@@ -271,11 +199,3 @@ scmVersion {
     }
 
 }
-
-
-
-
-
-
-
-
