@@ -5,6 +5,11 @@
 		<jdbcUrl>jdbc:mysql://glue-db.cvr.gla.ac.uk:3306/HCV_GLUE?characterEncoding=UTF-8</jdbcUrl>	
 	</database>
 	<properties>
+		<!-- Scripting -->
+		<property>
+			<name>gluetools.core.scripting.parallel.cpus</name>
+			<value>8</value>
+		</property>
 		<!-- Web files -->
 	    <property>
 			<name>gluetools.core.webfiles.enabled</name>
