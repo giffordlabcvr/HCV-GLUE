@@ -6,9 +6,17 @@
 	</database>
 	<properties>
 		<!-- Scripting -->
+		<!-- In reality the VM has 8 cores. We can overload them effectively because the resistance scanning piece which uses
+		     the parallelism spends a lot of time accessing the DB. So I've put 20 here, matching the 20 sequence maximum.
+		     
+		     A better design would be for the invocation of the parallelCommands function to specify a load factor. This would get
+		     multiplied by the CPUs setting to give the number of workers created in the executor service thread pool.
+		     For CPU-intensive parallel commands you would use a load factor of 1, whereas if there was DB access you might use a 
+		     higher load factor.
+		      -->
 		<property>
 			<name>gluetools.core.scripting.parallel.cpus</name>
-			<value>8</value>
+			<value>20</value>
 		</property>
 		<!-- Web files -->
 	    <property>
@@ -47,7 +55,7 @@
 		<!-- RAxML-specific config -->
 		<property>
 			<name>gluetools.core.programs.raxml.raxmlhpc.executable</name>
-			<value>/opt/gluetools/raxml/bin/raxmlHPC-PTHREADS-AVX</value>
+			<value>/opt/gluetools/raxml/bin/raxmlHPC-PTHREADS-AVX2</value>
 		</property>
 		<property>
 			<name>gluetools.core.programs.raxml.raxmlhpc.cpus</name>
