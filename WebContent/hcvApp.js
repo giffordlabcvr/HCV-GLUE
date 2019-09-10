@@ -5,7 +5,7 @@
 	
 	  console.log("document.location.hostname", document.location.hostname);
 	  var trackingID;
-	  if(document.location.hostname.indexOf("hcv.glue.cvr.ac.uk") >= 0) {
+	  if(document.location.hostname.indexOf("hcv-glue.cvr.gla.ac.uk") >= 0) {
 		  // HCV-GLUE production analytics account
 		  trackingID = 'UA-93745543-1';
 		  ga('create', trackingID, 'auto');
