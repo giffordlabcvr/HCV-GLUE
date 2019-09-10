@@ -7,7 +7,7 @@
 	  var trackingID;
 	  if(document.location.hostname.indexOf("hcv-glue.cvr.gla.ac.uk") >= 0) {
 		  // HCV-GLUE production analytics account
-		  trackingID = 'UA-93745543-1';
+		  trackingID = 'UA-147533458-1';
 		  ga('create', trackingID, 'auto');
 	  } else {
 		  // sandbox analytics account
