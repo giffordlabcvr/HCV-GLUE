@@ -393,7 +393,7 @@ hcvApp.controller('hcvFastaAnalysisCtrl',
 			
 			$scope.downloadExampleSequence = function() {
 				var url;
-				if(userAgent.os.family.indexOf("Windows") !== -1) {
+				if(userAgent.os.family.indexOf("Windows") == -1) {
 					url = "exampleSequences/exampleSequences.fasta";
 				} else {
 					url = "exampleSequencesMsWindows/exampleSequences.fasta";
