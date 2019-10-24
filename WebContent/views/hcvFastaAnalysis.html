@@ -66,11 +66,11 @@
 								<button ng-if="item.commandError == null" type="button" class="btn btn-primary btn-xs"
 									ng-click="showAnalysisResults(item)"
 									ng-disabled="item.response == null">
-									<span class="glyphicon glyphicon-list"></span> Show result
+									<span class="glyphicon glyphicon-list"></span> Show response
 								</button>
 								<button ng-if="item.commandError != null" type="button" class="btn btn-danger btn-xs"
 									ng-click="showError(item)">
-									<span class="glyphicon glyphicon-list"></span> Show result
+									<span class="glyphicon glyphicon-list"></span> Show response
 								</button>
 								<button type="button" class="btn btn-primary btn-xs"
 									ng-click="removeItem(item)"
