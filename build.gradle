@@ -15,7 +15,6 @@ remotes {
     user = 'sing01j'
     identity = file('/Users/joshsinger/.ssh/hcv-glue_id_rsa')
   }
-  
 }
 
 repositories {
@@ -143,7 +142,7 @@ task deployGluetoolsConfigHcvGlueCVR() {
 def glueConfigFile = System.getProperty("user.name").equals('joshsinger') ? 'local-gluetools-config.xml' : 'remote-gluetools-config.xml'
 
 task wipeHcvGlueDB(type: Exec) {
-	commandLine "bash", "-c", "echo 'drop database HCV_GLUE; create database HCV_GLUE character set UTF8;' | mysql -u hcvglue --password=hcvglue"
+	commandLine "bash", "-c", "echo 'drop database if exists HCV_GLUE; create database HCV_GLUE character set UTF8;' | mysql -u hcvglue --password=hcvglue"
 }
 
 task buildHcvGlueDB(type: JavaExec, dependsOn: 'copyGluetoolsJar') {
@@ -152,28 +151,6 @@ task buildHcvGlueDB(type: JavaExec, dependsOn: 'copyGluetoolsJar') {
 	args '-c', glueConfigFile, '-i', 'run', 'file', 'hcvProject.glue'
 }
 
-task dumpHcvGlueDB(type: Exec, dependsOn: 'buildHcvGlueDB') {
-	standardOutput = new FileOutputStream(new File('/tmp/hcv_glue.sql'))
-	commandLine '/usr/local/mysql/bin/mysqldump', '-u', 'hcvglue', '--password=hcvglue', 'HCV_GLUE'
-}
-
-task zipHcvGlueDB(type: Exec, dependsOn: 'dumpHcvGlueDB') {
-	commandLine '/usr/bin/gzip', '-f', '/tmp/hcv_glue.sql'
-}
-
-task deployHcvGlueDbToGlueHomeAWS(dependsOn: 'zipHcvGlueDB') {
-  doLast {
-	  println "Uploading HCV-GLUE DB"
-	  ssh.run {
-	    session(remotes.gluehome_aws) {
-	 	  put from: '/tmp/hcv_glue.sql.gz', into: '/tmp/hcv_glue.sql.gz'
-	      execute 'echo "drop database HCV_GLUE; create database HCV_GLUE character set UTF8;" | mysql -u hcvglue --password=hcvglue HCV_GLUE'
-	      execute 'gunzip -c /tmp/hcv_glue.sql.gz | mysql -u hcvglue --password=hcvglue HCV_GLUE'
-	      execute 'rm /tmp/hcv_glue.sql.gz'
-	    }
-	  }
-  }
-}
 
 def scmCustomKey = System.getProperty("user.name").equals('joshsinger') ? '/Users/joshsinger/.ssh/github_id_rsa' : '/opt/bitnami/apps/jenkins/jenkins_home/.ssh/github_id_rsa'
 
