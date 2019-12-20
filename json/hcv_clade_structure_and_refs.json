@@ -1,0 +1,2267 @@
+{
+  "referenceSourceName": "ncbi-refseqs",
+  "alignmentName": "AL_MASTER",
+  "almtDisplayName": "Hepatitis C Virus (HCV)",
+  "cladeCategory": "species",
+  "childAlignments": [
+    {
+      "constrainingRef": {
+        "sequenceID": "NC_004102"
+      },
+      "alignmentName": "AL_1",
+      "almtDisplayName": "HCV Genotype 1",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_1a",
+          "almtDisplayName": "HCV Subtype 1a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "NC_004102"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "NC_004102"
+            },
+            {
+              "sequenceID": "M62321"
+            },
+            {
+              "sequenceID": "M67463"
+            },
+            {
+              "sequenceID": "HQ850279"
+            },
+            {
+              "sequenceID": "EF407457"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1b",
+          "almtDisplayName": "HCV Subtype 1b",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D90208"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D90208"
+            },
+            {
+              "sequenceID": "M58335"
+            },
+            {
+              "sequenceID": "EU781827"
+            },
+            {
+              "sequenceID": "EU781828"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1c",
+          "almtDisplayName": "HCV Subtype 1c",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D14853"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D14853"
+            },
+            {
+              "sequenceID": "AY051292"
+            },
+            {
+              "sequenceID": "AY651061"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1d",
+          "almtDisplayName": "HCV Subtype 1d",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ439768"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439768"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1e",
+          "almtDisplayName": "HCV Subtype 1e",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KC248194"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC248194"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1g",
+          "almtDisplayName": "HCV Subtype 1g",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "AM910652"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AM910652"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1h",
+          "almtDisplayName": "HCV Subtype 1h",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KC248198"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC248198"
+            },
+            {
+              "sequenceID": "KC248199"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1i",
+          "almtDisplayName": "HCV Subtype 1i",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ439772"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439772"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1j",
+          "almtDisplayName": "HCV Subtype 1j",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ439773"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439773"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1k",
+          "almtDisplayName": "HCV Subtype 1k",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ439774"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439774"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1l",
+          "almtDisplayName": "HCV Subtype 1l",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KC248193"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC248193"
+            },
+            {
+              "sequenceID": "KC248197"
+            },
+            {
+              "sequenceID": "KC248196"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1m",
+          "almtDisplayName": "HCV Subtype 1m",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ439778"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439778"
+            },
+            {
+              "sequenceID": "KJ439782"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1n",
+          "almtDisplayName": "HCV Subtype 1n",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ439781"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439781"
+            },
+            {
+              "sequenceID": "KJ439775"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1o",
+          "almtDisplayName": "HCV Subtype 1o",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ439779"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439779"
+            },
+            {
+              "sequenceID": "MH885469"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1_unassigned_HQ537007",
+          "almtDisplayName": "HCV Subtype 1_HQ537007 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "HQ537007"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "HQ537007"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1_unassigned_AJ851228",
+          "almtDisplayName": "HCV Subtype 1_AJ851228 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "AJ851228"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AJ851228"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1_unassigned_KC248195",
+          "almtDisplayName": "HCV Subtype 1_KC248195 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KC248195"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC248195"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1_unassigned_KJ439780",
+          "almtDisplayName": "HCV Subtype 1_KJ439780 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ439780"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439780"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1_unassigned_KJ439776",
+          "almtDisplayName": "HCV Subtype 1_KJ439776 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ439776"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439776"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_1_unassigned_KJ439777",
+          "almtDisplayName": "HCV Subtype 1_KJ439777 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ439777"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ439777"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "D00944"
+      },
+      "alignmentName": "AL_2",
+      "almtDisplayName": "HCV Genotype 2",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_2a",
+          "almtDisplayName": "HCV Subtype 2a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D00944"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D00944"
+            },
+            {
+              "sequenceID": "AB047639"
+            },
+            {
+              "sequenceID": "HQ639944"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2b",
+          "almtDisplayName": "HCV Subtype 2b",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D10988"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D10988"
+            },
+            {
+              "sequenceID": "AB030907"
+            },
+            {
+              "sequenceID": "AB661388"
+            },
+            {
+              "sequenceID": "AB661382"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2c",
+          "almtDisplayName": "HCV Subtype 2c",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D50409"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D50409"
+            },
+            {
+              "sequenceID": "JX227949"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2d",
+          "almtDisplayName": "HCV Subtype 2d",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JF735114"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735114"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2e",
+          "almtDisplayName": "HCV Subtype 2e",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JF735120"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735120"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2f",
+          "almtDisplayName": "HCV Subtype 2f",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KC844042"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC844042"
+            },
+            {
+              "sequenceID": "KC844050"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2i",
+          "almtDisplayName": "HCV Subtype 2i",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ155561"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ155561"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2j",
+          "almtDisplayName": "HCV Subtype 2j",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "HM777358"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "HM777358"
+            },
+            {
+              "sequenceID": "JF735113"
+            },
+            {
+              "sequenceID": "HM777359"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2k",
+          "almtDisplayName": "HCV Subtype 2k",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "AB031663"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AB031663"
+            },
+            {
+              "sequenceID": "JX227953"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2m",
+          "almtDisplayName": "HCV Subtype 2m",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JF735111"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735111"
+            },
+            {
+              "sequenceID": "JX227967"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2q",
+          "almtDisplayName": "HCV Subtype 2q",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FN666428"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FN666428"
+            },
+            {
+              "sequenceID": "FN666429"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2r",
+          "almtDisplayName": "HCV Subtype 2r",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JF735115"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735115"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2t",
+          "almtDisplayName": "HCV Subtype 2t",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KC197238"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC197238"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2u",
+          "almtDisplayName": "HCV Subtype 2u",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JF735112"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735112"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_JF735116",
+          "almtDisplayName": "HCV Subtype 2_JF735116 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735116"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735116"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_JF735118",
+          "almtDisplayName": "HCV Subtype 2_JF735118 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735118"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735118"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_JF735117",
+          "almtDisplayName": "HCV Subtype 2_JF735117 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735117"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735117"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_JF735119",
+          "almtDisplayName": "HCV Subtype 2_JF735119 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735119"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735119"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_JF735110",
+          "almtDisplayName": "HCV Subtype 2_JF735110 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735110"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735110"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_KC197236",
+          "almtDisplayName": "HCV Subtype 2_KC197236 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KC197236"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC197236"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_KC197237",
+          "almtDisplayName": "HCV Subtype 2_KC197237 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KC197237"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC197237"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_2_unassigned_KC197239",
+          "almtDisplayName": "HCV Subtype 2_KC197239 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KC197239"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC197239"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "NC_009824"
+      },
+      "alignmentName": "AL_3",
+      "almtDisplayName": "HCV Genotype 3",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_3a",
+          "almtDisplayName": "HCV Subtype 3a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "NC_009824"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "NC_009824"
+            },
+            {
+              "sequenceID": "D28917"
+            },
+            {
+              "sequenceID": "X76918"
+            },
+            {
+              "sequenceID": "JN714194"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3b",
+          "almtDisplayName": "HCV Subtype 3b",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D49374"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D49374"
+            },
+            {
+              "sequenceID": "JQ065709"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3d",
+          "almtDisplayName": "HCV Subtype 3d",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ470619"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470619"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3e",
+          "almtDisplayName": "HCV Subtype 3e",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ470618"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470618"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3g",
+          "almtDisplayName": "HCV Subtype 3g",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JX227954"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX227954"
+            },
+            {
+              "sequenceID": "JF735123"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3h",
+          "almtDisplayName": "HCV Subtype 3h",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JF735126"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735126"
+            },
+            {
+              "sequenceID": "JF735121"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3i",
+          "almtDisplayName": "HCV Subtype 3i",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ407092"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ407092"
+            },
+            {
+              "sequenceID": "JX227955"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3k",
+          "almtDisplayName": "HCV Subtype 3k",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D63821"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D63821"
+            },
+            {
+              "sequenceID": "JF735122"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_3_unassigned_JF735124",
+          "almtDisplayName": "HCV Subtype 3_JF735124 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735124"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735124"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "NC_009825"
+      },
+      "alignmentName": "AL_4",
+      "almtDisplayName": "HCV Genotype 4",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_4a",
+          "almtDisplayName": "HCV Subtype 4a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "NC_009825"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "NC_009825"
+            },
+            {
+              "sequenceID": "DQ988074"
+            },
+            {
+              "sequenceID": "DQ418789"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4b",
+          "almtDisplayName": "HCV Subtype 4b",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462435"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462435"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4c",
+          "almtDisplayName": "HCV Subtype 4c",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462436"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462436"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4d",
+          "almtDisplayName": "HCV Subtype 4d",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ418786"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ418786"
+            },
+            {
+              "sequenceID": "FJ462437"
+            },
+            {
+              "sequenceID": "EU392172"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4f",
+          "almtDisplayName": "HCV Subtype 4f",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EF589161"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EF589161"
+            },
+            {
+              "sequenceID": "EU392175"
+            },
+            {
+              "sequenceID": "EU392174"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4g",
+          "almtDisplayName": "HCV Subtype 4g",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462432"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462432"
+            },
+            {
+              "sequenceID": "JX227971"
+            },
+            {
+              "sequenceID": "JX227963"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4k",
+          "almtDisplayName": "HCV Subtype 4k",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EU392173"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU392173"
+            },
+            {
+              "sequenceID": "FJ462438"
+            },
+            {
+              "sequenceID": "EU392171"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4l",
+          "almtDisplayName": "HCV Subtype 4l",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ839870"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ839870"
+            },
+            {
+              "sequenceID": "JX227957"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4m",
+          "almtDisplayName": "HCV Subtype 4m",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462433"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462433"
+            },
+            {
+              "sequenceID": "JX227972"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4n",
+          "almtDisplayName": "HCV Subtype 4n",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462441"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462441"
+            },
+            {
+              "sequenceID": "JX227970"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4o",
+          "almtDisplayName": "HCV Subtype 4o",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462440"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462440"
+            },
+            {
+              "sequenceID": "JX227977"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4p",
+          "almtDisplayName": "HCV Subtype 4p",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462431"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462431"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4q",
+          "almtDisplayName": "HCV Subtype 4q",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462434"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462434"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4r",
+          "almtDisplayName": "HCV Subtype 4r",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ462439"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ462439"
+            },
+            {
+              "sequenceID": "JX227976"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4s",
+          "almtDisplayName": "HCV Subtype 4s",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JF735136"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735136"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4t",
+          "almtDisplayName": "HCV Subtype 4t",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ839869"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ839869"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4v",
+          "almtDisplayName": "HCV Subtype 4v",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "HQ537009"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "HQ537009"
+            },
+            {
+              "sequenceID": "JX227959"
+            },
+            {
+              "sequenceID": "HQ537008"
+            },
+            {
+              "sequenceID": "JX227960"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4w",
+          "almtDisplayName": "HCV Subtype 4w",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "FJ025855"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ025855"
+            },
+            {
+              "sequenceID": "FJ025856"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_FJ025854",
+          "almtDisplayName": "HCV Subtype 4_FJ025854 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "FJ025854"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "FJ025854"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JX227964",
+          "almtDisplayName": "HCV Subtype 4_JX227964 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JX227964"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX227964"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735127",
+          "almtDisplayName": "HCV Subtype 4_JF735127 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735127"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735127"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735132",
+          "almtDisplayName": "HCV Subtype 4_JF735132 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735132"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735132"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735131",
+          "almtDisplayName": "HCV Subtype 4_JF735131 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735131"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735131"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735130",
+          "almtDisplayName": "HCV Subtype 4_JF735130 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735130"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735130"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735129",
+          "almtDisplayName": "HCV Subtype 4_JF735129 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735129"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735129"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735138",
+          "almtDisplayName": "HCV Subtype 4_JF735138 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735138"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735138"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735135",
+          "almtDisplayName": "HCV Subtype 4_JF735135 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735135"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735135"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_4_unassigned_JF735134",
+          "almtDisplayName": "HCV Subtype 4_JF735134 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JF735134"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JF735134"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "NC_009826"
+      },
+      "alignmentName": "AL_5",
+      "almtDisplayName": "HCV Genotype 5",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_5a",
+          "almtDisplayName": "HCV Subtype 5a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "NC_009826"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "AF064490"
+            },
+            {
+              "sequenceID": "NC_009826"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_5_unassigned_KT595242",
+          "almtDisplayName": "HCV Subtype 5_KT595242 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KT595242"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KT595242"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "NC_009827"
+      },
+      "alignmentName": "AL_6",
+      "almtDisplayName": "HCV Genotype 6",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_6a",
+          "almtDisplayName": "HCV Subtype 6a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "Y12083"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "Y12083"
+            },
+            {
+              "sequenceID": "AY859526"
+            },
+            {
+              "sequenceID": "HQ639936"
+            },
+            {
+              "sequenceID": "EU246930"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6b",
+          "almtDisplayName": "HCV Subtype 6b",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "NC_009827"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "NC_009827"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6c",
+          "almtDisplayName": "HCV Subtype 6c",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EF424629"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EF424629"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6d",
+          "almtDisplayName": "HCV Subtype 6d",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D84263"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D84263"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6e",
+          "almtDisplayName": "HCV Subtype 6e",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ314805"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ314805"
+            },
+            {
+              "sequenceID": "EU246932"
+            },
+            {
+              "sequenceID": "EU246931"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6f",
+          "almtDisplayName": "HCV Subtype 6f",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ835760"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ835760"
+            },
+            {
+              "sequenceID": "EU246936"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6g",
+          "almtDisplayName": "HCV Subtype 6g",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D63822"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D63822"
+            },
+            {
+              "sequenceID": "DQ314806"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6h",
+          "almtDisplayName": "HCV Subtype 6h",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D84265"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D84265"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6i",
+          "almtDisplayName": "HCV Subtype 6i",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ835770"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ835770"
+            },
+            {
+              "sequenceID": "DQ835762"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6j",
+          "almtDisplayName": "HCV Subtype 6j",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ835769"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ835769"
+            },
+            {
+              "sequenceID": "DQ835761"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6k",
+          "almtDisplayName": "HCV Subtype 6k",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "D84264"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "D84264"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6l",
+          "almtDisplayName": "HCV Subtype 6l",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EF424628"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EF424628"
+            },
+            {
+              "sequenceID": "JX183556"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6m",
+          "almtDisplayName": "HCV Subtype 6m",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ835767"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ835767"
+            },
+            {
+              "sequenceID": "DQ835766"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6n",
+          "almtDisplayName": "HCV Subtype 6n",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ278894"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ278894"
+            },
+            {
+              "sequenceID": "DQ835768"
+            },
+            {
+              "sequenceID": "EU246938"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6o",
+          "almtDisplayName": "HCV Subtype 6o",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EF424627"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EF424627"
+            },
+            {
+              "sequenceID": "EU246934"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6p",
+          "almtDisplayName": "HCV Subtype 6p",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EF424626"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EF424626"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6q",
+          "almtDisplayName": "HCV Subtype 6q",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EF424625"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EF424625"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6r",
+          "almtDisplayName": "HCV Subtype 6r",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EU408328"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU408328"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6s",
+          "almtDisplayName": "HCV Subtype 6s",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EU408329"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU408329"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6t",
+          "almtDisplayName": "HCV Subtype 6t",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EF632071"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EF632071"
+            },
+            {
+              "sequenceID": "EU246939"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6u",
+          "almtDisplayName": "HCV Subtype 6u",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EU246940"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU246940"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6v",
+          "almtDisplayName": "HCV Subtype 6v",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EU158186"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU158186"
+            },
+            {
+              "sequenceID": "EU798760"
+            },
+            {
+              "sequenceID": "EU798761"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6w",
+          "almtDisplayName": "HCV Subtype 6w",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "DQ278892"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ278892"
+            },
+            {
+              "sequenceID": "EU643834"
+            },
+            {
+              "sequenceID": "EU643836"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xa",
+          "almtDisplayName": "HCV Subtype 6xa",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "EU408330"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "EU408330"
+            },
+            {
+              "sequenceID": "EU408332"
+            },
+            {
+              "sequenceID": "EU408331"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xb",
+          "almtDisplayName": "HCV Subtype 6xb",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JX183552"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183552"
+            },
+            {
+              "sequenceID": "KJ567645"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xc",
+          "almtDisplayName": "HCV Subtype 6xc",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ567651"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ567651"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xd",
+          "almtDisplayName": "HCV Subtype 6xd",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KM252789"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KM252789"
+            },
+            {
+              "sequenceID": "KM252790"
+            },
+            {
+              "sequenceID": "KM252791"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xe",
+          "almtDisplayName": "HCV Subtype 6xe",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "JX183557"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183557"
+            },
+            {
+              "sequenceID": "KM252792"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xf",
+          "almtDisplayName": "HCV Subtype 6xf",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KJ567646"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ567646"
+            },
+            {
+              "sequenceID": "KJ567647"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xg",
+          "almtDisplayName": "HCV Subtype 6xg",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "MH492361"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "MH492361"
+            },
+            {
+              "sequenceID": "MH492360"
+            },
+            {
+              "sequenceID": "MH492362"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6xh",
+          "almtDisplayName": "HCV Subtype 6xh",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "MG879000"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "MG879000"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_DQ278891",
+          "almtDisplayName": "HCV Subtype 6_DQ278891 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "DQ278891"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ278891"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_DQ278893",
+          "almtDisplayName": "HCV Subtype 6_DQ278893 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "DQ278893"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "DQ278893"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_JX183558",
+          "almtDisplayName": "HCV Subtype 6_JX183558 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JX183558"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183558"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_JX183553",
+          "almtDisplayName": "HCV Subtype 6_JX183553 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JX183553"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183553"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_JX183554",
+          "almtDisplayName": "HCV Subtype 6_JX183554 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JX183554"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183554"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_JX183551",
+          "almtDisplayName": "HCV Subtype 6_JX183551 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JX183551"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183551"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_JX183549",
+          "almtDisplayName": "HCV Subtype 6_JX183549 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JX183549"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183549"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_JX183550",
+          "almtDisplayName": "HCV Subtype 6_JX183550 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "JX183550"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "JX183550"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ470620",
+          "almtDisplayName": "HCV Subtype 6_KJ470620 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ470620"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470620"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ470621",
+          "almtDisplayName": "HCV Subtype 6_KJ470621 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ470621"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470621"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ470622",
+          "almtDisplayName": "HCV Subtype 6_KJ470622 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ470622"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470622"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ470623",
+          "almtDisplayName": "HCV Subtype 6_KJ470623 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ470623"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470623"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ470624",
+          "almtDisplayName": "HCV Subtype 6_KJ470624 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ470624"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470624"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ470625",
+          "almtDisplayName": "HCV Subtype 6_KJ470625 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ470625"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ470625"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KC844039",
+          "almtDisplayName": "HCV Subtype 6_KC844039 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KC844039"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC844039"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KC844040",
+          "almtDisplayName": "HCV Subtype 6_KC844040 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KC844040"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KC844040"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ567652",
+          "almtDisplayName": "HCV Subtype 6_KJ567652 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ567652"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ567652"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ567650",
+          "almtDisplayName": "HCV Subtype 6_KJ567650 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ567650"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ567650"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ567649",
+          "almtDisplayName": "HCV Subtype 6_KJ567649 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ567649"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ567649"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ567648",
+          "almtDisplayName": "HCV Subtype 6_KJ567648 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ567648"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ567648"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_KJ567644",
+          "almtDisplayName": "HCV Subtype 6_KJ567644 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "KJ567644"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KJ567644"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_6_unassigned_MG878999",
+          "almtDisplayName": "HCV Subtype 6_MG878999 (unassigned)",
+          "cladeCategory": "subtype",
+          "status": "unassigned",
+          "constrainingRef": {
+            "sequenceID": "MG878999"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "MG878999"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "NC_030791"
+      },
+      "alignmentName": "AL_7",
+      "almtDisplayName": "HCV Genotype 7",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_7a",
+          "almtDisplayName": "HCV Subtype 7a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "NC_030791"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "NC_030791"
+            }
+          ]
+        },
+        {
+          "alignmentName": "AL_7b",
+          "almtDisplayName": "HCV Subtype 7b",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "KX092342"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "KX092342"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "constrainingRef": {
+        "sequenceID": "MH590698"
+      },
+      "alignmentName": "AL_8",
+      "almtDisplayName": "HCV Genotype 8",
+      "cladeCategory": "genotype",
+      "childAlignments": [
+        {
+          "alignmentName": "AL_8a",
+          "almtDisplayName": "HCV Subtype 8a",
+          "cladeCategory": "subtype",
+          "status": "confirmed",
+          "constrainingRef": {
+            "sequenceID": "MH590698"
+          },
+          "referenceSequences": [
+            {
+              "sequenceID": "MH590698"
+            },
+            {
+              "sequenceID": "MH590699"
+            },
+            {
+              "sequenceID": "MH590700"
+            },
+            {
+              "sequenceID": "MH590701"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "constrainingRef": {
+    "sequenceID": "NC_004102"
+  }
+}

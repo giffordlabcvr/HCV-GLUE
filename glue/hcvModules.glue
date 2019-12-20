@@ -62,3 +62,4 @@
   
   create module -f modules/hcvSequenceRecogniser.xml  
 
+  create module -f modules/hcvFastaUtility.xml
