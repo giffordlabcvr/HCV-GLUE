@@ -101,7 +101,7 @@
 		</div>
 	</div>
 	<div ng-if="displaySection == 'childClades'">
-		<p>Clade which group within {{renderResult.alignment.renderedName}}.</small></p>
+		<p>Clades which group within {{renderResult.alignment.renderedName}}.</small></p>
 		<span ng-show="!renderResult.alignment.child">None</span>
 		<div ng-repeat="child in renderResult.alignment.child track by $index">
 			<a href="#project/alignment/{{child.name}}">
