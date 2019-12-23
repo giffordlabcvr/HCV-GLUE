@@ -1,4 +1,3 @@
 <mafftAligner>
-	<!-- Note, the id formatter of this module is not important. -->
-	<alignmentReimporterModuleName>editedAlignmentImporter</alignmentReimporterModuleName>
+	<alignmentReimporterModuleName>blastFastaAlignmentImporter</alignmentReimporterModuleName>
 </mafftAligner>

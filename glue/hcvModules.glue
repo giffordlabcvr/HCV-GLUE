@@ -1,7 +1,6 @@
   create module --fileName modules/hcvCompoundAligner.xml hcvCompoundAligner
   create module --fileName modules/hcvCodingOnlyAligner.xml hcvCodingOnlyAligner
 
-  create module --fileName modules/samRefToTargetRefTransformer.xml samRefToTargetRefTransformer
   create module --fileName modules/samReporter.xml samReporter
 
   create module --fileName modules/fastaSequenceReporter.xml fastaSequenceReporter
@@ -11,40 +10,26 @@
   create module --fileName modules/hcvMaxLikelihoodPlacer.xml maxLikelihoodPlacer
   create module --fileName modules/hcvMaxLikelihoodGenotyper.xml maxLikelihoodGenotyper
 
-  create module --fileName modules/hcvEpitopeRenderer.xml --loadResources hcvEpitopeRenderer
-  create module --fileName modules/hcvUncommonAaRenderer.xml --loadResources 
   create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources
 
   create module --fileName modules/hcvAlignmentRenderer.xml --loadResources hcvAlignmentRenderer
   create module --fileName modules/hcvSequenceRenderer.xml --loadResources hcvSequenceRenderer
 
-  create module --fileName modules/referenceAlignmentExporter.xml referenceAlignmentExporter
-
-  create module --fileName modules/hcvModelTester.xml
   create module --fileName modules/raxmlPhylogenyGenerator.xml
   create module --fileName modules/figTreeAnnotationExporter.xml
   create module --fileName modules/hcvPhyloUtility.xml
   create module --fileName modules/hcvPhyloImporter.xml
   create module --fileName modules/hcvPhyloExporter.xml
      
-  # module to import the Smith 2015 alignment 
-  create module --fileName modules/smith2015AlignmentImporter.xml smith2015AlignmentImporter
-  # modules to import the edited alignment
-  create module --fileName modules/editedAlignmentImporter.xml editedAlignmentImporter
-  create module --fileName modules/blastFastaAlignmentImporter.xml blastFastaAlignmentImporter
+  create module --fileName modules/blastFastaAlignmentImporter.xml
+  create module --fileName modules/hcvIctvFastaAlignmentImporter.xml
 
   create module --fileName modules/hcvMafftAligner.xml hcvMafftAligner
-  # as above but uses blastFastaImporter
-  create module --fileName modules/hcvMafftAlignerRelaxed.xml hcvMafftAlignerRelaxed
 
   # these modules download the refseqs from NCBI
-  create module --fileName modules/hcvNcbiRefSeqsImporter.xml ncbi-refseqs-importer
-  create module --fileName modules/hcvNcbiRefSeqsSubgenomicImporter.xml ncbi-refseqs-subgenomic-importer
-  # this module populates the reference genotypes from a file.
-  create module --fileName modules/referenceGenotypesPopulator.xml reference-genotypes-populator
+  create module --fileName modules/hcvNcbiRefSeqsImporter.xml
+  create module --fileName modules/hcvNcbiOutgroupImporter.xml
 
-  create module --fileName modules/equineHepacivirusAlignmentImporter.xml equineHepacivirusAlignmentImporter  
-  
   create module --moduleType fastaExporter 
   create module --moduleType fastaAlignmentExporter
   create module --moduleType fastaProteinAlignmentExporter
@@ -63,3 +48,6 @@
   create module -f modules/hcvSequenceRecogniser.xml  
 
   create module -f modules/hcvFastaUtility.xml
+  
+  create module --fileName modules/hcvCladeStructureProcessor.xml --loadResources
+  

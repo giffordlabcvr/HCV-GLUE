@@ -1,87 +1,9 @@
-  
-  
-  # however, we will import the reference sequences from files
-  import source sources/ncbi-refseqs 
-  import source sources/ncbi-refseqs-subgenomic 
+  multi-delete reference -w "sequence.source.name = 'ncbi-refseqs'"
+  delete alignment AL_UNCONSTRAINED
 
+  # create reference sequence objects
+  module hcvCladeStructureProcessor invoke-function createGlueReferenceSequences json/hcv_clade_structure_and_refs.json
 
-  # run the module update genotype / subtype for refseqs from file.
-  module reference-genotypes-populator populate -f tabular/hcvReferenceGenotypes.txt
- 
-  # The genotypes of these reference sequences were provided by D. Smith, in the alignment file.
-  multi-set field sequence -w "source.name = 'ncbi-refseqs'" genotyping_method "Provided with alignment"
-  
-  run file glue/concatenateProvisionalReferences.glue
-  
-  # module to import the edited alignment
-  # this alignment is the original 2015 one from ICTV, plus these changes:
-  # 1. the concatenated provisional refseqs have been added using MAFFT (see GLUE commands below)
-  # 2. some mis-aligned sections were deleted for 2 of these: 
-  #    provisional.concatenated-refseqs.REF_3c_D16612_D14198_D16613
-  #    provisional.concatenated-refseqs.REF_3f_D16614_D14203_D16615 
-  # 3. Certain sequences were renamed to their RefSeq equivalents:
-  #    AF009606 was renamed NC_004102
-  #    D17763 was renamed NC_009824
-  #    Y11604 was renamed NC_009825
-  #    Y13184 was renamed NC_009826
-  #    D84262 was renamed NC_009827
-  #    EF108306 was renamed NC_030791
-  #    Genotype 2 reference was not renamed as the RefSeq version is a molecular clone.
-  # 4. The 2l references were added using MAFFT (see GLUE commands below)  
-  
-  # outgroup is not added at present.
-  
-  # import the edited alignment
-  module blastFastaAlignmentImporter import AL_UNCONSTRAINED -f alignments/Smith_Extended.edited.fasta
+  # unconstrained alignment
+  module hcvIctvFastaAlignmentImporter import AL_UNCONSTRAINED -f alignments/ICTV_HCV_Alignment_8th_May_2019.fasta
 
-  alignment AL_UNCONSTRAINED 
-    # An N in this sequence at NT 3726 turned into a gap in the alignment.
-    member ncbi-refseqs NC_009825
-      remove segment 3070 3725 2722 3377
-	  remove segment 3727 7278 3379 6930
-      add segment 3070 7278 2722 6930
-	  exit
-
-    # An N in this sequence at NT 5377 turned into a gap in the alignment.
-    member ncbi-refseqs EU158186
-      remove segment 3070 5690 2756 5376
-	  remove segment 5692 7278 5378 6964
-      add segment 3070 7278 2756 6964
-	  exit
-
-    # 2 x Ns in this sequence at NT 1024 turned into a gap in the alignment.
-    member ncbi-refseqs JX227955
-      remove segment 1059 1113 968 1022
-	  remove segment 1116 1514 1025 1423
-      add segment 1059 1514 968 1423
-	  exit
-
-    # I think something went wrong for the blast import of the alignment here.
-    #member ncbi-refseqs KC197240
-    #  remove segment 216 1045 179 1008
-    #  add segment 216 1046 179 1009
-	#  exit
-
-
-	exit
-	
-	 
-	
-
-
-
-  ## GLUE commands to import the original alignment and to extend it to provisional / recombinant / outgroup references.
-
-  ## module to import the Smith 2015 alignment 
-  ## import the Smith 2015 alignment from Donald Smith's FASTA file.
-  # module smith2015AlignmentImporter import AL_UNCONSTRAINED -f alignments/All\ types\ selection\ and\ ref\ for\ web\ 26\ May\ 2015.FST
-    
-  ## add provisional subtype references to the unconstrained alignment.
-  # alignment AL_UNCONSTRAINED add member -w "reference_status in ('provisional', 'recombinant')"
-  ## extend the unconstrained alignment to the provisional subtype references
-  # extend alignment AL_UNCONSTRAINED hcvMafftAligner -w "sequence.reference_status in ('provisional', 'recombinant')" 
-
-  ## add the 2l subtype references to the unconstrained alignment
-  # alignment AL_UNCONSTRAINED add member ncbi-refseqs KC197235
-  # alignment AL_UNCONSTRAINED add member ncbi-refseqs KC197240
-  # extend alignment AL_UNCONSTRAINED hcvMafftAlignerRelaxed -w "sequence.sequenceID in ('KC197235', 'KC197240')"

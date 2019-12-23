@@ -1,0 +1,13 @@
+<ncbiImporter>
+  <sequenceFormat>GENBANK_XML</sequenceFormat>
+  <specificPrimaryAccessions>
+	<!-- Hepacivirus A -->
+    <primaryAccession>JQ434001</primaryAccession>
+    <primaryAccession>KJ472766</primaryAccession>
+	<!-- Hepacivirus B -->
+    <primaryAccession>DQ988073</primaryAccession>
+    <primaryAccession>EF108306</primaryAccession>
+  </specificPrimaryAccessions>
+  <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
+  <sourceName>ncbi-outgroups</sourceName>
+</ncbiImporter>

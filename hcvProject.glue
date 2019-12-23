@@ -1,6 +1,6 @@
 delete project hcv
 
-create project hcv "Hepatitis C variation analysis" --minVersion 1.1.50
+create project hcv "GLUE project for Hepacivirus C (hcv)" --minVersion 1.1.68
 
 run file glue/hcvSchemaExtensions.glue
  
@@ -11,26 +11,36 @@ project hcv
   # create modules from files
   run file glue/hcvModules.glue
 
+  # NCBI refseqs -- taxa in the reference phylogeny
+  import source sources/ncbi-refseqs
+
+  # NCBI outgroups -- closely related Hepacivirus A/B used to root the reference phylogeny
+  # Should get assigned species = null in genotyping
+  import source sources/ncbi-outgroups
+
   # WHO regions / countries etc (M49 standard)
-  run file glue/who_countries/populateWhoCountries.glue
+  # run file glue/who_countries/populateWhoCountries.glue
+
+  # genome features.
+  run file glue/hcvFeatures.glue
 
   # reference sequences and their unconstrained alignment
   run file glue/hcvReferenceSequences.glue
 
-  # build master reference, with features.
-  run file glue/hcvFeatures.glue
-
-  # outgroup alignment
-  run file glue/hcvOutgroupAlignment.glue
-  
-  # build tree of alignments, with relevant reference sequences.
-  run file glue/hcvAlignmentTree.glue
-
-  # add feature locations
+  # feature locations
   run file glue/hcvFeatureLocations.glue
 
+  # outgroup alignment
+  # run file glue/hcvOutgroupAlignment.glue
+  
+  # build tree of alignments, with relevant reference sequences.
+  # run file glue/hcvAlignmentTree.glue
+
+  # add feature locations
+  # run file glue/hcvFeatureLocations.glue
+
   # import phylogeny
-  run file glue/importPhylogeny.glue
+  # run file glue/importPhylogeny.glue
 
   # epitopes
   # run file glue/hcvEpitopes.glue

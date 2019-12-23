@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blastFastaAlignmentImporter>
+    <idClauseExtractorFormatter>
+        <matchPattern><![CDATA[^[0-9a-z\?]+_(?<seqID>[A-Za-z0-9]+)$]]></matchPattern>
+        <outputTemplate>source.name = 'ncbi-refseqs' and sequenceID = '${seqID?replace('AF009606', 'NC_004102')?replace('D17763', 'NC_009824')?replace('Y11604', 'NC_009825')?replace('Y13184', 'NC_009826')?replace('D84262', 'NC_009827')?replace('EF108306', 'NC_030791')}'</outputTemplate>
+    </idClauseExtractorFormatter>
+    <minRowCoveragePercent>90</minRowCoveragePercent>
+    <minRowCorrectPercent>90</minRowCorrectPercent>
+</blastFastaAlignmentImporter>

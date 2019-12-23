@@ -1,3 +1,5 @@
+multi-delete feature -a
+
 create feature whole_genome "Whole HCV genome"
 feature whole_genome set field displayName "Whole genome"
 feature whole_genome set metatag INCLUDE_IN_SUMMARY true
@@ -84,77 +86,3 @@ create feature 3UTR -p whole_genome "3' UTR"
 feature 3UTR set field displayName "3' UTR"
 
 
-  create reference REF_MASTER_NC_004102 ncbi-refseqs NC_004102
-  reference REF_MASTER_NC_004102
-    add feature-location whole_genome
-    feature-location whole_genome
-      add segment 1 9646
-      exit
-  
-    add feature-location 5UTR
-    feature-location 5UTR
-      add segment 1 341
-      exit
-
-    add feature-location precursor_polyprotein
-    feature-location precursor_polyprotein
-      add segment 342 9377
-      exit
-
-	    
-    add feature-location Core
-    feature-location Core
-      add segment 342 914
-      exit
-	    
-    add feature-location E1
-    feature-location E1
-      add segment 915 1490
-      exit
-      
-    add feature-location E2
-    feature-location E2
-      add segment 1491 2579
-      exit
-      
-    add feature-location p7
-    feature-location p7
-      add segment 2580 2768
-      exit
-      
-    add feature-location NS2
-    feature-location NS2
-      add segment 2769 3419
-      exit
-      
-    add feature-location NS3
-    feature-location NS3
-      add segment 3420 5312
-    exit
-
-    add feature-location NS4A
-    feature-location NS4A
-      add segment 5313 5474
-      exit
-
-    add feature-location NS4B
-    feature-location NS4B
-      add segment 5475 6257
-      exit
-
-    add feature-location NS5A
-    feature-location NS5A
-      add segment 6258 7601
-    exit
-
-    add feature-location NS5B
-    feature-location NS5B
-      add segment 7602 9377
-    exit
-
-    add feature-location 3UTR
-    feature-location 3UTR
-      add segment 9378 9620
-      exit
-
-    exit  
