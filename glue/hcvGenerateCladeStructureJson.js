@@ -74,9 +74,14 @@ var refObjs = _.map(ictvAlmtFastaIDs, function(ictvAlmtFastaID) {
 	}
 	refObj.sequenceID = refObj.sequenceID.replace("EF108306", "NC_030791");
 
-	// Genotype 8
-	if(refObj.sequenceID == "MH590698") {
+	// Genotype 8, avoid gappy MH590698
+	if(refObj.sequenceID == "MH590700") {
 		refObj.gtRef = true;
+	}
+	
+	// Subtype 2j, avoid truncated HM777358
+	if(refObj.sequenceID == "JF735113") {
+		refObj.stRef = true;
 	}
 	
 	var subtypeStartIdx = 0;
@@ -149,7 +154,9 @@ _.each(_.pairs(genotypeToRefObjs), function(pair) {
 			if(firstSequenceID == null) {
 				firstSequenceID = sequenceID;
 			}
-			if(stRefObj.gtRef) { // use gt ref as subtype constraining ref if possible
+			if(stRefObj.stRef) { // use specified subtype constraining ref if possible
+				stConstrainingRef = sequenceID;
+			} else if(stRefObj.gtRef) { // use gt ref as subtype constraining ref if possible
 				stConstrainingRef = sequenceID;
 			}
 		});

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blastProteinFastaAlignmentImporter>
+  <idClauseExtractorFormatter>
+    <matchPattern><![CDATA[(?<seqID>[A-Za-z0-9\-_]+)]]></matchPattern>
+    <outputTemplate>source.name in ('ncbi-refseqs', 'ncbi-outgroups') and sequenceID = '${seqID}'</outputTemplate>
+  </idClauseExtractorFormatter>
+</blastProteinFastaAlignmentImporter>

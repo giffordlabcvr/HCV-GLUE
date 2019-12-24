@@ -472,7 +472,7 @@
           "cladeCategory": "subtype",
           "status": "confirmed",
           "constrainingRef": {
-            "sequenceID": "HM777358"
+            "sequenceID": "JF735113"
           },
           "referenceSequences": [
             {
@@ -2229,7 +2229,7 @@
     },
     {
       "constrainingRef": {
-        "sequenceID": "MH590698"
+        "sequenceID": "MH590700"
       },
       "alignmentName": "AL_8",
       "almtDisplayName": "HCV Genotype 8",
@@ -2241,7 +2241,7 @@
           "cladeCategory": "subtype",
           "status": "confirmed",
           "constrainingRef": {
-            "sequenceID": "MH590698"
+            "sequenceID": "MH590700"
           },
           "referenceSequences": [
             {

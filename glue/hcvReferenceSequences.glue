@@ -1,9 +1,5 @@
   multi-delete reference -w "sequence.source.name = 'ncbi-refseqs'"
-  delete alignment AL_UNCONSTRAINED
-
-  # create reference sequence objects
+  # create HCV reference sequence objects
   module hcvCladeStructureProcessor invoke-function createGlueReferenceSequences json/hcv_clade_structure_and_refs.json
 
-  # unconstrained alignment
-  module hcvIctvFastaAlignmentImporter import AL_UNCONSTRAINED -f alignments/ICTV_HCV_Alignment_8th_May_2019.fasta
-
+  

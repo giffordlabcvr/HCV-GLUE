@@ -1,0 +1,23 @@
+  delete alignment AL_UNCONSTRAINED
+
+  # import unconstrained alignment from ICTV file
+  module hcvIctvFastaAlignmentImporter import AL_UNCONSTRAINED -f alignments/ICTV_HCV_Alignment_8th_May_2019.fasta
+
+  # gt refs + outgroups alignment
+  # This was made by:
+  # 1. Taking each major genotype reference polyprotein translation from the genbank record
+  # 2. Taking each outgroup sequence polyprotein translation from the genbank record
+  # 3. Aligning these protein sequences using MAFFT.
+  # 4. Importing protein alignment into GLUE as AL_GT_REFS_OUTGROUPS
+  # 5. Adding outroup sequences to AL_UNCONSTARINED and deriving segments from AL_GT_REFS_OUTGROUPS  
+  
+  module hcvGtRefsOutgroupsProteinAlmtImporter
+    import AL_GT_REFS_OUTGROUPS -f alignments/gtRefsPlusOutgroupsPolyprotein.faa
+    exit
+    
+
+  alignment AL_UNCONSTRAINED
+    add member -w "source.name = 'ncbi-outgroups'"
+    derive segments AL_GT_REFS_OUTGROUPS -l REF_MASTER_NC_004102 -w "sequence.source.name = 'ncbi-outgroups'"
+    exit
+    

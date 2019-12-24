@@ -50,4 +50,5 @@
   create module -f modules/hcvFastaUtility.xml
   
   create module --fileName modules/hcvCladeStructureProcessor.xml --loadResources
+  create module --fileName modules/hcvGtRefsOutgroupsProteinAlmtImporter.xml
   

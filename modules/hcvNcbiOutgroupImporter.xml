@@ -1,12 +1,13 @@
 <ncbiImporter>
   <sequenceFormat>GENBANK_XML</sequenceFormat>
   <specificPrimaryAccessions>
-	<!-- Hepacivirus A -->
+    <!-- https://doi.org/10.1093/gbe/evv202 -->
+  
+	<!-- Outgroup: Hepacivirus A: canine/equine -->
     <primaryAccession>JQ434001</primaryAccession>
-    <primaryAccession>KJ472766</primaryAccession>
-	<!-- Hepacivirus B -->
-    <primaryAccession>DQ988073</primaryAccession>
-    <primaryAccession>EF108306</primaryAccession>
+    <primaryAccession>AB863589</primaryAccession>
+    <primaryAccession>JF744991</primaryAccession>
+
   </specificPrimaryAccessions>
   <sequenceIdField>PRIMARY_ACCESSION</sequenceIdField>
   <sourceName>ncbi-outgroups</sourceName>

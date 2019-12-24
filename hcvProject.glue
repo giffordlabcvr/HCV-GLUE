@@ -14,7 +14,7 @@ project hcv
   # NCBI refseqs -- taxa in the reference phylogeny
   import source sources/ncbi-refseqs
 
-  # NCBI outgroups -- closely related Hepacivirus A/B used to root the reference phylogeny
+  # NCBI outgroups -- closely related Hepacivirus A used to root the reference phylogeny
   # Should get assigned species = null in genotyping
   import source sources/ncbi-outgroups
 
@@ -27,12 +27,12 @@ project hcv
   # reference sequences and their unconstrained alignment
   run file glue/hcvReferenceSequences.glue
 
+  # unconstrained alignment
+  run file glue/hcvUnconstrainedAlignment.glue
+
   # feature locations
   run file glue/hcvFeatureLocations.glue
 
-  # outgroup alignment
-  # run file glue/hcvOutgroupAlignment.glue
-  
   # build tree of alignments, with relevant reference sequences.
   # run file glue/hcvAlignmentTree.glue
 
