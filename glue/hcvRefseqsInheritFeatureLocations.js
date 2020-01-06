@@ -139,13 +139,31 @@ _.each(refSeqObjs, function(refSeqObj) {
 // This sequence has a single nucleotide insertion taking it out of frame then a matching deletion taking it back in
 // a few hundred bases downstream.
 // Not sure how realistic this is but need to do an explicit modification so that it validates.
+// First we check that the situation is as expceted, if not throw an error, needs investigation.
+
 
 glue.inMode("reference/REF_6_unassigned_MG878999/feature-location/E2", function() {
+	var currentSegs = glue.tableToObjects(glue.command(["list", "segment"]));
+	if(currentSegs.length != 1) {
+		throw new Error("Expected 1 segment for REF_6_unassigned_MG878999 / E2");
+	}
+	var seg = currentSegs[0];
+	if(seg.refStart != 1150 || seg.refEnd != 2251) {
+		throw new Error("Expected segment for REF_6_unassigned_MG878999 / E2 to be [1150,2251]");
+	}
 	glue.command(["remove", "segment", "1150", "2251"]);
 	glue.command(["add", "segment", "1150", "2250"]);
 });
 
 glue.inMode("reference/REF_6_unassigned_MG878999/feature-location/NS2", function() {
+	var currentSegs = glue.tableToObjects(glue.command(["list", "segment"]));
+	if(currentSegs.length != 1) {
+		throw new Error("Expected 1 segment for REF_6_unassigned_MG878999 / NS2");
+	}
+	var seg = currentSegs[0];
+	if(seg.refStart != 2441 || seg.refEnd != 3090) {
+		throw new Error("Expected segment for REF_6_unassigned_MG878999 / NS2 to be [2441,3090]");
+	}
 	glue.command(["remove", "segment", "2441", "3090"]);
 	glue.command(["add", "segment", "2441", "3088"]);
 });
