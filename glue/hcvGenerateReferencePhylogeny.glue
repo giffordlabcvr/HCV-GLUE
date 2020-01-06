@@ -1,0 +1,20 @@
+project hcv
+
+  # generate tree from unconstrained alignment, including refseqs and outgroups.
+  module hcvRaxmlPhylogenyGenerator
+    # with outgroup
+    generate nucleotide phylogeny AL_UNCONSTRAINED -r REF_MASTER_NC_004102 -f precursor_polyprotein -w "sequence.source.name in ('ncbi-refseqs', 'ncbi-outgroups')" -o trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS -d referencePhylogenyData
+    exit
+  
+  # import generated tree so that we can reroot it.
+  module hcvPhyloImporter
+    import phylogeny AL_UNCONSTRAINED -w "sequence.source.name in ('ncbi-refseqs', 'ncbi-outgroups')" -i trees/referencePhylogeny.tree NEWICK_BOOTSTRAPS
+    exit
+  
+  # reroot the alignment phylogeny using the outgroups to specify the root, and save to file.
+  module hcvPhyloUtility 
+    # outgroup rooting
+    reroot-alignment-phylogeny AL_UNCONSTRAINED phylogeny -w "sequence.source.name = 'ncbi-outgroups'" --removeOutgroup --outputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS
+    exit
+     
+  exit
