@@ -1,6 +1,6 @@
 delete project hcv
 
-create project hcv "GLUE project for Hepacivirus C (hcv)" --minVersion 1.1.68
+create project hcv "GLUE project for Hepacivirus C (hcv)" --minVersion 1.1.69
 
 run file glue/hcvSchemaExtensions.glue
  
@@ -24,7 +24,7 @@ project hcv
   # genome features.
   run file glue/hcvFeatures.glue
 
-  # reference sequences and their unconstrained alignment
+  # reference sequences 
   run file glue/hcvReferenceSequences.glue
 
   # unconstrained alignment
@@ -41,9 +41,6 @@ project hcv
 
   # import phylogeny
   # run file glue/importPhylogeny.glue
-
-  # epitopes
-  # run file glue/hcvEpitopes.glue
 
   validate
 
