@@ -7,8 +7,8 @@
   create module --fileName modules/fastaCodingOnlySequenceReporter.xml fastaCodingOnlySequenceReporter
   create module --fileName modules/kuiken2006CodonLabeler.xml kuiken2006CodonLabeler
 
-  create module --fileName modules/hcvMaxLikelihoodPlacer.xml maxLikelihoodPlacer
-  create module --fileName modules/hcvMaxLikelihoodGenotyper.xml maxLikelihoodGenotyper
+  create module --fileName modules/hcvMaxLikelihoodPlacer.xml 
+  create module --fileName modules/hcvMaxLikelihoodGenotyper.xml
 
   create module --fileName modules/hcvResistanceAssociatedVariantRenderer.xml --loadResources
 
