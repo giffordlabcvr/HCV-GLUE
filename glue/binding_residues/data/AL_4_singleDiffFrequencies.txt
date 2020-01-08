@@ -1,7 +1,0 @@
-referenceName	featureName	variationName	membersPresent	pctPresent	membersAbsent	pctAbsent
-REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt4_A.LFR	1	0.13	763	99.87
-REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt4_A.LIY	4	0.52	760	99.48
-REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt4_A.LLY	25	3.27	739	96.73
-REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt4_A.LMY	1	0.13	763	99.87
-REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt4_T.LFY	2	0.26	762	99.74
-REF_MASTER_NC_004102	precursor_polyprotein	singleBrDiff_Gt4_V.LFY	3	0.39	761	99.61

@@ -16,7 +16,6 @@
   create module --fileName modules/hcvSequenceRenderer.xml --loadResources hcvSequenceRenderer
 
   create module --fileName modules/hcvRaxmlPhylogenyGenerator.xml
-  create module --fileName modules/hcvFigTreeAnnotationExporter.xml
   create module --fileName modules/hcvPhyloUtility.xml
   create module --fileName modules/hcvPhyloImporter.xml
   create module --fileName modules/hcvPhyloExporter.xml

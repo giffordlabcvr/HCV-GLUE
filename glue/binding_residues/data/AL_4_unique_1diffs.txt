@@ -1,6 +1,0 @@
-A.LFR
-A.LIY
-A.LLY
-A.LMY
-T.LFY
-V.LFY
