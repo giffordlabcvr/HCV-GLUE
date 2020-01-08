@@ -23,6 +23,8 @@ schema-project hcv
     create field gb_update_date DATE
     create field genotype VARCHAR
     create field subtype VARCHAR
+    create field gb_genotype VARCHAR
+    create field gb_subtype VARCHAR
     create field lanl_problematic_sequence VARCHAR 50
     create field lanl_sampling_year INTEGER
     create field earliest_collection_year INTEGER
