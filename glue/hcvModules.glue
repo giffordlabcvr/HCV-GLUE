@@ -51,4 +51,7 @@
   
   create module --fileName modules/hcvCladeStructureProcessor.xml --loadResources
   create module --fileName modules/hcvGtRefsOutgroupsProteinAlmtImporter.xml
+
+  create module --fileName modules/hcvReferenceTreeNexusExporter.xml
+
   

@@ -128,6 +128,7 @@ _.each(_.pairs(genotypeToRefObjs), function(pair) {
 	}
 	gtObj.constrainingRef = {sequenceID: gtConstrainingRef};
 	gtObj.alignmentName = "AL_"+gtName;
+	gtObj.genotype = gtName;
 	gtObj.almtDisplayName = "HCV Genotype "+gtName;
 	gtObj.cladeCategory = "genotype"; 
 
@@ -143,6 +144,8 @@ _.each(_.pairs(genotypeToRefObjs), function(pair) {
 
 		var stObj = {};
 		stObj.alignmentName = "AL_"+stFullName;
+		stObj.genotype = gtName;
+		stObj.subtype = stFullName;
 		stObj.almtDisplayName = "HCV Subtype "+stFullName;
 		stObj.cladeCategory = "subtype";
 		stObj.status = "confirmed";
@@ -167,7 +170,12 @@ _.each(_.pairs(genotypeToRefObjs), function(pair) {
 
 		
 		stObj.referenceSequences = _.map(stRefObjs, function(stro) {
-			return { "sequenceID": stro.sequenceID };
+			return { 
+				"sequenceID": stro.sequenceID, 
+				"genotype": gtName,
+				"subtype": stFullName,
+				"status": "confirmed"
+			};
 		});
 		
 		gtObj.childAlignments.push(stObj);
@@ -176,12 +184,20 @@ _.each(_.pairs(genotypeToRefObjs), function(pair) {
 	var gtRefObjsUnassigned = _.filter(gtRefObjs, function(gtro) { return gtro.status == 'unassigned'; });
 	_.each(gtRefObjsUnassigned, function(gtUnassignedRefObj) {
 		var stObj = {};
-		stObj.alignmentName = "AL_"+gtUnassignedRefObj.genotype+"_unassigned_"+gtUnassignedRefObj.sequenceID;
+		var stFullName = gtUnassignedRefObj.genotype+"_unassigned_"+gtUnassignedRefObj.sequenceID;
+		stObj.alignmentName = "AL_"+stFullName;
+		stObj.genotype = gtName;
+		stObj.subtype = stFullName;
 		stObj.almtDisplayName = "HCV Subtype "+gtUnassignedRefObj.genotype+"_"+gtUnassignedRefObj.sequenceID+" (unassigned)";
 		stObj.cladeCategory = "subtype"
 		stObj.status = "unassigned";
 		stObj.constrainingRef = {sequenceID: gtUnassignedRefObj.sequenceID};
-		stObj.referenceSequences = [ { "sequenceID": gtUnassignedRefObj.sequenceID } ];
+		stObj.referenceSequences = [ { 
+			"sequenceID": gtUnassignedRefObj.sequenceID, 
+			"genotype": gtName,
+			"subtype": stFullName,
+			"status": "unassigned"
+		} ];
 
 		gtObj.childAlignments.push(stObj);
 });

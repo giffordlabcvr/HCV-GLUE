@@ -1,0 +1,5 @@
+module hcvPhyloImporter
+
+  import phylogeny AL_MASTER --recursive --anyAlignment --whereClause "sequence.source.name in ('ncbi-refseqs') and referenceMember = false" --inputFile trees/referencePhylogenyRerooted.tree NEWICK_BOOTSTRAPS --fieldName phylogeny
+
+  exit

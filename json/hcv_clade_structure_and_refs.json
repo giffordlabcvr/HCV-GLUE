@@ -9,11 +9,14 @@
         "sequenceID": "NC_004102"
       },
       "alignmentName": "AL_1",
+      "genotype": "1",
       "almtDisplayName": "HCV Genotype 1",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_1a",
+          "genotype": "1",
+          "subtype": "1a",
           "almtDisplayName": "HCV Subtype 1a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -22,24 +25,41 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "NC_004102"
+              "sequenceID": "NC_004102",
+              "genotype": "1",
+              "subtype": "1a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "M62321"
+              "sequenceID": "M62321",
+              "genotype": "1",
+              "subtype": "1a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "M67463"
+              "sequenceID": "M67463",
+              "genotype": "1",
+              "subtype": "1a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "HQ850279"
+              "sequenceID": "HQ850279",
+              "genotype": "1",
+              "subtype": "1a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EF407457"
+              "sequenceID": "EF407457",
+              "genotype": "1",
+              "subtype": "1a",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1b",
+          "genotype": "1",
+          "subtype": "1b",
           "almtDisplayName": "HCV Subtype 1b",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -48,21 +68,35 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D90208"
+              "sequenceID": "D90208",
+              "genotype": "1",
+              "subtype": "1b",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "M58335"
+              "sequenceID": "M58335",
+              "genotype": "1",
+              "subtype": "1b",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU781827"
+              "sequenceID": "EU781827",
+              "genotype": "1",
+              "subtype": "1b",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU781828"
+              "sequenceID": "EU781828",
+              "genotype": "1",
+              "subtype": "1b",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1c",
+          "genotype": "1",
+          "subtype": "1c",
           "almtDisplayName": "HCV Subtype 1c",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -71,18 +105,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D14853"
+              "sequenceID": "D14853",
+              "genotype": "1",
+              "subtype": "1c",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "AY051292"
+              "sequenceID": "AY051292",
+              "genotype": "1",
+              "subtype": "1c",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "AY651061"
+              "sequenceID": "AY651061",
+              "genotype": "1",
+              "subtype": "1c",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1d",
+          "genotype": "1",
+          "subtype": "1d",
           "almtDisplayName": "HCV Subtype 1d",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -91,12 +136,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439768"
+              "sequenceID": "KJ439768",
+              "genotype": "1",
+              "subtype": "1d",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1e",
+          "genotype": "1",
+          "subtype": "1e",
           "almtDisplayName": "HCV Subtype 1e",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -105,12 +155,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC248194"
+              "sequenceID": "KC248194",
+              "genotype": "1",
+              "subtype": "1e",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1g",
+          "genotype": "1",
+          "subtype": "1g",
           "almtDisplayName": "HCV Subtype 1g",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -119,12 +174,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "AM910652"
+              "sequenceID": "AM910652",
+              "genotype": "1",
+              "subtype": "1g",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1h",
+          "genotype": "1",
+          "subtype": "1h",
           "almtDisplayName": "HCV Subtype 1h",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -133,15 +193,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC248198"
+              "sequenceID": "KC248198",
+              "genotype": "1",
+              "subtype": "1h",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KC248199"
+              "sequenceID": "KC248199",
+              "genotype": "1",
+              "subtype": "1h",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1i",
+          "genotype": "1",
+          "subtype": "1i",
           "almtDisplayName": "HCV Subtype 1i",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -150,12 +218,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439772"
+              "sequenceID": "KJ439772",
+              "genotype": "1",
+              "subtype": "1i",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1j",
+          "genotype": "1",
+          "subtype": "1j",
           "almtDisplayName": "HCV Subtype 1j",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -164,12 +237,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439773"
+              "sequenceID": "KJ439773",
+              "genotype": "1",
+              "subtype": "1j",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1k",
+          "genotype": "1",
+          "subtype": "1k",
           "almtDisplayName": "HCV Subtype 1k",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -178,12 +256,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439774"
+              "sequenceID": "KJ439774",
+              "genotype": "1",
+              "subtype": "1k",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1l",
+          "genotype": "1",
+          "subtype": "1l",
           "almtDisplayName": "HCV Subtype 1l",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -192,18 +275,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC248193"
+              "sequenceID": "KC248193",
+              "genotype": "1",
+              "subtype": "1l",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KC248197"
+              "sequenceID": "KC248197",
+              "genotype": "1",
+              "subtype": "1l",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KC248196"
+              "sequenceID": "KC248196",
+              "genotype": "1",
+              "subtype": "1l",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1m",
+          "genotype": "1",
+          "subtype": "1m",
           "almtDisplayName": "HCV Subtype 1m",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -212,15 +306,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439778"
+              "sequenceID": "KJ439778",
+              "genotype": "1",
+              "subtype": "1m",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KJ439782"
+              "sequenceID": "KJ439782",
+              "genotype": "1",
+              "subtype": "1m",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1n",
+          "genotype": "1",
+          "subtype": "1n",
           "almtDisplayName": "HCV Subtype 1n",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -229,15 +331,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439781"
+              "sequenceID": "KJ439781",
+              "genotype": "1",
+              "subtype": "1n",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KJ439775"
+              "sequenceID": "KJ439775",
+              "genotype": "1",
+              "subtype": "1n",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1o",
+          "genotype": "1",
+          "subtype": "1o",
           "almtDisplayName": "HCV Subtype 1o",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -246,15 +356,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439779"
+              "sequenceID": "KJ439779",
+              "genotype": "1",
+              "subtype": "1o",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "MH885469"
+              "sequenceID": "MH885469",
+              "genotype": "1",
+              "subtype": "1o",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_1_unassigned_HQ537007",
+          "genotype": "1",
+          "subtype": "1_unassigned_HQ537007",
           "almtDisplayName": "HCV Subtype 1_HQ537007 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -263,12 +381,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "HQ537007"
+              "sequenceID": "HQ537007",
+              "genotype": "1",
+              "subtype": "1_unassigned_HQ537007",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_1_unassigned_AJ851228",
+          "genotype": "1",
+          "subtype": "1_unassigned_AJ851228",
           "almtDisplayName": "HCV Subtype 1_AJ851228 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -277,12 +400,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "AJ851228"
+              "sequenceID": "AJ851228",
+              "genotype": "1",
+              "subtype": "1_unassigned_AJ851228",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_1_unassigned_KC248195",
+          "genotype": "1",
+          "subtype": "1_unassigned_KC248195",
           "almtDisplayName": "HCV Subtype 1_KC248195 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -291,12 +419,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC248195"
+              "sequenceID": "KC248195",
+              "genotype": "1",
+              "subtype": "1_unassigned_KC248195",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_1_unassigned_KJ439780",
+          "genotype": "1",
+          "subtype": "1_unassigned_KJ439780",
           "almtDisplayName": "HCV Subtype 1_KJ439780 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -305,12 +438,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439780"
+              "sequenceID": "KJ439780",
+              "genotype": "1",
+              "subtype": "1_unassigned_KJ439780",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_1_unassigned_KJ439776",
+          "genotype": "1",
+          "subtype": "1_unassigned_KJ439776",
           "almtDisplayName": "HCV Subtype 1_KJ439776 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -319,12 +457,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439776"
+              "sequenceID": "KJ439776",
+              "genotype": "1",
+              "subtype": "1_unassigned_KJ439776",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_1_unassigned_KJ439777",
+          "genotype": "1",
+          "subtype": "1_unassigned_KJ439777",
           "almtDisplayName": "HCV Subtype 1_KJ439777 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -333,7 +476,10 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ439777"
+              "sequenceID": "KJ439777",
+              "genotype": "1",
+              "subtype": "1_unassigned_KJ439777",
+              "status": "unassigned"
             }
           ]
         }
@@ -344,11 +490,14 @@
         "sequenceID": "D00944"
       },
       "alignmentName": "AL_2",
+      "genotype": "2",
       "almtDisplayName": "HCV Genotype 2",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_2a",
+          "genotype": "2",
+          "subtype": "2a",
           "almtDisplayName": "HCV Subtype 2a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -357,18 +506,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D00944"
+              "sequenceID": "D00944",
+              "genotype": "2",
+              "subtype": "2a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "AB047639"
+              "sequenceID": "AB047639",
+              "genotype": "2",
+              "subtype": "2a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "HQ639944"
+              "sequenceID": "HQ639944",
+              "genotype": "2",
+              "subtype": "2a",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2b",
+          "genotype": "2",
+          "subtype": "2b",
           "almtDisplayName": "HCV Subtype 2b",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -377,21 +537,35 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D10988"
+              "sequenceID": "D10988",
+              "genotype": "2",
+              "subtype": "2b",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "AB030907"
+              "sequenceID": "AB030907",
+              "genotype": "2",
+              "subtype": "2b",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "AB661388"
+              "sequenceID": "AB661388",
+              "genotype": "2",
+              "subtype": "2b",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "AB661382"
+              "sequenceID": "AB661382",
+              "genotype": "2",
+              "subtype": "2b",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2c",
+          "genotype": "2",
+          "subtype": "2c",
           "almtDisplayName": "HCV Subtype 2c",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -400,15 +574,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D50409"
+              "sequenceID": "D50409",
+              "genotype": "2",
+              "subtype": "2c",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227949"
+              "sequenceID": "JX227949",
+              "genotype": "2",
+              "subtype": "2c",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2d",
+          "genotype": "2",
+          "subtype": "2d",
           "almtDisplayName": "HCV Subtype 2d",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -417,12 +599,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735114"
+              "sequenceID": "JF735114",
+              "genotype": "2",
+              "subtype": "2d",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2e",
+          "genotype": "2",
+          "subtype": "2e",
           "almtDisplayName": "HCV Subtype 2e",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -431,12 +618,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735120"
+              "sequenceID": "JF735120",
+              "genotype": "2",
+              "subtype": "2e",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2f",
+          "genotype": "2",
+          "subtype": "2f",
           "almtDisplayName": "HCV Subtype 2f",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -445,15 +637,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC844042"
+              "sequenceID": "KC844042",
+              "genotype": "2",
+              "subtype": "2f",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KC844050"
+              "sequenceID": "KC844050",
+              "genotype": "2",
+              "subtype": "2f",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2i",
+          "genotype": "2",
+          "subtype": "2i",
           "almtDisplayName": "HCV Subtype 2i",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -462,12 +662,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ155561"
+              "sequenceID": "DQ155561",
+              "genotype": "2",
+              "subtype": "2i",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2j",
+          "genotype": "2",
+          "subtype": "2j",
           "almtDisplayName": "HCV Subtype 2j",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -476,18 +681,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "HM777358"
+              "sequenceID": "HM777358",
+              "genotype": "2",
+              "subtype": "2j",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JF735113"
+              "sequenceID": "JF735113",
+              "genotype": "2",
+              "subtype": "2j",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "HM777359"
+              "sequenceID": "HM777359",
+              "genotype": "2",
+              "subtype": "2j",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2k",
+          "genotype": "2",
+          "subtype": "2k",
           "almtDisplayName": "HCV Subtype 2k",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -496,15 +712,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "AB031663"
+              "sequenceID": "AB031663",
+              "genotype": "2",
+              "subtype": "2k",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227953"
+              "sequenceID": "JX227953",
+              "genotype": "2",
+              "subtype": "2k",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2m",
+          "genotype": "2",
+          "subtype": "2m",
           "almtDisplayName": "HCV Subtype 2m",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -513,15 +737,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735111"
+              "sequenceID": "JF735111",
+              "genotype": "2",
+              "subtype": "2m",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227967"
+              "sequenceID": "JX227967",
+              "genotype": "2",
+              "subtype": "2m",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2q",
+          "genotype": "2",
+          "subtype": "2q",
           "almtDisplayName": "HCV Subtype 2q",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -530,15 +762,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FN666428"
+              "sequenceID": "FN666428",
+              "genotype": "2",
+              "subtype": "2q",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "FN666429"
+              "sequenceID": "FN666429",
+              "genotype": "2",
+              "subtype": "2q",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2r",
+          "genotype": "2",
+          "subtype": "2r",
           "almtDisplayName": "HCV Subtype 2r",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -547,12 +787,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735115"
+              "sequenceID": "JF735115",
+              "genotype": "2",
+              "subtype": "2r",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2t",
+          "genotype": "2",
+          "subtype": "2t",
           "almtDisplayName": "HCV Subtype 2t",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -561,12 +806,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC197238"
+              "sequenceID": "KC197238",
+              "genotype": "2",
+              "subtype": "2t",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2u",
+          "genotype": "2",
+          "subtype": "2u",
           "almtDisplayName": "HCV Subtype 2u",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -575,12 +825,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735112"
+              "sequenceID": "JF735112",
+              "genotype": "2",
+              "subtype": "2u",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_JF735116",
+          "genotype": "2",
+          "subtype": "2_unassigned_JF735116",
           "almtDisplayName": "HCV Subtype 2_JF735116 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -589,12 +844,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735116"
+              "sequenceID": "JF735116",
+              "genotype": "2",
+              "subtype": "2_unassigned_JF735116",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_JF735118",
+          "genotype": "2",
+          "subtype": "2_unassigned_JF735118",
           "almtDisplayName": "HCV Subtype 2_JF735118 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -603,12 +863,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735118"
+              "sequenceID": "JF735118",
+              "genotype": "2",
+              "subtype": "2_unassigned_JF735118",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_JF735117",
+          "genotype": "2",
+          "subtype": "2_unassigned_JF735117",
           "almtDisplayName": "HCV Subtype 2_JF735117 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -617,12 +882,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735117"
+              "sequenceID": "JF735117",
+              "genotype": "2",
+              "subtype": "2_unassigned_JF735117",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_JF735119",
+          "genotype": "2",
+          "subtype": "2_unassigned_JF735119",
           "almtDisplayName": "HCV Subtype 2_JF735119 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -631,12 +901,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735119"
+              "sequenceID": "JF735119",
+              "genotype": "2",
+              "subtype": "2_unassigned_JF735119",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_JF735110",
+          "genotype": "2",
+          "subtype": "2_unassigned_JF735110",
           "almtDisplayName": "HCV Subtype 2_JF735110 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -645,12 +920,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735110"
+              "sequenceID": "JF735110",
+              "genotype": "2",
+              "subtype": "2_unassigned_JF735110",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_KC197236",
+          "genotype": "2",
+          "subtype": "2_unassigned_KC197236",
           "almtDisplayName": "HCV Subtype 2_KC197236 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -659,12 +939,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC197236"
+              "sequenceID": "KC197236",
+              "genotype": "2",
+              "subtype": "2_unassigned_KC197236",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_KC197237",
+          "genotype": "2",
+          "subtype": "2_unassigned_KC197237",
           "almtDisplayName": "HCV Subtype 2_KC197237 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -673,12 +958,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC197237"
+              "sequenceID": "KC197237",
+              "genotype": "2",
+              "subtype": "2_unassigned_KC197237",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_2_unassigned_KC197239",
+          "genotype": "2",
+          "subtype": "2_unassigned_KC197239",
           "almtDisplayName": "HCV Subtype 2_KC197239 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -687,7 +977,10 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC197239"
+              "sequenceID": "KC197239",
+              "genotype": "2",
+              "subtype": "2_unassigned_KC197239",
+              "status": "unassigned"
             }
           ]
         }
@@ -698,11 +991,14 @@
         "sequenceID": "NC_009824"
       },
       "alignmentName": "AL_3",
+      "genotype": "3",
       "almtDisplayName": "HCV Genotype 3",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_3a",
+          "genotype": "3",
+          "subtype": "3a",
           "almtDisplayName": "HCV Subtype 3a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -711,21 +1007,35 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "NC_009824"
+              "sequenceID": "NC_009824",
+              "genotype": "3",
+              "subtype": "3a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "D28917"
+              "sequenceID": "D28917",
+              "genotype": "3",
+              "subtype": "3a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "X76918"
+              "sequenceID": "X76918",
+              "genotype": "3",
+              "subtype": "3a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JN714194"
+              "sequenceID": "JN714194",
+              "genotype": "3",
+              "subtype": "3a",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3b",
+          "genotype": "3",
+          "subtype": "3b",
           "almtDisplayName": "HCV Subtype 3b",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -734,15 +1044,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D49374"
+              "sequenceID": "D49374",
+              "genotype": "3",
+              "subtype": "3b",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JQ065709"
+              "sequenceID": "JQ065709",
+              "genotype": "3",
+              "subtype": "3b",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3d",
+          "genotype": "3",
+          "subtype": "3d",
           "almtDisplayName": "HCV Subtype 3d",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -751,12 +1069,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470619"
+              "sequenceID": "KJ470619",
+              "genotype": "3",
+              "subtype": "3d",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3e",
+          "genotype": "3",
+          "subtype": "3e",
           "almtDisplayName": "HCV Subtype 3e",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -765,12 +1088,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470618"
+              "sequenceID": "KJ470618",
+              "genotype": "3",
+              "subtype": "3e",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3g",
+          "genotype": "3",
+          "subtype": "3g",
           "almtDisplayName": "HCV Subtype 3g",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -779,15 +1107,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX227954"
+              "sequenceID": "JX227954",
+              "genotype": "3",
+              "subtype": "3g",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JF735123"
+              "sequenceID": "JF735123",
+              "genotype": "3",
+              "subtype": "3g",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3h",
+          "genotype": "3",
+          "subtype": "3h",
           "almtDisplayName": "HCV Subtype 3h",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -796,15 +1132,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735126"
+              "sequenceID": "JF735126",
+              "genotype": "3",
+              "subtype": "3h",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JF735121"
+              "sequenceID": "JF735121",
+              "genotype": "3",
+              "subtype": "3h",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3i",
+          "genotype": "3",
+          "subtype": "3i",
           "almtDisplayName": "HCV Subtype 3i",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -813,15 +1157,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ407092"
+              "sequenceID": "FJ407092",
+              "genotype": "3",
+              "subtype": "3i",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227955"
+              "sequenceID": "JX227955",
+              "genotype": "3",
+              "subtype": "3i",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3k",
+          "genotype": "3",
+          "subtype": "3k",
           "almtDisplayName": "HCV Subtype 3k",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -830,15 +1182,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D63821"
+              "sequenceID": "D63821",
+              "genotype": "3",
+              "subtype": "3k",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JF735122"
+              "sequenceID": "JF735122",
+              "genotype": "3",
+              "subtype": "3k",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_3_unassigned_JF735124",
+          "genotype": "3",
+          "subtype": "3_unassigned_JF735124",
           "almtDisplayName": "HCV Subtype 3_JF735124 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -847,7 +1207,10 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735124"
+              "sequenceID": "JF735124",
+              "genotype": "3",
+              "subtype": "3_unassigned_JF735124",
+              "status": "unassigned"
             }
           ]
         }
@@ -858,11 +1221,14 @@
         "sequenceID": "NC_009825"
       },
       "alignmentName": "AL_4",
+      "genotype": "4",
       "almtDisplayName": "HCV Genotype 4",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_4a",
+          "genotype": "4",
+          "subtype": "4a",
           "almtDisplayName": "HCV Subtype 4a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -871,18 +1237,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "NC_009825"
+              "sequenceID": "NC_009825",
+              "genotype": "4",
+              "subtype": "4a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "DQ988074"
+              "sequenceID": "DQ988074",
+              "genotype": "4",
+              "subtype": "4a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "DQ418789"
+              "sequenceID": "DQ418789",
+              "genotype": "4",
+              "subtype": "4a",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4b",
+          "genotype": "4",
+          "subtype": "4b",
           "almtDisplayName": "HCV Subtype 4b",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -891,12 +1268,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462435"
+              "sequenceID": "FJ462435",
+              "genotype": "4",
+              "subtype": "4b",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4c",
+          "genotype": "4",
+          "subtype": "4c",
           "almtDisplayName": "HCV Subtype 4c",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -905,12 +1287,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462436"
+              "sequenceID": "FJ462436",
+              "genotype": "4",
+              "subtype": "4c",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4d",
+          "genotype": "4",
+          "subtype": "4d",
           "almtDisplayName": "HCV Subtype 4d",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -919,18 +1306,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ418786"
+              "sequenceID": "DQ418786",
+              "genotype": "4",
+              "subtype": "4d",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "FJ462437"
+              "sequenceID": "FJ462437",
+              "genotype": "4",
+              "subtype": "4d",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU392172"
+              "sequenceID": "EU392172",
+              "genotype": "4",
+              "subtype": "4d",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4f",
+          "genotype": "4",
+          "subtype": "4f",
           "almtDisplayName": "HCV Subtype 4f",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -939,18 +1337,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EF589161"
+              "sequenceID": "EF589161",
+              "genotype": "4",
+              "subtype": "4f",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU392175"
+              "sequenceID": "EU392175",
+              "genotype": "4",
+              "subtype": "4f",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU392174"
+              "sequenceID": "EU392174",
+              "genotype": "4",
+              "subtype": "4f",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4g",
+          "genotype": "4",
+          "subtype": "4g",
           "almtDisplayName": "HCV Subtype 4g",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -959,18 +1368,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462432"
+              "sequenceID": "FJ462432",
+              "genotype": "4",
+              "subtype": "4g",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227971"
+              "sequenceID": "JX227971",
+              "genotype": "4",
+              "subtype": "4g",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227963"
+              "sequenceID": "JX227963",
+              "genotype": "4",
+              "subtype": "4g",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4k",
+          "genotype": "4",
+          "subtype": "4k",
           "almtDisplayName": "HCV Subtype 4k",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -979,18 +1399,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EU392173"
+              "sequenceID": "EU392173",
+              "genotype": "4",
+              "subtype": "4k",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "FJ462438"
+              "sequenceID": "FJ462438",
+              "genotype": "4",
+              "subtype": "4k",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU392171"
+              "sequenceID": "EU392171",
+              "genotype": "4",
+              "subtype": "4k",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4l",
+          "genotype": "4",
+          "subtype": "4l",
           "almtDisplayName": "HCV Subtype 4l",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -999,15 +1430,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ839870"
+              "sequenceID": "FJ839870",
+              "genotype": "4",
+              "subtype": "4l",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227957"
+              "sequenceID": "JX227957",
+              "genotype": "4",
+              "subtype": "4l",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4m",
+          "genotype": "4",
+          "subtype": "4m",
           "almtDisplayName": "HCV Subtype 4m",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1016,15 +1455,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462433"
+              "sequenceID": "FJ462433",
+              "genotype": "4",
+              "subtype": "4m",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227972"
+              "sequenceID": "JX227972",
+              "genotype": "4",
+              "subtype": "4m",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4n",
+          "genotype": "4",
+          "subtype": "4n",
           "almtDisplayName": "HCV Subtype 4n",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1033,15 +1480,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462441"
+              "sequenceID": "FJ462441",
+              "genotype": "4",
+              "subtype": "4n",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227970"
+              "sequenceID": "JX227970",
+              "genotype": "4",
+              "subtype": "4n",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4o",
+          "genotype": "4",
+          "subtype": "4o",
           "almtDisplayName": "HCV Subtype 4o",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1050,15 +1505,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462440"
+              "sequenceID": "FJ462440",
+              "genotype": "4",
+              "subtype": "4o",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227977"
+              "sequenceID": "JX227977",
+              "genotype": "4",
+              "subtype": "4o",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4p",
+          "genotype": "4",
+          "subtype": "4p",
           "almtDisplayName": "HCV Subtype 4p",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1067,12 +1530,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462431"
+              "sequenceID": "FJ462431",
+              "genotype": "4",
+              "subtype": "4p",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4q",
+          "genotype": "4",
+          "subtype": "4q",
           "almtDisplayName": "HCV Subtype 4q",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1081,12 +1549,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462434"
+              "sequenceID": "FJ462434",
+              "genotype": "4",
+              "subtype": "4q",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4r",
+          "genotype": "4",
+          "subtype": "4r",
           "almtDisplayName": "HCV Subtype 4r",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1095,15 +1568,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ462439"
+              "sequenceID": "FJ462439",
+              "genotype": "4",
+              "subtype": "4r",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227976"
+              "sequenceID": "JX227976",
+              "genotype": "4",
+              "subtype": "4r",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4s",
+          "genotype": "4",
+          "subtype": "4s",
           "almtDisplayName": "HCV Subtype 4s",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1112,12 +1593,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735136"
+              "sequenceID": "JF735136",
+              "genotype": "4",
+              "subtype": "4s",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4t",
+          "genotype": "4",
+          "subtype": "4t",
           "almtDisplayName": "HCV Subtype 4t",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1126,12 +1612,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ839869"
+              "sequenceID": "FJ839869",
+              "genotype": "4",
+              "subtype": "4t",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4v",
+          "genotype": "4",
+          "subtype": "4v",
           "almtDisplayName": "HCV Subtype 4v",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1140,21 +1631,35 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "HQ537009"
+              "sequenceID": "HQ537009",
+              "genotype": "4",
+              "subtype": "4v",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227959"
+              "sequenceID": "JX227959",
+              "genotype": "4",
+              "subtype": "4v",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "HQ537008"
+              "sequenceID": "HQ537008",
+              "genotype": "4",
+              "subtype": "4v",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX227960"
+              "sequenceID": "JX227960",
+              "genotype": "4",
+              "subtype": "4v",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4w",
+          "genotype": "4",
+          "subtype": "4w",
           "almtDisplayName": "HCV Subtype 4w",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1163,15 +1668,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ025855"
+              "sequenceID": "FJ025855",
+              "genotype": "4",
+              "subtype": "4w",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "FJ025856"
+              "sequenceID": "FJ025856",
+              "genotype": "4",
+              "subtype": "4w",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_FJ025854",
+          "genotype": "4",
+          "subtype": "4_unassigned_FJ025854",
           "almtDisplayName": "HCV Subtype 4_FJ025854 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1180,12 +1693,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "FJ025854"
+              "sequenceID": "FJ025854",
+              "genotype": "4",
+              "subtype": "4_unassigned_FJ025854",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JX227964",
+          "genotype": "4",
+          "subtype": "4_unassigned_JX227964",
           "almtDisplayName": "HCV Subtype 4_JX227964 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1194,12 +1712,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX227964"
+              "sequenceID": "JX227964",
+              "genotype": "4",
+              "subtype": "4_unassigned_JX227964",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735127",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735127",
           "almtDisplayName": "HCV Subtype 4_JF735127 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1208,12 +1731,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735127"
+              "sequenceID": "JF735127",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735127",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735132",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735132",
           "almtDisplayName": "HCV Subtype 4_JF735132 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1222,12 +1750,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735132"
+              "sequenceID": "JF735132",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735132",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735131",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735131",
           "almtDisplayName": "HCV Subtype 4_JF735131 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1236,12 +1769,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735131"
+              "sequenceID": "JF735131",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735131",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735130",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735130",
           "almtDisplayName": "HCV Subtype 4_JF735130 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1250,12 +1788,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735130"
+              "sequenceID": "JF735130",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735130",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735129",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735129",
           "almtDisplayName": "HCV Subtype 4_JF735129 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1264,12 +1807,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735129"
+              "sequenceID": "JF735129",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735129",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735138",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735138",
           "almtDisplayName": "HCV Subtype 4_JF735138 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1278,12 +1826,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735138"
+              "sequenceID": "JF735138",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735138",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735135",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735135",
           "almtDisplayName": "HCV Subtype 4_JF735135 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1292,12 +1845,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735135"
+              "sequenceID": "JF735135",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735135",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_4_unassigned_JF735134",
+          "genotype": "4",
+          "subtype": "4_unassigned_JF735134",
           "almtDisplayName": "HCV Subtype 4_JF735134 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1306,7 +1864,10 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JF735134"
+              "sequenceID": "JF735134",
+              "genotype": "4",
+              "subtype": "4_unassigned_JF735134",
+              "status": "unassigned"
             }
           ]
         }
@@ -1317,11 +1878,14 @@
         "sequenceID": "NC_009826"
       },
       "alignmentName": "AL_5",
+      "genotype": "5",
       "almtDisplayName": "HCV Genotype 5",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_5a",
+          "genotype": "5",
+          "subtype": "5a",
           "almtDisplayName": "HCV Subtype 5a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1330,15 +1894,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "AF064490"
+              "sequenceID": "AF064490",
+              "genotype": "5",
+              "subtype": "5a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "NC_009826"
+              "sequenceID": "NC_009826",
+              "genotype": "5",
+              "subtype": "5a",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_5_unassigned_KT595242",
+          "genotype": "5",
+          "subtype": "5_unassigned_KT595242",
           "almtDisplayName": "HCV Subtype 5_KT595242 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1347,7 +1919,10 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KT595242"
+              "sequenceID": "KT595242",
+              "genotype": "5",
+              "subtype": "5_unassigned_KT595242",
+              "status": "unassigned"
             }
           ]
         }
@@ -1358,11 +1933,14 @@
         "sequenceID": "NC_009827"
       },
       "alignmentName": "AL_6",
+      "genotype": "6",
       "almtDisplayName": "HCV Genotype 6",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_6a",
+          "genotype": "6",
+          "subtype": "6a",
           "almtDisplayName": "HCV Subtype 6a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1371,21 +1949,35 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "Y12083"
+              "sequenceID": "Y12083",
+              "genotype": "6",
+              "subtype": "6a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "AY859526"
+              "sequenceID": "AY859526",
+              "genotype": "6",
+              "subtype": "6a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "HQ639936"
+              "sequenceID": "HQ639936",
+              "genotype": "6",
+              "subtype": "6a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU246930"
+              "sequenceID": "EU246930",
+              "genotype": "6",
+              "subtype": "6a",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6b",
+          "genotype": "6",
+          "subtype": "6b",
           "almtDisplayName": "HCV Subtype 6b",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1394,12 +1986,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "NC_009827"
+              "sequenceID": "NC_009827",
+              "genotype": "6",
+              "subtype": "6b",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6c",
+          "genotype": "6",
+          "subtype": "6c",
           "almtDisplayName": "HCV Subtype 6c",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1408,12 +2005,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EF424629"
+              "sequenceID": "EF424629",
+              "genotype": "6",
+              "subtype": "6c",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6d",
+          "genotype": "6",
+          "subtype": "6d",
           "almtDisplayName": "HCV Subtype 6d",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1422,12 +2024,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D84263"
+              "sequenceID": "D84263",
+              "genotype": "6",
+              "subtype": "6d",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6e",
+          "genotype": "6",
+          "subtype": "6e",
           "almtDisplayName": "HCV Subtype 6e",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1436,18 +2043,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ314805"
+              "sequenceID": "DQ314805",
+              "genotype": "6",
+              "subtype": "6e",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU246932"
+              "sequenceID": "EU246932",
+              "genotype": "6",
+              "subtype": "6e",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU246931"
+              "sequenceID": "EU246931",
+              "genotype": "6",
+              "subtype": "6e",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6f",
+          "genotype": "6",
+          "subtype": "6f",
           "almtDisplayName": "HCV Subtype 6f",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1456,15 +2074,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ835760"
+              "sequenceID": "DQ835760",
+              "genotype": "6",
+              "subtype": "6f",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU246936"
+              "sequenceID": "EU246936",
+              "genotype": "6",
+              "subtype": "6f",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6g",
+          "genotype": "6",
+          "subtype": "6g",
           "almtDisplayName": "HCV Subtype 6g",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1473,15 +2099,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D63822"
+              "sequenceID": "D63822",
+              "genotype": "6",
+              "subtype": "6g",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "DQ314806"
+              "sequenceID": "DQ314806",
+              "genotype": "6",
+              "subtype": "6g",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6h",
+          "genotype": "6",
+          "subtype": "6h",
           "almtDisplayName": "HCV Subtype 6h",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1490,12 +2124,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D84265"
+              "sequenceID": "D84265",
+              "genotype": "6",
+              "subtype": "6h",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6i",
+          "genotype": "6",
+          "subtype": "6i",
           "almtDisplayName": "HCV Subtype 6i",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1504,15 +2143,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ835770"
+              "sequenceID": "DQ835770",
+              "genotype": "6",
+              "subtype": "6i",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "DQ835762"
+              "sequenceID": "DQ835762",
+              "genotype": "6",
+              "subtype": "6i",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6j",
+          "genotype": "6",
+          "subtype": "6j",
           "almtDisplayName": "HCV Subtype 6j",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1521,15 +2168,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ835769"
+              "sequenceID": "DQ835769",
+              "genotype": "6",
+              "subtype": "6j",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "DQ835761"
+              "sequenceID": "DQ835761",
+              "genotype": "6",
+              "subtype": "6j",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6k",
+          "genotype": "6",
+          "subtype": "6k",
           "almtDisplayName": "HCV Subtype 6k",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1538,12 +2193,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "D84264"
+              "sequenceID": "D84264",
+              "genotype": "6",
+              "subtype": "6k",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6l",
+          "genotype": "6",
+          "subtype": "6l",
           "almtDisplayName": "HCV Subtype 6l",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1552,15 +2212,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EF424628"
+              "sequenceID": "EF424628",
+              "genotype": "6",
+              "subtype": "6l",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "JX183556"
+              "sequenceID": "JX183556",
+              "genotype": "6",
+              "subtype": "6l",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6m",
+          "genotype": "6",
+          "subtype": "6m",
           "almtDisplayName": "HCV Subtype 6m",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1569,15 +2237,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ835767"
+              "sequenceID": "DQ835767",
+              "genotype": "6",
+              "subtype": "6m",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "DQ835766"
+              "sequenceID": "DQ835766",
+              "genotype": "6",
+              "subtype": "6m",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6n",
+          "genotype": "6",
+          "subtype": "6n",
           "almtDisplayName": "HCV Subtype 6n",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1586,18 +2262,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ278894"
+              "sequenceID": "DQ278894",
+              "genotype": "6",
+              "subtype": "6n",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "DQ835768"
+              "sequenceID": "DQ835768",
+              "genotype": "6",
+              "subtype": "6n",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU246938"
+              "sequenceID": "EU246938",
+              "genotype": "6",
+              "subtype": "6n",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6o",
+          "genotype": "6",
+          "subtype": "6o",
           "almtDisplayName": "HCV Subtype 6o",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1606,15 +2293,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EF424627"
+              "sequenceID": "EF424627",
+              "genotype": "6",
+              "subtype": "6o",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU246934"
+              "sequenceID": "EU246934",
+              "genotype": "6",
+              "subtype": "6o",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6p",
+          "genotype": "6",
+          "subtype": "6p",
           "almtDisplayName": "HCV Subtype 6p",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1623,12 +2318,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EF424626"
+              "sequenceID": "EF424626",
+              "genotype": "6",
+              "subtype": "6p",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6q",
+          "genotype": "6",
+          "subtype": "6q",
           "almtDisplayName": "HCV Subtype 6q",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1637,12 +2337,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EF424625"
+              "sequenceID": "EF424625",
+              "genotype": "6",
+              "subtype": "6q",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6r",
+          "genotype": "6",
+          "subtype": "6r",
           "almtDisplayName": "HCV Subtype 6r",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1651,12 +2356,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EU408328"
+              "sequenceID": "EU408328",
+              "genotype": "6",
+              "subtype": "6r",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6s",
+          "genotype": "6",
+          "subtype": "6s",
           "almtDisplayName": "HCV Subtype 6s",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1665,12 +2375,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EU408329"
+              "sequenceID": "EU408329",
+              "genotype": "6",
+              "subtype": "6s",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6t",
+          "genotype": "6",
+          "subtype": "6t",
           "almtDisplayName": "HCV Subtype 6t",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1679,15 +2394,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EF632071"
+              "sequenceID": "EF632071",
+              "genotype": "6",
+              "subtype": "6t",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU246939"
+              "sequenceID": "EU246939",
+              "genotype": "6",
+              "subtype": "6t",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6u",
+          "genotype": "6",
+          "subtype": "6u",
           "almtDisplayName": "HCV Subtype 6u",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1696,12 +2419,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EU246940"
+              "sequenceID": "EU246940",
+              "genotype": "6",
+              "subtype": "6u",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6v",
+          "genotype": "6",
+          "subtype": "6v",
           "almtDisplayName": "HCV Subtype 6v",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1710,18 +2438,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EU158186"
+              "sequenceID": "EU158186",
+              "genotype": "6",
+              "subtype": "6v",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU798760"
+              "sequenceID": "EU798760",
+              "genotype": "6",
+              "subtype": "6v",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU798761"
+              "sequenceID": "EU798761",
+              "genotype": "6",
+              "subtype": "6v",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6w",
+          "genotype": "6",
+          "subtype": "6w",
           "almtDisplayName": "HCV Subtype 6w",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1730,18 +2469,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ278892"
+              "sequenceID": "DQ278892",
+              "genotype": "6",
+              "subtype": "6w",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU643834"
+              "sequenceID": "EU643834",
+              "genotype": "6",
+              "subtype": "6w",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU643836"
+              "sequenceID": "EU643836",
+              "genotype": "6",
+              "subtype": "6w",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xa",
+          "genotype": "6",
+          "subtype": "6xa",
           "almtDisplayName": "HCV Subtype 6xa",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1750,18 +2500,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "EU408330"
+              "sequenceID": "EU408330",
+              "genotype": "6",
+              "subtype": "6xa",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU408332"
+              "sequenceID": "EU408332",
+              "genotype": "6",
+              "subtype": "6xa",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "EU408331"
+              "sequenceID": "EU408331",
+              "genotype": "6",
+              "subtype": "6xa",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xb",
+          "genotype": "6",
+          "subtype": "6xb",
           "almtDisplayName": "HCV Subtype 6xb",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1770,15 +2531,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183552"
+              "sequenceID": "JX183552",
+              "genotype": "6",
+              "subtype": "6xb",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KJ567645"
+              "sequenceID": "KJ567645",
+              "genotype": "6",
+              "subtype": "6xb",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xc",
+          "genotype": "6",
+          "subtype": "6xc",
           "almtDisplayName": "HCV Subtype 6xc",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1787,12 +2556,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ567651"
+              "sequenceID": "KJ567651",
+              "genotype": "6",
+              "subtype": "6xc",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xd",
+          "genotype": "6",
+          "subtype": "6xd",
           "almtDisplayName": "HCV Subtype 6xd",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1801,18 +2575,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KM252789"
+              "sequenceID": "KM252789",
+              "genotype": "6",
+              "subtype": "6xd",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KM252790"
+              "sequenceID": "KM252790",
+              "genotype": "6",
+              "subtype": "6xd",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KM252791"
+              "sequenceID": "KM252791",
+              "genotype": "6",
+              "subtype": "6xd",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xe",
+          "genotype": "6",
+          "subtype": "6xe",
           "almtDisplayName": "HCV Subtype 6xe",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1821,15 +2606,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183557"
+              "sequenceID": "JX183557",
+              "genotype": "6",
+              "subtype": "6xe",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KM252792"
+              "sequenceID": "KM252792",
+              "genotype": "6",
+              "subtype": "6xe",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xf",
+          "genotype": "6",
+          "subtype": "6xf",
           "almtDisplayName": "HCV Subtype 6xf",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1838,15 +2631,23 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ567646"
+              "sequenceID": "KJ567646",
+              "genotype": "6",
+              "subtype": "6xf",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "KJ567647"
+              "sequenceID": "KJ567647",
+              "genotype": "6",
+              "subtype": "6xf",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xg",
+          "genotype": "6",
+          "subtype": "6xg",
           "almtDisplayName": "HCV Subtype 6xg",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1855,18 +2656,29 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "MH492361"
+              "sequenceID": "MH492361",
+              "genotype": "6",
+              "subtype": "6xg",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "MH492360"
+              "sequenceID": "MH492360",
+              "genotype": "6",
+              "subtype": "6xg",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "MH492362"
+              "sequenceID": "MH492362",
+              "genotype": "6",
+              "subtype": "6xg",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6xh",
+          "genotype": "6",
+          "subtype": "6xh",
           "almtDisplayName": "HCV Subtype 6xh",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -1875,12 +2687,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "MG879000"
+              "sequenceID": "MG879000",
+              "genotype": "6",
+              "subtype": "6xh",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_DQ278891",
+          "genotype": "6",
+          "subtype": "6_unassigned_DQ278891",
           "almtDisplayName": "HCV Subtype 6_DQ278891 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1889,12 +2706,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ278891"
+              "sequenceID": "DQ278891",
+              "genotype": "6",
+              "subtype": "6_unassigned_DQ278891",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_DQ278893",
+          "genotype": "6",
+          "subtype": "6_unassigned_DQ278893",
           "almtDisplayName": "HCV Subtype 6_DQ278893 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1903,12 +2725,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "DQ278893"
+              "sequenceID": "DQ278893",
+              "genotype": "6",
+              "subtype": "6_unassigned_DQ278893",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_JX183558",
+          "genotype": "6",
+          "subtype": "6_unassigned_JX183558",
           "almtDisplayName": "HCV Subtype 6_JX183558 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1917,12 +2744,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183558"
+              "sequenceID": "JX183558",
+              "genotype": "6",
+              "subtype": "6_unassigned_JX183558",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_JX183553",
+          "genotype": "6",
+          "subtype": "6_unassigned_JX183553",
           "almtDisplayName": "HCV Subtype 6_JX183553 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1931,12 +2763,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183553"
+              "sequenceID": "JX183553",
+              "genotype": "6",
+              "subtype": "6_unassigned_JX183553",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_JX183554",
+          "genotype": "6",
+          "subtype": "6_unassigned_JX183554",
           "almtDisplayName": "HCV Subtype 6_JX183554 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1945,12 +2782,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183554"
+              "sequenceID": "JX183554",
+              "genotype": "6",
+              "subtype": "6_unassigned_JX183554",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_JX183551",
+          "genotype": "6",
+          "subtype": "6_unassigned_JX183551",
           "almtDisplayName": "HCV Subtype 6_JX183551 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1959,12 +2801,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183551"
+              "sequenceID": "JX183551",
+              "genotype": "6",
+              "subtype": "6_unassigned_JX183551",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_JX183549",
+          "genotype": "6",
+          "subtype": "6_unassigned_JX183549",
           "almtDisplayName": "HCV Subtype 6_JX183549 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1973,12 +2820,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183549"
+              "sequenceID": "JX183549",
+              "genotype": "6",
+              "subtype": "6_unassigned_JX183549",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_JX183550",
+          "genotype": "6",
+          "subtype": "6_unassigned_JX183550",
           "almtDisplayName": "HCV Subtype 6_JX183550 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -1987,12 +2839,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "JX183550"
+              "sequenceID": "JX183550",
+              "genotype": "6",
+              "subtype": "6_unassigned_JX183550",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ470620",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ470620",
           "almtDisplayName": "HCV Subtype 6_KJ470620 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2001,12 +2858,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470620"
+              "sequenceID": "KJ470620",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ470620",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ470621",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ470621",
           "almtDisplayName": "HCV Subtype 6_KJ470621 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2015,12 +2877,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470621"
+              "sequenceID": "KJ470621",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ470621",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ470622",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ470622",
           "almtDisplayName": "HCV Subtype 6_KJ470622 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2029,12 +2896,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470622"
+              "sequenceID": "KJ470622",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ470622",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ470623",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ470623",
           "almtDisplayName": "HCV Subtype 6_KJ470623 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2043,12 +2915,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470623"
+              "sequenceID": "KJ470623",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ470623",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ470624",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ470624",
           "almtDisplayName": "HCV Subtype 6_KJ470624 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2057,12 +2934,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470624"
+              "sequenceID": "KJ470624",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ470624",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ470625",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ470625",
           "almtDisplayName": "HCV Subtype 6_KJ470625 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2071,12 +2953,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ470625"
+              "sequenceID": "KJ470625",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ470625",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KC844039",
+          "genotype": "6",
+          "subtype": "6_unassigned_KC844039",
           "almtDisplayName": "HCV Subtype 6_KC844039 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2085,12 +2972,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC844039"
+              "sequenceID": "KC844039",
+              "genotype": "6",
+              "subtype": "6_unassigned_KC844039",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KC844040",
+          "genotype": "6",
+          "subtype": "6_unassigned_KC844040",
           "almtDisplayName": "HCV Subtype 6_KC844040 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2099,12 +2991,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KC844040"
+              "sequenceID": "KC844040",
+              "genotype": "6",
+              "subtype": "6_unassigned_KC844040",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ567652",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ567652",
           "almtDisplayName": "HCV Subtype 6_KJ567652 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2113,12 +3010,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ567652"
+              "sequenceID": "KJ567652",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ567652",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ567650",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ567650",
           "almtDisplayName": "HCV Subtype 6_KJ567650 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2127,12 +3029,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ567650"
+              "sequenceID": "KJ567650",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ567650",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ567649",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ567649",
           "almtDisplayName": "HCV Subtype 6_KJ567649 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2141,12 +3048,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ567649"
+              "sequenceID": "KJ567649",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ567649",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ567648",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ567648",
           "almtDisplayName": "HCV Subtype 6_KJ567648 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2155,12 +3067,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ567648"
+              "sequenceID": "KJ567648",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ567648",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_KJ567644",
+          "genotype": "6",
+          "subtype": "6_unassigned_KJ567644",
           "almtDisplayName": "HCV Subtype 6_KJ567644 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2169,12 +3086,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KJ567644"
+              "sequenceID": "KJ567644",
+              "genotype": "6",
+              "subtype": "6_unassigned_KJ567644",
+              "status": "unassigned"
             }
           ]
         },
         {
           "alignmentName": "AL_6_unassigned_MG878999",
+          "genotype": "6",
+          "subtype": "6_unassigned_MG878999",
           "almtDisplayName": "HCV Subtype 6_MG878999 (unassigned)",
           "cladeCategory": "subtype",
           "status": "unassigned",
@@ -2183,7 +3105,10 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "MG878999"
+              "sequenceID": "MG878999",
+              "genotype": "6",
+              "subtype": "6_unassigned_MG878999",
+              "status": "unassigned"
             }
           ]
         }
@@ -2194,11 +3119,14 @@
         "sequenceID": "NC_030791"
       },
       "alignmentName": "AL_7",
+      "genotype": "7",
       "almtDisplayName": "HCV Genotype 7",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_7a",
+          "genotype": "7",
+          "subtype": "7a",
           "almtDisplayName": "HCV Subtype 7a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -2207,12 +3135,17 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "NC_030791"
+              "sequenceID": "NC_030791",
+              "genotype": "7",
+              "subtype": "7a",
+              "status": "confirmed"
             }
           ]
         },
         {
           "alignmentName": "AL_7b",
+          "genotype": "7",
+          "subtype": "7b",
           "almtDisplayName": "HCV Subtype 7b",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -2221,7 +3154,10 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "KX092342"
+              "sequenceID": "KX092342",
+              "genotype": "7",
+              "subtype": "7b",
+              "status": "confirmed"
             }
           ]
         }
@@ -2232,11 +3168,14 @@
         "sequenceID": "MH590700"
       },
       "alignmentName": "AL_8",
+      "genotype": "8",
       "almtDisplayName": "HCV Genotype 8",
       "cladeCategory": "genotype",
       "childAlignments": [
         {
           "alignmentName": "AL_8a",
+          "genotype": "8",
+          "subtype": "8a",
           "almtDisplayName": "HCV Subtype 8a",
           "cladeCategory": "subtype",
           "status": "confirmed",
@@ -2245,16 +3184,28 @@
           },
           "referenceSequences": [
             {
-              "sequenceID": "MH590698"
+              "sequenceID": "MH590698",
+              "genotype": "8",
+              "subtype": "8a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "MH590699"
+              "sequenceID": "MH590699",
+              "genotype": "8",
+              "subtype": "8a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "MH590700"
+              "sequenceID": "MH590700",
+              "genotype": "8",
+              "subtype": "8a",
+              "status": "confirmed"
             },
             {
-              "sequenceID": "MH590701"
+              "sequenceID": "MH590701",
+              "genotype": "8",
+              "subtype": "8a",
+              "status": "confirmed"
             }
           ]
         }

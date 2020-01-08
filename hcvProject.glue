@@ -17,9 +17,10 @@ project hcv
   # NCBI outgroups -- closely related Hepacivirus A used to root the reference phylogeny
   # Should get assigned species = null in genotyping
   import source sources/ncbi-outgroups
+  multi-set field sequence -w "source.name = 'ncbi-outgroups'" reference_status outgroup
 
   # WHO regions / countries etc (M49 standard)
-  # run file glue/who_countries/populateWhoCountries.glue
+  run file glue/who_countries/populateWhoCountries.glue
 
   # genome features.
   run file glue/hcvFeatures.glue
@@ -33,14 +34,11 @@ project hcv
   # feature locations
   run file glue/hcvFeatureLocations.glue
 
-  # build tree of alignments, with relevant reference sequences.
-  # run file glue/hcvAlignmentTree.glue
-
-  # add feature locations
-  # run file glue/hcvFeatureLocations.glue
+  # build tree of constrained alignments with homology segments
+  run file glue/hcvAlignmentTree.glue
 
   # import phylogeny
-  # run file glue/importPhylogeny.glue
+  run file glue/hcvImportPhylogeny.glue
 
   validate
 

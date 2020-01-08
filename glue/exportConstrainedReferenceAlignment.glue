@@ -1,1 +1,0 @@
-module referenceAlignmentExporter export AL_MASTER -c -w "sequence.source.name in ('ncbi-refseqs', 'concatenated-refseqs') and sequence.reference_status in ('confirmed', 'unassigned', 'provisional')  and referenceMember = false" -d increasing_start_segment -i -m 2 -o alignments/constrainedRefAlmt.fas 

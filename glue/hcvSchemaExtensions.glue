@@ -31,34 +31,15 @@ schema-project hcv
     create field latest_collection_year INTEGER
     create field ncbi_incoming BOOLEAN
 
-    # confirmed / provisional / recombinant / unassigned
+    # confirmed / unassigned / outgroup
     create field reference_status VARCHAR 20
     exit
 
   table alignment
     # provisional / unassigned etc.
+    create field clade_category VARCHAR 20
     create field status VARCHAR 20
-    create field phylogeny VARCHAR 10000
-    exit
-
-  table variation
-    create field is_epitope BOOLEAN
-    create field pubmed_id VARCHAR 50
-    create field publication_date_year INTEGER
-    create field epitope_iedb_id INTEGER
-    create field epitope_method VARCHAR 50
-    create field epitope_protein VARCHAR 50
-    create field epitope_start_codon VARCHAR 50
-    create field epitope_end_codon VARCHAR 50
-    create field epitope_stage VARCHAR 50
-    create field epitope_genotype VARCHAR 50
-    create field epitope_subtype VARCHAR 50
-    create field epitope_measurement VARCHAR 50
-    create field epitope_effector_tissue_type VARCHAR 50
-    create field epitope_effector_cell_type VARCHAR 50
-    create field epitope_effector_cell_culture_condition VARCHAR 50
-    create field epitope_full_hla VARCHAR 50
-    create field epitope_partial_hla VARCHAR 50
+    create field phylogeny CLOB
     exit
   
   table var_almt_note

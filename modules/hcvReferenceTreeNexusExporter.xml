@@ -1,0 +1,22 @@
+<nexusExporter>
+	<freemarkerAnnotationGenerator>
+		<annotationName>accession</annotationName>
+		<template>${renderNestedProperty('sequence.sequenceID')}</template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>subtype_accession</annotationName>
+		<template><![CDATA[<#if sequence.reference_status = 'unassigned'>${renderNestedProperty('sequence.genotype')}*<#elseif sequence.reference_status = 'outgroup'>Outgroup<#else>${renderNestedProperty('sequence.subtype')}</#if>_${renderNestedProperty('sequence.sequenceID')}]]></template>
+	</freemarkerAnnotationGenerator>
+	<freemarkerAnnotationGenerator>
+		<annotationName>genotype</annotationName>
+		<template><![CDATA[<#if sequence.reference_status = 'outgroup'>outgroup<#else>${renderNestedProperty('sequence.genotype')}</#if>]]></template>
+	</freemarkerAnnotationGenerator>
+	<figtreeProperty type="integer" name="tipLabels.fontSize">13</figtreeProperty>
+	<figtreeProperty name="tipLabels.colorAttribute">genotype</figtreeProperty>
+	<figtreeProperty name="tipLabels.displayAttribute">subtype_accession</figtreeProperty>
+	<figtreeProperty type="integer" name="nodeLabels.fontSize">13</figtreeProperty>
+	<figtreeProperty type="boolean" name="nodeLabels.isShown">true</figtreeProperty>
+	<figtreeProperty name="nodeLabels.displayAttribute">bootstraps</figtreeProperty>
+	<figtreeProperty type="boolean" name="nodeLabels.isShown">true</figtreeProperty>
+	<figtreeProperty name="layout.layoutType">RADIAL</figtreeProperty>
+</nexusExporter>

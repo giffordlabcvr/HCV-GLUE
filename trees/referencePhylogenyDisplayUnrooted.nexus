@@ -1,0 +1,319 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=226;
+	taxlabels
+	'alignment/AL_UNCONSTRAINED/member/ncbi-outgroups/AB863589'[&accession="AB863589",subtype_accession="Outgroup_AB863589",genotype="outgroup"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-outgroups/JF744991'[&accession="JF744991",subtype_accession="Outgroup_JF744991",genotype="outgroup"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-outgroups/JQ434001'[&accession="JQ434001",subtype_accession="Outgroup_JQ434001",genotype="outgroup"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB030907'[&accession="AB030907",subtype_accession="2b_AB030907",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB031663'[&accession="AB031663",subtype_accession="2k_AB031663",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB047639'[&accession="AB047639",subtype_accession="2a_AB047639",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB661382'[&accession="AB661382",subtype_accession="2b_AB661382",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB661388'[&accession="AB661388",subtype_accession="2b_AB661388",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AF064490'[&accession="AF064490",subtype_accession="5a_AF064490",genotype="5"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AJ851228'[&accession="AJ851228",subtype_accession="1*_AJ851228",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AM910652'[&accession="AM910652",subtype_accession="1g_AM910652",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AY051292'[&accession="AY051292",subtype_accession="1c_AY051292",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AY651061'[&accession="AY651061",subtype_accession="1c_AY651061",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AY859526'[&accession="AY859526",subtype_accession="6a_AY859526",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D00944'[&accession="D00944",subtype_accession="2a_D00944",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D10988'[&accession="D10988",subtype_accession="2b_D10988",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D14853'[&accession="D14853",subtype_accession="1c_D14853",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D28917'[&accession="D28917",subtype_accession="3a_D28917",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D49374'[&accession="D49374",subtype_accession="3b_D49374",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D50409'[&accession="D50409",subtype_accession="2c_D50409",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D63821'[&accession="D63821",subtype_accession="3k_D63821",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D63822'[&accession="D63822",subtype_accession="6g_D63822",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84263'[&accession="D84263",subtype_accession="6d_D84263",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84264'[&accession="D84264",subtype_accession="6k_D84264",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84265'[&accession="D84265",subtype_accession="6h_D84265",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D90208'[&accession="D90208",subtype_accession="1b_D90208",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ155561'[&accession="DQ155561",subtype_accession="2i_DQ155561",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278891'[&accession="DQ278891",subtype_accession="6*_DQ278891",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278892'[&accession="DQ278892",subtype_accession="6w_DQ278892",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278893'[&accession="DQ278893",subtype_accession="6*_DQ278893",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278894'[&accession="DQ278894",subtype_accession="6n_DQ278894",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ314805'[&accession="DQ314805",subtype_accession="6e_DQ314805",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ314806'[&accession="DQ314806",subtype_accession="6g_DQ314806",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ418786'[&accession="DQ418786",subtype_accession="4d_DQ418786",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ418789'[&accession="DQ418789",subtype_accession="4a_DQ418789",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835760'[&accession="DQ835760",subtype_accession="6f_DQ835760",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835761'[&accession="DQ835761",subtype_accession="6j_DQ835761",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835762'[&accession="DQ835762",subtype_accession="6i_DQ835762",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835766'[&accession="DQ835766",subtype_accession="6m_DQ835766",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835767'[&accession="DQ835767",subtype_accession="6m_DQ835767",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835768'[&accession="DQ835768",subtype_accession="6n_DQ835768",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835769'[&accession="DQ835769",subtype_accession="6j_DQ835769",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835770'[&accession="DQ835770",subtype_accession="6i_DQ835770",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ988074'[&accession="DQ988074",subtype_accession="4a_DQ988074",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF407457'[&accession="EF407457",subtype_accession="1a_EF407457",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424625'[&accession="EF424625",subtype_accession="6q_EF424625",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424626'[&accession="EF424626",subtype_accession="6p_EF424626",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424627'[&accession="EF424627",subtype_accession="6o_EF424627",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424628'[&accession="EF424628",subtype_accession="6l_EF424628",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424629'[&accession="EF424629",subtype_accession="6c_EF424629",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF589161'[&accession="EF589161",subtype_accession="4f_EF589161",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF632071'[&accession="EF632071",subtype_accession="6t_EF632071",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU158186'[&accession="EU158186",subtype_accession="6v_EU158186",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246930'[&accession="EU246930",subtype_accession="6a_EU246930",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246931'[&accession="EU246931",subtype_accession="6e_EU246931",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246932'[&accession="EU246932",subtype_accession="6e_EU246932",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246934'[&accession="EU246934",subtype_accession="6o_EU246934",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246936'[&accession="EU246936",subtype_accession="6f_EU246936",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246938'[&accession="EU246938",subtype_accession="6n_EU246938",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246939'[&accession="EU246939",subtype_accession="6t_EU246939",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246940'[&accession="EU246940",subtype_accession="6u_EU246940",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392171'[&accession="EU392171",subtype_accession="4k_EU392171",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392172'[&accession="EU392172",subtype_accession="4d_EU392172",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392173'[&accession="EU392173",subtype_accession="4k_EU392173",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392174'[&accession="EU392174",subtype_accession="4f_EU392174",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392175'[&accession="EU392175",subtype_accession="4f_EU392175",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408328'[&accession="EU408328",subtype_accession="6r_EU408328",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408329'[&accession="EU408329",subtype_accession="6s_EU408329",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408330'[&accession="EU408330",subtype_accession="6xa_EU408330",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408331'[&accession="EU408331",subtype_accession="6xa_EU408331",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408332'[&accession="EU408332",subtype_accession="6xa_EU408332",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU643834'[&accession="EU643834",subtype_accession="6w_EU643834",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU643836'[&accession="EU643836",subtype_accession="6w_EU643836",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU781827'[&accession="EU781827",subtype_accession="1b_EU781827",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU781828'[&accession="EU781828",subtype_accession="1b_EU781828",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU798760'[&accession="EU798760",subtype_accession="6v_EU798760",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU798761'[&accession="EU798761",subtype_accession="6v_EU798761",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ025854'[&accession="FJ025854",subtype_accession="4*_FJ025854",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ025855'[&accession="FJ025855",subtype_accession="4w_FJ025855",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ025856'[&accession="FJ025856",subtype_accession="4w_FJ025856",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ407092'[&accession="FJ407092",subtype_accession="3i_FJ407092",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462431'[&accession="FJ462431",subtype_accession="4p_FJ462431",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462432'[&accession="FJ462432",subtype_accession="4g_FJ462432",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462433'[&accession="FJ462433",subtype_accession="4m_FJ462433",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462434'[&accession="FJ462434",subtype_accession="4q_FJ462434",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462435'[&accession="FJ462435",subtype_accession="4b_FJ462435",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462436'[&accession="FJ462436",subtype_accession="4c_FJ462436",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462437'[&accession="FJ462437",subtype_accession="4d_FJ462437",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462438'[&accession="FJ462438",subtype_accession="4k_FJ462438",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462439'[&accession="FJ462439",subtype_accession="4r_FJ462439",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462440'[&accession="FJ462440",subtype_accession="4o_FJ462440",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462441'[&accession="FJ462441",subtype_accession="4n_FJ462441",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ839869'[&accession="FJ839869",subtype_accession="4t_FJ839869",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ839870'[&accession="FJ839870",subtype_accession="4l_FJ839870",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FN666428'[&accession="FN666428",subtype_accession="2q_FN666428",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FN666429'[&accession="FN666429",subtype_accession="2q_FN666429",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HM777358'[&accession="HM777358",subtype_accession="2j_HM777358",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HM777359'[&accession="HM777359",subtype_accession="2j_HM777359",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ537007'[&accession="HQ537007",subtype_accession="1*_HQ537007",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ537008'[&accession="HQ537008",subtype_accession="4v_HQ537008",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ537009'[&accession="HQ537009",subtype_accession="4v_HQ537009",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ639936'[&accession="HQ639936",subtype_accession="6a_HQ639936",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ639944'[&accession="HQ639944",subtype_accession="2a_HQ639944",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ850279'[&accession="HQ850279",subtype_accession="1a_HQ850279",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735110'[&accession="JF735110",subtype_accession="2*_JF735110",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735111'[&accession="JF735111",subtype_accession="2m_JF735111",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735112'[&accession="JF735112",subtype_accession="2u_JF735112",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735113'[&accession="JF735113",subtype_accession="2j_JF735113",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735114'[&accession="JF735114",subtype_accession="2d_JF735114",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735115'[&accession="JF735115",subtype_accession="2r_JF735115",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735116'[&accession="JF735116",subtype_accession="2*_JF735116",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735117'[&accession="JF735117",subtype_accession="2*_JF735117",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735118'[&accession="JF735118",subtype_accession="2*_JF735118",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735119'[&accession="JF735119",subtype_accession="2*_JF735119",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735120'[&accession="JF735120",subtype_accession="2e_JF735120",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735121'[&accession="JF735121",subtype_accession="3h_JF735121",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735122'[&accession="JF735122",subtype_accession="3k_JF735122",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735123'[&accession="JF735123",subtype_accession="3g_JF735123",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735124'[&accession="JF735124",subtype_accession="3*_JF735124",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735126'[&accession="JF735126",subtype_accession="3h_JF735126",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735127'[&accession="JF735127",subtype_accession="4*_JF735127",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735129'[&accession="JF735129",subtype_accession="4*_JF735129",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735130'[&accession="JF735130",subtype_accession="4*_JF735130",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735131'[&accession="JF735131",subtype_accession="4*_JF735131",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735132'[&accession="JF735132",subtype_accession="4*_JF735132",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735134'[&accession="JF735134",subtype_accession="4*_JF735134",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735135'[&accession="JF735135",subtype_accession="4*_JF735135",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735136'[&accession="JF735136",subtype_accession="4s_JF735136",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735138'[&accession="JF735138",subtype_accession="4*_JF735138",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JN714194'[&accession="JN714194",subtype_accession="3a_JN714194",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JQ065709'[&accession="JQ065709",subtype_accession="3b_JQ065709",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183549'[&accession="JX183549",subtype_accession="6*_JX183549",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183550'[&accession="JX183550",subtype_accession="6*_JX183550",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183551'[&accession="JX183551",subtype_accession="6*_JX183551",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183552'[&accession="JX183552",subtype_accession="6xb_JX183552",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183553'[&accession="JX183553",subtype_accession="6*_JX183553",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183554'[&accession="JX183554",subtype_accession="6*_JX183554",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183556'[&accession="JX183556",subtype_accession="6l_JX183556",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183557'[&accession="JX183557",subtype_accession="6xe_JX183557",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183558'[&accession="JX183558",subtype_accession="6*_JX183558",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227949'[&accession="JX227949",subtype_accession="2c_JX227949",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227953'[&accession="JX227953",subtype_accession="2k_JX227953",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227954'[&accession="JX227954",subtype_accession="3g_JX227954",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227955'[&accession="JX227955",subtype_accession="3i_JX227955",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227957'[&accession="JX227957",subtype_accession="4l_JX227957",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227959'[&accession="JX227959",subtype_accession="4v_JX227959",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227960'[&accession="JX227960",subtype_accession="4v_JX227960",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227963'[&accession="JX227963",subtype_accession="4g_JX227963",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227964'[&accession="JX227964",subtype_accession="4*_JX227964",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227967'[&accession="JX227967",subtype_accession="2m_JX227967",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227970'[&accession="JX227970",subtype_accession="4n_JX227970",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227971'[&accession="JX227971",subtype_accession="4g_JX227971",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227972'[&accession="JX227972",subtype_accession="4m_JX227972",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227976'[&accession="JX227976",subtype_accession="4r_JX227976",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227977'[&accession="JX227977",subtype_accession="4o_JX227977",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197236'[&accession="KC197236",subtype_accession="2*_KC197236",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197237'[&accession="KC197237",subtype_accession="2*_KC197237",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197238'[&accession="KC197238",subtype_accession="2t_KC197238",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197239'[&accession="KC197239",subtype_accession="2*_KC197239",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248193'[&accession="KC248193",subtype_accession="1l_KC248193",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248194'[&accession="KC248194",subtype_accession="1e_KC248194",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248195'[&accession="KC248195",subtype_accession="1*_KC248195",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248196'[&accession="KC248196",subtype_accession="1l_KC248196",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248197'[&accession="KC248197",subtype_accession="1l_KC248197",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248198'[&accession="KC248198",subtype_accession="1h_KC248198",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248199'[&accession="KC248199",subtype_accession="1h_KC248199",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844039'[&accession="KC844039",subtype_accession="6*_KC844039",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844040'[&accession="KC844040",subtype_accession="6*_KC844040",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844042'[&accession="KC844042",subtype_accession="2f_KC844042",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844050'[&accession="KC844050",subtype_accession="2f_KC844050",genotype="2"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439768'[&accession="KJ439768",subtype_accession="1d_KJ439768",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439772'[&accession="KJ439772",subtype_accession="1i_KJ439772",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439773'[&accession="KJ439773",subtype_accession="1j_KJ439773",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439774'[&accession="KJ439774",subtype_accession="1k_KJ439774",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439775'[&accession="KJ439775",subtype_accession="1n_KJ439775",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439776'[&accession="KJ439776",subtype_accession="1*_KJ439776",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439777'[&accession="KJ439777",subtype_accession="1*_KJ439777",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439778'[&accession="KJ439778",subtype_accession="1m_KJ439778",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439779'[&accession="KJ439779",subtype_accession="1o_KJ439779",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439780'[&accession="KJ439780",subtype_accession="1*_KJ439780",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439781'[&accession="KJ439781",subtype_accession="1n_KJ439781",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439782'[&accession="KJ439782",subtype_accession="1m_KJ439782",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470618'[&accession="KJ470618",subtype_accession="3e_KJ470618",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470619'[&accession="KJ470619",subtype_accession="3d_KJ470619",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470620'[&accession="KJ470620",subtype_accession="6*_KJ470620",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470621'[&accession="KJ470621",subtype_accession="6*_KJ470621",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470622'[&accession="KJ470622",subtype_accession="6*_KJ470622",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470623'[&accession="KJ470623",subtype_accession="6*_KJ470623",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470624'[&accession="KJ470624",subtype_accession="6*_KJ470624",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470625'[&accession="KJ470625",subtype_accession="6*_KJ470625",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567644'[&accession="KJ567644",subtype_accession="6*_KJ567644",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567645'[&accession="KJ567645",subtype_accession="6xb_KJ567645",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567646'[&accession="KJ567646",subtype_accession="6xf_KJ567646",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567647'[&accession="KJ567647",subtype_accession="6xf_KJ567647",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567648'[&accession="KJ567648",subtype_accession="6*_KJ567648",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567649'[&accession="KJ567649",subtype_accession="6*_KJ567649",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567650'[&accession="KJ567650",subtype_accession="6*_KJ567650",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567651'[&accession="KJ567651",subtype_accession="6xc_KJ567651",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567652'[&accession="KJ567652",subtype_accession="6*_KJ567652",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252789'[&accession="KM252789",subtype_accession="6xd_KM252789",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252790'[&accession="KM252790",subtype_accession="6xd_KM252790",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252791'[&accession="KM252791",subtype_accession="6xd_KM252791",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252792'[&accession="KM252792",subtype_accession="6xe_KM252792",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KT595242'[&accession="KT595242",subtype_accession="5*_KT595242",genotype="5"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KX092342'[&accession="KX092342",subtype_accession="7b_KX092342",genotype="7"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M58335'[&accession="M58335",subtype_accession="1b_M58335",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M62321'[&accession="M62321",subtype_accession="1a_M62321",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M67463'[&accession="M67463",subtype_accession="1a_M67463",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MG878999'[&accession="MG878999",subtype_accession="6*_MG878999",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MG879000'[&accession="MG879000",subtype_accession="6xh_MG879000",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH492360'[&accession="MH492360",subtype_accession="6xg_MH492360",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH492361'[&accession="MH492361",subtype_accession="6xg_MH492361",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH492362'[&accession="MH492362",subtype_accession="6xg_MH492362",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590698'[&accession="MH590698",subtype_accession="8a_MH590698",genotype="8"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590699'[&accession="MH590699",subtype_accession="8a_MH590699",genotype="8"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590700'[&accession="MH590700",subtype_accession="8a_MH590700",genotype="8"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590701'[&accession="MH590701",subtype_accession="8a_MH590701",genotype="8"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH885469'[&accession="MH885469",subtype_accession="1o_MH885469",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_004102'[&accession="NC_004102",subtype_accession="1a_NC_004102",genotype="1"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009824'[&accession="NC_009824",subtype_accession="3a_NC_009824",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009825'[&accession="NC_009825",subtype_accession="4a_NC_009825",genotype="4"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009826'[&accession="NC_009826",subtype_accession="5a_NC_009826",genotype="5"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009827'[&accession="NC_009827",subtype_accession="6b_NC_009827",genotype="6"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_030791'[&accession="NC_030791",subtype_accession="7a_NC_030791",genotype="7"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/X76918'[&accession="X76918",subtype_accession="3a_X76918",genotype="3"]
+	'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/Y12083'[&accession="Y12083",subtype_accession="6a_Y12083",genotype="6"]
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] ('alignment/AL_UNCONSTRAINED/member/ncbi-outgroups/JQ434001':0.00157856188060986132,('alignment/AL_UNCONSTRAINED/member/ncbi-outgroups/AB863589':0.10911879914114669399,(((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197238':0.17996683266363233678,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB661382':0.04444997689806950286,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB030907':0.04252495286838055971,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D10988':0.03201889963606734113)[&bootstraps=100]:0.01926000309114277165,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB661388':0.05830330925613748383)[&bootstraps=98]:0.01400327096932417990)[&bootstraps=100]:0.14348755508702396022)[&bootstraps=80]:0.03376980735159305219,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197236':0.20333806160380810124,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197237':0.20226098693374483517)[&bootstraps=33]:0.02100375883307213989,(((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735115':0.15044638337749396961,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227949':0.06005327041179989861,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D50409':0.05814912476349441695)[&bootstraps=100]:0.08841278725432591412)[&bootstraps=76]:0.02064202691839222420,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ155561':0.16205655970422958023,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HM777359':0.04327180440740084622,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735113':0.07678649821000756159,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HM777358':0.05280896209746824971)[&bootstraps=51]:0.01000448429255140943)[&bootstraps=100]:0.11953117844877257647,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735114':0.10093240122292650163,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844050':0.04914920771160685709,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844042':0.05957657217049236453)[&bootstraps=100]:0.06478848896340551333)[&bootstraps=100]:0.04773477922970614101,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735117':0.13113736402278988735,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735120':0.16289478175637403523)[&bootstraps=43]:0.01460255828867077985)[&bootstraps=41]:0.00819170125613672209)[&bootstraps=35]:0.00734492094081687363)[&bootstraps=50]:0.00758184823627206569)[&bootstraps=100]:0.01659841060636718310,(((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735119':0.12691437027651342184,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735112':0.11352146840963173169)[&bootstraps=100]:0.04506097213688927544,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735111':0.04168528182280701461,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227967':0.04216206043638742046)[&bootstraps=100]:0.11287153659546281248)[&bootstraps=78]:0.01374210057665111590,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FN666428':0.05406354931556502791,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FN666429':0.04704485072400649281)[&bootstraps=100]:0.07905562948248778810,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735118':0.12795627873245818407,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB031663':0.05503533575558202523,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227953':0.05194369611398999553)[&bootstraps=100]:0.07968102969156680426)[&bootstraps=61]:0.01513051121235515356)[&bootstraps=100]:0.04666489848906398702)[&bootstraps=59]:0.01126371447332120794,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735116':0.14446166989186706719,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D00944':0.04502249500699489343,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ639944':0.02976903366587083793,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AB047639':0.04662914562882089498)[&bootstraps=100]:0.04299133952028520028)[&bootstraps=100]:0.12471928955906247394)[&bootstraps=69]:0.01835252202556716603)[&bootstraps=66]:0.01191559913791408534)[&bootstraps=100]:0.05873288766238498465,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735110':0.14357329645197958179,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC197239':0.14129858790430330218)[&bootstraps=100]:0.07837587034473456060)[&bootstraps=98]:0.02688368455860754708)[&bootstraps=56]:0.02337036146756269264)[&bootstraps=100]:0.40141938003494553877,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735124':0.25464573400677303905,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735121':0.04573425593160445474,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735126':0.03529063706431052189)[&bootstraps=100]:0.21631383842647416982)[&bootstraps=100]:0.10543098777750373185,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D63821':0.04818538080226355408,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735122':0.03180126837601451872)[&bootstraps=100]:0.21855153165148394345,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JN714194':0.05733375819769226389,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D28917':0.03954025286614930995,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009824':0.02468805793315378971,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/X76918':0.02834250448953909776)[&bootstraps=75]:0.00669104909627205990)[&bootstraps=86]:0.01742066597308912848)[&bootstraps=100]:0.11251493289966252309,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470618':0.18971888967741104559,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470619':0.14166537584421814988)[&bootstraps=77]:0.02286315747751465483)[&bootstraps=100]:0.04686784495360610259,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227954':0.04663244948076634977,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735123':0.06648571935334633698)[&bootstraps=100]:0.10313506017082187116,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D49374':0.06960910210240150997,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JQ065709':0.06409564889421486000)[&bootstraps=100]:0.10240868989807115630,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ407092':0.02694376765654836123,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227955':0.02297103568963769840)[&bootstraps=100]:0.12506142773841180671)[&bootstraps=85]:0.01549075984186602979)[&bootstraps=100]:0.04415034650377878261)[&bootstraps=100]:0.10876460306049744176)[&bootstraps=100]:0.09753383066421646153)[&bootstraps=100]:0.20038024446919447397,(((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590698':0.03658017848739895245,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590700':0.04247011434598547269,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590701':0.04068708504601659115)[&bootstraps=62]:0.01072902857565777995,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH590699':0.04761629986610193405)[&bootstraps=56]:0.01133051218910756039)[&bootstraps=100]:0.45596883477776506410,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MG878999':0.20996877051216369936,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844040':0.14523927707039471779)[&bootstraps=100]:0.14622602576358348370,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ639936':0.02612048927335966844,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AY859526':0.01816981113118105312,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/Y12083':0.02959005126975407240)[&bootstraps=88]:0.00346593144549515488)[&bootstraps=99]:0.01615546020949101477,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246930':0.04485119543098098349)[&bootstraps=100]:0.11997148106126516443,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252791':0.07775043743820216069,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252789':0.06463900546205399167,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252790':0.07733594143218948391)[&bootstraps=100]:0.01706663111679622771)[&bootstraps=100]:0.02652141654057395270,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009827':0.11141583637761535985)[&bootstraps=100]:0.07094745372344261891)[&bootstraps=100]:0.17258292735738167689)[&bootstraps=99]:0.04731231016430229031,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408329':0.33743619534777830049,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567646':0.04017002940720854065,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567647':0.03085171300615010062)[&bootstraps=100]:0.15129466704079733153,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567648':0.17640461148965264071)[&bootstraps=100]:0.07230660752607689923,((((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246940':0.11884386003458320691,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246931':0.08860011205530533840,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ314805':0.04749077387975043918,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246932':0.05567970455889784120)[&bootstraps=100]:0.02846530182989300342)[&bootstraps=100]:0.05146484437533215689)[&bootstraps=100]:0.04527190558618295751,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567652':0.13625481110961568110,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567651':0.08904573934795043111,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567649':0.00124806843918962430,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567650':0.00205506861656988777)[&bootstraps=100]:0.07273618643644542969)[&bootstraps=100]:0.06897556530349004122)[&bootstraps=74]:0.01431825007471959794)[&bootstraps=100]:0.06560215341015172841,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424625':0.20623535832693126735)[&bootstraps=52]:0.02053226187005188427,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246934':0.03464720298388872244,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424627':0.04789217162137344996)[&bootstraps=100]:0.13233354816294867762,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424626':0.16307563875091354855)[&bootstraps=100]:0.05158962862283133360,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246939':0.04157062332940108379,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF632071':0.03627682577033385786)[&bootstraps=100]:0.17882054503432104342)[&bootstraps=51]:0.02186664997507757266)[&bootstraps=64]:0.01777352070617030030,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246936':0.02983587960047670226,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835760':0.02557557766423417672)[&bootstraps=100]:0.10261679097340151157,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408328':0.12945322361771871567)[&bootstraps=100]:0.13340453483632594422,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424629':0.17775422996954737265,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84263':0.18424978733418417853)[&bootstraps=100]:0.05114887329583549941)[&bootstraps=51]:0.02124716027534434906)[&bootstraps=46]:0.02263744063348035324)[&bootstraps=100]:0.04481449964510229172)[&bootstraps=97]:0.03314349800576942701,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MG879000':0.31911259823085486032,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278892':0.04375423653957947329,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU643836':0.05263529587861170977,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU643834':0.04401178973127433530)[&bootstraps=94]:0.01453037528085670757)[&bootstraps=100]:0.25394627313121004297,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470623':0.15170545257422332619,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470625':0.15803899114647304569)[&bootstraps=100]:0.10481334184931331843,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470624':0.15620065312409012193,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470620':0.14794523320872474126)[&bootstraps=97]:0.02763938668063086260,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470621':0.08491317177338979227,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ470622':0.08225316318143072181)[&bootstraps=100]:0.08486888943775124095,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D63822':0.03677475445104688712,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ314806':0.03318674123200510834)[&bootstraps=100]:0.10961344595414346248)[&bootstraps=97]:0.02388726337766301083)[&bootstraps=100]:0.06413564585828041009)[&bootstraps=100]:0.06391352286715683284)[&bootstraps=50]:0.02043721321246328576)[&bootstraps=100]:0.04301226006647480837)[&bootstraps=100]:0.03912834147484759578,(((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU158186':0.00329696759709232744,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU798761':0.00199544705737953040)[&bootstraps=100]:0.02074796840239975446,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU798760':0.01942598112005291741)[&bootstraps=100]:0.29017919325436969391,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC844039':0.24089233282351307786,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408330':0.00375068517584585060,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408332':0.01114131133092643305,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU408331':0.00457299677867378795)[&bootstraps=77]:0.00276763560257764019)[&bootstraps=100]:0.21558254359292852720)[&bootstraps=100]:0.05628268632860601584)[&bootstraps=100]:0.05828625287500351776,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84265':0.17961097085321006683,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183558':0.08906831950249703700,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835761':0.01684524604912921233,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835769':0.01528661811917343336)[&bootstraps=100]:0.09212719746316937186)[&bootstraps=100]:0.03832061063520006416,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835770':0.01659606065100031544,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835762':0.03205996871002260440)[&bootstraps=100]:0.09633679478087033010)[&bootstraps=100]:0.07185011562697410370)[&bootstraps=100]:0.07471800550702968613,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183553':0.13528963406782079648,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183554':0.10090456633331100489,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF424628':0.02273661425727419375,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183556':0.03745503151538487341)[&bootstraps=100]:0.06259114869885457066)[&bootstraps=100]:0.03857500586973577200)[&bootstraps=100]:0.04048443724548828754,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D84264':0.09114892445615319083,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183549':0.10009465721528079674)[&bootstraps=100]:0.02776280441156159934,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183550':0.10697275161222051520,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278893':0.03026364967012345336,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278891':0.03648816030975566421)[&bootstraps=100]:0.08199945684615077279)[&bootstraps=99]:0.01666088300662035837,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183551':0.03334144455575462768,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567644':0.04267093595332259459)[&bootstraps=100]:0.08688125389297324253,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183552':0.04830070350892051723,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ567645':0.04367218540012824529)[&bootstraps=100]:0.08239962922475395357)[&bootstraps=76]:0.01080164994619635561)[&bootstraps=100]:0.01919353744514237445)[&bootstraps=100]:0.05290735558040969566)[&bootstraps=100]:0.06464142484499002528,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835767':0.01622170582161286401,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835766':0.01870543467182203892)[&bootstraps=100]:0.13439084839805026661,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX183557':0.01740565415618910289,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KM252792':0.01488129543257677052)[&bootstraps=100]:0.08213544214597538751,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH492361':0.00188942455796780196,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH492360':0.00123229644176693024)[&bootstraps=100]:0.01369525331551753669,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH492362':0.01947821349090910273)[&bootstraps=100]:0.08108665311397633690,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ835768':0.01961515293030942006,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU246938':0.02201306159594207390,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ278894':0.01898572553164933410)[&bootstraps=83]:0.00649355587513784915)[&bootstraps=100]:0.07613805738408732648)[&bootstraps=54]:0.01594686932786236813)[&bootstraps=100]:0.06088140416780981473)[&bootstraps=100]:0.04838244974164876422)[&bootstraps=93]:0.03247878035619853471)[&bootstraps=100]:0.10425855402199971089)[&bootstraps=91]:0.03282104950341556415)[&bootstraps=51]:0.02527269597371361795)[&bootstraps=100]:0.11504878729678988392)[&bootstraps=89]:0.07009732071849111845,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227964':0.14262092977784115999,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462439':0.04637229562432829133,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227976':0.05101241892330910660)[&bootstraps=100]:0.11920767981124759383,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392173':0.04337758084844595130,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392171':0.04569638273898303515,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462438':0.04253124792926595704)[&bootstraps=78]:0.00947306957425506600)[&bootstraps=100]:0.09823069287597502308,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227963':0.08405887266920566980,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462432':0.04148585882832047517,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227971':0.03896950053734529740)[&bootstraps=100]:0.05167840277796809101)[&bootstraps=100]:0.04653634355680599799)[&bootstraps=100]:0.03010944458655661835)[&bootstraps=70]:0.01285003287063686203)[&bootstraps=82]:0.01832105058328481820,((((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392175':0.04330989965708419848,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392174':0.04822953824414746155)[&bootstraps=57]:0.01056092745102134994,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF589161':0.03971757880906404831)[&bootstraps=100]:0.12266657863197534539,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462431':0.08809821386844154945,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ839869':0.10821385384950896191)[&bootstraps=100]:0.07246659123552552650)[&bootstraps=98]:0.02127849721710109790,(((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735131':0.12746836667872563087,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462434':0.09281948095229664020,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735129':0.09608751709806728769,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227959':0.02690731998077277101,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ537009':0.03587079882864044333,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ537008':0.03046965820450651605)[&bootstraps=100]:0.01302920675200275845,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227960':0.03564770114567177711)[&bootstraps=80]:0.00762896676280105414)[&bootstraps=100]:0.06967861316153002582)[&bootstraps=85]:0.01588284174003186389)[&bootstraps=100]:0.02733488206021257583,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735130':0.15664688537797150092,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227957':0.05737437286331589781,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ839870':0.03117641195112774710)[&bootstraps=100]:0.08072983791734525405)[&bootstraps=65]:0.01272306767723513019)[&bootstraps=44]:0.00933149579943830763)[&bootstraps=100]:0.03441883948141529620,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227972':0.04422228793191415597,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462433':0.04543087186799090599)[&bootstraps=100]:0.12327330261293248381,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ418786':0.02783377617937878717,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462437':0.02898637577586790637,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU392172':0.01849017557681379223)[&bootstraps=100]:0.02517073694150873814)[&bootstraps=100]:0.11787696492941582282)[&bootstraps=50]:0.01927489860435894695)[&bootstraps=14]:0.00748742157645157936,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227970':0.05430382637088308762,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462441':0.04974011764005271258)[&bootstraps=100]:0.10299338392497307815,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735136':0.17873198309587048915)[&bootstraps=55]:0.01595171826291890207,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735132':0.16970123659558711271)[&bootstraps=32]:0.01568455551323564429)[&bootstraps=7]:0.00602450585951103124,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462440':0.04310346884711235838,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JX227977':0.05063821430102885546)[&bootstraps=100]:0.13101919084372815050,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462436':0.09293038496130551218,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735135':0.08612150883060065709,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ418789':0.04781253277325868412,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/DQ988074':0.04322477054034254418,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009825':0.06743688349120820213)[&bootstraps=76]:0.00841182987190804317)[&bootstraps=100]:0.06693537768682578104)[&bootstraps=78]:0.01592789769460564026)[&bootstraps=100]:0.05389429664974869361)[&bootstraps=9]:0.01008370976135142608)[&bootstraps=31]:0.01068985646362553311)[&bootstraps=99]:0.04754478542235617694,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ025854':0.12788587622670860577,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ025856':0.02724609884052608261,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ025855':0.01977821292738380504)[&bootstraps=100]:0.11021621438473139243)[&bootstraps=100]:0.02326544011238109236,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735138':0.14446982161435009684,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735134':0.08279137413245063470,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/JF735127':0.10148193540211174202)[&bootstraps=100]:0.04140350399073394055,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/FJ462435':0.13106417506731651845)[&bootstraps=82]:0.01425103585229645607)[&bootstraps=100]:0.02073778441592876928)[&bootstraps=100]:0.06964992869293187838)[&bootstraps=67]:0.01945090115611372919)[&bootstraps=99]:0.22387215343838789972,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ537007':0.25704064705217377629,(((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248199':0.04445633232625996467,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248198':0.04138891120474615104)[&bootstraps=100]:0.13911246702053306490,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AJ851228':0.15611296796582754820,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439768':0.11253845318284820542,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439772':0.11577863368625461449,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU781828':0.03822222358944053766,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D90208':0.04434904604498542124,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M58335':0.04893047690602880112)[&bootstraps=100]:0.01286061352342762754,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EU781827':0.03563984648755155055)[&bootstraps=81]:0.01054904824691243158)[&bootstraps=100]:0.06701811923227603274)[&bootstraps=90]:0.01763337990027659744)[&bootstraps=100]:0.05745343423156130946)[&bootstraps=94]:0.02132540420262703240)[&bootstraps=100]:0.04202028611365399985,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439780':0.14333844484001342923,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439774':0.08451046932808926881,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439777':0.09974634371194941729)[&bootstraps=100]:0.03653018482702838354,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439773':0.13023404810675479060)[&bootstraps=90]:0.01386956900806470688,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439778':0.07150726128006260063,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439782':0.09119920206781352567)[&bootstraps=100]:0.06254106743090440124,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/HQ850279':0.04142333718215376187,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/EF407457':0.03446414238363891547,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M62321':0.02122610435563102721,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/M67463':0.00819287408701535429,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_004102':0.00084362215634401329)[&bootstraps=100]:0.01928081518926620663)[&bootstraps=100]:0.00968426102280887588)[&bootstraps=97]:0.01122711075799794934)[&bootstraps=100]:0.08355970519388192241,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439775':0.08711726340185921291,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439781':0.10178280041451677473)[&bootstraps=100]:0.04918991863931477387)[&bootstraps=98]:0.01725212179895449158)[&bootstraps=43]:0.00514388116690601190)[&bootstraps=88]:0.01623992643611308836)[&bootstraps=100]:0.05441404561223592284,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/MH885469':0.05357902434899406569,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439779':0.03293377856851656404)[&bootstraps=100]:0.12491868476273165767,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AY651061':0.05139008092975460434,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/D14853':0.04370626428584147016,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AY051292':0.02974681018132295865)[&bootstraps=73]:0.01819318001503592019)[&bootstraps=100]:0.12574319178936854691)[&bootstraps=100]:0.03711361509538206593)[&bootstraps=100]:0.02625972987503270156)[&bootstraps=97]:0.02055954659753888442,(('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248194':0.11187810257994965091,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AM910652':0.11369032361457168112)[&bootstraps=100]:0.10738388992698830182,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248195':0.15223090375159173404,((('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248193':0.03421967732023501602,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248196':0.04195242923704484844)[&bootstraps=97]:0.01202514760708554148,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KC248197':0.02740129515561673390)[&bootstraps=100]:0.06895654771424260254,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KJ439776':0.10075878265804728839)[&bootstraps=100]:0.04443616809849407906)[&bootstraps=100]:0.09218091720378251974)[&bootstraps=59]:0.01941201036335335819)[&bootstraps=71]:0.04175235591106498528)[&bootstraps=98]:0.15501394588127428986)[&bootstraps=89]:0.06410571771280972053)[&bootstraps=46]:0.03306675430346361216,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KT595242':0.19796491716862463228,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_009826':0.07989240990114525320,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/AF064490':0.02817045781095756096)[&bootstraps=100]:0.17022005806291756747)[&bootstraps=100]:0.26723159522023820500)[&bootstraps=43]:0.03819584356449701873)[&bootstraps=80]:0.11410693505903436729)[&bootstraps=76]:0.13023942892806786298,('alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/KX092342':0.37230842377967221513,'alignment/AL_UNCONSTRAINED/member/ncbi-refseqs/NC_030791':0.47764024583720732231)[&bootstraps=81]:0.09025543958456591631)[&bootstraps=100]:11.19312438484151428497)[&bootstraps=100]:0.09084492614244778219,'alignment/AL_UNCONSTRAINED/member/ncbi-outgroups/JF744991':0.00150088766205078985);end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#2d3680;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="Abadi MT Condensed Extra Bold";
+	set branchLabels.fontSize=8;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RADIAL";
+	set layout.zoom=0;
+	set legend.attribute="bootstraps";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.fontName="Abadi MT Condensed Extra Bold";
+	set nodeLabels.fontSize=13;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.significantDigits=4;
+	set nodeShape.colourAttribute="User selection";
+	set nodeShape.isShown=false;
+	set nodeShape.minSize=10.0;
+	set nodeShape.scaleType=Width;
+	set nodeShape.shapeType=Circle;
+	set nodeShape.size=4.0;
+	set nodeShape.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=0.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.fontName="Abadi MT Condensed Extra Bold";
+	set tipLabels.fontSize=13;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=false;
+	set trees.orderType="increasing";
+	set trees.rooting=false;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+	set tipLabels.colorAttribute="genotype";
+	set tipLabels.displayAttribute="subtype_accession";
+	set nodeLabels.isShown=true;
+	set nodeLabels.displayAttribute="bootstraps";
+end;
+
