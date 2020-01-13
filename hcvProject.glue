@@ -1,6 +1,6 @@
 delete project hcv
 
-create project hcv "GLUE project for Hepacivirus C (hcv)" --minVersion 1.1.69
+create project hcv "GLUE project for Hepacivirus C (hcv)" --minVersion 1.1.70
 
 run file glue/hcvSchemaExtensions.glue
  

@@ -3,7 +3,7 @@ apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: 'org.hidetake.ssh'
 apply plugin: 'com.bmuschko.cargo'
 
-project.ext.set("glueVersion", "1.1.69")
+project.ext.set("glueVersion", "1.1.70")
 
 ssh.settings { knownHosts = allowAnyHosts }
 
