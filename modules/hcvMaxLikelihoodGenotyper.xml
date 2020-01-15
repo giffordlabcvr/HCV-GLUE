@@ -1,19 +1,34 @@
 <maxLikelihoodGenotyper>
 	<maxLikelihoodPlacerModuleName>hcvMaxLikelihoodPlacer</maxLikelihoodPlacerModuleName>
+	<useSingleReference>true</useSingleReference>
+	<cladeCategory>
+		<name>species</name>	
+		<displayName>Species</displayName>	
+		<whereClause>clade_category = 'species'</whereClause>
+		<distanceScalingExponent>-3.0</distanceScalingExponent>
+		<!-- Note, this is quite strict, as equine hepacivirus 
+		     strains have a patristic distance of around 11.0 
+		     mean s/s to the nearest HCV reference sequence -->
+		<distanceCutoff>3.0</distanceCutoff>
+		<internalDistanceCutoff>6.0</internalDistanceCutoff>
+		<finalCladeCutoff>80.0</finalCladeCutoff>
+	</cladeCategory>
 	<cladeCategory>
 		<name>genotype</name>	
 		<displayName>Genotype</displayName>	
-		<whereClause>parent.name = 'AL_MASTER'</whereClause>
+		<whereClause>clade_category = 'genotype'</whereClause>
 		<distanceScalingExponent>-3.0</distanceScalingExponent>
 		<distanceCutoff>0.4</distanceCutoff>
+		<internalDistanceCutoff>0.8</internalDistanceCutoff>
 		<finalCladeCutoff>80.0</finalCladeCutoff>
 	</cladeCategory>
 	<cladeCategory>
 		<name>subtype</name>	
 		<displayName>Subtype</displayName>	
-		<whereClause>parent.parent.name = 'AL_MASTER'</whereClause>
+		<whereClause>clade_category = 'subtype'</whereClause>
 		<distanceScalingExponent>-3.0</distanceScalingExponent>
 		<distanceCutoff>0.26</distanceCutoff>
+		<internalDistanceCutoff>0.52</internalDistanceCutoff>
 		<finalCladeCutoff>80.0</finalCladeCutoff>
 	</cladeCategory>
 </maxLikelihoodGenotyper>
