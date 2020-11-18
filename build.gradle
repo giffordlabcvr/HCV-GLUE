@@ -1,9 +1,8 @@
-apply plugin: 'war'
 apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: 'org.hidetake.ssh'
 apply plugin: 'com.bmuschko.cargo'
 
-project.ext.set("glueVersion", "1.1.50")
+project.ext.set("glueVersion", "1.1.107")
 
 ssh.settings { knownHosts = allowAnyHosts }
 
