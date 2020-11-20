@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html >
 <head>
-
+	<style>
+		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	  		display: none !important;
+		}
+	</style>
 	<!-- Due to a bug in webcomponents, I can't use CSS with HTML imports -->
 	<!-- (at least in IE) -->
 	<!-- https://github.com/webcomponents/webcomponentsjs/issues/400 -->
@@ -21,10 +25,14 @@
 	<link rel="import" href="./hcvAppDependencies.html?hcvGlueVersion=0.1.63"/>
 </head>
 <body>
-
+<div ng-if="false" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:50%;">
+	<p style="text-align:center;">Powered by</p>
+	<p style="text-align:center;"><img src="images/gluelogo_tiny.png" alt="GLUE logo"></p>
+	<h3 style="text-align:center;">Loading, please wait ...</h3>
+</div>
 <cookie-law-banner message="This website uses Google Analytics First Party cookies for collecting usage statistics and some user-related data including geography and IP address. We use this facility to understand our users and improve our website. We do not store submitted sequence data on the server. In order to use the website, please indicate that you consent to our use of cookies and data collection." accept-text="I consent"></cookie-law-banner>
 
-<div class="container" ng-controller="hcvAppCtrl">
+<div ng-cloak class="container" ng-controller="hcvAppCtrl">
 
 
 	<!--  http://plnkr.co/edit/by9bV5jBA4Qn8VASfw08?p=preview  -->
