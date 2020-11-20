@@ -13,7 +13,7 @@ remotes {
   hcvglue_cvr {
     host = 'hcv-glue.cvr.gla.ac.uk'
     user = 'ok16n'
-    identity = file('/Users/evodixata/.ssh/hcv_glue_id_rsa')
+    identity = file('/Users/evdoxiataka/.ssh/hcv_glue_id_rsa')
   }
 }
 
@@ -139,7 +139,7 @@ task deployGluetoolsConfigHcvGlueCVR() {
 	  touchfile.createNewFile()
   }
 }
-def glueConfigFile = System.getProperty("user.name").equals('joshsinger') ? 'local-gluetools-config.xml' : 'remote-gluetools-config.xml'
+def glueConfigFile = 'remote-gluetools-config.xml'
 
 task wipeHcvGlueDB(type: Exec) {
 	commandLine "bash", "-c", "echo 'drop database if exists HCV_GLUE; create database HCV_GLUE character set UTF8;' | mysql -u hcvglue --password=hcvglue"
