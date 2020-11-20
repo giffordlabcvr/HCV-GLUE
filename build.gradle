@@ -1,9 +1,8 @@
-apply plugin: 'war'
 apply plugin: 'pl.allegro.tech.build.axion-release'
 apply plugin: 'org.hidetake.ssh'
 apply plugin: 'com.bmuschko.cargo'
 
-project.ext.set("glueVersion", "1.1.50")
+project.ext.set("glueVersion", "1.1.107")
 
 ssh.settings { knownHosts = allowAnyHosts }
 
@@ -12,8 +11,8 @@ project.version = scmVersion.version
 remotes {
   hcvglue_cvr {
     host = 'hcv-glue.cvr.gla.ac.uk'
-    user = 'sing01j'
-    identity = file('/Users/joshsinger/.ssh/hcv-glue_id_rsa')
+    user = 'ok16n'
+    identity = file('/Users/evodixata/.ssh/hcv_glue_id_rsa')
   }
 }
 
@@ -152,7 +151,7 @@ task buildHcvGlueDB(type: JavaExec, dependsOn: 'copyGluetoolsJar') {
 }
 
 
-def scmCustomKey = System.getProperty("user.name").equals('joshsinger') ? '/Users/joshsinger/.ssh/github_id_rsa' : '/opt/bitnami/apps/jenkins/jenkins_home/.ssh/github_id_rsa'
+def scmCustomKey = '/Users/evdoxiataka/.ssh/github_id_rsa_old_format'
 
 scmVersion {
 	hooks {
