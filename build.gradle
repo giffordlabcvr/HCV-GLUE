@@ -12,8 +12,8 @@ project.version = scmVersion.version
 remotes {
   hcvglue_cvr {
     host = 'hcv-glue.cvr.gla.ac.uk'
-    user = 'ok16n'
-    identity = file('/Users/evdoxiataka/.ssh/hcv_glue_id_rsa')
+    user = 'am589p'
+    identity = file('/Users/imacadmin/.ssh/hcv_glue_id_rsa')
   }
 }
 
@@ -152,7 +152,7 @@ task buildHcvGlueDB(type: JavaExec, dependsOn: 'copyGluetoolsJar') {
 }
 
 
-def scmCustomKey = '/Users/evdoxiataka/.ssh/github_id_rsa_old_format'
+def scmCustomKey = '/Users/imacadmin/.ssh/github_id_rsa'
 
 scmVersion {
 	hooks {
