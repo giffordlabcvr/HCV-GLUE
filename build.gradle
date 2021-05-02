@@ -3,7 +3,7 @@ apply plugin: 'org.hidetake.ssh'
 apply plugin: 'com.bmuschko.cargo'
 apply plugin: 'war'
 
-project.ext.set("glueVersion", "1.1.107")
+project.ext.set("glueVersion", "1.1.108")
 
 ssh.settings { knownHosts = allowAnyHosts }
 
