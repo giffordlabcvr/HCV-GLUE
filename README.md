@@ -35,7 +35,7 @@ A web instance of HCV-GLUE incorporating both these extension layers is hosted b
 
 - **Automated Genotyping**: HCV-GLUE can perform automated genotyping of HCV sequences (including subgenomic sequences) using GLUE's maximum likelihood clade assignment (MLCA) algorithm, as described [here](https://doi.org/10.1186/s12859-018-2459-9).
 
-- **Web user interface**: The [HCV-GLUE-WEB](https://github.com/giffordlabcvr/HCV-GLUE-WEB) extension project defines a web user interface that supports online browsing of the HCV-GLUE sequence database, and provides web access to an in-built sequence analysis tool (provides genotyping, analysis and visualisation of submitted FASTA sequences).
+- **Web user interface**: The web user interface that supports online browsing of the HCV-GLUE sequence database, and provides web access to an in-built sequence analysis tool (provides genotyping, analysis and visualisation of submitted FASTA sequences).
 
 
 ## Installation
