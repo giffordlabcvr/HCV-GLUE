@@ -2,16 +2,16 @@
 
 ## Overview
 
-HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis C virus (HCV), developed using the [GLUE](https://github.com/giffordlabcvr/gluetools) software framework.
+HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis C virus (HCV), developed using the [GLUE](https://github.com/giffordlabcvr/gluetools) software framework. It includes a web interface that can be used to create a HCV-GLUE web-server.
+
+HCV-GLUE contains HCV feature definitions, annotated reference sequences for all HCV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
 
 This **HCV-GLUE** base project can be extended with additional layers, openly availabe via GitHub, including:
 
   - **[NCBI-HCV-GLUE](https://github.com/giffordlabcvr/NCBI-HCV-GLUE)**: extends HCV-GLUE through the incorporation of all HCV sequence data published in NCBI GenBank.
-  - **[HCV-GLUE-WEB](https://github.com/giffordlabcvr/HCV-GLUE-WEB)**: a web interface that can be used to create a HCV-GLUE web-server.
+  - **[PHE-HCV-DRUG-RESISTANCE ](https://github.com/giffordlabcvr/PHE-HCV-DRUG-RESISTANCE B)**: a drug resistance-focussed extension incorporating an analysis tool that provides genotypic assessment of drug resistance/susceptibility.
 
 A web instance of HCV-GLUE incorporating both these extension layers is hosted by the University of Glasgow, and can be accessed here **[here](http://hcv-glue.cvr.gla.ac.uk/)**.
-
-In HCV-GLUE, HCV sequence data are richly annotated with gene features and isolate-associated information. HCV-GLUE also contains reference sequences for all HCV genotypes and subtypes, as well as heirarchically ordered multiple sequence alignments.
 
 ## Table of Contents
 
