@@ -29,7 +29,7 @@ A web instance of HCV-GLUE incorporating both these extension layers is hosted b
 
 - **Phylogenetic Structure**: The data in HCV-GLUE is organized in a phylogenetically-structured manner, allowing users to explore evolutionary relationships easily.
 
-- **Automated Updates**: HCV-GLUE provides an automatically-updated collection of influenza sequence data, ensuring users have access to the latest information for their analyses.
+- **Automated Updates**: HCV-GLUE provides an automatically-updated collection of HCV sequence data, ensuring users have access to the latest information for their analyses.
 
 - **Rich Annotations**: Each sequence is annotated with gene features, enabling rigorous comparative genomic analysis related to conservation, adaptation, structural context, and genotype-to-phenotype associations.
 
