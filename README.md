@@ -6,7 +6,7 @@ HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hep
 
 HCV-GLUE contains HCV feature definitions, annotated reference sequences for all HCV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
 
-This **HCV-GLUE** base project can be extended with additional layers, openly availabe via GitHub, including:
+This **HCV-GLUE** base project can be extended with additional layers, openly available via GitHub, including:
 
   - **[NCBI-HCV-GLUE](https://github.com/giffordlabcvr/NCBI-HCV-GLUE)**: extends HCV-GLUE through the incorporation of all HCV sequence data published in NCBI GenBank.
   - **[PHE-HCV-DRUG-RESISTANCE ](https://github.com/giffordlabcvr/PHE-HCV-DRUG-RESISTANCE)**: a drug resistance-focused extension incorporating an analysis tool that provides genotypic assessment of drug resistance/susceptibility.
