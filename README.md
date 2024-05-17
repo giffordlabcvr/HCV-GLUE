@@ -25,7 +25,7 @@ A web instance of HCV-GLUE incorporating both these extension layers is hosted b
 
 ## Key Features
 
-- **GLUE Framework Integration**: Built on the GLUE software framework, HCV-GLUE offers an extensible platform for efficient, standardized, and reproducible computational genomic analysis of influenza viruses.
+- **GLUE Framework Integration**: Built on the GLUE software framework, HCV-GLUE offers an extensible platform for efficient, standardized, and reproducible computational genomic analysis of HCV.
 
 - **Phylogenetic Structure**: The data in HCV-GLUE is organized in a phylogenetically-structured manner, allowing users to explore evolutionary relationships easily.
 
