@@ -40,7 +40,7 @@ If you want to contribute directly to the codebase:
 
 ## Code of Conduct
 
-Please review and adhere to our [Code of Conduct](./code_of_conduct.md). By participating, you are expected to uphold this code. Report any unacceptable behavior to [robert.gifford@glasgow.ac.uk](mailto:robert.gifford@glasgow.ac.uk).
+Please review and adhere to our [Code of Conduct](./code_of_conduct.md). By participating, you are expected to uphold this code. Report any unacceptable behavior to [gluetools@gmail.com ](mailto:gluetools@gmail.com ).
 
 ## Style Guide
 
