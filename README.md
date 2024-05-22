@@ -40,30 +40,7 @@ A web instance of HCV-GLUE incorporating both these extension layers is hosted b
 
 ## Installation
 
-If you have not done so already, install the GLUE software framework by following the [installation instructions](http://glue-tools.cvr.gla.ac.uk/#/installation) on the GLUE web site: 
-
-Note the HCV-GLUE project has a layered structure. This approach simplifies project management because it allows data items that are likely to be used across a wide range of analysis contexts to be maintained separately from those only required for more specialized purposes. The ‘base’ layer of HCV-GLUE contains only a minimal set of essential data items required for comparative analysis.
-
-To build the base (or 'core') project, download the HCV-GLUE repository, navigate into the top-level directory, and start the GLUE command line interpreter, e.g.:
-
-```
-rob$ gluetools.sh
-
-GLUE Version 1.1.107
-Copyright (C) 2015-2020 The University of Glasgow
-This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you
-are welcome to redistribute it under certain conditions. For details see
-GNU Affero General Public License v3: http://www.gnu.org/licenses/
-
-Mode path: /
-GLUE>
-```
-
-At the GLUE command prompt, run the 'buildCoreProject.glue' file as follows:
-
-`GLUE> run file hcvProject.glue`
-
-This will build the base project, which contains a minimal set of HCV 'reference' sequences. The base project can be extended to incorporate all HCV sequences in GenBank by downloading the extension project [NCBI-HCV-GLUE](https://github.com/giffordlabcvr/NCBI-HCV-GLUE).
+Please visit **[the HCV GLUE web page](http://hcv-glue.cvr.gla.ac.uk/#/aboutGlueProject)** for instructions on installing HCV-GLUE.
 
 ## Usage
 
