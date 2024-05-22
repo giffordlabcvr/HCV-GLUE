@@ -44,7 +44,7 @@ Please visit **[the HCV GLUE web page](http://hcv-glue.cvr.gla.ac.uk/#/aboutGlue
 
 ## Usage
 
-GLUE contains an interactive command line environment focused on the development and use of GLUE projects by bioinformaticians. This provides a range of productivity-oriented features such as automatic command completion, command history and interactive paging through tabular data. 
+GLUE contains an interactive command line environment focused on the development and use of GLUE projects by bioinformaticians. This provides a range of productivity-oriented features such as automatic command completion, command history and interactive paging through tabular data. Some examples are provided **[here](http://hcv-glue.cvr.gla.ac.uk/#/aboutGlueProject)**.
 
 For detailed instructions on how to use HCV-GLUE for your comparative genomic analysis, refer to the GLUE software environment's [reference documentation](http://glue-tools.cvr.gla.ac.uk/).
 
