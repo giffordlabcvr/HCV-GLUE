@@ -31,7 +31,7 @@ A web instance of HCV-GLUE incorporating both these extension layers is hosted b
 
 - **Automated Updates**: HCV-GLUE provides an automatically-updated collection of HCV sequence data, ensuring users have access to the latest information for their analyses.
 
-- **Rich Annotations**: Each sequence is annotated with gene features, enabling rigorous comparative genomic analysis related to conservation, adaptation, structural context, and genotype-to-phenotype associations.
+- **Rich Annotations**: Annotated reference sequences enable detailed and rigorous comparative genomic analysis related to conservation, adaptation, structural context, and genotype-to-phenotype associations.
 
 - **Automated Genotyping**: HCV-GLUE can perform automated genotyping of HCV sequences (including subgenomic sequences) using GLUE's maximum likelihood clade assignment (MLCA) algorithm, as described [here](https://doi.org/10.1186/s12859-018-2459-9).
 
