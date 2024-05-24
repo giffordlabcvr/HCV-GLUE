@@ -4,9 +4,13 @@
 
 HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis C virus (HCV), developed using the [GLUE](https://github.com/giffordlabcvr/gluetools) software framework. It includes a web interface that can be used to create an HCV-GLUE web-server.
 
-HCV-GLUE contains HCV feature definitions, annotated reference sequences for all HCV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
+GLUE is an open, integrated software toolkit designed for storing and interpreting sequence data. It supports the creation of bespoke projects, incorporating essential data items for comparative genomic analysis, such as sequences, multiple sequence alignments, genome feature annotations, and other associated data.
 
-This **HCV-GLUE** base project can be extended with additional layers, openly available via GitHub, including:
+Projects are loaded into the GLUE "engine," forming a relational database that represents the semantic relationships between data items. This foundation supports systematic comparative analyses and the development of sequence-based resources.
+
+**HCV-GLUE** contains HCV feature definitions, annotated reference sequences for all HCV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
+
+This HCV-GLUE project can be extended with additional layers, openly available via GitHub, including:
 
   - **[NCBI-HCV-GLUE](https://github.com/giffordlabcvr/NCBI-HCV-GLUE)**: extends HCV-GLUE through the incorporation of all HCV sequence data published in NCBI GenBank.
   - **[PHE-HCV-DRUG-RESISTANCE ](https://github.com/giffordlabcvr/PHE-HCV-DRUG-RESISTANCE)**: a drug resistance-focused extension incorporating an analysis tool that provides genotypic assessment of drug resistance/susceptibility.
@@ -36,6 +40,8 @@ A web instance of HCV-GLUE incorporating both these extension layers is hosted b
 - **Automated Genotyping**: HCV-GLUE can perform automated genotyping of HCV sequences (including subgenomic sequences) using GLUE's maximum likelihood clade assignment (MLCA) algorithm, as described [here](https://doi.org/10.1186/s12859-018-2459-9).
 
 - **Web user interface**: The web user interface that supports online browsing of the HCV-GLUE sequence database, and provides web access to an in-built sequence analysis tool (provides genotyping, analysis and visualisation of submitted FASTA sequences).
+
+- **Exploratory and operational**: The GLUE framework allows sequence-based resources to be used for exploratory work in a research setting, as well as operational work in a public or animal health setting. For example, HCV-GLUE can be used to [faciliate HCV research](https://doi.org/10.3389/fimmu.2018.01470), or to generate standardised sequence analysis reports (e.g. [drug resistance analysis](http://hcv-glue.cvr.gla.ac.uk/exampleReports/ngsData.html)). 
 
 
 ## Installation
