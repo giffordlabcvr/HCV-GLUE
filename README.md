@@ -10,7 +10,7 @@ GLUE is an open, integrated software toolkit designed for storing and interpreti
 
 Projects are loaded into the GLUE "engine," forming a relational database that represents the semantic relationships between data items. This foundation supports systematic comparative analyses and the development of sequence-based resources.
 
-**HCV-GLUE** contains HCV feature definitions, annotated reference sequences for all HCV genotypes and subtypes, and heirarchically ordered multiple sequence alignments.
+**HCV-GLUE** contains HCV feature definitions, annotated reference sequences for all HCV genotypes and subtypes, and heirarchically ordered multiple sequence alignments. It also contains functionality for assigning HCV sequences (including sub-genomic sequences) to subtypes and genotypes, using a maximium likelihood-based genotyping protocol.
 
 This HCV-GLUE project can be extended with additional layers, openly available via GitHub, including:
 
