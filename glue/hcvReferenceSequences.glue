@@ -1,12 +1,12 @@
   
   
-  # however, we will import the reference sequences from files
+  # We will import the reference sequences from files
   import source sources/ncbi-refseqs 
   import source sources/ncbi-refseqs-subgenomic 
 
 
   # run the module update genotype / subtype for refseqs from file.
-  module reference-genotypes-populator populate -f tabular/hcvReferenceGenotypes.txt
+  module reference-genotypes-populator populate -f tabular/hcvReferenceGenotypes.csv
  
   # The genotypes of these reference sequences were provided by D. Smith, in the alignment file.
   multi-set field sequence -w "source.name = 'ncbi-refseqs'" genotyping_method "Provided with alignment"
