@@ -12,12 +12,13 @@ Projects are loaded into the GLUE "engine," forming a relational database that r
 
 **HCV-GLUE** contains HCV feature definitions, annotated reference sequences for all HCV genotypes and subtypes, and heirarchically ordered multiple sequence alignments. It also contains functionality for assigning HCV sequences (including sub-genomic sequences) to subtypes and genotypes, using a maximium likelihood-based genotyping protocol.
 
+Please see the **[User Guide](https://github.com/giffordlabcvr/HCV-GLUE/wiki)** for more details.
+
 This HCV-GLUE project can be extended with additional layers, openly available via GitHub, including:
 
   - **[NCBI-HCV-GLUE](https://github.com/giffordlabcvr/NCBI-HCV-GLUE)**: extends HCV-GLUE through the incorporation of all HCV sequence data published in NCBI GenBank.
   - **[PHE-HCV-DRUG-RESISTANCE](https://github.com/giffordlabcvr/PHE-HCV-DRUG-RESISTANCE)**: a drug resistance-focused extension incorporating an analysis tool that provides genotypic assessment of drug resistance/susceptibility.
   - **[HCV-NABS](https://github.com/giffordlabcvr/HCV-NABS)**: an extension for analysing neutralising antibody binding sites in HCV.
-
 
 A web instance of HCV-GLUE incorporating both these extension layers is hosted by the University of Glasgow, and can be accessed **[here](http://hcv-glue.cvr.gla.ac.uk/)**.
 
