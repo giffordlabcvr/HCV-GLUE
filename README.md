@@ -14,6 +14,8 @@ Projects are loaded into the GLUE "engine," forming a relational database that r
 
 Please see the **[User Guide](https://github.com/giffordlabcvr/HCV-GLUE/wiki)** for more details.
 
+## Extension Layers
+
 This HCV-GLUE project can be extended with additional layers, openly available via GitHub, including:
 
   - **[NCBI-HCV-GLUE](https://github.com/giffordlabcvr/NCBI-HCV-GLUE)**: extends HCV-GLUE through the incorporation of all HCV sequence data published in NCBI GenBank.
@@ -21,33 +23,6 @@ This HCV-GLUE project can be extended with additional layers, openly available v
   - **[HCV-NABS](https://github.com/giffordlabcvr/HCV-NABS)**: an extension for analysing neutralising antibody binding sites in HCV.
 
 A web instance of HCV-GLUE incorporating both these extension layers is hosted by the University of Glasgow, and can be accessed **[here](http://hcv-glue.cvr.gla.ac.uk/)**.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## Key Features
-
-- **GLUE Framework Integration**: Built on the GLUE software framework, HCV-GLUE offers an extensible platform for efficient, standardized, and reproducible computational genomic analysis of HCV.
-
-- **Phylogenetic Structure**: The data in HCV-GLUE is organized in a phylogenetically-structured manner, allowing users to explore evolutionary relationships easily.
-
-- **Automated Updates**: HCV-GLUE provides an automatically-updated collection of HCV sequence data, ensuring users have access to the latest information for their analyses.
-
-- **Rich Annotations**: Annotated reference sequences enable detailed and rigorous comparative genomic analysis related to conservation, adaptation, structural context, and genotype-to-phenotype associations.
-
-- **Automated Genotyping**: HCV-GLUE can perform automated genotyping of HCV sequences (including subgenomic sequences) using GLUE's maximum likelihood clade assignment (MLCA) algorithm, as described [here](https://doi.org/10.1186/s12859-018-2459-9).
-
-- **Web user interface**: The web user interface that supports online browsing of the HCV-GLUE sequence database, and provides web access to an in-built sequence analysis tool (provides genotyping, analysis and visualisation of submitted FASTA sequences).
-
-- **Exploratory and operational**: The GLUE framework allows sequence-based resources to be used for exploratory work in a research setting, as well as operational work in a public or animal health setting. For example, HCV-GLUE can be used to [faciliate HCV research](https://doi.org/10.3389/fimmu.2018.01470), or to generate standardised sequence analysis reports (e.g. [drug resistance analysis](http://hcv-glue.cvr.gla.ac.uk/exampleReports/ngsData.html)). 
-
 
 ## Installation
 
