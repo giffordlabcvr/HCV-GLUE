@@ -1,5 +1,7 @@
 # HCV-GLUE: Phylogenomic Analysis of Hepatitis C Virus
 
+<img src="md/glue-logo.png" align="right" alt="" width="280"/>
+
 ## Overview
 
 HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis C virus (HCV), developed using the [GLUE](https://github.com/giffordlabcvr/gluetools) software framework. It includes a web interface that can be used to create an **[HCV-GLUE web-server](http://hcv-glue.cvr.gla.ac.uk/#/home)**.
