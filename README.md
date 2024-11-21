@@ -7,11 +7,12 @@ HCV-GLUE: Comparative Genomics of Hepatitis C Virus
 
 HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis C virus (HCV), developed using the [GLUE](https://github.com/giffordlabcvr/gluetools) software framework.
 
-GLUE is an open, integrated software toolkit designed for storing and interpreting sequence data. It supports the creation of bespoke projects, incorporating essential data items for comparative genomic analysis, such as sequences, multiple sequence alignments, genome feature annotations, and other associated data.
 
-Projects are loaded into the GLUE "engine," forming a relational database that represents the semantic relationships between data items. This foundation supports systematic comparative analyses and the development of sequence-based resources.
+**Hepatitis C virus (HCV)** is a bloodborne RNA virus that primarily targets the liver, causing both acute and chronic hepatitis. Classified under the *Hepacivirus* genus within the *Flaviviridae* family, HCV is mainly transmitted through contact with infected blood. If left untreated, infection can lead to serious liver complications, such as cirrhosis and liver cancer. Direct-acting antiviral medications have dramatically improved cure rates and hold the potential to eliminate the virus entirely. However, achieving global elimination faces significant challenges
 
-HCV-GLUE provides a command-line interface (CLI) and can be installed locally, opting either for a **[Docker-based](https://github.com/giffordlabcvr/HCV-GLUE/wiki/Docker-Installation)** or **[native installation](https://github.com/giffordlabcvr/HCV-GLUE/wiki/Native-Installation)**.
+**GLUE** is an open, integrated software toolkit designed for storing and interpreting sequence data. It supports the creation of bespoke **projects** that incorporate essential data items for comparative genomic analysis, such as sequences, multiple sequence alignments, genome feature annotations, and other associated data. Projects are loaded into the GLUE "engine," forming a **relational database** that [represents the semantic relationships between data items](https://github.com/giffordlabcvr/HCV-GLUE/wiki/Core-Schema). This foundation supports systematic comparative analyses and the development of sequence-based resources.
+
+**HCV-GLUE** provides a command-line interface (CLI) and can be installed locally, opting either for a **[Docker-based](https://github.com/giffordlabcvr/HCV-GLUE/wiki/Docker-Installation)** or **[native installation](https://github.com/giffordlabcvr/HCV-GLUE/wiki/Native-Installation)**.
 
 * * * * *
 
