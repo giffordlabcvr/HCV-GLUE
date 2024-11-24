@@ -5,7 +5,7 @@ HCV-GLUE: Comparative Genomics of Hepatitis C Virus
 
 ### Overview
 
-HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis C virus (HCV), developed using the [GLUE](https://github.com/giffordlabcvr/gluetools) software framework.
+HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hepatitis C virus (HCV), developed using the **[GLUE](https://github.com/giffordlabcvr/gluetools)** software framework.
 
 
 **Hepatitis C virus (HCV)** is a bloodborne RNA virus that primarily targets the liver, causing both acute and chronic hepatitis. Classified under the *Hepacivirus* genus within the *Flaviviridae* family, HCV is mainly transmitted through contact with infected blood. If left untreated, infection can lead to serious liver complications, such as cirrhosis and liver cancer. Direct-acting antiviral medications have dramatically improved cure rates and hold the potential to eliminate the virus entirely. However, achieving global elimination faces significant challenges
