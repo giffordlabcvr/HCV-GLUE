@@ -1,7 +1,7 @@
 HCV-GLUE: Comparative Genomics of Hepatitis C Virus
 ===================================================
 
-<img src="md/glue-logo.png" align="right" alt="" width="220"/>
+<img src="md/glue-logo.png" align="right" alt="" width="240"/>
 
 ### Overview
 
