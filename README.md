@@ -24,6 +24,8 @@ You can also use some of HCV-GLUE's functionality via its web UI.
 
 **A web instance of HCV-GLUE incorporating extension layers is hosted by the University of Glasgow and can be accessed [here](http://hcv-glue.cvr.gla.ac.uk)**.
 
+⚠️ Note: Externally hosted websites may not reflect the latest builds. This repository reflects the current state of the resource.
+
 * * * * *
 
 ### Key Features
