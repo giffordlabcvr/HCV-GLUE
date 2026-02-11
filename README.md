@@ -14,7 +14,9 @@ HCV-GLUE is a sequence-oriented resource for comparative genomic analysis of hep
 
 **HCV-GLUE** provides a command-line interface (CLI) and can be installed locally, opting either for a **[Docker-based](https://github.com/giffordlabcvr/HCV-GLUE/wiki/Docker-Installation)** or **[native installation](https://github.com/giffordlabcvr/HCV-GLUE/wiki/Native-Installation)**.
 
-For more details, please see the **[User Guide](https://github.com/giffordlabcvr/HCV-GLUE/wiki)**.
+For more details, please see the **[User Guide](https://github.com/giffordlabcvr/HCV-GLUE/wiki)**. 
+
+Additionally, **[this post](https://gluetools.substack.com/p/running-hcv-glue-offline)** on the **[GLUE Genomics](https://gluetools.substack.com/)** Substack provides further details about running HCV-GLUE locally.
 
 * * * * *
 
